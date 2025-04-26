@@ -2,3 +2,5 @@
 *.env
 ScoreItEnv/
 ResumeNER/Models/
+src.egg-info/
+Testing/
