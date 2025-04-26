@@ -1,0 +1,69 @@
+name: Python Tests and Coverage (Unit + Integration)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  unit-tests:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+        pip install -r requirements.txt
+
+    - name: Run Unit Tests Only
+      run: |
+        pytest --cov=src --cov-report=term-missing -m "unit" tests/
+    
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: unit-coverage-report
+        path: htmlcoverage/
+
+  integration-tests:
+    name: Run Integration Tests
+    runs-on: ubuntu-latest
+    needs: unit-tests 
+
+    if: github.ref == 'refs/heads/main' # Run only on main branch
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+        pip install -r requirements.txt
+
+    - name: Run Integration Tests
+      run: |
+        pytest --cov=src --cov-report=term-missing -m "integration" tests/
+
+    - name: Upload Coverage Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: integration-coverage-report
+        path: htmlcoverage/
