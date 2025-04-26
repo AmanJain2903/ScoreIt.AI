@@ -111,9 +111,7 @@ class JobDescriptionAgent:
             raise ValueError("Parsed JSON is not a dictionary.")
         return jsonOutput
     
-    def getResponse(self, userPrompt):
-        self.setUserPrompt(userPrompt)
-
+    def getResponse(self):
         if not self.modelName:
             raise ValueError("Model name not set.")
         if not self.systemPrompt:
@@ -124,26 +122,24 @@ class JobDescriptionAgent:
         self.getClient()
         if not self.client:
             raise ValueError("Client not initialized.")
-        completion = self.client.chat.completions.create(
-            model=self.modelName,
-            messages=[
-                {
-                    "role": "system",
-                    "content": self.systemPrompt
-                },
-                {
-                    "role": "user",
-                    "content": self.userPrompt
-                }
-            ],
-            response_format={'type': 'json_object', 'format': 'json'},
-        )
+        try:
+            completion = self.client.chat.completions.create(
+                model=self.modelName,
+                messages=[
+                    {"role": "system", "content": self.systemPrompt},
+                    {"role": "user", "content": self.userPrompt}
+                ],
+                response_format={'type': 'json_object', 'format': 'json'},
+            )
+        except Exception as e:
+            raise ValueError(f"Failed to get response: {e}")
         self.deleteClient()
         
         if not completion or not completion.choices:
             try:
-                error = completion.error['message']
-                raise ValueError(f"Error in response: {error}")
+                if completion and hasattr(completion, 'error'):
+                    error = completion.error['message']
+                    raise ValueError(f"Error in response: {error}")
             except Exception as e:
                 raise ValueError(f"Failed to get response: {e}")
         if not completion.choices[0].message or not completion.choices[0].message.content:
@@ -155,7 +151,7 @@ class JobDescriptionAgent:
     def getJsonOutput(self):
         if not self.jsonOutput:
             try :
-                self.getResponse(self.userPrompt)
+                self.getResponse()
             except ValueError:
                 raise ValueError("No JSON output found.")
         return self.jsonOutput
@@ -163,7 +159,7 @@ class JobDescriptionAgent:
     def getResponseText(self):
         if not self.response:
             try:
-                self.getResponse(self.userPrompt)
+                self.getResponse()
             except ValueError:
                 raise ValueError("No response found.")
         return self.response
