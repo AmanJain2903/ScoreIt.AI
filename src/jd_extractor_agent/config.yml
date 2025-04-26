@@ -1,0 +1,3 @@
+API_NAME : "OPENROUTER_API_KEY"
+MODEL_NAME : "deepseek/deepseek-chat-v3-0324:free"
+DEFAULT_SYSTEM_PROMPT_PATH : "system_prompt.txt"
