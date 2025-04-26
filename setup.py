@@ -10,6 +10,13 @@ setup(
         "src.jd_extractor_agent": ["config.yml", "data/*.txt"], 
         "src.resume_extractor_agent": ["config.yml", "data/*.txt"],
     },
+    install_requires=[
+        'dotenv',
+        'openai',
+        'cryptography',
+        'typing',
+        'pyyaml'
+    ],
 )
 
 # To install the package, run the following command in the terminal:
