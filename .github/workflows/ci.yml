@@ -19,6 +19,9 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
+    
+    - name: Set environment variables
+      run: echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: |
@@ -51,6 +54,9 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
+      
+    - name: Set environment variables
+      run: echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: |
