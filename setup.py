@@ -15,7 +15,10 @@ setup(
         'openai',
         'cryptography',
         'typing',
-        'pyyaml'
+        'pyyaml',
+        'pytest',
+        'pytest-mock',
+        'pytest-cov',
     ],
 )
 
