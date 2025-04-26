@@ -78,21 +78,15 @@ class ResumeAgent:
         return {
             "modelName": self.modelName,
             "systemPrompt": self.systemPrompt,
+            "userPrompt": self.userPrompt,
+            "response": self.response,
+            "jsonOutput": self.jsonOutput,
+            "client": self.client,
         }
     
     def getAgentStatus(self):
         if not self.client:
             return "Client not initialized."
-        if not self.modelName:
-            return "Model name not set."
-        if not self.systemPrompt:
-            return "System prompt not set."
-        if not self.userPrompt:
-            return "User prompt not set."
-        if not self.response:
-            return "No response found."
-        if not self.jsonOutput:
-            return "No JSON output found."
         return "Agent is good to go with."
     
     def setUserPrompt(self, userPrompt):
@@ -144,8 +138,18 @@ class ResumeAgent:
         )
         self.deleteClient()
 
+        if not completion or not completion.choices:
+            try:
+                error = completion.error['message']
+                raise ValueError(f"Error in response: {error}")
+            except Exception as e:
+                raise ValueError(f"Failed to get response: {e}")
+        if not completion.choices[0].message or not completion.choices[0].message.content:
+            raise ValueError("No content in response.")
+
         self.response = completion.choices[0].message.content
         self.jsonOutput = self.parseRespone()
+
     def getJsonOutput(self):
         if not self.jsonOutput:
             try :
