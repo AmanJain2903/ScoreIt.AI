@@ -4,3 +4,8 @@ ScoreItEnv/
 ResumeNER/Models/
 src.egg-info/
 Testing/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+code_coverage/
