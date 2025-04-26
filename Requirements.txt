@@ -3,4 +3,7 @@ dotenv
 cryptography
 typing
 pyyaml
+pytest
+pytest-mock
+pytest-cov
 
