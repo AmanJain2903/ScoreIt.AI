@@ -1,0 +1,7 @@
+openai
+dotenv
+cryptography
+typing
+pyyaml
+importlib
+
