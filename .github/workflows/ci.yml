@@ -43,9 +43,7 @@ jobs:
     name: Run Integration Tests
     runs-on: ubuntu-latest
     needs: unit-tests 
-
-    if: github.ref == 'refs/heads/main' # Run only on main branch
-
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
