@@ -6,3 +6,7 @@ pyyaml
 pytest
 pytest-mock
 pytest-cov
+sentence-transformers
+scikit-learn
+pandas
+numpy

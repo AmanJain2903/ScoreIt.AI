@@ -1,13 +1,14 @@
 .env
 *.env
 ScoreItEnv/
-ResumeNER/Models/
 src.egg-info/
-Testing/
+build/
 *.py[cod]
 .pytest_cache/
 .DS_Store
 code_coverage/
 htmlcov/
 __pycache__/
+*.py[cod]
 .coverage
+rough.ipynb

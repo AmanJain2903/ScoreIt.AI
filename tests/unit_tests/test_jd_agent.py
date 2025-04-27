@@ -110,7 +110,7 @@ def test_getAgentStatus_not_initialized(jd_agent):
 
 def test_setUserPrompt_success(jd_agent):
     jd_agent.setUserPrompt("Test prompt")
-    assert jd_agent.userPrompt == "Test prompt"
+    assert jd_agent.userPrompt == "test prompt"
 
 def test_setUserPrompt_empty(jd_agent):
     with pytest.raises(ValueError, match="User prompt cannot be empty."):

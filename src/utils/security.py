@@ -33,21 +33,16 @@ class SecureKeyManager:
 # Prevent prompt injection attacks by sanitizing user input.
 # Also prevent DOS attacks by limiting the length of user input.
 def sanitizeInput(userInput : Union[str, bytes], allowedLength) -> str:
-    """
-    Sanitize user input to prevent XSS attacks.
-    
-    Args:
-        userInput (Union[str, bytes]): The user input to sanitize.
-        
-    Returns:
-        str: The sanitized input.
-    """
+    if not isinstance(userInput, (str, bytes)):
+        raise ValueError("Input must be a string or bytes.")
+
     if isinstance(userInput, bytes):
         userInput = userInput.decode('utf-8', errors='replace')
     
-    if len(userInput) > allowedLength:
+    if allowedLength and len(userInput) > allowedLength:
         raise ValueError(f"Input exceeds maximum length of {allowedLength} characters.")
     
-    sanitizedInput = html.escape(userInput).strip()
+    sanitizedInput = html.escape(userInput)
+    sanitizedInput = sanitizedInput.replace('\t', ' ').replace('\n', ' ').replace('\r', ' ').strip().lower()
     
     return sanitizedInput

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='src',
-    version='0.2.0',
+    version='0.3.0',
     author='Aman Jain',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
@@ -10,6 +10,7 @@ setup(
     package_data={
         "src.jd_extractor_agent": ["config.yml", "data/*.txt"], 
         "src.resume_extractor_agent": ["config.yml", "data/*.txt"],
+        "src.education_matching": ["config.yml"],
     },
     install_requires=[
         'dotenv',
@@ -20,7 +21,11 @@ setup(
         'pytest',
         'pytest-mock',
         'pytest-cov',
-    ],
+        'sentence-transformers',
+        'scikit-learn',
+        'pandas',
+        'numpy',
+    ]
 )
 
 # To install the package, run the following command in the terminal:

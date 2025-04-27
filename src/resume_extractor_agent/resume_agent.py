@@ -93,7 +93,7 @@ class ResumeAgent:
     def setUserPrompt(self, userPrompt):
         if not userPrompt:
             raise ValueError("User prompt cannot be empty.")
-        userPrompt = security.sanitizeInput(userPrompt, 10000)
+        userPrompt = security.sanitizeInput(userPrompt, config.MAX_INPUT_LENGTH)
         self.userPrompt = userPrompt
     
     def parseRespone(self):
