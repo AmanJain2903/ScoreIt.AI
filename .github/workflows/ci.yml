@@ -31,13 +31,13 @@ jobs:
 
     - name: Run Unit Tests Only
       run: |
-        pytest --cov=src --cov-report=term-missing -m "unit" tests/
+        pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
     
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
       with:
         name: unit-coverage-report
-        path: htmlcoverage/
+        path: htmlcov/
 
   integration-tests:
     name: Run Integration Tests
@@ -66,10 +66,10 @@ jobs:
 
     - name: Run Integration Tests
       run: |
-        pytest --cov=src --cov-report=term-missing -m "integration" tests/
+        pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
 
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
       with:
         name: integration-coverage-report
-        path: htmlcoverage/
+        path: htmlcov/
