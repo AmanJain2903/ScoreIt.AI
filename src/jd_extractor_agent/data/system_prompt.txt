@@ -11,7 +11,8 @@ Entity Extraction Guidelines:
 1. Text Fidelity
    - Preserve original text exactly (including case, punctuation, and formatting)
    - Never combine, paraphrase, or infer missing information
-   - Return empty string ("") for absent entities
+   - Always add a key for each entity given below
+   - Return empty string ("") for values of absent entities
 
 2. Entity Scope
    Extract only these entities when explicitly mentioned:
