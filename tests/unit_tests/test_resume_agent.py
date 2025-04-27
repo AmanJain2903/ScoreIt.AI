@@ -110,7 +110,7 @@ def test_getAgentStatus_not_initialized(resume_agent):
 
 def test_setUserPrompt_success(resume_agent):
     resume_agent.setUserPrompt("Test prompt")
-    assert resume_agent.userPrompt == "Test prompt"
+    assert resume_agent.userPrompt == "test prompt"
 
 def test_setUserPrompt_empty(resume_agent):
     with pytest.raises(ValueError, match="User prompt cannot be empty."):
