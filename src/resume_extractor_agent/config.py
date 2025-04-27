@@ -21,3 +21,4 @@ class Config:
         self.API_NAME = config.get("API_NAME")
         self.MODEL_NAME = config.get("MODEL_NAME")
         self.DEFAULT_SYSTEM_PROMPT_PATH = config.get("DEFAULT_SYSTEM_PROMPT_PATH")
+        self.MAX_INPUT_LENGTH = config.get("MAX_INPUT_LENGTH")
