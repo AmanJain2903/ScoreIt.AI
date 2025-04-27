@@ -10,3 +10,4 @@ Testing/
 code_coverage/
 htmlcov/
 __pycache__/
+.coverage
