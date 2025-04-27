@@ -36,7 +36,8 @@ class JobDescriptionAgent:
         if useDefaultSystemPromptIfNone and systemPrompt is None:
             systemPromptPath = config.DEFAULT_SYSTEM_PROMPT_PATH
             try:
-                with importlib.resources.open_text('src.jd_extractor_agent.data', systemPromptPath) as file:
+                systemPromptPath = importlib.resources.files('src.jd_extractor_agent.data').joinpath(systemPromptPath)
+                with systemPromptPath.open('r') as file:
                     systemPrompt = file.read()
             except Exception as e:
                     raise RuntimeError(f"Failed to load system prompt '{systemPromptPath}': {e}")
