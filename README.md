@@ -4,9 +4,9 @@
 ![Coverage](https://img.shields.io/badge/Coverage-95%25-brightgreen)
 ![Python Version](https://img.shields.io/badge/Python-3.11-blue)
 
-> A smart Resume and Job Description matching system powered by AI Agents and Deep Learning.
+> A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Building the core backend modules that extract, structure, and intelligently match resume and job description data, while ensuring top-notch security and software engineering practices.
+> **Current Focus:** Building the core backend modules that extract, structure, and intelligently match resume and job description data, while ensuring top-notch security, professional testing, and scalable architecture.
 
 ---
 
@@ -15,6 +15,8 @@
 ScoreIt.AI is an AI-powered system designed to:
 - Parse and structure unorganized resumes and job descriptions into machine-readable formats.
 - Use LLMs to extract important fields like Technical Skills, Education, Experience, Certifications, and more.
+- Store resumes, JDs, and match results in a MongoDB database.
+- Build a ReactJS frontend for users to upload resumes/JDs and view match scores in real-time.
 - In the future: OCR resume PDFs, scrape job listings from URLs, build smart matching algorithms, and expose all services via Flask APIs.
 
 ---
@@ -102,6 +104,26 @@ Each agent is isolated into its own clean Python module inside `src/`, following
 
 ---
 
+## 🚧 Future Work (Coming Soon)
+
+| Feature | Description |
+|:---|:---|
+| **OCR Pipeline** | Extract structured text from resume PDFs using OCR models. |
+| **Web Scraping Pipeline** | Scrape job descriptions directly from online job postings. |
+| **Matchmaking Models** | Build models to intelligently score matches between resumes and jobs. |
+| **Flask APIs** | Expose all functionalities via clean REST APIs for frontend and external integrations. |
+| **MongoDB Database Integration** | Store parsed resumes, JDs, and match results for persistent access and analytics. |
+| **ReactJS Frontend** | Build a modern UI for users to upload resumes and view match results. |
+
+---
+
+## 📢 Note:
+
+- **Completed:** Resume and JD Extraction Agents, Secure API Management, Full Testing Infrastructure, CI/CD Pipeline.
+- **In Progress:** OCR, Scraping, Matching, MongoDB Backend, Flask APIs, ReactJS Frontend.
+
+---
+
 # ⚙️ Developer Commands
 
 # To install python package
@@ -117,23 +139,5 @@ Each agent is isolated into its own clean Python module inside `src/`, following
 
 # To view coverage report
 ### Open `code_coverage/coverage_report/index.html` after running tests
-
----
-
-## 🚧 Future Work (Coming Soon)
-
-| Feature | Description |
-|:---|:---|
-| **OCR Pipeline** | Extract structured text from resume PDFs using OCR models. |
-| **Web Scraping Pipeline** | Scrape job descriptions directly from online job postings. |
-| **Matchmaking Models** | Build models to intelligently score matches between resumes and jobs. |
-| **Flask APIs** | Expose all functionalities via clean REST APIs for frontend and external integrations. |
-
----
-
-## 📢 Note:
-
-- **Completed:** Resume and JD Extraction Agents, Secure API Management, Full Testing Infrastructure, CI/CD Pipeline.
-- **In Progress:** OCR, Scraping, Matching, and API backend modules.
 
 ---
