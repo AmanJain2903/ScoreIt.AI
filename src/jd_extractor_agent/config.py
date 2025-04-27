@@ -10,7 +10,8 @@ class Config:
     def __init__(self):
         try:
             # Correctly load config.yml from the installed package
-            with importlib.resources.open_text('src.jd_extractor_agent', 'config.yml') as file:
+            configPath = importlib.resources.files('src.jd_extractor_agent').joinpath('config.yml')
+            with configPath.open('r') as file:
                 config = yaml.safe_load(file)
         except Exception as e:
             raise RuntimeError(f"Failed to load config.yml: {e}")
