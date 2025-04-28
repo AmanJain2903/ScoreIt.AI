@@ -23,7 +23,13 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📜 Detailed Release Roadmap
 
-👉 [View Full Release Plan Here](./RELEASE_PLAN.md)
+👉 [View Full Release Plan](.Docs/Release-Plans/RELEASE_PLAN_v1.0.0.md)
+
+---
+
+## 📜 Project Architecture
+
+👉 [View Project Architecture](.Docs/ARCHITECTURE.md)
 
 ---
 

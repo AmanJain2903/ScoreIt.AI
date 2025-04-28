@@ -151,9 +151,14 @@ class JobDescriptionAgent:
 
     def getJsonOutput(self):
         if not self.jsonOutput:
-            try :
-                self.getResponse()
-            except ValueError:
+            for i in range(3):
+                try:
+                    self.getResponse()
+                    if self.jsonOutput:
+                        break
+                except ValueError:
+                    continue
+            if not self.jsonOutput:
                 raise ValueError("No JSON output found.")
         return self.jsonOutput
 
