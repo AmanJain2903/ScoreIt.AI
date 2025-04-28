@@ -23,13 +23,13 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📜 Detailed Release Roadmap
 
-👉 [View Full Release Plan](.Docs/Release-Plans/RELEASE_PLAN_v1.0.0.md)
+👉 [View Full Release Plan](./Docs/Release-Plans/RELEASE_PLAN_v1.0.0.md)
 
 ---
 
 ## 📜 Project Architecture
 
-👉 [View Project Architecture](.Docs/ARCHITECTURE.md)
+👉 [View Project Architecture](./Docs/ARCHITECTURE.md)
 
 ---
 
@@ -58,7 +58,21 @@ ScoreIt.AI is an AI-powered system designed to:
   - Final match score = Semantic Similarity × (ResumeYears / JDYears capped at 1.0).
   - Penalizes insufficient experience smartly while rewarding relevant roles.
 
-**5. Modular Clean Architecture**  
+**5. Technical Skills Matching Module**  
+- Specialized skill matcher (`TechnicalSkillMatching`) that:
+  - Parses Resume and JD technical skills as lists.
+  - Encodes each skill using an ensemble of two different Sentence Transformer models.
+  - Boosts strong matches (high cosine similarity) and penalizes weak ones using hard ensembling.
+  - Calculates best-matching JD skill for every Resume skill.
+  - Final technical skill match score = average of strongest per-skill matches.
+
+**6. Soft Skills Matching Module**  
+- Specialized matcher (`SoftSkillMatching`) following the same architecture as Technical Skill Matcher but optimized for soft skills.
+  - Understands flexible and human-centric skill wording (e.g., Communication, Team Collaboration).
+  - Handles the natural fuzziness of soft skills using semantic similarity boosting.
+  - Final soft skill match score = average of best semantically matched JD soft skills per Resume soft skill.
+
+**7. Modular Clean Architecture**  
 - Each module is isolated inside `src/`, following **package-per-responsibility** architecture.
 - Config management, secure utils, and common components well-separated.
 
@@ -94,7 +108,7 @@ ScoreIt.AI is an AI-powered system designed to:
 **3. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
-- Current total code coverage: **92%** ✅
+- Current total code coverage: **96%** ✅
 
 **4. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
@@ -164,7 +178,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
 - **In Progress:** OCR Extraction, Web Scraping, Matchmaking Models, Flask APIs, MongoDB Integration, Frontend Development.
 
 ---

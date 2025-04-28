@@ -1,0 +1,6 @@
+TECHNICAL_MODEL_NAME_1 : 'all-mpnet-base-v2'
+TECHNICAL_MODEL_NAME_2 :  'paraphrase-MiniLM-L3-v2'
+SOFT_MODEL_NAME_1 : 'all-mpnet-base-v2'
+SOFT_MODEL_NAME_2 :  'paraphrase-MiniLM-L3-v2'
+TECHNICAL_MAX_INPUT_LENGTH : 1000
+SOFT_MAX_INPUT_LENGTH : 1000
