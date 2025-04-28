@@ -135,7 +135,7 @@ Each agent is isolated into its own clean Python module inside `src/`, following
 
 ### Only unit tests -> `PYTHONPATH=. pytest -m unit` / `PYTHONPATH=. pytest --cov=src -m unit tests/`
 ### Only integration tests -> `PYTHONPATH=. pytest -m integration` / `PYTHONPATH=. pytest --cov=src -m integration tests/`
-### Run both unit and integration tests -> `PYTHONPATH=. COVERAGE_FILE=.coverage pytest --cov=src --cov-report=term-missing tests/`
+### Run both unit and integration tests -> `COVERAGE_FILE=.coverage PYTHONPATH=. COVERAGE_FILE=.coverage pytest --cov=src --cov-report=term-missing tests/`
 
 # To view coverage report
 ### Open `code_coverage/coverage_report/index.html` after running tests

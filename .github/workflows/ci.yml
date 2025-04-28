@@ -31,11 +31,7 @@ jobs:
 
     - name: Run Unit Tests Only
       run: |
-        PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
-
-    - name: Save Unit Test Coverage File
-      run: |
-        mv .coverage .coverage.unit
+        COVERAGE_FILE=.coverage.unit PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
     
     - name: Upload Unit Coverage File
       uses: actions/upload-artifact@v4
@@ -70,11 +66,7 @@ jobs:
 
     - name: Run Integration Tests
       run: |
-        PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
-
-    - name: Save Integration Test Coverage File
-      run: |
-        mv .coverage .coverage.integration
+        COVERAGE_FILE=.coverage.integration PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
 
     - name: Upload Integration Coverage File
       uses: actions/upload-artifact@v4
