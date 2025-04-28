@@ -10,3 +10,4 @@ sentence-transformers
 scikit-learn
 pandas
 numpy
+regex

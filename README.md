@@ -39,7 +39,14 @@ ScoreIt.AI is an AI-powered system designed to:
   - Uses cosine similarity scoring with hard ensembling strategy.
   - Provides robust education field matching without custom training.
 
-**4. Modular Clean Architecture**  
+**4. Experience Matching Module**  
+- Advanced matcher (`ExperienceMatching`) that:
+  - Extracts numeric years of experience from Resume and JD using smart regex parsing.
+  - Computes semantic similarity between Resume experience description and JD experience requirement.
+  - Final match score = Semantic Similarity × (ResumeYears / JDYears capped at 1.0).
+  - Penalizes insufficient experience smartly while rewarding relevant roles.
+
+**5. Modular Clean Architecture**  
 - Each module is isolated inside `src/`, following **package-per-responsibility** architecture.
 - Config management, secure utils, and common components well-separated.
 
@@ -75,11 +82,15 @@ ScoreIt.AI is an AI-powered system designed to:
 **3. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
-- Current total code coverage: **91%** ✅
+- Current total code coverage: **92%** ✅
 
 **4. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
 - All modules were written with their tests designed first to validate specifications.
+
+**5. Test Achievements**
+- 143 test cases written covering Unit + Integration tests combined.
+- Every new module (Resume Agent, JD Agent, Education Matching, Experience Matching) fully tested.
 
 ---
 
@@ -141,7 +152,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
 - **In Progress:** OCR Extraction, Web Scraping, Matchmaking Models, Flask APIs, MongoDB Integration, Frontend Development.
 
 ---
