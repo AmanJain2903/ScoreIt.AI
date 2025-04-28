@@ -24,83 +24,105 @@ ScoreIt.AI is an AI-powered system designed to:
 ## ✅ Completed Modules
 
 **1. Resume Extraction Agent**  
-A specialized AI agent (`ResumeAgent`) that:
-- Accepts raw resume text.
-- Sends it to DeepSeek LLM through OpenRouter API.
-- Extracts structured JSON output containing fields like Skills, Experience, Education, etc.
-- Handles client session, input sanitization, and response parsing.
+- Specialized AI agent (`ResumeAgent`) that accepts raw resume text.
+- Sends input to DeepSeek LLM through OpenRouter API.
+- Extracts structured JSON output containing Skills, Experience, Education, Certifications, and more.
+- Handles client initialization, secure key management, input sanitization, and response parsing.
 
 **2. Job Description Extraction Agent**  
-A parallel agent (`JobDescriptionAgent`) that:
-- Accepts raw job description text.
-- Sends it to DeepSeek LLM via OpenRouter API.
-- Extracts structured JSON output similar to ResumeAgent but tuned for job requirements and expectations.
+- Specialized agent (`JobDescriptionAgent`) similar to ResumeAgent but tuned for Job Descriptions.
+- Extracts structured fields like Role, Requirements, Technical Skills, Soft Skills, etc.
 
-**3. Modular Design**  
-Each agent is isolated into its own clean Python module inside `src/`, following a **"package-per-responsibility"** architecture.
+**3. Education Matching Module**  
+- Sentence Transformer based education matcher (`EducationMatching`) that:
+  - Encodes Resume and JD Education fields.
+  - Uses cosine similarity scoring with hard ensembling strategy.
+  - Provides robust education field matching without custom training.
+
+**4. Modular Clean Architecture**  
+- Each module is isolated inside `src/`, following **package-per-responsibility** architecture.
+- Config management, secure utils, and common components well-separated.
 
 ---
 
 ## 🛡️ Security Measures
 
 **1. AES-256 Encryption for API Keys**  
-- All API keys are encrypted and decrypted using AES-256 encryption.
-- Keys are securely stored inside memory during agent operations.
-- Even if the agent object is leaked, encrypted keys remain protected.
+- API keys are encrypted and decrypted in memory during agent operations.
+- Even if the agent object leaks, encrypted secrets remain secure.
 
 **2. Secure Secrets Management**  
-- No API keys are hardcoded into the repository.
-- GitHub Secrets are used to inject keys securely during CI/CD pipelines.
+- No API keys hardcoded anywhere in codebase.
+- Secrets are injected securely using GitHub Secrets during CI builds.
 
 **3. Input Sanitization**  
-- All user inputs (resume text, JD text) are sanitized before being sent to the LLM.
-- This prevents injection attacks, prompt leakage, and unexpected API behavior.
-- Input length limits and cleaning pipelines are applied.
+- All incoming texts are sanitized against unwanted characters and payloads.
+- Limits applied on input length to prevent overflow attacks.
+- Secure preprocessing before passing to OpenRouter APIs.
 
 ---
 
 ## 🧪 Testing Strategy (Test Driven Development)
 
 **1. Unit Tests**  
-- Extensive unit tests have been written for every critical function inside ResumeAgent and JDExtractorAgent.
-- Test cases validate different success and failure paths (e.g., missing API key, invalid prompts, empty responses).
+- Every core class and method (Agents, Utilities, Configs) have extensive unit tests.
+- Tests cover both success paths and error-handling paths (e.g., missing API Key, invalid prompt, response failure).
 
 **2. Integration Tests**  
-- Full end-to-end tests simulate the real-world flow from raw text input ➔ API call ➔ JSON output extraction.
+- Simulate real-world workflows: raw input ➔ agent extraction ➔ JSON parsing.
+- Verify correctness of structured outputs without real OpenRouter API dependency (mocked clients).
 
 **3. Coverage Enforcement**  
-- Test coverage is automatically measured and enforced.
-- Builds fail if coverage falls below 90%.
-- Coverage reports are generated in both terminal and HTML formats for easy visualization.
+- Code coverage automatically calculated using Pytest + Coverage.
+- Detailed HTML and terminal reports generated after each test run.
+- Current total code coverage: **91%** ✅
 
 **4. Test Driven Development (TDD)**  
-- The project follows TDD principles.
-- For every module, tests were written alongside code development to ensure correctness from Day 1.
+- Testing-first approach adopted during module development.
+- All modules were written with their tests designed first to validate specifications.
 
 ---
 
 ## ⚙️ CI/CD Pipeline (GitHub Actions)
 
 **1. Automated Testing**  
-- Every push to the `main` branch triggers GitHub Actions to:
-  - Create a clean environment.
-  - Install project dependencies.
-  - Run all unit and integration tests with coverage measurement.
+- Every push to `main` and pull requests targeting `main` automatically trigger:
+  - Fresh environment creation.
+  - Dependency installations.
+  - Unit and integration test execution with live coverage tracking.
 
-**2. Artifact Management**  
-- HTML coverage reports (`htmlcov/`) are uploaded as artifacts after every successful build.
+**2. Coverage Upload**  
+- Test coverage uploaded automatically to Codecov.
+- Separate flags used for Unit and Integration Tests (`unit`, `integration`).
 
-**3. Branch Protection**  
-- Only commits that pass all tests and maintain 90%+ coverage are allowed to merge into `main`.
-- Status checks are mandatory before merging.
+**3. Artifact Management**  
+- HTML coverage reports uploaded after each build for manual inspection if needed.
 
-**4. Secret Injection**  
-- GitHub Secrets injects sensitive API keys into the runner environment securely.
-- No need for local `.env` files during CI.
+**4. Branch Protection**  
+- PR builds must pass all Unit and Integration tests before merge approval.
+- Manual merging without tests passing is restricted via branch protection rules.
 
-**5. Clean Installable Project**  
-- The project uses `pip install .` style packaging.
-- `src/` folder layout is maintained with a proper `setup.py`.
+**5. Secret Management**  
+- No `.env` or secrets stored inside repo.
+- OpenRouter API key injected safely during CI/CD via GitHub Actions secrets.
+
+**6. Installable Clean Packaging**  
+- Project designed with a `setup.py` so it can be installed easily via `pip install .`.
+
+---
+
+## 🛠️ Development Workflow
+
+**Feature Branches and Bugfix Branches**
+
+- New functionalities are always developed inside feature branches: `feature/<feature-name>`.
+- Bugfixes are handled via `bugfix/<bug-description>` branches.
+- No direct commits are made to `main`.
+- Pull Requests (PRs) are created from feature/bugfix branches to `main`.
+- GitHub Actions automatically runs Unit and Integration tests on PRs.
+- Merges allowed only after all tests pass successfully.
+
+✅ This workflow ensures isolated, clean, and traceable development!
 
 ---
 
@@ -108,36 +130,39 @@ Each agent is isolated into its own clean Python module inside `src/`, following
 
 | Feature | Description |
 |:---|:---|
-| **OCR Pipeline** | Extract structured text from resume PDFs using OCR models. |
-| **Web Scraping Pipeline** | Scrape job descriptions directly from online job postings. |
-| **Matchmaking Models** | Build models to intelligently score matches between resumes and jobs. |
-| **Flask APIs** | Expose all functionalities via clean REST APIs for frontend and external integrations. |
-| **MongoDB Database Integration** | Store parsed resumes, JDs, and match results for persistent access and analytics. |
-| **ReactJS Frontend** | Build a modern UI for users to upload resumes and view match results. |
+| **OCR Pipeline** | Extract structured text from resume PDFs using OCR and Deep Learning models. |
+| **Web Scraping Pipeline** | Scrape job descriptions automatically from public job portals. |
+| **Matchmaking Models** | Build ML models to intelligently compute resume-JD matching scores. |
+| **Flask APIs** | Serve all functionalities through secured REST APIs for frontend/backend consumption. |
+| **MongoDB Database Integration** | Store resumes, JDs, parsed structures, and matching results. |
+| **ReactJS Frontend** | Build a responsive frontend where users can upload resumes, view matches, and recommendations. |
 
 ---
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Secure API Management, Full Testing Infrastructure, CI/CD Pipeline.
-- **In Progress:** OCR, Scraping, Matching, MongoDB Backend, Flask APIs, ReactJS Frontend.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **In Progress:** OCR Extraction, Web Scraping, Matchmaking Models, Flask APIs, MongoDB Integration, Frontend Development.
 
 ---
 
 # ⚙️ Developer Commands
 
-# To install python package
-### For editable mode -> `pip install -e .`
-### For normal mode -> `pip install .`
+## To install python package
+- For editable mode ➔ `pip install -e .`
+- For normal mode ➔ `pip install .`
 
-# To run pytests
-### Run all tests with coverage -> `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest --cov=src --cov-report=html:code_coverage/coverage_report tests/`
+## To run pytests
+- All tests + Coverage ➔  
+  `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest --cov=src --cov-report=html:code_coverage/coverage_report tests/`
+- Only Unit Tests ➔  
+  `PYTHONPATH=. pytest -m unit`
+- Only Integration Tests ➔  
+  `PYTHONPATH=. pytest -m integration`
+- Run both Unit and Integration Tests ➔  
+  `PYTHONPATH=. pytest --cov=src --cov-report=term-missing tests/`
 
-### Only unit tests -> `PYTHONPATH=. pytest -m unit` / `PYTHONPATH=. pytest --cov=src -m unit tests/`
-### Only integration tests -> `PYTHONPATH=. pytest -m integration` / `PYTHONPATH=. pytest --cov=src -m integration tests/`
-### Run both unit and integration tests -> `COVERAGE_FILE=.coverage PYTHONPATH=. COVERAGE_FILE=.coverage pytest --cov=src --cov-report=term-missing tests/`
-
-# To view coverage report
-### Open `code_coverage/coverage_report/index.html` after running tests
+## To view Coverage Report
+- Open `code_coverage/coverage_report/index.html` after running tests.
 
 ---
