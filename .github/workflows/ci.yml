@@ -28,26 +28,30 @@ jobs:
         python -m pip install --upgrade pip
         pip install .
         pip install -r requirements.txt
-    
-    - name: Prepare Temporary Folder
-      run: mkdir -p temp
 
     - name: Run Unit Tests Only
       run: |
-        COVERAGE_FILE=temp/.coverage.unit PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
+        COVERAGE_FILE=.coverage.unit PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
     
-    - name: Upload Unit Coverage File
+    - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
       with:
-        name: unit-coverage
-        path: temp/
+        name: unit-coverage-report
+        path: htmlcov/
+    
+    - name: Upload Unit Test Coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        files: .coverage.unit
+        flags: unit
+        fail_ci_if_error: false
 
   integration-tests:
     name: Run Integration Tests
     runs-on: ubuntu-latest
     needs: unit-tests 
 
-    # if: github.ref == 'refs/heads/main' 
+    if: github.event_name == 'pull_request' && github.base_ref == 'main'
 
     steps:
     - name: Checkout repository
@@ -66,58 +70,20 @@ jobs:
         python -m pip install --upgrade pip
         pip install .
         pip install -r requirements.txt
-    
-    - name: Prepare Temporary Folder
-      run: mkdir -p temp
 
     - name: Run Integration Tests
       run: |
-        COVERAGE_FILE=temp/.coverage.integration PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
+        COVERAGE_FILE=.coverage.integration PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
 
-    - name: Upload Integration Coverage File
+    - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
       with:
-        name: integration-coverage
-        path: temp/
-
-  combine-coverage:
-    name: Combine Coverage Reports
-    runs-on: ubuntu-latest
-    needs: [unit-tests, integration-tests]
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
-    - name: Download Unit Coverage
-      uses: actions/download-artifact@v4
-      with:
-        name: unit-coverage
-        path: coverage-temp/
-
-    - name: Download Integration Coverage
-      uses: actions/download-artifact@v4
-      with:
-        name: integration-coverage
-        path: coverage-temp/
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install coverage[toml]
-
-    - name: Combine Coverage Files and Generate Report
-      run: |
-        coverage combine coverage-temp/.coverage.unit coverage-temp/.coverage.integration
-        coverage html -d htmlcov/
-
-    - name: Upload Combined Coverage Report
-      uses: actions/upload-artifact@v4
-      with:
-        name: combined-coverage-report
+        name: integration-coverage-report
         path: htmlcov/
 
-    - name: Upload combined coverage to Codecov
+    - name: Upload Integration Test Coverage to Codecov
       uses: codecov/codecov-action@v4
       with:
-        fail_ci_if_error: true
+        files: .coverage.integration
+        flags: integration
+        fail_ci_if_error: false
