@@ -162,26 +162,3 @@ class EducationMatching:
         self.resumeEducation = None
         self.jobEducation = None
     
-if __name__ == "__main__":
-    resumeEducation = "Bachelor of Science in Computer Science, Master of Science in Data Science"
-    jobEducation = "Master's degree in Computer Science or related field"
-    
-    educationMatcher = EducationMatching()
-    educationMatcher.setInputs(resumeEducation, jobEducation)
-    score = educationMatcher.makeMatch()
-    print(f"Similarity Score: {score}")
-
-    educationMatcher.reset()
-
-    print("------------------------------")
-
-    resumeEducation = "Bachelor of Technology in Civil Engineering, Master of Technology in Structural Engineering"
-    jobEducation = "Master's degree in Computer Science or related field"
-    
-    educationMatcher = EducationMatching()
-    educationMatcher.setInputs(resumeEducation, jobEducation)
-    score = educationMatcher.makeMatch()
-    print(f"Similarity Score: {score}")
-    
-    # Reset the matcher
-    educationMatcher.reset()
