@@ -11,21 +11,29 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 # 🏋️ Planned Versions
 
-## 🔢 V0.1.0 - Core Extraction Engine
+## 🔢 V0.1.0 - Core Extraction Engine - (Currently Under Development)
 **Goal:**
 - Build structured Resume and JD data extraction modules.
 - Complete ResumeAgent and JobDescriptionAgent.
-- Extract fields like Technical Skills, Education, Experience, Certifications, Designation, Tools, Soft Skills, Pay, Location.
+- Extract fields like Education, Experience, Technical Skills, Soft Skills, Tools, Certifications, Designation, Location.
 
 **Key Modules:**
-- Resume Extraction Agent
-- JD Extraction Agent
+- Resume Extraction Agent ✅
+- JD Extraction Agent ✅
 - Entity Matching Engines
-- Modular src/ Architecture
-- Secure API Key Management (AES-256)
-- Input Sanitization
-- Full Unit & Integration Testing Setup
-- Code Coverage 90%+ with CI/CD Integration
+    - Education Matchmaker ✅
+    - Experience Matchmaker ✅
+    - Technical Skills Matchmaker ❌ 
+    - Soft Skills Matchmaker ❌ 
+    - Tools Matchmaker ❌ 
+    - Certifications Matchmaker ❌ 
+    - Designation Matchmaker ❌
+    - Location Matchmaker ❌
+- Modular src/ Architecture ✅
+- Secure API Key Management (AES-256) ✅
+- Input Sanitization ✅
+- Full Unit & Integration Testing Setup ✅
+- Code Coverage 90%+ with CI/CD Integration ✅
 
 **Milestone:**
 > Backend is able to reliably parse raw text resumes and job descriptions into clean structured JSON formats and is also capable of generating scores for each entity in JSON.
@@ -135,14 +143,19 @@ Each version milestone focuses on building a critical subsystem required for a f
 ---
 
 # 📅 Current Status
-| Version | Progress |
-|:---|:---|
-| V0.1.0 | ⏳ In Progress |
-| V0.2.0 | ❌ Pending |
-| V0.3.0 | ❌ Pending |
-| V0.4.0 | ❌ Pending |
-| V0.5.0 | ❌ Pending |
-| V1.0.0 | ❌ Pending |
+| Version |   Progress    | Deadline |
+|:---|:---|:---|
+| V0.1.0 | ⏳ In Progress | May 1st 2025  |
+| V0.2.0 | ❌ Pending     | May 2nd 2025  |
+| V0.3.0 | ❌ Pending     | May 4th 2025  |
+| V0.4.0 | ❌ Pending     | May 8th 2025  |
+| V0.5.0 | ❌ Pending     | May 15th 2025 |
+| V1.0.0 | ❌ Pending     | June 1st 2025 |
+
+| Test |   Progress    | Deadline |
+|:---|:---|:---|
+| Performance | ❌ Pending | June 2nd 2025  |
+| Evaluation  | ❌ Pending | June 3rd 2025  |
 
 ---
 
