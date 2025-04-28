@@ -25,6 +25,7 @@ setup(
         'scikit-learn',
         'pandas',
         'numpy',
+        'regex'
     ]
 )
 
