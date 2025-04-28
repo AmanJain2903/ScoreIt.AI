@@ -231,26 +231,3 @@ class ExperienceMatching:
         gc.collect()
         self.resumeExperience = None
         self.jobExperience = None
-    
-if __name__ == "__main__":
-    resumeExperience = "Worked for 3 yrs as a cloud engineer"
-    jobExperience = "2.6 years of mandatory experience in software industry"
-    ExperienceMatcher = ExperienceMatching()
-    ExperienceMatcher.setInputs(resumeExperience, jobExperience)
-    score = ExperienceMatcher.makeMatch()
-    print(f"Similarity Score: {score}")
-
-    ExperienceMatcher.reset()
-
-    print("------------------------------")
-
-    resumeExperience = "Internship for 5.9 years in product management"
-    jobExperience = "Minimum 15.9 years of relevant experience required in product management"
-    
-    ExperienceMatcher = ExperienceMatching()
-    ExperienceMatcher.setInputs(resumeExperience, jobExperience)
-    score = ExperienceMatcher.makeMatch()
-    print(f"Similarity Score: {score}")
-    
-    # Reset the matcher
-    ExperienceMatcher.reset()

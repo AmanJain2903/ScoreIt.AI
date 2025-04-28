@@ -21,6 +21,12 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ---
 
+## 📜 Detailed Release Roadmap
+
+👉 [View Full Release Plan Here](./RELEASE_PLAN.md)
+
+---
+
 ## ✅ Completed Modules
 
 **1. Resume Extraction Agent**  
