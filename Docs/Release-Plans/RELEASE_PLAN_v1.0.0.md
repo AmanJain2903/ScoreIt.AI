@@ -23,8 +23,8 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Entity Matching Engines
     - Education Matchmaker ✅
     - Experience Matchmaker ✅
-    - Technical Skills Matchmaker ❌ 
-    - Soft Skills Matchmaker ❌ 
+    - Technical Skills Matchmaker ✅ 
+    - Soft Skills Matchmaker ✅ 
     - Tools Matchmaker ❌ 
     - Certifications Matchmaker ❌ 
     - Designation Matchmaker ❌
