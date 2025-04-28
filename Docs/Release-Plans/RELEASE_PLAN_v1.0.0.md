@@ -154,7 +154,8 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 | Test |   Progress    | Deadline |
 |:---|:---|:---|
-| Performance | ❌ Pending | June 2nd 2025  |
+| Selenium    | ❌ Pending | June 2nd 2025  |
+| Performance | ❌ Pending | June 3nd 2025  |
 | Evaluation  | ❌ Pending | June 3rd 2025  |
 
 ---
