@@ -64,7 +64,7 @@
                       | - Matching Results History    |
                       | - AI Suggestions History      |
                       +-------------------------------+
-          ```
+```
 
 ---
 
