@@ -1,8 +1,12 @@
 import pytest
 from src.resume_extractor_agent.resume_agent import ResumeAgent
 import os
+import pandas as pd
+import numpy as np
 
 pytestmark = pytest.mark.integration
+
+dataPath = 'data/resume_dataset.csv'
 
 @pytest.fixture
 def resume_agent():
@@ -15,9 +19,15 @@ def resume_agent():
     )
 
 def test_resume_agent_end_to_end(resume_agent):
-    input_text = "Software engineer with 5 years of experience in Python, AWS, and Machine Learning. MS in Computer Science."
+    dataset = pd.read_csv(dataPath)
+    randomIndex = np.random.randint(0, len(dataset))
+    resume = dataset['Resume'].iloc[randomIndex]
+    
+    while pd.isna(resume) or len(resume) < 0 or not isinstance(resume, str):
+        randomIndex = np.random.randint(0, len(dataset))
+        resume = dataset['Resume'].iloc[randomIndex]
 
-    resume_agent.setUserPrompt(input_text)
+    resume_agent.setUserPrompt(resume)
     output = resume_agent.getJsonOutput()
 
     assert isinstance(output, dict)

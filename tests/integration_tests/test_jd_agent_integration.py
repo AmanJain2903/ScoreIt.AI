@@ -1,8 +1,12 @@
 import pytest
 from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
 import os
+import pandas as pd
+import numpy as np
 
 pytestmark = pytest.mark.integration
+
+dataPath = 'data/job_description_dataset.csv'
 
 @pytest.fixture
 def jd_agent():
@@ -15,9 +19,15 @@ def jd_agent():
     )
 
 def test_jd_agent_end_to_end(jd_agent):
-    input_text = "Looking for a Data Scientist with expertise in Python, TensorFlow, and cloud computing. Bachelor's degree required."
+    dataset = pd.read_csv(dataPath)
+    randomIndex = np.random.randint(0, len(dataset))
+    description = dataset['Description'].iloc[randomIndex]
+    
+    while pd.isna(description) or len(description) < 0 or not isinstance(description, str):
+        randomIndex = np.random.randint(0, len(dataset))
+        description = dataset['Description'].iloc[randomIndex]
 
-    jd_agent.setUserPrompt(input_text)
+    jd_agent.setUserPrompt(description)
     output = jd_agent.getJsonOutput()
 
     assert isinstance(output, dict)
