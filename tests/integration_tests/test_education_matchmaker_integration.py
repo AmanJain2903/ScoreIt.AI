@@ -6,7 +6,7 @@ config = config.Config()
 
 pytestmark = pytest.mark.integration
 
-dataPath = 'data/education_matching_dataset.csv'
+dataPath = 'data/education_dataset.csv'
 
 @pytest.fixture
 def education_matchmaker():
