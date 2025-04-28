@@ -28,16 +28,19 @@ jobs:
         python -m pip install --upgrade pip
         pip install .
         pip install -r requirements.txt
+    
+    - name: Prepare Temporary Folder
+      run: mkdir -p temp
 
     - name: Run Unit Tests Only
       run: |
-        COVERAGE_FILE=.coverage.unit PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
+        COVERAGE_FILE=temp/.coverage.unit PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
     
     - name: Upload Unit Coverage File
       uses: actions/upload-artifact@v4
       with:
         name: unit-coverage
-        path: ./.coverage.unit
+        path: temp/
 
   integration-tests:
     name: Run Integration Tests
@@ -63,16 +66,19 @@ jobs:
         python -m pip install --upgrade pip
         pip install .
         pip install -r requirements.txt
+    
+    - name: Prepare Temporary Folder
+      run: mkdir -p temp
 
     - name: Run Integration Tests
       run: |
-        COVERAGE_FILE=.coverage.integration PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
+        COVERAGE_FILE=temp/.coverage.integration PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
 
     - name: Upload Integration Coverage File
       uses: actions/upload-artifact@v4
       with:
         name: integration-coverage
-        path: ./.coverage.integration
+        path: temp/
 
   combine-coverage:
     name: Combine Coverage Reports
