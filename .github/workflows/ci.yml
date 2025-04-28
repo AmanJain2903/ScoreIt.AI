@@ -32,6 +32,12 @@ jobs:
     - name: Run Unit Tests Only
       run: |
         COVERAGE_FILE=.coverage.unit PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
+        sleep 5
+        # Check if the coverage file was created
+        if [ ! -f .coverage.unit ]; then
+          echo "Coverage file not found!"
+          exit 1
+        fi
 
     - name: List files after pytest
       run: |
@@ -71,6 +77,12 @@ jobs:
     - name: Run Integration Tests
       run: |
         COVERAGE_FILE=.coverage.integration PYTHONPATH=. pytest --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
+        sleep 5
+        # Check if the coverage file was created
+        if [ ! -f .coverage.integration ]; then
+          echo "Coverage file not found!"
+          exit 1
+        fi
 
     - name: Upload Integration Coverage File
       uses: actions/upload-artifact@v4
