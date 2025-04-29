@@ -37,10 +37,10 @@ class SkillSimilarity:
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
         for i in range(len(self.model1Score)):
-            if self.model1Score[i] > 0.7:
-                self.model1Score[i] = min(1.0, self.model1Score[i] * 1.2)
-            if self.model2Score[i] < 0.3:
-                self.model2Score[i] = self.model2Score[i] * 0.8
+            if self.model1Score[i] < 0.5:
+                self.model1Score[i] = self.model1Score[i] * 0.5
+            if self.model2Score[i] < 0.5:
+                self.model2Score[i] = self.model2Score[i] * 0.5
         self.averageEnsemble()
     
     def getEnsembleScore(self):
@@ -101,13 +101,17 @@ class SkillMatching:
         try:
             model1Scores = []
             model2Scores = []
+            matchedSkills = {}
             for jobSkill in self.jobSkill:
                 maxModel1Score = 0
                 maxModel2Score = 1
                 jobSkill = jobSkill.strip()
                 jobEmbeddings1 = self.model1.encode([jobSkill])
                 jobEmbeddings2 = self.model2.encode([jobSkill])
+                currBest = None
                 for resumeSkill in self.resumeSkill:
+                    if resumeSkill in matchedSkills:
+                        continue
                     resumeSkill = resumeSkill.strip()
                     if not jobSkill or not resumeSkill:
                         continue
@@ -115,10 +119,14 @@ class SkillMatching:
                     resumeEmbeddings2 = self.model2.encode([resumeSkill])
                     similarity1 = max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0)
                     similarity2 = max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0)
-                    maxModel1Score = max(maxModel1Score, similarity1)
-                    maxModel2Score = max(maxModel2Score, similarity2)
+                    if similarity1>maxModel1Score:
+                        maxModel1Score = similarity1
+                        maxModel2Score = similarity2
+                        currBest = resumeSkill
                 model1Scores.append(maxModel1Score)
                 model2Scores.append(maxModel2Score)
+                if currBest:
+                    matchedSkills[currBest] = jobSkill
             
             self.similarity.setModel1Score(model1Scores)
             self.similarity.setModel2Score(model2Scores)
