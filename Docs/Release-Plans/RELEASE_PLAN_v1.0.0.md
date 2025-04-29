@@ -25,7 +25,7 @@ Each version milestone focuses on building a critical subsystem required for a f
     - Experience Matchmaker ✅
     - Technical Skills Matchmaker ✅ 
     - Soft Skills Matchmaker ✅ 
-    - Tools Matchmaker ❌ 
+    - Tools Matchmaker ✅ 
     - Certifications Matchmaker ❌ 
     - Designation Matchmaker ❌
     - Location Matchmaker ❌

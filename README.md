@@ -72,7 +72,16 @@ ScoreIt.AI is an AI-powered system designed to:
   - Handles the natural fuzziness of soft skills using semantic similarity boosting.
   - Final soft skill match score = average of best semantically matched JD soft skills per Resume soft skill.
 
-**7. Modular Clean Architecture**  
+**7. Tool Matching Module**  
+- Specialized matcher (`ToolMatching`) built upon the core architecture used in skills matching modules, but **tuned specifically for technical tool names**.
+  - Matches resume tools against JD tools using **semantic sentence transformers** (dual model ensembling).
+  - Enforces **strict 1:1 matching** to prevent inflated scores caused by multiple overlaps.
+  - Applies **penalization heuristics**: weak similarity scores are aggressively downweighted to maintain precision.
+  - Final tool match score = **average of maximum 1:1 semantic similarity scores**, normalized and boosted for accurate evaluation.
+
+---
+
+## Modular Clean Architecture**  
 - Each module is isolated inside `src/`, following **package-per-responsibility** architecture.
 - Config management, secure utils, and common components well-separated.
 
