@@ -1,501 +1,501 @@
-resume_edu,jd_edu,expected_match,label
-Bachelor of Journalism,Bachelors of Journalism,True,0.57
-Bachelor of Oceanography,Bachelors of Oceanography,True,0.48
-Bachelor of Education,Bachelors of Education,True,0.6
-Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.73
-Bachelor of Aerospace Engineering,B.Tech of Aerospace Engineering,True,0.46
-Bachelor of Criminal Justice,Bachelor's of Criminal Justice,True,0.46
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.74
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.62
-Bachelor of Commerce,Bachelors of Commerce,True,0.43
-Bachelor of Agricultural Science,bachelor's of agricultural science,True,0.58
-Bachelor of Anthropology,Bachelor's of Anthropology,True,0.43
-Master of Management Studies,Masters of Management Studies,True,0.43
-Bachelor of Engineering in Electrical Engineering,B.Sc of Engineering in Electrical Engineering,True,0.54
-Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.21
-Bachelor of Arts in History,Bachelors of Arts in History,True,0.24
-Bachelor of Theology,Bachelor's of Theology,True,0.42
-Bachelor of Law (LLB),B.Sc of Law (LLB),True,0.35
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.55
-Bachelor of Journalism,Bachelor's of Journalism,True,0.36
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.29
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.72
-Bachelor of Engineering in Mechanical Engineering,bachelor's of engineering in mechanical engineering,True,0.47
-Bachelor of Anthropology,B.Sc of Anthropology,True,0.51
-Bachelor of Music,B.Tech of Music,True,0.29
-Bachelor of Applied Science,Bachelors of Applied Science,True,0.42
-Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.52
-Bachelor of Pharmacy,Bachelors of Pharmacy,True,0.33
-Master of Engineering in Computer Networks,Master's of Engineering in Computer Networks,True,0.56
-Bachelor of Hotel Management,B.Sc of Hotel Management,True,0.41
-Bachelor of Laws and Arts,bachelor's of laws and arts,True,0.46
-Bachelor of Psychology,Bachelor's of Psychology,True,0.41
-Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.78
-Bachelor of Hotel Management,B.Sc of Hotel Management,True,0.5
-Bachelor of Social Work,Bachelor's of Social Work,True,0.34
-Bachelor of Physical Education,Bachelor's of Physical Education,True,0.62
-Master of Management Studies,M.Sc of Management Studies,True,0.32
-Bachelor of Law (LLB),bachelors of law (llb),True,0.53
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.21
-Bachelor of Biomedical Engineering,Bachelor's of Biomedical Engineering,True,0.3
-Master of Science in Data Analytics,M.Tech of Science in Data Analytics,True,0.53
-Doctor of Medicine,Doctorate of Medicine,True,0.61
-Bachelor of Engineering in Electrical Engineering,bachelor's of engineering in electrical engineering,True,0.53
-Bachelor of Environmental Science,B.Sc of Environmental Science,True,0.48
-Doctor of Philosophy in Physics,phd of philosophy in physics,True,0.45
-Master of Computer Applications,M.Sc of Computer Applications,True,0.28
-Bachelor of Architecture,Bachelor's of Architecture,True,0.39
-Bachelor of Education,B.Tech of Education,True,0.43
-Bachelor of Business Administration,B.Sc of Business Administration,True,0.66
-Bachelor of Psychology,Bachelors of Psychology,True,0.55
-Bachelor of Biomedical Engineering,b.sc of biomedical engineering,True,0.24
-Bachelor of Arts in Political Science,B.Sc of Arts in Political Science,True,0.55
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.44
-Master of Financial Engineering,M.Sc of Financial Engineering,True,0.4
-Bachelor of Agricultural Science,Bachelor's of Agricultural Science,True,0.59
-Bachelor of Data Science,Bachelor's of Data Science,True,0.65
-Bachelor of Applied Science,B.Tech of Applied Science,True,0.64
-Bachelor of Engineering in Mechanical Engineering,B.Sc of Engineering in Mechanical Engineering,True,0.37
-Master of Technology in Artificial Intelligence,masters of technology in artificial intelligence,True,0.45
-Bachelor of Technology in Computer Science,Bachelor's of Technology in Computer Science,True,0.55
-Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True,0.65
-Bachelor of Environmental Science,Bachelor's of Environmental Science,True,0.43
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.47
-Bachelor of Library Science,B.Tech of Library Science,True,0.33
-Bachelor of Arts in History,B.Tech of Arts in History,True,0.32
-Bachelor of Social Work,bachelors of social work,True,0.62
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.7
-Bachelor of Journalism,Bachelors of Journalism,True,0.49
-Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.65
-Bachelor of Science in Nursing,b.tech of science in nursing,True,0.55
-Master of Business Administration,M.Sc of Business Administration,True,0.4
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.55
-Bachelor of Engineering in Electrical Engineering,B.Sc of Engineering in Electrical Engineering,True,0.73
-Bachelor of Library Science,B.Tech of Library Science,True,0.49
-Bachelor of Architecture,B.Tech of Architecture,True,0.73
-Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True,0.11
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.62
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.51
-Master of Public Health,M.Tech of Public Health,True,0.46
-Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True,0.51
-Bachelor of Criminal Justice,Bachelors of Criminal Justice,True,0.2
-Bachelor of Anthropology,B.Tech of Anthropology,True,0.47
-Bachelor of Social Work,Bachelors of Social Work,True,0.55
-Bachelor of Software Engineering,Bachelors of Software Engineering,True,0.72
-Bachelor of Commerce,bachelors of commerce,True,0.42
-Bachelor of Design,bachelors of design,True,0.38
-Bachelor of Technology in Computer Science,Bachelors of Technology in Computer Science,True,0.42
-Bachelor of Law (LLB),Bachelors of Law (LLB),True,0.64
-Master of Technology in Artificial Intelligence,M.Sc of Technology in Artificial Intelligence,True,0.55
-Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True,0.42
-Bachelor of Veterinary Science,Bachelor's of Veterinary Science,True,0.58
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.51
-Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True,0.65
-Bachelor of Veterinary Science,B.Sc of Veterinary Science,True,0.39
-Bachelor of Chemical Engineering,B.Tech of Chemical Engineering,True,0.45
-Master of Business Administration,m.sc of business administration,True,0.44
-Bachelor of Physical Education,b.sc of physical education,True,0.28
-Bachelor of Library Science,Bachelor's of Library Science,True,0.54
-Bachelor of Criminal Justice,B.Sc of Criminal Justice,True,0.54
-Bachelor of Science in Biotechnology,B.Sc of Science in Biotechnology,True,0.5
-Master of Computer Applications,M.Tech of Computer Applications,True,0.46
-Master of Technology in Artificial Intelligence,Masters of Technology in Artificial Intelligence,True,0.29
-Bachelor of Cognitive Science,B.Tech of Cognitive Science,True,0.44
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.45
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.38
-Bachelor of Design,B.Sc of Design,True,0.48
-Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True,0.56
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.78
-Bachelor of Physical Education,B.Sc of Physical Education,True,0.53
-Bachelor of Business Administration,Bachelors of Business Administration,True,0.54
-Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True,0.49
-Bachelor of Oceanography,Bachelor's of Oceanography,True,0.21
-Bachelor of Data Science,Bachelors of Data Science,True,0.5
-Bachelor of Psychology,b.sc of psychology,True,0.51
-Bachelor of Laws and Arts,B.Sc of Laws and Arts,True,0.87
-Master of Public Health,M.Tech of Public Health,True,0.47
-Bachelor of Science in Mathematics,B.Sc of Science in Mathematics,True,0.55
-Master of Business Administration,Masters of Business Administration,True,0.49
-Bachelor of Music,B.Tech of Music,True,0.32
-Bachelor of Physical Education,b.tech of physical education,True,0.67
-Bachelor of Business Administration,B.Sc of Business Administration,True,0.61
-Bachelor of Law (LLB),b.tech of law (llb),True,0.62
-Bachelor of Fine Arts,Bachelor's of Fine Arts,True,0.36
-Doctor of Philosophy in Physics,phd of philosophy in physics,True,0.71
-Bachelor of Engineering in Mechanical Engineering,Bachelors of Engineering in Mechanical Engineering,True,0.29
-Bachelor of Library Science,B.Tech of Library Science,True,0.59
-Bachelor of Science in Biotechnology,B.Tech of Science in Biotechnology,True,0.83
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.35
-Bachelor of Applied Science,B.Tech of Applied Science,True,0.42
-Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.51
-Bachelor of Chemical Engineering,B.Sc of Chemical Engineering,True,0.42
-Master of Social Work,Master's of Social Work,True,0.27
-Master of Business Administration,masters of business administration,True,0.51
-Doctor of Philosophy in Physics,Doctorate of Philosophy in Physics,True,0.34
-Master of Technology in Artificial Intelligence,M.Sc of Technology in Artificial Intelligence,True,0.57
-Bachelor of Education,Bachelor's of Education,True,0.36
-Bachelor of Hotel Management,B.Sc of Hotel Management,True,0.73
-Bachelor of Music,Bachelor's of Music,True,0.38
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.45
-Bachelor of Veterinary Science,Bachelor's of Veterinary Science,True,0.62
-Bachelor of Cognitive Science,b.sc of cognitive science,True,0.32
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.53
-Bachelor of Statistics,Bachelors of Statistics,True,0.7
-Bachelor of Science in Information Technology,b.sc of science in information technology,True,0.26
-Bachelor of Music,Bachelor's of Music,True,0.53
-Bachelor of Architecture,b.tech of architecture,True,0.54
-Bachelor of Fine Arts,B.Tech of Fine Arts,True,0.62
-Master of Business Administration,M.Sc of Business Administration,True,0.31
-Bachelor of Science in Information Technology,B.Tech of Science in Information Technology,True,0.3
-Bachelor of Fisheries Science,B.Tech of Fisheries Science,True,0.58
-Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True,0.54
-Bachelor of Aerospace Engineering,B.Sc of Aerospace Engineering,True,0.54
-Bachelor of Software Engineering,B.Sc of Software Engineering,True,0.55
-Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.4
-Bachelor of Fine Arts,B.Sc of Fine Arts,True,0.53
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.54
-Bachelor of Theology,B.Sc of Theology,True,0.39
-Bachelor of Fine Arts,Bachelor's of Fine Arts,True,0.78
-Bachelor of Journalism,bachelor's of journalism,True,0.57
-Master of Public Health,Masters of Public Health,True,0.32
-Bachelor of Social Work,B.Sc of Social Work,True,0.6
-Bachelor of Journalism,Bachelor's of Journalism,True,0.35
-Bachelor of Social Work,Bachelors of Social Work,True,0.62
-Bachelor of Pharmacy,B.Tech of Pharmacy,True,0.67
-Bachelor of Library Science,Bachelors of Library Science,True,0.38
-Bachelor of Arts in History,Bachelor's of Arts in History,True,0.64
-Bachelor of Library Science,B.Sc of Library Science,True,0.56
-Master of Social Work,m.tech of social work,True,0.62
-Bachelor of Oceanography,Bachelor's of Oceanography,True,0.78
-Bachelor of Arts in History,bachelors of arts in history,True,0.46
-Bachelor of Forestry,Bachelors of Forestry,True,0.39
-Doctor of Medicine,PhD of Medicine,True,0.37
-Master of Management Studies,M.Sc of Management Studies,True,0.38
-Bachelor of Forestry,Bachelors of Forestry,True,0.49
-Bachelor of Engineering in Electrical Engineering,b.sc of engineering in electrical engineering,True,0.55
-Bachelor of Business Administration,bachelors of business administration,True,0.54
-Doctor of Medicine,PhD of Medicine,True,0.62
-Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.5
-Bachelor of Environmental Science,Bachelor's of Environmental Science,True,0.72
-Bachelor of Theology,Bachelors of Theology,True,0.46
-Bachelor of Veterinary Science,bachelor's of veterinary science,True,0.91
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.59
-Bachelor of Information Systems,bachelor's of information systems,True,0.37
-Bachelor of Science in Nursing,B.Sc of Science in Nursing,True,0.34
-Master of Social Work,M.Sc of Social Work,True,0.57
-Bachelor of Cognitive Science,B.Sc of Cognitive Science,True,0.47
-Bachelor of Business Administration,Bachelor's of Business Administration,True,0.61
-Bachelor of Physical Education,Bachelor's of Physical Education,True,0.57
-Bachelor of Commerce,B.Tech of Commerce,True,0.49
-Master of Technology in Artificial Intelligence,Master's of Technology in Artificial Intelligence,True,0.37
-Bachelor of Pharmacy,Bachelor's of Pharmacy,True,0.27
-Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True,0.43
-Bachelor of Anthropology,B.Tech of Anthropology,True,0.63
-Master of Engineering in Computer Networks,m.tech of engineering in computer networks,True,0.53
-Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True,0.31
-Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.53
-Bachelor of Agricultural Science,bachelor's of agricultural science,True,0.56
-Doctor of Medicine,phd of medicine,True,0.37
-Bachelor of Science in Mathematics,bachelor's of science in mathematics,True,0.52
-Bachelor of Hotel Management,Bachelors of Hotel Management,True,0.51
-Bachelor of Applied Science,B.Sc of Applied Science,True,0.33
-Bachelor of Fine Arts,B.Tech of Fine Arts,True,0.55
-Bachelor of Chemical Engineering,Bachelor's of Chemical Engineering,True,0.58
-Bachelor of Arts in History,B.Tech of Arts in History,True,0.66
-Master of Science in Data Analytics,Masters of Science in Data Analytics,True,0.66
-Bachelor of Criminal Justice,Bachelors of Criminal Justice,True,0.29
-Bachelor of Agricultural Science,Bachelor's of Agricultural Science,True,0.36
-Bachelor of Theology,Bachelors of Theology,True,0.58
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.58
-Master of Science in Data Analytics,master's of science in data analytics,True,0.58
-Doctor of Medicine,PhD of Medicine,True,1.0
-Bachelor of Physical Education,B.Tech of Physical Education,True,0.59
-Bachelor of Technology in Computer Science,B.Tech of Technology in Computer Science,True,0.67
-Master of Management Studies,Master's of Management Studies,True,0.64
-Master of Business Administration,Masters of Business Administration,True,0.6
-Bachelor of Chemical Engineering,B.Tech of Chemical Engineering,True,0.45
-Bachelor of Information Systems,B.Sc of Information Systems,True,0.61
-Bachelor of Pharmacy,B.Tech of Pharmacy,True,0.38
-Bachelor of Statistics,B.Sc of Statistics,True,0.46
-Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True,0.43
-Bachelor of Social Work,B.Sc of Social Work,True,0.51
-Bachelor of Commerce,B.Sc of Commerce,True,0.85
-Bachelor of Veterinary Science,Bachelors of Veterinary Science,True,0.22
-Master of Financial Engineering,M.Sc of Financial Engineering,True,0.6
-Bachelor of Statistics,Bachelors of Statistics,True,0.26
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.43
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.66
-Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True,0.51
-Bachelor of Data Science,B.Sc of Data Science,True,0.34
-Bachelor of Aerospace Engineering,B.Sc of Aerospace Engineering,True,0.39
-Master of Financial Engineering,Master's of Financial Engineering,True,0.6
-Bachelor of Criminal Justice,bachelors of criminal justice,True,0.39
-Bachelor of Criminal Justice,B.Tech of Criminal Justice,True,0.53
-Master of Public Health,M.Tech of Public Health,True,0.51
-Bachelor of Hotel Management,Bachelors of Hotel Management,True,0.4
-Bachelor of Biomedical Engineering,B.Sc of Biomedical Engineering,True,0.82
-Master of Science in Data Analytics,M.Sc of Science in Data Analytics,True,0.6
-Bachelor of Psychology,B.Sc of Psychology,True,0.2
-Master of Engineering in Computer Networks,Master's of Engineering in Computer Networks,True,0.53
-Bachelor of Statistics,Bachelors of Statistics,True,0.4
-Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.63
-Master of Management Studies,masters of management studies,True,0.38
-Bachelor of Library Science,bachelor's of library science,True,0.48
-Bachelor of Chemical Engineering,bachelors of chemical engineering,True,0.58
-Bachelor of Business Administration,B.Tech of Business Administration,True,0.63
-Bachelor of Data Science,Bachelor's of Data Science,True,0.32
-Bachelor of Architecture,Bachelor's of Architecture,True,0.45
-Bachelor of Cognitive Science,Bachelors of Cognitive Science,True,0.43
-Bachelor of Commerce,b.sc of commerce,True,0.4
-Bachelor of Software Engineering,Bachelor's of Software Engineering,True,0.76
-Bachelor of Forestry,Bachelor's of Forestry,True,0.56
-Bachelor of Business Administration,Bachelors of Business Administration,True,0.31
-Bachelor of Business Administration,B.Sc of Business Administration,True,0.64
-Bachelor of Pharmacy,Bachelors of Pharmacy,True,0.82
-Bachelor of Education,B.Sc of Education,True,0.65
-Master of Business Administration,M.Sc of Business Administration,True,0.27
-Bachelor of Laws and Arts,Bachelor's of Laws and Arts,True,0.43
-Bachelor of Fisheries Science,Bachelor's of Fisheries Science,True,0.69
-Bachelor of Education,B.Tech of Education,True,0.39
-Master of Business Administration,Masters of Business Administration,True,0.57
-Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.62
-Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.36
-Master of Management Studies,M.Sc of Management Studies,True,0.49
-Bachelor of Music,B.Tech of Music,True,0.01
-Bachelor of Science in Information Technology,B.Sc of Science in Information Technology,True,0.35
-Bachelor of Law (LLB),Bachelor's of Law (LLB),True,0.46
-Master of Management Studies,M.Sc of Management Studies,True,0.31
-Bachelor of Environmental Science,B.Sc of Environmental Science,True,0.74
-Bachelor of Applied Science,B.Sc of Applied Science,True,0.29
-Bachelor of Forestry,Bachelors of Forestry,True,0.43
-Bachelor of Veterinary Science,b.sc of veterinary science,True,0.52
-Doctor of Medicine,PhD of Medicine,True,0.72
-Master of Technology in Artificial Intelligence,Masters of Technology in Artificial Intelligence,True,0.28
-Bachelor of Education,Bachelors of Education,True,0.67
-Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.5
-Bachelor of Arts in Political Science,B.Sc of Arts in Political Science,True,0.35
-Bachelor of Fisheries Science,b.tech of fisheries science,True,0.57
-Master of Computer Applications,M.Sc of Computer Applications,True,0.53
-Bachelor of Criminal Justice,Bachelor's of Criminal Justice,True,0.41
-Bachelor of Architecture,b.sc of architecture,True,0.51
-Bachelor of Psychology,B.Tech of Psychology,True,0.44
-Bachelor of Hotel Management,b.sc of hotel management,True,0.52
-Bachelor of Biomedical Engineering,B.Sc of Biomedical Engineering,True,0.6
-Bachelor of Science in Biotechnology,Bachelors of Science in Biotechnology,True,0.74
-Bachelor of Cognitive Science,B.Sc of Cognitive Science,True,0.31
-Bachelor of Library Science,bachelor's of library science,True,0.82
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.21
-Bachelor of Cognitive Science,B.Tech of Cognitive Science,True,0.48
-Master of Engineering in Computer Networks,M.Sc of Engineering in Computer Networks,True,0.59
-Bachelor of Oceanography,Bachelors of Oceanography,True,0.54
-Bachelor of Psychology,B.Tech of Psychology,True,0.41
-Master of Management Studies,Master's of Management Studies,True,0.47
-Bachelor of Information Systems,Bachelors of Information Systems,True,0.43
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.41
-Bachelor of Music,Bachelors of Music,True,0.63
-Bachelor of Hotel Management,Bachelors of Hotel Management,True,0.55
-Bachelor of Commerce,b.sc of commerce,True,0.4
-Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.63
-Bachelor of Library Science,B.Sc of Library Science,True,0.55
-Bachelor of Statistics,B.Tech of Statistics,True,0.62
-Bachelor of Science in Information Technology,bachelor's of science in information technology,True,0.59
-Bachelor of Veterinary Science,B.Tech of Environmental Science,False,0.38
-Bachelor of Commerce,B.Sc of Hotel Management,False,0.42
-Bachelor of Biomedical Engineering,Master's of Computer Applications,False,0.61
-Bachelor of Social Work,b.tech of science in information technology,False,0.59
-Bachelor of Performing Arts,B.Sc of Science in Biotechnology,False,0.5
-Master of Science in Data Analytics,B.Tech of Music,False,0.52
-Bachelor of Chemical Engineering,b.tech of science in information technology,False,0.69
-Bachelor of Laws and Arts,B.Sc of Engineering in Electrical Engineering,False,0.41
-Bachelor of Architecture,Bachelor's of Biomedical Engineering,False,0.58
-Bachelor of Psychology,b.sc of social work,False,0.47
-Bachelor of Science in Biotechnology,doctorate of medicine,False,0.47
-Doctor of Medicine,Bachelors of Pharmacy,False,0.66
-Bachelor of Aerospace Engineering,B.Sc of Forestry,False,0.62
-Bachelor of Library Science,Bachelor's of Software Engineering,False,0.62
-Bachelor of Law (LLB),Bachelors of Architecture,False,0.7
-Bachelor of Commerce,Bachelors of Science in Nursing,False,0.5
-Bachelor of Forestry,Bachelor's of Laws and Arts,False,0.6
-Master of Public Health,PhD of Medicine,False,0.45
-Bachelor of Theology,b.sc of physical education,False,0.55
-Bachelor of Commerce,Bachelors of Education,False,0.48
-Bachelor of Business Administration,bachelor's of music,False,0.51
-Bachelor of Laws and Arts,B.Sc of Engineering in Electrical Engineering,False,0.59
-Master of Computer Applications,B.Sc of Applied Science,False,0.38
-Bachelor of Architecture,b.sc of theology,False,0.81
-Bachelor of Social Work,Bachelors of Journalism,False,0.35
-Bachelor of Biomedical Engineering,Bachelors of Architecture,False,0.32
-Bachelor of Performing Arts,Master's of Management Studies,False,0.67
-Bachelor of Forestry,Bachelors of Information Systems,False,0.62
-Bachelor of Veterinary Science,Bachelor's of Fine Arts,False,0.59
-Bachelor of Laws and Arts,B.Sc of Applied Science,False,0.59
-Bachelor of Arts in Political Science,B.Sc of Pharmacy,False,0.5
-Master of Public Health,Bachelors of Data Science,False,0.37
-Bachelor of Engineering in Electrical Engineering,B.Tech of Performing Arts,False,0.51
-Bachelor of Engineering in Mechanical Engineering,B.Tech of Psychology,False,0.4
-Bachelor of Applied Science,Bachelor's of Science in Biotechnology,False,0.65
-Master of Technology in Artificial Intelligence,B.Tech of Performing Arts,False,0.48
-Bachelor of Design,M.Tech of Social Work,False,0.38
-Bachelor of Veterinary Science,B.Tech of Agricultural Science,False,0.45
-Bachelor of Performing Arts,Master's of Business Administration,False,0.56
-Bachelor of Cognitive Science,Bachelors of Social Work,False,0.42
-Master of Financial Engineering,B.Tech of Arts in Political Science,False,0.38
-Bachelor of Veterinary Science,PhD of Medicine,False,0.54
-Bachelor of Laws and Arts,Bachelors of Social Work,False,0.54
-Bachelor of Business Administration,b.tech of arts in political science,False,0.42
-Bachelor of Forestry,B.Tech of Architecture,False,0.43
-Bachelor of Fine Arts,Masters of Computer Applications,False,0.53
-Doctor of Philosophy in Physics,master's of social work,False,0.28
-Bachelor of Library Science,Master's of Public Health,False,0.29
-Master of Management Studies,B.Tech of Statistics,False,0.39
-Bachelor of Pharmacy,B.Sc of Agricultural Science,False,0.47
-Bachelor of Biomedical Engineering,Masters of Public Health,False,0.55
-Bachelor of Music,Masters of Computer Applications,False,0.72
-Bachelor of Science in Information Technology,masters of technology in artificial intelligence,False,0.63
-Bachelor of Social Work,Bachelor's of Data Science,False,0.48
-Bachelor of Pharmacy,M.Tech of Financial Engineering,False,0.5
-Master of Social Work,Masters of Computer Applications,False,0.35
-Bachelor of Physical Education,Bachelors of Arts in History,False,0.5
-Bachelor of Applied Science,Bachelors of Arts in History,False,0.46
-Bachelor of Fine Arts,bachelor's of fisheries science,False,0.55
-Bachelor of Engineering in Electrical Engineering,B.Sc of Science in Nursing,False,0.38
-Master of Science in Data Analytics,Bachelors of Environmental Science,False,0.58
-Doctor of Philosophy in Physics,Bachelors of Arts in History,False,0.73
-Bachelor of Statistics,bachelor's of social work,False,0.48
-Bachelor of Veterinary Science,B.Tech of Information Systems,False,0.56
-Bachelor of Arts in History,bachelor's of statistics,False,0.6
-Master of Computer Applications,Bachelors of Aerospace Engineering,False,0.44
-Bachelor of Laws and Arts,b.sc of science in mathematics,False,0.53
-Bachelor of Veterinary Science,B.Tech of Laws and Arts,False,0.5
-Master of Social Work,B.Tech of Education,False,0.51
-Bachelor of Anthropology,Bachelor's of Library Science,False,0.38
-Bachelor of Arts in Political Science,Bachelors of Criminal Justice,False,0.5
-Bachelor of Chemical Engineering,b.tech of anthropology,False,0.57
-Bachelor of Journalism,Master's of Public Health,False,0.72
-Master of Business Administration,B.Sc of Agricultural Science,False,0.64
-Bachelor of Pharmacy,Master's of Public Health,False,0.82
-Bachelor of Law (LLB),Doctorate of Medicine,False,0.38
-Master of Science in Data Analytics,B.Sc of Design,False,0.63
-Bachelor of Science in Information Technology,B.Sc of Music,False,0.53
-Master of Business Administration,Bachelors of Architecture,False,0.83
-Bachelor of Science in Nursing,bachelor's of fisheries science,False,0.38
-Bachelor of Aerospace Engineering,Bachelor's of Performing Arts,False,0.37
-Bachelor of Cognitive Science,B.Tech of Fine Arts,False,0.41
-Bachelor of Data Science,Bachelor's of Hotel Management,False,0.18
-Master of Social Work,Bachelor's of Performing Arts,False,0.42
-Bachelor of Science in Information Technology,bachelors of design,False,0.39
-Bachelor of Criminal Justice,masters of technology in artificial intelligence,False,0.52
-Bachelor of Fine Arts,Bachelors of Environmental Science,False,0.55
-Bachelor of Environmental Science,B.Tech of Applied Science,False,0.78
-Bachelor of Design,B.Sc of Aerospace Engineering,False,0.64
-Bachelor of Engineering in Mechanical Engineering,Bachelors of Design,False,0.41
-Master of Engineering in Computer Networks,bachelors of business administration,False,0.37
-Bachelor of Arts in Political Science,bachelor's of software engineering,False,0.57
-Bachelor of Science in Nursing,B.Sc of Information Systems,False,0.3
-Doctor of Philosophy in Physics,B.Sc of Environmental Science,False,0.77
-Bachelor of Agricultural Science,M.Sc of Engineering in Computer Networks,False,0.68
-Bachelor of Fine Arts,bachelors of environmental science,False,0.43
-Bachelor of Journalism,Bachelor's of Data Science,False,0.24
-Bachelor of Forestry,B.Tech of Music,False,0.7
-Master of Technology in Artificial Intelligence,b.tech of agricultural science,False,0.48
-Bachelor of Science in Information Technology,Bachelor's of Library Science,False,0.69
-Bachelor of Information Systems,M.Sc of Science in Data Analytics,False,0.26
-Bachelor of Applied Science,B.Sc of Biomedical Engineering,False,0.41
-Master of Science in Data Analytics,b.tech of engineering in mechanical engineering,False,0.5
-Bachelor of Veterinary Science,B.Tech of Forestry,False,0.51
-Bachelor of Agricultural Science,B.Tech of Arts in History,False,0.43
-Master of Financial Engineering,Bachelors of Business Administration,False,0.59
-Bachelor of Engineering in Mechanical Engineering,Masters of Financial Engineering,False,0.34
-Bachelor of Chemical Engineering,Bachelors of Data Science,False,0.48
-Master of Computer Applications,B.Tech of Music,False,0.52
-Bachelor of Veterinary Science,Bachelors of Social Work,False,0.58
-Bachelor of Design,master's of financial engineering,False,0.61
-Bachelor of Software Engineering,b.sc of law (llb),False,0.33
-Bachelor of Performing Arts,Bachelor's of Arts in Political Science,False,0.27
-Master of Science in Data Analytics,B.Tech of Science in Mathematics,False,0.69
-Bachelor of Theology,bachelor's of oceanography,False,0.55
-Bachelor of Business Administration,B.Sc of Data Science,False,0.39
-Bachelor of Engineering in Electrical Engineering,b.sc of software engineering,False,0.73
-Bachelor of Social Work,B.Tech of Pharmacy,False,0.52
-Master of Social Work,Master's of Science in Data Analytics,False,0.68
-Bachelor of Social Work,B.Tech of Engineering in Electrical Engineering,False,0.51
-Master of Computer Applications,Master's of Business Administration,False,0.81
-Bachelor of Applied Science,master's of technology in artificial intelligence,False,0.76
-Bachelor of Laws and Arts,bachelors of engineering in mechanical engineering,False,0.46
-Bachelor of Laws and Arts,Master's of Business Administration,False,0.65
-Bachelor of Music,B.Tech of Software Engineering,False,0.6
-Bachelor of Forestry,M.Tech of Social Work,False,0.71
-Bachelor of Aerospace Engineering,M.Tech of Science in Data Analytics,False,0.36
-Bachelor of Data Science,Doctorate of Philosophy in Physics,False,0.6
-Bachelor of Science in Biotechnology,Master's of Public Health,False,0.66
-Bachelor of Music,Bachelor's of Fine Arts,False,0.24
-Master of Financial Engineering,bachelors of business administration,False,0.32
-Master of Engineering in Computer Networks,b.sc of information systems,False,0.19
-Bachelor of Commerce,Bachelor's of Psychology,False,0.46
-Bachelor of Architecture,bachelors of design,False,0.61
-Bachelor of Science in Nursing,Bachelors of Physical Education,False,0.73
-Bachelor of Statistics,B.Tech of Social Work,False,0.51
-Bachelor of Science in Mathematics,bachelors of science in nursing,False,0.74
-Bachelor of Applied Science,bachelor's of hotel management,False,0.29
-Master of Social Work,Bachelors of Fisheries Science,False,0.24
-Bachelor of Environmental Science,M.Sc of Public Health,False,0.49
-Bachelor of Fisheries Science,b.tech of laws and arts,False,0.56
-Bachelor of Environmental Science,Bachelors of Software Engineering,False,0.5
-Master of Technology in Artificial Intelligence,M.Sc of Science in Data Analytics,False,0.19
-Master of Business Administration,B.Sc of Architecture,False,0.49
-Bachelor of Oceanography,Master's of Science in Data Analytics,False,0.3
-Bachelor of Anthropology,Bachelors of Applied Science,False,0.6
-Bachelor of Cognitive Science,b.tech of science in information technology,False,0.55
-Master of Business Administration,B.Sc of Cognitive Science,False,0.36
-Bachelor of Science in Information Technology,Bachelor's of Applied Science,False,0.42
-Bachelor of Criminal Justice,PhD of Philosophy in Physics,False,0.34
-Bachelor of Commerce,Bachelors of Laws and Arts,False,0.49
-Bachelor of Laws and Arts,M.Tech of Social Work,False,0.64
-Master of Social Work,B.Tech of Chemical Engineering,False,0.35
-Bachelor of Science in Nursing,Bachelor's of Agricultural Science,False,0.58
-Bachelor of Science in Information Technology,PhD of Philosophy in Physics,False,0.42
-Bachelor of Science in Information Technology,bachelors of agricultural science,False,0.38
-Bachelor of Journalism,Bachelor's of Architecture,False,0.48
-Bachelor of Design,B.Tech of Science in Information Technology,False,0.34
-Bachelor of Psychology,Bachelor's of Technology in Computer Science,False,0.42
-Master of Computer Applications,B.Sc of Business Administration,False,0.32
-Bachelor of Science in Information Technology,Bachelor's of Forestry,False,0.79
-Bachelor of Environmental Science,master's of computer applications,False,0.51
-Master of Public Health,Bachelors of Aerospace Engineering,False,0.4
-Bachelor of Applied Science,Bachelors of Science in Nursing,False,0.53
-Bachelor of Arts in Political Science,Bachelors of Engineering in Electrical Engineering,False,0.48
-Bachelor of Architecture,Doctorate of Philosophy in Physics,False,0.47
-Bachelor of Statistics,B.Sc of Chemical Engineering,False,0.59
-Master of Engineering in Computer Networks,m.sc of science in data analytics,False,0.61
-Bachelor of Pharmacy,Master's of Business Administration,False,0.42
-Bachelor of Software Engineering,master's of science in data analytics,False,0.41
-Master of Computer Applications,Bachelors of Science in Nursing,False,0.46
-Bachelor of Pharmacy,B.Sc of Data Science,False,0.15
-Master of Social Work,Bachelors of Laws and Arts,False,0.27
-Master of Business Administration,Bachelor's of Applied Science,False,0.71
-Bachelor of Cognitive Science,Master's of Technology in Artificial Intelligence,False,0.75
-Doctor of Philosophy in Physics,B.Sc of Theology,False,0.46
-Bachelor of Performing Arts,M.Sc of Computer Applications,False,0.59
-Bachelor of Performing Arts,B.Sc of Chemical Engineering,False,0.55
-Bachelor of Engineering in Mechanical Engineering,B.Tech of Forestry,False,0.96
-Bachelor of Technology in Computer Science,Bachelor's of Science in Information Technology,False,0.67
-Doctor of Philosophy in Physics,b.tech of criminal justice,False,0.48
-Bachelor of Music,b.sc of fine arts,False,0.36
-Bachelor of Arts in Political Science,B.Tech of Technology in Computer Science,False,0.26
-Bachelor of Cognitive Science,Bachelor's of Science in Mathematics,False,0.53
-Bachelor of Physical Education,Bachelor's of Statistics,False,0.39
-Bachelor of Chemical Engineering,Bachelor's of Fisheries Science,False,0.29
-Bachelor of Music,b.tech of technology in computer science,False,0.4
-Bachelor of Laws and Arts,B.Sc of Environmental Science,False,0.34
-Master of Business Administration,B.Sc of Fine Arts,False,0.75
-Master of Computer Applications,B.Sc of Technology in Computer Science,False,0.63
-Bachelor of Science in Information Technology,B.Tech of Law (LLB),False,0.5
-Bachelor of Aerospace Engineering,Bachelor's of Psychology,False,0.72
-Master of Computer Applications,M.Tech of Public Health,False,0.51
-Bachelor of Anthropology,B.Sc of Fine Arts,False,0.37
-Bachelor of Pharmacy,Bachelors of Education,False,0.73
-Bachelor of Journalism,Bachelors of Biomedical Engineering,False,0.58
-Bachelor of Law (LLB),Bachelor's of Agricultural Science,False,0.34
-Bachelor of Applied Science,B.Sc of Veterinary Science,False,0.47
-Bachelor of Architecture,M.Tech of Financial Engineering,False,0.37
-Bachelor of Statistics,doctorate of medicine,False,0.29
+resume_edu,jd_edu,label
+Bachelor of Supply Chain Management,Bachelor of Supply Chain Management,1.00
+Bachelor of Electrical Engineering,Bachelor of Accounting,0.16
+Master of Astronomy,Bachelor of Sociology,0.21
+Bachelor of Computer Engineering,Master of Chemical Engineering,0.46
+Bachelor of Sociology,Bachelor of Business Administration,0.05
+Bachelor of Computer Science,Bachelor of Philosophy,0.07
+Bachelor of Marketing,Bachelor of Accounting,0.76
+MBA,Bachelor of Business Administration,0.60
+Bachelor of Data Science,Bachelor of Statistics,0.20
+Bachelor of Astronomy,Bachelor of Accounting,0.24
+Bachelor of Computer Engineering,Bachelor of Marketing,0.20
+Master of Literature,Bachelor of Finance,0.26
+Bachelor of Nursing,Bachelor of Nutrition,0.60
+Master of Finance,Bachelor of Economics,0.77
+Bachelor of Cybersecurity,Bachelor of Software Engineering,0.77
+Bachelor of Information Technology,Master of Mechanical Engineering,0.44
+Bachelor of Aerospace Engineering,Master of Aerospace Engineering,0.91
+Bachelor of Mathematics,Master of Astronomy,0.75
+Bachelor of Information Systems,Master of Computer Science,0.77
+Bachelor of Computer Science,Master of Statistics,0.47
+Bachelor of Artificial Intelligence,Bachelor of Business Administration,0.00
+Bachelor of Supply Chain Management,Bachelor of Marketing,0.69
+Doctor of Medicine,Master of Civil Engineering,0.09
+Bachelor of Geology,Master of Geology,0.80
+Bachelor of Fine Arts,Bachelor of Finance,0.57
+Master of Biology,Bachelor of Electronics Engineering,0.47
+Bachelor of Nutrition,Doctor of Medicine,0.76
+Master of Economics,Bachelor of Biotechnology,0.45
+Master of Astronomy,Bachelor of History,0.20
+Bachelor of Management,Master of Management,1.00
+Master of Electrical Engineering,Bachelor of Aerospace Engineering,0.77
+Bachelor of Nutrition,Bachelor of Biotechnology,0.30
+Bachelor of History,Master of Statistics,0.34
+Master of Public Health,Doctor of Medicine,0.61
+Master of Literature,Bachelor of Marketing,0.43
+Bachelor of Information Systems,Ph.D in Computer Science,0.65
+Bachelor of Mechanical Engineering,Master of Public Health,0.12
+Bachelor of Astronomy,Bachelor of Philosophy,0.10
+Master of Mechanical Engineering,Bachelor of Music,0.00
+Master of Accounting,Bachelor of Chemistry,0.39
+Bachelor of Industrial Engineering,Bachelor of Geology,0.04
+Bachelor of Industrial Engineering,Bachelor of Geology,0.48
+Bachelor of Astronomy,Bachelor of Accounting,0.21
+Bachelor of Chemical Engineering,Bachelor of Supply Chain Management,0.23
+Master of History,Bachelor of Supply Chain Management,0.39
+Master of Journalism,Master of Journalism,0.95
+Master of Accounting,Master of Accounting,0.83
+Bachelor of Business Administration,Bachelor of Statistics,0.01
+Bachelor of Economics,Master of Economics,1.00
+Master of Astronomy,Master of Nursing,0.04
+Master of History,Bachelor of Philosophy,0.66
+Bachelor of Physics,Master of Chemistry,0.73
+Master of Statistics,Master of Chemistry,0.77
+Master of Journalism,Bachelor of Accounting,0.32
+Bachelor of Medicine,Bachelor of Pharmacy,0.62
+Master of Civil Engineering,Bachelor of Computer Science,0.37
+Bachelor of Chemical Engineering,Bachelor of Business Administration,0.11
+Master of Statistics,Doctor of Medicine,0.47
+Bachelor of Environmental Engineering,Bachelor of Astronomy,0.37
+Bachelor of Chemical Engineering,Master of Finance,0.02
+Bachelor of Software Engineering,Bachelor of Marketing,0.18
+Master of Biology,Master of Biology,1.00
+Bachelor of History,Bachelor of Biology,0.52
+Bachelor of Supply Chain Management,Bachelor of Finance,0.61
+Bachelor of Journalism,Master of Statistics,0.27
+Bachelor of Management,Master of Accounting,0.77
+Bachelor of Geology,Master of Geology,1.00
+Master of Journalism,Bachelor of Philosophy,0.71
+Bachelor of Computer Science,Bachelor of Information Technology,0.62
+Bachelor of Supply Chain Management,Bachelor of Literature,0.00
+MBA,Master of Economics,0.66
+Doctor of Medicine,Doctor of Medicine,0.81
+Bachelor of Nutrition,Bachelor of Nutrition,1.00
+Master of Chemistry,Bachelor of Cybersecurity,0.53
+Bachelor of Mechanical Engineering,Master of Civil Engineering,0.69
+Master of Chemistry,Doctor of Medicine,0.44
+Master of Biology,Bachelor of Supply Chain Management,0.00
+Master of Public Health,Bachelor of Chemical Engineering,0.35
+Master of Journalism,Bachelor of Philosophy,0.64
+Bachelor of Environmental Engineering,Bachelor of Civil Engineering,0.77
+Bachelor of Business Administration,Bachelor of Biology,0.58
+Master of Economics,Master of Economics,0.94
+Master of Nursing,Master of Nursing,0.81
+Bachelor of Chemistry,Bachelor of Electrical Engineering,0.33
+Bachelor of Geology,Master of Physics,0.70
+Bachelor of Accounting,Bachelor of Business Administration,0.68
+Master of Finance,Bachelor of Finance,0.93
+Bachelor of Astronomy,Master of Civil Engineering,0.48
+Doctor of Medicine,Doctor of Medicine,1.00
+Master of Software Engineering,Bachelor of Astronomy,0.47
+Master of Data Science,Bachelor of Statistics,0.53
+Bachelor of Philosophy,Bachelor of Statistics,0.51
+Bachelor of Aerospace Engineering,Bachelor of Nutrition,0.23
+Bachelor of Civil Engineering,Master of Information Technology,0.48
+Bachelor of Physics,Bachelor of Information Technology,0.41
+Bachelor of Electrical Engineering,Ph.D in Computer Science,0.48
+Bachelor of Industrial Engineering,Master of Electrical Engineering,0.75
+Bachelor of Philosophy,Bachelor of Biology,0.34
+Master of Biology,Bachelor of Finance,0.11
+Bachelor of Graphic Design,Master of Economics,0.40
+Master of Accounting,Master of Economics,0.73
+Master of Fine Arts,Bachelor of Economics,0.20
+Master of Finance,Bachelor of Biotechnology,0.33
+Master of Physics,Bachelor of History,0.00
+Bachelor of Biotechnology,Master of Mathematics,0.65
+Master of Public Health,Bachelor of Chemistry,0.01
+Master of Journalism,Bachelor of Sociology,0.70
+Bachelor of Literature,Master of Journalism,0.77
+Bachelor of Mathematics,Bachelor of Electrical Engineering,0.34
+Doctor of Medicine,Bachelor of Environmental Engineering,0.00
+Master of Accounting,Master of Journalism,0.57
+Bachelor of Industrial Engineering,Master of Data Science,0.38
+Bachelor of Management,Master of Fine Arts,0.35
+Bachelor of Artificial Intelligence,Bachelor of Computer Engineering,0.70
+Bachelor of Cybersecurity,Master of Civil Engineering,0.30
+Bachelor of Nursing,Bachelor of Business Administration,0.23
+Bachelor of Electrical Engineering,Bachelor of Biotechnology,0.30
+Master of Aerospace Engineering,Bachelor of Mathematics,0.51
+Master of Artificial Intelligence,Master of Fine Arts,0.00
+Master of Statistics,Bachelor of Environmental Engineering,0.53
+Master of Fine Arts,Master of Statistics,0.44
+Master of Astronomy,Bachelor of Information Systems,0.31
+Master of Finance,Bachelor of Artificial Intelligence,0.17
+Bachelor of Business Administration,Ph.D in Computer Science,0.21
+Doctor of Medicine,Master of Finance,0.12
+Master of Journalism,Master of Statistics,0.40
+MBA,Master of Astronomy,0.29
+Master of Biology,Bachelor of Biology,0.83
+Bachelor of Sociology,Bachelor of Astronomy,0.28
+Bachelor of Computer Engineering,Master of Mathematics,0.16
+Master of Literature,Master of Biology,0.32
+Bachelor of Business Administration,Bachelor of Fine Arts,0.54
+Bachelor of Graphic Design,Bachelor of Geology,0.11
+Master of Statistics,Master of Chemical Engineering,0.44
+Master of Nursing,Master of Astronomy,0.27
+Bachelor of Finance,Bachelor of Biotechnology,0.00
+Bachelor of Business Administration,Master of Accounting,0.78
+Bachelor of Computer Science,Master of Software Engineering,0.73
+Bachelor of Statistics,Master of Artificial Intelligence,0.34
+Bachelor of Pharmacy,Bachelor of Biology,0.27
+Master of Astronomy,Bachelor of Statistics,0.78
+Bachelor of Medicine,Bachelor of Industrial Engineering,0.30
+Bachelor of Nutrition,Bachelor of Electronics Engineering,0.32
+Master of Literature,Master of Accounting,0.00
+Master of Chemistry,Bachelor of Aerospace Engineering,0.38
+Bachelor of Sociology,Bachelor of Philosophy,0.71
+Master of Public Health,Bachelor of Environmental Engineering,0.53
+Bachelor of Marketing,Bachelor of Geology,0.50
+Master of Nursing,Bachelor of Fine Arts,0.20
+Bachelor of Environmental Engineering,Master of Finance,0.14
+Master of Chemical Engineering,Bachelor of Aerospace Engineering,0.72
+Bachelor of Electronics Engineering,Bachelor of Journalism,0.22
+Bachelor of Medicine,Doctor of Medicine,0.78
+Master of Literature,Bachelor of Business Administration,0.52
+Bachelor of Environmental Engineering,Bachelor of Electrical Engineering,0.71
+Bachelor of Public Health,Bachelor of Public Health,0.90
+Master of Software Engineering,Master of Software Engineering,0.87
+Bachelor of Public Health,Bachelor of Public Health,0.95
+Bachelor of Pharmacy,Bachelor of Data Science,0.00
+Bachelor of Journalism,Bachelor of Physics,0.43
+Bachelor of Nursing,Master of Electrical Engineering,0.46
+Master of Astronomy,Master of Astronomy,1.00
+Bachelor of Finance,Bachelor of Business Administration,0.78
+Master of History,Bachelor of Supply Chain Management,0.38
+Master of Chemistry,Doctor of Medicine,0.40
+Bachelor of Supply Chain Management,Master of Biology,0.19
+Bachelor of Mechanical Engineering,Bachelor of Computer Engineering,0.47
+Bachelor of Graphic Design,Bachelor of Geology,0.21
+Master of Mechanical Engineering,Master of Biology,0.50
+Bachelor of Pharmacy,Bachelor of Pharmacy,1.00
+Master of Statistics,Bachelor of Software Engineering,0.47
+Ph.D in Computer Science,Bachelor of Geology,0.34
+Bachelor of Physics,Bachelor of Biology,0.72
+Master of History,Master of Biology,0.24
+Master of Information Technology,Bachelor of Environmental Engineering,0.29
+Bachelor of Information Technology,Bachelor of Industrial Engineering,0.19
+Bachelor of Supply Chain Management,Bachelor of History,0.41
+Bachelor of Physics,Master of Physics,0.63
+Bachelor of Public Health,Master of Economics,0.11
+Bachelor of Graphic Design,Bachelor of Sociology,0.75
+Bachelor of Business Administration,Master of Biology,0.31
+Bachelor of Artificial Intelligence,Bachelor of Electrical Engineering,0.34
+Bachelor of Finance,Bachelor of Graphic Design,0.40
+Bachelor of Nursing,Master of Fine Arts,0.18
+Bachelor of Public Health,Bachelor of Nutrition,0.67
+Bachelor of Supply Chain Management,Bachelor of Supply Chain Management,1.00
+Bachelor of Chemical Engineering,Master of Chemical Engineering,0.89
+Master of Journalism,Bachelor of Business Administration,0.52
+Bachelor of Biology,Master of Chemical Engineering,0.59
+Master of Journalism,Master of Statistics,0.00
+Bachelor of Biology,Bachelor of Chemical Engineering,0.39
+Bachelor of Nutrition,Bachelor of Electronics Engineering,0.54
+Bachelor of Marketing,Master of Information Technology,0.21
+Master of Finance,Bachelor of Geology,0.38
+Doctor of Medicine,Master of Mechanical Engineering,0.36
+Bachelor of Nutrition,Bachelor of Music,0.06
+Master of Mathematics,Master of Chemistry,0.76
+Bachelor of Electronics Engineering,Master of Data Science,0.30
+Bachelor of Biotechnology,Bachelor of Geology,0.75
+Ph.D in Computer Science,Master of Mechanical Engineering,0.34
+Master of History,Bachelor of Accounting,0.36
+Bachelor of Business Administration,Bachelor of Supply Chain Management,0.61
+Bachelor of Statistics,Bachelor of Chemical Engineering,0.38
+Master of Literature,Master of Accounting,0.18
+Bachelor of Economics,Master of Aerospace Engineering,0.06
+Bachelor of Medicine,Bachelor of Aerospace Engineering,0.00
+Master of Civil Engineering,Bachelor of Civil Engineering,0.63
+Master of Mathematics,Bachelor of Statistics,0.63
+Bachelor of Mechanical Engineering,Bachelor of Software Engineering,0.57
+Bachelor of Information Technology,Master of Statistics,0.39
+Bachelor of Mathematics,Master of Journalism,0.20
+Master of Public Health,Bachelor of Fine Arts,0.18
+Master of Mechanical Engineering,Bachelor of Aerospace Engineering,0.78
+Master of Software Engineering,Bachelor of Management,0.12
+Bachelor of Pharmacy,Bachelor of Industrial Engineering,0.05
+Bachelor of Artificial Intelligence,Bachelor of Environmental Engineering,0.18
+Master of Statistics,Master of Chemistry,0.73
+Bachelor of Civil Engineering,Bachelor of Chemistry,0.34
+Bachelor of Information Systems,MBA,0.12
+Doctor of Medicine,Master of Economics,0.10
+Master of Statistics,Bachelor of Environmental Engineering,0.00
+Bachelor of Environmental Engineering,Bachelor of Sociology,0.23
+Bachelor of Marketing,Master of Journalism,0.51
+Bachelor of Biology,Bachelor of Mechanical Engineering,0.59
+Bachelor of Artificial Intelligence,Bachelor of Computer Engineering,0.71
+Bachelor of Sociology,Master of Astronomy,0.36
+Bachelor of Information Systems,Bachelor of Information Systems,0.91
+Master of Civil Engineering,Bachelor of Data Science,0.26
+Bachelor of Chemistry,Master of Biology,0.75
+Bachelor of Data Science,Bachelor of Biotechnology,0.26
+Bachelor of Astronomy,Bachelor of Nutrition,0.42
+Master of Literature,Bachelor of Marketing,0.46
+Bachelor of Aerospace Engineering,Bachelor of Information Systems,0.51
+Bachelor of Physics,Master of Astronomy,0.78
+Bachelor of Environmental Engineering,Master of Astronomy,0.35
+Bachelor of Industrial Engineering,Bachelor of Data Science,0.56
+Bachelor of Chemistry,Bachelor of Chemistry,0.95
+Master of Economics,Master of Economics,1.00
+Ph.D in Computer Science,Bachelor of Statistics,0.26
+Master of Nursing,Bachelor of Environmental Engineering,0.50
+Bachelor of Pharmacy,Bachelor of Nutrition,0.60
+Bachelor of Mathematics,Bachelor of Mathematics,0.95
+Bachelor of Mathematics,Bachelor of Chemistry,0.66
+Bachelor of Chemical Engineering,Bachelor of Cybersecurity,0.40
+Master of Civil Engineering,Bachelor of Computer Engineering,0.30
+Bachelor of Biotechnology,Master of Biology,0.74
+Bachelor of Medicine,Bachelor of Astronomy,0.43
+Bachelor of Computer Science,Bachelor of Computer Science,1.00
+Bachelor of Economics,Bachelor of Computer Science,0.15
+Bachelor of Journalism,Master of Journalism,1.00
+Doctor of Medicine,Doctor of Medicine,1.00
+Master of Mathematics,Master of Physics,0.70
+Bachelor of Medicine,Bachelor of Astronomy,0.44
+Bachelor of Physics,Bachelor of Physics,1.00
+Master of Aerospace Engineering,Bachelor of Computer Science,0.33
+Bachelor of Software Engineering,Master of Literature,0.00
+Bachelor of Cybersecurity,Bachelor of Information Systems,0.74
+Bachelor of Nursing,Bachelor of Public Health,0.62
+Bachelor of Public Health,Bachelor of Environmental Engineering,0.48
+Bachelor of Nutrition,Bachelor of Public Health,0.78
+Master of Chemical Engineering,Bachelor of Literature,0.14
+Bachelor of Physics,Bachelor of Computer Science,0.00
+Master of Physics,Master of Physics,0.89
+Master of Physics,Bachelor of Geology,0.65
+Ph.D in Computer Science,Bachelor of Aerospace Engineering,0.21
+Master of Aerospace Engineering,Bachelor of Software Engineering,0.28
+Bachelor of Finance,Bachelor of Philosophy,0.46
+Bachelor of Pharmacy,Master of Chemistry,0.49
+Master of Nursing,Bachelor of Public Health,0.67
+Bachelor of Fine Arts,Master of Finance,0.21
+Bachelor of Mechanical Engineering,Bachelor of Statistics,0.35
+Master of Finance,Ph.D in Computer Science,0.12
+Master of Artificial Intelligence,Master of Artificial Intelligence,0.91
+Bachelor of Pharmacy,Master of Pharmacy,0.98
+Master of Economics,Bachelor of Business Administration,0.66
+Bachelor of Biotechnology,Bachelor of Biotechnology,1.00
+Bachelor of Statistics,Master of Chemical Engineering,0.47
+Master of Data Science,Master of Civil Engineering,0.53
+Bachelor of Information Technology,Bachelor of Geology,0.41
+Bachelor of Electronics Engineering,Master of Aerospace Engineering,0.71
+Bachelor of Marketing,Master of Physics,0.41
+Master of Biology,Bachelor of Astronomy,0.74
+Master of Computer Science,Bachelor of Biology,0.50
+Master of Finance,Bachelor of Geology,0.24
+Doctor of Medicine,Master of Chemistry,0.58
+Master of Aerospace Engineering,Bachelor of Electronics Engineering,0.63
+Bachelor of Astronomy,Bachelor of Physics,0.63
+Bachelor of History,Bachelor of Finance,0.26
+Bachelor of Nursing,Bachelor of Fine Arts,0.05
+Bachelor of Information Systems,Master of Astronomy,0.08
+Master of Statistics,Bachelor of Management,0.13
+Bachelor of Business Administration,Master of History,0.50
+Bachelor of Literature,Master of Statistics,0.29
+Bachelor of Literature,Master of Literature,0.66
+Bachelor of Cybersecurity,Bachelor of Electronics Engineering,0.32
+Master of Information Technology,Bachelor of Aerospace Engineering,0.37
+Bachelor of Medicine,Master of Medicine,0.94
+Master of Information Technology,Bachelor of Information Systems,0.63
+Master of History,Master of History,1.00
+Bachelor of Information Systems,Bachelor of Biotechnology,0.51
+Master of Nursing,Master of Statistics,0.38
+Bachelor of Literature,Master of Chemistry,0.28
+Bachelor of Mechanical Engineering,Bachelor of Software Engineering,0.47
+Bachelor of Chemistry,Master of Civil Engineering,0.55
+Bachelor of Journalism,Bachelor of Graphic Design,0.71
+Bachelor of Nutrition,Bachelor of Economics,0.21
+Bachelor of Aerospace Engineering,Master of Software Engineering,0.38
+Bachelor of Electronics Engineering,Master of Finance,0.10
+Bachelor of Economics,Bachelor of Economics,1.00
+Master of Accounting,Bachelor of Economics,0.62
+Master of Accounting,Bachelor of Biology,0.44
+Master of Economics,Bachelor of Philosophy,0.46
+Bachelor of Marketing,Bachelor of Environmental Engineering,0.00
+Bachelor of Economics,Bachelor of Journalism,0.26
+Bachelor of Chemical Engineering,Bachelor of Statistics,0.58
+Bachelor of Astronomy,Bachelor of Public Health,0.40
+Bachelor of Chemistry,Bachelor of Chemistry,1.00
+Master of Chemistry,Bachelor of Business Administration,0.21
+Bachelor of Marketing,Bachelor of Statistics,0.56
+Master of Economics,Master of Astronomy,0.53
+Master of Nursing,Bachelor of Public Health,0.66
+Master of Accounting,Bachelor of Music,0.55
+Master of Astronomy,Bachelor of Aerospace Engineering,0.25
+Bachelor of Fine Arts,Master of Mathematics,0.16
+Bachelor of Finance,Bachelor of Biology,0.52
+Master of Computer Science,Bachelor of Mechanical Engineering,0.35
+Bachelor of Pharmacy,Master of Mathematics,0.54
+Master of Aerospace Engineering,Bachelor of Statistics,0.43
+Bachelor of Computer Science,Master of Biology,0.54
+Master of Accounting,Bachelor of Finance,0.72
+Bachelor of Business Administration,Bachelor of Business Administration,0.91
+Master of Nursing,Bachelor of Mechanical Engineering,0.49
+Bachelor of Economics,Bachelor of Economics,0.92
+Master of Astronomy,Master of Mathematics,0.76
+Bachelor of Sociology,Master of Mathematics,0.38
+Bachelor of Civil Engineering,Bachelor of Physics,0.38
+Bachelor of Biotechnology,Bachelor of Geology,0.66
+Ph.D in Computer Science,Master of Computer Science,0.77
+Master of Fine Arts,Master of Accounting,0.44
+Bachelor of Business Administration,Bachelor of Chemistry,0.16
+Master of Journalism,Master of Statistics,0.21
+Master of Finance,Bachelor of Chemistry,0.20
+Ph.D in Computer Science,Master of Mechanical Engineering,0.33
+Bachelor of Physics,Bachelor of Physics,0.99
+Bachelor of Information Technology,Master of Civil Engineering,0.28
+Master of Civil Engineering,Bachelor of Information Technology,0.35
+Bachelor of Public Health,Bachelor of Public Health,1.00
+Bachelor of Marketing,Bachelor of Supply Chain Management,0.76
+Master of Biology,Master of Biology,1.00
+Master of History,Master of Accounting,0.18
+Bachelor of Computer Engineering,Master of Civil Engineering,0.50
+Bachelor of Pharmacy,Master of Astronomy,0.47
+Bachelor of Journalism,Bachelor of Literature,0.77
+Bachelor of Industrial Engineering,Bachelor of Biology,0.57
+Bachelor of Physics,Bachelor of Nursing,0.00
+Master of Accounting,Bachelor of Information Technology,0.21
+Master of Fine Arts,Master of Fine Arts,0.81
+Master of Accounting,Master of Chemistry,0.45
+Bachelor of Electrical Engineering,Bachelor of Computer Engineering,0.58
+Bachelor of Mechanical Engineering,Bachelor of Philosophy,0.14
+Bachelor of Industrial Engineering,Master of Industrial Engineering,0.94
+Bachelor of Supply Chain Management,Bachelor of Physics,0.40
+Master of Public Health,Bachelor of Music,0.14
+Bachelor of Biology,Bachelor of Statistics,0.78
+Master of Chemistry,Bachelor of Chemistry,1.00
+Master of Journalism,Bachelor of Sociology,0.61
+Bachelor of Philosophy,Master of Chemical Engineering,0.03
+Bachelor of Philosophy,Bachelor of Accounting,0.56
+Master of Fine Arts,Bachelor of History,0.78
+Bachelor of Physics,Master of Statistics,0.62
+Bachelor of Pharmacy,Master of Chemistry,0.55
+Bachelor of Nutrition,Bachelor of Geology,0.46
+Bachelor of Civil Engineering,Master of Nursing,0.19
+Master of Aerospace Engineering,Bachelor of Artificial Intelligence,0.43
+Master of Physics,Bachelor of Journalism,0.20
+Bachelor of Business Administration,Bachelor of Chemistry,0.34
+Bachelor of Accounting,Bachelor of Accounting,0.95
+Master of Computer Science,Bachelor of Chemical Engineering,0.40
+Master of Aerospace Engineering,Bachelor of Electronics Engineering,0.60
+Bachelor of Nursing,Master of Nursing,0.63
+Bachelor of Mathematics,Master of Accounting,0.13
+Master of Civil Engineering,Bachelor of Public Health,0.00
+Bachelor of Philosophy,MBA,0.38
+Master of Journalism,Master of Mathematics,0.41
+Master of Public Health,Bachelor of Public Health,0.82
+Master of Software Engineering,Bachelor of Electronics Engineering,0.44
+Bachelor of Computer Science,Master of Chemistry,0.39
+Master of Finance,Master of Finance,1.00
+Bachelor of Pharmacy,Master of Pharmacy,0.93
+Bachelor of Nursing,Master of Mechanical Engineering,0.45
+Bachelor of Environmental Engineering,Bachelor of Information Technology,0.54
+Bachelor of Information Systems,Bachelor of Astronomy,0.15
+Bachelor of Artificial Intelligence,Bachelor of Statistics,0.04
+Bachelor of Biology,Bachelor of Aerospace Engineering,0.58
+Bachelor of Medicine,Bachelor of Music,0.24
+Bachelor of Accounting,Bachelor of Statistics,0.00
+Bachelor of Graphic Design,Bachelor of Business Administration,0.19
+Bachelor of Pharmacy,Master of Civil Engineering,0.34
+Bachelor of Chemistry,Bachelor of Software Engineering,0.41
+Master of Public Health,Bachelor of Public Health,0.91
+Doctor of Medicine,Master of Chemical Engineering,0.42
+Doctor of Medicine,Bachelor of Management,0.22
+Bachelor of Nutrition,Master of Nutrition,0.85
+Bachelor of Physics,Bachelor of Supply Chain Management,0.00
+Master of Finance,Master of Physics,0.12
+Bachelor of Graphic Design,Bachelor of Economics,0.00
+Bachelor of Physics,Master of Mechanical Engineering,0.25
+Bachelor of Finance,Master of Economics,0.72
+Master of Mathematics,Bachelor of Civil Engineering,0.27
+Master of Astronomy,Bachelor of Environmental Engineering,0.49
+Master of Software Engineering,Bachelor of Chemistry,0.41
+Bachelor of Pharmacy,Bachelor of Finance,0.05
+Master of Software Engineering,Bachelor of Software Engineering,0.67
+Bachelor of Finance,Bachelor of Chemistry,0.23
+Bachelor of Chemical Engineering,Bachelor of Computer Science,0.57
+Bachelor of Biology,Bachelor of Mathematics,0.64
+Bachelor of Mechanical Engineering,Bachelor of Mechanical Engineering,1.00
+Master of Chemistry,Bachelor of Physics,0.70
+Bachelor of Civil Engineering,Bachelor of Physics,0.56
+Bachelor of Computer Science,Bachelor of Computer Science,0.97
+Master of Fine Arts,Bachelor of Management,0.17
+Bachelor of Civil Engineering,Bachelor of Civil Engineering,0.97
+Doctor of Medicine,Master of Chemical Engineering,0.42
+Master of Aerospace Engineering,Bachelor of Computer Science,0.31
+Ph.D in Computer Science,Bachelor of Aerospace Engineering,0.32
+Bachelor of Environmental Engineering,Bachelor of Aerospace Engineering,0.68
+Bachelor of Information Technology,Master of Information Technology,1.00
+Master of Fine Arts,Bachelor of Music,0.77
+Bachelor of Civil Engineering,Bachelor of Mechanical Engineering,0.73
+Master of Accounting,Bachelor of Physics,0.52
+Master of History,Bachelor of History,0.87
+Bachelor of Artificial Intelligence,Master of Astronomy,0.36
+Bachelor of Sociology,Bachelor of Management,0.12
+Master of Journalism,Bachelor of Marketing,0.33
+Bachelor of Biology,Bachelor of Industrial Engineering,0.47
+Bachelor of Nursing,Bachelor of Mathematics,0.32
+Bachelor of Mechanical Engineering,Master of Data Science,0.56
+Bachelor of Electrical Engineering,Master of Mathematics,0.38
+Bachelor of Physics,Bachelor of Marketing,0.17
+Bachelor of Management,MBA,0.66
+Bachelor of Marketing,Master of Artificial Intelligence,0.23
+Bachelor of Computer Science,Bachelor of Civil Engineering,0.13
+Bachelor of History,Bachelor of Accounting,0.17
+Bachelor of Pharmacy,Bachelor of Supply Chain Management,0.24
+Bachelor of Fine Arts,Master of History,0.77
+Master of Civil Engineering,Bachelor of Civil Engineering,0.71
+Master of Civil Engineering,Master of Civil Engineering,0.88
+Master of Public Health,Bachelor of Public Health,0.91
+Master of Data Science,Bachelor of Accounting,0.19
+Bachelor of Supply Chain Management,Bachelor of Artificial Intelligence,0.13
+Master of Information Technology,Master of Civil Engineering,0.30
+Master of Electrical Engineering,Bachelor of Physics,0.29
+Bachelor of Journalism,Bachelor of Philosophy,0.76
+Bachelor of Finance,Bachelor of Accounting,0.68
+MBA,Master of Mathematics,0.58
+Master of Aerospace Engineering,Master of Chemical Engineering,0.78
+Master of Electrical Engineering,Bachelor of Supply Chain Management,0.15
+Ph.D in Computer Science,Bachelor of Software Engineering,0.72
+Master of Astronomy,Bachelor of Finance,0.15
+Master of Biology,Master of Artificial Intelligence,0.42
+Bachelor of Software Engineering,Bachelor of Information Systems,0.66
+Bachelor of Geology,Master of Geology,1.00
+Master of Nursing,Bachelor of Physics,0.54
+Bachelor of Nutrition,Bachelor of Nutrition,1.00
+Master of Civil Engineering,Bachelor of Civil Engineering,1.00
+Bachelor of Marketing,Master of Statistics,0.43
+Master of Electrical Engineering,Bachelor of Environmental Engineering,0.76
+Bachelor of Business Administration,Master of Accounting,0.67
+Bachelor of Graphic Design,Bachelor of Electronics Engineering,0.00
+Bachelor of Sociology,Bachelor of Sociology,1.00
+Bachelor of Philosophy,Master of Statistics,0.50
+Bachelor of Sociology,Bachelor of Graphic Design,0.66
+Bachelor of Mathematics,Bachelor of Mathematics,0.95
+Master of Information Technology,Master of Information Technology,0.89
+Bachelor of Biotechnology,Bachelor of Biology,0.69
+Bachelor of Philosophy,Master of Finance,0.36
+Bachelor of History,Bachelor of Supply Chain Management,0.04
+Master of Civil Engineering,Bachelor of Cybersecurity,0.28
+Bachelor of Business Administration,MBA,0.62
+Bachelor of Fine Arts,Bachelor of Music,0.77
+Bachelor of Economics,Master of Physics,0.18
+Bachelor of History,Bachelor of Mathematics,0.42
+Bachelor of Biology,Master of Journalism,0.18
+Bachelor of Industrial Engineering,Bachelor of Finance,0.23
+Bachelor of Economics,Bachelor of Graphic Design,0.42
+Master of Statistics,Master of Mathematics,0.70
+Bachelor of Cybersecurity,Master of History,0.00
+Master of Computer Science,Master of Mathematics,0.42
+Bachelor of Accounting,Master of Accounting,1.00
+Bachelor of Astronomy,Bachelor of Statistics,0.78
+Bachelor of Astronomy,Bachelor of Astronomy,1.00
+Bachelor of Mechanical Engineering,Master of Software Engineering,0.52
+Bachelor of Medicine,Bachelor of Medicine,1.00
+Bachelor of Literature,Bachelor of Literature,1.00
+Bachelor of Marketing,Bachelor of Economics,0.60
+Master of Electrical Engineering,Ph.D in Computer Science,0.38
+Master of Public Health,Bachelor of Electronics Engineering,0.33
+Bachelor of Supply Chain Management,Master of Finance,0.74
+Master of Mathematics,Bachelor of Medicine,0.50
+Bachelor of Information Systems,Master of Electrical Engineering,0.54

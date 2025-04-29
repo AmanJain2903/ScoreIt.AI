@@ -11,7 +11,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 # 🏋️ Planned Versions
 
-## 🔢 V0.1.0 - Core Extraction Engine - (Currently Under Development)
+## 🔢 V0.1.0 - Core Extraction Engine - (In Pre-Release Phase 🟡)
 **Goal:**
 - Build structured Resume and JD data extraction modules.
 - Complete ResumeAgent and JobDescriptionAgent.
@@ -35,7 +35,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Code Coverage 90%+ with CI/CD Integration ✅
 
 **Benchmarks:**
-- Evaluation Metrics For Each Implemented Module's Accuracy ❌
+- Evaluation Metrics For Each Implemented Module's Accuracy ✅
 
 **Milestone:**
 > Backend is able to reliably parse raw text resumes and job descriptions into clean structured JSON formats and is also capable of generating scores for each entity in JSON.
@@ -149,12 +149,12 @@ Each version milestone focuses on building a critical subsystem required for a f
 # 📅 Current Status
 | Version |   Progress    | Deadline |
 |:---|:---|:---|
-| V0.1.0 | ⏳ In Progress | May 1st 2025  |
-| V0.2.0 | ❌ Pending     | May 2nd 2025  |
-| V0.3.0 | ❌ Pending     | May 4th 2025  |
-| V0.4.0 | ❌ Pending     | May 8th 2025  |
-| V0.5.0 | ❌ Pending     | May 15th 2025 |
-| V1.0.0 | ❌ Pending     | June 1st 2025 |
+| V0.1.0 | 🟡 In Pre-Release | May 1st 2025  |
+| V0.2.0 | ❌ Pending        | May 2nd 2025  |
+| V0.3.0 | ❌ Pending        | May 4th 2025  |
+| V0.4.0 | ❌ Pending        | May 8th 2025  |
+| V0.5.0 | ❌ Pending        | May 15th 2025 |
+| V1.0.0 | ❌ Pending        | June 1st 2025 |
 
 | Test |   Progress    | Deadline |
 |:---|:---|:---|

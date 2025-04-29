@@ -1,0 +1,43 @@
+name: Evaluation Benchmarks 
+
+on:
+  workflow_dispatch:  # Manual trigger only (no auto-run)
+
+jobs:
+  run-benchmarks:
+    name: Evaluate Modules
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+        pip install -r requirements.txt
+
+    - name: Set environment variables
+      run: echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> $GITHUB_ENV
+
+    - name: Run Evaluation Script
+      run: |
+        PYTHONPATH=. python benchmarks/evaluate_modules.py
+
+    - name: Upload Matchmaker Evaluations CSV
+      uses: actions/upload-artifact@v4
+      with:
+        name: matchmaker-evaluations
+        path: benchmarks/results/matchmaker_evaluations.csv
+
+    - name: Upload Extractor Agent Evaluations CSV
+      uses: actions/upload-artifact@v4
+      with:
+        name: agent-evaluations
+        path: benchmarks/results/agent_evaluations.csv
