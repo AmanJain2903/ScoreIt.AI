@@ -86,6 +86,14 @@ ScoreIt.AI is an AI-powered system designed to:
   - Incorporates **penalization for weak matches** (e.g., unrelated domains) and **boosts strong semantic matches** (e.g., AWS CSA ↔ AWS Solutions Architect).
   - Final certification match score = **average of strongest per-certification similarity scores**, with noise control and threshold-aware boosting.
 
+**9. Designation Matching Module**  
+- Specialized matcher (`DesignationMatching`) designed to evaluate semantic alignment between job titles in resumes and job descriptions.
+  - Follows the modular architecture with dual-model sentence embedding ensembling.
+  - Handles common variations and synonyms in titles (e.g., "Software Developer" ↔ "Backend Engineer").
+  - Supports **1:1 best match** logic between Resume and JD designations to prevent inflated scores.
+  - Penalizes mismatches caused by **domain gaps** or **seniority differences** (e.g., Intern ↔ Architect).
+  - Final designation match score = **average of best semantic matches**, adjusted by smart boosting and penalization rules.
+
 ---
 
 ## Modular Clean Architecture**  
@@ -135,7 +143,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - All modules were written with their tests designed first to validate specifications.
 
 **6. Test Achievements**
-- 216 test cases written covering Unit + Integration tests combined.
+- 240 test cases written covering Unit + Integration tests combined.
 - Every new module (Resume Agent, JD Agent, Education Matching, Experience Matching) fully tested.
 
 ---
@@ -198,7 +206,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
 - **In Progress:** OCR Extraction, Web Scraping, Matchmaking Models, Flask APIs, MongoDB Integration, Frontend Development.
 
 ---
