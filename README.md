@@ -3,6 +3,8 @@
 ![Build Status](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml/badge.svg)
 [![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)
 ![Python Version](https://img.shields.io/badge/Python-3.11-blue)
+![Benchmarks](https://img.shields.io/badge/Benchmarks-Available-blueviolet)
+![Evaluation Benchmarks](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml/badge.svg)
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
