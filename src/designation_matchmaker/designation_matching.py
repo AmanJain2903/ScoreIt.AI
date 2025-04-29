@@ -58,9 +58,9 @@ class DesignationSimilarity:
             raise ValueError("Model scores are not set.")
         for i in range(len(self.model1Score)):
             if self.model1Score[i] < 0.5:
-                self.model1Score[i] = self.model1Score[i] * 0.7
+                self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
             if self.model2Score[i] < 0.5:
-                self.model2Score[i] = self.model2Score[i] * 0.7
+                self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
         self.averageEnsemble()
     
     def getEnsembleScore(self):
