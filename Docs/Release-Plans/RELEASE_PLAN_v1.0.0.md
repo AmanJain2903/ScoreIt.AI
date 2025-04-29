@@ -26,7 +26,7 @@ Each version milestone focuses on building a critical subsystem required for a f
     - Technical Skills Matchmaker ✅ 
     - Soft Skills Matchmaker ✅ 
     - Tools Matchmaker ✅ 
-    - Certifications Matchmaker ❌ 
+    - Certification Matchmaker ✅  
     - Designation Matchmaker ❌
     - Location Matchmaker ❌
 - Modular src/ Architecture ✅
@@ -34,6 +34,9 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Input Sanitization ✅
 - Full Unit & Integration Testing Setup ✅
 - Code Coverage 90%+ with CI/CD Integration ✅
+
+**Benchmarks:**
+- Evaluation Metrics For Each Implemented Module's Accuracy ❌
 
 **Milestone:**
 > Backend is able to reliably parse raw text resumes and job descriptions into clean structured JSON formats and is also capable of generating scores for each entity in JSON.
@@ -55,6 +58,9 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Designation Matchmaker (Built in v0.1.0)
 - Location Matchmaker (Built in v0.1.0)
 - Final Matchmaker Engine (To be implemented)
+
+**Benchmarks:**
+- Performance Metrics For End-to-End Matchmaker Engine (CPU Usage, Inference Time, etc)
 
 **Milestone:**
 > Backend can now compute Resume-JD match percentages with smart field-specific logics from v0.1.0.

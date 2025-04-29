@@ -1,0 +1,501 @@
+ResumeCertifications,JobCertifications,ExpectedScore
+"Adobe Certified Expert Photoshop, Cisco Certified Network Associate","Google Analytics Certification, Red Hat Certified Engineer, ITIL Foundation, Salesforce Administrator",0.57
+"Docker Certified Associate, ISTQB Certified Tester, Microsoft Certified Azure Administrator","Google Professional Data Engineer, Certified Kubernetes Administrator, Meta Digital Marketing Associate",0.48
+"Certified Ethical Hacker, Microsoft Certified Azure Administrator, ISTQB Certified Tester, Red Hat Certified Engineer","Google Professional Data Engineer, Docker Certified Associate, Certified Kubernetes Administrator",0.6
+"AWS Certified Solutions Architect, Tableau Desktop Specialist, Red Hat Certified Engineer","Certified Kubernetes Administrator, Meta Digital Marketing Associate",0.73
+"Red Hat Certified Engineer, CompTIA Security+","Microsoft Certified Azure Administrator, AWS Certified Solutions Architect",0.46
+"Meta Digital Marketing Associate, Certified Kubernetes Administrator","Docker Certified Associate, Certified Ethical Hacker, ISTQB Certified Tester",0.46
+"Microsoft Certified Azure Administrator, ITIL Foundation","Meta Digital Marketing Associate, Docker Certified Associate",0.74
+"Oracle Certified Java Programmer, Cisco Certified Network Associate","Linux Foundation Certified Engineer, Cisco Certified Network Associate",0.62
+"AutoCAD Professional, Certified Kubernetes Administrator, Adobe Certified Expert Photoshop, Cisco Certified Network Associate","Certified Ethical Hacker, ISTQB Certified Tester",0.43
+"ISTQB Certified Tester, Google Analytics Certification, Meta Digital Marketing Associate, Tableau Desktop Specialist","Google Professional Data Engineer, Linux Foundation Certified Engineer, CompTIA Security+",0.58
+"Certified Kubernetes Administrator, Tableau Desktop Specialist, Google Professional Data Engineer, Meta Digital Marketing Associate","Microsoft Certified Azure Administrator, Cisco Certified Network Associate, Salesforce Administrator",0.43
+"Linux Foundation Certified Engineer, Docker Certified Associate, Cisco Certified Network Associate, Oracle Certified Java Programmer","ISTQB Certified Tester, Meta Digital Marketing Associate, Adobe Certified Expert Photoshop",0.43
+"Tableau Desktop Specialist, Meta Digital Marketing Associate, PMP Certification","Red Hat Certified Engineer, AutoCAD Professional",0.54
+"Microsoft Certified Azure Administrator, ISTQB Certified Tester, Docker Certified Associate, Certified Kubernetes Administrator","Tableau Desktop Specialist, AWS Certified Solutions Architect, Google Professional Data Engineer",0.21
+"Docker Certified Associate, Certified Ethical Hacker","Meta Digital Marketing Associate, Salesforce Administrator, AWS Certified Solutions Architect, ITIL Foundation",0.24
+"AutoCAD Professional, PMP Certification, Linux Foundation Certified Engineer, CompTIA Security+","Docker Certified Associate, Certified Ethical Hacker, Cisco Certified Network Associate",0.42
+"ISTQB Certified Tester, Linux Foundation Certified Engineer, Cisco Certified Network Associate","PMP Certification, Docker Certified Associate",0.35
+"Cisco Certified Network Associate, ISTQB Certified Tester","CompTIA Security+, Red Hat Certified Engineer, ISTQB Certified Tester",0.55
+"Certified Kubernetes Administrator, Adobe Certified Expert Photoshop, ITIL Foundation, Cisco Certified Network Associate","CompTIA Security+, Adobe Certified Expert Photoshop, Tableau Desktop Specialist",0.36
+"PMP Certification, AWS Certified Solutions Architect, CompTIA Security+","Google Analytics Certification, Certified Ethical Hacker, AutoCAD Professional, Salesforce Administrator",0.29
+"Adobe Certified Expert Photoshop, Linux Foundation Certified Engineer, Certified Kubernetes Administrator, Tableau Desktop Specialist","Red Hat Certified Engineer, Adobe Certified Expert Photoshop, Certified Kubernetes Administrator",0.72
+"AWS Certified Solutions Architect, ISTQB Certified Tester, Salesforce Administrator","Tableau Desktop Specialist, Certified Ethical Hacker, Oracle Certified Java Programmer",0.47
+"Red Hat Certified Engineer, Google Professional Data Engineer, AutoCAD Professional","Oracle Certified Java Programmer, Microsoft Certified Azure Administrator, Google Analytics Certification",0.51
+"AWS Certified Solutions Architect, PMP Certification, Certified Ethical Hacker, Microsoft Certified Azure Administrator","Google Professional Data Engineer, Tableau Desktop Specialist, AutoCAD Professional",0.29
+"Google Professional Data Engineer, Red Hat Certified Engineer, Docker Certified Associate, AutoCAD Professional","Meta Digital Marketing Associate, Cisco Certified Network Associate",0.42
+"Meta Digital Marketing Associate, AWS Certified Solutions Architect","Cisco Certified Network Associate, Meta Digital Marketing Associate, ISTQB Certified Tester, ITIL Foundation",0.52
+"ISTQB Certified Tester, Google Analytics Certification","Docker Certified Associate, Meta Digital Marketing Associate",0.33
+"AutoCAD Professional, Certified Kubernetes Administrator, Cisco Certified Network Associate","Oracle Certified Java Programmer, ISTQB Certified Tester, Microsoft Certified Azure Administrator, Salesforce Administrator",0.56
+"Tableau Desktop Specialist, Certified Ethical Hacker, Google Analytics Certification","ISTQB Certified Tester, Certified Kubernetes Administrator",0.41
+"ITIL Foundation, Adobe Certified Expert Photoshop, PMP Certification","ITIL Foundation, Cisco Certified Network Associate",0.46
+"Linux Foundation Certified Engineer, AutoCAD Professional, Oracle Certified Java Programmer, PMP Certification","Certified Ethical Hacker, ITIL Foundation, ISTQB Certified Tester",0.41
+"Oracle Certified Java Programmer, ISTQB Certified Tester, Google Analytics Certification","Google Analytics Certification, ISTQB Certified Tester, Oracle Certified Java Programmer",0.78
+"Oracle Certified Java Programmer, Tableau Desktop Specialist, Docker Certified Associate","CompTIA Security+, AWS Certified Solutions Architect",0.5
+"PMP Certification, Certified Ethical Hacker","Cisco Certified Network Associate, Certified Ethical Hacker, Linux Foundation Certified Engineer, ITIL Foundation",0.34
+"ISTQB Certified Tester, Tableau Desktop Specialist, AutoCAD Professional","Google Professional Data Engineer, Microsoft Certified Azure Administrator",0.62
+"PMP Certification, Salesforce Administrator, Google Analytics Certification, Certified Kubernetes Administrator","Meta Digital Marketing Associate, Tableau Desktop Specialist, Red Hat Certified Engineer",0.32
+"Meta Digital Marketing Associate, CompTIA Security+, Oracle Certified Java Programmer","Cisco Certified Network Associate, ISTQB Certified Tester, ITIL Foundation, AWS Certified Solutions Architect",0.53
+"Red Hat Certified Engineer, Google Analytics Certification, AWS Certified Solutions Architect, Cisco Certified Network Associate","AutoCAD Professional, Oracle Certified Java Programmer, Linux Foundation Certified Engineer",0.21
+"Oracle Certified Java Programmer, Google Analytics Certification, Adobe Certified Expert Photoshop, Certified Ethical Hacker","AWS Certified Solutions Architect, PMP Certification, Microsoft Certified Azure Administrator, Docker Certified Associate",0.3
+"Certified Kubernetes Administrator, ITIL Foundation","Google Professional Data Engineer, ITIL Foundation",0.53
+"Google Professional Data Engineer, Meta Digital Marketing Associate, Red Hat Certified Engineer, ISTQB Certified Tester","Meta Digital Marketing Associate, Adobe Certified Expert Photoshop, Microsoft Certified Azure Administrator, Red Hat Certified Engineer",0.61
+"Google Analytics Certification, ITIL Foundation, Salesforce Administrator, Microsoft Certified Azure Administrator","Salesforce Administrator, Docker Certified Associate, AutoCAD Professional",0.53
+"Salesforce Administrator, Google Professional Data Engineer","AutoCAD Professional, Oracle Certified Java Programmer, Cisco Certified Network Associate, Certified Ethical Hacker",0.48
+"Microsoft Certified Azure Administrator, Red Hat Certified Engineer, Meta Digital Marketing Associate, Cisco Certified Network Associate","Salesforce Administrator, CompTIA Security+, ITIL Foundation, AutoCAD Professional",0.45
+"Certified Ethical Hacker, AWS Certified Solutions Architect, ITIL Foundation, Tableau Desktop Specialist","Google Professional Data Engineer, CompTIA Security+, Cisco Certified Network Associate",0.28
+"Certified Ethical Hacker, PMP Certification","Google Analytics Certification, AutoCAD Professional, Adobe Certified Expert Photoshop",0.39
+"Google Analytics Certification, CompTIA Security+, Adobe Certified Expert Photoshop, Certified Ethical Hacker","ISTQB Certified Tester, Linux Foundation Certified Engineer, Certified Ethical Hacker, Certified Kubernetes Administrator",0.43
+"Meta Digital Marketing Associate, Microsoft Certified Azure Administrator, Red Hat Certified Engineer","Certified Ethical Hacker, AutoCAD Professional, Salesforce Administrator, ISTQB Certified Tester",0.66
+"AutoCAD Professional, Cisco Certified Network Associate, Meta Digital Marketing Associate","Certified Ethical Hacker, AWS Certified Solutions Architect",0.55
+"Docker Certified Associate, CompTIA Security+, Meta Digital Marketing Associate","Red Hat Certified Engineer, Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator",0.24
+"PMP Certification, Certified Ethical Hacker","Oracle Certified Java Programmer, ISTQB Certified Tester",0.55
+"Meta Digital Marketing Associate, Google Professional Data Engineer, Red Hat Certified Engineer","Certified Ethical Hacker, Tableau Desktop Specialist",0.44
+"Oracle Certified Java Programmer, Red Hat Certified Engineer, Salesforce Administrator","Docker Certified Associate, CompTIA Security+",0.4
+"Salesforce Administrator, Google Analytics Certification, PMP Certification","Certified Ethical Hacker, AutoCAD Professional, AWS Certified Solutions Architect, ITIL Foundation",0.59
+"Google Analytics Certification, Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator","Docker Certified Associate, Linux Foundation Certified Engineer",0.65
+"Salesforce Administrator, AWS Certified Solutions Architect, Adobe Certified Expert Photoshop","Tableau Desktop Specialist, Docker Certified Associate, Oracle Certified Java Programmer",0.64
+"AutoCAD Professional, Docker Certified Associate, Google Professional Data Engineer, ISTQB Certified Tester","Oracle Certified Java Programmer, Cisco Certified Network Associate, Red Hat Certified Engineer",0.37
+"AutoCAD Professional, AWS Certified Solutions Architect, Salesforce Administrator, Docker Certified Associate","Microsoft Certified Azure Administrator, ISTQB Certified Tester",0.45
+"Certified Kubernetes Administrator, Google Professional Data Engineer, AutoCAD Professional, Cisco Certified Network Associate","Meta Digital Marketing Associate, Google Professional Data Engineer, CompTIA Security+",0.55
+"ITIL Foundation, Microsoft Certified Azure Administrator, AWS Certified Solutions Architect, Salesforce Administrator","Linux Foundation Certified Engineer, Tableau Desktop Specialist, Cisco Certified Network Associate",0.65
+"AutoCAD Professional, Microsoft Certified Azure Administrator","Certified Ethical Hacker, AWS Certified Solutions Architect",0.43
+"Tableau Desktop Specialist, Microsoft Certified Azure Administrator, PMP Certification","Certified Kubernetes Administrator, PMP Certification",0.47
+"Docker Certified Associate, CompTIA Security+","Google Analytics Certification, Docker Certified Associate",0.33
+"CompTIA Security+, Red Hat Certified Engineer, Meta Digital Marketing Associate","Adobe Certified Expert Photoshop, Docker Certified Associate, Google Analytics Certification, Linux Foundation Certified Engineer",0.32
+"Cisco Certified Network Associate, ITIL Foundation, Adobe Certified Expert Photoshop","Microsoft Certified Azure Administrator, Red Hat Certified Engineer, Certified Ethical Hacker",0.62
+"Salesforce Administrator, Google Analytics Certification, PMP Certification, Cisco Certified Network Associate","Salesforce Administrator, Tableau Desktop Specialist, Docker Certified Associate, AWS Certified Solutions Architect",0.7
+"Google Analytics Certification, AWS Certified Solutions Architect","Red Hat Certified Engineer, Meta Digital Marketing Associate, Adobe Certified Expert Photoshop",0.49
+"AutoCAD Professional, Red Hat Certified Engineer, Microsoft Certified Azure Administrator","Linux Foundation Certified Engineer, Certified Kubernetes Administrator",0.65
+"Google Professional Data Engineer, ISTQB Certified Tester","ITIL Foundation, Certified Kubernetes Administrator, Salesforce Administrator",0.55
+"ITIL Foundation, Certified Kubernetes Administrator","Google Analytics Certification, Adobe Certified Expert Photoshop",0.4
+"Adobe Certified Expert Photoshop, Salesforce Administrator, Tableau Desktop Specialist, Docker Certified Associate","Tableau Desktop Specialist, Linux Foundation Certified Engineer, Google Professional Data Engineer, Certified Ethical Hacker",0.55
+"Google Analytics Certification, Certified Kubernetes Administrator","Red Hat Certified Engineer, Docker Certified Associate, Oracle Certified Java Programmer, Linux Foundation Certified Engineer",0.73
+"ISTQB Certified Tester, Oracle Certified Java Programmer, Google Professional Data Engineer","Certified Ethical Hacker, Salesforce Administrator, ISTQB Certified Tester, Certified Kubernetes Administrator",0.49
+"Microsoft Certified Azure Administrator, Oracle Certified Java Programmer","Salesforce Administrator, Red Hat Certified Engineer",0.73
+"Adobe Certified Expert Photoshop, Meta Digital Marketing Associate, PMP Certification, Oracle Certified Java Programmer","Microsoft Certified Azure Administrator, Google Analytics Certification, Certified Ethical Hacker, Salesforce Administrator",0.11
+"Tableau Desktop Specialist, Microsoft Certified Azure Administrator, Oracle Certified Java Programmer","ITIL Foundation, CompTIA Security+, Linux Foundation Certified Engineer",0.62
+"AutoCAD Professional, ITIL Foundation, Salesforce Administrator","Linux Foundation Certified Engineer, Certified Ethical Hacker, Google Professional Data Engineer, AWS Certified Solutions Architect",0.51
+"Certified Ethical Hacker, Adobe Certified Expert Photoshop","Tableau Desktop Specialist, Meta Digital Marketing Associate, Google Professional Data Engineer",0.46
+"AutoCAD Professional, ITIL Foundation","AWS Certified Solutions Architect, Certified Ethical Hacker, AutoCAD Professional, Red Hat Certified Engineer",0.51
+"Google Professional Data Engineer, Microsoft Certified Azure Administrator","Linux Foundation Certified Engineer, ISTQB Certified Tester, Meta Digital Marketing Associate",0.2
+"Linux Foundation Certified Engineer, ISTQB Certified Tester","Cisco Certified Network Associate, Certified Kubernetes Administrator, Tableau Desktop Specialist, Microsoft Certified Azure Administrator",0.47
+"Tableau Desktop Specialist, AutoCAD Professional","Certified Kubernetes Administrator, PMP Certification, ITIL Foundation, Google Professional Data Engineer",0.55
+"Adobe Certified Expert Photoshop, ITIL Foundation, Cisco Certified Network Associate, ISTQB Certified Tester","Google Analytics Certification, Salesforce Administrator, Tableau Desktop Specialist, Meta Digital Marketing Associate",0.72
+"Google Analytics Certification, Salesforce Administrator, Cisco Certified Network Associate","PMP Certification, AWS Certified Solutions Architect",0.42
+"Adobe Certified Expert Photoshop, Google Analytics Certification, Oracle Certified Java Programmer","Red Hat Certified Engineer, ISTQB Certified Tester, Google Analytics Certification",0.38
+"Salesforce Administrator, ISTQB Certified Tester, PMP Certification, CompTIA Security+","Certified Ethical Hacker, Microsoft Certified Azure Administrator, Docker Certified Associate",0.42
+"Google Analytics Certification, PMP Certification","Microsoft Certified Azure Administrator, Certified Kubernetes Administrator, Adobe Certified Expert Photoshop",0.64
+"AutoCAD Professional, Docker Certified Associate, Google Professional Data Engineer, AWS Certified Solutions Architect","Google Professional Data Engineer, Google Analytics Certification, Red Hat Certified Engineer",0.55
+"Google Professional Data Engineer, Salesforce Administrator","Meta Digital Marketing Associate, ITIL Foundation, AWS Certified Solutions Architect, Adobe Certified Expert Photoshop",0.42
+"AWS Certified Solutions Architect, Salesforce Administrator","AWS Certified Solutions Architect, Linux Foundation Certified Engineer, Salesforce Administrator",0.58
+"Linux Foundation Certified Engineer, Cisco Certified Network Associate, Certified Kubernetes Administrator","Docker Certified Associate, Google Professional Data Engineer",0.51
+"AutoCAD Professional, Certified Kubernetes Administrator","Red Hat Certified Engineer, PMP Certification",0.65
+"AWS Certified Solutions Architect, Linux Foundation Certified Engineer, ISTQB Certified Tester","Adobe Certified Expert Photoshop, AutoCAD Professional, Oracle Certified Java Programmer",0.39
+"Google Analytics Certification, Google Professional Data Engineer","Red Hat Certified Engineer, Google Analytics Certification",0.45
+"ISTQB Certified Tester, Adobe Certified Expert Photoshop","Oracle Certified Java Programmer, Microsoft Certified Azure Administrator, Docker Certified Associate",0.44
+"CompTIA Security+, PMP Certification","Google Professional Data Engineer, ITIL Foundation, AWS Certified Solutions Architect",0.28
+"CompTIA Security+, Google Analytics Certification, Meta Digital Marketing Associate, Linux Foundation Certified Engineer","CompTIA Security+, Certified Ethical Hacker, AWS Certified Solutions Architect, Adobe Certified Expert Photoshop",0.54
+"Certified Ethical Hacker, Adobe Certified Expert Photoshop","Certified Ethical Hacker, Google Analytics Certification, AutoCAD Professional",0.54
+"Google Professional Data Engineer, Oracle Certified Java Programmer","Tableau Desktop Specialist, Microsoft Certified Azure Administrator",0.5
+"Red Hat Certified Engineer, Oracle Certified Java Programmer","AWS Certified Solutions Architect, ITIL Foundation",0.46
+"AutoCAD Professional, Certified Ethical Hacker, Docker Certified Associate, Oracle Certified Java Programmer","Microsoft Certified Azure Administrator, Certified Kubernetes Administrator",0.29
+"Adobe Certified Expert Photoshop, Red Hat Certified Engineer, PMP Certification, Certified Kubernetes Administrator","PMP Certification, Meta Digital Marketing Associate",0.44
+"Certified Ethical Hacker, AutoCAD Professional, ITIL Foundation","AWS Certified Solutions Architect, Adobe Certified Expert Photoshop, Oracle Certified Java Programmer, Docker Certified Associate",0.45
+"Google Professional Data Engineer, Certified Ethical Hacker, ITIL Foundation, Docker Certified Associate","Google Professional Data Engineer, Certified Ethical Hacker",0.38
+"PMP Certification, Linux Foundation Certified Engineer, Docker Certified Associate","Docker Certified Associate, PMP Certification",0.48
+"ISTQB Certified Tester, Tableau Desktop Specialist, CompTIA Security+","Salesforce Administrator, AWS Certified Solutions Architect, Microsoft Certified Azure Administrator, CompTIA Security+",0.56
+"PMP Certification, Linux Foundation Certified Engineer, CompTIA Security+, Google Analytics Certification","Linux Foundation Certified Engineer, CompTIA Security+, Google Analytics Certification, PMP Certification",0.78
+"Docker Certified Associate, Certified Kubernetes Administrator, Adobe Certified Expert Photoshop, Meta Digital Marketing Associate","CompTIA Security+, Docker Certified Associate, ISTQB Certified Tester, Cisco Certified Network Associate",0.53
+"AWS Certified Solutions Architect, CompTIA Security+, Meta Digital Marketing Associate, Linux Foundation Certified Engineer","Cisco Certified Network Associate, Google Professional Data Engineer",0.54
+"Certified Ethical Hacker, AutoCAD Professional, Microsoft Certified Azure Administrator","Adobe Certified Expert Photoshop, Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, AWS Certified Solutions Architect",0.49
+"AutoCAD Professional, Certified Ethical Hacker, Docker Certified Associate","Microsoft Certified Azure Administrator, Tableau Desktop Specialist, Salesforce Administrator",0.21
+"Certified Kubernetes Administrator, ISTQB Certified Tester, Linux Foundation Certified Engineer, Red Hat Certified Engineer","AWS Certified Solutions Architect, Red Hat Certified Engineer, Salesforce Administrator, Meta Digital Marketing Associate",0.5
+"Docker Certified Associate, AWS Certified Solutions Architect","ISTQB Certified Tester, Cisco Certified Network Associate, Salesforce Administrator",0.51
+"Adobe Certified Expert Photoshop, AutoCAD Professional, Certified Kubernetes Administrator","AutoCAD Professional, Certified Kubernetes Administrator, Adobe Certified Expert Photoshop",0.87
+"Cisco Certified Network Associate, Salesforce Administrator, PMP Certification","Docker Certified Associate, AWS Certified Solutions Architect",0.47
+"Certified Kubernetes Administrator, Cisco Certified Network Associate, Adobe Certified Expert Photoshop, Docker Certified Associate","ISTQB Certified Tester, Adobe Certified Expert Photoshop, Microsoft Certified Azure Administrator, AutoCAD Professional",0.55
+"Certified Kubernetes Administrator, Certified Ethical Hacker, AutoCAD Professional, Tableau Desktop Specialist","Cisco Certified Network Associate, ITIL Foundation",0.49
+"Adobe Certified Expert Photoshop, AutoCAD Professional, Certified Kubernetes Administrator, Microsoft Certified Azure Administrator","Google Analytics Certification, Linux Foundation Certified Engineer, Salesforce Administrator, Meta Digital Marketing Associate",0.32
+"CompTIA Security+, Certified Ethical Hacker, Oracle Certified Java Programmer","Meta Digital Marketing Associate, Oracle Certified Java Programmer, Certified Kubernetes Administrator, Google Professional Data Engineer",0.67
+"ISTQB Certified Tester, Docker Certified Associate, CompTIA Security+","Oracle Certified Java Programmer, Meta Digital Marketing Associate, Red Hat Certified Engineer",0.61
+"Oracle Certified Java Programmer, ISTQB Certified Tester, Red Hat Certified Engineer","Meta Digital Marketing Associate, Tableau Desktop Specialist",0.62
+"Google Professional Data Engineer, Tableau Desktop Specialist, Salesforce Administrator","Certified Ethical Hacker, Tableau Desktop Specialist, Google Analytics Certification",0.36
+"ISTQB Certified Tester, Certified Ethical Hacker","Tableau Desktop Specialist, Salesforce Administrator, Oracle Certified Java Programmer, Meta Digital Marketing Associate",0.71
+"Red Hat Certified Engineer, CompTIA Security+","Tableau Desktop Specialist, Linux Foundation Certified Engineer, AutoCAD Professional, Microsoft Certified Azure Administrator",0.29
+"Cisco Certified Network Associate, Red Hat Certified Engineer","Certified Kubernetes Administrator, Cisco Certified Network Associate, ITIL Foundation, AWS Certified Solutions Architect",0.59
+"Certified Ethical Hacker, Meta Digital Marketing Associate, Microsoft Certified Azure Administrator, Tableau Desktop Specialist","Certified Ethical Hacker, Microsoft Certified Azure Administrator, Meta Digital Marketing Associate, Tableau Desktop Specialist",0.83
+"Cisco Certified Network Associate, Salesforce Administrator, ITIL Foundation","Linux Foundation Certified Engineer, CompTIA Security+",0.35
+"Docker Certified Associate, CompTIA Security+, Linux Foundation Certified Engineer, Google Professional Data Engineer","Certified Ethical Hacker, Linux Foundation Certified Engineer, Tableau Desktop Specialist, Salesforce Administrator",0.42
+"Meta Digital Marketing Associate, PMP Certification, ITIL Foundation, AutoCAD Professional","Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator, Tableau Desktop Specialist",0.51
+"Oracle Certified Java Programmer, Certified Kubernetes Administrator, Google Professional Data Engineer","Certified Kubernetes Administrator, Linux Foundation Certified Engineer, Google Analytics Certification",0.42
+"AutoCAD Professional, Adobe Certified Expert Photoshop, Meta Digital Marketing Associate, CompTIA Security+","Salesforce Administrator, ISTQB Certified Tester, ITIL Foundation, Microsoft Certified Azure Administrator",0.27
+"Adobe Certified Expert Photoshop, Linux Foundation Certified Engineer, CompTIA Security+","Tableau Desktop Specialist, Linux Foundation Certified Engineer, Salesforce Administrator",0.51
+"Meta Digital Marketing Associate, CompTIA Security+, Adobe Certified Expert Photoshop, Oracle Certified Java Programmer","AWS Certified Solutions Architect, Red Hat Certified Engineer, Certified Kubernetes Administrator",0.34
+"Google Professional Data Engineer, ITIL Foundation, Docker Certified Associate","Certified Kubernetes Administrator, AutoCAD Professional, Meta Digital Marketing Associate, Microsoft Certified Azure Administrator",0.57
+"AutoCAD Professional, Certified Ethical Hacker, ITIL Foundation","Microsoft Certified Azure Administrator, Google Professional Data Engineer",0.36
+"Oracle Certified Java Programmer, Adobe Certified Expert Photoshop, CompTIA Security+","Google Analytics Certification, Red Hat Certified Engineer, Microsoft Certified Azure Administrator",0.73
+"CompTIA Security+, Tableau Desktop Specialist, Microsoft Certified Azure Administrator, Red Hat Certified Engineer","Oracle Certified Java Programmer, Linux Foundation Certified Engineer, Cisco Certified Network Associate, Google Professional Data Engineer",0.38
+"AutoCAD Professional, Oracle Certified Java Programmer, Microsoft Certified Azure Administrator","CompTIA Security+, Red Hat Certified Engineer, Docker Certified Associate",0.45
+"ITIL Foundation, Linux Foundation Certified Engineer","ITIL Foundation, ISTQB Certified Tester",0.62
+"Red Hat Certified Engineer, Certified Kubernetes Administrator","Certified Ethical Hacker, AutoCAD Professional, Meta Digital Marketing Associate, Linux Foundation Certified Engineer",0.32
+"Certified Kubernetes Administrator, AutoCAD Professional, Oracle Certified Java Programmer, Red Hat Certified Engineer","Linux Foundation Certified Engineer, Adobe Certified Expert Photoshop",0.53
+"Adobe Certified Expert Photoshop, AutoCAD Professional, Docker Certified Associate","ISTQB Certified Tester, Tableau Desktop Specialist, Salesforce Administrator, Microsoft Certified Azure Administrator",0.7
+"Microsoft Certified Azure Administrator, Tableau Desktop Specialist, Red Hat Certified Engineer, ISTQB Certified Tester","Meta Digital Marketing Associate, Google Analytics Certification",0.26
+"ITIL Foundation, Certified Ethical Hacker, Docker Certified Associate","Oracle Certified Java Programmer, Microsoft Certified Azure Administrator",0.53
+"Google Analytics Certification, Salesforce Administrator","Meta Digital Marketing Associate, Red Hat Certified Engineer, Cisco Certified Network Associate, Docker Certified Associate",0.54
+"PMP Certification, Docker Certified Associate, Salesforce Administrator, Google Analytics Certification","Salesforce Administrator, Google Analytics Certification, ITIL Foundation",0.62
+"Google Analytics Certification, Microsoft Certified Azure Administrator","Tableau Desktop Specialist, Certified Ethical Hacker, Certified Kubernetes Administrator",0.31
+"Docker Certified Associate, Red Hat Certified Engineer, Salesforce Administrator","CompTIA Security+, Certified Ethical Hacker",0.3
+"Microsoft Certified Azure Administrator, PMP Certification, Cisco Certified Network Associate","Salesforce Administrator, ITIL Foundation, Certified Kubernetes Administrator, Tableau Desktop Specialist",0.58
+"CompTIA Security+, Google Analytics Certification, Tableau Desktop Specialist, Certified Ethical Hacker","Google Analytics Certification, Oracle Certified Java Programmer",0.54
+"PMP Certification, Cisco Certified Network Associate, Certified Kubernetes Administrator","ITIL Foundation, Google Professional Data Engineer, CompTIA Security+",0.54
+"Adobe Certified Expert Photoshop, CompTIA Security+, Linux Foundation Certified Engineer","Google Professional Data Engineer, Tableau Desktop Specialist, Red Hat Certified Engineer, ISTQB Certified Tester",0.55
+"Salesforce Administrator, AutoCAD Professional","Docker Certified Associate, Google Analytics Certification, Tableau Desktop Specialist, Adobe Certified Expert Photoshop",0.4
+"Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator, Adobe Certified Expert Photoshop, ISTQB Certified Tester","Google Analytics Certification, Docker Certified Associate, Certified Kubernetes Administrator, Red Hat Certified Engineer",0.53
+"Linux Foundation Certified Engineer, Certified Kubernetes Administrator, PMP Certification, Microsoft Certified Azure Administrator","PMP Certification, Certified Kubernetes Administrator, Tableau Desktop Specialist",0.54
+"Google Professional Data Engineer, Certified Kubernetes Administrator, ISTQB Certified Tester, Cisco Certified Network Associate","ITIL Foundation, Docker Certified Associate, Microsoft Certified Azure Administrator",0.39
+"Certified Kubernetes Administrator, Google Analytics Certification, Tableau Desktop Specialist, Docker Certified Associate","Certified Kubernetes Administrator, Docker Certified Associate, Tableau Desktop Specialist, Google Analytics Certification",0.78
+"Microsoft Certified Azure Administrator, Docker Certified Associate, AutoCAD Professional, ISTQB Certified Tester","Adobe Certified Expert Photoshop, Salesforce Administrator, Meta Digital Marketing Associate",0.57
+"Docker Certified Associate, Microsoft Certified Azure Administrator","AWS Certified Solutions Architect, Docker Certified Associate, Oracle Certified Java Programmer, Adobe Certified Expert Photoshop",0.32
+"PMP Certification, ISTQB Certified Tester","Google Professional Data Engineer, Certified Ethical Hacker",0.6
+"Oracle Certified Java Programmer, Cisco Certified Network Associate, Red Hat Certified Engineer","Linux Foundation Certified Engineer, Docker Certified Associate, Red Hat Certified Engineer, Salesforce Administrator",0.35
+"ISTQB Certified Tester, Meta Digital Marketing Associate, Salesforce Administrator","Docker Certified Associate, PMP Certification",0.62
+"Meta Digital Marketing Associate, Google Analytics Certification, Oracle Certified Java Programmer, PMP Certification","Cisco Certified Network Associate, CompTIA Security+, PMP Certification",0.67
+"AWS Certified Solutions Architect, Linux Foundation Certified Engineer","Google Professional Data Engineer, AutoCAD Professional",0.38
+"Tableau Desktop Specialist, CompTIA Security+","ISTQB Certified Tester, AutoCAD Professional, Red Hat Certified Engineer",0.64
+"Certified Ethical Hacker, ITIL Foundation, Microsoft Certified Azure Administrator","Linux Foundation Certified Engineer, Adobe Certified Expert Photoshop",0.56
+"Google Analytics Certification, Oracle Certified Java Programmer","ISTQB Certified Tester, Oracle Certified Java Programmer, Google Professional Data Engineer",0.62
+"CompTIA Security+, Google Analytics Certification","Google Analytics Certification, CompTIA Security+",0.78
+"PMP Certification, Certified Ethical Hacker, AWS Certified Solutions Architect, Certified Kubernetes Administrator","Oracle Certified Java Programmer, AutoCAD Professional, CompTIA Security+",0.46
+"ITIL Foundation, AWS Certified Solutions Architect, AutoCAD Professional","Certified Kubernetes Administrator, Tableau Desktop Specialist, Certified Ethical Hacker, AutoCAD Professional",0.39
+"ISTQB Certified Tester, AutoCAD Professional, Certified Kubernetes Administrator, Microsoft Certified Azure Administrator","Cisco Certified Network Associate, Google Analytics Certification",0.37
+"Adobe Certified Expert Photoshop, Google Professional Data Engineer","Linux Foundation Certified Engineer, AutoCAD Professional, ITIL Foundation",0.38
+"Google Professional Data Engineer, Google Analytics Certification","PMP Certification, Docker Certified Associate",0.49
+"Linux Foundation Certified Engineer, Tableau Desktop Specialist","Microsoft Certified Azure Administrator, Meta Digital Marketing Associate, Certified Ethical Hacker",0.55
+"Docker Certified Associate, Adobe Certified Expert Photoshop","CompTIA Security+, Cisco Certified Network Associate, Meta Digital Marketing Associate, Adobe Certified Expert Photoshop",0.54
+"Google Analytics Certification, PMP Certification, Linux Foundation Certified Engineer, Adobe Certified Expert Photoshop","PMP Certification, AutoCAD Professional",0.62
+"Certified Ethical Hacker, AWS Certified Solutions Architect","Red Hat Certified Engineer, Certified Ethical Hacker, Google Professional Data Engineer",0.5
+"Docker Certified Associate, AutoCAD Professional, Cisco Certified Network Associate","Adobe Certified Expert Photoshop, AWS Certified Solutions Architect, Certified Kubernetes Administrator, Microsoft Certified Azure Administrator",0.72
+"Microsoft Certified Azure Administrator, Google Analytics Certification","CompTIA Security+, AWS Certified Solutions Architect, Google Analytics Certification, Tableau Desktop Specialist",0.46
+"AutoCAD Professional, Cisco Certified Network Associate","Cisco Certified Network Associate, AutoCAD Professional",0.91
+"Red Hat Certified Engineer, Salesforce Administrator, Microsoft Certified Azure Administrator","Red Hat Certified Engineer, Certified Kubernetes Administrator, Microsoft Certified Azure Administrator, Meta Digital Marketing Associate",0.59
+"Certified Ethical Hacker, Salesforce Administrator, Google Analytics Certification, Microsoft Certified Azure Administrator","CompTIA Security+, ITIL Foundation, ISTQB Certified Tester",0.37
+"Adobe Certified Expert Photoshop, Microsoft Certified Azure Administrator, Certified Ethical Hacker, Google Professional Data Engineer","Linux Foundation Certified Engineer, Docker Certified Associate, Certified Kubernetes Administrator",0.34
+"Linux Foundation Certified Engineer, CompTIA Security+","PMP Certification, CompTIA Security+",0.57
+"ISTQB Certified Tester, Meta Digital Marketing Associate","AutoCAD Professional, Oracle Certified Java Programmer",0.47
+"Certified Ethical Hacker, AutoCAD Professional, Google Professional Data Engineer","ITIL Foundation, Certified Ethical Hacker",0.61
+"Google Professional Data Engineer, Docker Certified Associate","Red Hat Certified Engineer, Certified Ethical Hacker, Tableau Desktop Specialist",0.57
+"Linux Foundation Certified Engineer, Google Analytics Certification, Meta Digital Marketing Associate","CompTIA Security+, Google Professional Data Engineer, ITIL Foundation, Salesforce Administrator",0.49
+"ITIL Foundation, ISTQB Certified Tester, Google Analytics Certification","Meta Digital Marketing Associate, Red Hat Certified Engineer, ISTQB Certified Tester",0.37
+"AutoCAD Professional, CompTIA Security+, Tableau Desktop Specialist, Meta Digital Marketing Associate","Microsoft Certified Azure Administrator, Docker Certified Associate",0.27
+"Linux Foundation Certified Engineer, Adobe Certified Expert Photoshop, Microsoft Certified Azure Administrator, Docker Certified Associate","Cisco Certified Network Associate, Microsoft Certified Azure Administrator, ITIL Foundation, Tableau Desktop Specialist",0.43
+"ISTQB Certified Tester, Docker Certified Associate","Red Hat Certified Engineer, Salesforce Administrator, PMP Certification",0.63
+"Certified Kubernetes Administrator, Google Analytics Certification, AutoCAD Professional, Google Professional Data Engineer","Certified Kubernetes Administrator, Certified Ethical Hacker, Linux Foundation Certified Engineer",0.53
+"Salesforce Administrator, ISTQB Certified Tester, ITIL Foundation","AutoCAD Professional, Certified Ethical Hacker, Google Analytics Certification",0.31
+"Google Analytics Certification, AutoCAD Professional","Docker Certified Associate, Salesforce Administrator, PMP Certification, Meta Digital Marketing Associate",0.53
+"Meta Digital Marketing Associate, Google Analytics Certification, ISTQB Certified Tester","Certified Ethical Hacker, Linux Foundation Certified Engineer, ISTQB Certified Tester",0.56
+"Meta Digital Marketing Associate, Google Professional Data Engineer, Cisco Certified Network Associate, Tableau Desktop Specialist","CompTIA Security+, PMP Certification",0.37
+"Meta Digital Marketing Associate, CompTIA Security+","PMP Certification, CompTIA Security+",0.52
+"PMP Certification, AWS Certified Solutions Architect, Google Analytics Certification, Red Hat Certified Engineer","PMP Certification, AWS Certified Solutions Architect, CompTIA Security+",0.51
+"Google Professional Data Engineer, Certified Kubernetes Administrator, Linux Foundation Certified Engineer","Linux Foundation Certified Engineer, PMP Certification",0.33
+"Meta Digital Marketing Associate, Tableau Desktop Specialist, ISTQB Certified Tester, Salesforce Administrator","Tableau Desktop Specialist, CompTIA Security+",0.55
+"ITIL Foundation, ISTQB Certified Tester, Linux Foundation Certified Engineer","Salesforce Administrator, Microsoft Certified Azure Administrator, Cisco Certified Network Associate, Google Analytics Certification",0.58
+"CompTIA Security+, AWS Certified Solutions Architect, Cisco Certified Network Associate","PMP Certification, Docker Certified Associate, Tableau Desktop Specialist, Linux Foundation Certified Engineer",0.66
+"Certified Ethical Hacker, Salesforce Administrator, Google Professional Data Engineer, Linux Foundation Certified Engineer","Oracle Certified Java Programmer, Linux Foundation Certified Engineer, PMP Certification, CompTIA Security+",0.66
+"Google Professional Data Engineer, AWS Certified Solutions Architect, ISTQB Certified Tester, Docker Certified Associate","Google Analytics Certification, Certified Ethical Hacker",0.29
+"Cisco Certified Network Associate, AutoCAD Professional, Linux Foundation Certified Engineer, PMP Certification","CompTIA Security+, Adobe Certified Expert Photoshop, Red Hat Certified Engineer",0.36
+"Adobe Certified Expert Photoshop, Certified Ethical Hacker, Salesforce Administrator","Adobe Certified Expert Photoshop, Tableau Desktop Specialist",0.58
+"Linux Foundation Certified Engineer, Red Hat Certified Engineer, ISTQB Certified Tester","Linux Foundation Certified Engineer, Docker Certified Associate",0.58
+"Tableau Desktop Specialist, Cisco Certified Network Associate, ITIL Foundation, AutoCAD Professional","Google Professional Data Engineer, Docker Certified Associate, Oracle Certified Java Programmer",0.58
+"Adobe Certified Expert Photoshop, Linux Foundation Certified Engineer, CompTIA Security+","Adobe Certified Expert Photoshop, CompTIA Security+, Linux Foundation Certified Engineer",1.0
+"Microsoft Certified Azure Administrator, Certified Kubernetes Administrator, Meta Digital Marketing Associate, Cisco Certified Network Associate","Certified Kubernetes Administrator, Meta Digital Marketing Associate",0.59
+"Meta Digital Marketing Associate, Salesforce Administrator","Oracle Certified Java Programmer, Red Hat Certified Engineer",0.67
+"Tableau Desktop Specialist, Certified Kubernetes Administrator","Tableau Desktop Specialist, Oracle Certified Java Programmer, ITIL Foundation, Cisco Certified Network Associate",0.64
+"Meta Digital Marketing Associate, Certified Kubernetes Administrator","Salesforce Administrator, Red Hat Certified Engineer, CompTIA Security+, Google Analytics Certification",0.6
+"Certified Ethical Hacker, Salesforce Administrator, ISTQB Certified Tester","Cisco Certified Network Associate, ISTQB Certified Tester",0.45
+"Certified Ethical Hacker, Adobe Certified Expert Photoshop, Red Hat Certified Engineer","Meta Digital Marketing Associate, Red Hat Certified Engineer, Cisco Certified Network Associate, Tableau Desktop Specialist",0.61
+"Red Hat Certified Engineer, AWS Certified Solutions Architect","AutoCAD Professional, AWS Certified Solutions Architect, Microsoft Certified Azure Administrator, CompTIA Security+",0.38
+"Docker Certified Associate, PMP Certification, Meta Digital Marketing Associate","Docker Certified Associate, Certified Ethical Hacker, AWS Certified Solutions Architect",0.46
+"Cisco Certified Network Associate, Docker Certified Associate, Certified Ethical Hacker","AutoCAD Professional, Certified Kubernetes Administrator, ISTQB Certified Tester",0.43
+"Certified Ethical Hacker, Certified Kubernetes Administrator, AutoCAD Professional","ITIL Foundation, Oracle Certified Java Programmer, Adobe Certified Expert Photoshop, Cisco Certified Network Associate",0.51
+"PMP Certification, Google Analytics Certification, Red Hat Certified Engineer, Meta Digital Marketing Associate","Meta Digital Marketing Associate, Red Hat Certified Engineer, PMP Certification, Google Analytics Certification",0.85
+"PMP Certification, Docker Certified Associate, Red Hat Certified Engineer","Tableau Desktop Specialist, AWS Certified Solutions Architect, Meta Digital Marketing Associate",0.22
+"Cisco Certified Network Associate, Meta Digital Marketing Associate, Tableau Desktop Specialist","Linux Foundation Certified Engineer, AutoCAD Professional, Google Analytics Certification",0.6
+"Certified Ethical Hacker, ITIL Foundation","Google Analytics Certification, Meta Digital Marketing Associate, PMP Certification, Docker Certified Associate",0.26
+"Docker Certified Associate, AutoCAD Professional, Linux Foundation Certified Engineer, Tableau Desktop Specialist","Cisco Certified Network Associate, Google Professional Data Engineer, ITIL Foundation",0.43
+"Certified Ethical Hacker, Salesforce Administrator, Red Hat Certified Engineer","Cisco Certified Network Associate, CompTIA Security+, ITIL Foundation",0.66
+"Meta Digital Marketing Associate, Salesforce Administrator, Red Hat Certified Engineer","CompTIA Security+, PMP Certification, AutoCAD Professional, Google Analytics Certification",0.51
+"Salesforce Administrator, AWS Certified Solutions Architect","Adobe Certified Expert Photoshop, AutoCAD Professional, Oracle Certified Java Programmer, Certified Kubernetes Administrator",0.34
+"Oracle Certified Java Programmer, Tableau Desktop Specialist, Certified Ethical Hacker, Meta Digital Marketing Associate","Adobe Certified Expert Photoshop, Cisco Certified Network Associate, AutoCAD Professional, Microsoft Certified Azure Administrator",0.39
+"Adobe Certified Expert Photoshop, Google Analytics Certification, ISTQB Certified Tester","Docker Certified Associate, Salesforce Administrator",0.6
+"CompTIA Security+, ITIL Foundation, PMP Certification","ITIL Foundation, Certified Kubernetes Administrator, CompTIA Security+",0.39
+"Certified Kubernetes Administrator, PMP Certification, Meta Digital Marketing Associate, Google Analytics Certification","AutoCAD Professional, Cisco Certified Network Associate, Tableau Desktop Specialist",0.53
+"Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, Red Hat Certified Engineer","Docker Certified Associate, ISTQB Certified Tester, Tableau Desktop Specialist",0.51
+"Salesforce Administrator, Docker Certified Associate","Meta Digital Marketing Associate, ITIL Foundation, Salesforce Administrator",0.4
+"Certified Ethical Hacker, Microsoft Certified Azure Administrator","Certified Ethical Hacker, Microsoft Certified Azure Administrator",0.82
+"Oracle Certified Java Programmer, Red Hat Certified Engineer, Tableau Desktop Specialist, Certified Ethical Hacker","Oracle Certified Java Programmer, Adobe Certified Expert Photoshop, AWS Certified Solutions Architect, Certified Ethical Hacker",0.6
+"Cisco Certified Network Associate, Certified Ethical Hacker","ITIL Foundation, Linux Foundation Certified Engineer, Meta Digital Marketing Associate",0.2
+"ISTQB Certified Tester, PMP Certification, ITIL Foundation","Google Analytics Certification, Google Professional Data Engineer, ITIL Foundation",0.53
+"Salesforce Administrator, Tableau Desktop Specialist, PMP Certification","Certified Kubernetes Administrator, Certified Ethical Hacker",0.4
+"PMP Certification, CompTIA Security+, ITIL Foundation","ITIL Foundation, Docker Certified Associate",0.63
+"Salesforce Administrator, Red Hat Certified Engineer, Meta Digital Marketing Associate","Google Professional Data Engineer, Adobe Certified Expert Photoshop",0.38
+"Cisco Certified Network Associate, Microsoft Certified Azure Administrator","Adobe Certified Expert Photoshop, Salesforce Administrator, AutoCAD Professional",0.48
+"AutoCAD Professional, PMP Certification","Docker Certified Associate, Microsoft Certified Azure Administrator, AWS Certified Solutions Architect, AutoCAD Professional",0.58
+"PMP Certification, Google Analytics Certification, Oracle Certified Java Programmer","Docker Certified Associate, AWS Certified Solutions Architect, Microsoft Certified Azure Administrator, Google Analytics Certification",0.63
+"ISTQB Certified Tester, PMP Certification","Salesforce Administrator, Cisco Certified Network Associate",0.32
+"PMP Certification, Red Hat Certified Engineer, ITIL Foundation, Microsoft Certified Azure Administrator","Tableau Desktop Specialist, AWS Certified Solutions Architect",0.45
+"AutoCAD Professional, PMP Certification, ITIL Foundation","Linux Foundation Certified Engineer, Red Hat Certified Engineer, Salesforce Administrator, PMP Certification",0.43
+"Red Hat Certified Engineer, AWS Certified Solutions Architect, Google Professional Data Engineer","CompTIA Security+, Certified Ethical Hacker",0.4
+"Microsoft Certified Azure Administrator, ISTQB Certified Tester, Certified Kubernetes Administrator, Docker Certified Associate","ISTQB Certified Tester, Microsoft Certified Azure Administrator, Docker Certified Associate, Certified Kubernetes Administrator",0.76
+"Certified Ethical Hacker, Meta Digital Marketing Associate, Certified Kubernetes Administrator","PMP Certification, Salesforce Administrator, Certified Kubernetes Administrator",0.56
+"Adobe Certified Expert Photoshop, Oracle Certified Java Programmer","Red Hat Certified Engineer, Linux Foundation Certified Engineer, PMP Certification",0.31
+"Salesforce Administrator, Cisco Certified Network Associate","Salesforce Administrator, Tableau Desktop Specialist, Certified Kubernetes Administrator, Docker Certified Associate",0.64
+"Adobe Certified Expert Photoshop, Salesforce Administrator","Salesforce Administrator, Adobe Certified Expert Photoshop",0.82
+"Salesforce Administrator, AutoCAD Professional, PMP Certification, Tableau Desktop Specialist","CompTIA Security+, Cisco Certified Network Associate, Microsoft Certified Azure Administrator, Google Analytics Certification",0.65
+"Linux Foundation Certified Engineer, Google Analytics Certification","AWS Certified Solutions Architect, Tableau Desktop Specialist",0.27
+"Oracle Certified Java Programmer, AutoCAD Professional","Oracle Certified Java Programmer, Google Analytics Certification, Cisco Certified Network Associate",0.43
+"AWS Certified Solutions Architect, Google Professional Data Engineer, Certified Ethical Hacker, ISTQB Certified Tester","Red Hat Certified Engineer, Tableau Desktop Specialist, Meta Digital Marketing Associate, ISTQB Certified Tester",0.69
+"Linux Foundation Certified Engineer, ISTQB Certified Tester","Certified Kubernetes Administrator, Google Professional Data Engineer",0.39
+"Salesforce Administrator, Google Professional Data Engineer, Adobe Certified Expert Photoshop","Cisco Certified Network Associate, ITIL Foundation, Certified Ethical Hacker, Linux Foundation Certified Engineer",0.57
+"Certified Kubernetes Administrator, Cisco Certified Network Associate","PMP Certification, Google Professional Data Engineer",0.62
+"PMP Certification, Docker Certified Associate, Salesforce Administrator, Cisco Certified Network Associate","Tableau Desktop Specialist, Salesforce Administrator",0.36
+"ISTQB Certified Tester, AWS Certified Solutions Architect, Docker Certified Associate, Red Hat Certified Engineer","Cisco Certified Network Associate, ISTQB Certified Tester",0.49
+"Meta Digital Marketing Associate, Adobe Certified Expert Photoshop","Google Professional Data Engineer, Certified Ethical Hacker, ITIL Foundation",0.01
+"Cisco Certified Network Associate, Certified Kubernetes Administrator","Linux Foundation Certified Engineer, Salesforce Administrator",0.35
+"Oracle Certified Java Programmer, AWS Certified Solutions Architect, Google Professional Data Engineer","Adobe Certified Expert Photoshop, Linux Foundation Certified Engineer, Certified Kubernetes Administrator, CompTIA Security+",0.46
+"Salesforce Administrator, PMP Certification, ISTQB Certified Tester, Google Analytics Certification","ITIL Foundation, Red Hat Certified Engineer, Linux Foundation Certified Engineer, Tableau Desktop Specialist",0.31
+"ISTQB Certified Tester, Adobe Certified Expert Photoshop, Cisco Certified Network Associate, Tableau Desktop Specialist","Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, Certified Ethical Hacker",0.74
+"Docker Certified Associate, Linux Foundation Certified Engineer","ISTQB Certified Tester, AWS Certified Solutions Architect",0.29
+"Salesforce Administrator, AutoCAD Professional","ISTQB Certified Tester, Certified Ethical Hacker",0.43
+"Meta Digital Marketing Associate, Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator","PMP Certification, ISTQB Certified Tester, Red Hat Certified Engineer",0.52
+"Meta Digital Marketing Associate, AutoCAD Professional, ISTQB Certified Tester, ITIL Foundation","Linux Foundation Certified Engineer, Certified Kubernetes Administrator",0.72
+"Linux Foundation Certified Engineer, Red Hat Certified Engineer","ISTQB Certified Tester, ITIL Foundation",0.28
+"Google Analytics Certification, ITIL Foundation, Linux Foundation Certified Engineer, Meta Digital Marketing Associate","Adobe Certified Expert Photoshop, ITIL Foundation, AutoCAD Professional",0.67
+"CompTIA Security+, Cisco Certified Network Associate","Adobe Certified Expert Photoshop, Microsoft Certified Azure Administrator, Google Professional Data Engineer",0.5
+"ISTQB Certified Tester, AWS Certified Solutions Architect","Red Hat Certified Engineer, Adobe Certified Expert Photoshop, ISTQB Certified Tester",0.35
+"Google Professional Data Engineer, Tableau Desktop Specialist, ITIL Foundation","Google Professional Data Engineer, CompTIA Security+, Linux Foundation Certified Engineer",0.57
+"ITIL Foundation, Oracle Certified Java Programmer, Red Hat Certified Engineer","Google Analytics Certification, AWS Certified Solutions Architect, Microsoft Certified Azure Administrator",0.53
+"Linux Foundation Certified Engineer, ISTQB Certified Tester, CompTIA Security+, Certified Kubernetes Administrator","Google Analytics Certification, Google Professional Data Engineer",0.41
+"AutoCAD Professional, CompTIA Security+, ISTQB Certified Tester, AWS Certified Solutions Architect","Cisco Certified Network Associate, Meta Digital Marketing Associate",0.51
+"Linux Foundation Certified Engineer, Google Professional Data Engineer","Salesforce Administrator, AWS Certified Solutions Architect",0.44
+"Microsoft Certified Azure Administrator, Meta Digital Marketing Associate, AWS Certified Solutions Architect, Google Analytics Certification","Salesforce Administrator, Tableau Desktop Specialist",0.52
+"Microsoft Certified Azure Administrator, Docker Certified Associate, Certified Ethical Hacker","Tableau Desktop Specialist, Docker Certified Associate",0.6
+"Google Analytics Certification, Red Hat Certified Engineer, CompTIA Security+, Certified Kubernetes Administrator","AWS Certified Solutions Architect, Microsoft Certified Azure Administrator, AutoCAD Professional, Linux Foundation Certified Engineer",0.74
+"Adobe Certified Expert Photoshop, Tableau Desktop Specialist, Microsoft Certified Azure Administrator","Certified Kubernetes Administrator, PMP Certification",0.31
+"Tableau Desktop Specialist, Adobe Certified Expert Photoshop","Adobe Certified Expert Photoshop, Tableau Desktop Specialist",0.82
+"Certified Kubernetes Administrator, AWS Certified Solutions Architect, Salesforce Administrator","Adobe Certified Expert Photoshop, Google Analytics Certification, Red Hat Certified Engineer",0.21
+"PMP Certification, Red Hat Certified Engineer, Salesforce Administrator, Linux Foundation Certified Engineer","Certified Ethical Hacker, Tableau Desktop Specialist, Meta Digital Marketing Associate",0.48
+"Google Analytics Certification, Adobe Certified Expert Photoshop, PMP Certification","ISTQB Certified Tester, CompTIA Security+",0.59
+"Red Hat Certified Engineer, Linux Foundation Certified Engineer, Tableau Desktop Specialist","Google Analytics Certification, ITIL Foundation",0.54
+"Salesforce Administrator, Microsoft Certified Azure Administrator, Red Hat Certified Engineer","CompTIA Security+, Meta Digital Marketing Associate, Cisco Certified Network Associate, Oracle Certified Java Programmer",0.41
+"Red Hat Certified Engineer, Google Analytics Certification, Adobe Certified Expert Photoshop","Linux Foundation Certified Engineer, Tableau Desktop Specialist",0.47
+"Tableau Desktop Specialist, Certified Kubernetes Administrator, Certified Ethical Hacker","ISTQB Certified Tester, Docker Certified Associate, Salesforce Administrator",0.43
+"Salesforce Administrator, AutoCAD Professional, ITIL Foundation, Certified Ethical Hacker","Google Professional Data Engineer, Tableau Desktop Specialist, ITIL Foundation, PMP Certification",0.41
+"Cisco Certified Network Associate, PMP Certification, Oracle Certified Java Programmer, Microsoft Certified Azure Administrator","PMP Certification, AutoCAD Professional",0.63
+"Adobe Certified Expert Photoshop, Oracle Certified Java Programmer, AutoCAD Professional, Google Professional Data Engineer","Cisco Certified Network Associate, Microsoft Certified Azure Administrator, ISTQB Certified Tester",0.55
+"Adobe Certified Expert Photoshop, AWS Certified Solutions Architect, Microsoft Certified Azure Administrator","PMP Certification, Microsoft Certified Azure Administrator, Certified Kubernetes Administrator",0.4
+"AWS Certified Solutions Architect, AutoCAD Professional, Tableau Desktop Specialist, Adobe Certified Expert Photoshop","Linux Foundation Certified Engineer, AutoCAD Professional, Certified Kubernetes Administrator, ISTQB Certified Tester",0.63
+"Linux Foundation Certified Engineer, AutoCAD Professional","Cisco Certified Network Associate, Tableau Desktop Specialist, ITIL Foundation, ISTQB Certified Tester",0.55
+"ITIL Foundation, Cisco Certified Network Associate","PMP Certification, Certified Ethical Hacker, Google Professional Data Engineer, Meta Digital Marketing Associate",0.62
+"Certified Ethical Hacker, Meta Digital Marketing Associate, Google Professional Data Engineer","ITIL Foundation, AutoCAD Professional, Oracle Certified Java Programmer",0.59
+"Certified Ethical Hacker, Certified Kubernetes Administrator, ITIL Foundation","Adobe Certified Expert Photoshop, Linux Foundation Certified Engineer, AWS Certified Solutions Architect",0.38
+"Google Analytics Certification, AutoCAD Professional, Microsoft Certified Azure Administrator, ITIL Foundation","Red Hat Certified Engineer, Salesforce Administrator, Certified Ethical Hacker",0.42
+"PMP Certification, AWS Certified Solutions Architect, Tableau Desktop Specialist, CompTIA Security+","ITIL Foundation, Certified Kubernetes Administrator, ISTQB Certified Tester, AutoCAD Professional",0.61
+"Adobe Certified Expert Photoshop, Tableau Desktop Specialist, Meta Digital Marketing Associate, Linux Foundation Certified Engineer","Cisco Certified Network Associate, Docker Certified Associate, Tableau Desktop Specialist",0.59
+"Certified Ethical Hacker, Google Analytics Certification, Oracle Certified Java Programmer","ITIL Foundation, Linux Foundation Certified Engineer, ISTQB Certified Tester",0.5
+"Red Hat Certified Engineer, ITIL Foundation, Tableau Desktop Specialist","Tableau Desktop Specialist, Linux Foundation Certified Engineer",0.52
+"Cisco Certified Network Associate, Salesforce Administrator","Cisco Certified Network Associate, Meta Digital Marketing Associate, ISTQB Certified Tester",0.69
+"AWS Certified Solutions Architect, Salesforce Administrator","Salesforce Administrator, Google Professional Data Engineer, Red Hat Certified Engineer",0.41
+"Red Hat Certified Engineer, PMP Certification","Red Hat Certified Engineer, ITIL Foundation",0.58
+"Meta Digital Marketing Associate, Tableau Desktop Specialist, Oracle Certified Java Programmer, ISTQB Certified Tester","CompTIA Security+, Adobe Certified Expert Photoshop",0.47
+"Linux Foundation Certified Engineer, Salesforce Administrator, Tableau Desktop Specialist","ITIL Foundation, Adobe Certified Expert Photoshop",0.47
+"Google Professional Data Engineer, Google Analytics Certification, Adobe Certified Expert Photoshop, Salesforce Administrator","Google Analytics Certification, Docker Certified Associate, Salesforce Administrator",0.66
+"Google Analytics Certification, AWS Certified Solutions Architect, Microsoft Certified Azure Administrator","CompTIA Security+, Linux Foundation Certified Engineer",0.62
+"Docker Certified Associate, Cisco Certified Network Associate","CompTIA Security+, Linux Foundation Certified Engineer, PMP Certification",0.62
+"ITIL Foundation, Linux Foundation Certified Engineer","Oracle Certified Java Programmer, PMP Certification, Tableau Desktop Specialist",0.7
+"Cisco Certified Network Associate, AutoCAD Professional","AutoCAD Professional, ISTQB Certified Tester, ITIL Foundation",0.5
+"AutoCAD Professional, Linux Foundation Certified Engineer, CompTIA Security+","ITIL Foundation, Tableau Desktop Specialist, Google Professional Data Engineer",0.6
+"AutoCAD Professional, Cisco Certified Network Associate, Salesforce Administrator, Docker Certified Associate","Certified Ethical Hacker, ITIL Foundation, Linux Foundation Certified Engineer, Certified Kubernetes Administrator",0.45
+"ISTQB Certified Tester, Certified Kubernetes Administrator, Tableau Desktop Specialist, Certified Ethical Hacker","PMP Certification, AWS Certified Solutions Architect, Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator",0.55
+"Docker Certified Associate, Tableau Desktop Specialist, PMP Certification, Certified Kubernetes Administrator","Microsoft Certified Azure Administrator, AutoCAD Professional",0.48
+"CompTIA Security+, ISTQB Certified Tester","Adobe Certified Expert Photoshop, Red Hat Certified Engineer",0.51
+"AWS Certified Solutions Architect, ITIL Foundation","Microsoft Certified Azure Administrator, Google Analytics Certification, Tableau Desktop Specialist, Red Hat Certified Engineer",0.59
+"Salesforce Administrator, Oracle Certified Java Programmer","Salesforce Administrator, AutoCAD Professional, CompTIA Security+",0.38
+"Certified Ethical Hacker, Adobe Certified Expert Photoshop","Certified Ethical Hacker, Adobe Certified Expert Photoshop",0.81
+"Tableau Desktop Specialist, Oracle Certified Java Programmer, AWS Certified Solutions Architect","CompTIA Security+, Certified Kubernetes Administrator, ITIL Foundation, Google Analytics Certification",0.35
+"Docker Certified Associate, Google Analytics Certification, AWS Certified Solutions Architect, Linux Foundation Certified Engineer","Google Professional Data Engineer, Salesforce Administrator, Adobe Certified Expert Photoshop",0.32
+"Certified Kubernetes Administrator, Adobe Certified Expert Photoshop, ITIL Foundation, Tableau Desktop Specialist","Google Professional Data Engineer, ISTQB Certified Tester, Meta Digital Marketing Associate",0.67
+"Google Analytics Certification, Google Professional Data Engineer, PMP Certification, Tableau Desktop Specialist","Google Analytics Certification, Tableau Desktop Specialist, Certified Ethical Hacker, Red Hat Certified Engineer",0.62
+"Meta Digital Marketing Associate, Google Professional Data Engineer, Tableau Desktop Specialist","Oracle Certified Java Programmer, ITIL Foundation",0.59
+"Google Analytics Certification, Adobe Certified Expert Photoshop","Salesforce Administrator, Red Hat Certified Engineer, Microsoft Certified Azure Administrator",0.59
+"Docker Certified Associate, Meta Digital Marketing Associate, PMP Certification","AutoCAD Professional, Meta Digital Marketing Associate, Docker Certified Associate, Certified Kubernetes Administrator",0.5
+"AWS Certified Solutions Architect, Docker Certified Associate, Tableau Desktop Specialist, ITIL Foundation","Docker Certified Associate, AutoCAD Professional, Certified Kubernetes Administrator, ISTQB Certified Tester",0.37
+"ISTQB Certified Tester, Oracle Certified Java Programmer, CompTIA Security+","AWS Certified Solutions Architect, Tableau Desktop Specialist, Certified Kubernetes Administrator, Google Analytics Certification",0.51
+"Microsoft Certified Azure Administrator, ITIL Foundation","AWS Certified Solutions Architect, AutoCAD Professional, Certified Kubernetes Administrator, Docker Certified Associate",0.4
+"Certified Ethical Hacker, Oracle Certified Java Programmer","Adobe Certified Expert Photoshop, ISTQB Certified Tester, Tableau Desktop Specialist",0.65
+"Tableau Desktop Specialist, Salesforce Administrator, Docker Certified Associate","Tableau Desktop Specialist, Certified Ethical Hacker",0.48
+"Meta Digital Marketing Associate, Certified Ethical Hacker, Oracle Certified Java Programmer","Tableau Desktop Specialist, Google Professional Data Engineer, Meta Digital Marketing Associate, Google Analytics Certification",0.38
+"Red Hat Certified Engineer, Oracle Certified Java Programmer, Adobe Certified Expert Photoshop, Google Professional Data Engineer","Google Professional Data Engineer, Adobe Certified Expert Photoshop, Cisco Certified Network Associate",0.45
+"Salesforce Administrator, Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator","AWS Certified Solutions Architect, AutoCAD Professional, Google Analytics Certification",0.56
+"Certified Kubernetes Administrator, Microsoft Certified Azure Administrator, Certified Ethical Hacker, AWS Certified Solutions Architect","ITIL Foundation, Google Professional Data Engineer, ISTQB Certified Tester",0.42
+"Tableau Desktop Specialist, Google Professional Data Engineer, ITIL Foundation","Tableau Desktop Specialist, Oracle Certified Java Programmer, Salesforce Administrator, Docker Certified Associate",0.38
+"ISTQB Certified Tester, Microsoft Certified Azure Administrator","Certified Ethical Hacker, PMP Certification, Docker Certified Associate, Adobe Certified Expert Photoshop",0.54
+"Red Hat Certified Engineer, Docker Certified Associate, Certified Ethical Hacker, Adobe Certified Expert Photoshop","ISTQB Certified Tester, Red Hat Certified Engineer, Google Professional Data Engineer",0.54
+"CompTIA Security+, Microsoft Certified Azure Administrator","Certified Kubernetes Administrator, Google Professional Data Engineer, ITIL Foundation, CompTIA Security+",0.42
+"Red Hat Certified Engineer, Google Analytics Certification","Google Analytics Certification, Cisco Certified Network Associate, Certified Ethical Hacker",0.43
+"AWS Certified Solutions Architect, Salesforce Administrator, Microsoft Certified Azure Administrator, Cisco Certified Network Associate","PMP Certification, Salesforce Administrator",0.53
+"Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, AutoCAD Professional","Salesforce Administrator, ISTQB Certified Tester, Red Hat Certified Engineer, Tableau Desktop Specialist",0.28
+"Salesforce Administrator, Google Professional Data Engineer, Docker Certified Associate","Certified Kubernetes Administrator, Meta Digital Marketing Associate, Oracle Certified Java Programmer",0.29
+"Cisco Certified Network Associate, Linux Foundation Certified Engineer, Docker Certified Associate, Adobe Certified Expert Photoshop","CompTIA Security+, Linux Foundation Certified Engineer, Adobe Certified Expert Photoshop",0.39
+"Certified Kubernetes Administrator, Microsoft Certified Azure Administrator, AWS Certified Solutions Architect","Certified Kubernetes Administrator, Tableau Desktop Specialist, Salesforce Administrator",0.47
+"Certified Kubernetes Administrator, PMP Certification, CompTIA Security+, AWS Certified Solutions Architect","Google Analytics Certification, ITIL Foundation",0.55
+"Certified Kubernetes Administrator, Docker Certified Associate, Tableau Desktop Specialist, ISTQB Certified Tester","Tableau Desktop Specialist, Meta Digital Marketing Associate, Certified Ethical Hacker, Google Professional Data Engineer",0.72
+"Red Hat Certified Engineer, Linux Foundation Certified Engineer, AutoCAD Professional, Certified Kubernetes Administrator","Certified Kubernetes Administrator, Docker Certified Associate",0.63
+"Salesforce Administrator, Tableau Desktop Specialist","Google Analytics Certification, Cisco Certified Network Associate, Google Professional Data Engineer",0.48
+"Cisco Certified Network Associate, AutoCAD Professional, Linux Foundation Certified Engineer","CompTIA Security+, Meta Digital Marketing Associate, Certified Ethical Hacker, AutoCAD Professional",0.5
+"Google Analytics Certification, Certified Kubernetes Administrator","Adobe Certified Expert Photoshop, ITIL Foundation, Google Professional Data Engineer",0.35
+"AutoCAD Professional, Certified Kubernetes Administrator","Certified Ethical Hacker, Microsoft Certified Azure Administrator",0.5
+"Tableau Desktop Specialist, Docker Certified Associate","AWS Certified Solutions Architect, Certified Kubernetes Administrator",0.46
+"Oracle Certified Java Programmer, PMP Certification","Oracle Certified Java Programmer, ISTQB Certified Tester, AWS Certified Solutions Architect, Docker Certified Associate",0.55
+"Adobe Certified Expert Photoshop, Red Hat Certified Engineer","AWS Certified Solutions Architect, Red Hat Certified Engineer",0.38
+"PMP Certification, Red Hat Certified Engineer, ISTQB Certified Tester, Microsoft Certified Azure Administrator","CompTIA Security+, Cisco Certified Network Associate, PMP Certification",0.58
+"Linux Foundation Certified Engineer, Google Analytics Certification, Certified Kubernetes Administrator, Oracle Certified Java Programmer","Salesforce Administrator, Certified Ethical Hacker, CompTIA Security+",0.73
+"Linux Foundation Certified Engineer, Google Analytics Certification, Microsoft Certified Azure Administrator","Salesforce Administrator, Tableau Desktop Specialist, Google Professional Data Engineer",0.48
+"Certified Kubernetes Administrator, Certified Ethical Hacker, CompTIA Security+, Docker Certified Associate","Microsoft Certified Azure Administrator, Oracle Certified Java Programmer",0.56
+"ISTQB Certified Tester, AutoCAD Professional","Cisco Certified Network Associate, Red Hat Certified Engineer, Tableau Desktop Specialist",0.6
+"ISTQB Certified Tester, CompTIA Security+, Red Hat Certified Engineer","Linux Foundation Certified Engineer, CompTIA Security+, Docker Certified Associate",0.44
+"Certified Kubernetes Administrator, Microsoft Certified Azure Administrator","Linux Foundation Certified Engineer, Red Hat Certified Engineer, Oracle Certified Java Programmer",0.53
+"CompTIA Security+, AWS Certified Solutions Architect, ISTQB Certified Tester","Linux Foundation Certified Engineer, Docker Certified Associate, AWS Certified Solutions Architect",0.5
+"Adobe Certified Expert Photoshop, Meta Digital Marketing Associate, Certified Kubernetes Administrator, AWS Certified Solutions Architect","Cisco Certified Network Associate, CompTIA Security+, Certified Ethical Hacker",0.51
+"Certified Ethical Hacker, Oracle Certified Java Programmer, Linux Foundation Certified Engineer, ISTQB Certified Tester","Meta Digital Marketing Associate, Cisco Certified Network Associate",0.38
+"ITIL Foundation, Adobe Certified Expert Photoshop, AWS Certified Solutions Architect, Certified Kubernetes Administrator","Cisco Certified Network Associate, AutoCAD Professional",0.5
+"CompTIA Security+, PMP Certification, Salesforce Administrator, Certified Kubernetes Administrator","AWS Certified Solutions Architect, Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, ITIL Foundation",0.57
+"Docker Certified Associate, Red Hat Certified Engineer, Meta Digital Marketing Associate, Linux Foundation Certified Engineer","PMP Certification, Google Professional Data Engineer",0.72
+"Salesforce Administrator, AutoCAD Professional, Linux Foundation Certified Engineer, Google Analytics Certification","AWS Certified Solutions Architect, ITIL Foundation, ISTQB Certified Tester",0.64
+"Docker Certified Associate, Meta Digital Marketing Associate, Adobe Certified Expert Photoshop, PMP Certification","Adobe Certified Expert Photoshop, PMP Certification, Meta Digital Marketing Associate, Docker Certified Associate",0.82
+"Certified Ethical Hacker, Meta Digital Marketing Associate, Certified Kubernetes Administrator","PMP Certification, Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, Meta Digital Marketing Associate",0.38
+"Certified Kubernetes Administrator, Docker Certified Associate, PMP Certification","PMP Certification, Certified Ethical Hacker, Google Professional Data Engineer, Docker Certified Associate",0.63
+"Microsoft Certified Azure Administrator, Google Professional Data Engineer, ITIL Foundation, Cisco Certified Network Associate","PMP Certification, AWS Certified Solutions Architect",0.53
+"Oracle Certified Java Programmer, Red Hat Certified Engineer, Tableau Desktop Specialist, Docker Certified Associate","Tableau Desktop Specialist, Docker Certified Associate, Red Hat Certified Engineer, Oracle Certified Java Programmer",0.83
+"Google Professional Data Engineer, Google Analytics Certification, Certified Ethical Hacker","Cisco Certified Network Associate, Adobe Certified Expert Photoshop",0.38
+"Salesforce Administrator, Cisco Certified Network Associate, CompTIA Security+","ISTQB Certified Tester, AutoCAD Professional",0.37
+"Meta Digital Marketing Associate, Certified Kubernetes Administrator, Cisco Certified Network Associate","Meta Digital Marketing Associate, CompTIA Security+",0.41
+"Certified Ethical Hacker, AWS Certified Solutions Architect, Certified Kubernetes Administrator","Linux Foundation Certified Engineer, Docker Certified Associate, Google Analytics Certification, Google Professional Data Engineer",0.18
+"Tableau Desktop Specialist, Certified Ethical Hacker, AutoCAD Professional, Salesforce Administrator","AWS Certified Solutions Architect, Meta Digital Marketing Associate",0.42
+"AutoCAD Professional, ISTQB Certified Tester, Linux Foundation Certified Engineer","Adobe Certified Expert Photoshop, PMP Certification",0.39
+"Certified Kubernetes Administrator, ITIL Foundation","Cisco Certified Network Associate, AutoCAD Professional, PMP Certification, Salesforce Administrator",0.52
+"ITIL Foundation, Cisco Certified Network Associate, Tableau Desktop Specialist, Adobe Certified Expert Photoshop","Tableau Desktop Specialist, AutoCAD Professional",0.55
+"Certified Kubernetes Administrator, AWS Certified Solutions Architect","Certified Kubernetes Administrator, AWS Certified Solutions Architect",0.78
+"AutoCAD Professional, Oracle Certified Java Programmer, Certified Kubernetes Administrator, Google Analytics Certification","Linux Foundation Certified Engineer, Meta Digital Marketing Associate",0.64
+"Google Professional Data Engineer, Linux Foundation Certified Engineer","Salesforce Administrator, ISTQB Certified Tester",0.41
+"Google Analytics Certification, Red Hat Certified Engineer","Oracle Certified Java Programmer, Linux Foundation Certified Engineer, Google Analytics Certification, Certified Kubernetes Administrator",0.37
+"Salesforce Administrator, Oracle Certified Java Programmer","Linux Foundation Certified Engineer, AutoCAD Professional, Certified Ethical Hacker, Meta Digital Marketing Associate",0.57
+"Meta Digital Marketing Associate, Tableau Desktop Specialist","CompTIA Security+, Oracle Certified Java Programmer",0.3
+"Google Professional Data Engineer, Oracle Certified Java Programmer, Microsoft Certified Azure Administrator","Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, Google Professional Data Engineer",0.77
+"Red Hat Certified Engineer, Google Analytics Certification, Certified Kubernetes Administrator","Adobe Certified Expert Photoshop, Docker Certified Associate, Certified Ethical Hacker, Google Professional Data Engineer",0.68
+"Certified Kubernetes Administrator, ISTQB Certified Tester, Cisco Certified Network Associate","Cisco Certified Network Associate, Google Analytics Certification",0.43
+"ISTQB Certified Tester, Tableau Desktop Specialist, Red Hat Certified Engineer, Google Analytics Certification","AWS Certified Solutions Architect, PMP Certification",0.24
+"Oracle Certified Java Programmer, AWS Certified Solutions Architect, Certified Kubernetes Administrator, AutoCAD Professional","Meta Digital Marketing Associate, Cisco Certified Network Associate, Certified Kubernetes Administrator",0.7
+"Google Analytics Certification, Certified Kubernetes Administrator","Docker Certified Associate, Cisco Certified Network Associate, Adobe Certified Expert Photoshop, Google Analytics Certification",0.48
+"Oracle Certified Java Programmer, Certified Kubernetes Administrator, ITIL Foundation, Tableau Desktop Specialist","Meta Digital Marketing Associate, Google Professional Data Engineer, PMP Certification, AutoCAD Professional",0.69
+"Google Analytics Certification, Docker Certified Associate, Oracle Certified Java Programmer, Microsoft Certified Azure Administrator","AutoCAD Professional, Meta Digital Marketing Associate, Certified Kubernetes Administrator",0.26
+"Tableau Desktop Specialist, Oracle Certified Java Programmer, Adobe Certified Expert Photoshop, PMP Certification","Adobe Certified Expert Photoshop, ISTQB Certified Tester, Docker Certified Associate, ITIL Foundation",0.41
+"PMP Certification, Red Hat Certified Engineer, Docker Certified Associate, Oracle Certified Java Programmer","Tableau Desktop Specialist, Cisco Certified Network Associate",0.5
+"Oracle Certified Java Programmer, AutoCAD Professional","ITIL Foundation, Microsoft Certified Azure Administrator, Salesforce Administrator",0.51
+"Certified Kubernetes Administrator, Linux Foundation Certified Engineer","Tableau Desktop Specialist, CompTIA Security+",0.43
+"Linux Foundation Certified Engineer, Red Hat Certified Engineer","Google Professional Data Engineer, CompTIA Security+",0.59
+"Salesforce Administrator, Microsoft Certified Azure Administrator, Red Hat Certified Engineer, Google Analytics Certification","AWS Certified Solutions Architect, Linux Foundation Certified Engineer, Certified Ethical Hacker, PMP Certification",0.34
+"PMP Certification, Docker Certified Associate, AWS Certified Solutions Architect","Tableau Desktop Specialist, Linux Foundation Certified Engineer, Google Professional Data Engineer",0.48
+"Adobe Certified Expert Photoshop, Salesforce Administrator","Certified Ethical Hacker, Tableau Desktop Specialist, Microsoft Certified Azure Administrator",0.52
+"Google Professional Data Engineer, Salesforce Administrator, Linux Foundation Certified Engineer","Salesforce Administrator, Google Professional Data Engineer, Certified Kubernetes Administrator, CompTIA Security+",0.58
+"Salesforce Administrator, Red Hat Certified Engineer","Red Hat Certified Engineer, Linux Foundation Certified Engineer, Salesforce Administrator, Certified Kubernetes Administrator",0.61
+"Certified Kubernetes Administrator, Red Hat Certified Engineer, Adobe Certified Expert Photoshop","Adobe Certified Expert Photoshop, AWS Certified Solutions Architect",0.33
+"Tableau Desktop Specialist, AWS Certified Solutions Architect, ISTQB Certified Tester","PMP Certification, Google Professional Data Engineer",0.27
+"Adobe Certified Expert Photoshop, Cisco Certified Network Associate, Docker Certified Associate","AutoCAD Professional, Google Analytics Certification, AWS Certified Solutions Architect, Tableau Desktop Specialist",0.69
+"Google Analytics Certification, Red Hat Certified Engineer","Tableau Desktop Specialist, Meta Digital Marketing Associate, Red Hat Certified Engineer",0.55
+"AutoCAD Professional, Google Analytics Certification, Tableau Desktop Specialist, Salesforce Administrator","ISTQB Certified Tester, PMP Certification, Linux Foundation Certified Engineer",0.39
+"Google Professional Data Engineer, PMP Certification, Oracle Certified Java Programmer, Linux Foundation Certified Engineer","Google Analytics Certification, Linux Foundation Certified Engineer, AWS Certified Solutions Architect, Certified Kubernetes Administrator",0.73
+"Oracle Certified Java Programmer, Adobe Certified Expert Photoshop, Tableau Desktop Specialist","Certified Kubernetes Administrator, AWS Certified Solutions Architect, Red Hat Certified Engineer, Google Professional Data Engineer",0.52
+"ITIL Foundation, Red Hat Certified Engineer","Microsoft Certified Azure Administrator, Oracle Certified Java Programmer",0.68
+"CompTIA Security+, Google Professional Data Engineer, Microsoft Certified Azure Administrator, Meta Digital Marketing Associate","ISTQB Certified Tester, CompTIA Security+, Linux Foundation Certified Engineer",0.51
+"CompTIA Security+, Oracle Certified Java Programmer","Oracle Certified Java Programmer, CompTIA Security+",0.81
+"Google Professional Data Engineer, ITIL Foundation","ITIL Foundation, Google Professional Data Engineer",0.76
+"Oracle Certified Java Programmer, Linux Foundation Certified Engineer, ITIL Foundation","Tableau Desktop Specialist, Meta Digital Marketing Associate",0.46
+"PMP Certification, Meta Digital Marketing Associate","Salesforce Administrator, Red Hat Certified Engineer",0.65
+"Tableau Desktop Specialist, Google Professional Data Engineer, Microsoft Certified Azure Administrator","Docker Certified Associate, CompTIA Security+, Google Professional Data Engineer, AWS Certified Solutions Architect",0.6
+"AWS Certified Solutions Architect, Microsoft Certified Azure Administrator","Certified Kubernetes Administrator, Tableau Desktop Specialist",0.71
+"AWS Certified Solutions Architect, Google Analytics Certification, Tableau Desktop Specialist","Google Analytics Certification, Cisco Certified Network Associate, AutoCAD Professional, Linux Foundation Certified Engineer",0.36
+"PMP Certification, CompTIA Security+, Google Analytics Certification","Linux Foundation Certified Engineer, Salesforce Administrator",0.6
+"Tableau Desktop Specialist, Certified Kubernetes Administrator","Google Analytics Certification, CompTIA Security+, Google Professional Data Engineer",0.66
+"Tableau Desktop Specialist, CompTIA Security+, AWS Certified Solutions Architect","Linux Foundation Certified Engineer, PMP Certification",0.24
+"Meta Digital Marketing Associate, CompTIA Security+, Tableau Desktop Specialist","Docker Certified Associate, CompTIA Security+, Google Professional Data Engineer, Meta Digital Marketing Associate",0.32
+"Meta Digital Marketing Associate, Linux Foundation Certified Engineer, AWS Certified Solutions Architect, Microsoft Certified Azure Administrator","Tableau Desktop Specialist, ITIL Foundation, PMP Certification",0.19
+"Google Professional Data Engineer, Salesforce Administrator, AWS Certified Solutions Architect, Google Analytics Certification","Cisco Certified Network Associate, PMP Certification, Microsoft Certified Azure Administrator",0.46
+"Cisco Certified Network Associate, Microsoft Certified Azure Administrator, Salesforce Administrator, Meta Digital Marketing Associate","CompTIA Security+, Cisco Certified Network Associate, AutoCAD Professional, Linux Foundation Certified Engineer",0.61
+"Red Hat Certified Engineer, Microsoft Certified Azure Administrator, Tableau Desktop Specialist, Certified Ethical Hacker","Microsoft Certified Azure Administrator, Certified Ethical Hacker, Tableau Desktop Specialist, Salesforce Administrator",0.73
+"PMP Certification, Certified Ethical Hacker, ITIL Foundation, Google Professional Data Engineer","ITIL Foundation, AWS Certified Solutions Architect",0.51
+"AutoCAD Professional, PMP Certification, Microsoft Certified Azure Administrator","Docker Certified Associate, AWS Certified Solutions Architect, AutoCAD Professional",0.74
+"Red Hat Certified Engineer, Certified Ethical Hacker, Certified Kubernetes Administrator, ISTQB Certified Tester","Meta Digital Marketing Associate, Linux Foundation Certified Engineer, AutoCAD Professional",0.29
+"Certified Kubernetes Administrator, Certified Ethical Hacker, Google Analytics Certification, Linux Foundation Certified Engineer","AutoCAD Professional, Cisco Certified Network Associate",0.24
+"Meta Digital Marketing Associate, Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator","Tableau Desktop Specialist, AWS Certified Solutions Architect, Adobe Certified Expert Photoshop",0.49
+"Microsoft Certified Azure Administrator, Cisco Certified Network Associate, Tableau Desktop Specialist, Linux Foundation Certified Engineer","Red Hat Certified Engineer, Microsoft Certified Azure Administrator, AWS Certified Solutions Architect",0.56
+"ISTQB Certified Tester, Google Analytics Certification, Red Hat Certified Engineer","Docker Certified Associate, AWS Certified Solutions Architect, Linux Foundation Certified Engineer, Salesforce Administrator",0.5
+"Microsoft Certified Azure Administrator, ISTQB Certified Tester, Adobe Certified Expert Photoshop, Oracle Certified Java Programmer","Salesforce Administrator, Certified Ethical Hacker, Certified Kubernetes Administrator",0.19
+"Meta Digital Marketing Associate, Microsoft Certified Azure Administrator","ISTQB Certified Tester, Oracle Certified Java Programmer",0.49
+"Docker Certified Associate, AutoCAD Professional, Linux Foundation Certified Engineer, ISTQB Certified Tester","Docker Certified Associate, Google Analytics Certification, CompTIA Security+",0.3
+"Certified Ethical Hacker, ISTQB Certified Tester","Microsoft Certified Azure Administrator, Salesforce Administrator, Tableau Desktop Specialist, Docker Certified Associate",0.6
+"Oracle Certified Java Programmer, AWS Certified Solutions Architect, Docker Certified Associate, Linux Foundation Certified Engineer","Certified Ethical Hacker, Oracle Certified Java Programmer, Linux Foundation Certified Engineer",0.55
+"Google Analytics Certification, Linux Foundation Certified Engineer, Meta Digital Marketing Associate, Cisco Certified Network Associate","Tableau Desktop Specialist, Microsoft Certified Azure Administrator, ITIL Foundation",0.36
+"Google Analytics Certification, Red Hat Certified Engineer","Docker Certified Associate, Salesforce Administrator",0.42
+"CompTIA Security+, ISTQB Certified Tester, Linux Foundation Certified Engineer, Tableau Desktop Specialist","PMP Certification, Docker Certified Associate, ISTQB Certified Tester",0.34
+"PMP Certification, Docker Certified Associate","Certified Ethical Hacker, Google Professional Data Engineer",0.49
+"Google Analytics Certification, Red Hat Certified Engineer, Oracle Certified Java Programmer, Adobe Certified Expert Photoshop","CompTIA Security+, Microsoft Certified Azure Administrator",0.64
+"Google Analytics Certification, Microsoft Certified Azure Administrator, ISTQB Certified Tester, Meta Digital Marketing Associate","Cisco Certified Network Associate, Oracle Certified Java Programmer, Certified Kubernetes Administrator, Tableau Desktop Specialist",0.35
+"Certified Ethical Hacker, ISTQB Certified Tester","Red Hat Certified Engineer, Meta Digital Marketing Associate, Linux Foundation Certified Engineer, AutoCAD Professional",0.58
+"Red Hat Certified Engineer, Google Analytics Certification, CompTIA Security+, Linux Foundation Certified Engineer","CompTIA Security+, PMP Certification",0.42
+"PMP Certification, Cisco Certified Network Associate, Docker Certified Associate","Certified Kubernetes Administrator, CompTIA Security+, Google Professional Data Engineer, AWS Certified Solutions Architect",0.38
+"Google Analytics Certification, PMP Certification","Salesforce Administrator, Meta Digital Marketing Associate, ISTQB Certified Tester",0.48
+"PMP Certification, Microsoft Certified Azure Administrator","AWS Certified Solutions Architect, Cisco Certified Network Associate, ISTQB Certified Tester",0.34
+"Docker Certified Associate, PMP Certification, Meta Digital Marketing Associate, Salesforce Administrator","ISTQB Certified Tester, Oracle Certified Java Programmer, Certified Kubernetes Administrator, Adobe Certified Expert Photoshop",0.42
+"AutoCAD Professional, ISTQB Certified Tester, Salesforce Administrator, Google Analytics Certification","ISTQB Certified Tester, CompTIA Security+, Adobe Certified Expert Photoshop",0.32
+"AWS Certified Solutions Architect, Oracle Certified Java Programmer, Meta Digital Marketing Associate","AWS Certified Solutions Architect, Meta Digital Marketing Associate, Oracle Certified Java Programmer",0.79
+"Certified Ethical Hacker, Salesforce Administrator, PMP Certification, Linux Foundation Certified Engineer","AutoCAD Professional, AWS Certified Solutions Architect, Certified Kubernetes Administrator, Cisco Certified Network Associate",0.51
+"Salesforce Administrator, Cisco Certified Network Associate, Certified Kubernetes Administrator","Cisco Certified Network Associate, ITIL Foundation, Adobe Certified Expert Photoshop",0.4
+"AutoCAD Professional, Red Hat Certified Engineer, Certified Ethical Hacker, Docker Certified Associate","Meta Digital Marketing Associate, Certified Kubernetes Administrator, Google Professional Data Engineer",0.53
+"Salesforce Administrator, Docker Certified Associate","AWS Certified Solutions Architect, AutoCAD Professional, Microsoft Certified Azure Administrator, PMP Certification",0.48
+"Oracle Certified Java Programmer, Docker Certified Associate, ITIL Foundation, CompTIA Security+","Microsoft Certified Azure Administrator, CompTIA Security+, AWS Certified Solutions Architect",0.47
+"Oracle Certified Java Programmer, Microsoft Certified Azure Administrator","Google Analytics Certification, Red Hat Certified Engineer",0.59
+"Docker Certified Associate, Microsoft Certified Azure Administrator, Google Professional Data Engineer","Red Hat Certified Engineer, Google Professional Data Engineer, Microsoft Certified Azure Administrator",0.61
+"Adobe Certified Expert Photoshop, ITIL Foundation","Microsoft Certified Azure Administrator, Certified Kubernetes Administrator",0.42
+"Red Hat Certified Engineer, Salesforce Administrator, Adobe Certified Expert Photoshop, Certified Kubernetes Administrator","Docker Certified Associate, Meta Digital Marketing Associate, Google Analytics Certification, Linux Foundation Certified Engineer",0.41
+"Oracle Certified Java Programmer, AutoCAD Professional","Docker Certified Associate, Cisco Certified Network Associate",0.46
+"Red Hat Certified Engineer, Oracle Certified Java Programmer, ISTQB Certified Tester","CompTIA Security+, Meta Digital Marketing Associate, AWS Certified Solutions Architect",0.15
+"Oracle Certified Java Programmer, Salesforce Administrator","Meta Digital Marketing Associate, AWS Certified Solutions Architect",0.27
+"ITIL Foundation, Microsoft Certified Azure Administrator, AWS Certified Solutions Architect","Adobe Certified Expert Photoshop, Linux Foundation Certified Engineer, PMP Certification, Certified Kubernetes Administrator",0.71
+"Adobe Certified Expert Photoshop, Meta Digital Marketing Associate, Red Hat Certified Engineer","ITIL Foundation, AWS Certified Solutions Architect",0.75
+"Certified Kubernetes Administrator, Docker Certified Associate","ISTQB Certified Tester, Certified Kubernetes Administrator, Linux Foundation Certified Engineer, Oracle Certified Java Programmer",0.46
+"Salesforce Administrator, Certified Ethical Hacker, Google Analytics Certification, Google Professional Data Engineer","Cisco Certified Network Associate, Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator",0.59
+"Adobe Certified Expert Photoshop, Salesforce Administrator","Google Analytics Certification, Certified Kubernetes Administrator, Certified Ethical Hacker",0.55
+"Google Analytics Certification, Meta Digital Marketing Associate, CompTIA Security+, PMP Certification","Google Analytics Certification, Meta Digital Marketing Associate, CompTIA Security+, PMP Certification",0.96
+"Cisco Certified Network Associate, Adobe Certified Expert Photoshop, Certified Ethical Hacker, Microsoft Certified Azure Administrator","Google Analytics Certification, PMP Certification, ITIL Foundation, Salesforce Administrator",0.67
+"Meta Digital Marketing Associate, Oracle Certified Java Programmer","Salesforce Administrator, Certified Kubernetes Administrator, PMP Certification, Microsoft Certified Azure Administrator",0.48
+"Adobe Certified Expert Photoshop, Microsoft Certified Azure Administrator, AutoCAD Professional, Cisco Certified Network Associate","Tableau Desktop Specialist, PMP Certification, Google Analytics Certification",0.36
+"Certified Ethical Hacker, Meta Digital Marketing Associate, CompTIA Security+, Tableau Desktop Specialist","Adobe Certified Expert Photoshop, ITIL Foundation",0.26
+"PMP Certification, Red Hat Certified Engineer, AWS Certified Solutions Architect","Google Analytics Certification, ISTQB Certified Tester, Tableau Desktop Specialist, PMP Certification",0.53
+"Oracle Certified Java Programmer, Cisco Certified Network Associate, Certified Kubernetes Administrator","Adobe Certified Expert Photoshop, Tableau Desktop Specialist, Docker Certified Associate",0.39
+"Certified Kubernetes Administrator, Google Professional Data Engineer, Red Hat Certified Engineer","Tableau Desktop Specialist, ITIL Foundation, Meta Digital Marketing Associate",0.29
+"ISTQB Certified Tester, Microsoft Certified Azure Administrator","ITIL Foundation, Microsoft Certified Azure Administrator, Oracle Certified Java Programmer, Meta Digital Marketing Associate",0.4
+"Google Professional Data Engineer, Meta Digital Marketing Associate, Docker Certified Associate, Salesforce Administrator","Linux Foundation Certified Engineer, Microsoft Certified Azure Administrator",0.34
+"Certified Kubernetes Administrator, Meta Digital Marketing Associate","Certified Kubernetes Administrator, Meta Digital Marketing Associate",0.75
+"Cisco Certified Network Associate, Linux Foundation Certified Engineer, Google Analytics Certification, PMP Certification","AutoCAD Professional, Adobe Certified Expert Photoshop, ISTQB Certified Tester",0.63
+"AutoCAD Professional, Cisco Certified Network Associate, Oracle Certified Java Programmer","Docker Certified Associate, Certified Kubernetes Administrator, Google Professional Data Engineer, ITIL Foundation",0.5
+"Adobe Certified Expert Photoshop, Docker Certified Associate, Salesforce Administrator, Red Hat Certified Engineer","ISTQB Certified Tester, Certified Kubernetes Administrator, Google Analytics Certification",0.72
+"Google Analytics Certification, AutoCAD Professional, Adobe Certified Expert Photoshop, CompTIA Security+","Meta Digital Marketing Associate, Salesforce Administrator",0.51
+"Linux Foundation Certified Engineer, Adobe Certified Expert Photoshop, ISTQB Certified Tester, PMP Certification","ITIL Foundation, PMP Certification",0.37
+"PMP Certification, Certified Kubernetes Administrator, AWS Certified Solutions Architect","Tableau Desktop Specialist, CompTIA Security+, Docker Certified Associate",0.73
+"Docker Certified Associate, CompTIA Security+, Certified Kubernetes Administrator","ITIL Foundation, ISTQB Certified Tester, Certified Ethical Hacker, Oracle Certified Java Programmer",0.58
+"Google Analytics Certification, PMP Certification, Oracle Certified Java Programmer","AutoCAD Professional, PMP Certification",0.34
+"AutoCAD Professional, Oracle Certified Java Programmer, ITIL Foundation, Docker Certified Associate","Meta Digital Marketing Associate, Linux Foundation Certified Engineer, Salesforce Administrator",0.47
+"AWS Certified Solutions Architect, Docker Certified Associate, Certified Ethical Hacker","AWS Certified Solutions Architect, Tableau Desktop Specialist",0.37
+"PMP Certification, Red Hat Certified Engineer","Salesforce Administrator, Docker Certified Associate, Google Analytics Certification, Certified Ethical Hacker",0.29
