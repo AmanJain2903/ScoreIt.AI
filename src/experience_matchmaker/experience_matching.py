@@ -62,7 +62,7 @@ class ExperienceSimilarity:
         if self.model1Score>0.5:
             self.ensembleScore = min(1.0, self.model1Score * 1.2)
         elif self.model2Score<0.5:
-            self.ensembleScore = self.model2Score * 0.8
+            self.ensembleScore = min(1.0, self.model2Score * 0.8)
         else:
             self.averageEnsemble()
     

@@ -1,0 +1,501 @@
+ResumeDesignations,JDDesignations,ExpectedScore
+"Security Analyst, Intern, Teaching Assistant","Backend Developer, Intern",0.575
+"Teaching Assistant, Data Analyst, Research Assistant",Database Administrator,0.479
+"Automation Engineer, Engineering Manager",Intern,0.597
+"Software Engineer, QA Tester, Mobile App Developer",Project Coordinator,0.728
+"Database Administrator, Project Coordinator","UI Developer, QA Tester, Security Analyst",0.465
+"Engineering Manager, QA Tester","Site Reliability Engineer, Full Stack Engineer, Research Assistant",0.465
+"UI Developer, Data Analyst, Cloud Architect","Research Assistant, Data Analyst",0.737
+"Project Coordinator, AI Engineer, QA Tester",Project Coordinator,0.615
+Full Stack Engineer,"Security Analyst, Research Assistant",0.43
+"Frontend Developer, Site Reliability Engineer","Project Coordinator, Mobile App Developer",0.581
+Site Reliability Engineer,Site Reliability Engineer,0.43
+"AI Engineer, Software Engineer, QA Tester","Product Manager, Mobile App Developer, Site Reliability Engineer",0.43
+"AI Engineer, Data Scientist","Frontend Developer, Security Analyst",0.536
+"QA Tester, Engineering Manager, Automation Engineer",Research Assistant,0.213
+"Teaching Assistant, Security Analyst","Database Administrator, Research Assistant",0.241
+"Data Analyst, Teaching Assistant, Technical Lead","Software Engineer, Intern",0.416
+"Machine Learning Engineer, Intern, Product Manager",Site Reliability Engineer,0.348
+"Site Reliability Engineer, AI Engineer, Technical Lead","Frontend Developer, UI Developer, Project Coordinator",0.547
+Full Stack Engineer,"Frontend Developer, Full Stack Engineer, Security Analyst",0.364
+Engineering Manager,QA Tester,0.288
+"Site Reliability Engineer, Automation Engineer","Data Analyst, Cloud Architect, Backend Developer",0.72
+"Research Assistant, Security Analyst, Teaching Assistant",Research Assistant,0.466
+Machine Learning Engineer,"Cloud Architect, Security Analyst",0.51
+Product Manager,QA Tester,0.286
+"Project Coordinator, Frontend Developer",Site Reliability Engineer,0.418
+UX Designer,"Data Scientist, Frontend Developer",0.517
+"UX Designer, Data Analyst, Product Manager","Automation Engineer, Software Engineer",0.327
+Site Reliability Engineer,"Data Analyst, DevOps Engineer, AI Engineer",0.556
+Research Assistant,"Mobile App Developer, Automation Engineer",0.41
+"Full Stack Engineer, AI Engineer",Automation Engineer,0.456
+"Security Analyst, Site Reliability Engineer","Engineering Manager, UX Designer",0.41
+"Site Reliability Engineer, Engineering Manager, Software Engineer","Software Engineer, Engineering Manager, Site Reliability Engineer",0.778
+"Data Analyst, Product Manager","Machine Learning Engineer, DevOps Engineer, Cloud Architect",0.498
+"UI Developer, Research Assistant",UX Designer,0.341
+"Data Analyst, DevOps Engineer","Project Coordinator, Mobile App Developer, Cloud Architect",0.623
+"AI Engineer, Data Analyst",Mobile App Developer,0.317
+Product Manager,Full Stack Engineer,0.531
+"Mobile App Developer, Data Analyst, AI Engineer","Frontend Developer, Security Analyst",0.206
+"Full Stack Engineer, Software Engineer","Software Engineer, Mobile App Developer, Frontend Developer",0.301
+"Teaching Assistant, Full Stack Engineer, Machine Learning Engineer","Data Scientist, Full Stack Engineer, Security Analyst",0.53
+"Frontend Developer, Automation Engineer, AI Engineer","Backend Developer, Frontend Developer",0.611
+"Cloud Architect, Frontend Developer",Mobile App Developer,0.526
+"Security Analyst, DevOps Engineer","Product Manager, Full Stack Engineer",0.483
+"Software Engineer, QA Tester",Data Analyst,0.455
+Data Scientist,"Database Administrator, DevOps Engineer",0.278
+Technical Lead,DevOps Engineer,0.392
+"Database Administrator, Product Manager, AI Engineer","UI Developer, Security Analyst, Machine Learning Engineer",0.431
+"Intern, AI Engineer, Research Assistant",DevOps Engineer,0.659
+Frontend Developer,"Data Analyst, UX Designer, Software Engineer",0.552
+QA Tester,Machine Learning Engineer,0.236
+Research Assistant,Security Analyst,0.549
+"Automation Engineer, Intern, UI Developer","Machine Learning Engineer, Cloud Architect, Full Stack Engineer",0.442
+Engineering Manager,"QA Tester, Software Engineer",0.398
+"Data Analyst, Database Administrator",Research Assistant,0.592
+"Frontend Developer, AI Engineer, Security Analyst",Product Manager,0.655
+Full Stack Engineer,Product Manager,0.64
+"Machine Learning Engineer, Software Engineer",Engineering Manager,0.374
+Software Engineer,"DevOps Engineer, Product Manager",0.454
+Software Engineer,Site Reliability Engineer,0.55
+Security Analyst,"Research Assistant, Teaching Assistant, Machine Learning Engineer",0.646
+"Mobile App Developer, Site Reliability Engineer","Data Scientist, Teaching Assistant, Technical Lead",0.428
+"Security Analyst, Database Administrator","Data Scientist, QA Tester, DevOps Engineer",0.472
+Research Assistant,"Research Assistant, Product Manager",0.334
+"Product Manager, Engineering Manager","Machine Learning Engineer, Backend Developer, Software Engineer",0.321
+UX Designer,DevOps Engineer,0.622
+Engineering Manager,"DevOps Engineer, Product Manager",0.703
+Mobile App Developer,"UI Developer, Research Assistant, Data Analyst",0.489
+Cloud Architect,"Project Coordinator, UI Developer, Intern",0.651
+UI Developer,"Project Coordinator, AI Engineer, Data Scientist",0.554
+QA Tester,"Software Engineer, Security Analyst",0.403
+"Research Assistant, Mobile App Developer","Intern, Software Engineer",0.554
+Automation Engineer,QA Tester,0.731
+Software Engineer,"Cloud Architect, QA Tester, UX Designer",0.495
+"Data Scientist, Site Reliability Engineer",Machine Learning Engineer,0.735
+Engineering Manager,Data Analyst,0.107
+"Product Manager, Data Analyst, Full Stack Engineer",UI Developer,0.623
+"Database Administrator, QA Tester, Product Manager","Automation Engineer, Cloud Architect",0.513
+Cloud Architect,DevOps Engineer,0.455
+DevOps Engineer,"Site Reliability Engineer, Data Scientist",0.514
+"Automation Engineer, Intern","Frontend Developer, Full Stack Engineer",0.202
+"UX Designer, Database Administrator, Project Coordinator",Machine Learning Engineer,0.467
+"Project Coordinator, Automation Engineer","Site Reliability Engineer, Frontend Developer, Technical Lead",0.554
+"Frontend Developer, Site Reliability Engineer","Engineering Manager, UX Designer, Backend Developer",0.722
+UX Designer,DevOps Engineer,0.422
+"Product Manager, Full Stack Engineer","Machine Learning Engineer, Automation Engineer",0.379
+"Teaching Assistant, Machine Learning Engineer","Mobile App Developer, Data Analyst",0.425
+"DevOps Engineer, Teaching Assistant","Machine Learning Engineer, Full Stack Engineer, Mobile App Developer",0.637
+"Site Reliability Engineer, Backend Developer","UI Developer, Data Scientist",0.549
+Security Analyst,"Mobile App Developer, Software Engineer, Frontend Developer",0.421
+"UI Developer, Research Assistant, Mobile App Developer",Technical Lead,0.577
+Intern,"Machine Learning Engineer, QA Tester",0.515
+"Technical Lead, QA Tester","Software Engineer, Frontend Developer",0.645
+"Engineering Manager, Teaching Assistant, Site Reliability Engineer",Engineering Manager,0.395
+"Backend Developer, UX Designer","Mobile App Developer, Cloud Architect",0.451
+"Machine Learning Engineer, Security Analyst, Cloud Architect","Database Administrator, QA Tester",0.441
+"Mobile App Developer, Research Assistant, Automation Engineer",Project Coordinator,0.28
+Security Analyst,Mobile App Developer,0.544
+"AI Engineer, Full Stack Engineer",Site Reliability Engineer,0.539
+"Intern, DevOps Engineer","Site Reliability Engineer, AI Engineer",0.501
+"Automation Engineer, Site Reliability Engineer",Database Administrator,0.465
+"Database Administrator, AI Engineer","Mobile App Developer, Data Scientist",0.288
+"Technical Lead, Data Analyst, Teaching Assistant",Data Analyst,0.437
+"Backend Developer, QA Tester, Intern","Backend Developer, Automation Engineer",0.449
+Site Reliability Engineer,"Database Administrator, Backend Developer",0.38
+"AI Engineer, DevOps Engineer, Product Manager","Automation Engineer, DevOps Engineer, QA Tester",0.476
+"Automation Engineer, Machine Learning Engineer, Technical Lead",Technical Lead,0.561
+"AI Engineer, Software Engineer, Backend Developer","Backend Developer, Software Engineer, AI Engineer",0.783
+"Technical Lead, Full Stack Engineer","Data Analyst, Engineering Manager, Product Manager",0.526
+"QA Tester, Full Stack Engineer, Backend Developer",Automation Engineer,0.539
+"Intern, Data Scientist","Security Analyst, AI Engineer",0.489
+"AI Engineer, Cloud Architect",Security Analyst,0.212
+"Full Stack Engineer, Automation Engineer, Data Scientist","AI Engineer, QA Tester, Machine Learning Engineer",0.496
+"Mobile App Developer, Software Engineer",Product Manager,0.509
+Intern,Intern,0.869
+Data Scientist,Frontend Developer,0.471
+Research Assistant,Software Engineer,0.545
+"Technical Lead, DevOps Engineer, Machine Learning Engineer","UI Developer, DevOps Engineer",0.495
+"Data Analyst, Software Engineer, Automation Engineer","Database Administrator, UX Designer",0.325
+"Machine Learning Engineer, Research Assistant, UI Developer","QA Tester, Backend Developer",0.671
+"Mobile App Developer, DevOps Engineer, UX Designer","Product Manager, Backend Developer",0.613
+"Automation Engineer, AI Engineer, Security Analyst",Project Coordinator,0.619
+"Site Reliability Engineer, Intern, Security Analyst","Data Scientist, Software Engineer, Full Stack Engineer",0.364
+"Frontend Developer, Engineering Manager",Data Analyst,0.71
+DevOps Engineer,"UI Developer, Frontend Developer",0.29
+Mobile App Developer,"QA Tester, UI Developer",0.588
+"Research Assistant, Security Analyst","Research Assistant, Security Analyst",0.829
+"UX Designer, Automation Engineer, Technical Lead",Data Analyst,0.351
+"Intern, Security Analyst, Full Stack Engineer",Teaching Assistant,0.415
+Site Reliability Engineer,"Data Analyst, Machine Learning Engineer",0.515
+Product Manager,Data Scientist,0.424
+"QA Tester, Automation Engineer",Data Analyst,0.267
+Security Analyst,Research Assistant,0.51
+"DevOps Engineer, Teaching Assistant, UX Designer",Intern,0.341
+"Automation Engineer, Software Engineer","DevOps Engineer, Cloud Architect, Security Analyst",0.571
+"Database Administrator, Site Reliability Engineer, Cloud Architect",QA Tester,0.362
+"Technical Lead, QA Tester","Machine Learning Engineer, Site Reliability Engineer, Technical Lead",0.732
+"Backend Developer, Intern, Research Assistant",Data Analyst,0.383
+"Mobile App Developer, Database Administrator","Backend Developer, Database Administrator",0.452
+Site Reliability Engineer,Automation Engineer,0.622
+"Mobile App Developer, Cloud Architect","QA Tester, Full Stack Engineer",0.315
+QA Tester,"Automation Engineer, Cloud Architect",0.534
+"Research Assistant, Software Engineer, Data Scientist","Automation Engineer, Research Assistant",0.696
+"Data Analyst, DevOps Engineer",Technical Lead,0.259
+"AI Engineer, Site Reliability Engineer","Research Assistant, Cloud Architect, Full Stack Engineer",0.528
+"Engineering Manager, Full Stack Engineer","AI Engineer, Software Engineer, Frontend Developer",0.539
+Technical Lead,"Security Analyst, Mobile App Developer, Data Analyst",0.617
+Technical Lead,"Cloud Architect, AI Engineer",0.314
+"Research Assistant, Database Administrator",Engineering Manager,0.302
+Security Analyst,"UX Designer, QA Tester",0.578
+DevOps Engineer,"UI Developer, UX Designer, Product Manager",0.545
+Research Assistant,"AI Engineer, Automation Engineer, QA Tester",0.538
+"Project Coordinator, Full Stack Engineer",Engineering Manager,0.552
+"Technical Lead, Mobile App Developer","Full Stack Engineer, Database Administrator",0.398
+"Project Coordinator, Security Analyst","Software Engineer, Data Scientist",0.535
+"Frontend Developer, Teaching Assistant, Automation Engineer","Database Administrator, Software Engineer, Product Manager",0.544
+"Engineering Manager, UI Developer, Machine Learning Engineer",Database Administrator,0.393
+"Engineering Manager, Security Analyst","Security Analyst, Engineering Manager",0.78
+"Site Reliability Engineer, Backend Developer","Technical Lead, UI Developer, Product Manager",0.571
+"Machine Learning Engineer, Full Stack Engineer, Data Analyst","UI Developer, AI Engineer",0.321
+"Cloud Architect, Frontend Developer, Mobile App Developer","Research Assistant, Intern, Database Administrator",0.598
+"Full Stack Engineer, Intern, Teaching Assistant",Data Scientist,0.354
+"Project Coordinator, Security Analyst",Cloud Architect,0.618
+"Database Administrator, DevOps Engineer","Data Analyst, Site Reliability Engineer",0.674
+DevOps Engineer,"Backend Developer, QA Tester, Software Engineer",0.377
+Mobile App Developer,"Software Engineer, Machine Learning Engineer",0.645
+"Backend Developer, AI Engineer, Product Manager",Backend Developer,0.562
+"Product Manager, Data Scientist",Automation Engineer,0.623
+"Data Scientist, Machine Learning Engineer","Machine Learning Engineer, Data Scientist",0.785
+"Database Administrator, AI Engineer, Security Analyst",Teaching Assistant,0.463
+"Frontend Developer, Research Assistant","Cloud Architect, Site Reliability Engineer, Mobile App Developer",0.387
+"Cloud Architect, Security Analyst","Teaching Assistant, Security Analyst",0.367
+"Project Coordinator, AI Engineer","DevOps Engineer, Data Scientist",0.378
+"Machine Learning Engineer, Teaching Assistant","Full Stack Engineer, Data Scientist",0.488
+"AI Engineer, Data Scientist, Research Assistant","Intern, Product Manager",0.551
+"Mobile App Developer, Project Coordinator",Security Analyst,0.542
+"Cloud Architect, QA Tester, Machine Learning Engineer","Product Manager, UI Developer, Project Coordinator",0.624
+Data Analyst,QA Tester,0.502
+Automation Engineer,"Technical Lead, Cloud Architect, Data Scientist",0.718
+"Cloud Architect, Research Assistant","Intern, Machine Learning Engineer, Backend Developer",0.46
+"Mobile App Developer, Automation Engineer, AI Engineer","Mobile App Developer, Automation Engineer, AI Engineer",0.908
+"Cloud Architect, UI Developer","UX Designer, Security Analyst, Database Administrator",0.594
+"Data Analyst, Intern, DevOps Engineer",Project Coordinator,0.371
+"Database Administrator, Product Manager","UI Developer, Project Coordinator, Cloud Architect",0.339
+"Mobile App Developer, Machine Learning Engineer, UX Designer","Technical Lead, Engineering Manager, Software Engineer",0.572
+"Database Administrator, UI Developer, Project Coordinator",Mobile App Developer,0.466
+Technical Lead,"Site Reliability Engineer, Machine Learning Engineer, Technical Lead",0.607
+"Project Coordinator, Technical Lead, Engineering Manager",Site Reliability Engineer,0.571
+"Engineering Manager, Product Manager",Engineering Manager,0.489
+"Full Stack Engineer, QA Tester, Software Engineer","Software Engineer, Cloud Architect",0.373
+"Cloud Architect, Software Engineer","Product Manager, AI Engineer, Backend Developer",0.273
+"Frontend Developer, QA Tester, Security Analyst","Research Assistant, Teaching Assistant",0.433
+"Research Assistant, Intern, Product Manager","Automation Engineer, Project Coordinator, Security Analyst",0.628
+"Full Stack Engineer, Frontend Developer","Mobile App Developer, Data Scientist, DevOps Engineer",0.532
+Full Stack Engineer,"UX Designer, Mobile App Developer",0.313
+"Cloud Architect, Intern","Full Stack Engineer, Backend Developer, Data Analyst",0.526
+"Project Coordinator, Intern, UX Designer","Data Analyst, UI Developer",0.558
+"UX Designer, Technical Lead, Mobile App Developer","Intern, Software Engineer",0.367
+"Data Analyst, Software Engineer, Database Administrator","Automation Engineer, Product Manager",0.523
+Engineering Manager,"Software Engineer, Intern",0.509
+"Intern, DevOps Engineer, Security Analyst","Automation Engineer, Intern, AI Engineer",0.329
+"Mobile App Developer, Teaching Assistant","UX Designer, Database Administrator, AI Engineer",0.554
+"Full Stack Engineer, Data Analyst",Database Administrator,0.584
+"UX Designer, Security Analyst, Engineering Manager","Security Analyst, Project Coordinator, Technical Lead",0.662
+"Data Scientist, Mobile App Developer",Automation Engineer,0.658
+"UX Designer, Research Assistant, AI Engineer","Database Administrator, Technical Lead",0.293
+Data Scientist,"Data Analyst, Database Administrator, UX Designer",0.359
+"Engineering Manager, Machine Learning Engineer","QA Tester, Data Analyst, Machine Learning Engineer",0.577
+AI Engineer,Data Scientist,0.577
+"Site Reliability Engineer, Product Manager","Teaching Assistant, Intern",0.577
+"Machine Learning Engineer, Full Stack Engineer","Machine Learning Engineer, Full Stack Engineer",1.0
+"Teaching Assistant, Mobile App Developer",Frontend Developer,0.586
+"Mobile App Developer, Technical Lead, Intern",Product Manager,0.67
+"Teaching Assistant, Full Stack Engineer, Machine Learning Engineer","Intern, QA Tester, Data Analyst",0.643
+"UI Developer, Site Reliability Engineer, AI Engineer","Teaching Assistant, Security Analyst",0.598
+"Technical Lead, Research Assistant, Backend Developer","Data Scientist, Project Coordinator",0.453
+"QA Tester, Site Reliability Engineer","Teaching Assistant, Full Stack Engineer, AI Engineer",0.614
+"UX Designer, Full Stack Engineer","Cloud Architect, UI Developer",0.384
+"AI Engineer, Backend Developer, Teaching Assistant",QA Tester,0.464
+"Mobile App Developer, Project Coordinator, Engineering Manager","Machine Learning Engineer, Database Administrator, Software Engineer",0.427
+"Frontend Developer, Database Administrator, Cloud Architect",Data Analyst,0.512
+"Intern, Research Assistant","Intern, Research Assistant",0.847
+"Project Coordinator, Cloud Architect","Software Engineer, UX Designer",0.22
+Product Manager,Intern,0.603
+QA Tester,"DevOps Engineer, Project Coordinator, Engineering Manager",0.258
+"Cloud Architect, Machine Learning Engineer","Mobile App Developer, Teaching Assistant, Product Manager",0.429
+"Data Scientist, Frontend Developer, Site Reliability Engineer","Database Administrator, Research Assistant, Intern",0.663
+Database Administrator,Security Analyst,0.51
+"Project Coordinator, DevOps Engineer, Product Manager",Automation Engineer,0.338
+"Backend Developer, Teaching Assistant, Site Reliability Engineer","Software Engineer, Engineering Manager, Product Manager",0.393
+"Teaching Assistant, Data Scientist",Teaching Assistant,0.602
+"Database Administrator, QA Tester, Software Engineer","Database Administrator, Cloud Architect",0.39
+"DevOps Engineer, Engineering Manager, Research Assistant","DevOps Engineer, Site Reliability Engineer",0.532
+"Research Assistant, QA Tester, Product Manager",Cloud Architect,0.507
+UI Developer,"Product Manager, Automation Engineer, Backend Developer",0.402
+"Mobile App Developer, Engineering Manager, Database Administrator","Engineering Manager, Database Administrator, Mobile App Developer",0.822
+"UX Designer, Data Analyst, Backend Developer",QA Tester,0.595
+"Automation Engineer, Security Analyst","Product Manager, Data Scientist",0.196
+"Site Reliability Engineer, Software Engineer",Technical Lead,0.528
+Data Analyst,Security Analyst,0.401
+Technical Lead,"Research Assistant, Database Administrator",0.628
+"Software Engineer, Product Manager","Site Reliability Engineer, Backend Developer, QA Tester",0.381
+"Intern, UI Developer, UX Designer","Data Scientist, Database Administrator",0.483
+AI Engineer,"UX Designer, Research Assistant, QA Tester",0.576
+UI Developer,Cloud Architect,0.63
+AI Engineer,Automation Engineer,0.32
+"QA Tester, Backend Developer","Teaching Assistant, Research Assistant, AI Engineer",0.45
+"Technical Lead, DevOps Engineer, Teaching Assistant","Full Stack Engineer, Machine Learning Engineer, Engineering Manager",0.429
+"Software Engineer, Research Assistant, Backend Developer","Research Assistant, Data Analyst, Automation Engineer",0.402
+"Teaching Assistant, Site Reliability Engineer, Mobile App Developer","Teaching Assistant, Mobile App Developer, Site Reliability Engineer",0.765
+Product Manager,"DevOps Engineer, Security Analyst",0.561
+"Research Assistant, Data Analyst",Technical Lead,0.311
+"Data Analyst, Intern","UX Designer, DevOps Engineer, Data Scientist",0.638
+"Frontend Developer, Project Coordinator, Research Assistant","Research Assistant, Project Coordinator, Frontend Developer",0.818
+"AI Engineer, Research Assistant, Frontend Developer","Data Analyst, Full Stack Engineer, AI Engineer",0.655
+Research Assistant,"UX Designer, Project Coordinator, Technical Lead",0.272
+UI Developer,"Backend Developer, Automation Engineer",0.427
+Product Manager,Frontend Developer,0.69
+"Automation Engineer, Database Administrator","Full Stack Engineer, Frontend Developer, Security Analyst",0.394
+Mobile App Developer,Mobile App Developer,0.567
+Frontend Developer,"Mobile App Developer, Engineering Manager",0.616
+"Database Administrator, Intern, Data Scientist","Software Engineer, Mobile App Developer",0.361
+QA Tester,"UI Developer, Site Reliability Engineer, Automation Engineer",0.491
+Teaching Assistant,"AI Engineer, DevOps Engineer",0.014
+"Product Manager, Backend Developer, Database Administrator","Project Coordinator, DevOps Engineer, Data Scientist",0.346
+"Frontend Developer, Research Assistant","Site Reliability Engineer, UI Developer",0.462
+"Automation Engineer, Intern","Technical Lead, Security Analyst",0.313
+"Machine Learning Engineer, Software Engineer","Frontend Developer, Intern",0.745
+"Teaching Assistant, Intern",Software Engineer,0.285
+"Mobile App Developer, Machine Learning Engineer, Software Engineer",Cloud Architect,0.434
+QA Tester,"Technical Lead, Machine Learning Engineer, Research Assistant",0.52
+"Engineering Manager, Project Coordinator",Technical Lead,0.716
+"Cloud Architect, Technical Lead",QA Tester,0.285
+Research Assistant,"Product Manager, Site Reliability Engineer",0.674
+Automation Engineer,Automation Engineer,0.502
+Software Engineer,Product Manager,0.353
+"AI Engineer, Technical Lead, Intern","Intern, Frontend Developer",0.569
+"Security Analyst, Product Manager, Research Assistant","DevOps Engineer, Cloud Architect, Product Manager",0.53
+"Product Manager, DevOps Engineer, Frontend Developer",Frontend Developer,0.41
+"UX Designer, Frontend Developer, Cloud Architect","QA Tester, Site Reliability Engineer",0.51
+UX Designer,Cloud Architect,0.442
+"Data Analyst, Cloud Architect, Database Administrator",Product Manager,0.517
+Intern,"Engineering Manager, Security Analyst, Backend Developer",0.599
+"Automation Engineer, Engineering Manager, Software Engineer",Teaching Assistant,0.738
+"DevOps Engineer, Database Administrator","Product Manager, Machine Learning Engineer, Mobile App Developer",0.314
+"Frontend Developer, Database Administrator","Frontend Developer, Database Administrator",0.82
+"QA Tester, Data Scientist, Software Engineer","Engineering Manager, Frontend Developer",0.207
+DevOps Engineer,Software Engineer,0.477
+Full Stack Engineer,"Machine Learning Engineer, Engineering Manager, Research Assistant",0.588
+"Frontend Developer, Software Engineer, Data Scientist",QA Tester,0.542
+"Mobile App Developer, Site Reliability Engineer, Project Coordinator","Backend Developer, Machine Learning Engineer, DevOps Engineer",0.407
+"Full Stack Engineer, Engineering Manager",UI Developer,0.469
+"Teaching Assistant, Frontend Developer, Site Reliability Engineer",Automation Engineer,0.426
+UI Developer,"Data Scientist, QA Tester",0.412
+"Engineering Manager, Technical Lead",Mobile App Developer,0.627
+Intern,"Product Manager, Teaching Assistant, Project Coordinator",0.554
+"AI Engineer, Machine Learning Engineer","Site Reliability Engineer, Mobile App Developer, Backend Developer",0.396
+"Data Scientist, Software Engineer","Cloud Architect, QA Tester",0.635
+"Software Engineer, Mobile App Developer",Full Stack Engineer,0.546
+"Engineering Manager, Backend Developer, Cloud Architect","Data Scientist, Automation Engineer",0.622
+"Full Stack Engineer, Research Assistant, Security Analyst","DevOps Engineer, UX Designer",0.594
+Engineering Manager,"UI Developer, Research Assistant",0.376
+Cloud Architect,"Software Engineer, Database Administrator, Product Manager",0.416
+"Data Scientist, Teaching Assistant, Frontend Developer","Technical Lead, Automation Engineer",0.612
+Engineering Manager,"Data Analyst, Database Administrator",0.592
+"UX Designer, Machine Learning Engineer, Full Stack Engineer","Database Administrator, Technical Lead",0.497
+"Full Stack Engineer, Product Manager","Technical Lead, Teaching Assistant",0.518
+Frontend Developer,Data Analyst,0.692
+Mobile App Developer,"UX Designer, Product Manager",0.411
+"Automation Engineer, Engineering Manager, Technical Lead",UI Developer,0.582
+Teaching Assistant,Data Analyst,0.47
+"Machine Learning Engineer, Full Stack Engineer",Data Analyst,0.467
+"Frontend Developer, Data Analyst",Full Stack Engineer,0.665
+Cloud Architect,AI Engineer,0.624
+"DevOps Engineer, Research Assistant, UI Developer",Site Reliability Engineer,0.622
+Engineering Manager,Automation Engineer,0.696
+"Data Analyst, Research Assistant, Site Reliability Engineer","Security Analyst, Machine Learning Engineer",0.503
+"UI Developer, Intern","Software Engineer, Frontend Developer",0.602
+Machine Learning Engineer,Full Stack Engineer,0.453
+Full Stack Engineer,Full Stack Engineer,0.549
+"Automation Engineer, UX Designer, Intern","QA Tester, Site Reliability Engineer",0.48
+Research Assistant,"Data Scientist, Site Reliability Engineer",0.515
+Teaching Assistant,QA Tester,0.589
+Database Administrator,"Automation Engineer, UI Developer, Machine Learning Engineer",0.377
+"Engineering Manager, Automation Engineer, Full Stack Engineer","Full Stack Engineer, Automation Engineer, Engineering Manager",0.814
+"Software Engineer, Product Manager, Frontend Developer","Data Analyst, Engineering Manager, Machine Learning Engineer",0.349
+"Data Analyst, Engineering Manager, Full Stack Engineer","Intern, Research Assistant",0.318
+Teaching Assistant,"Intern, Engineering Manager",0.674
+"Mobile App Developer, Software Engineer, Security Analyst","Product Manager, QA Tester",0.619
+"Database Administrator, Project Coordinator","Technical Lead, Machine Learning Engineer, Software Engineer",0.594
+"DevOps Engineer, Full Stack Engineer, QA Tester",Backend Developer,0.594
+"Frontend Developer, Machine Learning Engineer",Database Administrator,0.498
+"UX Designer, Research Assistant","Research Assistant, Frontend Developer, Full Stack Engineer",0.365
+"Data Scientist, Security Analyst, AI Engineer","Full Stack Engineer, Database Administrator",0.511
+Project Coordinator,Automation Engineer,0.398
+"Backend Developer, Frontend Developer, AI Engineer",Data Analyst,0.646
+"QA Tester, DevOps Engineer, Technical Lead","Intern, QA Tester, Product Manager",0.478
+Database Administrator,"Product Manager, Teaching Assistant, AI Engineer",0.376
+Full Stack Engineer,"Software Engineer, Data Scientist",0.452
+"Site Reliability Engineer, Teaching Assistant",Data Scientist,0.562
+"Full Stack Engineer, Software Engineer","UX Designer, QA Tester",0.415
+Software Engineer,Project Coordinator,0.377
+Software Engineer,"UX Designer, Mobile App Developer",0.537
+"Engineering Manager, Teaching Assistant, Data Scientist","QA Tester, Research Assistant, Mobile App Developer",0.537
+"Machine Learning Engineer, Project Coordinator, AI Engineer",Intern,0.424
+"Product Manager, Intern","Data Analyst, AI Engineer, QA Tester",0.429
+"Teaching Assistant, Automation Engineer, Project Coordinator",Security Analyst,0.535
+Mobile App Developer,Full Stack Engineer,0.283
+"UI Developer, AI Engineer, Software Engineer","Cloud Architect, Product Manager",0.289
+"Data Analyst, Data Scientist, Software Engineer",AI Engineer,0.392
+Data Analyst,"Database Administrator, Intern, Data Analyst",0.468
+"Security Analyst, Site Reliability Engineer, UI Developer",Engineering Manager,0.547
+Backend Developer,Software Engineer,0.721
+"Security Analyst, Backend Developer, UI Developer","Software Engineer, Engineering Manager, Security Analyst",0.629
+"QA Tester, Software Engineer","Data Analyst, Engineering Manager, Machine Learning Engineer",0.476
+Machine Learning Engineer,"AI Engineer, Research Assistant, UI Developer",0.497
+"Teaching Assistant, QA Tester, Data Analyst","QA Tester, UI Developer",0.35
+Site Reliability Engineer,"Mobile App Developer, Cloud Architect",0.497
+UI Developer,"Database Administrator, Site Reliability Engineer, Technical Lead",0.457
+"Automation Engineer, Mobile App Developer, QA Tester","Technical Lead, Engineering Manager, Project Coordinator",0.548
+"Site Reliability Engineer, AI Engineer","Security Analyst, AI Engineer, Automation Engineer",0.376
+"UI Developer, Engineering Manager, AI Engineer",Data Analyst,0.578
+"Site Reliability Engineer, Project Coordinator, Full Stack Engineer","Site Reliability Engineer, Teaching Assistant",0.73
+Database Administrator,"Security Analyst, DevOps Engineer, AI Engineer",0.484
+"Mobile App Developer, Database Administrator",Teaching Assistant,0.56
+"DevOps Engineer, Technical Lead",Software Engineer,0.604
+"Backend Developer, Engineering Manager, Database Administrator",Intern,0.44
+DevOps Engineer,"Automation Engineer, QA Tester",0.534
+"Mobile App Developer, Automation Engineer, AI Engineer",Product Manager,0.502
+Full Stack Engineer,"Security Analyst, Research Assistant, Software Engineer",0.515
+"Research Assistant, Security Analyst, UI Developer",Full Stack Engineer,0.384
+"Data Analyst, UI Developer",UX Designer,0.504
+"Technical Lead, Cloud Architect, Site Reliability Engineer",Data Scientist,0.575
+"Mobile App Developer, Cloud Architect","Cloud Architect, Teaching Assistant, Data Scientist",0.718
+"Data Analyst, Software Engineer","Mobile App Developer, Database Administrator, Teaching Assistant",0.644
+"Security Analyst, Product Manager","Security Analyst, Product Manager",0.823
+"Technical Lead, Product Manager, Engineering Manager","Full Stack Engineer, Technical Lead, Data Scientist",0.385
+"Database Administrator, DevOps Engineer","Security Analyst, Mobile App Developer, QA Tester",0.631
+"Machine Learning Engineer, Software Engineer",Machine Learning Engineer,0.528
+"Site Reliability Engineer, Frontend Developer","Frontend Developer, Site Reliability Engineer",0.828
+"Machine Learning Engineer, Database Administrator, Security Analyst",Software Engineer,0.379
+"Backend Developer, Security Analyst",Security Analyst,0.374
+"Project Coordinator, Machine Learning Engineer","Software Engineer, AI Engineer, Research Assistant",0.41
+"Teaching Assistant, Research Assistant, AI Engineer",Intern,0.181
+"AI Engineer, Cloud Architect, Mobile App Developer",Research Assistant,0.421
+Data Analyst,Data Analyst,0.386
+Security Analyst,"Technical Lead, Project Coordinator, Frontend Developer",0.523
+"Full Stack Engineer, Technical Lead",UX Designer,0.551
+"Cloud Architect, Product Manager, UX Designer","Product Manager, Cloud Architect, UX Designer",0.781
+"Security Analyst, Automation Engineer",Backend Developer,0.643
+"Cloud Architect, Machine Learning Engineer",Automation Engineer,0.413
+"Data Analyst, Cloud Architect","Project Coordinator, UI Developer",0.365
+"QA Tester, AI Engineer",DevOps Engineer,0.574
+"UX Designer, Backend Developer",Cloud Architect,0.302
+Automation Engineer,Automation Engineer,0.775
+"Technical Lead, UI Developer, Database Administrator","Software Engineer, Full Stack Engineer",0.677
+"UI Developer, DevOps Engineer","Full Stack Engineer, Security Analyst, Data Analyst",0.43
+Security Analyst,"Backend Developer, Data Scientist",0.243
+UI Developer,"Mobile App Developer, Software Engineer",0.703
+Software Engineer,"Teaching Assistant, Research Assistant, Full Stack Engineer",0.483
+"Software Engineer, Backend Developer, Security Analyst","AI Engineer, Engineering Manager, Cloud Architect",0.686
+"Engineering Manager, Mobile App Developer, UI Developer","Project Coordinator, Backend Developer, AI Engineer",0.261
+"UI Developer, Mobile App Developer, Research Assistant",Technical Lead,0.41
+"Cloud Architect, Site Reliability Engineer","Engineering Manager, Cloud Architect, UI Developer",0.501
+"Intern, UI Developer","DevOps Engineer, Technical Lead, Full Stack Engineer",0.507
+"Backend Developer, Technical Lead","Backend Developer, Security Analyst, Database Administrator",0.432
+Product Manager,"Mobile App Developer, Data Analyst, Data Scientist",0.593
+"UX Designer, Database Administrator, Machine Learning Engineer","Security Analyst, Site Reliability Engineer, DevOps Engineer",0.34
+"Research Assistant, Full Stack Engineer",Data Analyst,0.479
+"Data Analyst, Database Administrator, Frontend Developer",Data Analyst,0.518
+Site Reliability Engineer,Full Stack Engineer,0.577
+DevOps Engineer,"Teaching Assistant, Frontend Developer",0.607
+"Research Assistant, Cloud Architect",AI Engineer,0.331
+"Security Analyst, Data Scientist","Teaching Assistant, Database Administrator, AI Engineer",0.27
+QA Tester,Backend Developer,0.692
+"Teaching Assistant, Intern",Security Analyst,0.55
+"Research Assistant, Frontend Developer","Data Analyst, DevOps Engineer",0.388
+Site Reliability Engineer,Software Engineer,0.733
+"Automation Engineer, DevOps Engineer, Backend Developer","Site Reliability Engineer, UI Developer",0.517
+"AI Engineer, Teaching Assistant, Intern",Software Engineer,0.677
+"Technical Lead, Database Administrator","Intern, UI Developer",0.51
+"Machine Learning Engineer, Database Administrator","Machine Learning Engineer, Database Administrator",0.809
+"Teaching Assistant, Data Scientist, Data Analyst","Data Analyst, Teaching Assistant, Data Scientist",0.763
+Machine Learning Engineer,"Mobile App Developer, Backend Developer",0.463
+"Full Stack Engineer, Cloud Architect","QA Tester, Technical Lead",0.646
+"Data Analyst, Full Stack Engineer",Security Analyst,0.597
+"Technical Lead, Intern",Project Coordinator,0.705
+Data Scientist,"Teaching Assistant, AI Engineer",0.355
+Database Administrator,"Frontend Developer, DevOps Engineer",0.603
+"Teaching Assistant, Project Coordinator","Data Scientist, Frontend Developer, Machine Learning Engineer",0.659
+"Technical Lead, Research Assistant, DevOps Engineer",Engineering Manager,0.236
+"DevOps Engineer, Automation Engineer","Security Analyst, Database Administrator, Technical Lead",0.323
+"Automation Engineer, Mobile App Developer, Frontend Developer","Security Analyst, Data Scientist, Database Administrator",0.194
+"AI Engineer, Backend Developer, Data Scientist",Product Manager,0.46
+"Project Coordinator, Product Manager","Automation Engineer, Cloud Architect",0.608
+"DevOps Engineer, Intern, Database Administrator","Automation Engineer, Data Scientist, Database Administrator",0.725
+"UX Designer, Full Stack Engineer",Site Reliability Engineer,0.511
+"DevOps Engineer, Software Engineer, Data Scientist","Research Assistant, UI Developer, Mobile App Developer",0.744
+"Mobile App Developer, UX Designer, Site Reliability Engineer",DevOps Engineer,0.293
+Teaching Assistant,Data Scientist,0.244
+Teaching Assistant,"Data Scientist, Mobile App Developer",0.492
+Site Reliability Engineer,Software Engineer,0.558
+"Product Manager, Intern, Machine Learning Engineer","Software Engineer, Mobile App Developer, Frontend Developer",0.495
+"Data Scientist, Engineering Manager, Technical Lead","Intern, Automation Engineer, Backend Developer",0.19
+"UX Designer, Product Manager",Technical Lead,0.487
+"UI Developer, Mobile App Developer",Project Coordinator,0.304
+"Teaching Assistant, Software Engineer, Engineering Manager","Research Assistant, Backend Developer",0.6
+"Product Manager, Engineering Manager, Technical Lead","Data Scientist, Data Analyst, Teaching Assistant",0.555
+Full Stack Engineer,"Site Reliability Engineer, Engineering Manager",0.359
+"Security Analyst, Database Administrator","Intern, Security Analyst",0.423
+"Product Manager, Mobile App Developer",Cloud Architect,0.341
+"Project Coordinator, Data Scientist",Mobile App Developer,0.491
+"Automation Engineer, Full Stack Engineer, Database Administrator","Technical Lead, DevOps Engineer",0.643
+"Teaching Assistant, Full Stack Engineer","Machine Learning Engineer, AI Engineer",0.352
+"Research Assistant, Database Administrator","Technical Lead, Mobile App Developer, Full Stack Engineer",0.576
+"Data Analyst, QA Tester, Software Engineer","Project Coordinator, DevOps Engineer, Database Administrator",0.42
+"QA Tester, AI Engineer, Teaching Assistant","Data Scientist, Software Engineer",0.381
+"Full Stack Engineer, Cloud Architect",Site Reliability Engineer,0.484
+"Teaching Assistant, Frontend Developer, Full Stack Engineer","Automation Engineer, UI Developer",0.345
+Data Scientist,"AI Engineer, Frontend Developer",0.417
+"Automation Engineer, Frontend Developer",Project Coordinator,0.32
+Mobile App Developer,Mobile App Developer,0.795
+"Software Engineer, Data Analyst, Project Coordinator","Intern, Engineering Manager, Mobile App Developer",0.505
+QA Tester,Database Administrator,0.395
+"Data Analyst, UI Developer, Database Administrator","UI Developer, Technical Lead",0.532
+"Full Stack Engineer, Machine Learning Engineer, QA Tester","Data Scientist, Technical Lead, Site Reliability Engineer",0.483
+"Full Stack Engineer, Machine Learning Engineer",QA Tester,0.467
+"Full Stack Engineer, Security Analyst","Engineering Manager, Mobile App Developer",0.592
+Intern,"Product Manager, Mobile App Developer",0.614
+Software Engineer,"Research Assistant, Machine Learning Engineer, Project Coordinator",0.42
+"Intern, Machine Learning Engineer, Product Manager","Data Analyst, Frontend Developer",0.414
+"Intern, QA Tester, Data Analyst",AI Engineer,0.459
+Engineering Manager,Product Manager,0.155
+Site Reliability Engineer,"Teaching Assistant, Full Stack Engineer, Cloud Architect",0.273
+"Project Coordinator, Security Analyst","Site Reliability Engineer, Project Coordinator, Technical Lead",0.705
+"Full Stack Engineer, Data Scientist",Cloud Architect,0.747
+"Software Engineer, Project Coordinator","AI Engineer, UX Designer, Data Scientist",0.463
+"Product Manager, QA Tester","UX Designer, Machine Learning Engineer, AI Engineer",0.586
+"Intern, Teaching Assistant, Project Coordinator","Database Administrator, UI Developer, Project Coordinator",0.547
+"Product Manager, Intern, Research Assistant","Research Assistant, Intern, Product Manager",0.962
+"Data Analyst, Frontend Developer, Machine Learning Engineer","Data Scientist, DevOps Engineer, Teaching Assistant",0.668
+Engineering Manager,"Backend Developer, Security Analyst",0.481
+"Cloud Architect, Automation Engineer","Intern, Backend Developer, Product Manager",0.357
+"Research Assistant, Project Coordinator, Product Manager",Site Reliability Engineer,0.259
+"Research Assistant, Automation Engineer, Data Analyst","Research Assistant, Cloud Architect",0.531
+Technical Lead,"Data Analyst, Teaching Assistant",0.387
+"AI Engineer, Security Analyst",Automation Engineer,0.287
+"Cloud Architect, QA Tester, Backend Developer",Automation Engineer,0.403
+"UX Designer, Project Coordinator","Automation Engineer, Software Engineer",0.338
+"DevOps Engineer, Machine Learning Engineer, Frontend Developer","Frontend Developer, Machine Learning Engineer, DevOps Engineer",0.753
+Database Administrator,Machine Learning Engineer,0.632
+UI Developer,Frontend Developer,0.499
+DevOps Engineer,Project Coordinator,0.722
+"Automation Engineer, Cloud Architect","Data Scientist, QA Tester",0.512
+"Cloud Architect, Site Reliability Engineer, Data Scientist","Database Administrator, Teaching Assistant",0.371
+"Mobile App Developer, Teaching Assistant","Data Analyst, Security Analyst, UI Developer",0.728
+"Automation Engineer, Site Reliability Engineer, Software Engineer",UI Developer,0.581
+Data Analyst,"Data Scientist, Site Reliability Engineer, Research Assistant",0.344
+"Intern, Security Analyst, UI Developer","Data Analyst, Frontend Developer",0.471
+"Intern, DevOps Engineer",Teaching Assistant,0.369
+"Product Manager, Cloud Architect","Frontend Developer, Intern",0.293

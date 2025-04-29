@@ -27,8 +27,7 @@ Each version milestone focuses on building a critical subsystem required for a f
     - Soft Skills Matchmaker ✅ 
     - Tools Matchmaker ✅ 
     - Certification Matchmaker ✅  
-    - Designation Matchmaker ❌
-    - Location Matchmaker ❌
+    - Designation Matchmaker ✅ 
 - Modular src/ Architecture ✅
 - Secure API Key Management (AES-256) ✅
 - Input Sanitization ✅
@@ -56,7 +55,6 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Tools Matchmaker (Built in v0.1.0)
 - Certification Matchmaker (Built in v0.1.0)
 - Designation Matchmaker (Built in v0.1.0)
-- Location Matchmaker (Built in v0.1.0)
 - Final Matchmaker Engine (To be implemented)
 
 **Benchmarks:**

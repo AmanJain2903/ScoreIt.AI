@@ -41,11 +41,10 @@
 |-----------|  |------------- |      |       |------------- |  |----------------|
 | - Resume  |  | - Education  |      |       | - OCR Resume |  | - LLM-based    |
 | - JD      |  | - Experience |      |       | - Web Scraper|  |   Improvement  |
-|           |  | - Skills     |      |       |              |  |   Suggestions  |
+|           |  | - Tech Skills|      |       |              |  |   Suggestions  |
 |           |  | - Soft Skills|      |       |              |  |                |
 |           |  | - Tools      |      |       |              |  |                |
 |           |  | - Certs      |      |       |              |  |                |
-|           |  | - Location   |      |       |              |  |                |
 |           |  | - Designation|      |       |              |  |                |
 +-----------+  +--------------+      |       +--------------+  +----------------+
                                      |

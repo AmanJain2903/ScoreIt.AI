@@ -58,7 +58,7 @@ class EducationSimilarity:
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
         if self.model2Score<0.6:
-            self.ensembleScore = self.model2Score * 0.6
+            self.ensembleScore = min(1.0, self.model2Score * 0.6)
         elif self.model1Score>0.8:
             self.ensembleScore = min(1.0, self.model1Score * 1.2)
         else:

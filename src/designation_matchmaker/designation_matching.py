@@ -1,38 +1,36 @@
 # EXAMPLE USAGE
 # if __name__ == "__main__":
-#     resumeTool = "Docker, Kubernetes, Git, Jenkins, Jira, MongoDB, AWS, Postman"
-#     jobTool = "Docker, Kubernetes, GitHub, Jenkins, Jira, MySQL, AWS, Postman"
-    
-#     toolMatcher = ToolMatching()
-#     toolMatcher.setInputs(resumeTool, jobTool)
-#     score = toolMatcher.makeMatch()
+#     resumeDesignation = "Software Engineer, Backend Developer, Full Stack Developer"
+#     jobDesignation = "Senior Software Engineer, Full Stack Engineer, Backend Developer"    
+#     designationMatcher = DesignationMatching()
+#     designationMatcher.setInputs(resumeDesignation, jobDesignation)
+#     score = designationMatcher.makeMatch()
 #     print(f"Similarity Score: {score}")
 
-#     toolMatcher.reset()
+#     designationMatcher.reset()
 
 #     print("------------------------------")
 
-#     resumeTool = "Photoshop, Illustrator, Figma, Adobe XD, Canva, Kubernetes, Git, Jenkins"
-#     jobTool = "AWS, Azure, Docker, Kubernetes, Jenkins, MongoDB, GitLab"
-    
-#     toolMatcher = ToolMatching()
-#     toolMatcher.setInputs(resumeTool, jobTool)
-#     score = toolMatcher.makeMatch()
+#     resumeDesignation = "Teaching Assistant, Academic Researcher, Backend Intern"
+#     jobDesignation = "Data Engineer, Cloud Architect, Senior Backend Developer"    
+#     designationMatcher = DesignationMatching()
+#     designationMatcher.setInputs(resumeDesignation, jobDesignation)
+#     score = designationMatcher.makeMatch()
 #     print(f"Similarity Score: {score}")
 
-#     toolMatcher.reset()
+#     designationMatcher.reset()
    
 
 import gc
 import numpy as np
-from src.tools_matchmaker import config
+from src.designation_matchmaker import config
 from src.utils import security
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 config = config.Config()
 
-class ToolSimilarity:
+class DesignationSimilarity:
     def __init__(self):
         self.model1Score = None
         self.model2Score = None
@@ -81,7 +79,7 @@ class ToolSimilarity:
         self.model2Score = None
         self.ensembleScore = []
 
-class ToolMatching:
+class DesignationMatching:
     def __init__(self, modelName1=None, modelName2=None, maxInputLength=None):
         if modelName1 is None:
             modelName1 = config.MODEL_NAME_1
@@ -92,9 +90,9 @@ class ToolMatching:
         self.maxInputLength = maxInputLength
         self.model1 = None
         self.model2 = None
-        self.resumeTool = None
-        self.jobTool = None
-        self.similarity = ToolSimilarity()
+        self.resumeDesignation = None
+        self.jobDesignation = None
+        self.similarity = DesignationSimilarity()
     
     def loadModels(self):
         if not self.modelName1 or not self.modelName2:
@@ -105,15 +103,15 @@ class ToolMatching:
         except Exception as e:
             raise RuntimeError(f"Failed to load models '{self.modelName1}' and '{self.modelName2}': {e}")
     
-    def setInputs(self, resumeTool, jobTool):
-        if not resumeTool or not jobTool:
-            raise ValueError("Resume tools and job tools cannot be empty.")
-        if not isinstance(resumeTool,str):
-            raise ValueError("Resume tools must be a string.")
-        if not isinstance(jobTool, str):
-            raise ValueError("Job tools must be a string.")
-        self.resumeTool = security.sanitizeInput(resumeTool, self.maxInputLength).split(',')
-        self.jobTool = security.sanitizeInput(jobTool, self.maxInputLength).split(',')
+    def setInputs(self, resumeDesignation, jobDesignation):
+        if not resumeDesignation or not jobDesignation:
+            raise ValueError("Resume designation and job designation cannot be empty.")
+        if not isinstance(resumeDesignation,str):
+            raise ValueError("Resume designation must be a string.")
+        if not isinstance(jobDesignation, str):
+            raise ValueError("Job designation must be a string.")
+        self.resumeDesignation = security.sanitizeInput(resumeDesignation, self.maxInputLength).split(',')
+        self.jobDesignation = security.sanitizeInput(jobDesignation, self.maxInputLength).split(',')
     
     def makeMatch(self):
         if not self.model1 or not self.model2:
@@ -121,38 +119,38 @@ class ToolMatching:
                 self.loadModels()
             except Exception as e:
                 raise RuntimeError(f"Failed to load models: {e}")
-        if not self.resumeTool or not self.jobTool:
+        if not self.resumeDesignation or not self.jobDesignation:
             raise ValueError("Inputs are not set")
         
         try:
             model1Scores = []
             model2Scores = []
-            matchedTools = {}
-            for jobTool in self.jobTool:
+            matchedDesignations = {}
+            for jobDesignation in self.jobDesignation:
                 maxModel1Score = 0
                 maxModel2Score = 1
-                jobTool = jobTool.strip()
-                jobEmbeddings1 = self.model1.encode([jobTool])
-                jobEmbeddings2 = self.model2.encode([jobTool])
+                jobDesignation = jobDesignation.strip()
+                jobEmbeddings1 = self.model1.encode([jobDesignation])
+                jobEmbeddings2 = self.model2.encode([jobDesignation])
                 currBest = None
-                for resumeTool in self.resumeTool:
-                    if resumeTool in matchedTools:
+                for resumeDesignation in self.resumeDesignation:
+                    if resumeDesignation in matchedDesignations:
                         continue
-                    resumeTool = resumeTool.strip()
-                    if not jobTool or not resumeTool:
+                    resumeDesignation = resumeDesignation.strip()
+                    if not jobDesignation or not resumeDesignation:
                         continue
-                    resumeEmbeddings1 = self.model1.encode([resumeTool])
-                    resumeEmbeddings2 = self.model2.encode([resumeTool])
+                    resumeEmbeddings1 = self.model1.encode([resumeDesignation])
+                    resumeEmbeddings2 = self.model2.encode([resumeDesignation])
                     similarity1 = max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0)
                     similarity2 = max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0)
                     if similarity1>maxModel1Score:
                         maxModel1Score = similarity1
                         maxModel2Score = similarity2
-                        currBest = resumeTool
+                        currBest = resumeDesignation
                 model1Scores.append(maxModel1Score)
                 model2Scores.append(maxModel2Score)
                 if currBest:
-                    matchedTools[currBest] = jobTool
+                    matchedDesignations[currBest] = jobDesignation
             
             self.similarity.setModel1Score(model1Scores)
             self.similarity.setModel2Score(model2Scores)
@@ -188,5 +186,5 @@ class ToolMatching:
             del self.model2
             self.model2 = None
         gc.collect()
-        self.resumeTool = None
-        self.jobTool = None
+        self.resumeDesignation = None
+        self.jobDesignation = None
