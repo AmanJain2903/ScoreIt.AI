@@ -1,16 +1,38 @@
-# BASE CLASS FOR TECHNICAL SKILL MATCHING & SOFT SKILL MATCHING
+# EXAMPLE USAGE
+# if __name__ == "__main__":
+#     resumeTool = "Docker, Kubernetes, Git, Jenkins, Jira, MongoDB, AWS, Postman"
+#     jobTool = "Docker, Kubernetes, GitHub, Jenkins, Jira, MySQL, AWS, Postman"
+    
+#     toolMatcher = ToolMatching()
+#     toolMatcher.setInputs(resumeTool, jobTool)
+#     score = toolMatcher.makeMatch()
+#     print(f"Similarity Score: {score}")
 
+#     toolMatcher.reset()
+
+#     print("------------------------------")
+
+#     resumeTool = "Photoshop, Illustrator, Figma, Adobe XD, Canva, Kubernetes, Git, Jenkins"
+#     jobTool = "AWS, Azure, Docker, Kubernetes, Jenkins, MongoDB, GitLab"
+    
+#     toolMatcher = ToolMatching()
+#     toolMatcher.setInputs(resumeTool, jobTool)
+#     score = toolMatcher.makeMatch()
+#     print(f"Similarity Score: {score}")
+
+#     toolMatcher.reset()
+   
 
 import gc
 import numpy as np
-from src.skill_matchmaker import config
+from src.tools_matchmaker import config
 from src.utils import security
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 config = config.Config()
 
-class SkillSimilarity:
+class ToolSimilarity:
     def __init__(self):
         self.model1Score = None
         self.model2Score = None
@@ -38,9 +60,9 @@ class SkillSimilarity:
             raise ValueError("Model scores are not set.")
         for i in range(len(self.model1Score)):
             if self.model1Score[i] < 0.5:
-                self.model1Score[i] = self.model1Score[i] * 0.5
+                self.model1Score[i] = self.model1Score[i] * 0.7
             if self.model2Score[i] < 0.5:
-                self.model2Score[i] = self.model2Score[i] * 0.5
+                self.model2Score[i] = self.model2Score[i] * 0.7
         self.averageEnsemble()
     
     def getEnsembleScore(self):
@@ -59,16 +81,20 @@ class SkillSimilarity:
         self.model2Score = None
         self.ensembleScore = []
 
-class SkillMatching:
+class ToolMatching:
     def __init__(self, modelName1=None, modelName2=None, maxInputLength=None):
+        if modelName1 is None:
+            modelName1 = config.MODEL_NAME_1
+        if modelName2 is None:
+            modelName2 = config.MODEL_NAME_2
         self.modelName1 = modelName1
         self.modelName2 = modelName2
         self.maxInputLength = maxInputLength
         self.model1 = None
         self.model2 = None
-        self.resumeSkill = None
-        self.jobSkill = None
-        self.similarity = SkillSimilarity()
+        self.resumeTool = None
+        self.jobTool = None
+        self.similarity = ToolSimilarity()
     
     def loadModels(self):
         if not self.modelName1 or not self.modelName2:
@@ -79,15 +105,15 @@ class SkillMatching:
         except Exception as e:
             raise RuntimeError(f"Failed to load models '{self.modelName1}' and '{self.modelName2}': {e}")
     
-    def setInputs(self, resumeSkill, jobSkill):
-        if not resumeSkill or not jobSkill:
-            raise ValueError("Resume skill and job skill cannot be empty.")
-        if not isinstance(resumeSkill,str):
-            raise ValueError("Resume skill must be a string.")
-        if not isinstance(jobSkill, str):
-            raise ValueError("Job skill must be a string.")
-        self.resumeSkill = security.sanitizeInput(resumeSkill, self.maxInputLength).split(',')
-        self.jobSkill = security.sanitizeInput(jobSkill, self.maxInputLength).split(',')
+    def setInputs(self, resumeTool, jobTool):
+        if not resumeTool or not jobTool:
+            raise ValueError("Resume tools and job tools cannot be empty.")
+        if not isinstance(resumeTool,str):
+            raise ValueError("Resume tools must be a string.")
+        if not isinstance(jobTool, str):
+            raise ValueError("Job tools must be a string.")
+        self.resumeTool = security.sanitizeInput(resumeTool, self.maxInputLength).split(',')
+        self.jobTool = security.sanitizeInput(jobTool, self.maxInputLength).split(',')
     
     def makeMatch(self):
         if not self.model1 or not self.model2:
@@ -95,38 +121,38 @@ class SkillMatching:
                 self.loadModels()
             except Exception as e:
                 raise RuntimeError(f"Failed to load models: {e}")
-        if not self.resumeSkill or not self.jobSkill:
+        if not self.resumeTool or not self.jobTool:
             raise ValueError("Inputs are not set")
         
         try:
             model1Scores = []
             model2Scores = []
-            matchedSkills = {}
-            for jobSkill in self.jobSkill:
+            matchedTools = {}
+            for jobTool in self.jobTool:
                 maxModel1Score = 0
                 maxModel2Score = 1
-                jobSkill = jobSkill.strip()
-                jobEmbeddings1 = self.model1.encode([jobSkill])
-                jobEmbeddings2 = self.model2.encode([jobSkill])
+                jobTool = jobTool.strip()
+                jobEmbeddings1 = self.model1.encode([jobTool])
+                jobEmbeddings2 = self.model2.encode([jobTool])
                 currBest = None
-                for resumeSkill in self.resumeSkill:
-                    if resumeSkill in matchedSkills:
+                for resumeTool in self.resumeTool:
+                    if resumeTool in matchedTools:
                         continue
-                    resumeSkill = resumeSkill.strip()
-                    if not jobSkill or not resumeSkill:
+                    resumeTool = resumeTool.strip()
+                    if not jobTool or not resumeTool:
                         continue
-                    resumeEmbeddings1 = self.model1.encode([resumeSkill])
-                    resumeEmbeddings2 = self.model2.encode([resumeSkill])
+                    resumeEmbeddings1 = self.model1.encode([resumeTool])
+                    resumeEmbeddings2 = self.model2.encode([resumeTool])
                     similarity1 = max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0)
                     similarity2 = max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0)
                     if similarity1>maxModel1Score:
                         maxModel1Score = similarity1
                         maxModel2Score = similarity2
-                        currBest = resumeSkill
+                        currBest = resumeTool
                 model1Scores.append(maxModel1Score)
                 model2Scores.append(maxModel2Score)
                 if currBest:
-                    matchedSkills[currBest] = jobSkill
+                    matchedTools[currBest] = jobTool
             
             self.similarity.setModel1Score(model1Scores)
             self.similarity.setModel2Score(model2Scores)
@@ -162,5 +188,5 @@ class SkillMatching:
             del self.model2
             self.model2 = None
         gc.collect()
-        self.resumeSkill = None
-        self.jobSkill = None
+        self.resumeTool = None
+        self.jobTool = None

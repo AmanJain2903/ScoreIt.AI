@@ -1,501 +1,501 @@
-resume_edu,jd_edu,expected_match
-Bachelor of Journalism,Bachelors of Journalism,True
-Bachelor of Oceanography,Bachelors of Oceanography,True
-Bachelor of Education,Bachelors of Education,True
-Bachelor of Pharmacy,B.Sc of Pharmacy,True
-Bachelor of Aerospace Engineering,B.Tech of Aerospace Engineering,True
-Bachelor of Criminal Justice,Bachelor's of Criminal Justice,True
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True
-Bachelor of Commerce,Bachelors of Commerce,True
-Bachelor of Agricultural Science,bachelor's of agricultural science,True
-Bachelor of Anthropology,Bachelor's of Anthropology,True
-Master of Management Studies,Masters of Management Studies,True
-Bachelor of Engineering in Electrical Engineering,B.Sc of Engineering in Electrical Engineering,True
-Bachelor of Performing Arts,Bachelors of Performing Arts,True
-Bachelor of Arts in History,Bachelors of Arts in History,True
-Bachelor of Theology,Bachelor's of Theology,True
-Bachelor of Law (LLB),B.Sc of Law (LLB),True
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True
-Bachelor of Journalism,Bachelor's of Journalism,True
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True
-Bachelor of Engineering in Mechanical Engineering,bachelor's of engineering in mechanical engineering,True
-Bachelor of Anthropology,B.Sc of Anthropology,True
-Bachelor of Music,B.Tech of Music,True
-Bachelor of Applied Science,Bachelors of Applied Science,True
-Bachelor of Software Engineering,B.Tech of Software Engineering,True
-Bachelor of Pharmacy,Bachelors of Pharmacy,True
-Master of Engineering in Computer Networks,Master's of Engineering in Computer Networks,True
-Bachelor of Hotel Management,B.Sc of Hotel Management,True
-Bachelor of Laws and Arts,bachelor's of laws and arts,True
-Bachelor of Psychology,Bachelor's of Psychology,True
-Bachelor of Pharmacy,B.Sc of Pharmacy,True
-Bachelor of Hotel Management,B.Sc of Hotel Management,True
-Bachelor of Social Work,Bachelor's of Social Work,True
-Bachelor of Physical Education,Bachelor's of Physical Education,True
-Master of Management Studies,M.Sc of Management Studies,True
-Bachelor of Law (LLB),bachelors of law (llb),True
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True
-Bachelor of Biomedical Engineering,Bachelor's of Biomedical Engineering,True
-Master of Science in Data Analytics,M.Tech of Science in Data Analytics,True
-Doctor of Medicine,Doctorate of Medicine,True
-Bachelor of Engineering in Electrical Engineering,bachelor's of engineering in electrical engineering,True
-Bachelor of Environmental Science,B.Sc of Environmental Science,True
-Doctor of Philosophy in Physics,phd of philosophy in physics,True
-Master of Computer Applications,M.Sc of Computer Applications,True
-Bachelor of Architecture,Bachelor's of Architecture,True
-Bachelor of Education,B.Tech of Education,True
-Bachelor of Business Administration,B.Sc of Business Administration,True
-Bachelor of Psychology,Bachelors of Psychology,True
-Bachelor of Biomedical Engineering,b.sc of biomedical engineering,True
-Bachelor of Arts in Political Science,B.Sc of Arts in Political Science,True
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True
-Master of Financial Engineering,M.Sc of Financial Engineering,True
-Bachelor of Agricultural Science,Bachelor's of Agricultural Science,True
-Bachelor of Data Science,Bachelor's of Data Science,True
-Bachelor of Applied Science,B.Tech of Applied Science,True
-Bachelor of Engineering in Mechanical Engineering,B.Sc of Engineering in Mechanical Engineering,True
-Master of Technology in Artificial Intelligence,masters of technology in artificial intelligence,True
-Bachelor of Technology in Computer Science,Bachelor's of Technology in Computer Science,True
-Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True
-Bachelor of Environmental Science,Bachelor's of Environmental Science,True
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True
-Bachelor of Library Science,B.Tech of Library Science,True
-Bachelor of Arts in History,B.Tech of Arts in History,True
-Bachelor of Social Work,bachelors of social work,True
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True
-Bachelor of Journalism,Bachelors of Journalism,True
-Bachelor of Software Engineering,B.Tech of Software Engineering,True
-Bachelor of Science in Nursing,b.tech of science in nursing,True
-Master of Business Administration,M.Sc of Business Administration,True
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True
-Bachelor of Engineering in Electrical Engineering,B.Sc of Engineering in Electrical Engineering,True
-Bachelor of Library Science,B.Tech of Library Science,True
-Bachelor of Architecture,B.Tech of Architecture,True
-Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True
-Master of Public Health,M.Tech of Public Health,True
-Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True
-Bachelor of Criminal Justice,Bachelors of Criminal Justice,True
-Bachelor of Anthropology,B.Tech of Anthropology,True
-Bachelor of Social Work,Bachelors of Social Work,True
-Bachelor of Software Engineering,Bachelors of Software Engineering,True
-Bachelor of Commerce,bachelors of commerce,True
-Bachelor of Design,bachelors of design,True
-Bachelor of Technology in Computer Science,Bachelors of Technology in Computer Science,True
-Bachelor of Law (LLB),Bachelors of Law (LLB),True
-Master of Technology in Artificial Intelligence,M.Sc of Technology in Artificial Intelligence,True
-Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True
-Bachelor of Veterinary Science,Bachelor's of Veterinary Science,True
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True
-Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True
-Bachelor of Veterinary Science,B.Sc of Veterinary Science,True
-Bachelor of Chemical Engineering,B.Tech of Chemical Engineering,True
-Master of Business Administration,m.sc of business administration,True
-Bachelor of Physical Education,b.sc of physical education,True
-Bachelor of Library Science,Bachelor's of Library Science,True
-Bachelor of Criminal Justice,B.Sc of Criminal Justice,True
-Bachelor of Science in Biotechnology,B.Sc of Science in Biotechnology,True
-Master of Computer Applications,M.Tech of Computer Applications,True
-Master of Technology in Artificial Intelligence,Masters of Technology in Artificial Intelligence,True
-Bachelor of Cognitive Science,B.Tech of Cognitive Science,True
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True
-Bachelor of Design,B.Sc of Design,True
-Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True
-Bachelor of Physical Education,B.Sc of Physical Education,True
-Bachelor of Business Administration,Bachelors of Business Administration,True
-Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True
-Bachelor of Oceanography,Bachelor's of Oceanography,True
-Bachelor of Data Science,Bachelors of Data Science,True
-Bachelor of Psychology,b.sc of psychology,True
-Bachelor of Laws and Arts,B.Sc of Laws and Arts,True
-Master of Public Health,M.Tech of Public Health,True
-Bachelor of Science in Mathematics,B.Sc of Science in Mathematics,True
-Master of Business Administration,Masters of Business Administration,True
-Bachelor of Music,B.Tech of Music,True
-Bachelor of Physical Education,b.tech of physical education,True
-Bachelor of Business Administration,B.Sc of Business Administration,True
-Bachelor of Law (LLB),b.tech of law (llb),True
-Bachelor of Fine Arts,Bachelor's of Fine Arts,True
-Doctor of Philosophy in Physics,phd of philosophy in physics,True
-Bachelor of Engineering in Mechanical Engineering,Bachelors of Engineering in Mechanical Engineering,True
-Bachelor of Library Science,B.Tech of Library Science,True
-Bachelor of Science in Biotechnology,B.Tech of Science in Biotechnology,True
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True
-Bachelor of Applied Science,B.Tech of Applied Science,True
-Bachelor of Software Engineering,B.Tech of Software Engineering,True
-Bachelor of Chemical Engineering,B.Sc of Chemical Engineering,True
-Master of Social Work,Master's of Social Work,True
-Master of Business Administration,masters of business administration,True
-Doctor of Philosophy in Physics,Doctorate of Philosophy in Physics,True
-Master of Technology in Artificial Intelligence,M.Sc of Technology in Artificial Intelligence,True
-Bachelor of Education,Bachelor's of Education,True
-Bachelor of Hotel Management,B.Sc of Hotel Management,True
-Bachelor of Music,Bachelor's of Music,True
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True
-Bachelor of Veterinary Science,Bachelor's of Veterinary Science,True
-Bachelor of Cognitive Science,b.sc of cognitive science,True
-Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True
-Bachelor of Statistics,Bachelors of Statistics,True
-Bachelor of Science in Information Technology,b.sc of science in information technology,True
-Bachelor of Music,Bachelor's of Music,True
-Bachelor of Architecture,b.tech of architecture,True
-Bachelor of Fine Arts,B.Tech of Fine Arts,True
-Master of Business Administration,M.Sc of Business Administration,True
-Bachelor of Science in Information Technology,B.Tech of Science in Information Technology,True
-Bachelor of Fisheries Science,B.Tech of Fisheries Science,True
-Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True
-Bachelor of Aerospace Engineering,B.Sc of Aerospace Engineering,True
-Bachelor of Software Engineering,B.Sc of Software Engineering,True
-Bachelor of Performing Arts,Bachelors of Performing Arts,True
-Bachelor of Fine Arts,B.Sc of Fine Arts,True
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True
-Bachelor of Theology,B.Sc of Theology,True
-Bachelor of Fine Arts,Bachelor's of Fine Arts,True
-Bachelor of Journalism,bachelor's of journalism,True
-Master of Public Health,Masters of Public Health,True
-Bachelor of Social Work,B.Sc of Social Work,True
-Bachelor of Journalism,Bachelor's of Journalism,True
-Bachelor of Social Work,Bachelors of Social Work,True
-Bachelor of Pharmacy,B.Tech of Pharmacy,True
-Bachelor of Library Science,Bachelors of Library Science,True
-Bachelor of Arts in History,Bachelor's of Arts in History,True
-Bachelor of Library Science,B.Sc of Library Science,True
-Master of Social Work,m.tech of social work,True
-Bachelor of Oceanography,Bachelor's of Oceanography,True
-Bachelor of Arts in History,bachelors of arts in history,True
-Bachelor of Forestry,Bachelors of Forestry,True
-Doctor of Medicine,PhD of Medicine,True
-Master of Management Studies,M.Sc of Management Studies,True
-Bachelor of Forestry,Bachelors of Forestry,True
-Bachelor of Engineering in Electrical Engineering,b.sc of engineering in electrical engineering,True
-Bachelor of Business Administration,bachelors of business administration,True
-Doctor of Medicine,PhD of Medicine,True
-Bachelor of Software Engineering,B.Tech of Software Engineering,True
-Bachelor of Environmental Science,Bachelor's of Environmental Science,True
-Bachelor of Theology,Bachelors of Theology,True
-Bachelor of Veterinary Science,bachelor's of veterinary science,True
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True
-Bachelor of Information Systems,bachelor's of information systems,True
-Bachelor of Science in Nursing,B.Sc of Science in Nursing,True
-Master of Social Work,M.Sc of Social Work,True
-Bachelor of Cognitive Science,B.Sc of Cognitive Science,True
-Bachelor of Business Administration,Bachelor's of Business Administration,True
-Bachelor of Physical Education,Bachelor's of Physical Education,True
-Bachelor of Commerce,B.Tech of Commerce,True
-Master of Technology in Artificial Intelligence,Master's of Technology in Artificial Intelligence,True
-Bachelor of Pharmacy,Bachelor's of Pharmacy,True
-Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True
-Bachelor of Anthropology,B.Tech of Anthropology,True
-Master of Engineering in Computer Networks,m.tech of engineering in computer networks,True
-Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True
-Bachelor of Performing Arts,Bachelors of Performing Arts,True
-Bachelor of Agricultural Science,bachelor's of agricultural science,True
-Doctor of Medicine,phd of medicine,True
-Bachelor of Science in Mathematics,bachelor's of science in mathematics,True
-Bachelor of Hotel Management,Bachelors of Hotel Management,True
-Bachelor of Applied Science,B.Sc of Applied Science,True
-Bachelor of Fine Arts,B.Tech of Fine Arts,True
-Bachelor of Chemical Engineering,Bachelor's of Chemical Engineering,True
-Bachelor of Arts in History,B.Tech of Arts in History,True
-Master of Science in Data Analytics,Masters of Science in Data Analytics,True
-Bachelor of Criminal Justice,Bachelors of Criminal Justice,True
-Bachelor of Agricultural Science,Bachelor's of Agricultural Science,True
-Bachelor of Theology,Bachelors of Theology,True
-Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True
-Master of Science in Data Analytics,master's of science in data analytics,True
-Doctor of Medicine,PhD of Medicine,True
-Bachelor of Physical Education,B.Tech of Physical Education,True
-Bachelor of Technology in Computer Science,B.Tech of Technology in Computer Science,True
-Master of Management Studies,Master's of Management Studies,True
-Master of Business Administration,Masters of Business Administration,True
-Bachelor of Chemical Engineering,B.Tech of Chemical Engineering,True
-Bachelor of Information Systems,B.Sc of Information Systems,True
-Bachelor of Pharmacy,B.Tech of Pharmacy,True
-Bachelor of Statistics,B.Sc of Statistics,True
-Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True
-Bachelor of Social Work,B.Sc of Social Work,True
-Bachelor of Commerce,B.Sc of Commerce,True
-Bachelor of Veterinary Science,Bachelors of Veterinary Science,True
-Master of Financial Engineering,M.Sc of Financial Engineering,True
-Bachelor of Statistics,Bachelors of Statistics,True
-Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True
-Bachelor of Agricultural Science,B.Tech of Agricultural Science,True
-Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True
-Bachelor of Data Science,B.Sc of Data Science,True
-Bachelor of Aerospace Engineering,B.Sc of Aerospace Engineering,True
-Master of Financial Engineering,Master's of Financial Engineering,True
-Bachelor of Criminal Justice,bachelors of criminal justice,True
-Bachelor of Criminal Justice,B.Tech of Criminal Justice,True
-Master of Public Health,M.Tech of Public Health,True
-Bachelor of Hotel Management,Bachelors of Hotel Management,True
-Bachelor of Biomedical Engineering,B.Sc of Biomedical Engineering,True
-Master of Science in Data Analytics,M.Sc of Science in Data Analytics,True
-Bachelor of Psychology,B.Sc of Psychology,True
-Master of Engineering in Computer Networks,Master's of Engineering in Computer Networks,True
-Bachelor of Statistics,Bachelors of Statistics,True
-Bachelor of Pharmacy,B.Sc of Pharmacy,True
-Master of Management Studies,masters of management studies,True
-Bachelor of Library Science,bachelor's of library science,True
-Bachelor of Chemical Engineering,bachelors of chemical engineering,True
-Bachelor of Business Administration,B.Tech of Business Administration,True
-Bachelor of Data Science,Bachelor's of Data Science,True
-Bachelor of Architecture,Bachelor's of Architecture,True
-Bachelor of Cognitive Science,Bachelors of Cognitive Science,True
-Bachelor of Commerce,b.sc of commerce,True
-Bachelor of Software Engineering,Bachelor's of Software Engineering,True
-Bachelor of Forestry,Bachelor's of Forestry,True
-Bachelor of Business Administration,Bachelors of Business Administration,True
-Bachelor of Business Administration,B.Sc of Business Administration,True
-Bachelor of Pharmacy,Bachelors of Pharmacy,True
-Bachelor of Education,B.Sc of Education,True
-Master of Business Administration,M.Sc of Business Administration,True
-Bachelor of Laws and Arts,Bachelor's of Laws and Arts,True
-Bachelor of Fisheries Science,Bachelor's of Fisheries Science,True
-Bachelor of Education,B.Tech of Education,True
-Master of Business Administration,Masters of Business Administration,True
-Bachelor of Performing Arts,Bachelors of Performing Arts,True
-Bachelor of Pharmacy,B.Sc of Pharmacy,True
-Master of Management Studies,M.Sc of Management Studies,True
-Bachelor of Music,B.Tech of Music,True
-Bachelor of Science in Information Technology,B.Sc of Science in Information Technology,True
-Bachelor of Law (LLB),Bachelor's of Law (LLB),True
-Master of Management Studies,M.Sc of Management Studies,True
-Bachelor of Environmental Science,B.Sc of Environmental Science,True
-Bachelor of Applied Science,B.Sc of Applied Science,True
-Bachelor of Forestry,Bachelors of Forestry,True
-Bachelor of Veterinary Science,b.sc of veterinary science,True
-Doctor of Medicine,PhD of Medicine,True
-Master of Technology in Artificial Intelligence,Masters of Technology in Artificial Intelligence,True
-Bachelor of Education,Bachelors of Education,True
-Bachelor of Performing Arts,Bachelors of Performing Arts,True
-Bachelor of Arts in Political Science,B.Sc of Arts in Political Science,True
-Bachelor of Fisheries Science,b.tech of fisheries science,True
-Master of Computer Applications,M.Sc of Computer Applications,True
-Bachelor of Criminal Justice,Bachelor's of Criminal Justice,True
-Bachelor of Architecture,b.sc of architecture,True
-Bachelor of Psychology,B.Tech of Psychology,True
-Bachelor of Hotel Management,b.sc of hotel management,True
-Bachelor of Biomedical Engineering,B.Sc of Biomedical Engineering,True
-Bachelor of Science in Biotechnology,Bachelors of Science in Biotechnology,True
-Bachelor of Cognitive Science,B.Sc of Cognitive Science,True
-Bachelor of Library Science,bachelor's of library science,True
-Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True
-Bachelor of Cognitive Science,B.Tech of Cognitive Science,True
-Master of Engineering in Computer Networks,M.Sc of Engineering in Computer Networks,True
-Bachelor of Oceanography,Bachelors of Oceanography,True
-Bachelor of Psychology,B.Tech of Psychology,True
-Master of Management Studies,Master's of Management Studies,True
-Bachelor of Information Systems,Bachelors of Information Systems,True
-Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True
-Bachelor of Music,Bachelors of Music,True
-Bachelor of Hotel Management,Bachelors of Hotel Management,True
-Bachelor of Commerce,b.sc of commerce,True
-Bachelor of Software Engineering,B.Tech of Software Engineering,True
-Bachelor of Library Science,B.Sc of Library Science,True
-Bachelor of Statistics,B.Tech of Statistics,True
-Bachelor of Science in Information Technology,bachelor's of science in information technology,True
-Bachelor of Veterinary Science,B.Tech of Environmental Science,False
-Bachelor of Commerce,B.Sc of Hotel Management,False
-Bachelor of Biomedical Engineering,Master's of Computer Applications,False
-Bachelor of Social Work,b.tech of science in information technology,False
-Bachelor of Performing Arts,B.Sc of Science in Biotechnology,False
-Master of Science in Data Analytics,B.Tech of Music,False
-Bachelor of Chemical Engineering,b.tech of science in information technology,False
-Bachelor of Laws and Arts,B.Sc of Engineering in Electrical Engineering,False
-Bachelor of Architecture,Bachelor's of Biomedical Engineering,False
-Bachelor of Psychology,b.sc of social work,False
-Bachelor of Science in Biotechnology,doctorate of medicine,False
-Doctor of Medicine,Bachelors of Pharmacy,False
-Bachelor of Aerospace Engineering,B.Sc of Forestry,False
-Bachelor of Library Science,Bachelor's of Software Engineering,False
-Bachelor of Law (LLB),Bachelors of Architecture,False
-Bachelor of Commerce,Bachelors of Science in Nursing,False
-Bachelor of Forestry,Bachelor's of Laws and Arts,False
-Master of Public Health,PhD of Medicine,False
-Bachelor of Theology,b.sc of physical education,False
-Bachelor of Commerce,Bachelors of Education,False
-Bachelor of Business Administration,bachelor's of music,False
-Bachelor of Laws and Arts,B.Sc of Engineering in Electrical Engineering,False
-Master of Computer Applications,B.Sc of Applied Science,False
-Bachelor of Architecture,b.sc of theology,False
-Bachelor of Social Work,Bachelors of Journalism,False
-Bachelor of Biomedical Engineering,Bachelors of Architecture,False
-Bachelor of Performing Arts,Master's of Management Studies,False
-Bachelor of Forestry,Bachelors of Information Systems,False
-Bachelor of Veterinary Science,Bachelor's of Fine Arts,False
-Bachelor of Laws and Arts,B.Sc of Applied Science,False
-Bachelor of Arts in Political Science,B.Sc of Pharmacy,False
-Master of Public Health,Bachelors of Data Science,False
-Bachelor of Engineering in Electrical Engineering,B.Tech of Performing Arts,False
-Bachelor of Engineering in Mechanical Engineering,B.Tech of Psychology,False
-Bachelor of Applied Science,Bachelor's of Science in Biotechnology,False
-Master of Technology in Artificial Intelligence,B.Tech of Performing Arts,False
-Bachelor of Design,M.Tech of Social Work,False
-Bachelor of Veterinary Science,B.Tech of Agricultural Science,False
-Bachelor of Performing Arts,Master's of Business Administration,False
-Bachelor of Cognitive Science,Bachelors of Social Work,False
-Master of Financial Engineering,B.Tech of Arts in Political Science,False
-Bachelor of Veterinary Science,PhD of Medicine,False
-Bachelor of Laws and Arts,Bachelors of Social Work,False
-Bachelor of Business Administration,b.tech of arts in political science,False
-Bachelor of Forestry,B.Tech of Architecture,False
-Bachelor of Fine Arts,Masters of Computer Applications,False
-Doctor of Philosophy in Physics,master's of social work,False
-Bachelor of Library Science,Master's of Public Health,False
-Master of Management Studies,B.Tech of Statistics,False
-Bachelor of Pharmacy,B.Sc of Agricultural Science,False
-Bachelor of Biomedical Engineering,Masters of Public Health,False
-Bachelor of Music,Masters of Computer Applications,False
-Bachelor of Science in Information Technology,masters of technology in artificial intelligence,False
-Bachelor of Social Work,Bachelor's of Data Science,False
-Bachelor of Pharmacy,M.Tech of Financial Engineering,False
-Master of Social Work,Masters of Computer Applications,False
-Bachelor of Physical Education,Bachelors of Arts in History,False
-Bachelor of Applied Science,Bachelors of Arts in History,False
-Bachelor of Fine Arts,bachelor's of fisheries science,False
-Bachelor of Engineering in Electrical Engineering,B.Sc of Science in Nursing,False
-Master of Science in Data Analytics,Bachelors of Environmental Science,False
-Doctor of Philosophy in Physics,Bachelors of Arts in History,False
-Bachelor of Statistics,bachelor's of social work,False
-Bachelor of Veterinary Science,B.Tech of Information Systems,False
-Bachelor of Arts in History,bachelor's of statistics,False
-Master of Computer Applications,Bachelors of Aerospace Engineering,False
-Bachelor of Laws and Arts,b.sc of science in mathematics,False
-Bachelor of Veterinary Science,B.Tech of Laws and Arts,False
-Master of Social Work,B.Tech of Education,False
-Bachelor of Anthropology,Bachelor's of Library Science,False
-Bachelor of Arts in Political Science,Bachelors of Criminal Justice,False
-Bachelor of Chemical Engineering,b.tech of anthropology,False
-Bachelor of Journalism,Master's of Public Health,False
-Master of Business Administration,B.Sc of Agricultural Science,False
-Bachelor of Pharmacy,Master's of Public Health,False
-Bachelor of Law (LLB),Doctorate of Medicine,False
-Master of Science in Data Analytics,B.Sc of Design,False
-Bachelor of Science in Information Technology,B.Sc of Music,False
-Master of Business Administration,Bachelors of Architecture,False
-Bachelor of Science in Nursing,bachelor's of fisheries science,False
-Bachelor of Aerospace Engineering,Bachelor's of Performing Arts,False
-Bachelor of Cognitive Science,B.Tech of Fine Arts,False
-Bachelor of Data Science,Bachelor's of Hotel Management,False
-Master of Social Work,Bachelor's of Performing Arts,False
-Bachelor of Science in Information Technology,bachelors of design,False
-Bachelor of Criminal Justice,masters of technology in artificial intelligence,False
-Bachelor of Fine Arts,Bachelors of Environmental Science,False
-Bachelor of Environmental Science,B.Tech of Applied Science,False
-Bachelor of Design,B.Sc of Aerospace Engineering,False
-Bachelor of Engineering in Mechanical Engineering,Bachelors of Design,False
-Master of Engineering in Computer Networks,bachelors of business administration,False
-Bachelor of Arts in Political Science,bachelor's of software engineering,False
-Bachelor of Science in Nursing,B.Sc of Information Systems,False
-Doctor of Philosophy in Physics,B.Sc of Environmental Science,False
-Bachelor of Agricultural Science,M.Sc of Engineering in Computer Networks,False
-Bachelor of Fine Arts,bachelors of environmental science,False
-Bachelor of Journalism,Bachelor's of Data Science,False
-Bachelor of Forestry,B.Tech of Music,False
-Master of Technology in Artificial Intelligence,b.tech of agricultural science,False
-Bachelor of Science in Information Technology,Bachelor's of Library Science,False
-Bachelor of Information Systems,M.Sc of Science in Data Analytics,False
-Bachelor of Applied Science,B.Sc of Biomedical Engineering,False
-Master of Science in Data Analytics,b.tech of engineering in mechanical engineering,False
-Bachelor of Veterinary Science,B.Tech of Forestry,False
-Bachelor of Agricultural Science,B.Tech of Arts in History,False
-Master of Financial Engineering,Bachelors of Business Administration,False
-Bachelor of Engineering in Mechanical Engineering,Masters of Financial Engineering,False
-Bachelor of Chemical Engineering,Bachelors of Data Science,False
-Master of Computer Applications,B.Tech of Music,False
-Bachelor of Veterinary Science,Bachelors of Social Work,False
-Bachelor of Design,master's of financial engineering,False
-Bachelor of Software Engineering,b.sc of law (llb),False
-Bachelor of Performing Arts,Bachelor's of Arts in Political Science,False
-Master of Science in Data Analytics,B.Tech of Science in Mathematics,False
-Bachelor of Theology,bachelor's of oceanography,False
-Bachelor of Business Administration,B.Sc of Data Science,False
-Bachelor of Engineering in Electrical Engineering,b.sc of software engineering,False
-Bachelor of Social Work,B.Tech of Pharmacy,False
-Master of Social Work,Master's of Science in Data Analytics,False
-Bachelor of Social Work,B.Tech of Engineering in Electrical Engineering,False
-Master of Computer Applications,Master's of Business Administration,False
-Bachelor of Applied Science,master's of technology in artificial intelligence,False
-Bachelor of Laws and Arts,bachelors of engineering in mechanical engineering,False
-Bachelor of Laws and Arts,Master's of Business Administration,False
-Bachelor of Music,B.Tech of Software Engineering,False
-Bachelor of Forestry,M.Tech of Social Work,False
-Bachelor of Aerospace Engineering,M.Tech of Science in Data Analytics,False
-Bachelor of Data Science,Doctorate of Philosophy in Physics,False
-Bachelor of Science in Biotechnology,Master's of Public Health,False
-Bachelor of Music,Bachelor's of Fine Arts,False
-Master of Financial Engineering,bachelors of business administration,False
-Master of Engineering in Computer Networks,b.sc of information systems,False
-Bachelor of Commerce,Bachelor's of Psychology,False
-Bachelor of Architecture,bachelors of design,False
-Bachelor of Science in Nursing,Bachelors of Physical Education,False
-Bachelor of Statistics,B.Tech of Social Work,False
-Bachelor of Science in Mathematics,bachelors of science in nursing,False
-Bachelor of Applied Science,bachelor's of hotel management,False
-Master of Social Work,Bachelors of Fisheries Science,False
-Bachelor of Environmental Science,M.Sc of Public Health,False
-Bachelor of Fisheries Science,b.tech of laws and arts,False
-Bachelor of Environmental Science,Bachelors of Software Engineering,False
-Master of Technology in Artificial Intelligence,M.Sc of Science in Data Analytics,False
-Master of Business Administration,B.Sc of Architecture,False
-Bachelor of Oceanography,Master's of Science in Data Analytics,False
-Bachelor of Anthropology,Bachelors of Applied Science,False
-Bachelor of Cognitive Science,b.tech of science in information technology,False
-Master of Business Administration,B.Sc of Cognitive Science,False
-Bachelor of Science in Information Technology,Bachelor's of Applied Science,False
-Bachelor of Criminal Justice,PhD of Philosophy in Physics,False
-Bachelor of Commerce,Bachelors of Laws and Arts,False
-Bachelor of Laws and Arts,M.Tech of Social Work,False
-Master of Social Work,B.Tech of Chemical Engineering,False
-Bachelor of Science in Nursing,Bachelor's of Agricultural Science,False
-Bachelor of Science in Information Technology,PhD of Philosophy in Physics,False
-Bachelor of Science in Information Technology,bachelors of agricultural science,False
-Bachelor of Journalism,Bachelor's of Architecture,False
-Bachelor of Design,B.Tech of Science in Information Technology,False
-Bachelor of Psychology,Bachelor's of Technology in Computer Science,False
-Master of Computer Applications,B.Sc of Business Administration,False
-Bachelor of Science in Information Technology,Bachelor's of Forestry,False
-Bachelor of Environmental Science,master's of computer applications,False
-Master of Public Health,Bachelors of Aerospace Engineering,False
-Bachelor of Applied Science,Bachelors of Science in Nursing,False
-Bachelor of Arts in Political Science,Bachelors of Engineering in Electrical Engineering,False
-Bachelor of Architecture,Doctorate of Philosophy in Physics,False
-Bachelor of Statistics,B.Sc of Chemical Engineering,False
-Master of Engineering in Computer Networks,m.sc of science in data analytics,False
-Bachelor of Pharmacy,Master's of Business Administration,False
-Bachelor of Software Engineering,master's of science in data analytics,False
-Master of Computer Applications,Bachelors of Science in Nursing,False
-Bachelor of Pharmacy,B.Sc of Data Science,False
-Master of Social Work,Bachelors of Laws and Arts,False
-Master of Business Administration,Bachelor's of Applied Science,False
-Bachelor of Cognitive Science,Master's of Technology in Artificial Intelligence,False
-Doctor of Philosophy in Physics,B.Sc of Theology,False
-Bachelor of Performing Arts,M.Sc of Computer Applications,False
-Bachelor of Performing Arts,B.Sc of Chemical Engineering,False
-Bachelor of Engineering in Mechanical Engineering,B.Tech of Forestry,False
-Bachelor of Technology in Computer Science,Bachelor's of Science in Information Technology,False
-Doctor of Philosophy in Physics,b.tech of criminal justice,False
-Bachelor of Music,b.sc of fine arts,False
-Bachelor of Arts in Political Science,B.Tech of Technology in Computer Science,False
-Bachelor of Cognitive Science,Bachelor's of Science in Mathematics,False
-Bachelor of Physical Education,Bachelor's of Statistics,False
-Bachelor of Chemical Engineering,Bachelor's of Fisheries Science,False
-Bachelor of Music,b.tech of technology in computer science,False
-Bachelor of Laws and Arts,B.Sc of Environmental Science,False
-Master of Business Administration,B.Sc of Fine Arts,False
-Master of Computer Applications,B.Sc of Technology in Computer Science,False
-Bachelor of Science in Information Technology,B.Tech of Law (LLB),False
-Bachelor of Aerospace Engineering,Bachelor's of Psychology,False
-Master of Computer Applications,M.Tech of Public Health,False
-Bachelor of Anthropology,B.Sc of Fine Arts,False
-Bachelor of Pharmacy,Bachelors of Education,False
-Bachelor of Journalism,Bachelors of Biomedical Engineering,False
-Bachelor of Law (LLB),Bachelor's of Agricultural Science,False
-Bachelor of Applied Science,B.Sc of Veterinary Science,False
-Bachelor of Architecture,M.Tech of Financial Engineering,False
-Bachelor of Statistics,doctorate of medicine,False
+resume_edu,jd_edu,expected_match,label
+Bachelor of Journalism,Bachelors of Journalism,True,0.57
+Bachelor of Oceanography,Bachelors of Oceanography,True,0.48
+Bachelor of Education,Bachelors of Education,True,0.6
+Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.73
+Bachelor of Aerospace Engineering,B.Tech of Aerospace Engineering,True,0.46
+Bachelor of Criminal Justice,Bachelor's of Criminal Justice,True,0.46
+Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.74
+Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.62
+Bachelor of Commerce,Bachelors of Commerce,True,0.43
+Bachelor of Agricultural Science,bachelor's of agricultural science,True,0.58
+Bachelor of Anthropology,Bachelor's of Anthropology,True,0.43
+Master of Management Studies,Masters of Management Studies,True,0.43
+Bachelor of Engineering in Electrical Engineering,B.Sc of Engineering in Electrical Engineering,True,0.54
+Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.21
+Bachelor of Arts in History,Bachelors of Arts in History,True,0.24
+Bachelor of Theology,Bachelor's of Theology,True,0.42
+Bachelor of Law (LLB),B.Sc of Law (LLB),True,0.35
+Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.55
+Bachelor of Journalism,Bachelor's of Journalism,True,0.36
+Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.29
+Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.72
+Bachelor of Engineering in Mechanical Engineering,bachelor's of engineering in mechanical engineering,True,0.47
+Bachelor of Anthropology,B.Sc of Anthropology,True,0.51
+Bachelor of Music,B.Tech of Music,True,0.29
+Bachelor of Applied Science,Bachelors of Applied Science,True,0.42
+Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.52
+Bachelor of Pharmacy,Bachelors of Pharmacy,True,0.33
+Master of Engineering in Computer Networks,Master's of Engineering in Computer Networks,True,0.56
+Bachelor of Hotel Management,B.Sc of Hotel Management,True,0.41
+Bachelor of Laws and Arts,bachelor's of laws and arts,True,0.46
+Bachelor of Psychology,Bachelor's of Psychology,True,0.41
+Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.78
+Bachelor of Hotel Management,B.Sc of Hotel Management,True,0.5
+Bachelor of Social Work,Bachelor's of Social Work,True,0.34
+Bachelor of Physical Education,Bachelor's of Physical Education,True,0.62
+Master of Management Studies,M.Sc of Management Studies,True,0.32
+Bachelor of Law (LLB),bachelors of law (llb),True,0.53
+Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.21
+Bachelor of Biomedical Engineering,Bachelor's of Biomedical Engineering,True,0.3
+Master of Science in Data Analytics,M.Tech of Science in Data Analytics,True,0.53
+Doctor of Medicine,Doctorate of Medicine,True,0.61
+Bachelor of Engineering in Electrical Engineering,bachelor's of engineering in electrical engineering,True,0.53
+Bachelor of Environmental Science,B.Sc of Environmental Science,True,0.48
+Doctor of Philosophy in Physics,phd of philosophy in physics,True,0.45
+Master of Computer Applications,M.Sc of Computer Applications,True,0.28
+Bachelor of Architecture,Bachelor's of Architecture,True,0.39
+Bachelor of Education,B.Tech of Education,True,0.43
+Bachelor of Business Administration,B.Sc of Business Administration,True,0.66
+Bachelor of Psychology,Bachelors of Psychology,True,0.55
+Bachelor of Biomedical Engineering,b.sc of biomedical engineering,True,0.24
+Bachelor of Arts in Political Science,B.Sc of Arts in Political Science,True,0.55
+Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.44
+Master of Financial Engineering,M.Sc of Financial Engineering,True,0.4
+Bachelor of Agricultural Science,Bachelor's of Agricultural Science,True,0.59
+Bachelor of Data Science,Bachelor's of Data Science,True,0.65
+Bachelor of Applied Science,B.Tech of Applied Science,True,0.64
+Bachelor of Engineering in Mechanical Engineering,B.Sc of Engineering in Mechanical Engineering,True,0.37
+Master of Technology in Artificial Intelligence,masters of technology in artificial intelligence,True,0.45
+Bachelor of Technology in Computer Science,Bachelor's of Technology in Computer Science,True,0.55
+Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True,0.65
+Bachelor of Environmental Science,Bachelor's of Environmental Science,True,0.43
+Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.47
+Bachelor of Library Science,B.Tech of Library Science,True,0.33
+Bachelor of Arts in History,B.Tech of Arts in History,True,0.32
+Bachelor of Social Work,bachelors of social work,True,0.62
+Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.7
+Bachelor of Journalism,Bachelors of Journalism,True,0.49
+Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.65
+Bachelor of Science in Nursing,b.tech of science in nursing,True,0.55
+Master of Business Administration,M.Sc of Business Administration,True,0.4
+Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.55
+Bachelor of Engineering in Electrical Engineering,B.Sc of Engineering in Electrical Engineering,True,0.73
+Bachelor of Library Science,B.Tech of Library Science,True,0.49
+Bachelor of Architecture,B.Tech of Architecture,True,0.73
+Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True,0.11
+Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.62
+Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.51
+Master of Public Health,M.Tech of Public Health,True,0.46
+Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True,0.51
+Bachelor of Criminal Justice,Bachelors of Criminal Justice,True,0.2
+Bachelor of Anthropology,B.Tech of Anthropology,True,0.47
+Bachelor of Social Work,Bachelors of Social Work,True,0.55
+Bachelor of Software Engineering,Bachelors of Software Engineering,True,0.72
+Bachelor of Commerce,bachelors of commerce,True,0.42
+Bachelor of Design,bachelors of design,True,0.38
+Bachelor of Technology in Computer Science,Bachelors of Technology in Computer Science,True,0.42
+Bachelor of Law (LLB),Bachelors of Law (LLB),True,0.64
+Master of Technology in Artificial Intelligence,M.Sc of Technology in Artificial Intelligence,True,0.55
+Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True,0.42
+Bachelor of Veterinary Science,Bachelor's of Veterinary Science,True,0.58
+Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.51
+Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True,0.65
+Bachelor of Veterinary Science,B.Sc of Veterinary Science,True,0.39
+Bachelor of Chemical Engineering,B.Tech of Chemical Engineering,True,0.45
+Master of Business Administration,m.sc of business administration,True,0.44
+Bachelor of Physical Education,b.sc of physical education,True,0.28
+Bachelor of Library Science,Bachelor's of Library Science,True,0.54
+Bachelor of Criminal Justice,B.Sc of Criminal Justice,True,0.54
+Bachelor of Science in Biotechnology,B.Sc of Science in Biotechnology,True,0.5
+Master of Computer Applications,M.Tech of Computer Applications,True,0.46
+Master of Technology in Artificial Intelligence,Masters of Technology in Artificial Intelligence,True,0.29
+Bachelor of Cognitive Science,B.Tech of Cognitive Science,True,0.44
+Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.45
+Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.38
+Bachelor of Design,B.Sc of Design,True,0.48
+Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True,0.56
+Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.78
+Bachelor of Physical Education,B.Sc of Physical Education,True,0.53
+Bachelor of Business Administration,Bachelors of Business Administration,True,0.54
+Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True,0.49
+Bachelor of Oceanography,Bachelor's of Oceanography,True,0.21
+Bachelor of Data Science,Bachelors of Data Science,True,0.5
+Bachelor of Psychology,b.sc of psychology,True,0.51
+Bachelor of Laws and Arts,B.Sc of Laws and Arts,True,0.87
+Master of Public Health,M.Tech of Public Health,True,0.47
+Bachelor of Science in Mathematics,B.Sc of Science in Mathematics,True,0.55
+Master of Business Administration,Masters of Business Administration,True,0.49
+Bachelor of Music,B.Tech of Music,True,0.32
+Bachelor of Physical Education,b.tech of physical education,True,0.67
+Bachelor of Business Administration,B.Sc of Business Administration,True,0.61
+Bachelor of Law (LLB),b.tech of law (llb),True,0.62
+Bachelor of Fine Arts,Bachelor's of Fine Arts,True,0.36
+Doctor of Philosophy in Physics,phd of philosophy in physics,True,0.71
+Bachelor of Engineering in Mechanical Engineering,Bachelors of Engineering in Mechanical Engineering,True,0.29
+Bachelor of Library Science,B.Tech of Library Science,True,0.59
+Bachelor of Science in Biotechnology,B.Tech of Science in Biotechnology,True,0.83
+Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.35
+Bachelor of Applied Science,B.Tech of Applied Science,True,0.42
+Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.51
+Bachelor of Chemical Engineering,B.Sc of Chemical Engineering,True,0.42
+Master of Social Work,Master's of Social Work,True,0.27
+Master of Business Administration,masters of business administration,True,0.51
+Doctor of Philosophy in Physics,Doctorate of Philosophy in Physics,True,0.34
+Master of Technology in Artificial Intelligence,M.Sc of Technology in Artificial Intelligence,True,0.57
+Bachelor of Education,Bachelor's of Education,True,0.36
+Bachelor of Hotel Management,B.Sc of Hotel Management,True,0.73
+Bachelor of Music,Bachelor's of Music,True,0.38
+Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.45
+Bachelor of Veterinary Science,Bachelor's of Veterinary Science,True,0.62
+Bachelor of Cognitive Science,b.sc of cognitive science,True,0.32
+Bachelor of Biomedical Engineering,Bachelors of Biomedical Engineering,True,0.53
+Bachelor of Statistics,Bachelors of Statistics,True,0.7
+Bachelor of Science in Information Technology,b.sc of science in information technology,True,0.26
+Bachelor of Music,Bachelor's of Music,True,0.53
+Bachelor of Architecture,b.tech of architecture,True,0.54
+Bachelor of Fine Arts,B.Tech of Fine Arts,True,0.62
+Master of Business Administration,M.Sc of Business Administration,True,0.31
+Bachelor of Science in Information Technology,B.Tech of Science in Information Technology,True,0.3
+Bachelor of Fisheries Science,B.Tech of Fisheries Science,True,0.58
+Master of Engineering in Computer Networks,Masters of Engineering in Computer Networks,True,0.54
+Bachelor of Aerospace Engineering,B.Sc of Aerospace Engineering,True,0.54
+Bachelor of Software Engineering,B.Sc of Software Engineering,True,0.55
+Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.4
+Bachelor of Fine Arts,B.Sc of Fine Arts,True,0.53
+Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.54
+Bachelor of Theology,B.Sc of Theology,True,0.39
+Bachelor of Fine Arts,Bachelor's of Fine Arts,True,0.78
+Bachelor of Journalism,bachelor's of journalism,True,0.57
+Master of Public Health,Masters of Public Health,True,0.32
+Bachelor of Social Work,B.Sc of Social Work,True,0.6
+Bachelor of Journalism,Bachelor's of Journalism,True,0.35
+Bachelor of Social Work,Bachelors of Social Work,True,0.62
+Bachelor of Pharmacy,B.Tech of Pharmacy,True,0.67
+Bachelor of Library Science,Bachelors of Library Science,True,0.38
+Bachelor of Arts in History,Bachelor's of Arts in History,True,0.64
+Bachelor of Library Science,B.Sc of Library Science,True,0.56
+Master of Social Work,m.tech of social work,True,0.62
+Bachelor of Oceanography,Bachelor's of Oceanography,True,0.78
+Bachelor of Arts in History,bachelors of arts in history,True,0.46
+Bachelor of Forestry,Bachelors of Forestry,True,0.39
+Doctor of Medicine,PhD of Medicine,True,0.37
+Master of Management Studies,M.Sc of Management Studies,True,0.38
+Bachelor of Forestry,Bachelors of Forestry,True,0.49
+Bachelor of Engineering in Electrical Engineering,b.sc of engineering in electrical engineering,True,0.55
+Bachelor of Business Administration,bachelors of business administration,True,0.54
+Doctor of Medicine,PhD of Medicine,True,0.62
+Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.5
+Bachelor of Environmental Science,Bachelor's of Environmental Science,True,0.72
+Bachelor of Theology,Bachelors of Theology,True,0.46
+Bachelor of Veterinary Science,bachelor's of veterinary science,True,0.91
+Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.59
+Bachelor of Information Systems,bachelor's of information systems,True,0.37
+Bachelor of Science in Nursing,B.Sc of Science in Nursing,True,0.34
+Master of Social Work,M.Sc of Social Work,True,0.57
+Bachelor of Cognitive Science,B.Sc of Cognitive Science,True,0.47
+Bachelor of Business Administration,Bachelor's of Business Administration,True,0.61
+Bachelor of Physical Education,Bachelor's of Physical Education,True,0.57
+Bachelor of Commerce,B.Tech of Commerce,True,0.49
+Master of Technology in Artificial Intelligence,Master's of Technology in Artificial Intelligence,True,0.37
+Bachelor of Pharmacy,Bachelor's of Pharmacy,True,0.27
+Bachelor of Engineering in Mechanical Engineering,Bachelor's of Engineering in Mechanical Engineering,True,0.43
+Bachelor of Anthropology,B.Tech of Anthropology,True,0.63
+Master of Engineering in Computer Networks,m.tech of engineering in computer networks,True,0.53
+Bachelor of Science in Mathematics,B.Tech of Science in Mathematics,True,0.31
+Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.53
+Bachelor of Agricultural Science,bachelor's of agricultural science,True,0.56
+Doctor of Medicine,phd of medicine,True,0.37
+Bachelor of Science in Mathematics,bachelor's of science in mathematics,True,0.52
+Bachelor of Hotel Management,Bachelors of Hotel Management,True,0.51
+Bachelor of Applied Science,B.Sc of Applied Science,True,0.33
+Bachelor of Fine Arts,B.Tech of Fine Arts,True,0.55
+Bachelor of Chemical Engineering,Bachelor's of Chemical Engineering,True,0.58
+Bachelor of Arts in History,B.Tech of Arts in History,True,0.66
+Master of Science in Data Analytics,Masters of Science in Data Analytics,True,0.66
+Bachelor of Criminal Justice,Bachelors of Criminal Justice,True,0.29
+Bachelor of Agricultural Science,Bachelor's of Agricultural Science,True,0.36
+Bachelor of Theology,Bachelors of Theology,True,0.58
+Bachelor of Aerospace Engineering,Bachelor's of Aerospace Engineering,True,0.58
+Master of Science in Data Analytics,master's of science in data analytics,True,0.58
+Doctor of Medicine,PhD of Medicine,True,1.0
+Bachelor of Physical Education,B.Tech of Physical Education,True,0.59
+Bachelor of Technology in Computer Science,B.Tech of Technology in Computer Science,True,0.67
+Master of Management Studies,Master's of Management Studies,True,0.64
+Master of Business Administration,Masters of Business Administration,True,0.6
+Bachelor of Chemical Engineering,B.Tech of Chemical Engineering,True,0.45
+Bachelor of Information Systems,B.Sc of Information Systems,True,0.61
+Bachelor of Pharmacy,B.Tech of Pharmacy,True,0.38
+Bachelor of Statistics,B.Sc of Statistics,True,0.46
+Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True,0.43
+Bachelor of Social Work,B.Sc of Social Work,True,0.51
+Bachelor of Commerce,B.Sc of Commerce,True,0.85
+Bachelor of Veterinary Science,Bachelors of Veterinary Science,True,0.22
+Master of Financial Engineering,M.Sc of Financial Engineering,True,0.6
+Bachelor of Statistics,Bachelors of Statistics,True,0.26
+Bachelor of Science in Information Technology,Bachelors of Science in Information Technology,True,0.43
+Bachelor of Agricultural Science,B.Tech of Agricultural Science,True,0.66
+Bachelor of Engineering in Electrical Engineering,B.Tech of Engineering in Electrical Engineering,True,0.51
+Bachelor of Data Science,B.Sc of Data Science,True,0.34
+Bachelor of Aerospace Engineering,B.Sc of Aerospace Engineering,True,0.39
+Master of Financial Engineering,Master's of Financial Engineering,True,0.6
+Bachelor of Criminal Justice,bachelors of criminal justice,True,0.39
+Bachelor of Criminal Justice,B.Tech of Criminal Justice,True,0.53
+Master of Public Health,M.Tech of Public Health,True,0.51
+Bachelor of Hotel Management,Bachelors of Hotel Management,True,0.4
+Bachelor of Biomedical Engineering,B.Sc of Biomedical Engineering,True,0.82
+Master of Science in Data Analytics,M.Sc of Science in Data Analytics,True,0.6
+Bachelor of Psychology,B.Sc of Psychology,True,0.2
+Master of Engineering in Computer Networks,Master's of Engineering in Computer Networks,True,0.53
+Bachelor of Statistics,Bachelors of Statistics,True,0.4
+Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.63
+Master of Management Studies,masters of management studies,True,0.38
+Bachelor of Library Science,bachelor's of library science,True,0.48
+Bachelor of Chemical Engineering,bachelors of chemical engineering,True,0.58
+Bachelor of Business Administration,B.Tech of Business Administration,True,0.63
+Bachelor of Data Science,Bachelor's of Data Science,True,0.32
+Bachelor of Architecture,Bachelor's of Architecture,True,0.45
+Bachelor of Cognitive Science,Bachelors of Cognitive Science,True,0.43
+Bachelor of Commerce,b.sc of commerce,True,0.4
+Bachelor of Software Engineering,Bachelor's of Software Engineering,True,0.76
+Bachelor of Forestry,Bachelor's of Forestry,True,0.56
+Bachelor of Business Administration,Bachelors of Business Administration,True,0.31
+Bachelor of Business Administration,B.Sc of Business Administration,True,0.64
+Bachelor of Pharmacy,Bachelors of Pharmacy,True,0.82
+Bachelor of Education,B.Sc of Education,True,0.65
+Master of Business Administration,M.Sc of Business Administration,True,0.27
+Bachelor of Laws and Arts,Bachelor's of Laws and Arts,True,0.43
+Bachelor of Fisheries Science,Bachelor's of Fisheries Science,True,0.69
+Bachelor of Education,B.Tech of Education,True,0.39
+Master of Business Administration,Masters of Business Administration,True,0.57
+Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.62
+Bachelor of Pharmacy,B.Sc of Pharmacy,True,0.36
+Master of Management Studies,M.Sc of Management Studies,True,0.49
+Bachelor of Music,B.Tech of Music,True,0.01
+Bachelor of Science in Information Technology,B.Sc of Science in Information Technology,True,0.35
+Bachelor of Law (LLB),Bachelor's of Law (LLB),True,0.46
+Master of Management Studies,M.Sc of Management Studies,True,0.31
+Bachelor of Environmental Science,B.Sc of Environmental Science,True,0.74
+Bachelor of Applied Science,B.Sc of Applied Science,True,0.29
+Bachelor of Forestry,Bachelors of Forestry,True,0.43
+Bachelor of Veterinary Science,b.sc of veterinary science,True,0.52
+Doctor of Medicine,PhD of Medicine,True,0.72
+Master of Technology in Artificial Intelligence,Masters of Technology in Artificial Intelligence,True,0.28
+Bachelor of Education,Bachelors of Education,True,0.67
+Bachelor of Performing Arts,Bachelors of Performing Arts,True,0.5
+Bachelor of Arts in Political Science,B.Sc of Arts in Political Science,True,0.35
+Bachelor of Fisheries Science,b.tech of fisheries science,True,0.57
+Master of Computer Applications,M.Sc of Computer Applications,True,0.53
+Bachelor of Criminal Justice,Bachelor's of Criminal Justice,True,0.41
+Bachelor of Architecture,b.sc of architecture,True,0.51
+Bachelor of Psychology,B.Tech of Psychology,True,0.44
+Bachelor of Hotel Management,b.sc of hotel management,True,0.52
+Bachelor of Biomedical Engineering,B.Sc of Biomedical Engineering,True,0.6
+Bachelor of Science in Biotechnology,Bachelors of Science in Biotechnology,True,0.74
+Bachelor of Cognitive Science,B.Sc of Cognitive Science,True,0.31
+Bachelor of Library Science,bachelor's of library science,True,0.82
+Bachelor of Aerospace Engineering,Bachelors of Aerospace Engineering,True,0.21
+Bachelor of Cognitive Science,B.Tech of Cognitive Science,True,0.48
+Master of Engineering in Computer Networks,M.Sc of Engineering in Computer Networks,True,0.59
+Bachelor of Oceanography,Bachelors of Oceanography,True,0.54
+Bachelor of Psychology,B.Tech of Psychology,True,0.41
+Master of Management Studies,Master's of Management Studies,True,0.47
+Bachelor of Information Systems,Bachelors of Information Systems,True,0.43
+Doctor of Philosophy in Physics,PhD of Philosophy in Physics,True,0.41
+Bachelor of Music,Bachelors of Music,True,0.63
+Bachelor of Hotel Management,Bachelors of Hotel Management,True,0.55
+Bachelor of Commerce,b.sc of commerce,True,0.4
+Bachelor of Software Engineering,B.Tech of Software Engineering,True,0.63
+Bachelor of Library Science,B.Sc of Library Science,True,0.55
+Bachelor of Statistics,B.Tech of Statistics,True,0.62
+Bachelor of Science in Information Technology,bachelor's of science in information technology,True,0.59
+Bachelor of Veterinary Science,B.Tech of Environmental Science,False,0.38
+Bachelor of Commerce,B.Sc of Hotel Management,False,0.42
+Bachelor of Biomedical Engineering,Master's of Computer Applications,False,0.61
+Bachelor of Social Work,b.tech of science in information technology,False,0.59
+Bachelor of Performing Arts,B.Sc of Science in Biotechnology,False,0.5
+Master of Science in Data Analytics,B.Tech of Music,False,0.52
+Bachelor of Chemical Engineering,b.tech of science in information technology,False,0.69
+Bachelor of Laws and Arts,B.Sc of Engineering in Electrical Engineering,False,0.41
+Bachelor of Architecture,Bachelor's of Biomedical Engineering,False,0.58
+Bachelor of Psychology,b.sc of social work,False,0.47
+Bachelor of Science in Biotechnology,doctorate of medicine,False,0.47
+Doctor of Medicine,Bachelors of Pharmacy,False,0.66
+Bachelor of Aerospace Engineering,B.Sc of Forestry,False,0.62
+Bachelor of Library Science,Bachelor's of Software Engineering,False,0.62
+Bachelor of Law (LLB),Bachelors of Architecture,False,0.7
+Bachelor of Commerce,Bachelors of Science in Nursing,False,0.5
+Bachelor of Forestry,Bachelor's of Laws and Arts,False,0.6
+Master of Public Health,PhD of Medicine,False,0.45
+Bachelor of Theology,b.sc of physical education,False,0.55
+Bachelor of Commerce,Bachelors of Education,False,0.48
+Bachelor of Business Administration,bachelor's of music,False,0.51
+Bachelor of Laws and Arts,B.Sc of Engineering in Electrical Engineering,False,0.59
+Master of Computer Applications,B.Sc of Applied Science,False,0.38
+Bachelor of Architecture,b.sc of theology,False,0.81
+Bachelor of Social Work,Bachelors of Journalism,False,0.35
+Bachelor of Biomedical Engineering,Bachelors of Architecture,False,0.32
+Bachelor of Performing Arts,Master's of Management Studies,False,0.67
+Bachelor of Forestry,Bachelors of Information Systems,False,0.62
+Bachelor of Veterinary Science,Bachelor's of Fine Arts,False,0.59
+Bachelor of Laws and Arts,B.Sc of Applied Science,False,0.59
+Bachelor of Arts in Political Science,B.Sc of Pharmacy,False,0.5
+Master of Public Health,Bachelors of Data Science,False,0.37
+Bachelor of Engineering in Electrical Engineering,B.Tech of Performing Arts,False,0.51
+Bachelor of Engineering in Mechanical Engineering,B.Tech of Psychology,False,0.4
+Bachelor of Applied Science,Bachelor's of Science in Biotechnology,False,0.65
+Master of Technology in Artificial Intelligence,B.Tech of Performing Arts,False,0.48
+Bachelor of Design,M.Tech of Social Work,False,0.38
+Bachelor of Veterinary Science,B.Tech of Agricultural Science,False,0.45
+Bachelor of Performing Arts,Master's of Business Administration,False,0.56
+Bachelor of Cognitive Science,Bachelors of Social Work,False,0.42
+Master of Financial Engineering,B.Tech of Arts in Political Science,False,0.38
+Bachelor of Veterinary Science,PhD of Medicine,False,0.54
+Bachelor of Laws and Arts,Bachelors of Social Work,False,0.54
+Bachelor of Business Administration,b.tech of arts in political science,False,0.42
+Bachelor of Forestry,B.Tech of Architecture,False,0.43
+Bachelor of Fine Arts,Masters of Computer Applications,False,0.53
+Doctor of Philosophy in Physics,master's of social work,False,0.28
+Bachelor of Library Science,Master's of Public Health,False,0.29
+Master of Management Studies,B.Tech of Statistics,False,0.39
+Bachelor of Pharmacy,B.Sc of Agricultural Science,False,0.47
+Bachelor of Biomedical Engineering,Masters of Public Health,False,0.55
+Bachelor of Music,Masters of Computer Applications,False,0.72
+Bachelor of Science in Information Technology,masters of technology in artificial intelligence,False,0.63
+Bachelor of Social Work,Bachelor's of Data Science,False,0.48
+Bachelor of Pharmacy,M.Tech of Financial Engineering,False,0.5
+Master of Social Work,Masters of Computer Applications,False,0.35
+Bachelor of Physical Education,Bachelors of Arts in History,False,0.5
+Bachelor of Applied Science,Bachelors of Arts in History,False,0.46
+Bachelor of Fine Arts,bachelor's of fisheries science,False,0.55
+Bachelor of Engineering in Electrical Engineering,B.Sc of Science in Nursing,False,0.38
+Master of Science in Data Analytics,Bachelors of Environmental Science,False,0.58
+Doctor of Philosophy in Physics,Bachelors of Arts in History,False,0.73
+Bachelor of Statistics,bachelor's of social work,False,0.48
+Bachelor of Veterinary Science,B.Tech of Information Systems,False,0.56
+Bachelor of Arts in History,bachelor's of statistics,False,0.6
+Master of Computer Applications,Bachelors of Aerospace Engineering,False,0.44
+Bachelor of Laws and Arts,b.sc of science in mathematics,False,0.53
+Bachelor of Veterinary Science,B.Tech of Laws and Arts,False,0.5
+Master of Social Work,B.Tech of Education,False,0.51
+Bachelor of Anthropology,Bachelor's of Library Science,False,0.38
+Bachelor of Arts in Political Science,Bachelors of Criminal Justice,False,0.5
+Bachelor of Chemical Engineering,b.tech of anthropology,False,0.57
+Bachelor of Journalism,Master's of Public Health,False,0.72
+Master of Business Administration,B.Sc of Agricultural Science,False,0.64
+Bachelor of Pharmacy,Master's of Public Health,False,0.82
+Bachelor of Law (LLB),Doctorate of Medicine,False,0.38
+Master of Science in Data Analytics,B.Sc of Design,False,0.63
+Bachelor of Science in Information Technology,B.Sc of Music,False,0.53
+Master of Business Administration,Bachelors of Architecture,False,0.83
+Bachelor of Science in Nursing,bachelor's of fisheries science,False,0.38
+Bachelor of Aerospace Engineering,Bachelor's of Performing Arts,False,0.37
+Bachelor of Cognitive Science,B.Tech of Fine Arts,False,0.41
+Bachelor of Data Science,Bachelor's of Hotel Management,False,0.18
+Master of Social Work,Bachelor's of Performing Arts,False,0.42
+Bachelor of Science in Information Technology,bachelors of design,False,0.39
+Bachelor of Criminal Justice,masters of technology in artificial intelligence,False,0.52
+Bachelor of Fine Arts,Bachelors of Environmental Science,False,0.55
+Bachelor of Environmental Science,B.Tech of Applied Science,False,0.78
+Bachelor of Design,B.Sc of Aerospace Engineering,False,0.64
+Bachelor of Engineering in Mechanical Engineering,Bachelors of Design,False,0.41
+Master of Engineering in Computer Networks,bachelors of business administration,False,0.37
+Bachelor of Arts in Political Science,bachelor's of software engineering,False,0.57
+Bachelor of Science in Nursing,B.Sc of Information Systems,False,0.3
+Doctor of Philosophy in Physics,B.Sc of Environmental Science,False,0.77
+Bachelor of Agricultural Science,M.Sc of Engineering in Computer Networks,False,0.68
+Bachelor of Fine Arts,bachelors of environmental science,False,0.43
+Bachelor of Journalism,Bachelor's of Data Science,False,0.24
+Bachelor of Forestry,B.Tech of Music,False,0.7
+Master of Technology in Artificial Intelligence,b.tech of agricultural science,False,0.48
+Bachelor of Science in Information Technology,Bachelor's of Library Science,False,0.69
+Bachelor of Information Systems,M.Sc of Science in Data Analytics,False,0.26
+Bachelor of Applied Science,B.Sc of Biomedical Engineering,False,0.41
+Master of Science in Data Analytics,b.tech of engineering in mechanical engineering,False,0.5
+Bachelor of Veterinary Science,B.Tech of Forestry,False,0.51
+Bachelor of Agricultural Science,B.Tech of Arts in History,False,0.43
+Master of Financial Engineering,Bachelors of Business Administration,False,0.59
+Bachelor of Engineering in Mechanical Engineering,Masters of Financial Engineering,False,0.34
+Bachelor of Chemical Engineering,Bachelors of Data Science,False,0.48
+Master of Computer Applications,B.Tech of Music,False,0.52
+Bachelor of Veterinary Science,Bachelors of Social Work,False,0.58
+Bachelor of Design,master's of financial engineering,False,0.61
+Bachelor of Software Engineering,b.sc of law (llb),False,0.33
+Bachelor of Performing Arts,Bachelor's of Arts in Political Science,False,0.27
+Master of Science in Data Analytics,B.Tech of Science in Mathematics,False,0.69
+Bachelor of Theology,bachelor's of oceanography,False,0.55
+Bachelor of Business Administration,B.Sc of Data Science,False,0.39
+Bachelor of Engineering in Electrical Engineering,b.sc of software engineering,False,0.73
+Bachelor of Social Work,B.Tech of Pharmacy,False,0.52
+Master of Social Work,Master's of Science in Data Analytics,False,0.68
+Bachelor of Social Work,B.Tech of Engineering in Electrical Engineering,False,0.51
+Master of Computer Applications,Master's of Business Administration,False,0.81
+Bachelor of Applied Science,master's of technology in artificial intelligence,False,0.76
+Bachelor of Laws and Arts,bachelors of engineering in mechanical engineering,False,0.46
+Bachelor of Laws and Arts,Master's of Business Administration,False,0.65
+Bachelor of Music,B.Tech of Software Engineering,False,0.6
+Bachelor of Forestry,M.Tech of Social Work,False,0.71
+Bachelor of Aerospace Engineering,M.Tech of Science in Data Analytics,False,0.36
+Bachelor of Data Science,Doctorate of Philosophy in Physics,False,0.6
+Bachelor of Science in Biotechnology,Master's of Public Health,False,0.66
+Bachelor of Music,Bachelor's of Fine Arts,False,0.24
+Master of Financial Engineering,bachelors of business administration,False,0.32
+Master of Engineering in Computer Networks,b.sc of information systems,False,0.19
+Bachelor of Commerce,Bachelor's of Psychology,False,0.46
+Bachelor of Architecture,bachelors of design,False,0.61
+Bachelor of Science in Nursing,Bachelors of Physical Education,False,0.73
+Bachelor of Statistics,B.Tech of Social Work,False,0.51
+Bachelor of Science in Mathematics,bachelors of science in nursing,False,0.74
+Bachelor of Applied Science,bachelor's of hotel management,False,0.29
+Master of Social Work,Bachelors of Fisheries Science,False,0.24
+Bachelor of Environmental Science,M.Sc of Public Health,False,0.49
+Bachelor of Fisheries Science,b.tech of laws and arts,False,0.56
+Bachelor of Environmental Science,Bachelors of Software Engineering,False,0.5
+Master of Technology in Artificial Intelligence,M.Sc of Science in Data Analytics,False,0.19
+Master of Business Administration,B.Sc of Architecture,False,0.49
+Bachelor of Oceanography,Master's of Science in Data Analytics,False,0.3
+Bachelor of Anthropology,Bachelors of Applied Science,False,0.6
+Bachelor of Cognitive Science,b.tech of science in information technology,False,0.55
+Master of Business Administration,B.Sc of Cognitive Science,False,0.36
+Bachelor of Science in Information Technology,Bachelor's of Applied Science,False,0.42
+Bachelor of Criminal Justice,PhD of Philosophy in Physics,False,0.34
+Bachelor of Commerce,Bachelors of Laws and Arts,False,0.49
+Bachelor of Laws and Arts,M.Tech of Social Work,False,0.64
+Master of Social Work,B.Tech of Chemical Engineering,False,0.35
+Bachelor of Science in Nursing,Bachelor's of Agricultural Science,False,0.58
+Bachelor of Science in Information Technology,PhD of Philosophy in Physics,False,0.42
+Bachelor of Science in Information Technology,bachelors of agricultural science,False,0.38
+Bachelor of Journalism,Bachelor's of Architecture,False,0.48
+Bachelor of Design,B.Tech of Science in Information Technology,False,0.34
+Bachelor of Psychology,Bachelor's of Technology in Computer Science,False,0.42
+Master of Computer Applications,B.Sc of Business Administration,False,0.32
+Bachelor of Science in Information Technology,Bachelor's of Forestry,False,0.79
+Bachelor of Environmental Science,master's of computer applications,False,0.51
+Master of Public Health,Bachelors of Aerospace Engineering,False,0.4
+Bachelor of Applied Science,Bachelors of Science in Nursing,False,0.53
+Bachelor of Arts in Political Science,Bachelors of Engineering in Electrical Engineering,False,0.48
+Bachelor of Architecture,Doctorate of Philosophy in Physics,False,0.47
+Bachelor of Statistics,B.Sc of Chemical Engineering,False,0.59
+Master of Engineering in Computer Networks,m.sc of science in data analytics,False,0.61
+Bachelor of Pharmacy,Master's of Business Administration,False,0.42
+Bachelor of Software Engineering,master's of science in data analytics,False,0.41
+Master of Computer Applications,Bachelors of Science in Nursing,False,0.46
+Bachelor of Pharmacy,B.Sc of Data Science,False,0.15
+Master of Social Work,Bachelors of Laws and Arts,False,0.27
+Master of Business Administration,Bachelor's of Applied Science,False,0.71
+Bachelor of Cognitive Science,Master's of Technology in Artificial Intelligence,False,0.75
+Doctor of Philosophy in Physics,B.Sc of Theology,False,0.46
+Bachelor of Performing Arts,M.Sc of Computer Applications,False,0.59
+Bachelor of Performing Arts,B.Sc of Chemical Engineering,False,0.55
+Bachelor of Engineering in Mechanical Engineering,B.Tech of Forestry,False,0.96
+Bachelor of Technology in Computer Science,Bachelor's of Science in Information Technology,False,0.67
+Doctor of Philosophy in Physics,b.tech of criminal justice,False,0.48
+Bachelor of Music,b.sc of fine arts,False,0.36
+Bachelor of Arts in Political Science,B.Tech of Technology in Computer Science,False,0.26
+Bachelor of Cognitive Science,Bachelor's of Science in Mathematics,False,0.53
+Bachelor of Physical Education,Bachelor's of Statistics,False,0.39
+Bachelor of Chemical Engineering,Bachelor's of Fisheries Science,False,0.29
+Bachelor of Music,b.tech of technology in computer science,False,0.4
+Bachelor of Laws and Arts,B.Sc of Environmental Science,False,0.34
+Master of Business Administration,B.Sc of Fine Arts,False,0.75
+Master of Computer Applications,B.Sc of Technology in Computer Science,False,0.63
+Bachelor of Science in Information Technology,B.Tech of Law (LLB),False,0.5
+Bachelor of Aerospace Engineering,Bachelor's of Psychology,False,0.72
+Master of Computer Applications,M.Tech of Public Health,False,0.51
+Bachelor of Anthropology,B.Sc of Fine Arts,False,0.37
+Bachelor of Pharmacy,Bachelors of Education,False,0.73
+Bachelor of Journalism,Bachelors of Biomedical Engineering,False,0.58
+Bachelor of Law (LLB),Bachelor's of Agricultural Science,False,0.34
+Bachelor of Applied Science,B.Sc of Veterinary Science,False,0.47
+Bachelor of Architecture,M.Tech of Financial Engineering,False,0.37
+Bachelor of Statistics,doctorate of medicine,False,0.29

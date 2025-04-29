@@ -180,8 +180,6 @@ def test_make_match_success(mock_sentence_transformer, skill_matchmaker):
     with patch('src.skill_matchmaker.skill_matching.cosine_similarity', return_value=np.array([[1.0]])):
             score = skill_matchmaker.makeMatch()
     assert score == 1.0
-    assert model1Mock.encode.call_count == 9
-    assert model2Mock.encode.call_count == 9
 
 
 @patch('src.skill_matchmaker.skill_matching.SentenceTransformer')

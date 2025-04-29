@@ -42,3 +42,4 @@ class SoftSkillMatching(SkillMatching):
             modelName2=config.SOFT_MODEL_NAME_2 if modelName2 is None else modelName2,
             maxInputLength=config.SOFT_MAX_INPUT_LENGTH if maxInputLength is None else maxInputLength,
         )
+

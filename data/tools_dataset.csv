@@ -1,0 +1,501 @@
+ResumeTools,JobTools,ExpectedScore
+"NodeJS, Power BI, Redis, FastAPI, Tableau, Kafka","GitHub, MongoDB, Cypress, Power BI, Kubernetes, Angular",0.57
+"Angular, Django, Cypress, Linux, Bash, PyTorch, Flask, RabbitMQ","MongoDB, ReactJS, Terraform, Spring Boot, Tableau, Selenium, Linux, Docker",0.48
+"Figma, Spring Boot, MongoDB, Canva","Tableau, ReactJS, AWS, Cypress, Redis, Azure",0.6
+"Ansible, Git, Illustrator, MongoDB","Jenkins, Photoshop, Docker, AWS, Spring Boot",0.73
+"Selenium, Ansible, Terraform, MongoDB","FastAPI, RabbitMQ, Jenkins, Photoshop",0.46
+"FastAPI, Kafka, Jenkins, GCP, Photoshop, Bash, Linux, Cypress","Ansible, Cypress, Selenium, Kubernetes, Elasticsearch",0.46
+"Figma, Power BI, Git, Linux, Azure, GCP","MongoDB, GitLab, Figma, Azure, Power BI, MySQL",0.74
+"GitHub, Illustrator, AWS, Git, Tableau","Kubernetes, PyTorch, Bash, Git, Docker, Selenium, MongoDB",0.62
+"NodeJS, Docker, Illustrator, Cypress, Ansible, Azure","PostgreSQL, GitHub, FastAPI, Flask, GitLab, MongoDB, Illustrator",0.43
+"RabbitMQ, Docker, GCP, Selenium","Elasticsearch, Photoshop, MongoDB, Kubernetes, Django, Tableau",0.58
+"GCP, Illustrator, PostgreSQL, RabbitMQ, Angular, MongoDB, Jenkins, PyTorch","Tableau, Elasticsearch, Redis, TensorFlow, MySQL, PostgreSQL, PyTorch, Terraform",0.43
+"Illustrator, MongoDB, Ansible, PostgreSQL, Flask, Cypress, TensorFlow","Figma, Tableau, Selenium, Flask, MongoDB, Terraform, Kafka, GitLab",0.43
+"NodeJS, Photoshop, Ansible, Figma","Azure, Linux, Docker, TensorFlow, MongoDB, GitLab",0.54
+"GitHub, Illustrator, Bash, VueJS, Tableau","VueJS, Spring Boot, Power BI, Docker, Canva, Terraform",0.21
+"NodeJS, RabbitMQ, Cypress, Terraform, Photoshop","MongoDB, MySQL, Jenkins, Spring Boot, TensorFlow",0.24
+"Figma, Azure, Redis, Django, Selenium, RabbitMQ, FastAPI, PyTorch","PyTorch, VueJS, ReactJS, Jenkins, Azure, FastAPI, Flask",0.42
+"Tableau, TensorFlow, Selenium, Ansible, ReactJS, Kafka","PyTorch, Angular, GitLab, MongoDB, Linux, Git, Figma, Illustrator",0.35
+"Flask, MongoDB, Kubernetes, Cypress, VueJS","AWS, Terraform, Angular, Linux, GitHub, Git, Docker",0.55
+"TensorFlow, Redis, Canva, Ansible","Kafka, Cypress, PostgreSQL, Photoshop",0.36
+"FastAPI, Kubernetes, Elasticsearch, Ansible, Cypress, MySQL, Figma, TensorFlow","Flask, PostgreSQL, Jenkins, Docker, Ansible, Selenium, Django, Linux",0.29
+"GCP, VueJS, Figma, Flask, Redis, PostgreSQL","Terraform, Angular, VueJS, Figma, FastAPI, Flask, Bash, Azure",0.72
+"GitHub, Git, GitLab, Selenium","NodeJS, Redis, Selenium, Angular, GitLab, GitHub, ReactJS, PostgreSQL",0.47
+"Tableau, Jenkins, Selenium, RabbitMQ, Illustrator, AWS","Git, ReactJS, PyTorch, MongoDB, Illustrator",0.51
+"Django, GitLab, Cypress, AWS","Angular, MySQL, GitLab, Illustrator",0.29
+"Linux, Angular, Figma, Photoshop, Tableau, GitHub, Jenkins, RabbitMQ","Figma, Photoshop, Terraform, Git, GitLab, FastAPI, Cypress",0.42
+"Elasticsearch, Illustrator, Terraform, AWS, GCP","Illustrator, MongoDB, Elasticsearch, Cypress",0.52
+"ReactJS, Power BI, Redis, Docker, Canva","Redis, MongoDB, Bash, Linux, VueJS, Azure, GitLab, Tableau",0.33
+"PyTorch, MongoDB, Tableau, Terraform","TensorFlow, Power BI, Ansible, Kubernetes",0.56
+"Elasticsearch, NodeJS, TensorFlow, Flask, Tableau, Canva, Illustrator","Tableau, Cypress, VueJS, TensorFlow, Bash, Elasticsearch, FastAPI, ReactJS",0.41
+"Spring Boot, MongoDB, Figma, Redis, TensorFlow, Azure, Git, Power BI","GitHub, Jenkins, Cypress, Azure, FastAPI, Git, TensorFlow",0.46
+"FastAPI, MySQL, Django, Illustrator, Terraform, Git, MongoDB, Ansible","AWS, MySQL, Linux, PyTorch, Redis",0.41
+"TensorFlow, Redis, Figma, Git, Angular, Terraform","FastAPI, Kafka, NodeJS, Ansible, Azure, PyTorch, TensorFlow, Illustrator",0.78
+"Git, Jenkins, PostgreSQL, Elasticsearch","Redis, Git, Azure, RabbitMQ, FastAPI",0.5
+"Docker, GitLab, GCP, FastAPI, Power BI, MongoDB, Jenkins, Git","Canva, Django, ReactJS, PyTorch, Selenium, Figma",0.34
+"Illustrator, MySQL, Angular, GCP, Cypress, Terraform, AWS, Ansible","Canva, Spring Boot, Selenium, Azure, Terraform",0.62
+"GCP, MySQL, Angular, Illustrator, RabbitMQ, Kafka, Tableau","Azure, GCP, Cypress, Django",0.32
+"Bash, Kubernetes, Angular, Redis, Tableau, Jenkins, VueJS, Canva","Photoshop, PostgreSQL, Selenium, Flask",0.53
+"ReactJS, Azure, Figma, PyTorch, Power BI, Bash, Selenium, GCP","Terraform, Redis, Kubernetes, Figma, Ansible, AWS, Selenium, Elasticsearch",0.21
+"GitLab, RabbitMQ, Linux, Git, Redis","GCP, Django, Photoshop, Flask, Azure, Kafka, Power BI",0.3
+"RabbitMQ, MySQL, Git, Kafka, Angular, Ansible, Jenkins","PyTorch, MySQL, Flask, MongoDB, Git, Cypress, Figma, Ansible",0.53
+"PostgreSQL, Flask, GitHub, Azure, GitLab, Power BI","RabbitMQ, Git, VueJS, Docker, GitHub, TensorFlow",0.61
+"Tableau, Selenium, Canva, Angular, Illustrator","MySQL, Canva, FastAPI, PostgreSQL, Redis, RabbitMQ, GitLab, Power BI",0.53
+"Kubernetes, PyTorch, GitHub, PostgreSQL, Canva, GitLab, FastAPI, TensorFlow","Canva, Git, GitHub, Figma",0.48
+"Elasticsearch, Selenium, Angular, Spring Boot","Cypress, RabbitMQ, Ansible, GCP, PostgreSQL",0.45
+"Bash, Linux, AWS, Jenkins","Azure, Git, Bash, NodeJS",0.28
+"ReactJS, RabbitMQ, AWS, Django, GitLab, Flask","PostgreSQL, Selenium, Power BI, Jenkins, Kubernetes, AWS, Angular",0.39
+"Power BI, MongoDB, Elasticsearch, Django, Terraform, Figma, Tableau, Ansible","PyTorch, Elasticsearch, Angular, RabbitMQ, PostgreSQL, Ansible, Tableau, GitHub",0.43
+"GitLab, Tableau, RabbitMQ, Kafka, Illustrator","TensorFlow, Elasticsearch, Django, Cypress, PyTorch",0.66
+"FastAPI, Illustrator, MySQL, Angular, Elasticsearch, Kafka","Tableau, Ansible, Spring Boot, Kafka, GitLab, Canva, GCP, PostgreSQL",0.55
+"NodeJS, TensorFlow, MySQL, Ansible, Tableau, Elasticsearch","Jenkins, NodeJS, Photoshop, Azure, Docker",0.24
+"VueJS, Flask, Power BI, PyTorch, GitHub, Elasticsearch, ReactJS, RabbitMQ","Docker, Illustrator, GitHub, MySQL, Angular, Elasticsearch, TensorFlow",0.55
+"Flask, MySQL, Illustrator, GitLab","Flask, Terraform, Power BI, Illustrator, VueJS, Photoshop, Redis, GCP",0.44
+"GitHub, Canva, Git, PyTorch, Jenkins, VueJS, TensorFlow","Elasticsearch, Ansible, TensorFlow, Git",0.4
+"MySQL, Docker, Azure, FastAPI, TensorFlow, Power BI, Spring Boot","TensorFlow, ReactJS, GitLab, Spring Boot, Cypress, FastAPI",0.59
+"Elasticsearch, Terraform, Tableau, Power BI, Canva, RabbitMQ, Figma","Django, Power BI, GitLab, Ansible, Terraform, Tableau",0.65
+"Elasticsearch, Azure, Angular, Kafka, MySQL, Canva","MongoDB, Elasticsearch, Kafka, Cypress, Kubernetes",0.64
+"Figma, Azure, Elasticsearch, Selenium, MongoDB, Cypress, GitHub, Terraform","RabbitMQ, Elasticsearch, GitHub, Redis, Azure, Figma, FastAPI",0.37
+"PyTorch, Elasticsearch, Photoshop, Selenium, FastAPI, Terraform, Django","Photoshop, MongoDB, Spring Boot, Selenium",0.45
+"Flask, GitHub, VueJS, Canva, Redis","MongoDB, TensorFlow, Canva, Power BI",0.55
+"Terraform, Tableau, Docker, Bash, Flask","Ansible, VueJS, Illustrator, Canva, Flask, Terraform",0.65
+"MySQL, Kubernetes, Ansible, Django, Tableau","GitHub, Kubernetes, Bash, Jenkins",0.43
+"Linux, TensorFlow, Azure, Selenium, Power BI, FastAPI","Selenium, Elasticsearch, NodeJS, Spring Boot, Azure",0.47
+"AWS, TensorFlow, Selenium, MongoDB","Kafka, TensorFlow, Kubernetes, PostgreSQL, Redis, GitHub, PyTorch",0.33
+"Django, Redis, Flask, Linux, PostgreSQL, Canva, Jenkins","Canva, Figma, RabbitMQ, Bash",0.32
+"Photoshop, Git, PostgreSQL, Figma, Bash","Ansible, Django, Illustrator, PyTorch, Cypress, Photoshop, Jenkins, Docker",0.62
+"Photoshop, MySQL, Elasticsearch, Azure, FastAPI","Illustrator, Elasticsearch, Tableau, Flask",0.7
+"Ansible, FastAPI, PostgreSQL, GCP, AWS, MySQL, TensorFlow, Illustrator","Docker, Power BI, Canva, Flask",0.49
+"MySQL, Django, Linux, GitLab, TensorFlow, Redis, Illustrator","AWS, RabbitMQ, Angular, GCP, Linux, FastAPI, Elasticsearch",0.65
+"Git, Terraform, FastAPI, PostgreSQL, Selenium","Photoshop, Kubernetes, ReactJS, PyTorch",0.55
+"TensorFlow, Cypress, Ansible, FastAPI, NodeJS, Jenkins, Selenium","Canva, Terraform, Azure, Git, Ansible, Kafka, VueJS, PyTorch",0.4
+"Canva, Selenium, Tableau, VueJS, ReactJS, Angular, Docker","Tableau, Git, ReactJS, Redis, Azure, Django",0.55
+"Angular, Flask, ReactJS, Azure, Git, Ansible","Kafka, AWS, Power BI, Docker",0.73
+"Kubernetes, Jenkins, Angular, Linux","Jenkins, Git, Tableau, GitHub",0.49
+"Azure, Elasticsearch, Django, RabbitMQ, Cypress, MongoDB, Docker","Photoshop, Figma, FastAPI, NodeJS, RabbitMQ, ReactJS",0.73
+"MySQL, Azure, AWS, Flask, Kafka, Git","Flask, Bash, Terraform, Django, GitHub, GCP",0.11
+"Selenium, Figma, Git, NodeJS, VueJS, PyTorch, Power BI","GCP, GitLab, Kafka, VueJS, Redis, Jenkins",0.62
+"RabbitMQ, Elasticsearch, NodeJS, PostgreSQL, Angular, Spring Boot, Bash","Canva, Illustrator, Selenium, GitHub",0.51
+"Docker, FastAPI, Linux, Azure, Jenkins, Illustrator, Angular, AWS","MongoDB, Tableau, ReactJS, Kubernetes",0.46
+"Azure, PostgreSQL, Terraform, MySQL, Canva, PyTorch","Photoshop, Flask, Bash, Azure, VueJS, Kafka, Elasticsearch",0.51
+"Canva, Azure, TensorFlow, GCP, GitLab, Jenkins, MySQL, Linux","Bash, Cypress, PostgreSQL, AWS, Power BI, GitLab, MongoDB",0.2
+"Photoshop, Git, Illustrator, Django, Docker","Django, GitLab, Terraform, VueJS, RabbitMQ",0.47
+"Figma, Django, Ansible, AWS","Kafka, Linux, Azure, MongoDB, Redis, Terraform",0.55
+"MySQL, TensorFlow, Power BI, Redis, Tableau, Kubernetes","Django, Spring Boot, Ansible, FastAPI",0.72
+"AWS, Tableau, Azure, Figma, VueJS, GitLab","Git, Tableau, Canva, Docker",0.42
+"Kubernetes, Angular, Azure, Terraform, PyTorch, Tableau, Git, MongoDB","RabbitMQ, TensorFlow, Jenkins, Ansible, Kafka, Elasticsearch, Docker, Tableau",0.38
+"Azure, Kubernetes, Tableau, NodeJS, Angular","GCP, MySQL, PostgreSQL, Jenkins, Angular",0.42
+"MongoDB, PostgreSQL, NodeJS, Terraform, Linux","Terraform, FastAPI, Django, Spring Boot",0.64
+"ReactJS, Selenium, Flask, VueJS, Cypress, PostgreSQL, Linux, MySQL","Kafka, GCP, FastAPI, Terraform, PyTorch, Django, TensorFlow",0.55
+"RabbitMQ, Selenium, Canva, MySQL, Flask, Spring Boot, Azure, GitLab","Figma, MongoDB, Docker, GitLab, VueJS, ReactJS, Tableau, Flask",0.42
+"Redis, GitLab, MongoDB, Jenkins, PostgreSQL, AWS, Bash, TensorFlow","Figma, Power BI, AWS, MySQL, Spring Boot",0.58
+"Ansible, AWS, MySQL, VueJS, Jenkins, Photoshop, PyTorch, FastAPI","Redis, PostgreSQL, Flask, Elasticsearch, MongoDB",0.51
+"VueJS, NodeJS, GitHub, Photoshop, AWS","GitHub, Flask, Bash, Kubernetes",0.65
+"Flask, RabbitMQ, Docker, Elasticsearch, Ansible, Azure, Kafka, Canva","GCP, NodeJS, Azure, Kubernetes, Selenium, AWS, GitLab",0.39
+"ReactJS, AWS, Cypress, Docker, FastAPI","Bash, PostgreSQL, Ansible, GitLab, Spring Boot, GCP, Redis, Kubernetes",0.45
+"Selenium, Illustrator, Cypress, Django, Azure, PostgreSQL, AWS","ReactJS, Cypress, PyTorch, Spring Boot",0.44
+"PostgreSQL, Tableau, GitLab, Power BI","Azure, Cypress, Photoshop, Power BI, AWS",0.28
+"RabbitMQ, Power BI, MongoDB, Bash, Redis, Photoshop, FastAPI","Jenkins, PyTorch, Figma, Power BI, Kubernetes, Cypress, GitHub",0.54
+"TensorFlow, Terraform, Kafka, PostgreSQL, Angular, Spring Boot, Power BI, Azure","MongoDB, Linux, Spring Boot, GCP",0.54
+"Docker, Power BI, Figma, Linux","AWS, NodeJS, Power BI, Cypress, TensorFlow",0.5
+"RabbitMQ, PyTorch, MySQL, MongoDB","Git, Figma, Kafka, GCP, Photoshop",0.46
+"Redis, Canva, GCP, GitLab","GitHub, Terraform, Docker, Git, Kafka, PostgreSQL",0.29
+"Canva, PyTorch, MySQL, Photoshop, Figma, GCP, Selenium, GitLab","Jenkins, Illustrator, Canva, Photoshop, GitHub",0.44
+"Kubernetes, Selenium, Azure, Linux, Elasticsearch","Kafka, Redis, AWS, Linux, Git, Selenium",0.45
+"Jenkins, Git, Illustrator, FastAPI, TensorFlow, MongoDB","Linux, Django, Angular, Canva, Redis, Power BI, Ansible, Spring Boot",0.38
+"Git, MySQL, Illustrator, PyTorch, MongoDB, PostgreSQL, Ansible","Terraform, Linux, Kafka, FastAPI, GitLab, Spring Boot, TensorFlow",0.48
+"Photoshop, Tableau, VueJS, TensorFlow","Ansible, FastAPI, Linux, NodeJS, Redis",0.56
+"PyTorch, Django, TensorFlow, Elasticsearch, Kubernetes","Angular, Docker, Kafka, AWS, Bash, Tableau, Jenkins, Power BI",0.78
+"GitLab, Angular, Terraform, FastAPI","FastAPI, Git, Angular, RabbitMQ, Django, Spring Boot, GCP, Ansible",0.53
+"FastAPI, TensorFlow, Illustrator, Angular, Figma, ReactJS","Kafka, Flask, Terraform, ReactJS, Power BI",0.54
+"Figma, Terraform, Flask, ReactJS, TensorFlow, VueJS","Illustrator, Power BI, Spring Boot, Kubernetes",0.49
+"Kafka, AWS, Django, Cypress, GCP, Ansible, Terraform","PostgreSQL, Git, AWS, Redis, Spring Boot, GitLab",0.21
+"Django, RabbitMQ, Spring Boot, Power BI, AWS, GCP, VueJS","AWS, ReactJS, PostgreSQL, Terraform, Photoshop, Jenkins",0.5
+"Canva, TensorFlow, GCP, Jenkins, Figma","AWS, Cypress, TensorFlow, MongoDB, GitHub, Elasticsearch, Git, Django",0.51
+"TensorFlow, GitHub, ReactJS, Elasticsearch, Tableau, FastAPI, VueJS","Selenium, GitHub, ReactJS, GitLab, Power BI, Illustrator, Terraform",0.87
+"Figma, GitLab, Illustrator, Power BI","Power BI, Illustrator, TensorFlow, Terraform",0.47
+"Terraform, Bash, Docker, Ansible","Jenkins, Canva, GitHub, MySQL, Power BI",0.55
+"GitLab, Canva, Figma, Kafka, Azure, Ansible","Selenium, Ansible, Tableau, GitHub, Cypress, MongoDB, Git",0.49
+"Redis, Linux, FastAPI, Kafka, Terraform, PostgreSQL, GitLab","Tableau, Kubernetes, Docker, PostgreSQL, GCP, Linux",0.32
+"Power BI, Docker, Illustrator, PostgreSQL, Cypress, TensorFlow","Tableau, NodeJS, Jenkins, PostgreSQL, Linux",0.67
+"Docker, PyTorch, VueJS, Photoshop","Spring Boot, Power BI, TensorFlow, Django, Tableau, Illustrator, GitHub",0.61
+"Django, Git, Photoshop, GCP, Kubernetes, Power BI, TensorFlow, Ansible","Angular, Spring Boot, Ansible, RabbitMQ, Power BI, MySQL",0.62
+"Selenium, Kafka, Git, Bash, GitLab, Illustrator, PostgreSQL, Azure","Spring Boot, Canva, Ansible, FastAPI, Kafka, Angular",0.36
+"Canva, Linux, Azure, PyTorch, Photoshop, AWS, RabbitMQ, FastAPI","TensorFlow, Git, MySQL, Linux",0.71
+"Flask, AWS, Bash, MongoDB, PostgreSQL, Power BI","Kubernetes, Flask, Figma, RabbitMQ, Tableau, AWS, ReactJS",0.29
+"Tableau, Django, Kubernetes, Git, Kafka, Angular","MySQL, PostgreSQL, NodeJS, Docker, Git, Linux",0.59
+"GCP, Redis, Selenium, Azure, RabbitMQ","Ansible, GCP, PostgreSQL, Spring Boot, Jenkins, Flask, Illustrator, Canva",0.83
+"MySQL, Figma, GCP, GitHub, Terraform","NodeJS, Kubernetes, Photoshop, AWS, PostgreSQL, GitLab, MySQL",0.35
+"Git, Cypress, RabbitMQ, Linux, Elasticsearch, Canva","Canva, Photoshop, Docker, Azure, Selenium, Terraform",0.42
+"ReactJS, Linux, GitHub, Terraform","Spring Boot, Canva, Illustrator, Selenium",0.51
+"Spring Boot, Docker, NodeJS, Power BI, Bash, TensorFlow, Git, Linux","Angular, MongoDB, Photoshop, Flask, Linux, Elasticsearch",0.42
+"Illustrator, Linux, Spring Boot, Terraform, PyTorch, Bash","Canva, Docker, AWS, NodeJS",0.27
+"Azure, Flask, Kafka, PostgreSQL, Terraform, Illustrator, Figma, Selenium","Elasticsearch, MySQL, PostgreSQL, Jenkins",0.51
+"Jenkins, MongoDB, Angular, Git, AWS, Flask, Ansible","GitHub, PyTorch, NodeJS, Cypress, MySQL",0.34
+"AWS, MySQL, Flask, NodeJS, VueJS","Figma, Redis, Tableau, ReactJS, VueJS",0.57
+"ReactJS, Spring Boot, Elasticsearch, Bash, Redis, Kubernetes, Tableau","VueJS, GitLab, FastAPI, Elasticsearch, Figma, Jenkins, Git",0.36
+"Angular, MongoDB, Jenkins, PostgreSQL, ReactJS, Figma, Linux","Redis, GCP, Elasticsearch, Illustrator, Bash",0.73
+"MongoDB, FastAPI, GitHub, NodeJS, Tableau","Canva, Photoshop, RabbitMQ, Spring Boot, Kafka, Power BI",0.38
+"Git, PyTorch, GitHub, RabbitMQ","FastAPI, Django, Figma, Tableau, Terraform",0.45
+"VueJS, PostgreSQL, MySQL, Linux, FastAPI, Redis","Cypress, GCP, PyTorch, Azure, Angular",0.62
+"AWS, Linux, GitHub, MySQL, Tableau, Illustrator, Angular, Cypress","MongoDB, Selenium, NodeJS, Jenkins, GCP, VueJS, ReactJS, Canva",0.32
+"Ansible, FastAPI, GitLab, Kafka, Power BI, ReactJS, RabbitMQ","AWS, Jenkins, Power BI, Angular, MySQL",0.53
+"Illustrator, Jenkins, GitLab, Angular, Kafka, VueJS","Django, TensorFlow, Canva, Photoshop, GCP",0.7
+"GitLab, Terraform, Jenkins, AWS, Cypress","Elasticsearch, Selenium, Linux, Jenkins, MongoDB, Canva, Figma",0.26
+"Azure, Linux, Illustrator, Jenkins, VueJS, Photoshop","Flask, Docker, GCP, Jenkins",0.53
+"Flask, Spring Boot, NodeJS, Kafka, Git, Figma, Terraform, Azure","Ansible, Terraform, Azure, MongoDB, Django, TensorFlow, Power BI, GitLab",0.54
+"Canva, Redis, ReactJS, Azure, Ansible, Flask, TensorFlow, GitHub","PostgreSQL, RabbitMQ, Redis, Flask, Bash",0.62
+"Kubernetes, Docker, Elasticsearch, Kafka, Django","Elasticsearch, Photoshop, GitLab, Azure, Flask, Git",0.31
+"FastAPI, Figma, Azure, GitLab, MongoDB, Tableau, NodeJS, Selenium","Terraform, Illustrator, GitLab, Django, MySQL, Bash",0.3
+"NodeJS, MySQL, GitLab, MongoDB, Terraform, Cypress, Ansible","ReactJS, Docker, Power BI, Elasticsearch, Illustrator, Git, Terraform, Azure",0.58
+"Illustrator, Kafka, VueJS, MySQL, Photoshop","GCP, Linux, Terraform, TensorFlow, Angular",0.54
+"Kafka, RabbitMQ, Angular, Selenium, Linux","NodeJS, Illustrator, PyTorch, Power BI, GitLab, AWS, Git",0.54
+"GitLab, Illustrator, GCP, Selenium, Figma, Flask, RabbitMQ","Selenium, Figma, GCP, Redis, Bash, MySQL",0.55
+"GCP, Photoshop, Azure, Spring Boot, Cypress, MongoDB, Kubernetes, RabbitMQ","Bash, PostgreSQL, Illustrator, Photoshop",0.4
+"Illustrator, GitLab, Kubernetes, NodeJS, GitHub","Django, Docker, Figma, Git, Ansible, Kafka, Tableau, Photoshop",0.53
+"Flask, Ansible, VueJS, Linux","Git, ReactJS, Tableau, Flask, Canva, Elasticsearch",0.54
+"GCP, Terraform, PostgreSQL, Azure, Ansible, Kafka, Angular, Power BI","Spring Boot, Cypress, RabbitMQ, Angular, Linux, Django, GitLab",0.39
+"GitLab, Docker, Linux, RabbitMQ","Flask, Tableau, Linux, Kubernetes, AWS, Illustrator",0.78
+"VueJS, Docker, Figma, GitHub, MySQL, Kubernetes, RabbitMQ","Photoshop, MongoDB, TensorFlow, Angular",0.57
+"GitHub, Flask, GitLab, Illustrator, Bash, Canva","Canva, Kafka, Bash, VueJS, Selenium",0.32
+"GitHub, Illustrator, Elasticsearch, Spring Boot, RabbitMQ","PostgreSQL, RabbitMQ, Elasticsearch, Docker, GitLab, GCP, MySQL, ReactJS",0.6
+"MySQL, Tableau, Elasticsearch, PostgreSQL, Cypress, GCP, GitHub, TensorFlow","MySQL, GitHub, FastAPI, Illustrator",0.35
+"NodeJS, Terraform, Selenium, Kafka","Flask, Canva, Illustrator, Docker, PostgreSQL, Jenkins",0.62
+"FastAPI, Flask, Cypress, ReactJS, Terraform, AWS","Tableau, Angular, Illustrator, Cypress, TensorFlow, Jenkins, Terraform",0.67
+"PyTorch, PostgreSQL, Git, GitHub, Kubernetes, TensorFlow, Power BI","Power BI, Bash, Photoshop, Git",0.38
+"Git, GitHub, Flask, ReactJS, GCP, TensorFlow, PostgreSQL","Linux, GitLab, TensorFlow, Terraform, Jenkins, PyTorch, Django, ReactJS",0.64
+"Illustrator, Flask, Photoshop, GCP, Power BI","AWS, Ansible, RabbitMQ, Tableau, Docker",0.56
+"FastAPI, Ansible, Git, Elasticsearch, Docker, RabbitMQ","Photoshop, RabbitMQ, Git, VueJS, MongoDB, Kubernetes, TensorFlow, Bash",0.62
+"MySQL, Redis, Flask, FastAPI, NodeJS, Spring Boot, Power BI","Angular, Figma, PyTorch, Elasticsearch, Redis, Cypress",0.78
+"Selenium, Git, NodeJS, Kafka, Redis, VueJS, GitLab, GitHub","TensorFlow, Redis, Angular, Terraform, Canva",0.46
+"Bash, Redis, Azure, PostgreSQL","GitHub, Power BI, MongoDB, AWS",0.39
+"VueJS, Docker, Kafka, Git, MySQL, TensorFlow, NodeJS, Terraform","Terraform, RabbitMQ, AWS, Linux, Git, Spring Boot",0.37
+"Spring Boot, RabbitMQ, Terraform, Ansible, Git, Jenkins, Angular, MongoDB","Jenkins, MongoDB, Azure, Docker, TensorFlow, Kafka, Cypress",0.38
+"MongoDB, Flask, Canva, PyTorch, Azure, Angular","Jenkins, Elasticsearch, AWS, Ansible",0.49
+"Git, Canva, GCP, GitLab, ReactJS, AWS","Bash, Selenium, Django, GitHub",0.55
+"MongoDB, Kafka, ReactJS, Elasticsearch, Git, Kubernetes, GCP, Linux","Ansible, Illustrator, FastAPI, Kafka, Docker, GitHub, GCP, MongoDB",0.54
+"Flask, Ansible, Azure, RabbitMQ, TensorFlow, Django, ReactJS, Spring Boot","RabbitMQ, Selenium, VueJS, PyTorch, GitHub, Linux, Ansible",0.62
+"Git, VueJS, Tableau, Kubernetes, Elasticsearch, TensorFlow","RabbitMQ, PyTorch, Django, Bash, Git, GitHub",0.5
+"Selenium, RabbitMQ, Cypress, PostgreSQL, Linux, AWS","PostgreSQL, TensorFlow, Redis, ReactJS, Illustrator, GitHub",0.72
+"MySQL, GitHub, AWS, Azure, Selenium","ReactJS, PyTorch, GitLab, Canva",0.46
+"Azure, MySQL, TensorFlow, FastAPI, Ansible","RabbitMQ, Ansible, Tableau, Cypress, GCP",0.91
+"Photoshop, FastAPI, Illustrator, Redis","Redis, GitHub, Figma, Azure, GitLab",0.59
+"Figma, Kafka, Illustrator, Jenkins, Flask, Selenium, Azure","Canva, MongoDB, PyTorch, Linux, Tableau",0.37
+"PostgreSQL, Terraform, PyTorch, Elasticsearch, Docker, Figma, Tableau","Jenkins, Spring Boot, Angular, Elasticsearch, Ansible, Illustrator, Flask",0.34
+"Docker, Elasticsearch, Bash, TensorFlow, VueJS","GitHub, MongoDB, Redis, AWS, Docker, NodeJS",0.57
+"Kubernetes, TensorFlow, MySQL, Cypress, Illustrator, Linux","Canva, ReactJS, GitHub, Redis, Docker, Spring Boot",0.47
+"GCP, MongoDB, Docker, Power BI, Kafka, Kubernetes","Azure, AWS, GitHub, Jenkins, Terraform",0.61
+"Spring Boot, Ansible, Selenium, TensorFlow","Bash, FastAPI, MySQL, Angular, ReactJS, Canva, TensorFlow, Jenkins",0.57
+"Git, Figma, Flask, Spring Boot","Jenkins, Bash, NodeJS, Kubernetes, Ansible",0.49
+"Terraform, PyTorch, Cypress, Illustrator, TensorFlow","Terraform, GitLab, Django, Spring Boot, Git, GitHub",0.37
+"MySQL, Spring Boot, GitLab, Docker, PostgreSQL, Tableau, Angular","Kubernetes, Kafka, Django, Terraform",0.27
+"Docker, Tableau, Selenium, AWS","Canva, MongoDB, NodeJS, GitLab, Figma",0.43
+"VueJS, GCP, ReactJS, Spring Boot, FastAPI","PostgreSQL, Git, GitHub, Elasticsearch, Photoshop, Docker",0.63
+"TensorFlow, Cypress, Flask, Jenkins","Kubernetes, Azure, Flask, GCP, MongoDB, Ansible, Django, Linux",0.53
+"MongoDB, MySQL, Illustrator, Flask, Canva, NodeJS","Git, TensorFlow, Power BI, Canva, VueJS, Elasticsearch",0.31
+"Tableau, PyTorch, Bash, Photoshop, Flask","Kafka, ReactJS, Elasticsearch, Bash, Kubernetes, Photoshop, Canva",0.53
+"Docker, Kafka, AWS, Photoshop, GitLab, PyTorch, Canva","AWS, Jenkins, Bash, Tableau, MySQL, TensorFlow",0.56
+"FastAPI, Selenium, Flask, Canva, AWS, GitLab, VueJS","Linux, Angular, MongoDB, Terraform, Figma, GCP",0.37
+"Azure, Terraform, Docker, Selenium, Redis, TensorFlow, Git","Redis, Terraform, Photoshop, PyTorch, Azure",0.52
+"Linux, Spring Boot, Kafka, Bash, Angular","PostgreSQL, ReactJS, Docker, Linux",0.51
+"Tableau, Kafka, Canva, GitLab, GCP, Azure, Jenkins","Spring Boot, GCP, Tableau, Bash, Django, Docker",0.33
+"Selenium, PostgreSQL, Spring Boot, Illustrator, PyTorch, Power BI","Redis, PostgreSQL, Canva, Kafka",0.55
+"MongoDB, FastAPI, TensorFlow, Photoshop, Bash","VueJS, Flask, ReactJS, Spring Boot, Linux, PyTorch, GCP, Ansible",0.58
+"TensorFlow, Linux, AWS, Bash, RabbitMQ, Angular, Flask","Kafka, Azure, Bash, Elasticsearch, Django",0.66
+"Ansible, GitLab, Selenium, PostgreSQL, Git, MongoDB, Elasticsearch","Linux, Canva, Spring Boot, MongoDB, Django, Elasticsearch",0.66
+"Azure, Tableau, Django, Angular, Cypress","Terraform, Git, PostgreSQL, VueJS, Spring Boot, Figma, FastAPI",0.29
+"AWS, VueJS, Linux, PostgreSQL, Terraform, Canva, GitLab","Photoshop, Tableau, ReactJS, Redis",0.36
+"Photoshop, Power BI, Terraform, Kafka, Bash, Django, Kubernetes","Kafka, Canva, PyTorch, Selenium, MongoDB, Cypress",0.58
+"Figma, GitHub, Bash, Elasticsearch, Spring Boot","ReactJS, GitHub, Elasticsearch, Redis",0.58
+"Angular, Terraform, Power BI, Kubernetes, Cypress","PostgreSQL, Power BI, ReactJS, Bash, Selenium, MySQL, Angular, Cypress",0.58
+"MongoDB, PyTorch, Kafka, Elasticsearch, TensorFlow, Docker, Photoshop","PyTorch, Django, Angular, GitHub, NodeJS, Illustrator",1.0
+"Figma, Flask, Tableau, FastAPI, GitLab","GitLab, Jenkins, MongoDB, Cypress, Docker, Linux, Kubernetes, Terraform",0.59
+"Django, FastAPI, Ansible, TensorFlow, Git, Terraform, Spring Boot","TensorFlow, Bash, RabbitMQ, NodeJS, Git",0.67
+"GitLab, Azure, Kafka, Django, Elasticsearch, Selenium, RabbitMQ, Linux","Illustrator, Terraform, PostgreSQL, Power BI, Git",0.64
+"Flask, Cypress, FastAPI, Illustrator, GitLab, GCP, Git","RabbitMQ, NodeJS, TensorFlow, PyTorch, Linux",0.6
+"Canva, Docker, Bash, Flask, TensorFlow, Selenium","Photoshop, RabbitMQ, Illustrator, VueJS, Spring Boot, Linux, PostgreSQL",0.45
+"Cypress, AWS, Elasticsearch, Kafka, Angular, ReactJS","Docker, Illustrator, Flask, Linux, Kafka, Cypress, Angular",0.61
+"Redis, Spring Boot, Photoshop, GitHub, Figma, Docker","Docker, Figma, ReactJS, RabbitMQ, Photoshop",0.38
+"MySQL, Elasticsearch, Photoshop, Selenium, AWS, Kafka, Flask","MongoDB, Docker, Terraform, Flask",0.46
+"Illustrator, TensorFlow, Terraform, Figma, FastAPI, MySQL, Tableau","Selenium, Terraform, MySQL, RabbitMQ",0.43
+"Kubernetes, Kafka, Selenium, Illustrator, FastAPI, AWS, RabbitMQ","PostgreSQL, VueJS, MongoDB, Azure, Terraform, Flask, ReactJS",0.51
+"Flask, Power BI, PyTorch, Figma, Illustrator","Spring Boot, Redis, VueJS, Photoshop, Illustrator, Figma",0.85
+"MySQL, Power BI, Terraform, Figma, MongoDB, AWS, GCP","Cypress, Docker, Linux, Terraform, Selenium, Illustrator",0.22
+"Illustrator, TensorFlow, GCP, GitLab, Linux","Git, Ansible, RabbitMQ, Canva, Jenkins, Illustrator, Redis, Kafka",0.6
+"FastAPI, AWS, PyTorch, MongoDB, PostgreSQL, Figma, Azure, Redis","GCP, Tableau, PostgreSQL, Azure, Spring Boot, Django, FastAPI",0.26
+"VueJS, Kubernetes, Bash, Selenium, Ansible","Azure, GCP, FastAPI, Terraform, MongoDB, Spring Boot, Elasticsearch",0.43
+"Canva, VueJS, RabbitMQ, Power BI, Jenkins, PostgreSQL, Git, Photoshop","Spring Boot, AWS, Selenium, Azure, Flask, Jenkins",0.66
+"Git, GitLab, Photoshop, PyTorch, GitHub, RabbitMQ, Bash","VueJS, GitLab, Elasticsearch, PostgreSQL, Illustrator, Bash",0.51
+"PostgreSQL, Git, Power BI, Azure, RabbitMQ, Tableau, Elasticsearch, TensorFlow","PostgreSQL, PyTorch, Selenium, Canva, Django, Flask",0.34
+"Photoshop, MongoDB, Azure, Bash","Kubernetes, Jenkins, Flask, MongoDB, RabbitMQ, TensorFlow, ReactJS",0.39
+"GitHub, Kubernetes, Flask, Cypress, Spring Boot","Kubernetes, Flask, Photoshop, Redis, Terraform, RabbitMQ",0.6
+"Selenium, Linux, Photoshop, Docker, NodeJS, Canva","Power BI, VueJS, Django, Figma, PyTorch, AWS, Docker, Cypress",0.39
+"Django, Spring Boot, GitLab, VueJS, Canva","Git, Selenium, Photoshop, Flask, MySQL, Terraform, Docker, Elasticsearch",0.53
+"Terraform, Selenium, VueJS, Azure, Redis, TensorFlow, Kafka, Tableau","Illustrator, AWS, Kubernetes, Power BI, Redis, Kafka, GitHub",0.51
+"Selenium, RabbitMQ, Azure, Jenkins, Angular, NodeJS, Git","Angular, Django, Terraform, PyTorch, Linux, Cypress, PostgreSQL, Photoshop",0.4
+"Django, MySQL, Ansible, VueJS, Git, Spring Boot, Tableau","MongoDB, Terraform, Kafka, Bash, Photoshop, GCP, Docker",0.82
+"ReactJS, Spring Boot, PostgreSQL, Angular, FastAPI","FastAPI, Tableau, MySQL, Figma, Ansible, Angular, NodeJS",0.6
+"MongoDB, Photoshop, TensorFlow, Redis","Figma, Tableau, Illustrator, GCP, Linux, RabbitMQ, Photoshop",0.2
+"Bash, Illustrator, RabbitMQ, PostgreSQL, Django, Elasticsearch, AWS, Git","Angular, VueJS, Figma, ReactJS, NodeJS, Kafka, Kubernetes, Bash",0.53
+"Figma, Redis, Django, Spring Boot, GCP, Power BI","Terraform, Tableau, FastAPI, Photoshop, Redis, Git",0.4
+"Canva, Elasticsearch, Ansible, Photoshop, PyTorch, AWS","Power BI, Selenium, NodeJS, TensorFlow",0.63
+"Spring Boot, Redis, Flask, RabbitMQ, TensorFlow, Ansible","Spring Boot, Tableau, TensorFlow, Cypress, Jenkins, Git",0.38
+"PyTorch, VueJS, MySQL, Spring Boot","Photoshop, Power BI, Django, Git, TensorFlow",0.48
+"RabbitMQ, Tableau, Azure, Redis","NodeJS, FastAPI, ReactJS, Redis, VueJS, Figma, Azure, GCP",0.58
+"Elasticsearch, Azure, Power BI, MySQL, Kubernetes, PostgreSQL, FastAPI, Cypress","MongoDB, Linux, Redis, VueJS, Figma, Kafka, MySQL, FastAPI",0.63
+"PyTorch, Flask, GitHub, Bash","PyTorch, Jenkins, Django, AWS",0.32
+"Canva, MongoDB, Redis, Angular, RabbitMQ, Terraform","AWS, Photoshop, Jenkins, NodeJS, PyTorch, Django, Azure",0.45
+"TensorFlow, Spring Boot, GCP, Docker, Azure","Flask, Redis, Linux, Figma, AWS, Elasticsearch",0.43
+"Kubernetes, PyTorch, ReactJS, GitLab, Flask, Ansible, NodeJS","MySQL, RabbitMQ, Angular, Linux, Flask",0.4
+"GCP, Photoshop, Kubernetes, FastAPI, ReactJS, Spring Boot, PostgreSQL, Ansible","NodeJS, Jenkins, Flask, Canva, MongoDB, Django, Illustrator",0.76
+"Canva, FastAPI, Django, Kafka, Photoshop, GCP, Bash","FastAPI, Power BI, GCP, TensorFlow, MySQL, Kubernetes, Azure",0.56
+"Figma, Selenium, Docker, NodeJS, Illustrator, PostgreSQL, Kubernetes","Jenkins, Cypress, Docker, Terraform",0.31
+"Flask, Figma, Ansible, PostgreSQL, Cypress","Azure, Tableau, Kafka, PostgreSQL, Linux, Ansible, GitLab, MySQL",0.64
+"Ansible, VueJS, GCP, Git","Canva, Elasticsearch, Illustrator, Angular, Terraform, Docker, Bash",0.82
+"Kubernetes, GitHub, Jenkins, Cypress, GitLab, NodeJS, Selenium","Photoshop, ReactJS, Tableau, Git",0.65
+"Terraform, RabbitMQ, GitHub, Azure","GitHub, RabbitMQ, Git, Kafka, Kubernetes, Photoshop",0.27
+"Flask, Kubernetes, Tableau, Ansible, Terraform, Angular, Illustrator, GitHub","GitLab, RabbitMQ, Spring Boot, PyTorch, MySQL, PostgreSQL",0.43
+"PyTorch, Flask, MySQL, GitHub","RabbitMQ, Figma, Selenium, PyTorch, Terraform, Ansible, Azure, Jenkins",0.69
+"Redis, PyTorch, MySQL, Canva, ReactJS, Tableau, Figma, MongoDB","GitLab, ReactJS, Tableau, Jenkins, GCP, MySQL",0.39
+"NodeJS, Jenkins, GCP, FastAPI, PyTorch, VueJS, Bash, Linux","Django, Angular, MySQL, TensorFlow, Azure, Kubernetes, NodeJS, Selenium",0.57
+"ReactJS, AWS, PostgreSQL, Spring Boot, MongoDB, FastAPI, Tableau","Bash, Jenkins, PostgreSQL, MySQL, GitLab, PyTorch",0.62
+"Tableau, Elasticsearch, Selenium, Django, Git, Figma, TensorFlow","GCP, Azure, FastAPI, PyTorch",0.36
+"Spring Boot, GCP, GitHub, Kubernetes, FastAPI, Power BI, Docker, Angular","Photoshop, Bash, Redis, Spring Boot, RabbitMQ",0.49
+"Django, NodeJS, Spring Boot, Linux, ReactJS, Docker, Figma","Linux, GitHub, AWS, Django, MongoDB, TensorFlow",0.01
+"TensorFlow, ReactJS, Angular, Kubernetes","AWS, RabbitMQ, Photoshop, Docker, Elasticsearch, Azure, Figma, GCP",0.35
+"Canva, Cypress, Jenkins, Terraform","Bash, Tableau, TensorFlow, PostgreSQL",0.46
+"RabbitMQ, GCP, Elasticsearch, Jenkins","Linux, ReactJS, NodeJS, Docker",0.31
+"Flask, Kafka, Elasticsearch, MySQL","Tableau, Angular, TensorFlow, Azure, AWS",0.74
+"Spring Boot, Selenium, Figma, MongoDB, Kafka, Angular, Tableau, Cypress","Selenium, Redis, GCP, Figma, Angular, PyTorch, GitLab, VueJS",0.29
+"Docker, Cypress, GitLab, Selenium, Kafka","Illustrator, RabbitMQ, Redis, Selenium, TensorFlow, GitHub, Photoshop",0.43
+"Bash, AWS, Figma, GCP, ReactJS","Bash, Flask, Selenium, Docker, Redis, Kubernetes",0.52
+"Azure, Jenkins, Kafka, GitLab, Linux, Elasticsearch","Django, RabbitMQ, ReactJS, Flask, TensorFlow, PyTorch, MySQL, Illustrator",0.72
+"FastAPI, RabbitMQ, VueJS, Bash, Elasticsearch, Jenkins","Figma, Django, GitLab, MongoDB, Linux, MySQL, Ansible",0.28
+"Terraform, TensorFlow, Jenkins, FastAPI, Redis, VueJS, Illustrator, Django","Flask, RabbitMQ, Canva, AWS, MongoDB, Redis, Bash, Cypress",0.67
+"VueJS, Photoshop, Illustrator, MongoDB, Ansible","Redis, Illustrator, NodeJS, Spring Boot, Terraform, Django",0.5
+"Kubernetes, Tableau, Illustrator, ReactJS, MongoDB, Git","Bash, PyTorch, GCP, MySQL, Elasticsearch, Kubernetes, Power BI",0.35
+"MySQL, Kafka, Canva, Bash, Git, Ansible","ReactJS, Selenium, Redis, Django, Kubernetes, GitHub, RabbitMQ, Linux",0.57
+"Azure, Redis, Kafka, Jenkins, Spring Boot, Power BI, Terraform","VueJS, MongoDB, Tableau, Ansible, Flask, Terraform",0.53
+"RabbitMQ, FastAPI, ReactJS, Power BI","Tableau, TensorFlow, Azure, MySQL, FastAPI",0.41
+"RabbitMQ, AWS, GitLab, Selenium","PostgreSQL, Kubernetes, Elasticsearch, Linux, PyTorch, TensorFlow, Docker",0.51
+"MySQL, NodeJS, Kafka, Bash, Linux, Elasticsearch, Django, GitLab","VueJS, TensorFlow, Flask, FastAPI, MongoDB",0.44
+"Spring Boot, GitLab, GCP, Photoshop, Linux","Django, Power BI, Selenium, GitHub, Figma, Spring Boot",0.52
+"Cypress, Kafka, NodeJS, Redis, AWS, Terraform","MySQL, Illustrator, Canva, Power BI, Figma",0.6
+"Tableau, RabbitMQ, Photoshop, TensorFlow, Django","RabbitMQ, MySQL, GitLab, Jenkins, ReactJS, Git",0.74
+"Canva, Selenium, AWS, NodeJS, Flask, Django, Ansible, MongoDB","Cypress, Kafka, Canva, VueJS, Elasticsearch, AWS, Figma, GitHub",0.31
+"MongoDB, Power BI, Terraform, GCP, Django","Tableau, Flask, ReactJS, Git",0.82
+"Kafka, MySQL, Bash, Illustrator, TensorFlow, FastAPI","Selenium, Git, MongoDB, Flask, Linux, Jenkins, GitLab, Tableau",0.21
+"Redis, Elasticsearch, FastAPI, Git","Terraform, Cypress, Power BI, AWS, Tableau, GCP, Linux, Elasticsearch",0.48
+"VueJS, Ansible, FastAPI, Illustrator, Selenium","Docker, Azure, MongoDB, Bash, PyTorch, Kubernetes, Git",0.59
+"Django, Power BI, RabbitMQ, Bash, Selenium, GitHub, Angular","Azure, Illustrator, RabbitMQ, VueJS, Docker, Photoshop, Jenkins, Power BI",0.54
+"Angular, Docker, MySQL, Tableau","VueJS, Flask, Linux, Ansible, Cypress, Docker, Angular, GitHub",0.41
+"Canva, Elasticsearch, NodeJS, Selenium","Elasticsearch, Power BI, Azure, Cypress, Tableau, GitLab, Spring Boot, Kubernetes",0.47
+"Kubernetes, Azure, Ansible, AWS","Tableau, Jenkins, Docker, Power BI, Kafka, Canva",0.43
+"FastAPI, ReactJS, Elasticsearch, AWS, Jenkins, Redis, Azure, Selenium","Bash, FastAPI, Redis, PyTorch, Cypress",0.41
+"FastAPI, Django, Docker, Power BI, PostgreSQL","NodeJS, PyTorch, PostgreSQL, Docker, Kubernetes, FastAPI, RabbitMQ, Kafka",0.63
+"ReactJS, Cypress, GitLab, Illustrator","Django, Jenkins, MongoDB, Docker, NodeJS",0.55
+"Git, NodeJS, Kubernetes, Flask, Figma, AWS","GitHub, PyTorch, Power BI, Angular, Azure, Django, Jenkins, Elasticsearch",0.4
+"FastAPI, MongoDB, Angular, MySQL, GitHub, Figma","Azure, AWS, NodeJS, Tableau, Redis, Selenium",0.63
+"Terraform, Ansible, RabbitMQ, Figma, MongoDB, Photoshop","ReactJS, Azure, Flask, Elasticsearch",0.55
+"MySQL, VueJS, Selenium, Kubernetes, Angular, FastAPI","Terraform, MongoDB, Git, RabbitMQ, Canva",0.62
+"Django, Power BI, Ansible, Selenium, ReactJS, Redis, Git, TensorFlow","GitHub, TensorFlow, Photoshop, Git, Kafka, Docker, Kubernetes",0.59
+"Elasticsearch, Spring Boot, AWS, TensorFlow, Terraform, Figma","Cypress, Angular, Selenium, Illustrator, Kubernetes, TensorFlow",0.38
+"Ansible, Illustrator, VueJS, TensorFlow, Photoshop, Power BI","GitHub, VueJS, Kafka, ReactJS",0.42
+"GitHub, Power BI, Spring Boot, AWS","Bash, VueJS, Docker, MySQL, RabbitMQ",0.61
+"Kafka, Illustrator, Docker, Kubernetes, VueJS, Bash, GCP, PostgreSQL","Kubernetes, Git, AWS, GitLab, Illustrator, Photoshop, Redis",0.59
+"Kubernetes, PostgreSQL, Selenium, Terraform, GitLab, VueJS, Cypress","ReactJS, Canva, VueJS, PostgreSQL",0.5
+"Kubernetes, TensorFlow, Linux, Kafka, Power BI, Flask, VueJS","Git, Bash, Jenkins, Angular, PostgreSQL",0.52
+"Bash, Redis, MySQL, Power BI, VueJS, AWS, Jenkins, Azure","Terraform, PyTorch, Linux, Selenium, Kubernetes",0.69
+"Spring Boot, Illustrator, Docker, MySQL, NodeJS, MongoDB, Figma","RabbitMQ, Figma, Cypress, Azure, ReactJS, Selenium, Kubernetes, Django",0.41
+"Kafka, Terraform, Docker, Redis, Azure","TensorFlow, Illustrator, Angular, Ansible",0.58
+"Power BI, Redis, Flask, GitHub, Photoshop","MongoDB, Kubernetes, TensorFlow, Figma, ReactJS",0.47
+"MySQL, FastAPI, Tableau, Django, AWS, Kafka","Kafka, Bash, AWS, Docker, Selenium, Spring Boot, Kubernetes, PyTorch",0.47
+"Photoshop, TensorFlow, Selenium, Flask, Spring Boot, ReactJS, PostgreSQL","NodeJS, AWS, Photoshop, Linux, FastAPI, VueJS, GitLab",0.66
+"Terraform, NodeJS, Flask, Azure","Photoshop, Kafka, Terraform, Git, Canva, Illustrator, VueJS, Kubernetes",0.62
+"Redis, Spring Boot, Illustrator, Terraform","Angular, RabbitMQ, Selenium, Flask, PostgreSQL, VueJS, Tableau, Photoshop",0.62
+"Flask, Cypress, Angular, GitHub, TensorFlow, MySQL","MongoDB, Docker, GCP, Figma, Git, ReactJS, RabbitMQ, MySQL",0.7
+"Spring Boot, Django, Flask, GitHub","Canva, NodeJS, Linux, Angular, Git, ReactJS, MongoDB, Elasticsearch",0.5
+"Django, GCP, MySQL, Ansible, VueJS","Redis, VueJS, ReactJS, GCP, Kubernetes",0.6
+"Git, Kafka, Power BI, Illustrator, Terraform, MySQL, Angular, Canva","Jenkins, MySQL, NodeJS, PostgreSQL, GitLab",0.45
+"MySQL, TensorFlow, Canva, GitLab, Terraform","NodeJS, Ansible, Azure, PostgreSQL, PyTorch",0.55
+"Power BI, Selenium, MongoDB, NodeJS, Bash, Ansible, AWS, Figma","Power BI, Docker, MySQL, ReactJS, Flask, Spring Boot",0.48
+"Terraform, Canva, AWS, GCP, MySQL, Angular, Kafka","Canva, Terraform, Kafka, Elasticsearch, VueJS, Tableau, Figma",0.51
+"RabbitMQ, Canva, Tableau, ReactJS, Git, Selenium, VueJS, Azure","TensorFlow, Power BI, Flask, PyTorch, ReactJS, PostgreSQL, MongoDB",0.59
+"PostgreSQL, GitLab, Azure, Git","AWS, Flask, Spring Boot, Redis, Kafka, Linux, FastAPI",0.38
+"GCP, Cypress, TensorFlow, Bash, Kafka","GitLab, RabbitMQ, Docker, Elasticsearch, VueJS, Kubernetes",0.81
+"GitHub, Photoshop, Bash, RabbitMQ","PostgreSQL, GCP, Kafka, GitLab, Django",0.35
+"Django, PostgreSQL, AWS, FastAPI","Kafka, GitLab, Elasticsearch, Selenium",0.32
+"Kubernetes, Illustrator, Tableau, Spring Boot, NodeJS","Docker, PyTorch, NodeJS, Ansible, PostgreSQL",0.67
+"Photoshop, Figma, MySQL, Kafka, FastAPI","Azure, MongoDB, Power BI, Docker, VueJS, Terraform",0.62
+"Figma, Illustrator, TensorFlow, Canva, VueJS, Elasticsearch, Power BI, Docker","Selenium, Tableau, Cypress, GitHub, Linux, Bash, GitLab, Canva",0.59
+"Kafka, AWS, Selenium, GitHub, VueJS, Docker, MySQL, ReactJS","RabbitMQ, Jenkins, Power BI, GitHub, Cypress, Kafka",0.59
+"TensorFlow, Ansible, Spring Boot, Jenkins, Tableau, PostgreSQL","Bash, Photoshop, NodeJS, Linux, Elasticsearch",0.5
+"VueJS, Redis, TensorFlow, Flask, PyTorch","Selenium, Spring Boot, Ansible, Jenkins, Kafka, AWS, Redis",0.37
+"VueJS, Angular, Figma, MongoDB, Redis, TensorFlow, Cypress","Angular, Terraform, Illustrator, Jenkins, Figma",0.51
+"Selenium, AWS, Angular, Docker, Cypress","NodeJS, Spring Boot, Selenium, Cypress, AWS, MongoDB",0.4
+"Spring Boot, Photoshop, Linux, Flask, ReactJS","Bash, GCP, Angular, Selenium, Tableau, Cypress",0.65
+"TensorFlow, Power BI, Spring Boot, Terraform, Angular","VueJS, GCP, Selenium, MongoDB, Django, Docker, NodeJS",0.48
+"ReactJS, Terraform, Selenium, MySQL, Angular","PyTorch, Azure, Cypress, Git, Kafka",0.38
+"Kubernetes, Django, Terraform, Illustrator","ReactJS, Cypress, PyTorch, Flask, Jenkins, Linux, GCP",0.45
+"Selenium, Canva, Kafka, Photoshop","Azure, Flask, PostgreSQL, MySQL",0.56
+"Spring Boot, ReactJS, Django, GitLab","Tableau, GitHub, GCP, GitLab, Docker, Git, Jenkins, Azure",0.42
+"Selenium, ReactJS, Django, Figma, Canva, Cypress","Docker, Git, TensorFlow, NodeJS, RabbitMQ, Selenium, PostgreSQL, FastAPI",0.38
+"TensorFlow, Tableau, GitHub, Selenium, Kubernetes, Bash, ReactJS","Canva, Django, RabbitMQ, VueJS, MySQL, AWS, Bash, Kafka",0.54
+"Terraform, Jenkins, Photoshop, MySQL, Kafka, RabbitMQ, Illustrator, GitHub","GitHub, Photoshop, Azure, MySQL, Spring Boot",0.54
+"FastAPI, Bash, Power BI, VueJS, Terraform, Ansible","GitHub, Jenkins, Tableau, Cypress, PyTorch, Azure, MongoDB, AWS",0.42
+"Angular, PostgreSQL, Django, FastAPI, Azure, GCP, Elasticsearch","Photoshop, VueJS, Redis, FastAPI",0.43
+"Figma, RabbitMQ, Illustrator, ReactJS, Azure, NodeJS, Kafka","Spring Boot, GCP, TensorFlow, Photoshop, Elasticsearch, MongoDB",0.53
+"Django, GitHub, Ansible, FastAPI, Flask, Bash, Kafka","Docker, AWS, Kubernetes, Azure, VueJS",0.28
+"Figma, Power BI, Kubernetes, Cypress","Terraform, Flask, Illustrator, RabbitMQ, Git",0.29
+"Bash, Ansible, Django, GitHub","Canva, GitLab, Selenium, Elasticsearch, VueJS, Ansible",0.39
+"Jenkins, Kubernetes, Docker, Flask, Power BI","Tableau, Linux, Ansible, TensorFlow, Selenium, GitLab, GitHub, Jenkins",0.47
+"Figma, GitLab, PostgreSQL, PyTorch, Selenium, Cypress, GCP","GitHub, Tableau, Figma, GitLab, Flask, Cypress, ReactJS",0.55
+"Cypress, Angular, MongoDB, Terraform, Power BI","Cypress, Illustrator, MySQL, GCP, Linux, Power BI, Django, Selenium",0.72
+"Tableau, Jenkins, Ansible, Terraform, GitLab, GCP","MySQL, Power BI, Django, Cypress, RabbitMQ, Linux, Bash",0.63
+"GitLab, Elasticsearch, Redis, Flask, PyTorch, Django","GCP, GitLab, VueJS, Spring Boot, FastAPI, RabbitMQ, Ansible, Bash",0.48
+"Elasticsearch, GitHub, Illustrator, Photoshop","VueJS, Linux, Django, Azure, GitHub, Elasticsearch, PyTorch, Illustrator",0.5
+"Terraform, GitLab, MongoDB, Photoshop, Redis","Spring Boot, Jenkins, Kafka, Figma, PostgreSQL, Git",0.35
+"MySQL, Ansible, Kafka, PyTorch","PostgreSQL, Redis, AWS, Tableau",0.5
+"Canva, Redis, AWS, Ansible, Terraform, Figma, Spring Boot, Selenium","Django, GCP, Kafka, Bash, Elasticsearch",0.46
+"Docker, Figma, Kafka, ReactJS","Azure, Ansible, Power BI, Canva, MongoDB",0.55
+"Git, Azure, NodeJS, GitHub, Redis, AWS, Canva","Illustrator, Tableau, Power BI, Git, Cypress, Figma, GitLab, Elasticsearch",0.38
+"GCP, Photoshop, Bash, Linux","Spring Boot, Git, Power BI, Selenium, Azure",0.58
+"Selenium, TensorFlow, Jenkins, Power BI, GitHub, RabbitMQ","PyTorch, Spring Boot, Angular, Azure",0.73
+"MongoDB, Tableau, Azure, Kubernetes, Figma, Terraform","PostgreSQL, Illustrator, AWS, Canva, Photoshop",0.48
+"Figma, Power BI, Canva, GitLab, Docker, Flask, GitHub","ReactJS, Angular, Kafka, Figma",0.56
+"GitLab, Photoshop, RabbitMQ, Flask, Django, Kafka, Ansible, FastAPI","AWS, Photoshop, Linux, Flask, Redis",0.6
+"GitHub, NodeJS, GCP, AWS","PyTorch, GCP, Bash, GitHub, Ansible",0.44
+"Docker, Canva, MySQL, Figma, NodeJS, Spring Boot, TensorFlow, Kubernetes","TensorFlow, Jenkins, VueJS, Angular, Kubernetes",0.53
+"Illustrator, TensorFlow, Ansible, GitHub","ReactJS, PostgreSQL, FastAPI, Angular",0.5
+"FastAPI, MongoDB, ReactJS, PostgreSQL, Tableau","Selenium, MySQL, RabbitMQ, GCP, NodeJS, Tableau",0.51
+"RabbitMQ, Azure, Bash, ReactJS, AWS, TensorFlow, FastAPI, Spring Boot","Photoshop, Angular, Flask, Spring Boot, ReactJS, Docker, AWS",0.38
+"Linux, Power BI, NodeJS, Figma, Cypress, FastAPI, PyTorch","VueJS, Angular, Azure, Canva, GCP, Redis, MongoDB",0.5
+"Illustrator, FastAPI, VueJS, Spring Boot, Django, MySQL","Django, Azure, Elasticsearch, NodeJS",0.57
+"Flask, Bash, Azure, Spring Boot, Linux, Git","NodeJS, Kafka, RabbitMQ, Selenium",0.72
+"AWS, Git, GitHub, RabbitMQ, Figma","Azure, GCP, MongoDB, MySQL, Figma",0.64
+"Angular, Photoshop, MySQL, Docker","Azure, Linux, Jenkins, Kafka",0.82
+"Django, Redis, Jenkins, VueJS, Kubernetes, Bash, RabbitMQ","VueJS, PyTorch, Cypress, Kubernetes, AWS",0.38
+"Cypress, Linux, ReactJS, Spring Boot, PyTorch, TensorFlow, Figma, Git","Tableau, Kubernetes, Photoshop, PostgreSQL, Kafka",0.63
+"Photoshop, TensorFlow, AWS, Elasticsearch, GitHub","Django, VueJS, Photoshop, RabbitMQ, PostgreSQL, Canva",0.53
+"Illustrator, GCP, Git, Selenium, PyTorch, Cypress, Docker","GitHub, Git, Angular, ReactJS",0.83
+"Photoshop, Redis, VueJS, AWS, GCP, Git, PostgreSQL","Django, Ansible, PyTorch, Figma, NodeJS, ReactJS, Terraform",0.38
+"Ansible, Kubernetes, Flask, Spring Boot, Django, Elasticsearch, GitLab, GCP","ReactJS, RabbitMQ, VueJS, Tableau, TensorFlow",0.37
+"Git, Spring Boot, Angular, Selenium","AWS, Linux, MongoDB, Angular, Tableau, Kubernetes",0.41
+"Spring Boot, Flask, GitLab, Bash, Tableau, Elasticsearch, NodeJS, Redis","Django, Angular, Illustrator, MongoDB",0.18
+"Git, Kubernetes, Docker, Angular, AWS, Spring Boot, Bash","Kubernetes, ReactJS, PostgreSQL, Jenkins, Azure, GCP, Photoshop",0.42
+"GitHub, ReactJS, MySQL, Redis, Illustrator, PostgreSQL","Ansible, TensorFlow, Power BI, Bash, Angular, Tableau, VueJS, Linux",0.39
+"Spring Boot, Selenium, Kubernetes, Photoshop","Redis, Ansible, Terraform, NodeJS, Figma, ReactJS, Photoshop, Spring Boot",0.52
+"RabbitMQ, Angular, Flask, Azure, PostgreSQL","Kubernetes, PyTorch, ReactJS, GCP, Terraform, Bash, Redis, VueJS",0.55
+"GitHub, Redis, GitLab, Linux, Illustrator, Canva, PyTorch, Elasticsearch","PyTorch, Django, Cypress, GitLab, Flask, FastAPI, MySQL",0.78
+"Redis, Terraform, Canva, GCP, Angular, ReactJS, Power BI","TensorFlow, MySQL, Flask, Tableau",0.64
+"AWS, MySQL, Django, Angular, VueJS, Figma","AWS, PyTorch, PostgreSQL, Bash, RabbitMQ, Angular, Illustrator",0.41
+"Bash, PyTorch, Flask, Kafka, Linux, Canva, Photoshop","Azure, Redis, TensorFlow, ReactJS, GitLab, Illustrator, Tableau, NodeJS",0.37
+"Power BI, NodeJS, Kubernetes, Kafka, RabbitMQ","TensorFlow, GCP, Elasticsearch, Flask, Angular, RabbitMQ, Kafka",0.57
+"Django, PyTorch, Cypress, Git, Jenkins, GitLab, Kafka","MongoDB, Django, Kubernetes, Tableau, Illustrator, GitHub",0.3
+"PyTorch, MySQL, Django, ReactJS, Kubernetes, GCP","Ansible, Tableau, Elasticsearch, NodeJS, Django, Azure, RabbitMQ",0.77
+"RabbitMQ, MySQL, Kafka, Photoshop, Redis, GCP, Selenium, Power BI","Selenium, PyTorch, Kubernetes, Canva",0.68
+"MongoDB, VueJS, Spring Boot, Photoshop, Docker, Power BI, Kubernetes","Flask, Photoshop, PostgreSQL, Selenium, GitHub, Spring Boot, RabbitMQ, Azure",0.43
+"Figma, Tableau, Linux, MongoDB, Power BI, RabbitMQ, Spring Boot","Photoshop, Flask, Angular, GCP, Spring Boot",0.24
+"Selenium, Flask, Photoshop, GCP, Power BI, Kubernetes, Illustrator, GitLab","Git, AWS, Figma, Power BI, Tableau, Photoshop, Kafka",0.7
+"FastAPI, NodeJS, GitHub, Terraform, PostgreSQL, AWS","Terraform, VueJS, Bash, RabbitMQ, TensorFlow, Angular, MongoDB",0.48
+"ReactJS, Kafka, NodeJS, Bash","Ansible, Power BI, VueJS, GCP, RabbitMQ, NodeJS",0.69
+"Angular, Ansible, Docker, PostgreSQL, TensorFlow, Selenium","Figma, Terraform, Illustrator, PostgreSQL, Photoshop, GitHub, Jenkins, MongoDB",0.26
+"Canva, Kafka, Elasticsearch, Git","RabbitMQ, Azure, Kafka, VueJS, FastAPI, Photoshop",0.41
+"PostgreSQL, Spring Boot, AWS, Canva, Jenkins, FastAPI, PyTorch","Kafka, PyTorch, GitLab, GitHub",0.5
+"RabbitMQ, AWS, Git, ReactJS, FastAPI","MongoDB, Spring Boot, Flask, Jenkins, Bash, ReactJS",0.51
+"Flask, MongoDB, Selenium, VueJS","Figma, NodeJS, RabbitMQ, Elasticsearch, VueJS",0.43
+"Selenium, PyTorch, Angular, Kubernetes, MySQL, TensorFlow","GitLab, Kubernetes, Git, AWS, Spring Boot, PyTorch, ReactJS",0.59
+"MySQL, ReactJS, Angular, RabbitMQ, Linux, GitLab","GitLab, Flask, ReactJS, PostgreSQL, Kubernetes, Django, RabbitMQ, Photoshop",0.34
+"Angular, Jenkins, TensorFlow, MongoDB, Azure","Terraform, PyTorch, Spring Boot, TensorFlow",0.48
+"Power BI, Azure, PostgreSQL, NodeJS, Ansible","GCP, Elasticsearch, GitLab, Docker, Git, RabbitMQ",0.52
+"Django, PyTorch, Azure, Git, Kubernetes, Power BI","Cypress, GCP, Ansible, NodeJS, PostgreSQL, MySQL, VueJS",0.58
+"GitLab, TensorFlow, RabbitMQ, Django","Jenkins, Canva, RabbitMQ, Redis, Power BI",0.61
+"Spring Boot, GitLab, Tableau, Terraform, Power BI, TensorFlow, Illustrator, GCP","Cypress, Kafka, Canva, RabbitMQ, Docker",0.33
+"GCP, AWS, Angular, TensorFlow, Selenium, ReactJS, Flask, Docker","GCP, Azure, Git, GitHub, Angular, Cypress, Docker",0.27
+"Selenium, GitLab, Flask, VueJS, Kubernetes, FastAPI, Redis, Jenkins","Spring Boot, Redis, GitHub, Kafka",0.69
+"Cypress, PostgreSQL, Django, GitHub, TensorFlow","Power BI, FastAPI, Elasticsearch, Illustrator, Tableau, VueJS",0.55
+"Elasticsearch, Tableau, GitHub, Photoshop","Kafka, MongoDB, Docker, Figma, Selenium",0.39
+"Bash, MySQL, Django, Kafka","FastAPI, Photoshop, Selenium, Azure, GitHub, Figma, AWS",0.73
+"Azure, Tableau, Kubernetes, PyTorch, MySQL, Spring Boot","MySQL, Linux, Bash, GitHub, Kubernetes",0.52
+"Terraform, RabbitMQ, Figma, Flask, Photoshop, TensorFlow, AWS, Power BI","TensorFlow, FastAPI, Flask, Canva, Ansible, MongoDB, Power BI",0.68
+"Flask, MySQL, MongoDB, ReactJS, PostgreSQL, Illustrator","Docker, Tableau, Kafka, Git, MongoDB",0.51
+"Spring Boot, Cypress, Figma, RabbitMQ, Photoshop, GitHub","Jenkins, GitLab, Spring Boot, MySQL, GCP, PostgreSQL, Git",0.81
+"GCP, VueJS, Linux, MongoDB, Figma, Docker","Selenium, Cypress, Jenkins, Photoshop, PostgreSQL, Django, NodeJS",0.76
+"Cypress, PyTorch, NodeJS, Photoshop","GCP, Figma, Illustrator, Docker, RabbitMQ",0.46
+"Elasticsearch, MongoDB, Cypress, Tableau, Canva","GitLab, FastAPI, VueJS, Redis, Linux, Power BI, PostgreSQL",0.65
+"RabbitMQ, TensorFlow, Spring Boot, Django","Django, Elasticsearch, RabbitMQ, Redis, Kafka",0.6
+"PyTorch, Kubernetes, VueJS, Azure, Jenkins, AWS, Terraform, Redis","Figma, PostgreSQL, Cypress, Terraform, MySQL",0.71
+"Docker, Azure, PostgreSQL, GitLab, Illustrator, Photoshop","AWS, Terraform, Django, Canva, Docker",0.36
+"Kafka, NodeJS, Jenkins, PyTorch, Tableau, Cypress, AWS","Photoshop, PyTorch, Bash, ReactJS, Jenkins, VueJS, GitLab",0.6
+"NodeJS, Terraform, Figma, RabbitMQ","Figma, Illustrator, Angular, Tableau",0.66
+"Jenkins, Flask, Figma, NodeJS, GCP, Kubernetes, Spring Boot, Linux","Git, Canva, Linux, NodeJS, Figma, TensorFlow, ReactJS, Tableau",0.24
+"FastAPI, Spring Boot, RabbitMQ, VueJS, GitHub, Elasticsearch, Cypress, Docker","Ansible, Redis, Kafka, GitLab, Django",0.32
+"Azure, Django, MongoDB, Canva, Elasticsearch","PyTorch, Kafka, Canva, RabbitMQ, Git, Linux, Redis",0.19
+"Azure, Kafka, Photoshop, GitLab, Illustrator","VueJS, Kafka, Linux, PostgreSQL",0.46
+"Django, Terraform, Spring Boot, Canva, Tableau, GitLab, Illustrator, GCP","AWS, FastAPI, Bash, NodeJS, Selenium, PostgreSQL, MongoDB",0.61
+"Docker, Flask, PyTorch, Django, ReactJS","RabbitMQ, Azure, Jenkins, Elasticsearch, Figma, PostgreSQL",0.73
+"Jenkins, Angular, Cypress, Terraform, AWS, ReactJS","Canva, Redis, Illustrator, TensorFlow, MongoDB, Jenkins",0.51
+"Spring Boot, TensorFlow, Canva, Docker, Tableau","Redis, Kubernetes, Flask, Azure, GitLab, Photoshop, Linux, Selenium",0.74
+"Canva, Linux, Jenkins, Angular, Spring Boot, Bash, FastAPI, Kafka","Django, ReactJS, GCP, Git, Bash, Jenkins",0.29
+"MongoDB, GCP, FastAPI, Power BI, Ansible","FastAPI, GCP, Linux, AWS, NodeJS",0.24
+"Photoshop, RabbitMQ, Canva, Azure, ReactJS, AWS, Git, GitLab","Selenium, Django, Angular, PyTorch, PostgreSQL, GitLab",0.49
+"Illustrator, GitHub, Linux, Photoshop, Ansible, Canva, AWS","PyTorch, ReactJS, Tableau, Jenkins, Angular, Flask, FastAPI, Elasticsearch",0.56
+"Docker, PostgreSQL, Canva, Jenkins, Selenium","Power BI, GitLab, Jenkins, MongoDB, GCP, VueJS, Illustrator",0.5
+"MongoDB, ReactJS, Angular, Kafka, Ansible, TensorFlow","Spring Boot, Power BI, TensorFlow, MongoDB, Figma, GitLab, Ansible, Bash",0.19
+"FastAPI, Figma, ReactJS, Kubernetes, Photoshop, Azure, NodeJS, Terraform","Bash, Jenkins, Tableau, MySQL",0.49
+"Terraform, Ansible, GCP, Kubernetes","Redis, Kubernetes, Figma, Elasticsearch, VueJS, Terraform, Docker, AWS",0.3
+"Django, ReactJS, VueJS, Kafka","Flask, Azure, Docker, Git",0.6
+"Canva, AWS, Terraform, Bash, VueJS, PostgreSQL, Azure","MongoDB, Linux, Power BI, Kubernetes",0.55
+"GCP, Illustrator, Jenkins, Kubernetes, Elasticsearch, GitHub","Photoshop, ReactJS, Elasticsearch, Linux",0.36
+"Terraform, Cypress, Ansible, GitHub, Azure, Kubernetes, Spring Boot","Figma, Power BI, MongoDB, Elasticsearch, FastAPI, VueJS",0.42
+"RabbitMQ, Selenium, Git, PostgreSQL, NodeJS, Illustrator, AWS, Linux","Canva, Angular, TensorFlow, Ansible, Django, Elasticsearch",0.34
+"PostgreSQL, GitLab, Git, NodeJS, Illustrator, MongoDB","Jenkins, GCP, TensorFlow, Photoshop, NodeJS",0.49
+"Bash, FastAPI, Flask, Cypress, Figma, Terraform, Selenium, PostgreSQL","Angular, Redis, Docker, PyTorch, GitHub, Tableau",0.64
+"PostgreSQL, Photoshop, Selenium, Illustrator, GitHub, Linux, MySQL, FastAPI","Kafka, PostgreSQL, Azure, Django, FastAPI, Bash",0.35
+"AWS, MongoDB, Ansible, Canva","VueJS, GCP, Cypress, PostgreSQL, Git",0.58
+"PostgreSQL, Azure, Git, Bash, Canva, Angular, Kafka","Azure, Ansible, Figma, Terraform, Elasticsearch",0.42
+"TensorFlow, Photoshop, MongoDB, Elasticsearch, Tableau, RabbitMQ, Kubernetes","TensorFlow, Canva, Selenium, GitLab, RabbitMQ, Illustrator, Angular, AWS",0.38
+"Redis, GitHub, Cypress, NodeJS, PyTorch, TensorFlow, VueJS, GCP","Jenkins, Kubernetes, Tableau, PyTorch",0.48
+"Elasticsearch, Flask, Redis, Terraform","Canva, Docker, MySQL, Kafka, VueJS",0.34
+"Bash, PostgreSQL, Azure, Docker, Tableau, Linux","MongoDB, ReactJS, Photoshop, GitHub, Ansible",0.42
+"Flask, MySQL, Django, PyTorch, Linux, Docker, Angular","ReactJS, Canva, Azure, NodeJS, TensorFlow, Jenkins, Redis, RabbitMQ",0.32
+"Ansible, Kubernetes, Selenium, Kafka","Kafka, GitLab, Power BI, GitHub, Canva, Elasticsearch, Docker",0.79
+"Photoshop, VueJS, GCP, PostgreSQL, RabbitMQ, Linux, NodeJS","Photoshop, Azure, GitLab, NodeJS, Canva, ReactJS, AWS",0.51
+"Power BI, Photoshop, Spring Boot, GCP, Figma, Illustrator, PyTorch, FastAPI","Cypress, GitLab, Canva, Flask, FastAPI, Docker",0.4
+"Canva, ReactJS, Figma, GitHub, Django","RabbitMQ, AWS, Spring Boot, GCP, Figma, Tableau, Linux, Terraform",0.53
+"Ansible, Docker, GitHub, PyTorch, Angular, Django","GitLab, GitHub, TensorFlow, Elasticsearch, Git, Jenkins",0.48
+"GitLab, AWS, Cypress, Illustrator, Elasticsearch","TensorFlow, GCP, Cypress, Django, Kubernetes",0.47
+"Cypress, Power BI, FastAPI, Azure, GCP, GitHub, Docker","MySQL, NodeJS, Tableau, Illustrator, Photoshop, Figma, PyTorch",0.59
+"MySQL, GCP, Kubernetes, Tableau, TensorFlow, MongoDB","Ansible, Docker, Spring Boot, Flask, Kafka, Kubernetes, Azure, RabbitMQ",0.61
+"Photoshop, VueJS, Canva, Kubernetes, Angular, Figma, Tableau, GitHub","GCP, Bash, Selenium, Canva, ReactJS, Jenkins, Spring Boot",0.42
+"Ansible, Flask, PostgreSQL, GCP, Django, Kafka","Linux, Ansible, Angular, MongoDB, Redis",0.41
+"PyTorch, ReactJS, Canva, Flask","Django, Angular, PostgreSQL, VueJS, Kubernetes, NodeJS",0.46
+"Terraform, PyTorch, Git, Flask","Azure, Power BI, Elasticsearch, ReactJS, Selenium, Bash, PostgreSQL",0.15
+"GitLab, Cypress, MySQL, GitHub, Canva, Angular, Redis","PostgreSQL, PyTorch, Terraform, Tableau, Django, Ansible",0.27
+"Django, Linux, VueJS, GCP, Spring Boot, MySQL, NodeJS","Kafka, Docker, Cypress, Terraform, Spring Boot",0.71
+"Jenkins, Power BI, MongoDB, Git, Illustrator, GitLab","Ansible, Power BI, Angular, Elasticsearch, Cypress, GCP",0.75
+"Azure, Tableau, Linux, Jenkins","Jenkins, Ansible, GitLab, Angular, FastAPI",0.46
+"Kubernetes, Terraform, Canva, Ansible, Django","Linux, Figma, FastAPI, Flask, ReactJS",0.59
+"AWS, TensorFlow, Kubernetes, Spring Boot, Flask, Tableau","Illustrator, PostgreSQL, PyTorch, Terraform",0.55
+"Figma, GitLab, Docker, Flask, VueJS, Ansible, Spring Boot, PostgreSQL","RabbitMQ, Kafka, Git, Selenium",0.96
+"Ansible, Photoshop, VueJS, Bash, Kafka, Azure","Tableau, Kubernetes, ReactJS, NodeJS, Git",0.67
+"PostgreSQL, Cypress, Bash, Terraform, Power BI, Tableau, Angular, GitLab","NodeJS, PostgreSQL, Photoshop, TensorFlow",0.48
+"Cypress, Angular, GitHub, Canva, Git, Figma, ReactJS","GitLab, Ansible, Bash, GCP, Azure, Terraform, Power BI",0.36
+"GitHub, Canva, NodeJS, FastAPI, GCP","Tableau, Spring Boot, Django, Canva, PostgreSQL, Photoshop",0.26
+"GitHub, Linux, PyTorch, Canva, Docker, Django, RabbitMQ, Git","GitLab, FastAPI, Bash, VueJS, ReactJS, Canva, Photoshop",0.53
+"Docker, Selenium, Tableau, MySQL, Terraform","MongoDB, Django, Cypress, Terraform, Linux, Selenium, Illustrator",0.39
+"ReactJS, RabbitMQ, PyTorch, Ansible","Kubernetes, Elasticsearch, Kafka, Linux, PyTorch, RabbitMQ",0.29
+"Tableau, Flask, Angular, Kubernetes, ReactJS","VueJS, Power BI, Angular, MySQL, Canva",0.4
+"RabbitMQ, Cypress, Power BI, AWS, Django, Figma, Kubernetes","ReactJS, VueJS, RabbitMQ, Jenkins",0.34
+"Redis, Azure, MySQL, Bash, TensorFlow, NodeJS, Photoshop","Redis, Selenium, Bash, PostgreSQL, Ansible, RabbitMQ",0.75
+"MySQL, Kafka, VueJS, Ansible, Terraform, AWS, Redis","Elasticsearch, Bash, Linux, Kubernetes",0.63
+"ReactJS, Angular, GitLab, Bash, GCP, Power BI, Selenium","Jenkins, Canva, MySQL, AWS, Power BI, Ansible, Kubernetes, PostgreSQL",0.5
+"Selenium, Bash, Spring Boot, Angular, Photoshop, Figma, Flask","Linux, Power BI, Flask, MongoDB",0.72
+"Flask, MySQL, TensorFlow, Kubernetes, RabbitMQ","MongoDB, Linux, Selenium, Azure, GCP, Git, Angular, Terraform",0.51
+"Ansible, Kafka, Git, Canva","Docker, Cypress, Kafka, Spring Boot, VueJS, Kubernetes",0.37
+"Photoshop, Figma, Kafka, Bash, Django","VueJS, ReactJS, GitHub, Canva, PostgreSQL, MongoDB, Figma, Tableau",0.73
+"RabbitMQ, TensorFlow, PyTorch, Photoshop, Terraform, Kafka","Flask, PostgreSQL, Terraform, Linux",0.58
+"Power BI, Selenium, GCP, Flask, Ansible","GitHub, Canva, Redis, Terraform, Elasticsearch",0.34
+"MySQL, GitHub, Ansible, Bash, Jenkins","Tableau, Selenium, Canva, Illustrator, Elasticsearch, MySQL, Cypress, Azure",0.47
+"Docker, Azure, Illustrator, Git, TensorFlow, PyTorch, NodeJS","PostgreSQL, MongoDB, Cypress, Git, Ansible",0.37
+"Kafka, Bash, TensorFlow, Selenium, Terraform, PostgreSQL","Power BI, Spring Boot, Azure, PostgreSQL, Docker",0.29
