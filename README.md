@@ -79,6 +79,13 @@ ScoreIt.AI is an AI-powered system designed to:
   - Applies **penalization heuristics**: weak similarity scores are aggressively downweighted to maintain precision.
   - Final tool match score = **average of maximum 1:1 semantic similarity scores**, normalized and boosted for accurate evaluation.
 
+**8. Certification Matching Module**  
+- Dedicated matcher (`CertificationMatching`) that identifies semantic alignment between resume and JD certifications using a refined ensemble technique.
+  - Reuses the core base matching architecture with enhanced scoring logic for certification strings.
+  - Applies **1:1 semantic matching** between resume and job certifications to avoid duplicate inflations.
+  - Incorporates **penalization for weak matches** (e.g., unrelated domains) and **boosts strong semantic matches** (e.g., AWS CSA ↔ AWS Solutions Architect).
+  - Final certification match score = **average of strongest per-certification similarity scores**, with noise control and threshold-aware boosting.
+
 ---
 
 ## Modular Clean Architecture**  
@@ -114,17 +121,21 @@ ScoreIt.AI is an AI-powered system designed to:
 - Simulate real-world workflows: raw input ➔ agent extraction ➔ JSON parsing.
 - Verify correctness of structured outputs without real OpenRouter API dependency (mocked clients).
 
-**3. Coverage Enforcement**  
+**3. Performance Tests**  
+- Measure evaluation metrics like prediction accuracy for each of the matchmaker modules.
+- Measure performance metrics like CPU usage, inference time, loading time for end-to-end matchmaker engine.
+
+**4. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
 - Current total code coverage: **96%** ✅
 
-**4. Test Driven Development (TDD)**  
+**5. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
 - All modules were written with their tests designed first to validate specifications.
 
-**5. Test Achievements**
-- 143 test cases written covering Unit + Integration tests combined.
+**6. Test Achievements**
+- 216 test cases written covering Unit + Integration tests combined.
 - Every new module (Resume Agent, JD Agent, Education Matching, Experience Matching) fully tested.
 
 ---
@@ -187,7 +198,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
 - **In Progress:** OCR Extraction, Web Scraping, Matchmaking Models, Flask APIs, MongoDB Integration, Frontend Development.
 
 ---
