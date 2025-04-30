@@ -27,7 +27,6 @@
              | - POST /extract_resume                      |
              | - POST /extract_jd                          |
              | - POST /make_match                          |
-             | - POST /ai_suggest                          |
              | - Authentication APIs (Login/Signup)        |
              | - Profile APIs (CRUD)                       |
              +---------------------------------------------+

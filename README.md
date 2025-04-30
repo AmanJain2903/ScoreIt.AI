@@ -1,14 +1,14 @@
 # ScoreIt.AI 🚀
 
-![GitHub Release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI)
+[![GitHub Release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI)](https://github.com/AmanJain2903/ScoreIt.AI/releases)
 
-![Build Status](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml/badge.svg)
-![Evaluation Benchmarks](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml/badge.svg)
-![Static Analysis](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/static_analysis.yml/badge.svg)
+[![Build Status](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml/badge.svg)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml)
+[![Evaluation Benchmarks](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml/badge.svg)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml)
+[![Static Analysis](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/static_analysis.yml/badge.svg)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/static_analysis.yml)
 
 ![Python Version](https://img.shields.io/badge/Python-3.11-blue)
-[![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)
-![Benchmarks](https://img.shields.io/badge/Benchmarks-Available-blueviolet)
+[[![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)]
+[![Benchmarks](https://img.shields.io/badge/Benchmarks-Available-blueviolet)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml)
 
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
