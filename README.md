@@ -1,10 +1,10 @@
 # ScoreIt.AI 🚀
 
-[![GitHub release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI?style=flat-square)](https://github.com/AmanJain2903/ScoreIt.AI/releases)
+![GitHub Release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI)
 
 ![Build Status](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml/badge.svg)
 ![Evaluation Benchmarks](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml/badge.svg)
-![Static Analysis](https://github.com/<YOUR_USERNAME>/<YOUR_REPO>/actions/workflows/static_analysis.yml/badge.svg)
+![Static Analysis](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/static_analysis.yml/badge.svg)
 
 ![Python Version](https://img.shields.io/badge/Python-3.11-blue)
 [![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)
