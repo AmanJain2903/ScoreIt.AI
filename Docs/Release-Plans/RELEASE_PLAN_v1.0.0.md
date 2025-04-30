@@ -48,14 +48,14 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Combine multiple matching outputs into an aggregated Match Scores.
 
 **Key Modules:**
-- Education Matchmaker (Built in v0.1.0)
-- Experience Matchmaker (Built in v0.1.0)
-- Technical Skills Matchmaker (Built in v0.1.0)
-- Soft Skills Matchmaker (Built in v0.1.0)
-- Tools Matchmaker (Built in v0.1.0)
-- Certification Matchmaker (Built in v0.1.0)
-- Designation Matchmaker (Built in v0.1.0)
-- Final Matchmaker Engine (To be implemented)
+- Education Matchmaker (Built in v0.1.0) ✅
+- Experience Matchmaker (Built in v0.1.0) ✅
+- Technical Skills Matchmaker (Built in v0.1.0) ✅
+- Soft Skills Matchmaker (Built in v0.1.0) ✅
+- Tools Matchmaker (Built in v0.1.0) ✅
+- Certification Matchmaker (Built in v0.1.0) ✅
+- Designation Matchmaker (Built in v0.1.0) ✅
+- Final Matchmaker Engine (To be implemented) ❌
 
 **Benchmarks:**
 - Performance Metrics For End-to-End Matchmaker Engine (CPU Usage, Inference Time, etc)
@@ -90,7 +90,6 @@ Each version milestone focuses on building a critical subsystem required for a f
 - POST /extract_resume
 - POST /extract_jd
 - POST /make_match
-- POST /ai_suggest
 - Authentication APIs (Login, Signup)
 - Profile CRUD APIs
 
@@ -125,7 +124,6 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Resume Upload Page
 - JD Upload Page
 - Match Score Results View
-- AI Suggestions Panel
 - Settings and History Panels
 
 **Tech Stack:**
