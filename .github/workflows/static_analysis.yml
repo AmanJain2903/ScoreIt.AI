@@ -29,8 +29,7 @@ jobs:
 
       - name: Run Pylint (fail if score < 9.0)
         run: |
-          pylint . --rcfile=.pylintrc > pylint_report.txt || true
-          cat pylint_report.txt
-          SCORE=$(tail -1 pylint_report.txt | grep -o '[0-9.]\+/10' | cut -d/ -f1)
-          echo "Pylint score: $SCORE"
-          awk "BEGIN {exit !($SCORE >= 9.0)}"
+          pylint src/ --rcfile=.pylintrc > pylint_report.txt || true
+          PYLINT_SCORE=$(grep "Your code has been rated at" pylint_report.txt | awk '{print $7}' | cut -d'/' -f1)
+          echo "Pylint Score: $PYLINT_SCORE"
+          awk -v score="$PYLINT_SCORE" 'BEGIN {exit !(score >= 9.0)}'
