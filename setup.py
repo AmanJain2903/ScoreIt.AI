@@ -25,7 +25,11 @@ setup(
         'scikit-learn',
         'pandas',
         'numpy',
-        'regex'
+        'regex',
+        'tqdm',
+        'ruff',
+        'bandit',
+        'pylint'
     ]
 )
 

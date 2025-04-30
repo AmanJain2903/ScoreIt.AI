@@ -161,7 +161,7 @@ class DesignationMatching:
         scores = self.similarity.getEnsembleScore()
         if not scores:
             return 0.0
-        return np.mean(scores)
+        return min(1.0, np.mean(scores))
     
     def getSimilarityScore(self):
         if self.similarity.ensembleScore == []:
@@ -174,7 +174,7 @@ class DesignationMatching:
         scores = self.similarity.getEnsembleScore()
         if not scores:
             return 0.0
-        return np.mean(scores)
+        return min(1.0, np.mean(scores))
     
     def reset(self):
         """Reset the similarity scores and models."""

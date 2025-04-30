@@ -18,13 +18,13 @@ def test_experience_matchmaker_end_to_end(experience_matchmaker):
     if dataset.empty:
         raise ValueError("Dataset is empty. Please check the data path.")
     # Check if the dataset has the required columns
-    required_columns = ['ResumeExperience', 'JDExperience']
+    required_columns = ['resume_exp', 'jd_exp']
     for col in required_columns:
         if col not in dataset.columns:
             raise ValueError(f"Column '{col}' not found in the dataset.")
     for i in range(len(dataset)):
-        resume_experience = dataset['ResumeExperience'].iloc[i]
-        job_experience = dataset['JDExperience'].iloc[i]
+        resume_experience = dataset['resume_exp'].iloc[i]
+        job_experience = dataset['jd_exp'].iloc[i]
 
         # Check if the inputs are valid
         if not isinstance(resume_experience, str) or not isinstance(job_experience, str):

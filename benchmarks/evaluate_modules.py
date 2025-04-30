@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from tqdm import tqdm
@@ -14,11 +14,13 @@ from src.certification_matchmaker.certification_matching import CertificationMat
 from src.designation_matchmaker.designation_matching import DesignationMatching
 from src.resume_extractor_agent.resume_agent import ResumeAgent
 from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
+from src.utils import security
 from dotenv import load_dotenv
 load_dotenv()
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-matchmakerFactor = 1
-agentFactor = 0.1
+matchmakerFactor = 1 # 500 data points out of 500 total
+agentFactor = 0.2 # 100 data points out of 500 total
 
 # Mapping module names to their classes
 matchmaker_configs = {
@@ -32,12 +34,12 @@ matchmaker_configs = {
 }
 matchmaker_dataset_columns = {
     "Education Matching": ["resume_edu", "jd_edu", "label"],
-    "Experience Matching": ["ResumeExperience", "JDExperience", "label"],
-    "Technical Skills Matching": ["ResumeSkill", "JobSkill", "TentativeScore"],
-    "Soft Skills Matching": ["ResumeSkill", "JobSkill", "TentativeScore"],
-    "Tools Matching": ["ResumeTools", "JobTools", "ExpectedScore"],
-    "Certification Matching": ["ResumeCertifications", "JobCertifications", "ExpectedScore"],
-    "Designation Matching": ["ResumeDesignations", "JDDesignations", "ExpectedScore"]
+    "Experience Matching": ["resume_exp", "jd_exp", "label"],
+    "Technical Skills Matching": ["resume_skills", "jd_skills", "label"],
+    "Soft Skills Matching": ["resume_skills", "jd_skills", "label"],
+    "Tools Matching": ["resume_tools", "jd_tools", "label"],
+    "Certification Matching": ["resume_certs", "jd_certs", "label"],
+    "Designation Matching": ["resume_title", "jd_title", "label"]
 }
 agent_configs = {
     "Resume Agent": {"dataset_path": "data/resume_dataset.csv", "matcher_class": ResumeAgent},
@@ -52,7 +54,7 @@ class CustomAccuracy:
     def __init__(self):
         self.name = "Custom Accuracy"
         self.description = "Custom accuracy metric for evaluating model performance."
-    def __call__(self, y_true, y_pred, tolerance=0.20):
+    def __call__(self, y_true, y_pred, tolerance=0.15):
         yTrue = np.array(y_true)
         yPred = np.array(y_pred)
         matches = np.abs(yTrue - yPred) <= tolerance
@@ -64,7 +66,6 @@ class Matchmakers:
         self.metrics = {
             "MAE": mean_absolute_error,
             "MSE": mean_squared_error,
-            "R2": r2_score,
             "Accuracy" : CustomAccuracy()
         }
         self.module_configs = matchmaker_configs
@@ -146,25 +147,29 @@ class ExtractorAgents:
             for col in datasetColumns:
                 if col not in dataset.columns:
                     raise ValueError(f"Column '{col}' not found in the dataset for {moduleName}.")
-            extractor = extractorClass(apiKey=os.getenv("OPENROUTER_API_KEY"),
+            results = {}
+            for i in tqdm(range(len(dataset))):
+                extractor = extractorClass(apiKey=os.getenv("OPENROUTER_API_KEY"),
                                         modelName=None, # Default model will be used
                                         systemPrompt=None, # Default system prompt will be used
                                         useDefaultModelIfNone=True,
                                         useDefaultSystemPromptIfNone=True)
-            results = {}
-            for i in tqdm(range(len(dataset))):
                 inputText = dataset[datasetColumns[0]].iloc[i]
                 extractor.setUserPrompt(inputText)
                 output = extractor.getJsonOutput()
                 results[str(i)] = output
-            extractor.deleteAgent()
+                extractor.deleteAgent()
             scores = {}
             for col in datasetColumns[1:]:
                 score = 0
                 support = 0
                 for i in results.keys():
+                    if col not in results[i]:
+                        continue
                     true = dataset[col].iloc[int(i)]
                     pred = results[i][col]
+                    true = security.sanitizeInput(true, 20000)
+                    pred = security.sanitizeInput(pred, 20000)
                     self.vectorizer.fit([true, pred])
                     vectors = self.vectorizer.transform([true, pred])
                     similarityScore = cosine_similarity(vectors[0], vectors[1])[0][0]
@@ -197,13 +202,13 @@ class ExtractorAgents:
     
 if __name__ == "__main__":
 
-    matchmakers = Matchmakers()
-    matchmakers.runBenchmarks()
-    matchmakers.saveResults()
+    # matchmakers = Matchmakers()
+    # matchmakers.runBenchmarks()
+    # matchmakers.saveResults()
 
-    # extractor_agents = ExtractorAgents()
-    # extractor_agents.runBenchmarks()
-    # extractor_agents.saveResults()
+    extractor_agents = ExtractorAgents()
+    extractor_agents.runBenchmarks()
+    extractor_agents.saveResults()
 
 
             

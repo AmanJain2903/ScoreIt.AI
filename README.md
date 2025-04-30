@@ -1,10 +1,15 @@
 # ScoreIt.AI 🚀
 
+[![GitHub release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI?style=flat-square)](https://github.com/AmanJain2903/ScoreIt.AI/releases)
+
 ![Build Status](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml/badge.svg)
-[![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)
-![Python Version](https://img.shields.io/badge/Python-3.11-blue)
-![Benchmarks](https://img.shields.io/badge/Benchmarks-Available-blueviolet)
 ![Evaluation Benchmarks](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml/badge.svg)
+![Static Analysis](https://github.com/<YOUR_USERNAME>/<YOUR_REPO>/actions/workflows/static_analysis.yml/badge.svg)
+
+![Python Version](https://img.shields.io/badge/Python-3.11-blue)
+[![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)
+![Benchmarks](https://img.shields.io/badge/Benchmarks-Available-blueviolet)
+
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
@@ -144,9 +149,17 @@ ScoreIt.AI is an AI-powered system designed to:
 - Testing-first approach adopted during module development.
 - All modules were written with their tests designed first to validate specifications.
 
-**6. Test Achievements**
-- 240 test cases written covering Unit + Integration tests combined.
+**6. Code Quality & Static Analysis**  
+- `pylint` is used to ensure code style, design consistency, and complexity control.  
+  - CI fails if the overall score is below **9.0/10**.  
+- `bandit` is used for static security analysis of Python code.  
+  - CI fails if any **high** or **medium** severity vulnerabilities are detected.  
+- Both checks are integrated into the CI pipeline and run on every push and pull request.
+
+**7. Test Achievements**
+- 260 test cases written covering Unit + Integration tests combined.
 - Every new module (Resume Agent, JD Agent, Education Matching, Experience Matching) fully tested.
+- Extraction modules ran through benchmarks for accuracy.
 
 ---
 
@@ -157,6 +170,7 @@ ScoreIt.AI is an AI-powered system designed to:
   - Fresh environment creation.
   - Dependency installations.
   - Unit and integration test execution with live coverage tracking.
+  - Static analysis with Bandit and Pylint
 
 **2. Coverage Upload**  
 - Test coverage uploaded automatically to Codecov.
@@ -231,5 +245,9 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## To view Coverage Report
 - Open `code_coverage/coverage_report/index.html` after running tests.
+
+## To run Static Analysis
+- `bandit -r src/`
+- `pylint src/`
 
 ---

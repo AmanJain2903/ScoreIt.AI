@@ -17,11 +17,9 @@
 # RAgent.deleteAgent()
 # print(output)
 
-import os
 import gc
 import json
 from openai import OpenAI
-from dotenv import load_dotenv
 import importlib.resources
 from src.utils import security
 from src.resume_extractor_agent import config
@@ -41,7 +39,7 @@ class ResumeAgent:
             except Exception as e:
                     raise RuntimeError(f"Failed to load system prompt '{systemPromptPath}': {e}")
         if not systemPrompt:
-            raise ValueError(f"System prompt not found.")
+            raise ValueError("System prompt not found.")
         if not apiKey:
             raise ValueError("API key not found.")
         if not modelName:
@@ -149,7 +147,7 @@ class ResumeAgent:
 
     def getJsonOutput(self):
         if not self.jsonOutput:
-            for i in range(3):
+            for _ in range(3):
                 try:
                     self.getResponse()
                     if self.jsonOutput:

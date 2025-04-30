@@ -24,13 +24,8 @@
 
 #     skillMatcher.reset()
 
-import gc
-import numpy as np
 from src.skill_matchmaker import config
-from src.skill_matchmaker.skill_matching import SkillMatching, SkillSimilarity
-from src.utils import security
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
+from src.skill_matchmaker.skill_matching import SkillMatching
 
 config = config.Config()
 
