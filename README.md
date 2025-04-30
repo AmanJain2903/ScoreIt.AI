@@ -7,7 +7,7 @@
 [![Static Analysis](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/static_analysis.yml/badge.svg)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/static_analysis.yml)
 
 ![Python Version](https://img.shields.io/badge/Python-3.11-blue)
-[[![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)]
+[![Overall Coverage](https://codecov.io/gh/AmanJain2903/ScoreIt.AI/branch/main/graph/badge.svg)](https://codecov.io/gh/AmanJain2903/ScoreIt.AI)
 [![Benchmarks](https://img.shields.io/badge/Benchmarks-Available-blueviolet)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/evaluate_modules.yml)
 
 
