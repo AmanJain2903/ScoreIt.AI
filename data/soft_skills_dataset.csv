@@ -1,501 +1,501 @@
-ResumeSkill,JobSkill,TentativeScore
-"Work Ethic, Stress Management, Empathy, Communication, Patience, Active Listening","Public Speaking, Active Listening, Adaptability",0.5745
-"Mentorship, Critical Thinking, Teamwork, Confidence, Conflict Resolution, Interpersonal Skills","Creativity, Patience, Communication, Public Speaking, Time Management",0.4793
-"Active Listening, Creativity, Team Collaboration, Mentorship","Mentorship, Communication, Conflict Resolution, Problem Solving, Confidence",0.5972
-"Public Speaking, Creativity, Adaptability, Analytical Thinking","Creativity, Negotiation, Leadership, Patience, Adaptability, Coaching",0.7285
-"Work Ethic, Active Listening, Critical Thinking, Interpersonal Skills","Active Listening, Adaptability, Mentorship, Effective Communication",0.4649
-"Work Ethic, Time Management, Effective Communication, Communication","Analytical Thinking, Coaching, Patience, Networking",0.4649
-"Team Collaboration, Negotiation, Coaching, Communication, Networking","Problem Solving, Collaboration, Interpersonal Skills, Time Management",0.7369
-"Emotional Intelligence, Conflict Resolution, Time Management, Problem Solving","Critical Thinking, Emotional Intelligence, Mentorship, Team Collaboration, Communication, Coaching",0.6151
-"Networking, Teamwork, Effective Communication, Leadership","Problem Solving, Mentorship, Active Listening",0.4296
-"Time Management, Empathy, Team Collaboration, Decision Making, Effective Communication, Collaboration","Empathy, Teamwork, Emotional Intelligence, Public Speaking, Negotiation",0.5814
-"Analytical Thinking, Emotional Intelligence, Time Management, Creativity, Negotiation","Coaching, Empathy, Analytical Thinking, Public Speaking, Confidence, Negotiation",0.4305
-"Patience, Work Ethic, Problem Solving, Creativity, Empathy","Stress Management, Adaptability, Analytical Thinking, Networking",0.4301
-"Time Management, Stress Management, Networking","Creativity, Critical Thinking, Communication, Leadership, Effective Communication, Active Listening",0.5363
-"Patience, Emotional Intelligence, Empathy, Stress Management","Public Speaking, Mentorship, Work Ethic, Emotional Intelligence, Collaboration",0.213
-"Creativity, Coaching, Critical Thinking, Collaboration","Teamwork, Interpersonal Skills, Coaching",0.2413
-"Networking, Effective Communication, Creativity, Emotional Intelligence, Active Listening, Work Ethic","Confidence, Problem Solving, Negotiation, Interpersonal Skills",0.4157
-"Emotional Intelligence, Active Listening, Time Management, Stress Management, Critical Thinking, Conflict Resolution","Time Management, Critical Thinking, Decision Making",0.3481
-"Problem Solving, Adaptability, Decision Making, Effective Communication","Confidence, Communication, Team Collaboration, Patience",0.5471
-"Collaboration, Teamwork, Confidence, Problem Solving, Networking, Mentorship","Creativity, Public Speaking, Collaboration, Coaching, Critical Thinking, Mentorship",0.3638
-"Work Ethic, Networking, Adaptability, Analytical Thinking, Interpersonal Skills","Active Listening, Effective Communication, Communication, Networking, Mentorship",0.2882
-"Team Collaboration, Coaching, Empathy, Emotional Intelligence, Public Speaking","Problem Solving, Emotional Intelligence, Conflict Resolution",0.7198
-"Teamwork, Stress Management, Networking, Negotiation, Public Speaking, Conflict Resolution","Conflict Resolution, Active Listening, Emotional Intelligence, Work Ethic, Collaboration, Teamwork",0.4661
-"Emotional Intelligence, Active Listening, Adaptability","Analytical Thinking, Networking, Stress Management, Creativity, Work Ethic",0.5101
-"Problem Solving, Work Ethic, Mentorship","Communication, Patience, Critical Thinking, Interpersonal Skills",0.2863
-"Adaptability, Work Ethic, Interpersonal Skills, Time Management, Analytical Thinking","Work Ethic, Analytical Thinking, Active Listening, Effective Communication",0.4183
-"Creativity, Effective Communication, Coaching, Team Collaboration","Critical Thinking, Negotiation, Analytical Thinking, Collaboration",0.5166
-"Work Ethic, Decision Making, Effective Communication, Patience","Coaching, Critical Thinking, Confidence",0.3274
-"Interpersonal Skills, Negotiation, Adaptability, Time Management, Coaching","Negotiation, Empathy, Analytical Thinking, Stress Management, Patience, Active Listening",0.5564
-"Emotional Intelligence, Work Ethic, Confidence","Analytical Thinking, Decision Making, Interpersonal Skills, Conflict Resolution",0.4099
-"Confidence, Creativity, Stress Management","Effective Communication, Team Collaboration, Critical Thinking, Mentorship",0.4562
-"Decision Making, Empathy, Teamwork, Conflict Resolution, Leadership, Time Management","Critical Thinking, Mentorship, Adaptability, Emotional Intelligence, Coaching, Patience",0.4097
-"Patience, Analytical Thinking, Team Collaboration, Conflict Resolution, Emotional Intelligence","Creativity, Public Speaking, Negotiation, Stress Management",0.7778
-"Critical Thinking, Creativity, Public Speaking, Conflict Resolution, Teamwork, Analytical Thinking","Conflict Resolution, Work Ethic, Interpersonal Skills, Emotional Intelligence, Decision Making, Creativity",0.498
-"Active Listening, Collaboration, Conflict Resolution, Negotiation, Leadership, Analytical Thinking","Public Speaking, Mentorship, Active Listening, Problem Solving",0.3413
-"Coaching, Teamwork, Collaboration, Time Management, Effective Communication","Active Listening, Confidence, Critical Thinking, Effective Communication",0.6234
-"Interpersonal Skills, Patience, Negotiation","Networking, Emotional Intelligence, Stress Management, Mentorship, Team Collaboration, Teamwork",0.3169
-"Coaching, Communication, Analytical Thinking, Mentorship, Empathy","Effective Communication, Emotional Intelligence, Patience",0.5313
-"Coaching, Confidence, Team Collaboration, Problem Solving, Active Listening","Creativity, Coaching, Effective Communication",0.206
-"Confidence, Emotional Intelligence, Team Collaboration, Conflict Resolution, Networking, Communication","Teamwork, Critical Thinking, Networking, Patience, Confidence",0.3008
-"Coaching, Confidence, Patience","Conflict Resolution, Public Speaking, Patience, Interpersonal Skills, Communication",0.5295
-"Coaching, Communication, Analytical Thinking, Public Speaking, Adaptability","Analytical Thinking, Adaptability, Stress Management, Collaboration",0.6108
-"Team Collaboration, Creativity, Confidence, Coaching, Teamwork, Public Speaking","Work Ethic, Team Collaboration, Public Speaking, Networking",0.5257
-"Empathy, Emotional Intelligence, Problem Solving","Collaboration, Leadership, Teamwork, Effective Communication, Active Listening",0.4827
-"Emotional Intelligence, Time Management, Effective Communication, Active Listening","Mentorship, Collaboration, Teamwork, Problem Solving, Empathy, Time Management",0.4548
-"Negotiation, Teamwork, Communication, Networking, Interpersonal Skills","Conflict Resolution, Patience, Decision Making, Stress Management, Team Collaboration, Analytical Thinking",0.2782
-"Empathy, Work Ethic, Coaching, Stress Management, Time Management, Creativity","Teamwork, Communication, Decision Making",0.392
-"Emotional Intelligence, Teamwork, Collaboration, Effective Communication","Team Collaboration, Leadership, Teamwork, Analytical Thinking, Emotional Intelligence, Confidence",0.4309
-"Communication, Emotional Intelligence, Time Management, Decision Making, Leadership, Effective Communication","Adaptability, Analytical Thinking, Networking, Confidence",0.6586
-"Collaboration, Problem Solving, Teamwork, Confidence, Active Listening, Team Collaboration","Confidence, Public Speaking, Effective Communication, Patience",0.5515
-"Creativity, Communication, Effective Communication, Analytical Thinking","Conflict Resolution, Communication, Collaboration",0.2355
-"Effective Communication, Adaptability, Stress Management","Critical Thinking, Conflict Resolution, Creativity, Stress Management",0.5486
-"Mentorship, Work Ethic, Effective Communication, Stress Management, Confidence, Teamwork","Empathy, Emotional Intelligence, Leadership, Teamwork",0.4422
-"Public Speaking, Creativity, Team Collaboration, Active Listening, Time Management, Communication","Communication, Public Speaking, Emotional Intelligence",0.3985
-"Leadership, Interpersonal Skills, Negotiation","Empathy, Team Collaboration, Communication, Leadership, Teamwork, Conflict Resolution",0.5918
-"Networking, Leadership, Mentorship, Adaptability, Coaching, Collaboration","Time Management, Empathy, Networking, Collaboration, Analytical Thinking, Negotiation",0.6546
-"Interpersonal Skills, Negotiation, Work Ethic, Networking","Active Listening, Networking, Coaching, Interpersonal Skills",0.6397
-"Public Speaking, Confidence, Emotional Intelligence, Mentorship, Effective Communication","Problem Solving, Leadership, Work Ethic, Interpersonal Skills, Effective Communication",0.3741
-"Critical Thinking, Networking, Negotiation, Mentorship, Coaching","Analytical Thinking, Public Speaking, Stress Management, Work Ethic",0.4536
-"Adaptability, Problem Solving, Active Listening","Conflict Resolution, Stress Management, Negotiation, Team Collaboration, Emotional Intelligence",0.5497
-"Creativity, Conflict Resolution, Public Speaking","Interpersonal Skills, Stress Management, Decision Making",0.6463
-"Collaboration, Confidence, Stress Management, Communication","Emotional Intelligence, Empathy, Patience, Networking",0.4281
-"Active Listening, Patience, Emotional Intelligence","Decision Making, Team Collaboration, Problem Solving",0.4722
-"Adaptability, Critical Thinking, Public Speaking, Coaching","Confidence, Creativity, Active Listening, Work Ethic, Mentorship",0.334
-"Negotiation, Conflict Resolution, Creativity","Stress Management, Conflict Resolution, Public Speaking, Analytical Thinking",0.3206
-"Analytical Thinking, Decision Making, Mentorship, Adaptability, Leadership","Time Management, Team Collaboration, Interpersonal Skills, Coaching, Leadership",0.6219
-"Effective Communication, Problem Solving, Coaching, Decision Making","Adaptability, Effective Communication, Confidence, Time Management, Networking, Decision Making",0.7034
-"Confidence, Work Ethic, Problem Solving","Effective Communication, Team Collaboration, Interpersonal Skills, Confidence, Collaboration, Problem Solving",0.4892
-"Team Collaboration, Negotiation, Conflict Resolution, Interpersonal Skills, Leadership","Creativity, Teamwork, Empathy, Public Speaking, Analytical Thinking, Decision Making",0.6505
-"Decision Making, Collaboration, Conflict Resolution","Collaboration, Coaching, Negotiation, Teamwork, Communication, Critical Thinking",0.5542
-"Teamwork, Networking, Analytical Thinking, Collaboration","Active Listening, Analytical Thinking, Collaboration",0.4032
-"Analytical Thinking, Team Collaboration, Creativity","Mentorship, Adaptability, Decision Making, Teamwork, Negotiation, Confidence",0.5542
-"Problem Solving, Public Speaking, Mentorship, Time Management","Empathy, Active Listening, Collaboration, Conflict Resolution",0.7307
-"Time Management, Patience, Creativity","Critical Thinking, Communication, Confidence, Conflict Resolution, Public Speaking, Negotiation",0.4946
-"Work Ethic, Time Management, Conflict Resolution","Problem Solving, Time Management, Interpersonal Skills, Analytical Thinking, Conflict Resolution",0.7347
-"Coaching, Active Listening, Critical Thinking, Team Collaboration, Stress Management","Conflict Resolution, Collaboration, Communication, Critical Thinking, Decision Making, Patience",0.107
-"Problem Solving, Communication, Mentorship, Negotiation, Public Speaking","Critical Thinking, Creativity, Coaching, Active Listening, Leadership, Interpersonal Skills",0.6233
-"Public Speaking, Decision Making, Networking, Interpersonal Skills, Active Listening","Conflict Resolution, Work Ethic, Public Speaking, Teamwork",0.5131
-"Leadership, Analytical Thinking, Stress Management, Patience","Problem Solving, Confidence, Public Speaking, Team Collaboration, Networking, Empathy",0.4551
-"Team Collaboration, Communication, Negotiation","Critical Thinking, Interpersonal Skills, Stress Management",0.5138
-"Networking, Stress Management, Confidence","Creativity, Active Listening, Interpersonal Skills, Emotional Intelligence, Team Collaboration",0.2019
-"Conflict Resolution, Emotional Intelligence, Collaboration","Stress Management, Decision Making, Team Collaboration, Patience, Public Speaking, Active Listening",0.467
-"Problem Solving, Communication, Empathy, Creativity, Team Collaboration","Confidence, Negotiation, Analytical Thinking",0.5536
-"Coaching, Time Management, Networking","Leadership, Networking, Analytical Thinking, Empathy, Adaptability",0.7217
-"Empathy, Mentorship, Coaching, Stress Management, Decision Making, Analytical Thinking","Active Listening, Networking, Work Ethic",0.4223
-"Negotiation, Mentorship, Conflict Resolution, Stress Management, Communication, Empathy","Analytical Thinking, Creativity, Teamwork, Critical Thinking, Time Management",0.3787
-"Mentorship, Problem Solving, Creativity","Coaching, Team Collaboration, Work Ethic, Interpersonal Skills",0.4247
-"Confidence, Effective Communication, Work Ethic, Leadership, Adaptability, Networking","Collaboration, Decision Making, Active Listening, Interpersonal Skills, Conflict Resolution, Creativity",0.6373
-"Problem Solving, Interpersonal Skills, Team Collaboration, Coaching, Communication","Time Management, Coaching, Stress Management, Active Listening, Problem Solving",0.5493
-"Creativity, Empathy, Patience","Analytical Thinking, Adaptability, Problem Solving, Negotiation",0.4205
-"Networking, Public Speaking, Active Listening, Work Ethic","Conflict Resolution, Negotiation, Teamwork, Mentorship",0.577
-"Creativity, Conflict Resolution, Patience, Analytical Thinking, Mentorship, Empathy","Problem Solving, Work Ethic, Active Listening, Stress Management, Empathy",0.5146
-"Negotiation, Confidence, Emotional Intelligence, Mentorship, Empathy","Conflict Resolution, Leadership, Time Management, Effective Communication, Decision Making, Analytical Thinking",0.6453
-"Leadership, Conflict Resolution, Team Collaboration, Confidence, Creativity","Conflict Resolution, Time Management, Coaching, Negotiation, Team Collaboration",0.3947
-"Creativity, Negotiation, Patience, Networking, Leadership","Problem Solving, Collaboration, Creativity, Confidence",0.4509
-"Analytical Thinking, Teamwork, Negotiation, Adaptability","Coaching, Confidence, Stress Management, Collaboration, Emotional Intelligence",0.4412
-"Communication, Decision Making, Stress Management","Confidence, Time Management, Stress Management, Work Ethic, Public Speaking",0.2805
-"Team Collaboration, Adaptability, Work Ethic, Teamwork, Mentorship","Teamwork, Networking, Problem Solving, Interpersonal Skills, Stress Management, Patience",0.5444
-"Coaching, Stress Management, Teamwork, Leadership","Active Listening, Collaboration, Team Collaboration, Leadership, Empathy, Work Ethic",0.5392
-"Stress Management, Active Listening, Problem Solving","Emotional Intelligence, Creativity, Work Ethic",0.5008
-"Decision Making, Problem Solving, Interpersonal Skills","Problem Solving, Team Collaboration, Time Management, Active Listening, Critical Thinking",0.4648
-"Critical Thinking, Problem Solving, Networking","Negotiation, Conflict Resolution, Critical Thinking, Confidence, Collaboration",0.2877
-"Empathy, Critical Thinking, Decision Making","Conflict Resolution, Critical Thinking, Creativity, Negotiation, Empathy",0.4369
-"Emotional Intelligence, Confidence, Team Collaboration, Analytical Thinking, Mentorship, Decision Making","Teamwork, Problem Solving, Coaching, Analytical Thinking",0.4486
-"Collaboration, Conflict Resolution, Coaching","Empathy, Communication, Negotiation, Networking",0.3797
-"Leadership, Work Ethic, Analytical Thinking, Patience, Confidence","Communication, Emotional Intelligence, Creativity, Teamwork, Empathy",0.4758
-"Negotiation, Stress Management, Adaptability, Decision Making, Coaching","Negotiation, Collaboration, Interpersonal Skills, Communication",0.5606
-"Teamwork, Emotional Intelligence, Problem Solving, Confidence","Confidence, Networking, Leadership, Time Management, Active Listening, Communication",0.7829
-"Coaching, Communication, Work Ethic, Leadership, Emotional Intelligence","Team Collaboration, Empathy, Effective Communication",0.5262
-"Effective Communication, Adaptability, Critical Thinking, Active Listening","Leadership, Emotional Intelligence, Teamwork, Creativity, Stress Management",0.5386
-"Coaching, Adaptability, Empathy, Teamwork, Critical Thinking, Problem Solving","Teamwork, Stress Management, Analytical Thinking, Public Speaking, Team Collaboration",0.4888
-"Negotiation, Critical Thinking, Teamwork, Leadership","Analytical Thinking, Problem Solving, Teamwork, Critical Thinking",0.2122
-"Decision Making, Patience, Empathy","Work Ethic, Mentorship, Decision Making, Patience, Leadership, Teamwork",0.496
-"Active Listening, Mentorship, Work Ethic, Leadership, Empathy","Emotional Intelligence, Leadership, Networking, Negotiation",0.509
-"Teamwork, Work Ethic, Collaboration, Stress Management, Time Management, Public Speaking","Negotiation, Networking, Decision Making, Leadership, Analytical Thinking, Stress Management",0.8695
-"Active Listening, Leadership, Public Speaking","Teamwork, Team Collaboration, Conflict Resolution",0.4711
-"Analytical Thinking, Leadership, Emotional Intelligence","Stress Management, Team Collaboration, Effective Communication, Emotional Intelligence",0.5452
-"Empathy, Critical Thinking, Effective Communication, Communication, Stress Management","Critical Thinking, Coaching, Active Listening, Work Ethic, Empathy, Adaptability",0.4948
-"Leadership, Communication, Creativity, Effective Communication, Negotiation","Teamwork, Active Listening, Collaboration, Conflict Resolution",0.3247
-"Public Speaking, Decision Making, Adaptability","Negotiation, Teamwork, Public Speaking",0.6714
-"Networking, Work Ethic, Coaching, Public Speaking","Problem Solving, Active Listening, Leadership, Teamwork, Critical Thinking, Analytical Thinking",0.6128
-"Leadership, Creativity, Effective Communication, Empathy","Time Management, Networking, Public Speaking, Teamwork, Team Collaboration",0.6187
-"Empathy, Critical Thinking, Patience, Team Collaboration, Active Listening, Communication","Work Ethic, Interpersonal Skills, Leadership, Active Listening, Emotional Intelligence, Conflict Resolution",0.3636
-"Conflict Resolution, Analytical Thinking, Time Management, Decision Making, Leadership, Collaboration","Adaptability, Decision Making, Problem Solving, Public Speaking, Critical Thinking",0.7104
-"Creativity, Interpersonal Skills, Public Speaking, Critical Thinking","Stress Management, Mentorship, Teamwork, Networking, Adaptability",0.2897
-"Stress Management, Effective Communication, Confidence","Empathy, Interpersonal Skills, Effective Communication, Coaching, Work Ethic",0.588
-"Leadership, Stress Management, Negotiation, Team Collaboration, Confidence, Active Listening","Creativity, Patience, Collaboration",0.8286
-"Public Speaking, Leadership, Networking, Negotiation, Creativity, Communication","Mentorship, Analytical Thinking, Empathy, Work Ethic, Emotional Intelligence",0.3514
-"Analytical Thinking, Conflict Resolution, Patience, Effective Communication, Networking","Problem Solving, Team Collaboration, Empathy, Collaboration, Conflict Resolution, Time Management",0.4151
-"Conflict Resolution, Coaching, Effective Communication","Teamwork, Analytical Thinking, Decision Making, Leadership, Empathy, Conflict Resolution",0.5149
-"Critical Thinking, Confidence, Team Collaboration, Collaboration","Time Management, Interpersonal Skills, Teamwork, Work Ethic",0.4245
-"Creativity, Time Management, Active Listening, Interpersonal Skills, Critical Thinking","Decision Making, Confidence, Networking, Interpersonal Skills",0.2674
-"Interpersonal Skills, Stress Management, Empathy, Public Speaking, Problem Solving","Communication, Conflict Resolution, Time Management, Problem Solving, Empathy",0.5103
-"Adaptability, Critical Thinking, Mentorship, Coaching, Active Listening","Analytical Thinking, Active Listening, Stress Management, Adaptability, Leadership, Coaching",0.3407
-"Team Collaboration, Emotional Intelligence, Problem Solving","Networking, Problem Solving, Analytical Thinking",0.571
-"Confidence, Patience, Critical Thinking, Public Speaking","Networking, Adaptability, Effective Communication, Stress Management",0.3621
-"Teamwork, Problem Solving, Negotiation, Collaboration, Team Collaboration, Mentorship","Interpersonal Skills, Effective Communication, Collaboration, Mentorship, Public Speaking, Decision Making",0.7325
-"Team Collaboration, Mentorship, Problem Solving, Coaching, Patience","Patience, Work Ethic, Negotiation, Collaboration",0.3825
-"Empathy, Emotional Intelligence, Work Ethic","Empathy, Analytical Thinking, Collaboration, Decision Making",0.4517
-"Networking, Critical Thinking, Emotional Intelligence","Empathy, Time Management, Problem Solving, Networking",0.622
-"Mentorship, Stress Management, Public Speaking, Time Management, Decision Making","Time Management, Patience, Interpersonal Skills, Confidence, Effective Communication, Adaptability",0.3154
-"Negotiation, Mentorship, Interpersonal Skills","Adaptability, Decision Making, Critical Thinking, Communication, Active Listening, Empathy",0.5341
-"Negotiation, Leadership, Problem Solving","Leadership, Analytical Thinking, Empathy, Adaptability, Work Ethic",0.6961
-"Creativity, Coaching, Critical Thinking","Collaboration, Public Speaking, Confidence, Critical Thinking",0.2589
-"Collaboration, Adaptability, Conflict Resolution, Coaching, Stress Management, Active Listening","Problem Solving, Networking, Empathy, Mentorship, Time Management",0.5277
-"Mentorship, Teamwork, Emotional Intelligence","Decision Making, Adaptability, Patience",0.539
-"Mentorship, Emotional Intelligence, Critical Thinking, Decision Making","Emotional Intelligence, Confidence, Empathy, Creativity",0.6173
-"Active Listening, Coaching, Effective Communication","Negotiation, Stress Management, Collaboration, Time Management, Active Listening, Patience",0.3145
-"Team Collaboration, Networking, Problem Solving, Analytical Thinking, Patience","Decision Making, Networking, Communication, Analytical Thinking",0.3019
-"Mentorship, Communication, Team Collaboration, Stress Management","Public Speaking, Networking, Coaching, Problem Solving, Work Ethic",0.5783
-"Decision Making, Stress Management, Active Listening, Confidence","Time Management, Conflict Resolution, Networking, Team Collaboration, Leadership, Interpersonal Skills",0.5445
-"Leadership, Interpersonal Skills, Active Listening, Networking, Coaching","Stress Management, Decision Making, Public Speaking, Problem Solving",0.5376
-"Conflict Resolution, Time Management, Work Ethic","Coaching, Mentorship, Critical Thinking, Decision Making, Effective Communication",0.552
-"Teamwork, Time Management, Public Speaking","Problem Solving, Patience, Work Ethic, Networking, Teamwork, Interpersonal Skills",0.398
-"Active Listening, Leadership, Problem Solving, Negotiation, Collaboration","Emotional Intelligence, Leadership, Coaching, Critical Thinking, Decision Making, Confidence",0.5348
-"Teamwork, Networking, Effective Communication, Adaptability","Confidence, Communication, Team Collaboration",0.544
-"Stress Management, Mentorship, Problem Solving, Patience, Collaboration, Teamwork","Time Management, Work Ethic, Creativity, Patience, Collaboration, Negotiation",0.3928
-"Networking, Analytical Thinking, Patience","Coaching, Adaptability, Analytical Thinking, Time Management, Mentorship",0.7799
-"Problem Solving, Team Collaboration, Empathy, Collaboration","Effective Communication, Problem Solving, Teamwork, Communication",0.5711
-"Confidence, Critical Thinking, Conflict Resolution, Interpersonal Skills, Communication, Emotional Intelligence","Collaboration, Communication, Decision Making, Leadership",0.3213
-"Coaching, Networking, Teamwork, Stress Management","Empathy, Creativity, Teamwork, Leadership, Emotional Intelligence, Team Collaboration",0.5985
-"Critical Thinking, Team Collaboration, Interpersonal Skills, Analytical Thinking, Empathy","Active Listening, Adaptability, Work Ethic, Communication",0.3538
-"Decision Making, Creativity, Communication, Negotiation, Empathy, Networking","Effective Communication, Public Speaking, Creativity, Coaching, Leadership, Mentorship",0.6181
-"Adaptability, Emotional Intelligence, Teamwork, Communication, Stress Management","Team Collaboration, Empathy, Collaboration, Emotional Intelligence",0.6738
-"Problem Solving, Effective Communication, Emotional Intelligence, Active Listening, Work Ethic, Collaboration","Confidence, Work Ethic, Public Speaking, Negotiation, Problem Solving, Active Listening",0.3769
-"Empathy, Critical Thinking, Communication, Emotional Intelligence","Critical Thinking, Creativity, Teamwork",0.6445
-"Teamwork, Critical Thinking, Networking, Stress Management, Public Speaking, Confidence","Adaptability, Team Collaboration, Interpersonal Skills",0.5619
-"Leadership, Effective Communication, Confidence, Collaboration","Creativity, Team Collaboration, Public Speaking",0.6233
-"Creativity, Problem Solving, Teamwork, Leadership, Analytical Thinking, Conflict Resolution","Interpersonal Skills, Decision Making, Coaching, Problem Solving, Creativity, Adaptability",0.7845
-"Networking, Team Collaboration, Emotional Intelligence, Interpersonal Skills","Confidence, Networking, Collaboration, Problem Solving",0.4632
-"Empathy, Mentorship, Patience","Emotional Intelligence, Empathy, Leadership, Problem Solving, Team Collaboration",0.3869
-"Teamwork, Stress Management, Adaptability, Time Management, Effective Communication","Analytical Thinking, Problem Solving, Collaboration, Teamwork, Public Speaking",0.3666
-"Mentorship, Stress Management, Adaptability, Patience","Collaboration, Stress Management, Empathy, Work Ethic, Effective Communication",0.3776
-"Networking, Team Collaboration, Analytical Thinking, Negotiation, Patience","Mentorship, Collaboration, Time Management, Coaching, Empathy, Networking",0.4884
-"Leadership, Work Ethic, Coaching, Critical Thinking, Emotional Intelligence","Effective Communication, Interpersonal Skills, Adaptability, Communication, Time Management, Stress Management",0.5512
-"Decision Making, Analytical Thinking, Mentorship, Confidence, Adaptability","Mentorship, Collaboration, Active Listening, Confidence, Negotiation, Work Ethic",0.5415
-"Confidence, Problem Solving, Creativity, Networking, Interpersonal Skills, Patience","Patience, Time Management, Problem Solving, Decision Making, Analytical Thinking",0.6241
-"Team Collaboration, Teamwork, Emotional Intelligence","Conflict Resolution, Teamwork, Interpersonal Skills, Stress Management, Adaptability, Negotiation",0.502
-"Teamwork, Effective Communication, Networking, Creativity, Problem Solving","Collaboration, Communication, Interpersonal Skills, Decision Making, Stress Management, Patience",0.718
-"Active Listening, Work Ethic, Emotional Intelligence, Team Collaboration, Interpersonal Skills, Critical Thinking","Effective Communication, Stress Management, Patience",0.4603
-"Adaptability, Teamwork, Time Management, Negotiation","Critical Thinking, Decision Making, Networking, Public Speaking, Problem Solving, Interpersonal Skills",0.908
-"Empathy, Stress Management, Active Listening, Analytical Thinking, Public Speaking, Patience","Coaching, Public Speaking, Problem Solving",0.5939
-"Conflict Resolution, Analytical Thinking, Stress Management, Problem Solving","Mentorship, Decision Making, Empathy, Collaboration",0.3714
-"Time Management, Coaching, Creativity, Team Collaboration, Networking, Mentorship","Effective Communication, Interpersonal Skills, Patience, Collaboration",0.3394
-"Problem Solving, Decision Making, Communication","Decision Making, Adaptability, Emotional Intelligence, Active Listening, Problem Solving, Critical Thinking",0.5724
-"Analytical Thinking, Active Listening, Creativity, Mentorship, Patience","Active Listening, Communication, Problem Solving, Patience, Stress Management",0.4665
-"Collaboration, Leadership, Public Speaking, Conflict Resolution, Problem Solving, Team Collaboration","Networking, Time Management, Active Listening, Empathy, Public Speaking",0.6071
-"Work Ethic, Adaptability, Coaching, Networking, Active Listening, Creativity","Confidence, Negotiation, Teamwork, Networking, Coaching, Interpersonal Skills",0.571
-"Collaboration, Leadership, Stress Management, Work Ethic","Interpersonal Skills, Communication, Coaching, Negotiation",0.4891
-"Time Management, Critical Thinking, Conflict Resolution, Emotional Intelligence","Analytical Thinking, Teamwork, Time Management, Critical Thinking, Stress Management, Adaptability",0.373
-"Time Management, Interpersonal Skills, Negotiation, Networking, Creativity, Critical Thinking","Empathy, Coaching, Adaptability, Work Ethic, Negotiation, Interpersonal Skills",0.2728
-"Analytical Thinking, Decision Making, Negotiation","Problem Solving, Empathy, Analytical Thinking, Teamwork",0.433
-"Adaptability, Analytical Thinking, Team Collaboration, Patience","Collaboration, Teamwork, Negotiation",0.6285
-"Critical Thinking, Confidence, Networking, Leadership, Analytical Thinking, Coaching","Coaching, Team Collaboration, Conflict Resolution",0.5321
-"Teamwork, Confidence, Communication, Collaboration","Interpersonal Skills, Communication, Effective Communication",0.3131
-"Negotiation, Collaboration, Teamwork, Critical Thinking, Mentorship","Empathy, Confidence, Public Speaking",0.526
-"Decision Making, Creativity, Coaching, Critical Thinking","Negotiation, Communication, Conflict Resolution",0.5578
-"Communication, Empathy, Collaboration, Adaptability","Work Ethic, Coaching, Mentorship, Effective Communication, Confidence",0.3674
-"Time Management, Active Listening, Effective Communication","Collaboration, Confidence, Emotional Intelligence, Decision Making, Analytical Thinking, Time Management",0.5231
-"Time Management, Adaptability, Critical Thinking","Active Listening, Effective Communication, Mentorship, Public Speaking",0.5087
-"Coaching, Collaboration, Emotional Intelligence","Public Speaking, Coaching, Conflict Resolution, Creativity, Time Management",0.3286
-"Empathy, Leadership, Communication, Adaptability, Work Ethic","Patience, Effective Communication, Interpersonal Skills",0.5537
-"Negotiation, Patience, Public Speaking","Conflict Resolution, Time Management, Confidence, Mentorship",0.5841
-"Public Speaking, Empathy, Patience, Teamwork, Adaptability, Analytical Thinking","Collaboration, Patience, Decision Making, Empathy, Time Management",0.6625
-"Work Ethic, Public Speaking, Effective Communication, Problem Solving, Coaching","Stress Management, Collaboration, Networking, Creativity",0.6581
-"Negotiation, Confidence, Effective Communication","Effective Communication, Collaboration, Patience, Critical Thinking, Interpersonal Skills",0.2933
-"Problem Solving, Creativity, Public Speaking, Time Management, Conflict Resolution, Collaboration","Adaptability, Active Listening, Empathy",0.3593
-"Adaptability, Negotiation, Coaching","Collaboration, Negotiation, Decision Making, Active Listening, Problem Solving, Communication",0.5773
-"Coaching, Interpersonal Skills, Critical Thinking","Collaboration, Communication, Patience, Time Management, Confidence, Emotional Intelligence",0.5771
-"Conflict Resolution, Work Ethic, Patience, Effective Communication","Decision Making, Teamwork, Analytical Thinking, Public Speaking",0.5773
-"Conflict Resolution, Public Speaking, Patience","Empathy, Communication, Stress Management, Adaptability, Coaching",1.0
-"Communication, Empathy, Patience, Conflict Resolution, Leadership, Networking","Stress Management, Empathy, Mentorship, Patience, Conflict Resolution, Creativity",0.5856
-"Work Ethic, Communication, Adaptability, Teamwork, Effective Communication","Problem Solving, Coaching, Creativity, Leadership, Effective Communication, Confidence",0.6703
-"Active Listening, Teamwork, Collaboration, Negotiation, Conflict Resolution, Time Management","Stress Management, Work Ethic, Interpersonal Skills, Conflict Resolution, Effective Communication, Patience",0.6431
-"Effective Communication, Active Listening, Time Management, Emotional Intelligence, Patience, Negotiation","Creativity, Team Collaboration, Networking, Interpersonal Skills, Problem Solving, Stress Management",0.5977
-"Conflict Resolution, Communication, Work Ethic, Interpersonal Skills, Team Collaboration","Patience, Emotional Intelligence, Stress Management, Negotiation, Public Speaking, Creativity",0.4527
-"Mentorship, Confidence, Collaboration, Public Speaking","Effective Communication, Mentorship, Time Management",0.6138
-"Networking, Team Collaboration, Effective Communication","Creativity, Leadership, Public Speaking, Collaboration, Patience, Coaching",0.3841
-"Communication, Decision Making, Work Ethic, Active Listening","Coaching, Emotional Intelligence, Active Listening, Empathy, Mentorship, Collaboration",0.4645
-"Confidence, Mentorship, Coaching","Conflict Resolution, Analytical Thinking, Emotional Intelligence, Problem Solving, Patience",0.4272
-"Creativity, Empathy, Teamwork, Team Collaboration, Time Management","Problem Solving, Teamwork, Empathy, Active Listening, Conflict Resolution, Mentorship",0.5123
-"Adaptability, Decision Making, Networking, Confidence","Communication, Coaching, Patience, Creativity, Time Management, Decision Making",0.8472
-"Analytical Thinking, Confidence, Creativity, Problem Solving, Public Speaking, Empathy","Networking, Time Management, Public Speaking, Empathy",0.2199
-"Patience, Analytical Thinking, Team Collaboration","Networking, Coaching, Teamwork, Conflict Resolution, Adaptability",0.6029
-"Stress Management, Negotiation, Active Listening, Confidence","Stress Management, Emotional Intelligence, Time Management",0.2581
-"Patience, Negotiation, Stress Management","Analytical Thinking, Mentorship, Team Collaboration, Empathy, Effective Communication, Negotiation",0.4292
-"Effective Communication, Mentorship, Conflict Resolution, Public Speaking","Negotiation, Problem Solving, Interpersonal Skills, Empathy",0.6633
-"Confidence, Patience, Mentorship, Problem Solving, Teamwork, Communication","Empathy, Adaptability, Team Collaboration",0.5096
-"Coaching, Active Listening, Collaboration","Mentorship, Decision Making, Conflict Resolution, Emotional Intelligence",0.3383
-"Decision Making, Coaching, Team Collaboration, Adaptability","Coaching, Stress Management, Emotional Intelligence, Adaptability",0.3927
-"Critical Thinking, Collaboration, Leadership, Time Management, Conflict Resolution","Effective Communication, Negotiation, Stress Management, Leadership",0.6019
-"Collaboration, Empathy, Stress Management","Emotional Intelligence, Empathy, Patience, Work Ethic, Creativity, Team Collaboration",0.3904
-"Active Listening, Creativity, Adaptability, Teamwork","Networking, Stress Management, Negotiation, Effective Communication, Mentorship",0.5325
-"Effective Communication, Communication, Interpersonal Skills","Time Management, Conflict Resolution, Patience, Leadership",0.5068
-"Public Speaking, Effective Communication, Emotional Intelligence, Negotiation, Creativity, Interpersonal Skills","Effective Communication, Public Speaking, Analytical Thinking, Adaptability, Critical Thinking, Communication",0.4023
-"Mentorship, Teamwork, Stress Management","Creativity, Collaboration, Patience",0.8216
-"Decision Making, Work Ethic, Coaching, Critical Thinking","Networking, Problem Solving, Team Collaboration",0.5951
-"Adaptability, Teamwork, Stress Management, Patience","Decision Making, Time Management, Communication",0.1962
-"Creativity, Negotiation, Active Listening, Analytical Thinking, Adaptability, Stress Management","Interpersonal Skills, Collaboration, Empathy, Teamwork, Problem Solving, Patience",0.528
-"Creativity, Leadership, Work Ethic","Mentorship, Problem Solving, Creativity",0.4007
-"Critical Thinking, Conflict Resolution, Confidence, Problem Solving, Teamwork, Decision Making","Team Collaboration, Creativity, Interpersonal Skills, Effective Communication, Negotiation",0.6279
-"Time Management, Analytical Thinking, Leadership, Collaboration, Public Speaking","Time Management, Critical Thinking, Mentorship, Negotiation",0.3811
-"Negotiation, Mentorship, Analytical Thinking, Adaptability, Interpersonal Skills","Creativity, Time Management, Effective Communication, Negotiation, Leadership",0.4828
-"Leadership, Coaching, Teamwork","Confidence, Conflict Resolution, Active Listening",0.5757
-"Interpersonal Skills, Critical Thinking, Time Management","Analytical Thinking, Collaboration, Emotional Intelligence, Public Speaking, Work Ethic, Effective Communication",0.6299
-"Public Speaking, Confidence, Collaboration","Negotiation, Public Speaking, Communication, Work Ethic, Collaboration, Problem Solving",0.32
-"Critical Thinking, Mentorship, Interpersonal Skills, Work Ethic, Creativity","Empathy, Patience, Analytical Thinking, Collaboration, Decision Making, Coaching",0.4498
-"Critical Thinking, Active Listening, Communication, Coaching, Interpersonal Skills","Patience, Team Collaboration, Mentorship, Teamwork, Creativity",0.4288
-"Time Management, Negotiation, Decision Making, Public Speaking, Patience, Mentorship","Decision Making, Adaptability, Coaching",0.402
-"Decision Making, Collaboration, Patience, Communication, Stress Management, Critical Thinking","Emotional Intelligence, Collaboration, Coaching, Work Ethic, Leadership",0.7648
-"Leadership, Collaboration, Confidence, Emotional Intelligence, Conflict Resolution, Teamwork","Conflict Resolution, Negotiation, Work Ethic, Teamwork, Effective Communication, Mentorship",0.5607
-"Empathy, Negotiation, Active Listening, Collaboration","Collaboration, Work Ethic, Leadership, Time Management, Mentorship, Interpersonal Skills",0.3109
-"Critical Thinking, Time Management, Empathy","Stress Management, Emotional Intelligence, Collaboration, Patience",0.6377
-"Analytical Thinking, Networking, Team Collaboration","Mentorship, Stress Management, Adaptability, Negotiation, Leadership",0.8183
-"Leadership, Collaboration, Interpersonal Skills, Effective Communication, Decision Making, Conflict Resolution","Patience, Analytical Thinking, Networking, Decision Making, Coaching, Leadership",0.6549
-"Coaching, Mentorship, Emotional Intelligence, Empathy, Creativity","Networking, Active Listening, Adaptability, Effective Communication, Creativity",0.2721
-"Active Listening, Mentorship, Stress Management","Confidence, Teamwork, Critical Thinking, Team Collaboration, Coaching",0.4274
-"Emotional Intelligence, Work Ethic, Networking, Stress Management, Patience, Adaptability","Leadership, Effective Communication, Adaptability, Team Collaboration, Emotional Intelligence",0.69
-"Teamwork, Empathy, Patience, Creativity, Critical Thinking","Empathy, Problem Solving, Time Management",0.3938
-"Teamwork, Mentorship, Networking, Creativity","Teamwork, Stress Management, Mentorship, Public Speaking",0.5666
-"Empathy, Critical Thinking, Time Management","Analytical Thinking, Patience, Adaptability, Networking",0.6162
-"Time Management, Decision Making, Teamwork, Problem Solving","Teamwork, Leadership, Interpersonal Skills, Team Collaboration",0.361
-"Work Ethic, Creativity, Leadership, Coaching, Public Speaking","Analytical Thinking, Coaching, Communication, Work Ethic, Stress Management",0.4911
-"Networking, Stress Management, Confidence, Coaching, Active Listening, Effective Communication","Critical Thinking, Time Management, Analytical Thinking, Empathy, Team Collaboration, Conflict Resolution",0.0138
-"Communication, Conflict Resolution, Work Ethic, Adaptability","Problem Solving, Mentorship, Collaboration, Patience, Interpersonal Skills",0.3463
-"Creativity, Effective Communication, Leadership, Mentorship, Coaching, Stress Management","Empathy, Effective Communication, Interpersonal Skills",0.4621
-"Patience, Coaching, Time Management, Empathy, Interpersonal Skills","Critical Thinking, Teamwork, Conflict Resolution, Mentorship, Public Speaking, Active Listening",0.3128
-"Leadership, Mentorship, Critical Thinking, Adaptability","Coaching, Stress Management, Interpersonal Skills",0.7449
-"Interpersonal Skills, Team Collaboration, Networking","Effective Communication, Critical Thinking, Time Management, Decision Making, Interpersonal Skills",0.2855
-"Adaptability, Empathy, Decision Making, Critical Thinking","Leadership, Creativity, Emotional Intelligence, Active Listening, Critical Thinking",0.434
-"Team Collaboration, Problem Solving, Creativity","Emotional Intelligence, Confidence, Coaching, Analytical Thinking, Leadership, Teamwork",0.5196
-"Coaching, Team Collaboration, Patience, Empathy, Critical Thinking, Networking","Decision Making, Problem Solving, Conflict Resolution",0.7162
-"Effective Communication, Active Listening, Critical Thinking","Team Collaboration, Leadership, Time Management, Creativity, Teamwork, Interpersonal Skills",0.2846
-"Critical Thinking, Mentorship, Networking, Teamwork, Leadership","Stress Management, Mentorship, Team Collaboration, Critical Thinking, Adaptability",0.6745
-"Analytical Thinking, Teamwork, Leadership","Stress Management, Teamwork, Coaching, Time Management, Empathy, Creativity",0.5015
-"Stress Management, Confidence, Effective Communication, Communication","Critical Thinking, Collaboration, Stress Management, Adaptability, Interpersonal Skills, Mentorship",0.3528
-"Adaptability, Confidence, Emotional Intelligence, Stress Management, Work Ethic","Decision Making, Conflict Resolution, Critical Thinking, Coaching",0.5693
-"Teamwork, Empathy, Collaboration, Negotiation, Effective Communication, Patience","Creativity, Team Collaboration, Collaboration, Time Management, Analytical Thinking",0.5299
-"Leadership, Problem Solving, Empathy, Communication, Active Listening","Negotiation, Emotional Intelligence, Team Collaboration, Teamwork, Communication",0.41
-"Work Ethic, Public Speaking, Collaboration, Problem Solving","Work Ethic, Time Management, Public Speaking, Negotiation, Teamwork",0.5105
-"Active Listening, Analytical Thinking, Time Management","Conflict Resolution, Communication, Leadership, Teamwork",0.4422
-"Interpersonal Skills, Networking, Problem Solving","Creativity, Coaching, Work Ethic, Team Collaboration",0.517
-"Negotiation, Effective Communication, Leadership","Empathy, Decision Making, Stress Management",0.5993
-"Communication, Coaching, Collaboration, Interpersonal Skills, Empathy","Teamwork, Work Ethic, Communication",0.7379
-"Negotiation, Leadership, Creativity, Public Speaking","Critical Thinking, Emotional Intelligence, Time Management, Collaboration, Active Listening, Interpersonal Skills",0.3143
-"Networking, Patience, Problem Solving, Work Ethic, Collaboration","Empathy, Public Speaking, Negotiation, Team Collaboration, Active Listening",0.82
-"Public Speaking, Networking, Empathy, Emotional Intelligence, Conflict Resolution, Team Collaboration","Team Collaboration, Decision Making, Public Speaking, Conflict Resolution",0.2072
-"Effective Communication, Coaching, Emotional Intelligence, Collaboration","Emotional Intelligence, Team Collaboration, Critical Thinking, Public Speaking",0.4772
-"Leadership, Coaching, Public Speaking","Networking, Empathy, Analytical Thinking, Creativity",0.5882
-"Decision Making, Interpersonal Skills, Public Speaking, Stress Management, Problem Solving, Communication","Coaching, Conflict Resolution, Patience, Leadership, Stress Management, Effective Communication",0.5421
-"Confidence, Team Collaboration, Decision Making, Emotional Intelligence, Collaboration, Adaptability","Mentorship, Analytical Thinking, Leadership",0.4066
-"Team Collaboration, Mentorship, Negotiation, Stress Management","Mentorship, Interpersonal Skills, Stress Management",0.4688
-"Analytical Thinking, Negotiation, Conflict Resolution","Work Ethic, Team Collaboration, Collaboration, Active Listening",0.426
-"Active Listening, Effective Communication, Mentorship, Confidence","Work Ethic, Empathy, Confidence, Analytical Thinking, Public Speaking, Stress Management",0.4116
-"Communication, Critical Thinking, Emotional Intelligence, Decision Making","Networking, Negotiation, Mentorship, Teamwork, Effective Communication",0.6274
-"Time Management, Public Speaking, Communication, Teamwork, Interpersonal Skills, Critical Thinking","Public Speaking, Decision Making, Emotional Intelligence, Networking, Critical Thinking, Stress Management",0.5536
-"Stress Management, Analytical Thinking, Interpersonal Skills, Collaboration","Stress Management, Work Ethic, Leadership, Decision Making, Communication",0.3961
-"Public Speaking, Patience, Interpersonal Skills","Effective Communication, Problem Solving, Team Collaboration, Adaptability, Networking, Confidence",0.6349
-"Adaptability, Analytical Thinking, Critical Thinking, Negotiation, Public Speaking","Confidence, Conflict Resolution, Creativity, Interpersonal Skills, Leadership",0.5461
-"Effective Communication, Emotional Intelligence, Time Management, Empathy, Team Collaboration, Teamwork","Stress Management, Time Management, Collaboration, Teamwork, Problem Solving, Analytical Thinking",0.6219
-"Collaboration, Emotional Intelligence, Active Listening, Problem Solving, Coaching","Communication, Patience, Time Management, Stress Management, Public Speaking",0.5944
-"Stress Management, Critical Thinking, Negotiation, Analytical Thinking","Work Ethic, Adaptability, Emotional Intelligence, Communication, Confidence",0.3757
-"Active Listening, Public Speaking, Confidence, Leadership, Adaptability, Communication","Networking, Analytical Thinking, Effective Communication, Creativity",0.416
-"Leadership, Patience, Interpersonal Skills, Teamwork, Work Ethic, Stress Management","Problem Solving, Conflict Resolution, Empathy, Negotiation, Collaboration, Confidence",0.6121
-"Public Speaking, Communication, Team Collaboration, Emotional Intelligence, Negotiation","Critical Thinking, Effective Communication, Mentorship, Communication, Problem Solving",0.5916
-"Communication, Emotional Intelligence, Critical Thinking","Interpersonal Skills, Team Collaboration, Confidence, Effective Communication",0.4969
-"Conflict Resolution, Team Collaboration, Effective Communication, Communication, Leadership","Networking, Conflict Resolution, Public Speaking",0.5176
-"Collaboration, Creativity, Emotional Intelligence, Empathy, Effective Communication","Emotional Intelligence, Coaching, Active Listening",0.6916
-"Work Ethic, Analytical Thinking, Emotional Intelligence, Negotiation","Analytical Thinking, Teamwork, Conflict Resolution, Time Management",0.4113
-"Patience, Critical Thinking, Public Speaking, Work Ethic, Problem Solving","Networking, Collaboration, Coaching, Effective Communication, Communication",0.5821
-"Team Collaboration, Stress Management, Patience","Mentorship, Creativity, Effective Communication, Decision Making, Collaboration",0.4697
-"Conflict Resolution, Leadership, Creativity, Critical Thinking, Active Listening","Active Listening, Public Speaking, Teamwork, Leadership",0.4673
-"Creativity, Problem Solving, Networking","Patience, Time Management, Communication, Negotiation, Interpersonal Skills, Stress Management",0.6648
-"Communication, Interpersonal Skills, Leadership","Team Collaboration, Adaptability, Time Management, Emotional Intelligence, Leadership",0.6238
-"Stress Management, Emotional Intelligence, Public Speaking, Coaching","Teamwork, Networking, Stress Management, Negotiation, Public Speaking, Time Management",0.622
-"Effective Communication, Coaching, Interpersonal Skills, Decision Making","Patience, Teamwork, Work Ethic",0.6958
-"Patience, Empathy, Negotiation, Adaptability, Problem Solving","Communication, Time Management, Decision Making, Stress Management, Collaboration, Confidence",0.5032
-"Public Speaking, Confidence, Stress Management","Patience, Communication, Active Listening",0.6023
-"Team Collaboration, Stress Management, Active Listening, Interpersonal Skills, Teamwork","Emotional Intelligence, Analytical Thinking, Coaching, Conflict Resolution, Mentorship",0.4535
-"Critical Thinking, Analytical Thinking, Public Speaking, Conflict Resolution, Collaboration, Creativity","Teamwork, Patience, Active Listening, Collaboration, Decision Making",0.5486
-"Work Ethic, Critical Thinking, Adaptability, Analytical Thinking","Adaptability, Decision Making, Critical Thinking",0.4805
-"Active Listening, Stress Management, Effective Communication, Emotional Intelligence, Adaptability","Mentorship, Stress Management, Creativity, Empathy, Confidence, Patience",0.5145
-"Analytical Thinking, Empathy, Confidence, Active Listening, Time Management","Confidence, Effective Communication, Decision Making, Empathy, Emotional Intelligence, Active Listening",0.5893
-"Emotional Intelligence, Coaching, Work Ethic, Problem Solving, Adaptability","Conflict Resolution, Communication, Leadership, Public Speaking, Stress Management, Decision Making",0.3773
-"Confidence, Communication, Empathy, Negotiation","Critical Thinking, Problem Solving, Leadership, Active Listening, Coaching, Collaboration",0.8139
-"Critical Thinking, Active Listening, Work Ethic, Confidence, Emotional Intelligence","Stress Management, Conflict Resolution, Negotiation, Effective Communication",0.3491
-"Interpersonal Skills, Networking, Creativity, Leadership","Adaptability, Creativity, Active Listening, Leadership, Critical Thinking",0.3179
-"Work Ethic, Networking, Stress Management, Negotiation","Adaptability, Mentorship, Active Listening, Leadership",0.6737
-"Adaptability, Team Collaboration, Effective Communication, Critical Thinking, Teamwork, Collaboration","Problem Solving, Patience, Confidence",0.6187
-"Work Ethic, Emotional Intelligence, Empathy","Empathy, Conflict Resolution, Teamwork, Adaptability",0.5936
-"Networking, Coaching, Emotional Intelligence","Public Speaking, Work Ethic, Mentorship",0.5943
-"Decision Making, Emotional Intelligence, Time Management","Analytical Thinking, Empathy, Communication",0.4982
-"Emotional Intelligence, Collaboration, Empathy","Decision Making, Time Management, Leadership, Empathy, Problem Solving, Creativity",0.3654
-"Conflict Resolution, Creativity, Collaboration, Decision Making, Time Management, Teamwork","Interpersonal Skills, Mentorship, Communication, Active Listening, Conflict Resolution, Work Ethic",0.5114
-"Negotiation, Problem Solving, Creativity, Patience, Networking","Interpersonal Skills, Creativity, Work Ethic",0.3984
-"Networking, Stress Management, Critical Thinking, Leadership","Team Collaboration, Public Speaking, Patience, Interpersonal Skills, Work Ethic, Adaptability",0.6463
-"Mentorship, Coaching, Leadership","Mentorship, Stress Management, Coaching, Emotional Intelligence, Negotiation",0.4779
-"Active Listening, Public Speaking, Problem Solving, Mentorship","Team Collaboration, Interpersonal Skills, Adaptability, Active Listening",0.3762
-"Work Ethic, Adaptability, Coaching, Communication","Problem Solving, Confidence, Analytical Thinking, Public Speaking, Mentorship, Team Collaboration",0.4518
-"Confidence, Communication, Coaching, Stress Management, Team Collaboration, Interpersonal Skills","Stress Management, Creativity, Effective Communication",0.5619
-"Team Collaboration, Public Speaking, Analytical Thinking","Teamwork, Active Listening, Mentorship, Adaptability, Public Speaking, Confidence",0.4154
-"Decision Making, Leadership, Work Ethic, Coaching, Networking","Communication, Networking, Time Management, Analytical Thinking, Public Speaking",0.3767
-"Collaboration, Coaching, Communication","Decision Making, Problem Solving, Teamwork",0.5366
-"Interpersonal Skills, Leadership, Communication","Stress Management, Problem Solving, Work Ethic, Negotiation, Time Management, Teamwork",0.5367
-"Communication, Confidence, Stress Management","Team Collaboration, Emotional Intelligence, Confidence, Decision Making",0.424
-"Emotional Intelligence, Work Ethic, Leadership, Team Collaboration","Decision Making, Coaching, Work Ethic",0.4293
-"Creativity, Emotional Intelligence, Decision Making, Collaboration, Empathy","Team Collaboration, Active Listening, Problem Solving",0.5348
-"Coaching, Time Management, Patience, Decision Making, Conflict Resolution, Communication","Communication, Decision Making, Collaboration, Teamwork, Networking",0.2828
-"Patience, Effective Communication, Stress Management, Empathy","Collaboration, Analytical Thinking, Critical Thinking, Communication, Teamwork",0.2889
-"Team Collaboration, Confidence, Interpersonal Skills","Time Management, Public Speaking, Teamwork, Effective Communication, Networking, Team Collaboration",0.3922
-"Empathy, Negotiation, Team Collaboration, Critical Thinking","Conflict Resolution, Empathy, Work Ethic, Negotiation, Time Management",0.468
-"Conflict Resolution, Critical Thinking, Confidence, Stress Management, Leadership","Confidence, Public Speaking, Decision Making, Stress Management, Time Management",0.5466
-"Stress Management, Critical Thinking, Problem Solving, Teamwork, Coaching","Work Ethic, Public Speaking, Communication, Coaching, Empathy",0.7213
-"Communication, Active Listening, Conflict Resolution, Creativity, Collaboration","Public Speaking, Confidence, Collaboration, Coaching, Critical Thinking, Problem Solving",0.6286
-"Adaptability, Emotional Intelligence, Collaboration, Stress Management, Team Collaboration","Emotional Intelligence, Negotiation, Time Management, Creativity",0.476
-"Problem Solving, Mentorship, Work Ethic, Effective Communication, Conflict Resolution, Emotional Intelligence","Collaboration, Active Listening, Interpersonal Skills",0.4971
-"Mentorship, Time Management, Public Speaking, Coaching","Work Ethic, Patience, Collaboration, Negotiation, Problem Solving",0.3496
-"Confidence, Conflict Resolution, Critical Thinking, Active Listening","Critical Thinking, Team Collaboration, Creativity, Collaboration, Networking",0.4972
-"Confidence, Analytical Thinking, Mentorship, Adaptability, Networking, Effective Communication","Coaching, Mentorship, Leadership, Adaptability, Creativity",0.4567
-"Effective Communication, Problem Solving, Empathy","Interpersonal Skills, Coaching, Team Collaboration, Conflict Resolution, Communication",0.5484
-"Interpersonal Skills, Conflict Resolution, Critical Thinking, Leadership","Networking, Patience, Mentorship, Work Ethic, Public Speaking",0.3759
-"Networking, Interpersonal Skills, Active Listening, Empathy, Leadership, Teamwork","Team Collaboration, Problem Solving, Teamwork, Critical Thinking",0.5779
-"Active Listening, Collaboration, Teamwork, Analytical Thinking, Work Ethic","Networking, Active Listening, Time Management",0.7299
-"Creativity, Empathy, Networking, Confidence, Active Listening, Teamwork","Emotional Intelligence, Critical Thinking, Work Ethic, Active Listening, Effective Communication",0.4837
-"Analytical Thinking, Emotional Intelligence, Collaboration, Decision Making, Interpersonal Skills, Confidence","Networking, Communication, Critical Thinking, Active Listening, Patience",0.5603
-"Analytical Thinking, Teamwork, Conflict Resolution","Analytical Thinking, Creativity, Conflict Resolution, Leadership, Team Collaboration",0.6035
-"Conflict Resolution, Analytical Thinking, Coaching, Effective Communication, Public Speaking","Leadership, Emotional Intelligence, Conflict Resolution",0.4398
-"Adaptability, Confidence, Analytical Thinking, Patience","Active Listening, Confidence, Decision Making, Collaboration, Creativity, Interpersonal Skills",0.5336
-"Collaboration, Public Speaking, Work Ethic, Team Collaboration","Confidence, Public Speaking, Work Ethic, Mentorship, Collaboration",0.5019
-"Leadership, Empathy, Coaching, Analytical Thinking, Conflict Resolution, Creativity","Coaching, Analytical Thinking, Time Management",0.5147
-"Effective Communication, Public Speaking, Adaptability, Communication, Emotional Intelligence","Coaching, Problem Solving, Adaptability, Empathy, Confidence",0.384
-"Effective Communication, Stress Management, Mentorship","Coaching, Negotiation, Emotional Intelligence",0.5037
-"Problem Solving, Time Management, Communication, Mentorship","Creativity, Negotiation, Coaching",0.5747
-"Networking, Collaboration, Public Speaking, Negotiation, Coaching","Critical Thinking, Conflict Resolution, Problem Solving, Communication",0.7177
-"Analytical Thinking, Effective Communication, Teamwork, Conflict Resolution","Patience, Conflict Resolution, Mentorship",0.6439
-"Leadership, Coaching, Public Speaking, Analytical Thinking, Conflict Resolution","Teamwork, Team Collaboration, Coaching, Negotiation, Leadership",0.823
-"Analytical Thinking, Work Ethic, Interpersonal Skills, Teamwork","Mentorship, Public Speaking, Creativity, Confidence, Empathy, Work Ethic",0.3849
-"Negotiation, Decision Making, Conflict Resolution, Empathy, Analytical Thinking, Problem Solving","Patience, Conflict Resolution, Coaching, Creativity",0.6308
-"Leadership, Coaching, Emotional Intelligence, Interpersonal Skills, Critical Thinking, Stress Management","Collaboration, Conflict Resolution, Decision Making",0.5275
-"Leadership, Adaptability, Active Listening, Stress Management, Time Management","Coaching, Effective Communication, Patience",0.8285
-"Coaching, Networking, Negotiation","Networking, Interpersonal Skills, Problem Solving, Collaboration",0.3788
-"Collaboration, Communication, Patience, Effective Communication","Coaching, Stress Management, Public Speaking, Patience",0.374
-"Team Collaboration, Communication, Decision Making, Analytical Thinking, Work Ethic","Teamwork, Conflict Resolution, Leadership, Communication, Interpersonal Skills, Problem Solving",0.4101
-"Teamwork, Confidence, Creativity, Emotional Intelligence, Coaching, Interpersonal Skills","Analytical Thinking, Active Listening, Time Management, Leadership, Problem Solving",0.1814
-"Conflict Resolution, Active Listening, Analytical Thinking","Interpersonal Skills, Effective Communication, Mentorship, Communication, Work Ethic",0.4211
-"Empathy, Critical Thinking, Work Ethic","Creativity, Stress Management, Emotional Intelligence",0.3861
-"Decision Making, Teamwork, Time Management, Critical Thinking, Stress Management","Work Ethic, Confidence, Decision Making, Conflict Resolution, Creativity, Public Speaking",0.5226
-"Mentorship, Decision Making, Public Speaking, Analytical Thinking, Emotional Intelligence","Time Management, Active Listening, Effective Communication",0.5513
-"Leadership, Decision Making, Problem Solving, Teamwork, Confidence, Empathy","Teamwork, Active Listening, Team Collaboration, Mentorship, Stress Management, Conflict Resolution",0.7814
-"Analytical Thinking, Active Listening, Emotional Intelligence, Decision Making","Effective Communication, Time Management, Teamwork, Creativity, Negotiation",0.6426
-"Patience, Communication, Interpersonal Skills, Problem Solving","Networking, Patience, Team Collaboration, Interpersonal Skills",0.4135
-"Creativity, Negotiation, Confidence","Effective Communication, Patience, Coaching, Critical Thinking, Communication, Empathy",0.3652
-"Stress Management, Interpersonal Skills, Patience, Adaptability, Work Ethic, Decision Making","Active Listening, Critical Thinking, Creativity, Analytical Thinking, Collaboration",0.5738
-"Critical Thinking, Conflict Resolution, Confidence, Problem Solving, Adaptability, Negotiation","Team Collaboration, Teamwork, Active Listening, Work Ethic, Empathy",0.302
-"Adaptability, Collaboration, Critical Thinking, Public Speaking","Creativity, Team Collaboration, Collaboration, Critical Thinking",0.7747
-"Leadership, Teamwork, Negotiation","Communication, Stress Management, Problem Solving, Interpersonal Skills, Team Collaboration, Collaboration",0.6769
-"Critical Thinking, Stress Management, Time Management, Team Collaboration","Decision Making, Stress Management, Confidence, Team Collaboration, Coaching, Problem Solving",0.4296
-"Networking, Creativity, Empathy, Conflict Resolution, Adaptability, Effective Communication","Emotional Intelligence, Leadership, Communication, Stress Management, Adaptability",0.243
-"Stress Management, Collaboration, Empathy","Problem Solving, Patience, Negotiation, Decision Making",0.7031
-"Effective Communication, Patience, Interpersonal Skills","Networking, Active Listening, Effective Communication, Communication",0.4828
-"Collaboration, Networking, Team Collaboration, Communication, Negotiation","Coaching, Problem Solving, Adaptability, Time Management, Interpersonal Skills, Confidence",0.6857
-"Interpersonal Skills, Confidence, Stress Management, Team Collaboration, Patience","Confidence, Active Listening, Analytical Thinking, Conflict Resolution, Teamwork, Emotional Intelligence",0.2608
-"Problem Solving, Communication, Empathy","Teamwork, Stress Management, Work Ethic, Empathy, Decision Making, Conflict Resolution",0.4101
-"Communication, Emotional Intelligence, Leadership, Critical Thinking","Stress Management, Mentorship, Problem Solving, Time Management, Communication, Leadership",0.5008
-"Mentorship, Decision Making, Communication","Time Management, Problem Solving, Mentorship, Stress Management, Work Ethic, Teamwork",0.507
-"Teamwork, Effective Communication, Empathy, Creativity, Conflict Resolution, Decision Making","Collaboration, Empathy, Coaching, Time Management",0.4325
-"Collaboration, Analytical Thinking, Critical Thinking, Adaptability","Analytical Thinking, Stress Management, Interpersonal Skills, Communication, Emotional Intelligence",0.5934
-"Critical Thinking, Negotiation, Time Management, Teamwork, Analytical Thinking, Team Collaboration","Problem Solving, Effective Communication, Team Collaboration, Stress Management",0.3399
-"Problem Solving, Emotional Intelligence, Negotiation, Teamwork, Empathy","Emotional Intelligence, Negotiation, Problem Solving",0.4786
-"Analytical Thinking, Confidence, Negotiation, Adaptability, Critical Thinking","Time Management, Adaptability, Collaboration, Critical Thinking, Teamwork",0.518
-"Emotional Intelligence, Collaboration, Work Ethic","Decision Making, Creativity, Empathy, Communication, Patience, Teamwork",0.5772
-"Emotional Intelligence, Confidence, Communication, Decision Making, Interpersonal Skills, Analytical Thinking","Adaptability, Conflict Resolution, Problem Solving, Time Management, Effective Communication",0.6067
-"Creativity, Leadership, Stress Management","Effective Communication, Public Speaking, Mentorship, Patience, Teamwork",0.3313
-"Confidence, Empathy, Conflict Resolution","Creativity, Confidence, Negotiation, Analytical Thinking, Collaboration, Work Ethic",0.2699
-"Communication, Negotiation, Emotional Intelligence","Stress Management, Problem Solving, Emotional Intelligence, Mentorship, Collaboration",0.6917
-"Public Speaking, Leadership, Critical Thinking, Communication","Leadership, Mentorship, Teamwork, Communication, Decision Making",0.5498
-"Leadership, Effective Communication, Conflict Resolution, Mentorship, Patience, Networking","Public Speaking, Decision Making, Team Collaboration",0.3877
-"Problem Solving, Mentorship, Patience","Confidence, Communication, Stress Management, Public Speaking, Leadership",0.7327
-"Effective Communication, Work Ethic, Coaching, Public Speaking, Leadership","Adaptability, Effective Communication, Coaching, Problem Solving, Team Collaboration",0.5174
-"Critical Thinking, Leadership, Teamwork","Team Collaboration, Confidence, Decision Making, Stress Management, Work Ethic, Problem Solving",0.6769
-"Critical Thinking, Leadership, Networking, Analytical Thinking, Communication, Conflict Resolution","Time Management, Patience, Conflict Resolution, Networking",0.5101
-"Coaching, Interpersonal Skills, Critical Thinking, Teamwork, Problem Solving, Patience","Time Management, Interpersonal Skills, Negotiation, Coaching",0.8091
-"Work Ethic, Active Listening, Creativity","Team Collaboration, Work Ethic, Stress Management",0.7633
-"Active Listening, Negotiation, Emotional Intelligence, Creativity, Communication","Public Speaking, Time Management, Patience, Problem Solving",0.4627
-"Adaptability, Leadership, Coaching","Adaptability, Creativity, Coaching, Teamwork, Emotional Intelligence",0.6457
-"Public Speaking, Stress Management, Active Listening","Critical Thinking, Effective Communication, Confidence",0.5968
-"Interpersonal Skills, Active Listening, Creativity","Adaptability, Interpersonal Skills, Empathy, Conflict Resolution, Emotional Intelligence, Leadership",0.7053
-"Empathy, Negotiation, Stress Management, Adaptability, Decision Making, Emotional Intelligence","Active Listening, Work Ethic, Networking, Effective Communication",0.3553
-"Critical Thinking, Effective Communication, Communication, Active Listening, Problem Solving, Coaching","Conflict Resolution, Creativity, Critical Thinking",0.6029
-"Conflict Resolution, Negotiation, Interpersonal Skills, Empathy","Empathy, Confidence, Analytical Thinking, Decision Making, Conflict Resolution",0.6588
-"Emotional Intelligence, Problem Solving, Negotiation","Team Collaboration, Empathy, Leadership",0.2362
-"Critical Thinking, Mentorship, Public Speaking, Coaching, Collaboration, Creativity","Mentorship, Work Ethic, Negotiation, Empathy, Networking, Communication",0.3225
-"Effective Communication, Adaptability, Coaching","Collaboration, Patience, Networking",0.1941
-"Decision Making, Public Speaking, Collaboration, Negotiation, Analytical Thinking, Communication","Creativity, Teamwork, Coaching, Team Collaboration",0.4596
-"Collaboration, Patience, Stress Management, Effective Communication","Negotiation, Coaching, Mentorship, Leadership",0.6076
-"Adaptability, Communication, Team Collaboration","Interpersonal Skills, Coaching, Confidence, Adaptability, Time Management",0.7254
-"Work Ethic, Time Management, Empathy","Active Listening, Networking, Negotiation, Leadership, Effective Communication, Work Ethic",0.5111
-"Interpersonal Skills, Networking, Collaboration, Effective Communication","Work Ethic, Critical Thinking, Leadership, Interpersonal Skills, Creativity",0.7443
-"Communication, Effective Communication, Time Management","Negotiation, Empathy, Team Collaboration, Analytical Thinking, Networking",0.293
-"Patience, Coaching, Negotiation, Public Speaking, Problem Solving","Work Ethic, Negotiation, Confidence",0.2445
-"Leadership, Work Ethic, Interpersonal Skills","Negotiation, Leadership, Emotional Intelligence",0.4917
-"Conflict Resolution, Patience, Public Speaking","Coaching, Time Management, Leadership, Creativity, Active Listening, Networking",0.5576
-"Decision Making, Adaptability, Patience, Public Speaking","Coaching, Stress Management, Conflict Resolution, Interpersonal Skills, Creativity, Empathy",0.4951
-"Problem Solving, Effective Communication, Communication, Active Listening, Creativity","Time Management, Empathy, Decision Making",0.1899
-"Mentorship, Collaboration, Creativity, Empathy","Emotional Intelligence, Networking, Stress Management",0.4866
-"Analytical Thinking, Team Collaboration, Decision Making, Stress Management, Interpersonal Skills, Creativity","Stress Management, Time Management, Active Listening",0.3043
-"Creativity, Negotiation, Communication, Work Ethic","Decision Making, Work Ethic, Stress Management",0.6005
-"Team Collaboration, Stress Management, Problem Solving, Confidence, Networking, Critical Thinking","Analytical Thinking, Networking, Leadership",0.555
-"Decision Making, Team Collaboration, Communication, Active Listening","Conflict Resolution, Collaboration, Active Listening, Critical Thinking",0.359
-"Critical Thinking, Analytical Thinking, Problem Solving, Leadership","Public Speaking, Coaching, Time Management, Team Collaboration, Confidence, Networking",0.4229
-"Analytical Thinking, Teamwork, Effective Communication, Leadership, Emotional Intelligence, Creativity","Confidence, Teamwork, Conflict Resolution, Networking, Emotional Intelligence",0.3411
-"Team Collaboration, Networking, Patience","Coaching, Adaptability, Problem Solving, Communication, Effective Communication",0.4906
-"Networking, Active Listening, Confidence, Empathy, Public Speaking","Coaching, Emotional Intelligence, Team Collaboration, Decision Making",0.6433
-"Patience, Creativity, Team Collaboration, Interpersonal Skills, Negotiation","Analytical Thinking, Decision Making, Networking, Time Management",0.3521
-"Negotiation, Networking, Patience, Teamwork, Analytical Thinking, Communication","Patience, Communication, Time Management, Team Collaboration, Coaching",0.5756
-"Decision Making, Time Management, Creativity, Problem Solving, Team Collaboration","Problem Solving, Decision Making, Teamwork, Creativity",0.4205
-"Negotiation, Mentorship, Empathy, Patience, Active Listening, Decision Making","Stress Management, Decision Making, Adaptability, Team Collaboration, Coaching",0.3811
-"Negotiation, Work Ethic, Collaboration, Critical Thinking, Analytical Thinking, Problem Solving","Stress Management, Confidence, Networking, Active Listening, Patience, Time Management",0.4839
-"Adaptability, Coaching, Team Collaboration","Critical Thinking, Communication, Team Collaboration, Mentorship",0.3447
-"Conflict Resolution, Team Collaboration, Time Management, Analytical Thinking","Public Speaking, Time Management, Networking, Problem Solving, Conflict Resolution, Team Collaboration",0.417
-"Patience, Analytical Thinking, Team Collaboration, Creativity","Negotiation, Adaptability, Decision Making",0.3203
-"Collaboration, Mentorship, Emotional Intelligence, Public Speaking, Team Collaboration","Creativity, Mentorship, Teamwork, Negotiation, Decision Making, Public Speaking",0.7947
-"Networking, Collaboration, Patience","Conflict Resolution, Work Ethic, Team Collaboration, Patience, Networking, Creativity",0.5053
-"Problem Solving, Critical Thinking, Networking, Empathy","Collaboration, Negotiation, Decision Making, Effective Communication, Conflict Resolution, Networking",0.395
-"Analytical Thinking, Empathy, Team Collaboration, Emotional Intelligence","Critical Thinking, Stress Management, Coaching",0.5321
-"Analytical Thinking, Collaboration, Leadership","Teamwork, Team Collaboration, Adaptability, Emotional Intelligence, Negotiation, Work Ethic",0.4832
-"Empathy, Interpersonal Skills, Networking, Leadership, Communication, Problem Solving","Collaboration, Communication, Adaptability, Critical Thinking, Confidence, Conflict Resolution",0.4669
-"Interpersonal Skills, Collaboration, Active Listening, Adaptability","Decision Making, Public Speaking, Confidence, Coaching, Empathy, Critical Thinking",0.5921
-"Active Listening, Emotional Intelligence, Time Management, Collaboration, Team Collaboration","Active Listening, Leadership, Communication, Analytical Thinking, Decision Making",0.6136
-"Collaboration, Effective Communication, Active Listening","Stress Management, Confidence, Time Management",0.4204
-"Team Collaboration, Empathy, Stress Management, Communication","Analytical Thinking, Coaching, Communication, Empathy",0.4136
-"Team Collaboration, Interpersonal Skills, Conflict Resolution, Analytical Thinking","Conflict Resolution, Communication, Collaboration, Leadership, Patience, Mentorship",0.4587
-"Teamwork, Problem Solving, Work Ethic, Effective Communication, Stress Management, Negotiation","Patience, Active Listening, Teamwork, Communication, Networking",0.1547
-"Time Management, Networking, Patience","Creativity, Coaching, Adaptability, Time Management, Effective Communication, Work Ethic",0.2727
-"Effective Communication, Problem Solving, Teamwork, Adaptability","Problem Solving, Analytical Thinking, Conflict Resolution, Emotional Intelligence, Public Speaking",0.705
-"Work Ethic, Decision Making, Active Listening","Active Listening, Analytical Thinking, Communication, Time Management",0.7467
-"Conflict Resolution, Time Management, Collaboration, Leadership","Emotional Intelligence, Mentorship, Collaboration, Coaching, Analytical Thinking",0.4626
-"Stress Management, Empathy, Mentorship, Coaching","Work Ethic, Creativity, Effective Communication, Decision Making",0.5865
-"Analytical Thinking, Empathy, Confidence, Coaching","Conflict Resolution, Effective Communication, Coaching, Patience, Public Speaking",0.5467
-"Patience, Stress Management, Work Ethic","Effective Communication, Time Management, Stress Management, Interpersonal Skills, Collaboration, Mentorship",0.9618
-"Work Ethic, Adaptability, Public Speaking, Patience","Confidence, Time Management, Conflict Resolution, Stress Management, Adaptability, Emotional Intelligence",0.6679
-"Negotiation, Problem Solving, Conflict Resolution","Team Collaboration, Decision Making, Work Ethic",0.4808
-"Analytical Thinking, Conflict Resolution, Work Ethic, Mentorship, Patience","Conflict Resolution, Interpersonal Skills, Critical Thinking, Work Ethic, Patience",0.3567
-"Coaching, Confidence, Analytical Thinking, Empathy, Creativity","Work Ethic, Empathy, Coaching, Communication, Negotiation, Stress Management",0.259
-"Teamwork, Leadership, Decision Making","Decision Making, Creativity, Analytical Thinking",0.5305
-"Networking, Effective Communication, Public Speaking","Mentorship, Team Collaboration, Negotiation, Public Speaking, Interpersonal Skills, Time Management",0.3865
-"Negotiation, Patience, Leadership, Analytical Thinking, Interpersonal Skills","Collaboration, Conflict Resolution, Effective Communication, Work Ethic, Time Management, Confidence",0.2867
-"Communication, Time Management, Networking, Mentorship, Teamwork, Stress Management","Communication, Team Collaboration, Negotiation, Patience, Problem Solving",0.403
-"Time Management, Work Ethic, Networking, Adaptability, Active Listening","Empathy, Coaching, Emotional Intelligence, Collaboration, Negotiation",0.3378
-"Coaching, Interpersonal Skills, Time Management","Patience, Empathy, Stress Management, Communication",0.7531
-"Interpersonal Skills, Mentorship, Emotional Intelligence, Work Ethic, Team Collaboration","Communication, Confidence, Creativity, Mentorship, Analytical Thinking",0.6322
-"Collaboration, Active Listening, Teamwork, Effective Communication, Decision Making, Conflict Resolution","Stress Management, Public Speaking, Emotional Intelligence, Coaching",0.4988
-"Communication, Team Collaboration, Public Speaking, Creativity, Coaching","Coaching, Negotiation, Decision Making",0.722
-"Teamwork, Decision Making, Work Ethic, Adaptability, Effective Communication","Decision Making, Time Management, Empathy, Effective Communication",0.5116
-"Adaptability, Active Listening, Networking, Conflict Resolution, Empathy, Patience","Decision Making, Empathy, Active Listening",0.3708
-"Public Speaking, Critical Thinking, Effective Communication, Work Ethic, Decision Making, Interpersonal Skills","Critical Thinking, Networking, Decision Making, Communication",0.7285
-"Coaching, Public Speaking, Active Listening, Effective Communication","Effective Communication, Adaptability, Mentorship, Negotiation",0.5808
-"Team Collaboration, Stress Management, Coaching, Collaboration, Active Listening, Problem Solving","Active Listening, Leadership, Critical Thinking",0.3444
-"Patience, Effective Communication, Stress Management, Negotiation, Decision Making, Emotional Intelligence","Adaptability, Interpersonal Skills, Confidence",0.4714
-"Stress Management, Work Ethic, Analytical Thinking, Patience, Mentorship","Negotiation, Teamwork, Collaboration, Conflict Resolution",0.3687
-"Creativity, Stress Management, Conflict Resolution, Patience, Public Speaking, Adaptability","Interpersonal Skills, Critical Thinking, Analytical Thinking",0.2926
+resume_skills,jd_skills,label
+"Work Ethic, Stress Management, Empathy, Communication, Patience, Active Listening","Public Speaking, Active Listening, Adaptability",0.5475715168317159
+"Mentorship, Critical Thinking, Teamwork, Confidence, Conflict Resolution, Interpersonal Skills","Creativity, Patience, Communication, Public Speaking, Time Management",0.4488312284089625
+"Active Listening, Creativity, Team Collaboration, Mentorship","Mentorship, Communication, Conflict Resolution, Problem Solving, Confidence",0.5038539840452947
+"Public Speaking, Creativity, Adaptability, Analytical Thinking","Creativity, Negotiation, Leadership, Patience, Adaptability, Coaching",0.45319526922153797
+"Work Ethic, Active Listening, Critical Thinking, Interpersonal Skills","Active Listening, Adaptability, Mentorship, Effective Communication",0.1919878169375917
+"Work Ethic, Time Management, Effective Communication, Communication","Analytical Thinking, Coaching, Patience, Networking",0.2731066222047364
+"Team Collaboration, Negotiation, Coaching, Communication, Networking","Problem Solving, Collaboration, Interpersonal Skills, Time Management",0.1939794268867662
+"Emotional Intelligence, Conflict Resolution, Time Management, Problem Solving","Critical Thinking, Emotional Intelligence, Mentorship, Team Collaboration, Communication, Coaching",0.5781019269509448
+"Networking, Teamwork, Effective Communication, Leadership","Problem Solving, Mentorship, Active Listening",0.5881854049593974
+"Time Management, Empathy, Team Collaboration, Decision Making, Effective Communication, Collaboration","Empathy, Teamwork, Emotional Intelligence, Public Speaking, Negotiation",0.2923274139179425
+"Analytical Thinking, Emotional Intelligence, Time Management, Creativity, Negotiation","Coaching, Empathy, Analytical Thinking, Public Speaking, Confidence, Negotiation",0.5014167282730341
+"Patience, Work Ethic, Problem Solving, Creativity, Empathy","Stress Management, Adaptability, Analytical Thinking, Networking",0.169290212928145
+"Time Management, Stress Management, Networking","Creativity, Critical Thinking, Communication, Leadership, Effective Communication, Active Listening",0.42660308370366695
+"Patience, Emotional Intelligence, Empathy, Stress Management","Public Speaking, Mentorship, Work Ethic, Emotional Intelligence, Collaboration",0.5535361411135931
+"Creativity, Coaching, Critical Thinking, Collaboration","Teamwork, Interpersonal Skills, Coaching",0.3021082452224458
+"Networking, Effective Communication, Creativity, Emotional Intelligence, Active Listening, Work Ethic","Confidence, Problem Solving, Negotiation, Interpersonal Skills",0.12674224086726707
+"Emotional Intelligence, Active Listening, Time Management, Stress Management, Critical Thinking, Conflict Resolution","Time Management, Critical Thinking, Decision Making",0.44248866652448976
+"Problem Solving, Adaptability, Decision Making, Effective Communication","Confidence, Communication, Team Collaboration, Patience",0.4639628874444509
+"Collaboration, Teamwork, Confidence, Problem Solving, Networking, Mentorship","Creativity, Public Speaking, Collaboration, Coaching, Critical Thinking, Mentorship",0.24353457856704208
+"Work Ethic, Networking, Adaptability, Analytical Thinking, Interpersonal Skills","Active Listening, Effective Communication, Communication, Networking, Mentorship",0.1886260200043519
+"Team Collaboration, Coaching, Empathy, Emotional Intelligence, Public Speaking","Problem Solving, Emotional Intelligence, Conflict Resolution",0.2825923277713034
+"Teamwork, Stress Management, Networking, Negotiation, Public Speaking, Conflict Resolution","Conflict Resolution, Active Listening, Emotional Intelligence, Work Ethic, Collaboration, Teamwork",0.29670164106755836
+"Emotional Intelligence, Active Listening, Adaptability","Analytical Thinking, Networking, Stress Management, Creativity, Work Ethic",0.5055294558051431
+"Problem Solving, Work Ethic, Mentorship","Communication, Patience, Critical Thinking, Interpersonal Skills",0.5693050753784792
+"Adaptability, Work Ethic, Interpersonal Skills, Time Management, Analytical Thinking","Work Ethic, Analytical Thinking, Active Listening, Effective Communication",0.5096723778539145
+"Creativity, Effective Communication, Coaching, Team Collaboration","Critical Thinking, Negotiation, Analytical Thinking, Collaboration",0.5384404703424028
+"Work Ethic, Decision Making, Effective Communication, Patience","Coaching, Critical Thinking, Confidence",0.4639203911268358
+"Interpersonal Skills, Negotiation, Adaptability, Time Management, Coaching","Negotiation, Empathy, Analytical Thinking, Stress Management, Patience, Active Listening",0.5711488470717544
+"Emotional Intelligence, Work Ethic, Confidence","Analytical Thinking, Decision Making, Interpersonal Skills, Conflict Resolution",0.24687752154575088
+"Confidence, Creativity, Stress Management","Effective Communication, Team Collaboration, Critical Thinking, Mentorship",0.5511552028215796
+"Decision Making, Empathy, Teamwork, Conflict Resolution, Leadership, Time Management","Critical Thinking, Mentorship, Adaptability, Emotional Intelligence, Coaching, Patience",0.16819294651290473
+"Patience, Analytical Thinking, Team Collaboration, Conflict Resolution, Emotional Intelligence","Creativity, Public Speaking, Negotiation, Stress Management",0.5045238439888027
+"Critical Thinking, Creativity, Public Speaking, Conflict Resolution, Teamwork, Analytical Thinking","Conflict Resolution, Work Ethic, Interpersonal Skills, Emotional Intelligence, Decision Making, Creativity",0.5004643913162049
+"Active Listening, Collaboration, Conflict Resolution, Negotiation, Leadership, Analytical Thinking","Public Speaking, Mentorship, Active Listening, Problem Solving",0.43902268396813837
+"Coaching, Teamwork, Collaboration, Time Management, Effective Communication","Active Listening, Confidence, Critical Thinking, Effective Communication",0.41103097546304906
+"Interpersonal Skills, Patience, Negotiation","Networking, Emotional Intelligence, Stress Management, Mentorship, Team Collaboration, Teamwork",0.4347613525262206
+"Coaching, Communication, Analytical Thinking, Mentorship, Empathy","Effective Communication, Emotional Intelligence, Patience",0.2765008723646084
+"Coaching, Confidence, Team Collaboration, Problem Solving, Active Listening","Creativity, Coaching, Effective Communication",0.19964847286137014
+"Confidence, Emotional Intelligence, Team Collaboration, Conflict Resolution, Networking, Communication","Teamwork, Critical Thinking, Networking, Patience, Confidence",0.22753721460364323
+"Coaching, Confidence, Patience","Conflict Resolution, Public Speaking, Patience, Interpersonal Skills, Communication",0.12651194205570773
+"Coaching, Communication, Analytical Thinking, Public Speaking, Adaptability","Analytical Thinking, Adaptability, Stress Management, Collaboration",0.563345713599055
+"Team Collaboration, Creativity, Confidence, Coaching, Teamwork, Public Speaking","Work Ethic, Team Collaboration, Public Speaking, Networking",0.557974833441848
+"Empathy, Emotional Intelligence, Problem Solving","Collaboration, Leadership, Teamwork, Effective Communication, Active Listening",0.29275030516921297
+"Emotional Intelligence, Time Management, Effective Communication, Active Listening","Mentorship, Collaboration, Teamwork, Problem Solving, Empathy, Time Management",0.2922549624034983
+"Negotiation, Teamwork, Communication, Networking, Interpersonal Skills","Conflict Resolution, Patience, Decision Making, Stress Management, Team Collaboration, Analytical Thinking",0.48032347327863595
+"Empathy, Work Ethic, Coaching, Stress Management, Time Management, Creativity","Teamwork, Communication, Decision Making",0.16868732387926882
+"Emotional Intelligence, Teamwork, Collaboration, Effective Communication","Team Collaboration, Leadership, Teamwork, Analytical Thinking, Emotional Intelligence, Confidence",0.12099584443247502
+"Communication, Emotional Intelligence, Time Management, Decision Making, Leadership, Effective Communication","Adaptability, Analytical Thinking, Networking, Confidence",0.11842518121610546
+"Collaboration, Problem Solving, Teamwork, Confidence, Active Listening, Team Collaboration","Confidence, Public Speaking, Effective Communication, Patience",0.5598012759150368
+"Creativity, Communication, Effective Communication, Analytical Thinking","Conflict Resolution, Communication, Collaboration",0.12318793613883156
+"Effective Communication, Adaptability, Stress Management","Critical Thinking, Conflict Resolution, Creativity, Stress Management",0.2631511193914421
+"Mentorship, Work Ethic, Effective Communication, Stress Management, Confidence, Teamwork","Empathy, Emotional Intelligence, Leadership, Teamwork",0.15460970900547896
+"Public Speaking, Creativity, Team Collaboration, Active Listening, Time Management, Communication","Communication, Public Speaking, Emotional Intelligence",0.5091652587099329
+"Leadership, Interpersonal Skills, Negotiation","Empathy, Team Collaboration, Communication, Leadership, Teamwork, Conflict Resolution",0.2360478439439228
+"Networking, Leadership, Mentorship, Adaptability, Coaching, Collaboration","Time Management, Empathy, Networking, Collaboration, Analytical Thinking, Negotiation",0.6078071378635205
+"Interpersonal Skills, Negotiation, Work Ethic, Networking","Active Listening, Networking, Coaching, Interpersonal Skills",0.17780517289871312
+"Public Speaking, Confidence, Emotional Intelligence, Mentorship, Effective Communication","Problem Solving, Leadership, Work Ethic, Interpersonal Skills, Effective Communication",0.45875593724227914
+"Critical Thinking, Networking, Negotiation, Mentorship, Coaching","Analytical Thinking, Public Speaking, Stress Management, Work Ethic",0.2171111871575027
+"Adaptability, Problem Solving, Active Listening","Conflict Resolution, Stress Management, Negotiation, Team Collaboration, Emotional Intelligence",0.1729655801007673
+"Creativity, Conflict Resolution, Public Speaking","Interpersonal Skills, Stress Management, Decision Making",0.13057543472730013
+"Collaboration, Confidence, Stress Management, Communication","Emotional Intelligence, Empathy, Patience, Networking",0.5883205951412243
+"Active Listening, Patience, Emotional Intelligence","Decision Making, Team Collaboration, Problem Solving",0.416204864753226
+"Adaptability, Critical Thinking, Public Speaking, Coaching","Confidence, Creativity, Active Listening, Work Ethic, Mentorship",0.22426398738883702
+"Negotiation, Conflict Resolution, Creativity","Stress Management, Conflict Resolution, Public Speaking, Analytical Thinking",0.42436998040527635
+"Analytical Thinking, Decision Making, Mentorship, Adaptability, Leadership","Time Management, Team Collaboration, Interpersonal Skills, Coaching, Leadership",0.29623011644280645
+"Effective Communication, Problem Solving, Coaching, Decision Making","Adaptability, Effective Communication, Confidence, Time Management, Networking, Decision Making",0.28779937268028183
+"Confidence, Work Ethic, Problem Solving","Effective Communication, Team Collaboration, Interpersonal Skills, Confidence, Collaboration, Problem Solving",0.2363817666475988
+"Team Collaboration, Negotiation, Conflict Resolution, Interpersonal Skills, Leadership","Creativity, Teamwork, Empathy, Public Speaking, Analytical Thinking, Decision Making",0.24443659311801685
+"Decision Making, Collaboration, Conflict Resolution","Collaboration, Coaching, Negotiation, Teamwork, Communication, Critical Thinking",0.2165370209239591
+"Teamwork, Networking, Analytical Thinking, Collaboration","Active Listening, Analytical Thinking, Collaboration",0.49009119557228625
+"Analytical Thinking, Team Collaboration, Creativity","Mentorship, Adaptability, Decision Making, Teamwork, Negotiation, Confidence",0.4089970527391415
+"Problem Solving, Public Speaking, Mentorship, Time Management","Empathy, Active Listening, Collaboration, Conflict Resolution",0.5272131243856325
+"Time Management, Patience, Creativity","Critical Thinking, Communication, Confidence, Conflict Resolution, Public Speaking, Negotiation",0.2835932820911209
+"Work Ethic, Time Management, Conflict Resolution","Problem Solving, Time Management, Interpersonal Skills, Analytical Thinking, Conflict Resolution",0.4255804824095164
+"Coaching, Active Listening, Critical Thinking, Team Collaboration, Stress Management","Conflict Resolution, Collaboration, Communication, Critical Thinking, Decision Making, Patience",0.5270058199732709
+"Problem Solving, Communication, Mentorship, Negotiation, Public Speaking","Critical Thinking, Creativity, Coaching, Active Listening, Leadership, Interpersonal Skills",0.23730717418130265
+"Public Speaking, Decision Making, Networking, Interpersonal Skills, Active Listening","Conflict Resolution, Work Ethic, Public Speaking, Teamwork",0.5976009609017447
+"Leadership, Analytical Thinking, Stress Management, Patience","Problem Solving, Confidence, Public Speaking, Team Collaboration, Networking, Empathy",0.4745650256333314
+"Team Collaboration, Communication, Negotiation","Critical Thinking, Interpersonal Skills, Stress Management",0.29349829100175867
+"Networking, Stress Management, Confidence","Creativity, Active Listening, Interpersonal Skills, Emotional Intelligence, Team Collaboration",0.42079399213603097
+"Conflict Resolution, Emotional Intelligence, Collaboration","Stress Management, Decision Making, Team Collaboration, Patience, Public Speaking, Active Listening",0.1292347839567057
+"Problem Solving, Communication, Empathy, Creativity, Team Collaboration","Confidence, Negotiation, Analytical Thinking",0.4189971038770867
+"Coaching, Time Management, Networking","Leadership, Networking, Analytical Thinking, Empathy, Adaptability",0.20923437688165492
+"Empathy, Mentorship, Coaching, Stress Management, Decision Making, Analytical Thinking","Active Listening, Networking, Work Ethic",0.46745666889610327
+"Negotiation, Mentorship, Conflict Resolution, Stress Management, Communication, Empathy","Analytical Thinking, Creativity, Teamwork, Critical Thinking, Time Management",0.10555887349806631
+"Mentorship, Problem Solving, Creativity","Coaching, Team Collaboration, Work Ethic, Interpersonal Skills",0.42451025479313587
+"Confidence, Effective Communication, Work Ethic, Leadership, Adaptability, Networking","Collaboration, Decision Making, Active Listening, Interpersonal Skills, Conflict Resolution, Creativity",0.5534544539979895
+"Problem Solving, Interpersonal Skills, Team Collaboration, Coaching, Communication","Time Management, Coaching, Stress Management, Active Listening, Problem Solving",0.443637434962618
+"Creativity, Empathy, Patience","Analytical Thinking, Adaptability, Problem Solving, Negotiation",0.4621689797527721
+"Networking, Public Speaking, Active Listening, Work Ethic","Conflict Resolution, Negotiation, Teamwork, Mentorship",0.10012183943399933
+"Creativity, Conflict Resolution, Patience, Analytical Thinking, Mentorship, Empathy","Problem Solving, Work Ethic, Active Listening, Stress Management, Empathy",0.39043609084539027
+"Negotiation, Confidence, Emotional Intelligence, Mentorship, Empathy","Conflict Resolution, Leadership, Time Management, Effective Communication, Decision Making, Analytical Thinking",0.45910459275810916
+"Leadership, Conflict Resolution, Team Collaboration, Confidence, Creativity","Conflict Resolution, Time Management, Coaching, Negotiation, Team Collaboration",0.2915803344845947
+"Creativity, Negotiation, Patience, Networking, Leadership","Problem Solving, Collaboration, Creativity, Confidence",0.25096548601681756
+"Analytical Thinking, Teamwork, Negotiation, Adaptability","Coaching, Confidence, Stress Management, Collaboration, Emotional Intelligence",0.5499591691299588
+"Communication, Decision Making, Stress Management","Confidence, Time Management, Stress Management, Work Ethic, Public Speaking",0.24960407786706293
+"Team Collaboration, Adaptability, Work Ethic, Teamwork, Mentorship","Teamwork, Networking, Problem Solving, Interpersonal Skills, Stress Management, Patience",0.3896679038336425
+"Coaching, Stress Management, Teamwork, Leadership","Active Listening, Collaboration, Team Collaboration, Leadership, Empathy, Work Ethic",0.15086134089198194
+"Stress Management, Active Listening, Problem Solving","Emotional Intelligence, Creativity, Work Ethic",0.4895525108224579
+"Decision Making, Problem Solving, Interpersonal Skills","Problem Solving, Team Collaboration, Time Management, Active Listening, Critical Thinking",0.22978159851394597
+"Critical Thinking, Problem Solving, Networking","Negotiation, Conflict Resolution, Critical Thinking, Confidence, Collaboration",0.4896956112275841
+"Empathy, Critical Thinking, Decision Making","Conflict Resolution, Critical Thinking, Creativity, Negotiation, Empathy",0.13162232536584775
+"Emotional Intelligence, Confidence, Team Collaboration, Analytical Thinking, Mentorship, Decision Making","Teamwork, Problem Solving, Coaching, Analytical Thinking",0.4044934000697317
+"Collaboration, Conflict Resolution, Coaching","Empathy, Communication, Negotiation, Networking",0.5037622844642925
+"Leadership, Work Ethic, Analytical Thinking, Patience, Confidence","Communication, Emotional Intelligence, Creativity, Teamwork, Empathy",0.43249657589178647
+"Negotiation, Stress Management, Adaptability, Decision Making, Coaching","Negotiation, Collaboration, Interpersonal Skills, Communication",0.11287346808480772
+"Teamwork, Emotional Intelligence, Problem Solving, Confidence","Confidence, Networking, Leadership, Time Management, Active Listening, Communication",0.4326539026291448
+"Coaching, Communication, Work Ethic, Leadership, Emotional Intelligence","Team Collaboration, Empathy, Effective Communication",0.12328747307130647
+"Effective Communication, Adaptability, Critical Thinking, Active Listening","Leadership, Emotional Intelligence, Teamwork, Creativity, Stress Management",0.45143217106883277
+"Coaching, Adaptability, Empathy, Teamwork, Critical Thinking, Problem Solving","Teamwork, Stress Management, Analytical Thinking, Public Speaking, Team Collaboration",0.29335828716443346
+"Negotiation, Critical Thinking, Teamwork, Leadership","Analytical Thinking, Problem Solving, Teamwork, Critical Thinking",0.506627131100817
+"Decision Making, Patience, Empathy","Work Ethic, Mentorship, Decision Making, Patience, Leadership, Teamwork",0.20777046323125792
+"Active Listening, Mentorship, Work Ethic, Leadership, Empathy","Emotional Intelligence, Leadership, Networking, Negotiation",0.16807799097078924
+"Teamwork, Work Ethic, Collaboration, Stress Management, Time Management, Public Speaking","Negotiation, Networking, Decision Making, Leadership, Analytical Thinking, Stress Management",0.1680847735106662
+"Active Listening, Leadership, Public Speaking","Teamwork, Team Collaboration, Conflict Resolution",0.2775644063373538
+"Analytical Thinking, Leadership, Emotional Intelligence","Stress Management, Team Collaboration, Effective Communication, Emotional Intelligence",0.43789680051800794
+"Empathy, Critical Thinking, Effective Communication, Communication, Stress Management","Critical Thinking, Coaching, Active Listening, Work Ethic, Empathy, Adaptability",0.5493716257256291
+"Leadership, Communication, Creativity, Effective Communication, Negotiation","Teamwork, Active Listening, Collaboration, Conflict Resolution",0.20000427807878504
+"Public Speaking, Decision Making, Adaptability","Negotiation, Teamwork, Public Speaking",0.25055327069887634
+"Networking, Work Ethic, Coaching, Public Speaking","Problem Solving, Active Listening, Leadership, Teamwork, Critical Thinking, Analytical Thinking",0.4499657889277068
+"Leadership, Creativity, Effective Communication, Empathy","Time Management, Networking, Public Speaking, Teamwork, Team Collaboration",0.5087017450472273
+"Empathy, Critical Thinking, Patience, Team Collaboration, Active Listening, Communication","Work Ethic, Interpersonal Skills, Leadership, Active Listening, Emotional Intelligence, Conflict Resolution",0.48925424798434847
+"Conflict Resolution, Analytical Thinking, Time Management, Decision Making, Leadership, Collaboration","Adaptability, Decision Making, Problem Solving, Public Speaking, Critical Thinking",0.2203768665311986
+"Creativity, Interpersonal Skills, Public Speaking, Critical Thinking","Stress Management, Mentorship, Teamwork, Networking, Adaptability",0.4689243271923461
+"Stress Management, Effective Communication, Confidence","Empathy, Interpersonal Skills, Effective Communication, Coaching, Work Ethic",0.15920051475047448
+"Leadership, Stress Management, Negotiation, Team Collaboration, Confidence, Active Listening","Creativity, Patience, Collaboration",0.4093594938375313
+"Public Speaking, Leadership, Networking, Negotiation, Creativity, Communication","Mentorship, Analytical Thinking, Empathy, Work Ethic, Emotional Intelligence",0.5782690845353481
+"Analytical Thinking, Conflict Resolution, Patience, Effective Communication, Networking","Problem Solving, Team Collaboration, Empathy, Collaboration, Conflict Resolution, Time Management",0.12890465397394044
+"Conflict Resolution, Coaching, Effective Communication","Teamwork, Analytical Thinking, Decision Making, Leadership, Empathy, Conflict Resolution",0.5380416551244818
+"Critical Thinking, Confidence, Team Collaboration, Collaboration","Time Management, Interpersonal Skills, Teamwork, Work Ethic",0.1877813661185259
+"Creativity, Time Management, Active Listening, Interpersonal Skills, Critical Thinking","Decision Making, Confidence, Networking, Interpersonal Skills",0.28799360182782835
+"Interpersonal Skills, Stress Management, Empathy, Public Speaking, Problem Solving","Communication, Conflict Resolution, Time Management, Problem Solving, Empathy",0.43960228251445976
+"Adaptability, Critical Thinking, Mentorship, Coaching, Active Listening","Analytical Thinking, Active Listening, Stress Management, Adaptability, Leadership, Coaching",0.16328556954340595
+"Team Collaboration, Emotional Intelligence, Problem Solving","Networking, Problem Solving, Analytical Thinking",0.5340781667615514
+"Confidence, Patience, Critical Thinking, Public Speaking","Networking, Adaptability, Effective Communication, Stress Management",0.5427789871338426
+"Teamwork, Problem Solving, Negotiation, Collaboration, Team Collaboration, Mentorship","Interpersonal Skills, Effective Communication, Collaboration, Mentorship, Public Speaking, Decision Making",0.30445427347051607
+"Team Collaboration, Mentorship, Problem Solving, Coaching, Patience","Patience, Work Ethic, Negotiation, Collaboration",0.2955370533064973
+"Empathy, Emotional Intelligence, Work Ethic","Empathy, Analytical Thinking, Collaboration, Decision Making",0.20563835652261456
+"Networking, Critical Thinking, Emotional Intelligence","Empathy, Time Management, Problem Solving, Networking",0.186108972122791
+"Mentorship, Stress Management, Public Speaking, Time Management, Decision Making","Time Management, Patience, Interpersonal Skills, Confidence, Effective Communication, Adaptability",0.5259475296322355
+"Negotiation, Mentorship, Interpersonal Skills","Adaptability, Decision Making, Critical Thinking, Communication, Active Listening, Empathy",0.494545496854857
+"Negotiation, Leadership, Problem Solving","Leadership, Analytical Thinking, Empathy, Adaptability, Work Ethic",0.274594844269586
+"Creativity, Coaching, Critical Thinking","Collaboration, Public Speaking, Confidence, Critical Thinking",0.43521123679622087
+"Collaboration, Adaptability, Conflict Resolution, Coaching, Stress Management, Active Listening","Problem Solving, Networking, Empathy, Mentorship, Time Management",0.23441084552173697
+"Mentorship, Teamwork, Emotional Intelligence","Decision Making, Adaptability, Patience",0.1134732203492756
+"Mentorship, Emotional Intelligence, Critical Thinking, Decision Making","Emotional Intelligence, Confidence, Empathy, Creativity",0.11386944146072409
+"Active Listening, Coaching, Effective Communication","Negotiation, Stress Management, Collaboration, Time Management, Active Listening, Patience",0.40371694858528345
+"Team Collaboration, Networking, Problem Solving, Analytical Thinking, Patience","Decision Making, Networking, Communication, Analytical Thinking",0.21543206327646558
+"Mentorship, Communication, Team Collaboration, Stress Management","Public Speaking, Networking, Coaching, Problem Solving, Work Ethic",0.19476569020958465
+"Decision Making, Stress Management, Active Listening, Confidence","Time Management, Conflict Resolution, Networking, Team Collaboration, Leadership, Interpersonal Skills",0.2932210685748258
+"Leadership, Interpersonal Skills, Active Listening, Networking, Coaching","Stress Management, Decision Making, Public Speaking, Problem Solving",0.26236388931176313
+"Conflict Resolution, Time Management, Work Ethic","Coaching, Mentorship, Critical Thinking, Decision Making, Effective Communication",0.5608954027867684
+"Teamwork, Time Management, Public Speaking","Problem Solving, Patience, Work Ethic, Networking, Teamwork, Interpersonal Skills",0.13936797822798028
+"Active Listening, Leadership, Problem Solving, Negotiation, Collaboration","Emotional Intelligence, Leadership, Coaching, Critical Thinking, Decision Making, Confidence",0.40006159225192206
+"Teamwork, Networking, Effective Communication, Adaptability","Confidence, Communication, Team Collaboration",0.160450136152052
+"Stress Management, Mentorship, Problem Solving, Patience, Collaboration, Teamwork","Time Management, Work Ethic, Creativity, Patience, Collaboration, Negotiation",0.5517792424198642
+"Networking, Analytical Thinking, Patience","Coaching, Adaptability, Analytical Thinking, Time Management, Mentorship",0.5315843395303439
+"Problem Solving, Team Collaboration, Empathy, Collaboration","Effective Communication, Problem Solving, Teamwork, Communication",0.24320903012010625
+"Confidence, Critical Thinking, Conflict Resolution, Interpersonal Skills, Communication, Emotional Intelligence","Collaboration, Communication, Decision Making, Leadership",0.5741020128043214
+"Coaching, Networking, Teamwork, Stress Management","Empathy, Creativity, Teamwork, Leadership, Emotional Intelligence, Team Collaboration",0.5846842449196786
+"Critical Thinking, Team Collaboration, Interpersonal Skills, Analytical Thinking, Empathy","Active Listening, Adaptability, Work Ethic, Communication",0.4739518508068978
+"Decision Making, Creativity, Communication, Negotiation, Empathy, Networking","Effective Communication, Public Speaking, Creativity, Coaching, Leadership, Mentorship",0.4548190142114611
+"Adaptability, Emotional Intelligence, Teamwork, Communication, Stress Management","Team Collaboration, Empathy, Collaboration, Emotional Intelligence",0.24613973140335166
+"Problem Solving, Effective Communication, Emotional Intelligence, Active Listening, Work Ethic, Collaboration","Confidence, Work Ethic, Public Speaking, Negotiation, Problem Solving, Active Listening",0.28810223737179863
+"Empathy, Critical Thinking, Communication, Emotional Intelligence","Critical Thinking, Creativity, Teamwork",0.28867649320495986
+"Teamwork, Critical Thinking, Networking, Stress Management, Public Speaking, Confidence","Adaptability, Team Collaboration, Interpersonal Skills",0.5686428752647391
+"Leadership, Effective Communication, Confidence, Collaboration","Creativity, Team Collaboration, Public Speaking",0.21919276627632328
+"Creativity, Problem Solving, Teamwork, Leadership, Analytical Thinking, Conflict Resolution","Interpersonal Skills, Decision Making, Coaching, Problem Solving, Creativity, Adaptability",0.2505756394949366
+"Networking, Team Collaboration, Emotional Intelligence, Interpersonal Skills","Confidence, Networking, Collaboration, Problem Solving",0.5014147399793929
+"Empathy, Mentorship, Patience","Emotional Intelligence, Empathy, Leadership, Problem Solving, Team Collaboration",0.49069501158065404
+"Teamwork, Stress Management, Adaptability, Time Management, Effective Communication","Analytical Thinking, Problem Solving, Collaboration, Teamwork, Public Speaking",0.5398830712743978
+"Mentorship, Stress Management, Adaptability, Patience","Collaboration, Stress Management, Empathy, Work Ethic, Effective Communication",0.47998552733181576
+"Networking, Team Collaboration, Analytical Thinking, Negotiation, Patience","Mentorship, Collaboration, Time Management, Coaching, Empathy, Networking",0.2204683014285863
+"Leadership, Work Ethic, Coaching, Critical Thinking, Emotional Intelligence","Effective Communication, Interpersonal Skills, Adaptability, Communication, Time Management, Stress Management",0.5092232453408887
+"Decision Making, Analytical Thinking, Mentorship, Confidence, Adaptability","Mentorship, Collaboration, Active Listening, Confidence, Negotiation, Work Ethic",0.5000583147286135
+"Confidence, Problem Solving, Creativity, Networking, Interpersonal Skills, Patience","Patience, Time Management, Problem Solving, Decision Making, Analytical Thinking",0.19141719393170917
+"Team Collaboration, Teamwork, Emotional Intelligence","Conflict Resolution, Teamwork, Interpersonal Skills, Stress Management, Adaptability, Negotiation",0.13106594615913567
+"Teamwork, Effective Communication, Networking, Creativity, Problem Solving","Collaboration, Communication, Interpersonal Skills, Decision Making, Stress Management, Patience",0.4313364863564269
+"Active Listening, Work Ethic, Emotional Intelligence, Team Collaboration, Interpersonal Skills, Critical Thinking","Effective Communication, Stress Management, Patience",0.4409087035467034
+"Adaptability, Teamwork, Time Management, Negotiation","Critical Thinking, Decision Making, Networking, Public Speaking, Problem Solving, Interpersonal Skills",0.20955081742830514
+"Empathy, Stress Management, Active Listening, Analytical Thinking, Public Speaking, Patience","Coaching, Public Speaking, Problem Solving",0.29013979772469956
+"Conflict Resolution, Analytical Thinking, Stress Management, Problem Solving","Mentorship, Decision Making, Empathy, Collaboration",0.4793450748885516
+"Time Management, Coaching, Creativity, Team Collaboration, Networking, Mentorship","Effective Communication, Interpersonal Skills, Patience, Collaboration",0.41961252949014743
+"Problem Solving, Decision Making, Communication","Decision Making, Adaptability, Emotional Intelligence, Active Listening, Problem Solving, Critical Thinking",0.22046720874096354
+"Analytical Thinking, Active Listening, Creativity, Mentorship, Patience","Active Listening, Communication, Problem Solving, Patience, Stress Management",0.26176151035111805
+"Collaboration, Leadership, Public Speaking, Conflict Resolution, Problem Solving, Team Collaboration","Networking, Time Management, Active Listening, Empathy, Public Speaking",0.17149668808616614
+"Work Ethic, Adaptability, Coaching, Networking, Active Listening, Creativity","Confidence, Negotiation, Teamwork, Networking, Coaching, Interpersonal Skills",0.1923111061288312
+"Collaboration, Leadership, Stress Management, Work Ethic","Interpersonal Skills, Communication, Coaching, Negotiation",0.572259803183381
+"Time Management, Critical Thinking, Conflict Resolution, Emotional Intelligence","Analytical Thinking, Teamwork, Time Management, Critical Thinking, Stress Management, Adaptability",0.19226153365553386
+"Time Management, Interpersonal Skills, Negotiation, Networking, Creativity, Critical Thinking","Empathy, Coaching, Adaptability, Work Ethic, Negotiation, Interpersonal Skills",0.12283390408831785
+"Analytical Thinking, Decision Making, Negotiation","Problem Solving, Empathy, Analytical Thinking, Teamwork",0.18240272191707335
+"Adaptability, Analytical Thinking, Team Collaboration, Patience","Collaboration, Teamwork, Negotiation",0.5030638817390645
+"Critical Thinking, Confidence, Networking, Leadership, Analytical Thinking, Coaching","Coaching, Team Collaboration, Conflict Resolution",0.4533614256093278
+"Teamwork, Confidence, Communication, Collaboration","Interpersonal Skills, Communication, Effective Communication",0.19465052921471424
+"Negotiation, Collaboration, Teamwork, Critical Thinking, Mentorship","Empathy, Confidence, Public Speaking",0.5039152814098582
+"Decision Making, Creativity, Coaching, Critical Thinking","Negotiation, Communication, Conflict Resolution",0.2732604738659501
+"Communication, Empathy, Collaboration, Adaptability","Work Ethic, Coaching, Mentorship, Effective Communication, Confidence",0.2525979058274335
+"Time Management, Active Listening, Effective Communication","Collaboration, Confidence, Emotional Intelligence, Decision Making, Analytical Thinking, Time Management",0.4113541899638696
+"Time Management, Adaptability, Critical Thinking","Active Listening, Effective Communication, Mentorship, Public Speaking",0.14041592727002014
+"Coaching, Collaboration, Emotional Intelligence","Public Speaking, Coaching, Conflict Resolution, Creativity, Time Management",0.16059800252986045
+"Empathy, Leadership, Communication, Adaptability, Work Ethic","Patience, Effective Communication, Interpersonal Skills",0.13098543927723003
+"Negotiation, Patience, Public Speaking","Conflict Resolution, Time Management, Confidence, Mentorship",0.19041517141643258
+"Public Speaking, Empathy, Patience, Teamwork, Adaptability, Analytical Thinking","Collaboration, Patience, Decision Making, Empathy, Time Management",0.5716325251751171
+"Work Ethic, Public Speaking, Effective Communication, Problem Solving, Coaching","Stress Management, Collaboration, Networking, Creativity",0.47097355724100476
+"Negotiation, Confidence, Effective Communication","Effective Communication, Collaboration, Patience, Critical Thinking, Interpersonal Skills",0.421362380905469
+"Problem Solving, Creativity, Public Speaking, Time Management, Conflict Resolution, Collaboration","Adaptability, Active Listening, Empathy",0.2507753539191127
+"Adaptability, Negotiation, Coaching","Collaboration, Negotiation, Decision Making, Active Listening, Problem Solving, Communication",0.18071810001076216
+"Coaching, Interpersonal Skills, Critical Thinking","Collaboration, Communication, Patience, Time Management, Confidence, Emotional Intelligence",0.4599475975003615
+"Conflict Resolution, Work Ethic, Patience, Effective Communication","Decision Making, Teamwork, Analytical Thinking, Public Speaking",0.4891960500238581
+"Conflict Resolution, Public Speaking, Patience","Empathy, Communication, Stress Management, Adaptability, Coaching",0.5783459711181348
+"Communication, Empathy, Patience, Conflict Resolution, Leadership, Networking","Stress Management, Empathy, Mentorship, Patience, Conflict Resolution, Creativity",0.2999568190647061
+"Work Ethic, Communication, Adaptability, Teamwork, Effective Communication","Problem Solving, Coaching, Creativity, Leadership, Effective Communication, Confidence",0.14025548300754967
+"Active Listening, Teamwork, Collaboration, Negotiation, Conflict Resolution, Time Management","Stress Management, Work Ethic, Interpersonal Skills, Conflict Resolution, Effective Communication, Patience",0.5002255870303658
+"Effective Communication, Active Listening, Time Management, Emotional Intelligence, Patience, Negotiation","Creativity, Team Collaboration, Networking, Interpersonal Skills, Problem Solving, Stress Management",0.5695337901429603
+"Conflict Resolution, Communication, Work Ethic, Interpersonal Skills, Team Collaboration","Patience, Emotional Intelligence, Stress Management, Negotiation, Public Speaking, Creativity",0.5788345855185985
+"Mentorship, Confidence, Collaboration, Public Speaking","Effective Communication, Mentorship, Time Management",0.5892733844782687
+"Networking, Team Collaboration, Effective Communication","Creativity, Leadership, Public Speaking, Collaboration, Patience, Coaching",0.41885242702483555
+"Communication, Decision Making, Work Ethic, Active Listening","Coaching, Emotional Intelligence, Active Listening, Empathy, Mentorship, Collaboration",0.5584864072641496
+"Confidence, Mentorship, Coaching","Conflict Resolution, Analytical Thinking, Emotional Intelligence, Problem Solving, Patience",0.26762662950216753
+"Creativity, Empathy, Teamwork, Team Collaboration, Time Management","Problem Solving, Teamwork, Empathy, Active Listening, Conflict Resolution, Mentorship",0.5282327518095349
+"Adaptability, Decision Making, Networking, Confidence","Communication, Coaching, Patience, Creativity, Time Management, Decision Making",0.2880218044010661
+"Analytical Thinking, Confidence, Creativity, Problem Solving, Public Speaking, Empathy","Networking, Time Management, Public Speaking, Empathy",0.2688328918624092
+"Patience, Analytical Thinking, Team Collaboration","Networking, Coaching, Teamwork, Conflict Resolution, Adaptability",0.5284644885531223
+"Stress Management, Negotiation, Active Listening, Confidence","Stress Management, Emotional Intelligence, Time Management",0.45868287010388775
+"Patience, Negotiation, Stress Management","Analytical Thinking, Mentorship, Team Collaboration, Empathy, Effective Communication, Negotiation",0.11831126681832349
+"Effective Communication, Mentorship, Conflict Resolution, Public Speaking","Negotiation, Problem Solving, Interpersonal Skills, Empathy",0.49808370283574865
+"Confidence, Patience, Mentorship, Problem Solving, Teamwork, Communication","Empathy, Adaptability, Team Collaboration",0.12811848360737607
+"Coaching, Active Listening, Collaboration","Mentorship, Decision Making, Conflict Resolution, Emotional Intelligence",0.5677253076084189
+"Decision Making, Coaching, Team Collaboration, Adaptability","Coaching, Stress Management, Emotional Intelligence, Adaptability",0.27849548816159436
+"Critical Thinking, Collaboration, Leadership, Time Management, Conflict Resolution","Effective Communication, Negotiation, Stress Management, Leadership",0.41903597199019227
+"Collaboration, Empathy, Stress Management","Emotional Intelligence, Empathy, Patience, Work Ethic, Creativity, Team Collaboration",0.4687430397740605
+"Active Listening, Creativity, Adaptability, Teamwork","Networking, Stress Management, Negotiation, Effective Communication, Mentorship",0.5379836904848663
+"Effective Communication, Communication, Interpersonal Skills","Time Management, Conflict Resolution, Patience, Leadership",0.23755255926364438
+"Public Speaking, Effective Communication, Emotional Intelligence, Negotiation, Creativity, Interpersonal Skills","Effective Communication, Public Speaking, Analytical Thinking, Adaptability, Critical Thinking, Communication",0.5387816689212015
+"Mentorship, Teamwork, Stress Management","Creativity, Collaboration, Patience",0.20851163093559785
+"Decision Making, Work Ethic, Coaching, Critical Thinking","Networking, Problem Solving, Team Collaboration",0.2181556390663329
+"Adaptability, Teamwork, Stress Management, Patience","Decision Making, Time Management, Communication",0.2877867986320834
+"Creativity, Negotiation, Active Listening, Analytical Thinking, Adaptability, Stress Management","Interpersonal Skills, Collaboration, Empathy, Teamwork, Problem Solving, Patience",0.5572818038885108
+"Creativity, Leadership, Work Ethic","Mentorship, Problem Solving, Creativity",0.557686733378099
+"Critical Thinking, Conflict Resolution, Confidence, Problem Solving, Teamwork, Decision Making","Team Collaboration, Creativity, Interpersonal Skills, Effective Communication, Negotiation",0.12763047331999186
+"Time Management, Analytical Thinking, Leadership, Collaboration, Public Speaking","Time Management, Critical Thinking, Mentorship, Negotiation",0.5683895176603359
+"Negotiation, Mentorship, Analytical Thinking, Adaptability, Interpersonal Skills","Creativity, Time Management, Effective Communication, Negotiation, Leadership",0.21871172532646194
+"Leadership, Coaching, Teamwork","Confidence, Conflict Resolution, Active Listening",0.14814524856635455
+"Interpersonal Skills, Critical Thinking, Time Management","Analytical Thinking, Collaboration, Emotional Intelligence, Public Speaking, Work Ethic, Effective Communication",0.4476862441209133
+"Public Speaking, Confidence, Collaboration","Negotiation, Public Speaking, Communication, Work Ethic, Collaboration, Problem Solving",0.14848301845692555
+"Critical Thinking, Mentorship, Interpersonal Skills, Work Ethic, Creativity","Empathy, Patience, Analytical Thinking, Collaboration, Decision Making, Coaching",0.12822936112222053
+"Critical Thinking, Active Listening, Communication, Coaching, Interpersonal Skills","Patience, Team Collaboration, Mentorship, Teamwork, Creativity",0.44805746497906784
+"Time Management, Negotiation, Decision Making, Public Speaking, Patience, Mentorship","Decision Making, Adaptability, Coaching",0.5986427778626213
+"Decision Making, Collaboration, Patience, Communication, Stress Management, Critical Thinking","Emotional Intelligence, Collaboration, Coaching, Work Ethic, Leadership",0.5286652120715931
+"Leadership, Collaboration, Confidence, Emotional Intelligence, Conflict Resolution, Teamwork","Conflict Resolution, Negotiation, Work Ethic, Teamwork, Effective Communication, Mentorship",0.21965789475482228
+"Empathy, Negotiation, Active Listening, Collaboration","Collaboration, Work Ethic, Leadership, Time Management, Mentorship, Interpersonal Skills",0.2996923610487401
+"Critical Thinking, Time Management, Empathy","Stress Management, Emotional Intelligence, Collaboration, Patience",0.16913988349166637
+"Analytical Thinking, Networking, Team Collaboration","Mentorship, Stress Management, Adaptability, Negotiation, Leadership",0.5583229908234266
+"Leadership, Collaboration, Interpersonal Skills, Effective Communication, Decision Making, Conflict Resolution","Patience, Analytical Thinking, Networking, Decision Making, Coaching, Leadership",0.5084428719636744
+"Coaching, Mentorship, Emotional Intelligence, Empathy, Creativity","Networking, Active Listening, Adaptability, Effective Communication, Creativity",0.4982802908240929
+"Active Listening, Mentorship, Stress Management","Confidence, Teamwork, Critical Thinking, Team Collaboration, Coaching",0.5378572883196704
+"Emotional Intelligence, Work Ethic, Networking, Stress Management, Patience, Adaptability","Leadership, Effective Communication, Adaptability, Team Collaboration, Emotional Intelligence",0.308462515226228
+"Teamwork, Empathy, Patience, Creativity, Critical Thinking","Empathy, Problem Solving, Time Management",0.29881483885018695
+"Teamwork, Mentorship, Networking, Creativity","Teamwork, Stress Management, Mentorship, Public Speaking",0.4394577188687615
+"Empathy, Critical Thinking, Time Management","Analytical Thinking, Patience, Adaptability, Networking",0.11915509845620398
+"Time Management, Decision Making, Teamwork, Problem Solving","Teamwork, Leadership, Interpersonal Skills, Team Collaboration",0.5198942811862033
+"Work Ethic, Creativity, Leadership, Coaching, Public Speaking","Analytical Thinking, Coaching, Communication, Work Ethic, Stress Management",0.5806349601064039
+"Networking, Stress Management, Confidence, Coaching, Active Listening, Effective Communication","Critical Thinking, Time Management, Analytical Thinking, Empathy, Team Collaboration, Conflict Resolution",0.43986659313060994
+"Communication, Conflict Resolution, Work Ethic, Adaptability","Problem Solving, Mentorship, Collaboration, Patience, Interpersonal Skills",0.27906029267685617
+"Creativity, Effective Communication, Leadership, Mentorship, Coaching, Stress Management","Empathy, Effective Communication, Interpersonal Skills",0.14944142047247969
+"Patience, Coaching, Time Management, Empathy, Interpersonal Skills","Critical Thinking, Teamwork, Conflict Resolution, Mentorship, Public Speaking, Active Listening",0.5189691816218269
+"Leadership, Mentorship, Critical Thinking, Adaptability","Coaching, Stress Management, Interpersonal Skills",0.538973831760733
+"Interpersonal Skills, Team Collaboration, Networking","Effective Communication, Critical Thinking, Time Management, Decision Making, Interpersonal Skills",0.25831721340476854
+"Adaptability, Empathy, Decision Making, Critical Thinking","Leadership, Creativity, Emotional Intelligence, Active Listening, Critical Thinking",0.4183207962907512
+"Team Collaboration, Problem Solving, Creativity","Emotional Intelligence, Confidence, Coaching, Analytical Thinking, Leadership, Teamwork",0.4577688118017885
+"Coaching, Team Collaboration, Patience, Empathy, Critical Thinking, Networking","Decision Making, Problem Solving, Conflict Resolution",0.4874750382185531
+"Effective Communication, Active Listening, Critical Thinking","Team Collaboration, Leadership, Time Management, Creativity, Teamwork, Interpersonal Skills",0.26666895991740225
+"Critical Thinking, Mentorship, Networking, Teamwork, Leadership","Stress Management, Mentorship, Team Collaboration, Critical Thinking, Adaptability",0.4476220536269715
+"Analytical Thinking, Teamwork, Leadership","Stress Management, Teamwork, Coaching, Time Management, Empathy, Creativity",0.41765345493055067
+"Stress Management, Confidence, Effective Communication, Communication","Critical Thinking, Collaboration, Stress Management, Adaptability, Interpersonal Skills, Mentorship",0.4578458264257186
+"Adaptability, Confidence, Emotional Intelligence, Stress Management, Work Ethic","Decision Making, Conflict Resolution, Critical Thinking, Coaching",0.5172404068230485
+"Teamwork, Empathy, Collaboration, Negotiation, Effective Communication, Patience","Creativity, Team Collaboration, Collaboration, Time Management, Analytical Thinking",0.5878479543105343
+"Leadership, Problem Solving, Empathy, Communication, Active Listening","Negotiation, Emotional Intelligence, Team Collaboration, Teamwork, Communication",0.468118168190838
+"Work Ethic, Public Speaking, Collaboration, Problem Solving","Work Ethic, Time Management, Public Speaking, Negotiation, Teamwork",0.558871349269146
+"Active Listening, Analytical Thinking, Time Management","Conflict Resolution, Communication, Leadership, Teamwork",0.15835089768952565
+"Interpersonal Skills, Networking, Problem Solving","Creativity, Coaching, Work Ethic, Team Collaboration",0.15789682974445451
+"Negotiation, Effective Communication, Leadership","Empathy, Decision Making, Stress Management",0.5274559658475418
+"Communication, Coaching, Collaboration, Interpersonal Skills, Empathy","Teamwork, Work Ethic, Communication",0.48785484534924306
+"Negotiation, Leadership, Creativity, Public Speaking","Critical Thinking, Emotional Intelligence, Time Management, Collaboration, Active Listening, Interpersonal Skills",0.5373008749593229
+"Networking, Patience, Problem Solving, Work Ethic, Collaboration","Empathy, Public Speaking, Negotiation, Team Collaboration, Active Listening",0.2870554700495775
+"Public Speaking, Networking, Empathy, Emotional Intelligence, Conflict Resolution, Team Collaboration","Team Collaboration, Decision Making, Public Speaking, Conflict Resolution",0.23837066246703859
+"Effective Communication, Coaching, Emotional Intelligence, Collaboration","Emotional Intelligence, Team Collaboration, Critical Thinking, Public Speaking",0.4989149497904959
+"Leadership, Coaching, Public Speaking","Networking, Empathy, Analytical Thinking, Creativity",0.18824469556875031
+"Decision Making, Interpersonal Skills, Public Speaking, Stress Management, Problem Solving, Communication","Coaching, Conflict Resolution, Patience, Leadership, Stress Management, Effective Communication",0.44891719584188594
+"Confidence, Team Collaboration, Decision Making, Emotional Intelligence, Collaboration, Adaptability","Mentorship, Analytical Thinking, Leadership",0.3089275035146953
+"Team Collaboration, Mentorship, Negotiation, Stress Management","Mentorship, Interpersonal Skills, Stress Management",0.499872468024597
+"Analytical Thinking, Negotiation, Conflict Resolution","Work Ethic, Team Collaboration, Collaboration, Active Listening",0.21919190198114374
+"Active Listening, Effective Communication, Mentorship, Confidence","Work Ethic, Empathy, Confidence, Analytical Thinking, Public Speaking, Stress Management",0.218956856171022
+"Communication, Critical Thinking, Emotional Intelligence, Decision Making","Networking, Negotiation, Mentorship, Teamwork, Effective Communication",0.5582953152205214
+"Time Management, Public Speaking, Communication, Teamwork, Interpersonal Skills, Critical Thinking","Public Speaking, Decision Making, Emotional Intelligence, Networking, Critical Thinking, Stress Management",0.19895243803349857
+"Stress Management, Analytical Thinking, Interpersonal Skills, Collaboration","Stress Management, Work Ethic, Leadership, Decision Making, Communication",0.4193004201660514
+"Public Speaking, Patience, Interpersonal Skills","Effective Communication, Problem Solving, Team Collaboration, Adaptability, Networking, Confidence",0.48868517068454276
+"Adaptability, Analytical Thinking, Critical Thinking, Negotiation, Public Speaking","Confidence, Conflict Resolution, Creativity, Interpersonal Skills, Leadership",0.43816829999113593
+"Effective Communication, Emotional Intelligence, Time Management, Empathy, Team Collaboration, Teamwork","Stress Management, Time Management, Collaboration, Teamwork, Problem Solving, Analytical Thinking",0.22912034515238044
+"Collaboration, Emotional Intelligence, Active Listening, Problem Solving, Coaching","Communication, Patience, Time Management, Stress Management, Public Speaking",0.4086864406914849
+"Stress Management, Critical Thinking, Negotiation, Analytical Thinking","Work Ethic, Adaptability, Emotional Intelligence, Communication, Confidence",0.5981478757584912
+"Active Listening, Public Speaking, Confidence, Leadership, Adaptability, Communication","Networking, Analytical Thinking, Effective Communication, Creativity",0.1581391544814299
+"Leadership, Patience, Interpersonal Skills, Teamwork, Work Ethic, Stress Management","Problem Solving, Conflict Resolution, Empathy, Negotiation, Collaboration, Confidence",0.5275826898710835
+"Public Speaking, Communication, Team Collaboration, Emotional Intelligence, Negotiation","Critical Thinking, Effective Communication, Mentorship, Communication, Problem Solving",0.24798413186517715
+"Communication, Emotional Intelligence, Critical Thinking","Interpersonal Skills, Team Collaboration, Confidence, Effective Communication",0.2375792509318183
+"Conflict Resolution, Team Collaboration, Effective Communication, Communication, Leadership","Networking, Conflict Resolution, Public Speaking",0.5478373900025342
+"Collaboration, Creativity, Emotional Intelligence, Empathy, Effective Communication","Emotional Intelligence, Coaching, Active Listening",0.5181819033569337
+"Work Ethic, Analytical Thinking, Emotional Intelligence, Negotiation","Analytical Thinking, Teamwork, Conflict Resolution, Time Management",0.4383916398577101
+"Patience, Critical Thinking, Public Speaking, Work Ethic, Problem Solving","Networking, Collaboration, Coaching, Effective Communication, Communication",0.42785701795466896
+"Team Collaboration, Stress Management, Patience","Mentorship, Creativity, Effective Communication, Decision Making, Collaboration",0.2472805912271968
+"Conflict Resolution, Leadership, Creativity, Critical Thinking, Active Listening","Active Listening, Public Speaking, Teamwork, Leadership",0.2480874619714571
+"Creativity, Problem Solving, Networking","Patience, Time Management, Communication, Negotiation, Interpersonal Skills, Stress Management",0.2673402378583777
+"Communication, Interpersonal Skills, Leadership","Team Collaboration, Adaptability, Time Management, Emotional Intelligence, Leadership",0.42738508445683443
+"Stress Management, Emotional Intelligence, Public Speaking, Coaching","Teamwork, Networking, Stress Management, Negotiation, Public Speaking, Time Management",0.1278311096227351
+"Effective Communication, Coaching, Interpersonal Skills, Decision Making","Patience, Teamwork, Work Ethic",0.12759217824803407
+"Patience, Empathy, Negotiation, Adaptability, Problem Solving","Communication, Time Management, Decision Making, Stress Management, Collaboration, Confidence",0.527025615616467
+"Public Speaking, Confidence, Stress Management","Patience, Communication, Active Listening",0.16666660911581532
+"Team Collaboration, Stress Management, Active Listening, Interpersonal Skills, Teamwork","Emotional Intelligence, Analytical Thinking, Coaching, Conflict Resolution, Mentorship",0.5363953041486382
+"Critical Thinking, Analytical Thinking, Public Speaking, Conflict Resolution, Collaboration, Creativity","Teamwork, Patience, Active Listening, Collaboration, Decision Making",0.4066702506683571
+"Work Ethic, Critical Thinking, Adaptability, Analytical Thinking","Adaptability, Decision Making, Critical Thinking",0.2575478300381554
+"Active Listening, Stress Management, Effective Communication, Emotional Intelligence, Adaptability","Mentorship, Stress Management, Creativity, Empathy, Confidence, Patience",0.13743382076349694
+"Analytical Thinking, Empathy, Confidence, Active Listening, Time Management","Confidence, Effective Communication, Decision Making, Empathy, Emotional Intelligence, Active Listening",0.15867404280141056
+"Emotional Intelligence, Coaching, Work Ethic, Problem Solving, Adaptability","Conflict Resolution, Communication, Leadership, Public Speaking, Stress Management, Decision Making",0.13825354105427703
+"Confidence, Communication, Empathy, Negotiation","Critical Thinking, Problem Solving, Leadership, Active Listening, Coaching, Collaboration",0.4879562417778106
+"Critical Thinking, Active Listening, Work Ethic, Confidence, Emotional Intelligence","Stress Management, Conflict Resolution, Negotiation, Effective Communication",0.4274896868187554
+"Interpersonal Skills, Networking, Creativity, Leadership","Adaptability, Creativity, Active Listening, Leadership, Critical Thinking",0.2580055342758938
+"Work Ethic, Networking, Stress Management, Negotiation","Adaptability, Mentorship, Active Listening, Leadership",0.16740493670280482
+"Adaptability, Team Collaboration, Effective Communication, Critical Thinking, Teamwork, Collaboration","Problem Solving, Patience, Confidence",0.2871323789141468
+"Work Ethic, Emotional Intelligence, Empathy","Empathy, Conflict Resolution, Teamwork, Adaptability",0.537101615953617
+"Networking, Coaching, Emotional Intelligence","Public Speaking, Work Ethic, Mentorship",0.47692296601003664
+"Decision Making, Emotional Intelligence, Time Management","Analytical Thinking, Empathy, Communication",0.45673434023858517
+"Emotional Intelligence, Collaboration, Empathy","Decision Making, Time Management, Leadership, Empathy, Problem Solving, Creativity",0.116865966714569
+"Conflict Resolution, Creativity, Collaboration, Decision Making, Time Management, Teamwork","Interpersonal Skills, Mentorship, Communication, Active Listening, Conflict Resolution, Work Ethic",0.4170672586157337
+"Negotiation, Problem Solving, Creativity, Patience, Networking","Interpersonal Skills, Creativity, Work Ethic",0.547221167006301
+"Networking, Stress Management, Critical Thinking, Leadership","Team Collaboration, Public Speaking, Patience, Interpersonal Skills, Work Ethic, Adaptability",0.16647229346243714
+"Mentorship, Coaching, Leadership","Mentorship, Stress Management, Coaching, Emotional Intelligence, Negotiation",0.19690843443960523
+"Active Listening, Public Speaking, Problem Solving, Mentorship","Team Collaboration, Interpersonal Skills, Adaptability, Active Listening",0.5570925533407058
+"Work Ethic, Adaptability, Coaching, Communication","Problem Solving, Confidence, Analytical Thinking, Public Speaking, Mentorship, Team Collaboration",0.21666599960613342
+"Confidence, Communication, Coaching, Stress Management, Team Collaboration, Interpersonal Skills","Stress Management, Creativity, Effective Communication",0.5672883243915708
+"Team Collaboration, Public Speaking, Analytical Thinking","Teamwork, Active Listening, Mentorship, Adaptability, Public Speaking, Confidence",0.12743370156728126
+"Decision Making, Leadership, Work Ethic, Coaching, Networking","Communication, Networking, Time Management, Analytical Thinking, Public Speaking",0.4375635215166729
+"Collaboration, Coaching, Communication","Decision Making, Problem Solving, Teamwork",0.30736006885198364
+"Interpersonal Skills, Leadership, Communication","Stress Management, Problem Solving, Work Ethic, Negotiation, Time Management, Teamwork",0.30690421121339495
+"Communication, Confidence, Stress Management","Team Collaboration, Emotional Intelligence, Confidence, Decision Making",0.4569988745680955
+"Emotional Intelligence, Work Ethic, Leadership, Team Collaboration","Decision Making, Coaching, Work Ethic",0.14739510044559975
+"Creativity, Emotional Intelligence, Decision Making, Collaboration, Empathy","Team Collaboration, Active Listening, Problem Solving",0.23753847642938392
+"Coaching, Time Management, Patience, Decision Making, Conflict Resolution, Communication","Communication, Decision Making, Collaboration, Teamwork, Networking",0.538385671986185
+"Patience, Effective Communication, Stress Management, Empathy","Collaboration, Analytical Thinking, Critical Thinking, Communication, Teamwork",0.19834898796492015
+"Team Collaboration, Confidence, Interpersonal Skills","Time Management, Public Speaking, Teamwork, Effective Communication, Networking, Team Collaboration",0.27775896207729966
+"Empathy, Negotiation, Team Collaboration, Critical Thinking","Conflict Resolution, Empathy, Work Ethic, Negotiation, Time Management",0.578288429520265
+"Conflict Resolution, Critical Thinking, Confidence, Stress Management, Leadership","Confidence, Public Speaking, Decision Making, Stress Management, Time Management",0.11877535418371332
+"Stress Management, Critical Thinking, Problem Solving, Teamwork, Coaching","Work Ethic, Public Speaking, Communication, Coaching, Empathy",0.47876514702692147
+"Communication, Active Listening, Conflict Resolution, Creativity, Collaboration","Public Speaking, Confidence, Collaboration, Coaching, Critical Thinking, Problem Solving",0.45865292340392494
+"Adaptability, Emotional Intelligence, Collaboration, Stress Management, Team Collaboration","Emotional Intelligence, Negotiation, Time Management, Creativity",0.128971121100841
+"Problem Solving, Mentorship, Work Ethic, Effective Communication, Conflict Resolution, Emotional Intelligence","Collaboration, Active Listening, Interpersonal Skills",0.17902222510727156
+"Mentorship, Time Management, Public Speaking, Coaching","Work Ethic, Patience, Collaboration, Negotiation, Problem Solving",0.5985113360235714
+"Confidence, Conflict Resolution, Critical Thinking, Active Listening","Critical Thinking, Team Collaboration, Creativity, Collaboration, Networking",0.3083926124364882
+"Confidence, Analytical Thinking, Mentorship, Adaptability, Networking, Effective Communication","Coaching, Mentorship, Leadership, Adaptability, Creativity",0.5292297121939424
+"Effective Communication, Problem Solving, Empathy","Interpersonal Skills, Coaching, Team Collaboration, Conflict Resolution, Communication",0.248903264745575
+"Interpersonal Skills, Conflict Resolution, Critical Thinking, Leadership","Networking, Patience, Mentorship, Work Ethic, Public Speaking",0.11844928925014536
+"Networking, Interpersonal Skills, Active Listening, Empathy, Leadership, Teamwork","Team Collaboration, Problem Solving, Teamwork, Critical Thinking",0.22890880840375932
+"Active Listening, Collaboration, Teamwork, Analytical Thinking, Work Ethic","Networking, Active Listening, Time Management",0.44907034237442434
+"Creativity, Empathy, Networking, Confidence, Active Listening, Teamwork","Emotional Intelligence, Critical Thinking, Work Ethic, Active Listening, Effective Communication",0.47921732459594696
+"Analytical Thinking, Emotional Intelligence, Collaboration, Decision Making, Interpersonal Skills, Confidence","Networking, Communication, Critical Thinking, Active Listening, Patience",0.26911812543444336
+"Analytical Thinking, Teamwork, Conflict Resolution","Analytical Thinking, Creativity, Conflict Resolution, Leadership, Team Collaboration",0.14002362843271612
+"Conflict Resolution, Analytical Thinking, Coaching, Effective Communication, Public Speaking","Leadership, Emotional Intelligence, Conflict Resolution",0.2904095406487566
+"Adaptability, Confidence, Analytical Thinking, Patience","Active Listening, Confidence, Decision Making, Collaboration, Creativity, Interpersonal Skills",0.47034507734300574
+"Collaboration, Public Speaking, Work Ethic, Team Collaboration","Confidence, Public Speaking, Work Ethic, Mentorship, Collaboration",0.12110097349340654
+"Leadership, Empathy, Coaching, Analytical Thinking, Conflict Resolution, Creativity","Coaching, Analytical Thinking, Time Management",0.2717278694601475
+"Effective Communication, Public Speaking, Adaptability, Communication, Emotional Intelligence","Coaching, Problem Solving, Adaptability, Empathy, Confidence",0.4216992707770361
+"Effective Communication, Stress Management, Mentorship","Coaching, Negotiation, Emotional Intelligence",0.28159064855698973
+"Problem Solving, Time Management, Communication, Mentorship","Creativity, Negotiation, Coaching",0.14161597154393515
+"Networking, Collaboration, Public Speaking, Negotiation, Coaching","Critical Thinking, Conflict Resolution, Problem Solving, Communication",0.4415158199289588
+"Analytical Thinking, Effective Communication, Teamwork, Conflict Resolution","Patience, Conflict Resolution, Mentorship",0.5416840555114952
+"Leadership, Coaching, Public Speaking, Analytical Thinking, Conflict Resolution","Teamwork, Team Collaboration, Coaching, Negotiation, Leadership",0.6021406397070646
+"Analytical Thinking, Work Ethic, Interpersonal Skills, Teamwork","Mentorship, Public Speaking, Creativity, Confidence, Empathy, Work Ethic",0.5821078228504277
+"Negotiation, Decision Making, Conflict Resolution, Empathy, Analytical Thinking, Problem Solving","Patience, Conflict Resolution, Coaching, Creativity",0.4922987874328843
+"Leadership, Coaching, Emotional Intelligence, Interpersonal Skills, Critical Thinking, Stress Management","Collaboration, Conflict Resolution, Decision Making",0.262062049710857
+"Leadership, Adaptability, Active Listening, Stress Management, Time Management","Coaching, Effective Communication, Patience",0.5920660746176831
+"Coaching, Networking, Negotiation","Networking, Interpersonal Skills, Problem Solving, Collaboration",0.14214526918519013
+"Collaboration, Communication, Patience, Effective Communication","Coaching, Stress Management, Public Speaking, Patience",0.432181962966974
+"Team Collaboration, Communication, Decision Making, Analytical Thinking, Work Ethic","Teamwork, Conflict Resolution, Leadership, Communication, Interpersonal Skills, Problem Solving",0.19274414074443277
+"Teamwork, Confidence, Creativity, Emotional Intelligence, Coaching, Interpersonal Skills","Analytical Thinking, Active Listening, Time Management, Leadership, Problem Solving",0.4525371827565676
+"Conflict Resolution, Active Listening, Analytical Thinking","Interpersonal Skills, Effective Communication, Mentorship, Communication, Work Ethic",0.5221416297947845
+"Empathy, Critical Thinking, Work Ethic","Creativity, Stress Management, Emotional Intelligence",0.191829933405714
+"Decision Making, Teamwork, Time Management, Critical Thinking, Stress Management","Work Ethic, Confidence, Decision Making, Conflict Resolution, Creativity, Public Speaking",0.5516157101717691
+"Mentorship, Decision Making, Public Speaking, Analytical Thinking, Emotional Intelligence","Time Management, Active Listening, Effective Communication",0.47128573468677964
+"Leadership, Decision Making, Problem Solving, Teamwork, Confidence, Empathy","Teamwork, Active Listening, Team Collaboration, Mentorship, Stress Management, Conflict Resolution",0.6014955477685426
+"Analytical Thinking, Active Listening, Emotional Intelligence, Decision Making","Effective Communication, Time Management, Teamwork, Creativity, Negotiation",0.4311077490739479
+"Patience, Communication, Interpersonal Skills, Problem Solving","Networking, Patience, Team Collaboration, Interpersonal Skills",0.17165777333669624
+"Creativity, Negotiation, Confidence","Effective Communication, Patience, Coaching, Critical Thinking, Communication, Empathy",0.4112050560600088
+"Stress Management, Interpersonal Skills, Patience, Adaptability, Work Ethic, Decision Making","Active Listening, Critical Thinking, Creativity, Analytical Thinking, Collaboration",0.21086851352201455
+"Critical Thinking, Conflict Resolution, Confidence, Problem Solving, Adaptability, Negotiation","Team Collaboration, Teamwork, Active Listening, Work Ethic, Empathy",0.5403488612196081
+"Adaptability, Collaboration, Critical Thinking, Public Speaking","Creativity, Team Collaboration, Collaboration, Critical Thinking",0.5313637590625548
+"Leadership, Teamwork, Negotiation","Communication, Stress Management, Problem Solving, Interpersonal Skills, Team Collaboration, Collaboration",0.31137537977125085
+"Critical Thinking, Stress Management, Time Management, Team Collaboration","Decision Making, Stress Management, Confidence, Team Collaboration, Coaching, Problem Solving",0.451660112834939
+"Networking, Creativity, Empathy, Conflict Resolution, Adaptability, Effective Communication","Emotional Intelligence, Leadership, Communication, Stress Management, Adaptability",0.12199458524149481
+"Stress Management, Collaboration, Empathy","Problem Solving, Patience, Negotiation, Decision Making",0.5915906348582276
+"Effective Communication, Patience, Interpersonal Skills","Networking, Active Listening, Effective Communication, Communication",0.30143639054627147
+"Collaboration, Networking, Team Collaboration, Communication, Negotiation","Coaching, Problem Solving, Adaptability, Time Management, Interpersonal Skills, Confidence",0.5209257077576217
+"Interpersonal Skills, Confidence, Stress Management, Team Collaboration, Patience","Confidence, Active Listening, Analytical Thinking, Conflict Resolution, Teamwork, Emotional Intelligence",0.2510724609590546
+"Problem Solving, Communication, Empathy","Teamwork, Stress Management, Work Ethic, Empathy, Decision Making, Conflict Resolution",0.22098388656185258
+"Communication, Emotional Intelligence, Leadership, Critical Thinking","Stress Management, Mentorship, Problem Solving, Time Management, Communication, Leadership",0.21146819611671022
+"Mentorship, Decision Making, Communication","Time Management, Problem Solving, Mentorship, Stress Management, Work Ethic, Teamwork",0.5314183260118975
+"Teamwork, Effective Communication, Empathy, Creativity, Conflict Resolution, Decision Making","Collaboration, Empathy, Coaching, Time Management",0.12157438810271443
+"Collaboration, Analytical Thinking, Critical Thinking, Adaptability","Analytical Thinking, Stress Management, Interpersonal Skills, Communication, Emotional Intelligence",0.16166395536447697
+"Critical Thinking, Negotiation, Time Management, Teamwork, Analytical Thinking, Team Collaboration","Problem Solving, Effective Communication, Team Collaboration, Stress Management",0.4719435404598248
+"Problem Solving, Emotional Intelligence, Negotiation, Teamwork, Empathy","Emotional Intelligence, Negotiation, Problem Solving",0.3029541894722899
+"Analytical Thinking, Confidence, Negotiation, Adaptability, Critical Thinking","Time Management, Adaptability, Collaboration, Critical Thinking, Teamwork",0.24329066677518257
+"Emotional Intelligence, Collaboration, Work Ethic","Decision Making, Creativity, Empathy, Communication, Patience, Teamwork",0.20323035965060074
+"Emotional Intelligence, Confidence, Communication, Decision Making, Interpersonal Skills, Analytical Thinking","Adaptability, Conflict Resolution, Problem Solving, Time Management, Effective Communication",0.5832699282893531
+"Creativity, Leadership, Stress Management","Effective Communication, Public Speaking, Mentorship, Patience, Teamwork",0.5430119348577085
+"Confidence, Empathy, Conflict Resolution","Creativity, Confidence, Negotiation, Analytical Thinking, Collaboration, Work Ethic",0.602911003161821
+"Communication, Negotiation, Emotional Intelligence","Stress Management, Problem Solving, Emotional Intelligence, Mentorship, Collaboration",0.5528249045926594
+"Public Speaking, Leadership, Critical Thinking, Communication","Leadership, Mentorship, Teamwork, Communication, Decision Making",0.45345449167606144
+"Leadership, Effective Communication, Conflict Resolution, Mentorship, Patience, Networking","Public Speaking, Decision Making, Team Collaboration",0.1232525849221573
+"Problem Solving, Mentorship, Patience","Confidence, Communication, Stress Management, Public Speaking, Leadership",0.30282204470081836
+"Effective Communication, Work Ethic, Coaching, Public Speaking, Leadership","Adaptability, Effective Communication, Coaching, Problem Solving, Team Collaboration",0.5732700657215577
+"Critical Thinking, Leadership, Teamwork","Team Collaboration, Confidence, Decision Making, Stress Management, Work Ethic, Problem Solving",0.5830536164610091
+"Critical Thinking, Leadership, Networking, Analytical Thinking, Communication, Conflict Resolution","Time Management, Patience, Conflict Resolution, Networking",0.5835118630046146
+"Coaching, Interpersonal Skills, Critical Thinking, Teamwork, Problem Solving, Patience","Time Management, Interpersonal Skills, Negotiation, Coaching",0.22396625319040842
+"Work Ethic, Active Listening, Creativity","Team Collaboration, Work Ethic, Stress Management",0.4440261058066021
+"Active Listening, Negotiation, Emotional Intelligence, Creativity, Communication","Public Speaking, Time Management, Patience, Problem Solving",0.44364941517068474
+"Adaptability, Leadership, Coaching","Adaptability, Creativity, Coaching, Teamwork, Emotional Intelligence",0.4841199143842305
+"Public Speaking, Stress Management, Active Listening","Critical Thinking, Effective Communication, Confidence",0.43389797372799216
+"Interpersonal Skills, Active Listening, Creativity","Adaptability, Interpersonal Skills, Empathy, Conflict Resolution, Emotional Intelligence, Leadership",0.5536765076886652
+"Empathy, Negotiation, Stress Management, Adaptability, Decision Making, Emotional Intelligence","Active Listening, Work Ethic, Networking, Effective Communication",0.2932258406840735
+"Critical Thinking, Effective Communication, Communication, Active Listening, Problem Solving, Coaching","Conflict Resolution, Creativity, Critical Thinking",0.12312145634110955
+"Conflict Resolution, Negotiation, Interpersonal Skills, Empathy","Empathy, Confidence, Analytical Thinking, Decision Making, Conflict Resolution",0.503475918638562
+"Emotional Intelligence, Problem Solving, Negotiation","Team Collaboration, Empathy, Leadership",0.5931975910545977
+"Critical Thinking, Mentorship, Public Speaking, Coaching, Collaboration, Creativity","Mentorship, Work Ethic, Negotiation, Empathy, Networking, Communication",0.1732255789018765
+"Effective Communication, Adaptability, Coaching","Collaboration, Patience, Networking",0.5630117066090574
+"Decision Making, Public Speaking, Collaboration, Negotiation, Analytical Thinking, Communication","Creativity, Teamwork, Coaching, Team Collaboration",0.1832414873616523
+"Collaboration, Patience, Stress Management, Effective Communication","Negotiation, Coaching, Mentorship, Leadership",0.3029800661450799
+"Adaptability, Communication, Team Collaboration","Interpersonal Skills, Coaching, Confidence, Adaptability, Time Management",0.4830205233100682
+"Work Ethic, Time Management, Empathy","Active Listening, Networking, Negotiation, Leadership, Effective Communication, Work Ethic",0.2323522757405101
+"Interpersonal Skills, Networking, Collaboration, Effective Communication","Work Ethic, Critical Thinking, Leadership, Interpersonal Skills, Creativity",0.19225232732921713
+"Communication, Effective Communication, Time Management","Negotiation, Empathy, Team Collaboration, Analytical Thinking, Networking",0.4919393155211239
+"Patience, Coaching, Negotiation, Public Speaking, Problem Solving","Work Ethic, Negotiation, Confidence",0.12205412423986328
+"Leadership, Work Ethic, Interpersonal Skills","Negotiation, Leadership, Emotional Intelligence",0.26185760966309646
+"Conflict Resolution, Patience, Public Speaking","Coaching, Time Management, Leadership, Creativity, Active Listening, Networking",0.5212975307313585
+"Decision Making, Adaptability, Patience, Public Speaking","Coaching, Stress Management, Conflict Resolution, Interpersonal Skills, Creativity, Empathy",0.1707463449212005
+"Problem Solving, Effective Communication, Communication, Active Listening, Creativity","Time Management, Empathy, Decision Making",0.15047111988702125
+"Mentorship, Collaboration, Creativity, Empathy","Emotional Intelligence, Networking, Stress Management",0.5002184482632599
+"Analytical Thinking, Team Collaboration, Decision Making, Stress Management, Interpersonal Skills, Creativity","Stress Management, Time Management, Active Listening",0.42037466215875735
+"Creativity, Negotiation, Communication, Work Ethic","Decision Making, Work Ethic, Stress Management",0.4804963836129095
+"Team Collaboration, Stress Management, Problem Solving, Confidence, Networking, Critical Thinking","Analytical Thinking, Networking, Leadership",0.6008761485402072
+"Decision Making, Team Collaboration, Communication, Active Listening","Conflict Resolution, Collaboration, Active Listening, Critical Thinking",0.5112823514598809
+"Critical Thinking, Analytical Thinking, Problem Solving, Leadership","Public Speaking, Coaching, Time Management, Team Collaboration, Confidence, Networking",0.4608968406931382
+"Analytical Thinking, Teamwork, Effective Communication, Leadership, Emotional Intelligence, Creativity","Confidence, Teamwork, Conflict Resolution, Networking, Emotional Intelligence",0.4212142613817485
+"Team Collaboration, Networking, Patience","Coaching, Adaptability, Problem Solving, Communication, Effective Communication",0.43083747758981444
+"Networking, Active Listening, Confidence, Empathy, Public Speaking","Coaching, Emotional Intelligence, Team Collaboration, Decision Making",0.24049368839431734
+"Patience, Creativity, Team Collaboration, Interpersonal Skills, Negotiation","Analytical Thinking, Decision Making, Networking, Time Management",0.4801525741400924
+"Negotiation, Networking, Patience, Teamwork, Analytical Thinking, Communication","Patience, Communication, Time Management, Team Collaboration, Coaching",0.1508568461257014
+"Decision Making, Time Management, Creativity, Problem Solving, Team Collaboration","Problem Solving, Decision Making, Teamwork, Creativity",0.2119501128035204
+"Negotiation, Mentorship, Empathy, Patience, Active Listening, Decision Making","Stress Management, Decision Making, Adaptability, Team Collaboration, Coaching",0.5320922693649727
+"Negotiation, Work Ethic, Collaboration, Critical Thinking, Analytical Thinking, Problem Solving","Stress Management, Confidence, Networking, Active Listening, Patience, Time Management",0.28153996870460546
+"Adaptability, Coaching, Team Collaboration","Critical Thinking, Communication, Team Collaboration, Mentorship",0.4817716715017524
+"Conflict Resolution, Team Collaboration, Time Management, Analytical Thinking","Public Speaking, Time Management, Networking, Problem Solving, Conflict Resolution, Team Collaboration",0.5824728331217256
+"Patience, Analytical Thinking, Team Collaboration, Creativity","Negotiation, Adaptability, Decision Making",0.49230457825410895
+"Collaboration, Mentorship, Emotional Intelligence, Public Speaking, Team Collaboration","Creativity, Mentorship, Teamwork, Negotiation, Decision Making, Public Speaking",0.2929551152064994
+"Networking, Collaboration, Patience","Conflict Resolution, Work Ethic, Team Collaboration, Patience, Networking, Creativity",0.5136204577085968
+"Problem Solving, Critical Thinking, Networking, Empathy","Collaboration, Negotiation, Decision Making, Effective Communication, Conflict Resolution, Networking",0.1434367314892214
+"Analytical Thinking, Empathy, Team Collaboration, Emotional Intelligence","Critical Thinking, Stress Management, Coaching",0.22340620346737977
+"Analytical Thinking, Collaboration, Leadership","Teamwork, Team Collaboration, Adaptability, Emotional Intelligence, Negotiation, Work Ethic",0.23324757054603057
+"Empathy, Interpersonal Skills, Networking, Leadership, Communication, Problem Solving","Collaboration, Communication, Adaptability, Critical Thinking, Confidence, Conflict Resolution",0.5133811311197292
+"Interpersonal Skills, Collaboration, Active Listening, Adaptability","Decision Making, Public Speaking, Confidence, Coaching, Empathy, Critical Thinking",0.49279914687196563
+"Active Listening, Emotional Intelligence, Time Management, Collaboration, Team Collaboration","Active Listening, Leadership, Communication, Analytical Thinking, Decision Making",0.4429857879604349
+"Collaboration, Effective Communication, Active Listening","Stress Management, Confidence, Time Management",0.13268255680209476
+"Team Collaboration, Empathy, Stress Management, Communication","Analytical Thinking, Coaching, Communication, Empathy",0.5831020856384352
+"Team Collaboration, Interpersonal Skills, Conflict Resolution, Analytical Thinking","Conflict Resolution, Communication, Collaboration, Leadership, Patience, Mentorship",0.5834021748352444
+"Teamwork, Problem Solving, Work Ethic, Effective Communication, Stress Management, Negotiation","Patience, Active Listening, Teamwork, Communication, Networking",0.5034191779279251
+"Time Management, Networking, Patience","Creativity, Coaching, Adaptability, Time Management, Effective Communication, Work Ethic",0.5832853164422936
+"Effective Communication, Problem Solving, Teamwork, Adaptability","Problem Solving, Analytical Thinking, Conflict Resolution, Emotional Intelligence, Public Speaking",0.5232600634321537
+"Work Ethic, Decision Making, Active Listening","Active Listening, Analytical Thinking, Communication, Time Management",0.3034568216498234
+"Conflict Resolution, Time Management, Collaboration, Leadership","Emotional Intelligence, Mentorship, Collaboration, Coaching, Analytical Thinking",0.19364002104116054
+"Stress Management, Empathy, Mentorship, Coaching","Work Ethic, Creativity, Effective Communication, Decision Making",0.5932615290170224
+"Analytical Thinking, Empathy, Confidence, Coaching","Conflict Resolution, Effective Communication, Coaching, Patience, Public Speaking",0.4331507198856673
+"Patience, Stress Management, Work Ethic","Effective Communication, Time Management, Stress Management, Interpersonal Skills, Collaboration, Mentorship",0.14301586154595178
+"Work Ethic, Adaptability, Public Speaking, Patience","Confidence, Time Management, Conflict Resolution, Stress Management, Adaptability, Emotional Intelligence",0.5628094771185546
+"Negotiation, Problem Solving, Conflict Resolution","Team Collaboration, Decision Making, Work Ethic",0.2325830951122152
+"Analytical Thinking, Conflict Resolution, Work Ethic, Mentorship, Patience","Conflict Resolution, Interpersonal Skills, Critical Thinking, Work Ethic, Patience",0.3035773232847299
+"Coaching, Confidence, Analytical Thinking, Empathy, Creativity","Work Ethic, Empathy, Coaching, Communication, Negotiation, Stress Management",0.45374752739125346
+"Teamwork, Leadership, Decision Making","Decision Making, Creativity, Analytical Thinking",0.2239576660187081
+"Networking, Effective Communication, Public Speaking","Mentorship, Team Collaboration, Negotiation, Public Speaking, Interpersonal Skills, Time Management",0.5939929685340338
+"Negotiation, Patience, Leadership, Analytical Thinking, Interpersonal Skills","Collaboration, Conflict Resolution, Effective Communication, Work Ethic, Time Management, Confidence",0.1637664118520899
+"Communication, Time Management, Networking, Mentorship, Teamwork, Stress Management","Communication, Team Collaboration, Negotiation, Patience, Problem Solving",0.164001712738351
+"Time Management, Work Ethic, Networking, Adaptability, Active Listening","Empathy, Coaching, Emotional Intelligence, Collaboration, Negotiation",0.5635103997770725
+"Coaching, Interpersonal Skills, Time Management","Patience, Empathy, Stress Management, Communication",0.5932976534534025
+"Interpersonal Skills, Mentorship, Emotional Intelligence, Work Ethic, Team Collaboration","Communication, Confidence, Creativity, Mentorship, Analytical Thinking",0.16335131222331445
+"Collaboration, Active Listening, Teamwork, Effective Communication, Decision Making, Conflict Resolution","Stress Management, Public Speaking, Emotional Intelligence, Coaching",0.27309127889761475
+"Communication, Team Collaboration, Public Speaking, Creativity, Coaching","Coaching, Negotiation, Decision Making",0.28328360670178054
+"Teamwork, Decision Making, Work Ethic, Adaptability, Effective Communication","Decision Making, Time Management, Empathy, Effective Communication",0.5436372166184467
+"Adaptability, Active Listening, Networking, Conflict Resolution, Empathy, Patience","Decision Making, Empathy, Active Listening",0.22411340073784042
+"Public Speaking, Critical Thinking, Effective Communication, Work Ethic, Decision Making, Interpersonal Skills","Critical Thinking, Networking, Decision Making, Communication",0.314812592014836
+"Coaching, Public Speaking, Active Listening, Effective Communication","Effective Communication, Adaptability, Mentorship, Negotiation",0.21501214102524988
+"Team Collaboration, Stress Management, Coaching, Collaboration, Active Listening, Problem Solving","Active Listening, Leadership, Critical Thinking",0.17536470008750926
+"Patience, Effective Communication, Stress Management, Negotiation, Decision Making, Emotional Intelligence","Adaptability, Interpersonal Skills, Confidence",0.1452371950071635
+"Stress Management, Work Ethic, Analytical Thinking, Patience, Mentorship","Negotiation, Teamwork, Collaboration, Conflict Resolution",0.4849824737410579
+"Creativity, Stress Management, Conflict Resolution, Patience, Public Speaking, Adaptability","Interpersonal Skills, Critical Thinking, Analytical Thinking",0.184733289230465

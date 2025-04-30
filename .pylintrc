@@ -1,0 +1,30 @@
+[MASTER]
+# Set the max line length for code style (optional, like flake8)
+max-line-length=100
+
+[MESSAGES CONTROL]
+# Enable only specific checks related to your interests
+disable=all
+enable=W0611,W0612,R0902,R0912,R0913,R0914,R0915
+
+[FORMAT]
+# Naming convention rules (C0103 related)
+# Function names should be snake_case (adjust if needed)
+function-rgx=[a-z_][a-z0-9_]{2,30}$
+variable-rgx=[a-z_][a-z0-9_]{2,30}$
+argument-rgx=[a-z_][a-z0-9_]{2,30}$
+attr-rgx=[a-z_][a-z0-9_]{2,30}$
+class-rgx=[A-Z][a-zA-Z0-9]+$
+const-rgx=(([A-Z_][A-Z0-9_]*)|(__.*__))$
+
+[DESIGN]
+# Maximum allowed complexity for design rules
+max-args=8                  # R0913 – too many function arguments
+max-locals=20               # R0914 – too many local variables
+max-branches=12             # R0912 – too many branches in function
+max-statements=50           # R0915 – too many statements in function
+max-attributes=10           # R0902 – too many attributes in class
+
+[REPORTS]
+# Disable overall score report at the end
+reports=no

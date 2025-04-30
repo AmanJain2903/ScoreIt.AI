@@ -62,7 +62,7 @@ Each artifact will contain the corresponding CSV benchmark file.
 | MAE | Mean Absolute Error |
 | MSE | Mean Squared Error |
 | R² | Coefficient of Determination (Goodness of Fit) |
-| Accuracy | Custom metric (Predictions within ±15% range are considered accurate) |
+| Accuracy | Custom metric (Predictions within ±10% range are considered accurate) |
 
 ---
 

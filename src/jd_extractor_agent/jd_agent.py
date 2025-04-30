@@ -17,15 +17,12 @@
 # JDAgent.deleteAgent()
 # print(output)
 
-import os
 import gc
 import json
 from openai import OpenAI
-from dotenv import load_dotenv
 from src.utils import security
 from src.jd_extractor_agent import config
 import importlib.resources
-import yaml
 # Load configuration
 config = config.Config()
     
@@ -42,7 +39,7 @@ class JobDescriptionAgent:
             except Exception as e:
                     raise RuntimeError(f"Failed to load system prompt '{systemPromptPath}': {e}")
         if not systemPrompt:
-            raise ValueError(f"System prompt not found.")
+            raise ValueError("System prompt not found.")
         if not apiKey:
             raise ValueError("API key not found.")
         if not modelName:
@@ -151,7 +148,7 @@ class JobDescriptionAgent:
 
     def getJsonOutput(self):
         if not self.jsonOutput:
-            for i in range(3):
+            for _ in range(3):
                 try:
                     self.getResponse()
                     if self.jsonOutput:

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='src',
-    version='0.3.0',
+    version='0.1.0',
     author='Aman Jain',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
@@ -25,7 +25,11 @@ setup(
         'scikit-learn',
         'pandas',
         'numpy',
-        'regex'
+        'regex',
+        'tqdm',
+        'ruff',
+        'bandit',
+        'pylint'
     ]
 )
 

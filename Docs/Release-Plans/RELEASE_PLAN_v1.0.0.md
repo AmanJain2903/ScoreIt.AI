@@ -11,7 +11,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 # 🏋️ Planned Versions
 
-## 🔢 V0.1.0 - Core Extraction Engine - (In Pre-Release Phase 🟡)
+## 🔢 V0.1.0 - Core Extraction Engine - (Released ✅)
 **Goal:**
 - Build structured Resume and JD data extraction modules.
 - Complete ResumeAgent and JobDescriptionAgent.
@@ -42,7 +42,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.2.0 - End-to-End Matchmaker Engine
+## 🔢 V0.2.0 - End-to-End Matchmaker Engine (Under Development)
 **Goal:**
 - Implement Complete Matchmaking Engine - Resume & Job Description.
 - Combine multiple matching outputs into an aggregated Match Scores.
@@ -149,7 +149,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 # 📅 Current Status
 | Version |   Progress    | Deadline |
 |:---|:---|:---|
-| V0.1.0 | 🟡 In Pre-Release | May 1st 2025  |
+| V0.1.0 | ✅ Released       | May 1st 2025  |
 | V0.2.0 | ❌ Pending        | May 2nd 2025  |
 | V0.3.0 | ❌ Pending        | May 4th 2025  |
 | V0.4.0 | ❌ Pending        | May 8th 2025  |

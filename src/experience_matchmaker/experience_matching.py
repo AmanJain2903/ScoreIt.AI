@@ -39,49 +39,50 @@ class ExperienceSimilarity:
     def __init__(self):
         self.model1Score = None
         self.model2Score = None
-        self.ensembleScore = None
+        self.ensembleScore = []
     
     def setModel1Score(self, score):
-        if not isinstance(score, (int, float)):
-            raise ValueError("Score must be an integer or float.")
+        if not isinstance(score, (int, list)):
+            raise ValueError("Score must be a list.")
         self.model1Score = score
     
     def setModel2Score(self, score):
-        if not isinstance(score, (int, float)):
-            raise ValueError("Score must be an integer or float.")
+        if not isinstance(score, (int, list)):
+            raise ValueError("Score must be a list.")
         self.model2Score = score
     
     def averageEnsemble(self):
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
-        self.ensembleScore = (self.model1Score + self.model2Score) / 2
-    
+        for i in range(len(self.model1Score)):
+            if self.model1Score[i] and self.model2Score[i]:
+                self.ensembleScore.append((self.model1Score[i] + self.model2Score[i]) / 2)
+
     def hardEnsemble(self):
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
-        if self.model1Score>0.5:
-            self.ensembleScore = min(1.0, self.model1Score * 1.2)
-        elif self.model2Score<0.5:
-            self.ensembleScore = min(1.0, self.model2Score * 0.8)
-        else:
-            self.averageEnsemble()
+        for i in range(len(self.model1Score)):
+            if self.model1Score[i] < 0.5:
+                self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
+            if self.model2Score[i] < 0.5:
+                self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
+        self.averageEnsemble()
     
-
     def getEnsembleScore(self):
-        if self.ensembleScore is None:
+        if not self.ensembleScore:
             try:
                 self.hardEnsemble()
             except ValueError:
                 raise ValueError("Ensemble score has not been calculated.")
-        if not isinstance(self.ensembleScore, (int, float)):
-            raise ValueError("Ensemble score is not a valid number.")
+        if not isinstance(self.ensembleScore, list):
+            raise ValueError("Ensemble score is not a valid list.")
         return self.ensembleScore
 
     def reset(self):
         """Reset the scores."""
         self.model1Score = None
         self.model2Score = None
-        self.ensembleScore = None
+        self.ensembleScore = []
 
 
 class ExperienceNumeralizer:
@@ -173,8 +174,8 @@ class ExperienceMatching:
             raise ValueError("Resume Experience must be a string.")
         if not isinstance(jobExperience, str):
             raise ValueError("Job Experience must be a string.")
-        self.resumeExperience = resumeExperience
-        self.jobExperience = jobExperience
+        self.resumeExperience = security.sanitizeInput(resumeExperience, config.MAX_INPUT_LENGTH).split(',')
+        self.jobExperience = security.sanitizeInput(jobExperience, config.MAX_INPUT_LENGTH).split(',')
     
     def makeMatch(self):
         if not self.model1 or not self.model2:
@@ -186,28 +187,49 @@ class ExperienceMatching:
             raise ValueError("Inputs are not set")
         
         try:
-            jobExperience = security.sanitizeInput(self.jobExperience, config.MAX_INPUT_LENGTH)
-            resumeExperience = security.sanitizeInput(self.resumeExperience, config.MAX_INPUT_LENGTH)
-
-            resumeNumeral = self.resumeNumeralizer.extractYears(resumeExperience)
-            jobNumeral = self.jobNumeralizer.extractYears(jobExperience)
-            if resumeNumeral and jobNumeral:
-                self.factor = resumeNumeral / jobNumeral
-
-            jobEmbeddings1 = self.model1.encode([jobExperience])
-            resumeEmbeddings1 = self.model1.encode([resumeExperience])
-            jobEmbeddings2 = self.model2.encode([jobExperience])
-            resumeEmbeddings2 = self.model2.encode([resumeExperience])
-            similarity1 = max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0)
-            similarity2 = max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0)
-            self.similarity.setModel1Score(similarity1)
-            self.similarity.setModel2Score(similarity2)
+            model1Scores = []
+            model2Scores = []
+            matchedExperiences = {}
+            for jobExperience in self.jobExperience:
+                maxModel1Score = 0
+                maxModel2Score = 1
+                jobExperience = jobExperience.strip()
+                jobNumeral = self.jobNumeralizer.extractYears(jobExperience)
+                jobEmbeddings1 = self.model1.encode([jobExperience])
+                jobEmbeddings2 = self.model2.encode([jobExperience])
+                currBest = None
+                for resumeExperience in self.resumeExperience:
+                    if resumeExperience in matchedExperiences:
+                        continue
+                    resumeExperience = resumeExperience.strip()
+                    resumeNumeral = self.resumeNumeralizer.extractYears(resumeExperience)
+                    if resumeNumeral and jobNumeral:
+                        factor = resumeNumeral / jobNumeral
+                    if not jobExperience or not resumeExperience:
+                        continue
+                    resumeEmbeddings1 = self.model1.encode([resumeExperience])
+                    resumeEmbeddings2 = self.model2.encode([resumeExperience])
+                    similarity1 = min(1.0, max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0) * factor)
+                    similarity2 = min(1.0, max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0) * factor)
+                    if similarity1>maxModel1Score:
+                        maxModel1Score = similarity1
+                        maxModel2Score = similarity2
+                        currBest = resumeExperience
+                model1Scores.append(maxModel1Score)
+                model2Scores.append(maxModel2Score)
+                if currBest:
+                    matchedExperiences[currBest] = jobExperience
+            
+            self.similarity.setModel1Score(model1Scores)
+            self.similarity.setModel2Score(model2Scores)
             self.similarity.hardEnsemble()
-            self.similarity.ensembleScore = min(self.similarity.ensembleScore * self.factor, 1.0)
 
         except Exception as e:
             raise RuntimeError(f"Failed to make match: {e}")
-        return self.similarity.getEnsembleScore()
+        scores = self.similarity.getEnsembleScore()
+        if not scores:
+            return 0.0
+        return min(1.0,max(scores))
     
     def getSimilarityScore(self):
         if self.similarity.ensembleScore is None:
@@ -215,9 +237,12 @@ class ExperienceMatching:
                 self.makeMatch()
             except Exception as e:
                 raise RuntimeError(f"Failed to get similarity score: {e}")
-        if not isinstance(self.similarity.ensembleScore, (int, float)):
-            raise ValueError("Ensemble score is not a valid number.")
-        return self.similarity.getEnsembleScore()
+        if not isinstance(self.similarity.ensembleScore, (int, list)):
+            raise ValueError("Ensemble score is not a valid list.")
+        scores = self.similarity.getEnsembleScore()
+        if not scores:
+            return 0.0
+        return min(1.0, max(scores))
     
     def reset(self):
         """Reset the similarity scores and models."""

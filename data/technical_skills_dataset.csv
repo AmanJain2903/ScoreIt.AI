@@ -1,501 +1,501 @@
-ResumeSkill,JobSkill,TentativeScore
-"Cloud Computing, Flask, MongoDB, Big Data","Data Engineering, Node.js, C++, Deep Learning, API Development, Java",0.5745
-"AWS, Node.js, Flask, API Development","Keras, Machine Learning, React, Data Science, NoSQL",0.4793
-"Big Data, Azure, CI/CD, Data Science, GraphQL","Azure, API Development, Python, Data Engineering, AWS, Hadoop",0.5972
-"API Development, Spark, Cloud Computing","SQL, Kubernetes, React, API Development, Hadoop",0.7285
-"Spark, Python, Node.js, API Development, Keras, Docker","Data Engineering, C++, Docker, Data Science, Kubernetes, REST APIs",0.4649
-"Keras, Hadoop, React, NoSQL, Node.js, Data Engineering","SQL, MongoDB, API Development, Data Science, Django, Machine Learning",0.4649
-"Hadoop, Flask, Big Data","Machine Learning, SQL, Spark, C++, GraphQL, Cloud Computing",0.7369
-"Hadoop, MongoDB, SQL, API Development","AWS, C++, Data Engineering, Node.js, GraphQL",0.6151
-"Big Data, Python, Cloud Computing, Spark, Data Science","Node.js, Data Engineering, Spark, TensorFlow, SQL",0.4296
-"Flask, Microservices, Data Science, Hadoop","Deep Learning, Data Science, Python, Keras",0.5814
-"Cloud Computing, REST APIs, Spark, Python","Node.js, PostgreSQL, Docker, CI/CD",0.4305
-"NoSQL, Java, AWS, Azure, Python","Docker, Kubernetes, Big Data, Node.js, Data Engineering",0.4301
-"Azure, NoSQL, Hadoop, PostgreSQL, REST APIs","Java, Keras, Big Data",0.5363
-"REST APIs, Keras, Azure, TensorFlow, Hadoop","Microservices, Django, PostgreSQL, Spark",0.213
-"AWS, Spark, Flask, Cloud Computing","Node.js, Flask, GraphQL, Python, Hadoop",0.2413
-"Java, CI/CD, Data Science, Django, React, C++","AWS, Machine Learning, MongoDB",0.4157
-"Python, Spark, Django, NoSQL, C++","Node.js, Microservices, Data Science, Python, Java, Kubernetes",0.3481
-"PostgreSQL, Hadoop, React","AWS, API Development, Hadoop, Kubernetes, Azure",0.5471
-"AWS, Flask, Microservices, MongoDB, C++","Cloud Computing, SQL, TensorFlow",0.3638
-"TensorFlow, PostgreSQL, Hadoop","Spark, Machine Learning, Azure, Flask, GraphQL, Cloud Computing",0.2882
-"Deep Learning, Microservices, MongoDB, GraphQL","REST APIs, Cloud Computing, CI/CD, API Development, NoSQL",0.7198
-"Deep Learning, Keras, Hadoop, C++, Java","NoSQL, Cloud Computing, Django, Python, Azure",0.4661
-"MongoDB, Azure, Machine Learning, Docker","PostgreSQL, NoSQL, Big Data, Django, Kubernetes, Cloud Computing",0.5101
-"TensorFlow, CI/CD, Keras, Microservices, C++","REST APIs, Data Engineering, MongoDB, NoSQL",0.2863
-"API Development, Data Engineering, PostgreSQL, C++","Hadoop, GraphQL, C++, Docker, SQL",0.4183
-"GraphQL, Machine Learning, Docker, Flask, MongoDB","Data Engineering, Hadoop, Cloud Computing, Data Science, MongoDB",0.5166
-"Python, AWS, REST APIs, Data Engineering, API Development, PostgreSQL","AWS, SQL, API Development",0.3274
-"C++, NoSQL, Azure, Docker","REST APIs, Azure, C++, API Development",0.5564
-"CI/CD, Deep Learning, Data Science, Azure, Kubernetes, API Development","Hadoop, GraphQL, Azure, MongoDB",0.4099
-"Hadoop, Java, Flask, Kubernetes","Flask, Django, TensorFlow",0.4562
-"Kubernetes, Hadoop, Cloud Computing, Spark","C++, Flask, REST APIs",0.4097
-"PostgreSQL, Spark, Data Science, Machine Learning","API Development, SQL, Django, Microservices, NoSQL",0.7778
-"React, Docker, Hadoop, Deep Learning, CI/CD, Data Engineering","Kubernetes, PostgreSQL, Keras, NoSQL",0.498
-"Deep Learning, Data Engineering, Java, Django, Hadoop","Flask, Data Engineering, CI/CD, Cloud Computing, Python, GraphQL",0.3413
-"GraphQL, React, Azure","AWS, SQL, Hadoop, Big Data",0.6234
-"React, SQL, Deep Learning, Azure, NoSQL","Azure, Data Engineering, Microservices, API Development, REST APIs, Docker",0.3169
-"Node.js, TensorFlow, Microservices, Spark, Flask, C++","Keras, Big Data, Kubernetes, Docker, Machine Learning, Flask",0.5313
-"PostgreSQL, NoSQL, Kubernetes","TensorFlow, NoSQL, Cloud Computing, REST APIs, API Development, C++",0.206
-"Flask, Data Science, Node.js, Kubernetes, SQL, C++","Hadoop, Kubernetes, TensorFlow, Docker, Azure, Deep Learning",0.3008
-"NoSQL, MongoDB, Django, GraphQL, Data Engineering, Docker","AWS, Hadoop, Python, GraphQL",0.5295
-"PostgreSQL, Data Engineering, Microservices, React","Python, Data Engineering, TensorFlow, React, AWS, Data Science",0.6108
-"Flask, REST APIs, Machine Learning, Cloud Computing","PostgreSQL, Java, Cloud Computing, Node.js",0.5257
-"Microservices, Docker, Java","Cloud Computing, Django, C++, Deep Learning",0.4827
-"Kubernetes, Machine Learning, Cloud Computing","Data Engineering, Hadoop, Data Science, Java, Deep Learning",0.4548
-"Keras, REST APIs, Microservices, AWS","Kubernetes, PostgreSQL, API Development, NoSQL, TensorFlow",0.2782
-"Azure, Hadoop, Node.js","Node.js, REST APIs, API Development, React, Data Engineering, CI/CD",0.392
-"API Development, REST APIs, Big Data, GraphQL","C++, Docker, PostgreSQL, Azure, Hadoop",0.4309
-"CI/CD, Keras, Java, MongoDB","Node.js, NoSQL, MongoDB, Python, Spark, Docker",0.6586
-"Kubernetes, SQL, MongoDB, Java, TensorFlow","REST APIs, Kubernetes, MongoDB, Data Science, Big Data",0.5515
-"NoSQL, Keras, Data Engineering, AWS, PostgreSQL, Node.js","NoSQL, Azure, Python, Spark",0.2355
-"Java, REST APIs, CI/CD, React","Microservices, Machine Learning, Deep Learning",0.5486
-"Cloud Computing, Python, Deep Learning","REST APIs, Deep Learning, Data Science, TensorFlow, Big Data",0.4422
-"GraphQL, Java, Azure, Keras","Data Engineering, Machine Learning, Hadoop, Spark, Azure",0.3985
-"AWS, Flask, API Development, Big Data, React","CI/CD, Cloud Computing, Data Engineering, REST APIs",0.5918
-"Deep Learning, GraphQL, Data Science","Machine Learning, Microservices, GraphQL, TensorFlow, Python",0.6546
-"Data Science, Data Engineering, Java, Node.js, Deep Learning, Flask","SQL, API Development, Keras",0.6397
-"Flask, GraphQL, AWS, Microservices","PostgreSQL, Keras, Data Science, GraphQL, Python",0.3741
-"GraphQL, Azure, Deep Learning, Django, MongoDB, SQL","Data Science, Django, TensorFlow, C++, Docker",0.4536
-"AWS, Python, Big Data, Kubernetes, MongoDB","Flask, Data Engineering, NoSQL, API Development, Azure, Microservices",0.5497
-"Big Data, Flask, React, Python","C++, Cloud Computing, Data Science, Spark, AWS, CI/CD",0.6463
-"Kubernetes, Hadoop, GraphQL, Docker, Django, Data Engineering","NoSQL, Python, Data Science",0.4281
-"Docker, Hadoop, API Development, SQL","REST APIs, PostgreSQL, Cloud Computing, Keras, Django",0.4722
-"C++, Hadoop, Azure, Java, Cloud Computing, NoSQL","C++, PostgreSQL, Node.js",0.334
-"Django, PostgreSQL, Python","Java, React, Node.js, NoSQL",0.3206
-"REST APIs, Big Data, Data Science","C++, Big Data, REST APIs, Kubernetes, GraphQL, CI/CD",0.6219
-"Azure, SQL, Big Data, Cloud Computing, AWS","TensorFlow, Java, MongoDB",0.7034
-"Django, Big Data, Deep Learning, C++, Hadoop, MongoDB","GraphQL, PostgreSQL, SQL, AWS, Docker",0.4892
-"Data Science, API Development, AWS, Node.js, REST APIs, Django","Azure, API Development, React",0.6505
-"Java, Cloud Computing, NoSQL, TensorFlow, Kubernetes, C++","Data Engineering, Machine Learning, Spark, CI/CD",0.5542
-"Docker, Deep Learning, Keras, MongoDB, Machine Learning, Azure","Data Engineering, Microservices, Node.js",0.4032
-"Python, GraphQL, Deep Learning, Machine Learning","Java, Keras, Data Science, Spark, Microservices, Cloud Computing",0.5542
-"Machine Learning, Python, Data Science, Big Data, TensorFlow, Hadoop","Django, CI/CD, Azure",0.7307
-"Microservices, AWS, Docker","Keras, GraphQL, Spark, NoSQL, C++, Flask",0.4946
-"Machine Learning, Deep Learning, Kubernetes, Hadoop","MongoDB, Machine Learning, PostgreSQL, Data Engineering, SQL",0.7347
-"Deep Learning, Hadoop, Azure, Java, API Development, Cloud Computing","Cloud Computing, GraphQL, Microservices",0.107
-"Cloud Computing, PostgreSQL, Hadoop, SQL","GraphQL, Machine Learning, Hadoop, AWS, Node.js",0.6233
-"Java, GraphQL, NoSQL, Docker, Spark","MongoDB, Deep Learning, Keras",0.5131
-"Keras, GraphQL, MongoDB","Node.js, Hadoop, Python, AWS, Microservices, SQL",0.4551
-"Java, API Development, Docker, Hadoop, Django, NoSQL","TensorFlow, Flask, CI/CD, Azure, Cloud Computing",0.5138
-"Python, Keras, Microservices, Spark","Node.js, Java, GraphQL",0.2019
-"GraphQL, Machine Learning, AWS, Spark, Hadoop, Django","Big Data, TensorFlow, PostgreSQL, Cloud Computing, Hadoop",0.467
-"TensorFlow, SQL, Machine Learning, Big Data, Azure, Java","Java, PostgreSQL, Keras, Azure, Deep Learning",0.5536
-"Data Science, Deep Learning, React, Docker, GraphQL","Hadoop, PostgreSQL, CI/CD, NoSQL",0.7217
-"Kubernetes, Microservices, API Development, C++, AWS, Python","CI/CD, Python, Data Engineering",0.4223
-"Kubernetes, React, Machine Learning, Django","Data Engineering, Django, API Development, React, REST APIs, SQL",0.3787
-"Microservices, GraphQL, Azure, Data Science, Data Engineering, Python","Data Science, Python, React, SQL, Machine Learning, Kubernetes",0.4247
-"React, Keras, Cloud Computing, Python, C++, CI/CD","Java, Azure, C++",0.6373
-"Azure, GraphQL, Deep Learning, Kubernetes, Machine Learning","Data Science, Django, Node.js, Azure, Python, MongoDB",0.5493
-"Data Science, CI/CD, Azure, SQL, Keras","REST APIs, Java, Spark, TensorFlow",0.4205
-"SQL, Kubernetes, Deep Learning, Node.js, Django, Data Engineering","API Development, React, Java, Cloud Computing, Keras",0.577
-"Hadoop, Node.js, Big Data","Kubernetes, GraphQL, Hadoop, Big Data, Docker",0.5146
-"Hadoop, Microservices, Kubernetes, Spark, Django","Azure, Flask, Data Science, Node.js, Cloud Computing",0.6453
-"REST APIs, Python, Big Data","PostgreSQL, REST APIs, Flask, Azure, AWS, Deep Learning",0.3947
-"REST APIs, Deep Learning, TensorFlow","Data Engineering, Kubernetes, Data Science",0.4509
-"TensorFlow, Kubernetes, Microservices","CI/CD, MongoDB, TensorFlow, Docker, AWS",0.4412
-"Java, REST APIs, Machine Learning, PostgreSQL","Python, PostgreSQL, Keras, Deep Learning",0.2805
-"Data Science, TensorFlow, C++, Microservices, Docker","NoSQL, MongoDB, C++, Python, Node.js, CI/CD",0.5444
-"Keras, NoSQL, Microservices, Machine Learning","Python, Azure, TensorFlow, Flask, PostgreSQL, Big Data",0.5392
-"TensorFlow, MongoDB, API Development, GraphQL, Spark","API Development, C++, Data Engineering, Spark",0.5008
-"Data Science, CI/CD, C++, Flask","MongoDB, Microservices, Keras, Java, C++, Big Data",0.4648
-"Keras, Node.js, Python, C++, Machine Learning, CI/CD","Microservices, SQL, Hadoop, Kubernetes, REST APIs, Java",0.2877
-"Data Engineering, PostgreSQL, GraphQL, Python, CI/CD, C++","SQL, Node.js, React, Azure",0.4369
-"SQL, NoSQL, CI/CD, PostgreSQL, Node.js","TensorFlow, Java, Data Science, Big Data",0.4486
-"C++, TensorFlow, Machine Learning","MongoDB, C++, Data Engineering",0.3797
-"Node.js, Azure, Data Engineering, GraphQL, Deep Learning","Django, Cloud Computing, API Development, TensorFlow",0.4758
-"MongoDB, Spark, Node.js, SQL, Big Data","Spark, C++, Hadoop, Django",0.5606
-"Java, Node.js, AWS","GraphQL, Cloud Computing, SQL",0.7829
-"Deep Learning, Azure, Data Engineering, REST APIs, Python","Azure, TensorFlow, C++, React, Big Data, Data Engineering",0.5262
-"Django, Java, NoSQL, CI/CD","AWS, PostgreSQL, Keras, Machine Learning, API Development, Hadoop",0.5386
-"GraphQL, AWS, Cloud Computing, REST APIs, PostgreSQL","Kubernetes, C++, Microservices, Java",0.4888
-"Azure, NoSQL, CI/CD, Data Science","Flask, MongoDB, Python, NoSQL, Data Science",0.2122
-"Machine Learning, Data Science, Kubernetes, API Development, Docker, MongoDB","SQL, Python, CI/CD, Django",0.496
-"Python, Machine Learning, Django, Keras, Cloud Computing, C++","Spark, Docker, Keras, MongoDB, GraphQL",0.509
-"Java, REST APIs, SQL","Machine Learning, AWS, Cloud Computing, Data Engineering, Django",0.8695
-"Java, Data Science, Machine Learning, REST APIs","Big Data, Java, API Development, Data Science, Azure, Node.js",0.4711
-"Keras, SQL, Data Engineering, Hadoop, Spark","Java, Big Data, NoSQL, Django, C++",0.5452
-"MongoDB, Cloud Computing, SQL, Spark, REST APIs","Big Data, C++, AWS, Spark, Deep Learning, Data Engineering",0.4948
-"Java, GraphQL, Data Science, Data Engineering, MongoDB, CI/CD","Hadoop, Keras, Python, Flask, MongoDB, GraphQL",0.3247
-"Kubernetes, Deep Learning, Spark, REST APIs, Microservices, Big Data","Hadoop, Data Science, Cloud Computing, Microservices, Machine Learning, MongoDB",0.6714
-"REST APIs, Python, Big Data, Docker, Deep Learning","PostgreSQL, Data Engineering, SQL",0.6128
-"NoSQL, Django, API Development, React","PostgreSQL, CI/CD, SQL",0.6187
-"Data Science, Cloud Computing, Big Data, Keras, Spark, REST APIs","Spark, C++, Machine Learning, Hadoop, SQL",0.3636
-"Big Data, Machine Learning, Spark, Hadoop","Spark, Cloud Computing, Keras, GraphQL",0.7104
-"Kubernetes, C++, Machine Learning","Spark, GraphQL, TensorFlow, Java",0.2897
-"CI/CD, Azure, Python","SQL, Keras, PostgreSQL, Kubernetes, Node.js, Data Science",0.588
-"Hadoop, NoSQL, Docker, CI/CD, Cloud Computing","REST APIs, Kubernetes, AWS, Flask",0.8286
-"NoSQL, Django, CI/CD, Node.js, Cloud Computing, Microservices","PostgreSQL, AWS, GraphQL, Deep Learning, Flask",0.3514
-"Python, Data Science, REST APIs, Cloud Computing, Microservices","Machine Learning, Docker, Spark, React, MongoDB, Microservices",0.4151
-"TensorFlow, Deep Learning, Node.js, REST APIs, API Development","React, Machine Learning, Cloud Computing, Big Data, Kubernetes, NoSQL",0.5149
-"TensorFlow, CI/CD, MongoDB, Microservices, Azure, Django","Django, Cloud Computing, Deep Learning, API Development, NoSQL",0.4245
-"React, Microservices, GraphQL","Cloud Computing, AWS, Hadoop, React",0.2674
-"TensorFlow, CI/CD, Kubernetes, C++, API Development, Deep Learning","React, Cloud Computing, Machine Learning, Django, TensorFlow, AWS",0.5103
-"Data Science, API Development, Microservices, Machine Learning, Django","TensorFlow, Big Data, CI/CD",0.3407
-"API Development, GraphQL, Data Science, Java","Django, Cloud Computing, PostgreSQL, Azure",0.571
-"Deep Learning, Django, PostgreSQL, Machine Learning","Cloud Computing, Hadoop, TensorFlow, Azure, SQL, NoSQL",0.3621
-"Django, TensorFlow, PostgreSQL, Data Engineering, Node.js","Docker, C++, API Development",0.7325
-"Cloud Computing, TensorFlow, Data Science, Deep Learning","Big Data, TensorFlow, MongoDB, Deep Learning",0.3825
-"Django, Machine Learning, API Development","PostgreSQL, Docker, Deep Learning, Java",0.4517
-"Flask, Docker, Machine Learning, MongoDB","Microservices, Keras, Django, AWS, GraphQL",0.622
-"API Development, Deep Learning, REST APIs, Azure, PostgreSQL","Spark, GraphQL, CI/CD, Deep Learning, Data Engineering, Java",0.3154
-"Big Data, Spark, Azure, Kubernetes, SQL, Python","Kubernetes, GraphQL, Flask, Data Engineering, Big Data",0.5341
-"Hadoop, Docker, Python, C++","Docker, REST APIs, API Development, Machine Learning",0.6961
-"GraphQL, NoSQL, MongoDB, REST APIs","Java, Node.js, Kubernetes",0.2589
-"C++, React, GraphQL, Microservices, Python, NoSQL","Java, Data Science, PostgreSQL, Data Engineering, GraphQL",0.5277
-"Machine Learning, Java, SQL, AWS, Deep Learning","React, Data Science, Cloud Computing, NoSQL, PostgreSQL, Big Data",0.539
-"Microservices, Data Science, API Development, Azure, AWS, REST APIs","React, Cloud Computing, NoSQL, Python",0.6173
-"API Development, Python, React, Keras, Cloud Computing","Python, Azure, CI/CD, Data Science, C++",0.3145
-"Hadoop, Kubernetes, Django, Flask, Deep Learning, Data Engineering","CI/CD, MongoDB, Node.js, Big Data, SQL, TensorFlow",0.3019
-"Data Engineering, Azure, Cloud Computing, Spark, Node.js","PostgreSQL, Deep Learning, Hadoop",0.5783
-"Microservices, AWS, Node.js, TensorFlow, Django, Flask","TensorFlow, Keras, CI/CD, Deep Learning, REST APIs",0.5445
-"Java, TensorFlow, API Development, AWS","NoSQL, API Development, Deep Learning, Hadoop",0.5376
-"Cloud Computing, Kubernetes, Node.js, TensorFlow","AWS, Keras, REST APIs, React, Django",0.552
-"Keras, Python, AWS","Keras, Java, MongoDB, PostgreSQL, Big Data",0.398
-"Keras, Deep Learning, GraphQL, Big Data","Microservices, Spark, Kubernetes, Big Data",0.5348
-"Azure, Docker, React, PostgreSQL","API Development, Big Data, GraphQL, Spark, Azure",0.544
-"CI/CD, React, Cloud Computing, TensorFlow","Deep Learning, Big Data, Kubernetes, C++",0.3928
-"Data Science, Deep Learning, SQL","Data Science, Data Engineering, MongoDB, Deep Learning, NoSQL, PostgreSQL",0.7799
-"Django, Data Science, Machine Learning, Microservices","PostgreSQL, Docker, Hadoop, TensorFlow, Cloud Computing, NoSQL",0.5711
-"Kubernetes, Big Data, PostgreSQL","Machine Learning, Cloud Computing, Node.js",0.3213
-"MongoDB, Python, CI/CD, Machine Learning","Python, Deep Learning, Azure, Big Data, Docker",0.5985
-"AWS, Data Engineering, Cloud Computing, Microservices","Flask, API Development, PostgreSQL, Kubernetes, GraphQL",0.3538
-"Spark, NoSQL, C++, API Development, CI/CD, Keras","Machine Learning, Django, Deep Learning, TensorFlow",0.6181
-"Data Engineering, C++, TensorFlow","SQL, Microservices, Python, Data Science, Hadoop, Cloud Computing",0.6738
-"C++, GraphQL, Java, Hadoop, SQL","Data Engineering, SQL, Big Data",0.3769
-"Hadoop, Data Science, Flask, Keras, CI/CD, Node.js","Docker, React, Cloud Computing, Microservices",0.6445
-"Spark, SQL, Kubernetes, Data Engineering","Spark, Keras, Hadoop",0.5619
-"Docker, PostgreSQL, MongoDB, Azure, NoSQL, GraphQL","Data Science, MongoDB, PostgreSQL, Spark, Azure",0.6233
-"Deep Learning, Spark, Docker","Deep Learning, Cloud Computing, Node.js, AWS, Java, PostgreSQL",0.7845
-"GraphQL, React, MongoDB, PostgreSQL, Keras, TensorFlow","Cloud Computing, CI/CD, Azure",0.4632
-"MongoDB, Microservices, C++","Java, Django, Big Data, Spark, NoSQL",0.3869
-"Azure, API Development, TensorFlow, PostgreSQL, Cloud Computing, NoSQL","Deep Learning, NoSQL, Machine Learning, AWS, React",0.3666
-"Spark, Azure, Data Science, Data Engineering","Kubernetes, Node.js, Big Data, Flask, SQL",0.3776
-"Keras, API Development, Node.js, Hadoop, Deep Learning, Django","SQL, Java, Flask",0.4884
-"API Development, Django, PostgreSQL, Python, C++, Big Data","MongoDB, Cloud Computing, SQL, Data Science",0.5512
-"Flask, Azure, Django, Data Science, GraphQL","Django, API Development, Java",0.5415
-"C++, REST APIs, Machine Learning, Deep Learning, Docker, CI/CD","React, Azure, CI/CD, Java",0.6241
-"Azure, TensorFlow, AWS","Deep Learning, Docker, Keras, CI/CD",0.502
-"Data Science, CI/CD, Python, AWS, Java","Java, Data Science, Big Data, NoSQL, Azure",0.718
-"Spark, Data Science, Data Engineering, AWS, Microservices, SQL","API Development, Kubernetes, Cloud Computing, Azure, Node.js",0.4603
-"Django, Data Engineering, Node.js, REST APIs, Data Science","Django, Big Data, Data Engineering, CI/CD, Python, Deep Learning",0.908
-"Keras, Data Engineering, Django, CI/CD, GraphQL","API Development, AWS, Data Engineering, Data Science, Big Data",0.5939
-"GraphQL, React, TensorFlow, Docker, Data Engineering","PostgreSQL, Java, API Development, Flask",0.3714
-"Docker, Deep Learning, GraphQL","Deep Learning, C++, TensorFlow, NoSQL",0.3394
-"Microservices, CI/CD, MongoDB, Kubernetes","Data Science, Python, PostgreSQL",0.5724
-"React, AWS, TensorFlow, Java","Data Engineering, REST APIs, Cloud Computing, API Development, Big Data, NoSQL",0.4665
-"Data Engineering, NoSQL, REST APIs, API Development, Python","AWS, Cloud Computing, NoSQL, TensorFlow",0.6071
-"Java, Data Science, SQL, Deep Learning","Flask, Data Science, Microservices, API Development",0.571
-"Node.js, Cloud Computing, PostgreSQL, SQL","Data Science, Microservices, Java, GraphQL, Keras, Big Data",0.4891
-"Keras, Big Data, Machine Learning, Spark","Keras, Cloud Computing, Docker",0.373
-"TensorFlow, Kubernetes, Docker, Microservices","Spark, Python, Docker, Node.js, Big Data, TensorFlow",0.2728
-"NoSQL, Data Engineering, Python","Docker, Cloud Computing, React, PostgreSQL, Data Science",0.433
-"Keras, Data Science, React","Keras, PostgreSQL, Spark, Microservices, Cloud Computing",0.6285
-"Big Data, Hadoop, Azure","PostgreSQL, Flask, Kubernetes, Java",0.5321
-"Data Engineering, Machine Learning, AWS, Microservices, Java, TensorFlow","Deep Learning, Azure, Keras, NoSQL, GraphQL",0.3131
-"Java, TensorFlow, Cloud Computing, Microservices","Machine Learning, React, Keras, Docker, AWS, SQL",0.526
-"Hadoop, Machine Learning, Azure, GraphQL","React, Docker, Cloud Computing, Big Data, PostgreSQL",0.5578
-"C++, Spark, Flask","Django, Data Engineering, Azure, PostgreSQL",0.3674
-"Spark, PostgreSQL, API Development, CI/CD, TensorFlow, Big Data","Kubernetes, Flask, Django, Deep Learning",0.5231
-"PostgreSQL, API Development, GraphQL, TensorFlow, Docker, CI/CD","Java, Data Science, Hadoop, AWS, Node.js, Django",0.5087
-"Node.js, AWS, Keras, SQL, Kubernetes","MongoDB, Flask, Docker, Microservices",0.3286
-"Flask, Data Science, Big Data, Machine Learning, Kubernetes","Docker, Cloud Computing, SQL, Node.js, C++, Microservices",0.5537
-"Azure, Hadoop, Spark, Python, Data Engineering, Deep Learning","Data Engineering, Azure, Keras, API Development, Big Data",0.5841
-"Microservices, React, GraphQL, Kubernetes","Cloud Computing, Flask, TensorFlow, Spark, GraphQL, Big Data",0.6625
-"REST APIs, React, TensorFlow, Microservices, Azure, API Development","Kubernetes, Node.js, Keras",0.6581
-"Microservices, Docker, Django, Deep Learning, GraphQL","Cloud Computing, Django, Data Engineering, Java, React, API Development",0.2933
-"NoSQL, SQL, GraphQL, Kubernetes","AWS, Spark, SQL, TensorFlow",0.3593
-"CI/CD, Spark, Django, Deep Learning, GraphQL, Hadoop","Node.js, Keras, API Development, Python",0.5773
-"React, Kubernetes, C++","Cloud Computing, C++, Big Data, Microservices, MongoDB",0.5771
-"Django, REST APIs, Python, Deep Learning","C++, Big Data, Microservices",0.5773
-"API Development, Spark, Machine Learning, Data Engineering","Kubernetes, AWS, C++",1.0
-"Python, Microservices, React","Machine Learning, SQL, TensorFlow",0.5856
-"Azure, React, PostgreSQL, Deep Learning, REST APIs","SQL, React, API Development",0.6703
-"C++, Deep Learning, NoSQL, Data Engineering, Microservices, Hadoop","PostgreSQL, Azure, Node.js, Machine Learning, CI/CD",0.6431
-"REST APIs, Data Science, C++, Node.js","Flask, Cloud Computing, Deep Learning, Azure",0.5977
-"API Development, Big Data, Data Science, AWS","NoSQL, Flask, Java, REST APIs, Hadoop",0.4527
-"Cloud Computing, Django, Data Science, NoSQL, Azure, Keras","Deep Learning, MongoDB, GraphQL, Data Engineering, Hadoop, NoSQL",0.6138
-"NoSQL, Django, Flask","REST APIs, Machine Learning, Keras",0.3841
-"Big Data, API Development, Django, C++, Data Science, MongoDB","SQL, MongoDB, NoSQL, Spark",0.4645
-"MongoDB, Hadoop, Java, Deep Learning, Flask, Cloud Computing","C++, Keras, Microservices, Spark, API Development, PostgreSQL",0.4272
-"SQL, Keras, API Development, Flask","Java, Data Science, Keras",0.5123
-"Spark, Node.js, MongoDB, REST APIs, Keras","TensorFlow, Docker, Node.js",0.8472
-"Data Science, Node.js, GraphQL, Python","Cloud Computing, Big Data, PostgreSQL, Spark",0.2199
-"REST APIs, Data Science, GraphQL, React","Data Engineering, Hadoop, Microservices",0.6029
-"Cloud Computing, Kubernetes, API Development, GraphQL","PostgreSQL, Data Science, Node.js, MongoDB, CI/CD",0.2581
-"C++, Docker, Data Engineering","MongoDB, Django, CI/CD, NoSQL, Kubernetes, Flask",0.4292
-"CI/CD, Deep Learning, Cloud Computing","Node.js, AWS, Data Science, NoSQL, Python",0.6633
-"Azure, GraphQL, SQL, C++","Docker, Machine Learning, Java, REST APIs",0.5096
-"React, Node.js, REST APIs, SQL","Django, TensorFlow, Big Data, Machine Learning",0.3383
-"Microservices, Docker, TensorFlow, MongoDB, PostgreSQL, Node.js","CI/CD, C++, Java",0.3927
-"Microservices, Azure, Hadoop, Node.js","Data Science, TensorFlow, Java, CI/CD, Big Data, AWS",0.6019
-"Azure, AWS, Machine Learning, REST APIs","NoSQL, Java, Kubernetes",0.3904
-"NoSQL, GraphQL, MongoDB, SQL, REST APIs, Keras","Hadoop, C++, React",0.5325
-"Java, API Development, Hadoop, Machine Learning, Azure","Big Data, Spark, Kubernetes, Hadoop, CI/CD",0.5068
-"REST APIs, PostgreSQL, Data Engineering, Cloud Computing, Microservices, Azure","API Development, CI/CD, Node.js, SQL, Data Science, Kubernetes",0.4023
-"PostgreSQL, REST APIs, Python, Flask, TensorFlow, API Development","REST APIs, SQL, Java, Cloud Computing, Keras",0.8216
-"Python, CI/CD, Keras","Node.js, Keras, Big Data",0.5951
-"Django, Data Science, Machine Learning, Spark, NoSQL, REST APIs","Python, Big Data, Django",0.1962
-"Flask, React, Django","REST APIs, Spark, Data Science, Java",0.528
-"GraphQL, Deep Learning, Data Science, REST APIs, Big Data, Cloud Computing","Docker, GraphQL, React, PostgreSQL, Data Engineering",0.4007
-"Hadoop, Kubernetes, AWS, NoSQL, Data Science, Docker","Data Engineering, React, TensorFlow, Keras, Hadoop, Data Science",0.6279
-"NoSQL, MongoDB, GraphQL, TensorFlow, Microservices, Machine Learning","SQL, Data Science, Hadoop, Big Data, Deep Learning",0.3811
-"Hadoop, PostgreSQL, GraphQL, Deep Learning","Data Engineering, Hadoop, C++",0.4828
-"Data Science, Node.js, AWS","Flask, MongoDB, Azure, NoSQL, Docker",0.5757
-"MongoDB, Machine Learning, C++, AWS","Docker, PostgreSQL, NoSQL, React, Java",0.6299
-"Big Data, Hadoop, Docker, Keras","React, NoSQL, SQL",0.32
-"SQL, PostgreSQL, Flask","React, Flask, Big Data",0.4498
-"MongoDB, Docker, React","Azure, Kubernetes, Node.js",0.4288
-"NoSQL, Azure, Python, Machine Learning","Django, Spark, AWS, Hadoop, Deep Learning, Microservices",0.402
-"Python, SQL, NoSQL, CI/CD","Hadoop, TensorFlow, Keras, SQL, PostgreSQL, Django",0.7648
-"API Development, Hadoop, Python, Big Data, Node.js, C++","Java, Keras, Big Data",0.5607
-"Microservices, API Development, Data Engineering, NoSQL, AWS","React, Data Engineering, Azure, Kubernetes, Big Data",0.3109
-"Machine Learning, Spark, Keras, Deep Learning","MongoDB, Hadoop, C++",0.6377
-"Azure, Kubernetes, PostgreSQL, Cloud Computing, GraphQL","Java, Spark, PostgreSQL, API Development, NoSQL, Machine Learning",0.8183
-"Docker, GraphQL, Data Engineering, Big Data","React, Java, AWS, Data Engineering, Keras, NoSQL",0.6549
-"PostgreSQL, SQL, React, Flask, Spark, Data Engineering","Big Data, Data Science, API Development, SQL",0.2721
-"REST APIs, PostgreSQL, C++, NoSQL, Machine Learning","API Development, Keras, MongoDB, Kubernetes, React",0.4274
-"Keras, Data Science, API Development, AWS, Python","SQL, Docker, MongoDB, Deep Learning",0.69
-"Azure, AWS, Keras, MongoDB","SQL, Hadoop, Kubernetes",0.3938
-"Node.js, Azure, Keras, Python, Kubernetes","MongoDB, AWS, Kubernetes, PostgreSQL, Python",0.5666
-"Azure, Django, C++, Kubernetes","Spark, CI/CD, NoSQL, Data Science, Azure",0.6162
-"GraphQL, Hadoop, API Development, SQL","AWS, Kubernetes, MongoDB, API Development, REST APIs",0.361
-"Microservices, PostgreSQL, React, Big Data, TensorFlow, Docker","Microservices, API Development, REST APIs, Cloud Computing, Machine Learning",0.4911
-"Python, Keras, Docker","Data Engineering, GraphQL, REST APIs, TensorFlow, NoSQL",0.0138
-"API Development, Data Science, Hadoop, Flask, Data Engineering, Machine Learning","Machine Learning, CI/CD, Docker",0.3463
-"Hadoop, Docker, TensorFlow, Microservices","CI/CD, React, AWS, Docker",0.4621
-"Flask, Keras, Hadoop","MongoDB, Keras, C++, REST APIs",0.3128
-"Node.js, SQL, Flask, TensorFlow","Docker, CI/CD, Microservices, API Development, React",0.7449
-"Spark, Azure, Python","SQL, Machine Learning, React, Docker, Big Data",0.2855
-"Data Engineering, GraphQL, C++, Python, Big Data","React, Azure, Machine Learning, PostgreSQL, TensorFlow",0.434
-"C++, GraphQL, Flask","React, Java, Node.js, Spark, AWS",0.5196
-"Python, AWS, TensorFlow","Docker, Deep Learning, Python",0.7162
-"NoSQL, Microservices, Spark, Keras, Python, Data Science","Python, Hadoop, Django",0.2846
-"Keras, Data Science, PostgreSQL, TensorFlow","Machine Learning, Django, SQL, Big Data",0.6745
-"MongoDB, Docker, Hadoop, Java, REST APIs, Machine Learning","Hadoop, Big Data, Spark, Flask, SQL, Kubernetes",0.5015
-"Big Data, Keras, Kubernetes","Azure, AWS, Cloud Computing, MongoDB",0.3528
-"REST APIs, Python, API Development","Azure, Cloud Computing, Hadoop, Spark, Kubernetes, REST APIs",0.5693
-"Data Science, Kubernetes, API Development, AWS, CI/CD","Machine Learning, Big Data, SQL, MongoDB, Python",0.5299
-"Flask, Microservices, CI/CD","REST APIs, Spark, Machine Learning, Data Science",0.41
-"C++, Data Science, PostgreSQL","Spark, Data Engineering, PostgreSQL, Cloud Computing",0.5105
-"Azure, TensorFlow, SQL, Data Engineering","Flask, Hadoop, Data Science, Data Engineering",0.4422
-"CI/CD, Django, Deep Learning","TensorFlow, Docker, Data Engineering, Deep Learning",0.517
-"Deep Learning, GraphQL, Cloud Computing, SQL","Flask, CI/CD, Django, Docker, TensorFlow",0.5993
-"Microservices, TensorFlow, CI/CD","C++, Docker, Deep Learning, SQL, React",0.7379
-"Kubernetes, SQL, MongoDB, Spark, Docker","Django, Spark, Azure, CI/CD, Java",0.3143
-"PostgreSQL, SQL, Java, GraphQL, Node.js","Microservices, Docker, Flask",0.82
-"CI/CD, Django, AWS, Deep Learning, Azure, React","Data Science, Hadoop, Python, Django, Node.js, Docker",0.2072
-"AWS, Java, TensorFlow, Data Engineering, Data Science, MongoDB","CI/CD, Microservices, Machine Learning, TensorFlow, AWS",0.4772
-"Data Science, Cloud Computing, Big Data, Django, TensorFlow, SQL","C++, React, NoSQL, Machine Learning, Kubernetes",0.5882
-"GraphQL, Keras, AWS, Deep Learning, Hadoop","AWS, Data Science, Deep Learning, Cloud Computing",0.5421
-"Node.js, Data Engineering, NoSQL","Deep Learning, Cloud Computing, Spark, Node.js",0.4066
-"REST APIs, Microservices, TensorFlow, AWS","Kubernetes, Azure, Deep Learning",0.4688
-"Django, Java, Deep Learning, MongoDB, TensorFlow, Machine Learning","Kubernetes, React, NoSQL",0.426
-"Data Science, C++, GraphQL, Flask, Big Data, TensorFlow","Python, Hadoop, Django, REST APIs, Keras",0.4116
-"Microservices, REST APIs, Data Engineering","SQL, AWS, Flask, NoSQL, Java",0.6274
-"REST APIs, Kubernetes, API Development, CI/CD","Docker, Machine Learning, Flask, Spark",0.5536
-"Node.js, Big Data, TensorFlow, SQL, Keras, Deep Learning","Node.js, Cloud Computing, Azure",0.3961
-"Deep Learning, TensorFlow, PostgreSQL","GraphQL, AWS, Cloud Computing, Python, Flask",0.6349
-"Data Engineering, MongoDB, Node.js, Keras, AWS, TensorFlow","NoSQL, API Development, Azure, Data Science",0.5461
-"Node.js, Keras, AWS","Node.js, Azure, Django, Java, Data Engineering",0.6219
-"GraphQL, Azure, CI/CD, MongoDB, Node.js","REST APIs, Hadoop, CI/CD, React",0.5944
-"SQL, REST APIs, Node.js, Data Engineering, Hadoop, API Development","NoSQL, Kubernetes, Azure",0.3757
-"Keras, Docker, Flask, Hadoop, NoSQL","Microservices, Data Engineering, MongoDB, Deep Learning",0.416
-"NoSQL, Docker, Data Engineering","Cloud Computing, AWS, Data Science, NoSQL, Data Engineering",0.6121
-"GraphQL, Data Engineering, NoSQL, MongoDB, Spark","AWS, Docker, Deep Learning",0.5916
-"TensorFlow, Machine Learning, C++","REST APIs, Python, Data Science, React",0.4969
-"Kubernetes, Azure, Django","Django, TensorFlow, Machine Learning, Cloud Computing, Java",0.5176
-"React, Data Engineering, Deep Learning, Cloud Computing","TensorFlow, CI/CD, Flask, Django, Azure, Machine Learning",0.6916
-"Cloud Computing, C++, Django, Microservices, TensorFlow, Machine Learning","Java, Azure, TensorFlow",0.4113
-"Django, SQL, Machine Learning, AWS, Python, CI/CD","Docker, MongoDB, NoSQL, Python",0.5821
-"Keras, Azure, AWS, NoSQL, CI/CD, Spark","MongoDB, Python, C++, Deep Learning",0.4697
-"C++, Cloud Computing, Spark, Machine Learning","Hadoop, REST APIs, Deep Learning, Flask, GraphQL, Azure",0.4673
-"Node.js, Django, Deep Learning","GraphQL, TensorFlow, Data Engineering, MongoDB, Kubernetes",0.6648
-"Docker, SQL, REST APIs, Azure","Big Data, REST APIs, Microservices, Spark",0.6238
-"Keras, NoSQL, Node.js","REST APIs, SQL, PostgreSQL, Big Data",0.622
-"Big Data, API Development, C++, Node.js","Data Engineering, C++, SQL, Python, Docker",0.6958
-"PostgreSQL, Django, SQL, Big Data","Python, C++, React",0.5032
-"Machine Learning, Data Engineering, AWS, Deep Learning","API Development, C++, REST APIs",0.6023
-"Machine Learning, Data Engineering, CI/CD, Deep Learning, PostgreSQL, Hadoop","Django, Hadoop, CI/CD, Data Engineering",0.4535
-"SQL, C++, React, Big Data, Docker, Hadoop","REST APIs, Java, Spark, Data Engineering",0.5486
-"Big Data, Data Science, Keras, AWS, API Development, Azure","Keras, Python, Data Engineering",0.4805
-"Machine Learning, Django, Deep Learning, Java, Node.js, Kubernetes","C++, Hadoop, Spark",0.5145
-"Data Engineering, Node.js, Hadoop","Kubernetes, Python, Hadoop, Keras",0.5893
-"Hadoop, Big Data, CI/CD, Deep Learning, Keras","Big Data, API Development, AWS, React",0.3773
-"Data Engineering, Deep Learning, Python","C++, PostgreSQL, Django, React, Docker, MongoDB",0.8139
-"Django, C++, Data Science, Keras","GraphQL, REST APIs, Deep Learning, Data Engineering, Python, Java",0.3491
-"C++, Microservices, PostgreSQL, Keras, Deep Learning, CI/CD","Deep Learning, C++, GraphQL, Hadoop, Big Data",0.3179
-"Spark, Node.js, AWS, Docker, Cloud Computing","Docker, Java, PostgreSQL, Kubernetes, Hadoop",0.6737
-"Cloud Computing, AWS, Hadoop, React, Keras, MongoDB","Cloud Computing, Machine Learning, Python",0.6187
-"Django, Cloud Computing, Java, SQL","Machine Learning, Java, Spark",0.5936
-"C++, Spark, TensorFlow","Big Data, Microservices, C++, Machine Learning, API Development",0.5943
-"Flask, Spark, Big Data, Deep Learning, TensorFlow, AWS","Cloud Computing, Data Engineering, Azure",0.4982
-"Azure, Kubernetes, TensorFlow, Deep Learning, Node.js, SQL","PostgreSQL, Keras, MongoDB, GraphQL",0.3654
-"GraphQL, Flask, Microservices, C++, NoSQL","Java, GraphQL, Node.js",0.5114
-"Data Science, Machine Learning, CI/CD, C++, Java","C++, Microservices, CI/CD",0.3984
-"PostgreSQL, MongoDB, SQL, Big Data","C++, Machine Learning, Flask, React",0.6463
-"Java, C++, Kubernetes","Spark, Node.js, Deep Learning",0.4779
-"TensorFlow, Data Engineering, Azure, Flask","Big Data, Kubernetes, Docker, Data Engineering",0.3762
-"Python, Data Science, Node.js","React, TensorFlow, Data Engineering, Keras, Java",0.4518
-"Microservices, Docker, NoSQL","TensorFlow, Data Science, Keras, Java, Azure",0.5619
-"Node.js, Spark, C++, Keras","Keras, Flask, Node.js, Azure, TensorFlow, C++",0.4154
-"REST APIs, API Development, TensorFlow, Cloud Computing","TensorFlow, Flask, Cloud Computing, Java, Microservices",0.3767
-"Deep Learning, PostgreSQL, Azure, Spark","Big Data, GraphQL, API Development",0.5366
-"Data Engineering, Docker, Django","Azure, MongoDB, Spark, Node.js",0.5367
-"NoSQL, CI/CD, Keras","Hadoop, Machine Learning, CI/CD, GraphQL, Cloud Computing, Keras",0.424
-"SQL, PostgreSQL, Deep Learning, Data Engineering, GraphQL","Kubernetes, Big Data, Spark, C++, Flask",0.4293
-"Spark, GraphQL, Docker, Cloud Computing","GraphQL, Hadoop, REST APIs, Python, Kubernetes, Spark",0.5348
-"PostgreSQL, Microservices, Keras, AWS, Kubernetes","Kubernetes, MongoDB, PostgreSQL, Hadoop, Java, Django",0.2828
-"C++, CI/CD, Docker, Big Data, API Development, GraphQL","React, PostgreSQL, AWS, Kubernetes",0.2889
-"Keras, SQL, CI/CD","Spark, Data Engineering, CI/CD",0.3922
-"Deep Learning, Kubernetes, NoSQL, Machine Learning","Data Engineering, Cloud Computing, PostgreSQL, SQL",0.468
-"Cloud Computing, NoSQL, CI/CD","TensorFlow, Java, Kubernetes, Hadoop, API Development, NoSQL",0.5466
-"Keras, Python, SQL, Deep Learning","Node.js, Docker, Hadoop, Spark",0.7213
-"SQL, Data Science, Django, NoSQL, REST APIs","TensorFlow, REST APIs, PostgreSQL, Machine Learning",0.6286
-"API Development, GraphQL, Node.js, Hadoop","PostgreSQL, CI/CD, API Development, REST APIs, Node.js",0.476
-"GraphQL, PostgreSQL, Python, Data Science, Java","Java, Keras, CI/CD, Spark, Django",0.4971
-"Django, Java, Microservices, Kubernetes","API Development, Azure, MongoDB",0.3496
-"Node.js, NoSQL, Spark, Microservices","GraphQL, Deep Learning, Kubernetes",0.4972
-"AWS, React, CI/CD, Data Engineering","Node.js, Big Data, Deep Learning, Cloud Computing, Spark",0.4567
-"Docker, SQL, Python","Data Science, GraphQL, Spark, AWS, Keras, Docker",0.5484
-"Microservices, NoSQL, SQL, TensorFlow, Django, Data Engineering","MongoDB, Spark, PostgreSQL, Node.js",0.3759
-"MongoDB, Deep Learning, TensorFlow, Azure, Cloud Computing","Node.js, MongoDB, Microservices",0.5779
-"CI/CD, Hadoop, Docker, MongoDB, Data Science, TensorFlow","Flask, REST APIs, Data Science, Deep Learning",0.7299
-"Azure, TensorFlow, MongoDB","C++, Deep Learning, Kubernetes, SQL, Data Science, GraphQL",0.4837
-"Docker, Data Science, AWS, Cloud Computing, SQL","Big Data, Docker, Python",0.5603
-"GraphQL, Flask, Kubernetes, C++, SQL","Docker, Keras, Node.js, React, Django, Flask",0.6035
-"Microservices, Java, Hadoop, Docker","C++, Keras, Hadoop",0.4398
-"Docker, Spark, TensorFlow, CI/CD","Deep Learning, Data Science, Java, Big Data, Keras",0.5336
-"PostgreSQL, Flask, C++, Azure, MongoDB","Keras, Kubernetes, Data Engineering, Python, Data Science, Flask",0.5019
-"Azure, C++, AWS, MongoDB, Java","Data Engineering, Spark, MongoDB, Hadoop",0.5147
-"Microservices, Flask, Big Data","React, Keras, Flask, Cloud Computing",0.384
-"SQL, Django, C++","SQL, Hadoop, API Development, Deep Learning, MongoDB",0.5037
-"Java, Flask, API Development, Keras, NoSQL, TensorFlow","Data Engineering, Data Science, GraphQL, Flask, REST APIs",0.5747
-"GraphQL, React, Node.js, Python","Spark, GraphQL, Data Engineering, Python",0.7177
-"Spark, Kubernetes, Python","Python, Docker, GraphQL, CI/CD",0.6439
-"AWS, Hadoop, Microservices, API Development, CI/CD, NoSQL","Spark, Hadoop, Django, Flask, SQL, Docker",0.823
-"Django, Microservices, Data Science, Keras","Data Science, GraphQL, Deep Learning, Keras, MongoDB, Django",0.3849
-"Kubernetes, Machine Learning, Spark, C++, Microservices, Django","MongoDB, REST APIs, Flask, GraphQL, PostgreSQL",0.6308
-"REST APIs, TensorFlow, React, NoSQL, GraphQL, SQL","Spark, AWS, Docker, Flask, Data Engineering, Hadoop",0.5275
-"Docker, Kubernetes, MongoDB, Keras","MongoDB, Kubernetes, React, Docker, Cloud Computing",0.8285
-"GraphQL, SQL, REST APIs, Keras","Docker, REST APIs, Python",0.3788
-"Python, React, GraphQL, Big Data","MongoDB, AWS, SQL, Deep Learning, REST APIs, Java",0.374
-"PostgreSQL, Kubernetes, Data Science","Keras, AWS, PostgreSQL, Machine Learning, Flask",0.4101
-"PostgreSQL, Flask, SQL, Cloud Computing","Big Data, C++, Azure, Kubernetes, Machine Learning, Data Engineering",0.1814
-"PostgreSQL, Data Science, REST APIs, AWS, Deep Learning","Data Engineering, Microservices, Flask, Python, Machine Learning",0.4211
-"Azure, Data Engineering, CI/CD, PostgreSQL, C++, React","Machine Learning, MongoDB, Data Science, Microservices",0.3861
-"Spark, REST APIs, Django, React, API Development, Deep Learning","MongoDB, Node.js, Hadoop, Big Data, Flask",0.5226
-"SQL, Django, Docker, Microservices","Azure, PostgreSQL, API Development, Hadoop, Spark, Cloud Computing",0.5513
-"Spark, TensorFlow, Kubernetes","Node.js, REST APIs, Cloud Computing",0.7814
-"Azure, Flask, AWS, Deep Learning, API Development","MongoDB, Data Engineering, CI/CD, Docker",0.6426
-"GraphQL, MongoDB, AWS, TensorFlow, Python","Java, C++, SQL, Machine Learning, MongoDB, Kubernetes",0.4135
-"Hadoop, Azure, Data Engineering, Big Data","Docker, React, Node.js, MongoDB",0.3652
-"Cloud Computing, Keras, Big Data, Flask","Keras, TensorFlow, AWS, Cloud Computing, Docker",0.5738
-"NoSQL, Cloud Computing, Python","Python, Kubernetes, PostgreSQL, Deep Learning, Hadoop, Docker",0.302
-"Hadoop, C++, GraphQL, Deep Learning","API Development, Data Science, MongoDB",0.7747
-"Machine Learning, Hadoop, PostgreSQL, TensorFlow, Kubernetes, Big Data","AWS, Machine Learning, GraphQL, Docker, Big Data",0.6769
-"Kubernetes, Node.js, Big Data, REST APIs","React, Docker, SQL, CI/CD, NoSQL",0.4296
-"Azure, MongoDB, Data Engineering, Django","Data Engineering, Spark, Docker",0.243
-"Deep Learning, MongoDB, CI/CD, PostgreSQL, Kubernetes","SQL, Big Data, Hadoop, Data Science",0.7031
-"Spark, Flask, CI/CD","Machine Learning, Kubernetes, Microservices",0.4828
-"Data Science, CI/CD, Keras, Data Engineering, Docker","Django, Java, CI/CD, GraphQL",0.6857
-"Flask, API Development, REST APIs, Data Engineering","Data Science, Spark, Python, Machine Learning, Big Data, Keras",0.2608
-"Java, API Development, Deep Learning, Django, NoSQL, Big Data","AWS, Azure, Python, Data Engineering, API Development, Deep Learning",0.4101
-"MongoDB, Hadoop, CI/CD, Cloud Computing, SQL, REST APIs","React, Keras, Cloud Computing",0.5008
-"Node.js, Kubernetes, AWS, Data Engineering, Cloud Computing","SQL, Node.js, Docker, Kubernetes, C++, Microservices",0.507
-"Node.js, API Development, GraphQL, NoSQL, Cloud Computing","React, MongoDB, Azure, Cloud Computing",0.4325
-"Microservices, MongoDB, TensorFlow","MongoDB, React, Data Engineering, SQL, REST APIs, Cloud Computing",0.5934
-"C++, Docker, NoSQL","Microservices, TensorFlow, API Development",0.3399
-"Python, Azure, CI/CD, Data Engineering, SQL, GraphQL","API Development, Java, Microservices, GraphQL, REST APIs",0.4786
-"TensorFlow, Cloud Computing, Django, CI/CD","Machine Learning, MongoDB, GraphQL, Cloud Computing",0.518
-"Cloud Computing, Machine Learning, PostgreSQL, REST APIs, Kubernetes","PostgreSQL, Flask, Python, Node.js, NoSQL, Kubernetes",0.5772
-"PostgreSQL, SQL, AWS, C++","Spark, API Development, Azure, Java",0.6067
-"Java, SQL, Azure","Docker, Java, Microservices, NoSQL, Cloud Computing, Python",0.3313
-"Keras, API Development, Machine Learning","Flask, React, Machine Learning, SQL, Hadoop",0.2699
-"Deep Learning, CI/CD, Machine Learning","PostgreSQL, Flask, Java, Data Engineering",0.6917
-"Big Data, Kubernetes, PostgreSQL, Microservices","Spark, GraphQL, Docker",0.5498
-"Big Data, Java, TensorFlow, Cloud Computing, Flask","Spark, Hadoop, Flask, API Development, Java",0.3877
-"Data Science, Flask, Machine Learning, TensorFlow, React","Big Data, REST APIs, Data Engineering, Python",0.7327
-"Cloud Computing, Kubernetes, PostgreSQL","Spark, Python, REST APIs, Java, Azure, CI/CD",0.5174
-"Cloud Computing, Deep Learning, Hadoop, MongoDB, Node.js","SQL, Cloud Computing, AWS, Big Data, Django",0.6769
-"NoSQL, Microservices, REST APIs, Hadoop, C++","TensorFlow, Node.js, Flask",0.5101
-"AWS, Big Data, Cloud Computing, MongoDB","SQL, Keras, Docker, Data Engineering, Spark, C++",0.8091
-"Node.js, Java, MongoDB, SQL","REST APIs, React, API Development",0.7633
-"React, Spark, Big Data","Data Engineering, Azure, Hadoop",0.4627
-"Hadoop, Data Science, Azure, Cloud Computing, Node.js","CI/CD, C++, SQL, PostgreSQL, AWS",0.6457
-"Azure, API Development, Django, Node.js","Big Data, Spark, Microservices",0.5968
-"Java, Data Science, NoSQL","CI/CD, C++, GraphQL, SQL",0.7053
-"Java, Python, PostgreSQL, SQL, CI/CD, Data Engineering","Data Engineering, Kubernetes, Microservices, Java",0.3553
-"Data Science, PostgreSQL, Cloud Computing, GraphQL, Python","Azure, PostgreSQL, Keras",0.6029
-"React, Microservices, MongoDB","API Development, Docker, TensorFlow, NoSQL, Kubernetes",0.6588
-"Azure, Data Engineering, Django, MongoDB, Keras","React, Flask, TensorFlow, SQL, PostgreSQL",0.2362
-"Big Data, Azure, Flask","Machine Learning, Docker, Flask, GraphQL, React, Hadoop",0.3225
-"Flask, Django, API Development, PostgreSQL","API Development, AWS, Docker, Python",0.1941
-"CI/CD, Data Science, Deep Learning, Data Engineering","Cloud Computing, Keras, API Development",0.4596
-"C++, MongoDB, SQL, Kubernetes","PostgreSQL, TensorFlow, Flask, AWS, Node.js, SQL",0.6076
-"Flask, Java, API Development","GraphQL, Microservices, Big Data, CI/CD",0.7254
-"C++, Java, CI/CD","C++, PostgreSQL, Java, TensorFlow",0.5111
-"AWS, Data Science, Kubernetes, Docker, Java, Django","Microservices, Java, GraphQL, Django, Docker, MongoDB",0.7443
-"Spark, CI/CD, Node.js, Data Engineering","Microservices, GraphQL, Kubernetes, Azure, TensorFlow, Django",0.293
-"Data Engineering, Django, Python","React, Deep Learning, Kubernetes, API Development, CI/CD",0.2445
-"Python, SQL, Data Science","GraphQL, Docker, C++",0.4917
-"AWS, Hadoop, Microservices","CI/CD, Machine Learning, Node.js, SQL",0.5576
-"MongoDB, Keras, GraphQL, Hadoop, REST APIs, NoSQL","PostgreSQL, Microservices, GraphQL, Hadoop, NoSQL",0.4951
-"Data Engineering, GraphQL, Data Science, Azure, C++, AWS","Hadoop, Kubernetes, Python, NoSQL, GraphQL, Keras",0.1899
-"Cloud Computing, NoSQL, Keras","Machine Learning, Hadoop, Keras",0.4866
-"MongoDB, GraphQL, Java, TensorFlow","CI/CD, MongoDB, Azure, Microservices, GraphQL",0.3043
-"Spark, Python, C++, PostgreSQL","CI/CD, Flask, Spark",0.6005
-"REST APIs, NoSQL, Flask, CI/CD, SQL","Big Data, MongoDB, Django, Python",0.555
-"Data Science, NoSQL, Spark","Kubernetes, CI/CD, Python, Flask, Docker, React",0.359
-"Node.js, REST APIs, Deep Learning","Data Science, React, GraphQL",0.4229
-"Java, Spark, PostgreSQL","React, Python, Spark, Azure, C++",0.3411
-"Node.js, Microservices, Big Data, Machine Learning, Django, PostgreSQL","Node.js, Python, Flask, NoSQL, Azure",0.4906
-"REST APIs, Data Engineering, Data Science, Machine Learning, GraphQL, Deep Learning","PostgreSQL, Django, Java, Keras",0.6433
-"NoSQL, SQL, Kubernetes, React","Data Engineering, Microservices, Spark, Node.js, Cloud Computing",0.3521
-"Python, Spark, Data Engineering, Hadoop","Big Data, NoSQL, Keras, Flask, Deep Learning, Microservices",0.5756
-"Deep Learning, Big Data, Data Engineering, REST APIs, Hadoop, Node.js","Cloud Computing, Data Science, Node.js, AWS, PostgreSQL",0.4205
-"Hadoop, SQL, Spark, Node.js, Django, Cloud Computing","Microservices, React, API Development",0.3811
-"Node.js, Data Science, Cloud Computing, Deep Learning, Flask","Azure, Django, NoSQL, TensorFlow, Flask, REST APIs",0.4839
-"Flask, SQL, Azure, Data Science, AWS, Node.js","MongoDB, TensorFlow, CI/CD, React, SQL",0.3447
-"React, Keras, Machine Learning, C++, SQL, AWS","Deep Learning, Java, Docker, PostgreSQL, SQL, Data Engineering",0.417
-"Python, SQL, Keras, Spark, Big Data","Python, Data Engineering, Data Science, API Development, NoSQL, GraphQL",0.3203
-"PostgreSQL, Python, API Development, React, Docker, Keras","Data Science, Microservices, Azure, Python, Flask",0.7947
-"Microservices, Kubernetes, Java","Data Science, PostgreSQL, Microservices, Java, Hadoop",0.5053
-"AWS, Kubernetes, C++","Machine Learning, Cloud Computing, CI/CD, SQL",0.395
-"Hadoop, PostgreSQL, Azure, API Development","Big Data, Data Engineering, PostgreSQL, GraphQL, C++, MongoDB",0.5321
-"React, REST APIs, PostgreSQL, Kubernetes, Machine Learning","Spark, Flask, NoSQL, Big Data, TensorFlow",0.4832
-"Python, Cloud Computing, NoSQL","Big Data, Docker, NoSQL, Data Science",0.4669
-"Flask, Data Engineering, GraphQL, NoSQL","CI/CD, React, Spark, Flask",0.5921
-"Data Science, Deep Learning, CI/CD","Node.js, Hadoop, TensorFlow, Flask, React",0.6136
-"Django, Node.js, SQL","React, SQL, AWS, TensorFlow, Data Science, Machine Learning",0.4204
-"PostgreSQL, C++, Hadoop","Django, Keras, Azure",0.4136
-"Cloud Computing, Java, TensorFlow, Keras, C++, PostgreSQL","MongoDB, Node.js, REST APIs, C++",0.4587
-"Node.js, Spark, Docker, Deep Learning, PostgreSQL","Hadoop, C++, Big Data, Azure",0.1547
-"Big Data, Deep Learning, Java","Keras, Java, Azure, MongoDB, Microservices",0.2727
-"Spark, CI/CD, React, Machine Learning, Hadoop, C++","SQL, Node.js, PostgreSQL",0.705
-"Kubernetes, Data Engineering, REST APIs, GraphQL, Microservices, Java","SQL, Keras, Deep Learning, C++, Spark",0.7467
-"Hadoop, AWS, Docker, Node.js, Python","Docker, SQL, Hadoop",0.4626
-"Big Data, PostgreSQL, C++, Azure","Azure, Kubernetes, Hadoop, Docker, Flask, C++",0.5865
-"AWS, Deep Learning, Flask","Hadoop, Keras, MongoDB, PostgreSQL, Java, Node.js",0.5467
-"Cloud Computing, React, Python, API Development","Java, Hadoop, CI/CD, Deep Learning, Python, TensorFlow",0.9618
-"API Development, Docker, Spark, AWS, Java","Django, GraphQL, C++, API Development, AWS, Spark",0.6679
-"Big Data, Python, Azure","Keras, Docker, SQL",0.4808
-"SQL, GraphQL, Machine Learning, MongoDB, AWS","Django, Machine Learning, MongoDB, Spark, PostgreSQL, Keras",0.3567
-"Flask, Cloud Computing, Data Science","REST APIs, AWS, SQL, Azure, Big Data",0.259
-"Microservices, REST APIs, Keras","API Development, Azure, Node.js, GraphQL",0.5305
-"TensorFlow, Cloud Computing, Node.js","Keras, Big Data, C++, Flask",0.3865
-"Big Data, API Development, Data Engineering, Azure, MongoDB, SQL","Keras, Docker, MongoDB, Data Engineering, C++",0.2867
-"Django, TensorFlow, AWS, Cloud Computing, GraphQL, Data Engineering","TensorFlow, Flask, Data Science, Big Data, Cloud Computing, Java",0.403
-"Kubernetes, PostgreSQL, AWS, REST APIs, Spark, MongoDB","C++, Node.js, React, NoSQL, TensorFlow, Java",0.3378
-"Java, TensorFlow, Data Science, NoSQL","React, Hadoop, GraphQL, Django, Big Data",0.7531
-"API Development, Python, Azure, Node.js, CI/CD, Microservices","NoSQL, Docker, Django",0.6322
-"SQL, Django, Data Engineering","MongoDB, API Development, TensorFlow, PostgreSQL",0.4988
-"Cloud Computing, Deep Learning, GraphQL, Python, TensorFlow","Flask, API Development, TensorFlow",0.722
-"Docker, Node.js, Big Data, API Development, Machine Learning","TensorFlow, Spark, Django, AWS, Keras, Node.js",0.5116
-"NoSQL, Hadoop, PostgreSQL, Docker, Django","CI/CD, Python, React, SQL, Cloud Computing, AWS",0.3708
-"Microservices, Kubernetes, Cloud Computing, CI/CD","Cloud Computing, Data Science, GraphQL, TensorFlow",0.7285
-"TensorFlow, PostgreSQL, Microservices, Data Science, Machine Learning, Hadoop","Django, API Development, CI/CD, Node.js, Keras, React",0.5808
-"Kubernetes, PostgreSQL, Machine Learning","Azure, Data Science, API Development, PostgreSQL, Node.js, Machine Learning",0.3444
-"PostgreSQL, SQL, Machine Learning, Deep Learning, Data Science","AWS, PostgreSQL, Python",0.4714
-"Data Science, Machine Learning, Data Engineering, Microservices, Azure, Java","SQL, Flask, TensorFlow, Docker, Data Engineering, Python",0.3687
-"Data Science, REST APIs, TensorFlow","AWS, Kubernetes, Docker",0.2926
+resume_skills,jd_skills,label
+"Cloud Computing, Flask, MongoDB, Big Data","Data Engineering, Node.js, C++, Deep Learning, API Development, Java",0.000126466738680997
+"AWS, Node.js, Flask, API Development","Keras, Machine Learning, React, Data Science, NoSQL",0.07697825835509735
+"Big Data, Azure, CI/CD, Data Science, GraphQL","Azure, API Development, Python, Data Engineering, AWS, Hadoop",0.0769403096474707
+"API Development, Spark, Cloud Computing","SQL, Kubernetes, React, API Development, Hadoop",0.5068287358468487
+"Spark, Python, Node.js, API Development, Keras, Docker","Data Engineering, C++, Docker, Data Science, Kubernetes, REST APIs",0.1777139384796222
+"Keras, Hadoop, React, NoSQL, Node.js, Data Engineering","SQL, MongoDB, API Development, Data Science, Django, Machine Learning",0.09184793937951327
+"Hadoop, Flask, Big Data","Machine Learning, SQL, Spark, C++, GraphQL, Cloud Computing",0.3730094981532639
+"Hadoop, MongoDB, SQL, API Development","AWS, C++, Data Engineering, Node.js, GraphQL",0.4005935765459964
+"Big Data, Python, Cloud Computing, Spark, Data Science","Node.js, Data Engineering, Spark, TensorFlow, SQL",0.44150583508696095
+"Flask, Microservices, Data Science, Hadoop","Deep Learning, Data Science, Python, Keras",0.48852452574190325
+"Cloud Computing, REST APIs, Spark, Python","Node.js, PostgreSQL, Docker, CI/CD",0.053510216353793744
+"NoSQL, Java, AWS, Azure, Python","Docker, Kubernetes, Big Data, Node.js, Data Engineering",0.12507861902876224
+"Azure, NoSQL, Hadoop, PostgreSQL, REST APIs","Java, Keras, Big Data",0.38943522032524924
+"REST APIs, Keras, Azure, TensorFlow, Hadoop","Microservices, Django, PostgreSQL, Spark",0.5002657386622227
+"AWS, Spark, Flask, Cloud Computing","Node.js, Flask, GraphQL, Python, Hadoop",0.44530353273523765
+"Java, CI/CD, Data Science, Django, React, C++","AWS, Machine Learning, MongoDB",0.4818277312194308
+"Python, Spark, Django, NoSQL, C++","Node.js, Microservices, Data Science, Python, Java, Kubernetes",0.3651008998078329
+"PostgreSQL, Hadoop, React","AWS, API Development, Hadoop, Kubernetes, Azure",0.46585546776998876
+"AWS, Flask, Microservices, MongoDB, C++","Cloud Computing, SQL, TensorFlow",0.5033961750759502
+"TensorFlow, PostgreSQL, Hadoop","Spark, Machine Learning, Azure, Flask, GraphQL, Cloud Computing",0.4670446800400919
+"Deep Learning, Microservices, MongoDB, GraphQL","REST APIs, Cloud Computing, CI/CD, API Development, NoSQL",0.48478243749892835
+"Deep Learning, Keras, Hadoop, C++, Java","NoSQL, Cloud Computing, Django, Python, Azure",0.09218858259721
+"MongoDB, Azure, Machine Learning, Docker","PostgreSQL, NoSQL, Big Data, Django, Kubernetes, Cloud Computing",0.44175454420541677
+"TensorFlow, CI/CD, Keras, Microservices, C++","REST APIs, Data Engineering, MongoDB, NoSQL",0.15704902680936905
+"API Development, Data Engineering, PostgreSQL, C++","Hadoop, GraphQL, C++, Docker, SQL",0.4616253726256979
+"GraphQL, Machine Learning, Docker, Flask, MongoDB","Data Engineering, Hadoop, Cloud Computing, Data Science, MongoDB",0.3757848968989844
+"Python, AWS, REST APIs, Data Engineering, API Development, PostgreSQL","AWS, SQL, API Development",0.36867865560398927
+"C++, NoSQL, Azure, Docker","REST APIs, Azure, C++, API Development",0.04747485195644771
+"CI/CD, Deep Learning, Data Science, Azure, Kubernetes, API Development","Hadoop, GraphQL, Azure, MongoDB",0.13031493725493212
+"Hadoop, Java, Flask, Kubernetes","Flask, Django, TensorFlow",0.11300459157018097
+"Kubernetes, Hadoop, Cloud Computing, Spark","C++, Flask, REST APIs",0.19881115233096824
+"PostgreSQL, Spark, Data Science, Machine Learning","API Development, SQL, Django, Microservices, NoSQL",0.19303865773461032
+"React, Docker, Hadoop, Deep Learning, CI/CD, Data Engineering","Kubernetes, PostgreSQL, Keras, NoSQL",0.5020060096707547
+"Deep Learning, Data Engineering, Java, Django, Hadoop","Flask, Data Engineering, CI/CD, Cloud Computing, Python, GraphQL",0.3249308906647748
+"GraphQL, React, Azure","AWS, SQL, Hadoop, Big Data",0.2014362298968918
+"React, SQL, Deep Learning, Azure, NoSQL","Azure, Data Engineering, Microservices, API Development, REST APIs, Docker",0.48251023502357626
+"Node.js, TensorFlow, Microservices, Spark, Flask, C++","Keras, Big Data, Kubernetes, Docker, Machine Learning, Flask",0.05342729811892796
+"PostgreSQL, NoSQL, Kubernetes","TensorFlow, NoSQL, Cloud Computing, REST APIs, API Development, C++",0.19375950449545465
+"Flask, Data Science, Node.js, Kubernetes, SQL, C++","Hadoop, Kubernetes, TensorFlow, Docker, Azure, Deep Learning",0.0370355128398579
+"NoSQL, MongoDB, Django, GraphQL, Data Engineering, Docker","AWS, Hadoop, Python, GraphQL",0.5089654878560332
+"PostgreSQL, Data Engineering, Microservices, React","Python, Data Engineering, TensorFlow, React, AWS, Data Science",0.06635368497405006
+"Flask, REST APIs, Machine Learning, Cloud Computing","PostgreSQL, Java, Cloud Computing, Node.js",0.15738587220276218
+"Microservices, Docker, Java","Cloud Computing, Django, C++, Deep Learning",0.18486438789122708
+"Kubernetes, Machine Learning, Cloud Computing","Data Engineering, Hadoop, Data Science, Java, Deep Learning",0.045232642667799305
+"Keras, REST APIs, Microservices, AWS","Kubernetes, PostgreSQL, API Development, NoSQL, TensorFlow",0.45373106337340474
+"Azure, Hadoop, Node.js","Node.js, REST APIs, API Development, React, Data Engineering, CI/CD",0.04282641507815743
+"API Development, REST APIs, Big Data, GraphQL","C++, Docker, PostgreSQL, Azure, Hadoop",0.37937903736407563
+"CI/CD, Keras, Java, MongoDB","Node.js, NoSQL, MongoDB, Python, Spark, Docker",0.441130787446681
+"Kubernetes, SQL, MongoDB, Java, TensorFlow","REST APIs, Kubernetes, MongoDB, Data Science, Big Data",0.1016452509581881
+"NoSQL, Keras, Data Engineering, AWS, PostgreSQL, Node.js","NoSQL, Azure, Python, Spark",0.05295481538312494
+"Java, REST APIs, CI/CD, React","Microservices, Machine Learning, Deep Learning",0.36086696271018326
+"Cloud Computing, Python, Deep Learning","REST APIs, Deep Learning, Data Science, TensorFlow, Big Data",0.09332034869250372
+"GraphQL, Java, Azure, Keras","Data Engineering, Machine Learning, Hadoop, Spark, Azure",0.06344083936726638
+"AWS, Flask, API Development, Big Data, React","CI/CD, Cloud Computing, Data Engineering, REST APIs",0.33421534659096086
+"Deep Learning, GraphQL, Data Science","Machine Learning, Microservices, GraphQL, TensorFlow, Python",0.446716661274113
+"Data Science, Data Engineering, Java, Node.js, Deep Learning, Flask","SQL, API Development, Keras",0.40591943676421655
+"Flask, GraphQL, AWS, Microservices","PostgreSQL, Keras, Data Science, GraphQL, Python",0.1561908350429131
+"GraphQL, Azure, Deep Learning, Django, MongoDB, SQL","Data Science, Django, TensorFlow, C++, Docker",0.488109943703454
+"AWS, Python, Big Data, Kubernetes, MongoDB","Flask, Data Engineering, NoSQL, API Development, Azure, Microservices",0.13749910655685446
+"Big Data, Flask, React, Python","C++, Cloud Computing, Data Science, Spark, AWS, CI/CD",0.38480297051622037
+"Kubernetes, Hadoop, GraphQL, Docker, Django, Data Engineering","NoSQL, Python, Data Science",0.3362095626917156
+"Docker, Hadoop, API Development, SQL","REST APIs, PostgreSQL, Cloud Computing, Keras, Django",0.11538450824618854
+"C++, Hadoop, Azure, Java, Cloud Computing, NoSQL","C++, PostgreSQL, Node.js",0.34703879651115976
+"Django, PostgreSQL, Python","Java, React, Node.js, NoSQL",0.06578097632979171
+"REST APIs, Big Data, Data Science","C++, Big Data, REST APIs, Kubernetes, GraphQL, CI/CD",0.4289829096724697
+"Azure, SQL, Big Data, Cloud Computing, AWS","TensorFlow, Java, MongoDB",0.16757967236666255
+"Django, Big Data, Deep Learning, C++, Hadoop, MongoDB","GraphQL, PostgreSQL, SQL, AWS, Docker",0.20513204111509675
+"Data Science, API Development, AWS, Node.js, REST APIs, Django","Azure, API Development, React",0.04654200524443952
+"Java, Cloud Computing, NoSQL, TensorFlow, Kubernetes, C++","Data Engineering, Machine Learning, Spark, CI/CD",0.5043597788331275
+"Docker, Deep Learning, Keras, MongoDB, Machine Learning, Azure","Data Engineering, Microservices, Node.js",0.14309137116224274
+"Python, GraphQL, Deep Learning, Machine Learning","Java, Keras, Data Science, Spark, Microservices, Cloud Computing",0.04147123135769598
+"Machine Learning, Python, Data Science, Big Data, TensorFlow, Hadoop","Django, CI/CD, Azure",0.2106661306447506
+"Microservices, AWS, Docker","Keras, GraphQL, Spark, NoSQL, C++, Flask",0.45725194667972197
+"Machine Learning, Deep Learning, Kubernetes, Hadoop","MongoDB, Machine Learning, PostgreSQL, Data Engineering, SQL",0.45757726515334696
+"Deep Learning, Hadoop, Azure, Java, API Development, Cloud Computing","Cloud Computing, GraphQL, Microservices",0.33865681255542157
+"Cloud Computing, PostgreSQL, Hadoop, SQL","GraphQL, Machine Learning, Hadoop, AWS, Node.js",0.4196080058838935
+"Java, GraphQL, NoSQL, Docker, Spark","MongoDB, Deep Learning, Keras",0.10890012358824983
+"Keras, GraphQL, MongoDB","Node.js, Hadoop, Python, AWS, Microservices, SQL",0.4463081405311823
+"Java, API Development, Docker, Hadoop, Django, NoSQL","TensorFlow, Flask, CI/CD, Azure, Cloud Computing",0.09442860686892851
+"Python, Keras, Microservices, Spark","Node.js, Java, GraphQL",0.21369501208501662
+"GraphQL, Machine Learning, AWS, Spark, Hadoop, Django","Big Data, TensorFlow, PostgreSQL, Cloud Computing, Hadoop",0.22554588318225405
+"TensorFlow, SQL, Machine Learning, Big Data, Azure, Java","Java, PostgreSQL, Keras, Azure, Deep Learning",0.04083053107146206
+"Data Science, Deep Learning, React, Docker, GraphQL","Hadoop, PostgreSQL, CI/CD, NoSQL",0.3797963827665143
+"Kubernetes, Microservices, API Development, C++, AWS, Python","CI/CD, Python, Data Engineering",0.49076046746774604
+"Kubernetes, React, Machine Learning, Django","Data Engineering, Django, API Development, React, REST APIs, SQL",0.17285210330232786
+"Microservices, GraphQL, Azure, Data Science, Data Engineering, Python","Data Science, Python, React, SQL, Machine Learning, Kubernetes",0.0559284413140029
+"React, Keras, Cloud Computing, Python, C++, CI/CD","Java, Azure, C++",0.20819757113989612
+"Azure, GraphQL, Deep Learning, Kubernetes, Machine Learning","Data Science, Django, Node.js, Azure, Python, MongoDB",0.09842255188385024
+"Data Science, CI/CD, Azure, SQL, Keras","REST APIs, Java, Spark, TensorFlow",0.09711936276839439
+"SQL, Kubernetes, Deep Learning, Node.js, Django, Data Engineering","API Development, React, Java, Cloud Computing, Keras",0.4355425486842075
+"Hadoop, Node.js, Big Data","Kubernetes, GraphQL, Hadoop, Big Data, Docker",0.10563314156858744
+"Hadoop, Microservices, Kubernetes, Spark, Django","Azure, Flask, Data Science, Node.js, Cloud Computing",0.3443065254956163
+"REST APIs, Python, Big Data","PostgreSQL, REST APIs, Flask, Azure, AWS, Deep Learning",0.1743473937235035
+"REST APIs, Deep Learning, TensorFlow","Data Engineering, Kubernetes, Data Science",0.09358543957136484
+"TensorFlow, Kubernetes, Microservices","CI/CD, MongoDB, TensorFlow, Docker, AWS",0.43421543999704426
+"Java, REST APIs, Machine Learning, PostgreSQL","Python, PostgreSQL, Keras, Deep Learning",0.18657937904930919
+"Data Science, TensorFlow, C++, Microservices, Docker","NoSQL, MongoDB, C++, Python, Node.js, CI/CD",0.47685938598811967
+"Keras, NoSQL, Microservices, Machine Learning","Python, Azure, TensorFlow, Flask, PostgreSQL, Big Data",0.39518830495417717
+"TensorFlow, MongoDB, API Development, GraphQL, Spark","API Development, C++, Data Engineering, Spark",0.157837227692873
+"Data Science, CI/CD, C++, Flask","MongoDB, Microservices, Keras, Java, C++, Big Data",0.11819141429726424
+"Keras, Node.js, Python, C++, Machine Learning, CI/CD","Microservices, SQL, Hadoop, Kubernetes, REST APIs, Java",0.4265159338051897
+"Data Engineering, PostgreSQL, GraphQL, Python, CI/CD, C++","SQL, Node.js, React, Azure",0.1663696926315556
+"SQL, NoSQL, CI/CD, PostgreSQL, Node.js","TensorFlow, Java, Data Science, Big Data",0.07528242909377361
+"C++, TensorFlow, Machine Learning","MongoDB, C++, Data Engineering",0.3962208699955824
+"Node.js, Azure, Data Engineering, GraphQL, Deep Learning","Django, Cloud Computing, API Development, TensorFlow",0.11602808423830488
+"MongoDB, Spark, Node.js, SQL, Big Data","Spark, C++, Hadoop, Django",0.3765860454654535
+"Java, Node.js, AWS","GraphQL, Cloud Computing, SQL",0.386097612696665
+"Deep Learning, Azure, Data Engineering, REST APIs, Python","Azure, TensorFlow, C++, React, Big Data, Data Engineering",0.40947750664961174
+"Django, Java, NoSQL, CI/CD","AWS, PostgreSQL, Keras, Machine Learning, API Development, Hadoop",0.05799760994229933
+"GraphQL, AWS, Cloud Computing, REST APIs, PostgreSQL","Kubernetes, C++, Microservices, Java",0.40678174463033406
+"Azure, NoSQL, CI/CD, Data Science","Flask, MongoDB, Python, NoSQL, Data Science",0.04914253595775775
+"Machine Learning, Data Science, Kubernetes, API Development, Docker, MongoDB","SQL, Python, CI/CD, Django",0.08787307773994124
+"Python, Machine Learning, Django, Keras, Cloud Computing, C++","Spark, Docker, Keras, MongoDB, GraphQL",0.44786562931327356
+"Java, REST APIs, SQL","Machine Learning, AWS, Cloud Computing, Data Engineering, Django",0.05665296510996823
+"Java, Data Science, Machine Learning, REST APIs","Big Data, Java, API Development, Data Science, Azure, Node.js",0.4196777267200983
+"Keras, SQL, Data Engineering, Hadoop, Spark","Java, Big Data, NoSQL, Django, C++",0.5293225319822897
+"MongoDB, Cloud Computing, SQL, Spark, REST APIs","Big Data, C++, AWS, Spark, Deep Learning, Data Engineering",0.20009159956012298
+"Java, GraphQL, Data Science, Data Engineering, MongoDB, CI/CD","Hadoop, Keras, Python, Flask, MongoDB, GraphQL",0.16216674650744545
+"Kubernetes, Deep Learning, Spark, REST APIs, Microservices, Big Data","Hadoop, Data Science, Cloud Computing, Microservices, Machine Learning, MongoDB",0.2341095253922592
+"REST APIs, Python, Big Data, Docker, Deep Learning","PostgreSQL, Data Engineering, SQL",0.09414389369903936
+"NoSQL, Django, API Development, React","PostgreSQL, CI/CD, SQL",0.4931868566036184
+"Data Science, Cloud Computing, Big Data, Keras, Spark, REST APIs","Spark, C++, Machine Learning, Hadoop, SQL",0.24384780175759452
+"Big Data, Machine Learning, Spark, Hadoop","Spark, Cloud Computing, Keras, GraphQL",0.4642299527407159
+"Kubernetes, C++, Machine Learning","Spark, GraphQL, TensorFlow, Java",0.07326569110217854
+"CI/CD, Azure, Python","SQL, Keras, PostgreSQL, Kubernetes, Node.js, Data Science",0.1522842583256695
+"Hadoop, NoSQL, Docker, CI/CD, Cloud Computing","REST APIs, Kubernetes, AWS, Flask",0.08182698480521125
+"NoSQL, Django, CI/CD, Node.js, Cloud Computing, Microservices","PostgreSQL, AWS, GraphQL, Deep Learning, Flask",0.45090469218774387
+"Python, Data Science, REST APIs, Cloud Computing, Microservices","Machine Learning, Docker, Spark, React, MongoDB, Microservices",0.22095967216129647
+"TensorFlow, Deep Learning, Node.js, REST APIs, API Development","React, Machine Learning, Cloud Computing, Big Data, Kubernetes, NoSQL",0.45022801272865187
+"TensorFlow, CI/CD, MongoDB, Microservices, Azure, Django","Django, Cloud Computing, Deep Learning, API Development, NoSQL",0.09162789165725937
+"React, Microservices, GraphQL","Cloud Computing, AWS, Hadoop, React",0.2118127680089898
+"TensorFlow, CI/CD, Kubernetes, C++, API Development, Deep Learning","React, Cloud Computing, Machine Learning, Django, TensorFlow, AWS",0.16144289429277947
+"Data Science, API Development, Microservices, Machine Learning, Django","TensorFlow, Big Data, CI/CD",0.17174920146525668
+"API Development, GraphQL, Data Science, Java","Django, Cloud Computing, PostgreSQL, Azure",0.3706482943768812
+"Deep Learning, Django, PostgreSQL, Machine Learning","Cloud Computing, Hadoop, TensorFlow, Azure, SQL, NoSQL",0.3399797808873322
+"Django, TensorFlow, PostgreSQL, Data Engineering, Node.js","Docker, C++, API Development",0.07955814822179094
+"Cloud Computing, TensorFlow, Data Science, Deep Learning","Big Data, TensorFlow, MongoDB, Deep Learning",0.11213360265732841
+"Django, Machine Learning, API Development","PostgreSQL, Docker, Deep Learning, Java",0.17218961055204274
+"Flask, Docker, Machine Learning, MongoDB","Microservices, Keras, Django, AWS, GraphQL",0.46086168753057133
+"API Development, Deep Learning, REST APIs, Azure, PostgreSQL","Spark, GraphQL, CI/CD, Deep Learning, Data Engineering, Java",0.46071795777930236
+"Big Data, Spark, Azure, Kubernetes, SQL, Python","Kubernetes, GraphQL, Flask, Data Engineering, Big Data",0.10175919418509427
+"Hadoop, Docker, Python, C++","Docker, REST APIs, API Development, Machine Learning",0.4020290665809325
+"GraphQL, NoSQL, MongoDB, REST APIs","Java, Node.js, Kubernetes",0.40122880625719615
+"C++, React, GraphQL, Microservices, Python, NoSQL","Java, Data Science, PostgreSQL, Data Engineering, GraphQL",0.15177928965461723
+"Machine Learning, Java, SQL, AWS, Deep Learning","React, Data Science, Cloud Computing, NoSQL, PostgreSQL, Big Data",0.4116251313533459
+"Microservices, Data Science, API Development, Azure, AWS, REST APIs","React, Cloud Computing, NoSQL, Python",0.37096283774533584
+"API Development, Python, React, Keras, Cloud Computing","Python, Azure, CI/CD, Data Science, C++",0.38166257813848936
+"Hadoop, Kubernetes, Django, Flask, Deep Learning, Data Engineering","CI/CD, MongoDB, Node.js, Big Data, SQL, TensorFlow",0.12170346207692553
+"Data Engineering, Azure, Cloud Computing, Spark, Node.js","PostgreSQL, Deep Learning, Hadoop",0.4209972038548495
+"Microservices, AWS, Node.js, TensorFlow, Django, Flask","TensorFlow, Keras, CI/CD, Deep Learning, REST APIs",0.11165239420633288
+"Java, TensorFlow, API Development, AWS","NoSQL, API Development, Deep Learning, Hadoop",0.4123415249138799
+"Cloud Computing, Kubernetes, Node.js, TensorFlow","AWS, Keras, REST APIs, React, Django",0.4015694396342218
+"Keras, Python, AWS","Keras, Java, MongoDB, PostgreSQL, Big Data",0.09219826885166255
+"Keras, Deep Learning, GraphQL, Big Data","Microservices, Spark, Kubernetes, Big Data",0.17237272788871905
+"Azure, Docker, React, PostgreSQL","API Development, Big Data, GraphQL, Spark, Azure",0.3925337085422197
+"CI/CD, React, Cloud Computing, TensorFlow","Deep Learning, Big Data, Kubernetes, C++",0.5220822078616344
+"Data Science, Deep Learning, SQL","Data Science, Data Engineering, MongoDB, Deep Learning, NoSQL, PostgreSQL",0.36396605765614215
+"Django, Data Science, Machine Learning, Microservices","PostgreSQL, Docker, Hadoop, TensorFlow, Cloud Computing, NoSQL",0.36272507247579877
+"Kubernetes, Big Data, PostgreSQL","Machine Learning, Cloud Computing, Node.js",0.44237798500312664
+"MongoDB, Python, CI/CD, Machine Learning","Python, Deep Learning, Azure, Big Data, Docker",0.16363310305401685
+"AWS, Data Engineering, Cloud Computing, Microservices","Flask, API Development, PostgreSQL, Kubernetes, GraphQL",0.3524848663703577
+"Spark, NoSQL, C++, API Development, CI/CD, Keras","Machine Learning, Django, Deep Learning, TensorFlow",0.3717501529690122
+"Data Engineering, C++, TensorFlow","SQL, Microservices, Python, Data Science, Hadoop, Cloud Computing",0.18072715976162235
+"C++, GraphQL, Java, Hadoop, SQL","Data Engineering, SQL, Big Data",0.4916264110407761
+"Hadoop, Data Science, Flask, Keras, CI/CD, Node.js","Docker, React, Cloud Computing, Microservices",0.15064958482429663
+"Spark, SQL, Kubernetes, Data Engineering","Spark, Keras, Hadoop",0.14113138711638748
+"Docker, PostgreSQL, MongoDB, Azure, NoSQL, GraphQL","Data Science, MongoDB, PostgreSQL, Spark, Azure",0.34344113648665564
+"Deep Learning, Spark, Docker","Deep Learning, Cloud Computing, Node.js, AWS, Java, PostgreSQL",0.5230343056020527
+"GraphQL, React, MongoDB, PostgreSQL, Keras, TensorFlow","Cloud Computing, CI/CD, Azure",0.512285289442903
+"MongoDB, Microservices, C++","Java, Django, Big Data, Spark, NoSQL",0.1413183377109836
+"Azure, API Development, TensorFlow, PostgreSQL, Cloud Computing, NoSQL","Deep Learning, NoSQL, Machine Learning, AWS, React",0.10194792281193732
+"Spark, Azure, Data Science, Data Engineering","Kubernetes, Node.js, Big Data, Flask, SQL",0.05169793741476264
+"Keras, API Development, Node.js, Hadoop, Deep Learning, Django","SQL, Java, Flask",0.22107793157889277
+"API Development, Django, PostgreSQL, Python, C++, Big Data","MongoDB, Cloud Computing, SQL, Data Science",0.07135589480089646
+"Flask, Azure, Django, Data Science, GraphQL","Django, API Development, Java",0.20186636193729798
+"C++, REST APIs, Machine Learning, Deep Learning, Docker, CI/CD","React, Azure, CI/CD, Java",0.07234723840319887
+"Azure, TensorFlow, AWS","Deep Learning, Docker, Keras, CI/CD",0.08195330901085454
+"Data Science, CI/CD, Python, AWS, Java","Java, Data Science, Big Data, NoSQL, Azure",0.4932069427258291
+"Spark, Data Science, Data Engineering, AWS, Microservices, SQL","API Development, Kubernetes, Cloud Computing, Azure, Node.js",0.2225175025192455
+"Django, Data Engineering, Node.js, REST APIs, Data Science","Django, Big Data, Data Engineering, CI/CD, Python, Deep Learning",0.20448712448155956
+"Keras, Data Engineering, Django, CI/CD, GraphQL","API Development, AWS, Data Engineering, Data Science, Big Data",0.49585348613471286
+"GraphQL, React, TensorFlow, Docker, Data Engineering","PostgreSQL, Java, API Development, Flask",0.4951779522429403
+"Docker, Deep Learning, GraphQL","Deep Learning, C++, TensorFlow, NoSQL",0.10580920454509785
+"Microservices, CI/CD, MongoDB, Kubernetes","Data Science, Python, PostgreSQL",0.455142949453627
+"React, AWS, TensorFlow, Java","Data Engineering, REST APIs, Cloud Computing, API Development, Big Data, NoSQL",0.19426786681688538
+"Data Engineering, NoSQL, REST APIs, API Development, Python","AWS, Cloud Computing, NoSQL, TensorFlow",0.23476019555451638
+"Java, Data Science, SQL, Deep Learning","Flask, Data Science, Microservices, API Development",0.48488016959034225
+"Node.js, Cloud Computing, PostgreSQL, SQL","Data Science, Microservices, Java, GraphQL, Keras, Big Data",0.534149140200062
+"Keras, Big Data, Machine Learning, Spark","Keras, Cloud Computing, Docker",0.4245945432721911
+"TensorFlow, Kubernetes, Docker, Microservices","Spark, Python, Docker, Node.js, Big Data, TensorFlow",0.4444088962566304
+"NoSQL, Data Engineering, Python","Docker, Cloud Computing, React, PostgreSQL, Data Science",0.4741182384294523
+"Keras, Data Science, React","Keras, PostgreSQL, Spark, Microservices, Cloud Computing",0.3641333221530036
+"Big Data, Hadoop, Azure","PostgreSQL, Flask, Kubernetes, Java",0.14329769798234035
+"Data Engineering, Machine Learning, AWS, Microservices, Java, TensorFlow","Deep Learning, Azure, Keras, NoSQL, GraphQL",0.21314463306058545
+"Java, TensorFlow, Cloud Computing, Microservices","Machine Learning, React, Keras, Docker, AWS, SQL",0.23250409915164877
+"Hadoop, Machine Learning, Azure, GraphQL","React, Docker, Cloud Computing, Big Data, PostgreSQL",0.1921204494938549
+"C++, Spark, Flask","Django, Data Engineering, Azure, PostgreSQL",0.11149971531991437
+"Spark, PostgreSQL, API Development, CI/CD, TensorFlow, Big Data","Kubernetes, Flask, Django, Deep Learning",0.3408563626723389
+"PostgreSQL, API Development, GraphQL, TensorFlow, Docker, CI/CD","Java, Data Science, Hadoop, AWS, Node.js, Django",0.4497220351546588
+"Node.js, AWS, Keras, SQL, Kubernetes","MongoDB, Flask, Docker, Microservices",0.08921404622491041
+"Flask, Data Science, Big Data, Machine Learning, Kubernetes","Docker, Cloud Computing, SQL, Node.js, C++, Microservices",0.37852797642099933
+"Azure, Hadoop, Spark, Python, Data Engineering, Deep Learning","Data Engineering, Azure, Keras, API Development, Big Data",0.11016404885692604
+"Microservices, React, GraphQL, Kubernetes","Cloud Computing, Flask, TensorFlow, Spark, GraphQL, Big Data",0.21028459631559926
+"REST APIs, React, TensorFlow, Microservices, Azure, API Development","Kubernetes, Node.js, Keras",0.3999339768750417
+"Microservices, Docker, Django, Deep Learning, GraphQL","Cloud Computing, Django, Data Engineering, Java, React, API Development",0.0997295139342177
+"NoSQL, SQL, GraphQL, Kubernetes","AWS, Spark, SQL, TensorFlow",0.3998911075510493
+"CI/CD, Spark, Django, Deep Learning, GraphQL, Hadoop","Node.js, Keras, API Development, Python",0.12926925881203002
+"React, Kubernetes, C++","Cloud Computing, C++, Big Data, Microservices, MongoDB",0.5093243411823394
+"Django, REST APIs, Python, Deep Learning","C++, Big Data, Microservices",0.15910870678339661
+"API Development, Spark, Machine Learning, Data Engineering","Kubernetes, AWS, C++",0.23855105649274294
+"Python, Microservices, React","Machine Learning, SQL, TensorFlow",0.5279729512068114
+"Azure, React, PostgreSQL, Deep Learning, REST APIs","SQL, React, API Development",0.06902366727946654
+"C++, Deep Learning, NoSQL, Data Engineering, Microservices, Hadoop","PostgreSQL, Azure, Node.js, Machine Learning, CI/CD",0.05900071479395716
+"REST APIs, Data Science, C++, Node.js","Flask, Cloud Computing, Deep Learning, Azure",0.3683847717258808
+"API Development, Big Data, Data Science, AWS","NoSQL, Flask, Java, REST APIs, Hadoop",0.06809058481557148
+"Cloud Computing, Django, Data Science, NoSQL, Azure, Keras","Deep Learning, MongoDB, GraphQL, Data Engineering, Hadoop, NoSQL",0.20932599469982893
+"NoSQL, Django, Flask","REST APIs, Machine Learning, Keras",0.3587478569762502
+"Big Data, API Development, Django, C++, Data Science, MongoDB","SQL, MongoDB, NoSQL, Spark",0.5192758265715702
+"MongoDB, Hadoop, Java, Deep Learning, Flask, Cloud Computing","C++, Keras, Microservices, Spark, API Development, PostgreSQL",0.09851595892177184
+"SQL, Keras, API Development, Flask","Java, Data Science, Keras",0.06897906307851956
+"Spark, Node.js, MongoDB, REST APIs, Keras","TensorFlow, Docker, Node.js",0.45946983380563033
+"Data Science, Node.js, GraphQL, Python","Cloud Computing, Big Data, PostgreSQL, Spark",0.048855650735797895
+"REST APIs, Data Science, GraphQL, React","Data Engineering, Hadoop, Microservices",0.41918781239038194
+"Cloud Computing, Kubernetes, API Development, GraphQL","PostgreSQL, Data Science, Node.js, MongoDB, CI/CD",0.14843255485263795
+"C++, Docker, Data Engineering","MongoDB, Django, CI/CD, NoSQL, Kubernetes, Flask",0.20772767799097308
+"CI/CD, Deep Learning, Cloud Computing","Node.js, AWS, Data Science, NoSQL, Python",0.49764232557156296
+"Azure, GraphQL, SQL, C++","Docker, Machine Learning, Java, REST APIs",0.14713411168669233
+"React, Node.js, REST APIs, SQL","Django, TensorFlow, Big Data, Machine Learning",0.15646214773891265
+"Microservices, Docker, TensorFlow, MongoDB, PostgreSQL, Node.js","CI/CD, C++, Java",0.2159080858016888
+"Microservices, Azure, Hadoop, Node.js","Data Science, TensorFlow, Java, CI/CD, Big Data, AWS",0.04511601550909411
+"Azure, AWS, Machine Learning, REST APIs","NoSQL, Java, Kubernetes",0.49471122987874294
+"NoSQL, GraphQL, MongoDB, SQL, REST APIs, Keras","Hadoop, C++, React",0.13440682050481426
+"Java, API Development, Hadoop, Machine Learning, Azure","Big Data, Spark, Kubernetes, Hadoop, CI/CD",0.37488096036511365
+"REST APIs, PostgreSQL, Data Engineering, Cloud Computing, Microservices, Azure","API Development, CI/CD, Node.js, SQL, Data Science, Kubernetes",0.5252967361289753
+"PostgreSQL, REST APIs, Python, Flask, TensorFlow, API Development","REST APIs, SQL, Java, Cloud Computing, Keras",0.15600849602932382
+"Python, CI/CD, Keras","Node.js, Keras, Big Data",0.066482724281586
+"Django, Data Science, Machine Learning, Spark, NoSQL, REST APIs","Python, Big Data, Django",0.08735218198392203
+"Flask, React, Django","REST APIs, Spark, Data Science, Java",0.3967328950742445
+"GraphQL, Deep Learning, Data Science, REST APIs, Big Data, Cloud Computing","Docker, GraphQL, React, PostgreSQL, Data Engineering",0.09731186549170467
+"Hadoop, Kubernetes, AWS, NoSQL, Data Science, Docker","Data Engineering, React, TensorFlow, Keras, Hadoop, Data Science",0.058590985574404814
+"NoSQL, MongoDB, GraphQL, TensorFlow, Microservices, Machine Learning","SQL, Data Science, Hadoop, Big Data, Deep Learning",0.05883908564367449
+"Hadoop, PostgreSQL, GraphQL, Deep Learning","Data Engineering, Hadoop, C++",0.13921507780606648
+"Data Science, Node.js, AWS","Flask, MongoDB, Azure, NoSQL, Docker",0.3384700021791109
+"MongoDB, Machine Learning, C++, AWS","Docker, PostgreSQL, NoSQL, React, Java",0.157936155797271
+"Big Data, Hadoop, Docker, Keras","React, NoSQL, SQL",0.3676124253797258
+"SQL, PostgreSQL, Flask","React, Flask, Big Data",0.4879745710337825
+"MongoDB, Docker, React","Azure, Kubernetes, Node.js",0.06775735951027914
+"NoSQL, Azure, Python, Machine Learning","Django, Spark, AWS, Hadoop, Deep Learning, Microservices",0.4976045698129671
+"Python, SQL, NoSQL, CI/CD","Hadoop, TensorFlow, Keras, SQL, PostgreSQL, Django",0.21786744634869476
+"API Development, Hadoop, Python, Big Data, Node.js, C++","Java, Keras, Big Data",0.35841906295969933
+"Microservices, API Development, Data Engineering, NoSQL, AWS","React, Data Engineering, Azure, Kubernetes, Big Data",0.48889868112267576
+"Machine Learning, Spark, Keras, Deep Learning","MongoDB, Hadoop, C++",0.12840925871673306
+"Azure, Kubernetes, PostgreSQL, Cloud Computing, GraphQL","Java, Spark, PostgreSQL, API Development, NoSQL, Machine Learning",0.3484254637784399
+"Docker, GraphQL, Data Engineering, Big Data","React, Java, AWS, Data Engineering, Keras, NoSQL",0.20844659760097328
+"PostgreSQL, SQL, React, Flask, Spark, Data Engineering","Big Data, Data Science, API Development, SQL",0.13964947672624986
+"REST APIs, PostgreSQL, C++, NoSQL, Machine Learning","API Development, Keras, MongoDB, Kubernetes, React",0.4894595392231019
+"Keras, Data Science, API Development, AWS, Python","SQL, Docker, MongoDB, Deep Learning",0.2290464934344117
+"Azure, AWS, Keras, MongoDB","SQL, Hadoop, Kubernetes",0.04867592125719128
+"Node.js, Azure, Keras, Python, Kubernetes","MongoDB, AWS, Kubernetes, PostgreSQL, Python",0.3397000470266025
+"Azure, Django, C++, Kubernetes","Spark, CI/CD, NoSQL, Data Science, Azure",0.5189910210792301
+"GraphQL, Hadoop, API Development, SQL","AWS, Kubernetes, MongoDB, API Development, REST APIs",0.18931445011182244
+"Microservices, PostgreSQL, React, Big Data, TensorFlow, Docker","Microservices, API Development, REST APIs, Cloud Computing, Machine Learning",0.09959737627735793
+"Python, Keras, Docker","Data Engineering, GraphQL, REST APIs, TensorFlow, NoSQL",0.2390959553474013
+"API Development, Data Science, Hadoop, Flask, Data Engineering, Machine Learning","Machine Learning, CI/CD, Docker",0.3395230486462414
+"Hadoop, Docker, TensorFlow, Microservices","CI/CD, React, AWS, Docker",0.21958335292675646
+"Flask, Keras, Hadoop","MongoDB, Keras, C++, REST APIs",0.08967198364582218
+"Node.js, SQL, Flask, TensorFlow","Docker, CI/CD, Microservices, API Development, React",0.22895599348983153
+"Spark, Azure, Python","SQL, Machine Learning, React, Docker, Big Data",0.44833561075276507
+"Data Engineering, GraphQL, C++, Python, Big Data","React, Azure, Machine Learning, PostgreSQL, TensorFlow",0.5178622897860761
+"C++, GraphQL, Flask","React, Java, Node.js, Spark, AWS",0.16703144673814058
+"Python, AWS, TensorFlow","Docker, Deep Learning, Python",0.4075634855528621
+"NoSQL, Microservices, Spark, Keras, Python, Data Science","Python, Hadoop, Django",0.4081023282647759
+"Keras, Data Science, PostgreSQL, TensorFlow","Machine Learning, Django, SQL, Big Data",0.4883216837613348
+"MongoDB, Docker, Hadoop, Java, REST APIs, Machine Learning","Hadoop, Big Data, Spark, Flask, SQL, Kubernetes",0.0885575834773143
+"Big Data, Keras, Kubernetes","Azure, AWS, Cloud Computing, MongoDB",0.08813429407072315
+"REST APIs, Python, API Development","Azure, Cloud Computing, Hadoop, Spark, Kubernetes, REST APIs",0.4674402159953767
+"Data Science, Kubernetes, API Development, AWS, CI/CD","Machine Learning, Big Data, SQL, MongoDB, Python",0.10696027129452856
+"Flask, Microservices, CI/CD","REST APIs, Spark, Machine Learning, Data Science",0.3865181534641945
+"C++, Data Science, PostgreSQL","Spark, Data Engineering, PostgreSQL, Cloud Computing",0.3371880547348802
+"Azure, TensorFlow, SQL, Data Engineering","Flask, Hadoop, Data Science, Data Engineering",0.1778087328736383
+"CI/CD, Django, Deep Learning","TensorFlow, Docker, Data Engineering, Deep Learning",0.3981582461667941
+"Deep Learning, GraphQL, Cloud Computing, SQL","Flask, CI/CD, Django, Docker, TensorFlow",0.20777188848760902
+"Microservices, TensorFlow, CI/CD","C++, Docker, Deep Learning, SQL, React",0.38719597930783967
+"Kubernetes, SQL, MongoDB, Spark, Docker","Django, Spark, Azure, CI/CD, Java",0.34726639958754013
+"PostgreSQL, SQL, Java, GraphQL, Node.js","Microservices, Docker, Flask",0.23695993606128474
+"CI/CD, Django, AWS, Deep Learning, Azure, React","Data Science, Hadoop, Python, Django, Node.js, Docker",0.0770436238877982
+"AWS, Java, TensorFlow, Data Engineering, Data Science, MongoDB","CI/CD, Microservices, Machine Learning, TensorFlow, AWS",0.3373555978896737
+"Data Science, Cloud Computing, Big Data, Django, TensorFlow, SQL","C++, React, NoSQL, Machine Learning, Kubernetes",0.5170400982835014
+"GraphQL, Keras, AWS, Deep Learning, Hadoop","AWS, Data Science, Deep Learning, Cloud Computing",0.06820189092594173
+"Node.js, Data Engineering, NoSQL","Deep Learning, Cloud Computing, Spark, Node.js",0.36848612503200234
+"REST APIs, Microservices, TensorFlow, AWS","Kubernetes, Azure, Deep Learning",0.3983664171176606
+"Django, Java, Deep Learning, MongoDB, TensorFlow, Machine Learning","Kubernetes, React, NoSQL",0.3881585186015939
+"Data Science, C++, GraphQL, Flask, Big Data, TensorFlow","Python, Hadoop, Django, REST APIs, Keras",0.10778150295925215
+"Microservices, REST APIs, Data Engineering","SQL, AWS, Flask, NoSQL, Java",0.4872554367266699
+"REST APIs, Kubernetes, API Development, CI/CD","Docker, Machine Learning, Flask, Spark",0.2067705864244091
+"Node.js, Big Data, TensorFlow, SQL, Keras, Deep Learning","Node.js, Cloud Computing, Azure",0.2071090217391343
+"Deep Learning, TensorFlow, PostgreSQL","GraphQL, AWS, Cloud Computing, Python, Flask",0.33662147769164746
+"Data Engineering, MongoDB, Node.js, Keras, AWS, TensorFlow","NoSQL, API Development, Azure, Data Science",0.4764389546622278
+"Node.js, Keras, AWS","Node.js, Azure, Django, Java, Data Engineering",0.4864519843719221
+"GraphQL, Azure, CI/CD, MongoDB, Node.js","REST APIs, Hadoop, CI/CD, React",0.38660300257527624
+"SQL, REST APIs, Node.js, Data Engineering, Hadoop, API Development","NoSQL, Kubernetes, Azure",0.3563603358764027
+"Keras, Docker, Flask, Hadoop, NoSQL","Microservices, Data Engineering, MongoDB, Deep Learning",0.3360801714070629
+"NoSQL, Docker, Data Engineering","Cloud Computing, AWS, Data Science, NoSQL, Data Engineering",0.34672038553567675
+"GraphQL, Data Engineering, NoSQL, MongoDB, Spark","AWS, Docker, Deep Learning",0.08634495820263177
+"TensorFlow, Machine Learning, C++","REST APIs, Python, Data Science, React",0.15609542692212192
+"Kubernetes, Azure, Django","Django, TensorFlow, Machine Learning, Cloud Computing, Java",0.10625203812370237
+"React, Data Engineering, Deep Learning, Cloud Computing","TensorFlow, CI/CD, Flask, Django, Azure, Machine Learning",0.16622154769991598
+"Cloud Computing, C++, Django, Microservices, TensorFlow, Machine Learning","Java, Azure, TensorFlow",0.18685290273244562
+"Django, SQL, Machine Learning, AWS, Python, CI/CD","Docker, MongoDB, NoSQL, Python",0.19710134320107833
+"Keras, Azure, AWS, NoSQL, CI/CD, Spark","MongoDB, Python, C++, Deep Learning",0.10675154448970992
+"C++, Cloud Computing, Spark, Machine Learning","Hadoop, REST APIs, Deep Learning, Flask, GraphQL, Azure",0.12659186271095527
+"Node.js, Django, Deep Learning","GraphQL, TensorFlow, Data Engineering, MongoDB, Kubernetes",0.36615770002084974
+"Docker, SQL, REST APIs, Azure","Big Data, REST APIs, Microservices, Spark",0.3863893642488626
+"Keras, NoSQL, Node.js","REST APIs, SQL, PostgreSQL, Big Data",0.12620457882972017
+"Big Data, API Development, C++, Node.js","Data Engineering, C++, SQL, Python, Docker",0.5266791666392641
+"PostgreSQL, Django, SQL, Big Data","Python, C++, React",0.516355163071967
+"Machine Learning, Data Engineering, AWS, Deep Learning","API Development, C++, REST APIs",0.15605186194716686
+"Machine Learning, Data Engineering, CI/CD, Deep Learning, PostgreSQL, Hadoop","Django, Hadoop, CI/CD, Data Engineering",0.22743582973283394
+"SQL, C++, React, Big Data, Docker, Hadoop","REST APIs, Java, Spark, Data Engineering",0.45745682420342093
+"Big Data, Data Science, Keras, AWS, API Development, Azure","Keras, Python, Data Engineering",0.10820247995300075
+"Machine Learning, Django, Deep Learning, Java, Node.js, Kubernetes","C++, Hadoop, Spark",0.18793714155746385
+"Data Engineering, Node.js, Hadoop","Kubernetes, Python, Hadoop, Keras",0.11820138286886442
+"Hadoop, Big Data, CI/CD, Deep Learning, Keras","Big Data, API Development, AWS, React",0.4183340126003672
+"Data Engineering, Deep Learning, Python","C++, PostgreSQL, Django, React, Docker, MongoDB",0.19768324628314812
+"Django, C++, Data Science, Keras","GraphQL, REST APIs, Deep Learning, Data Engineering, Python, Java",0.42777222781458446
+"C++, Microservices, PostgreSQL, Keras, Deep Learning, CI/CD","Deep Learning, C++, GraphQL, Hadoop, Big Data",0.4785239284785165
+"Spark, Node.js, AWS, Docker, Cloud Computing","Docker, Java, PostgreSQL, Kubernetes, Hadoop",0.04873644849019393
+"Cloud Computing, AWS, Hadoop, React, Keras, MongoDB","Cloud Computing, Machine Learning, Python",0.4089858315697507
+"Django, Cloud Computing, Java, SQL","Machine Learning, Java, Spark",0.5192271289388642
+"C++, Spark, TensorFlow","Big Data, Microservices, C++, Machine Learning, API Development",0.48852106132035766
+"Flask, Spark, Big Data, Deep Learning, TensorFlow, AWS","Cloud Computing, Data Engineering, Azure",0.43869205589867033
+"Azure, Kubernetes, TensorFlow, Deep Learning, Node.js, SQL","PostgreSQL, Keras, MongoDB, GraphQL",0.12859423814214513
+"GraphQL, Flask, Microservices, C++, NoSQL","Java, GraphQL, Node.js",0.45899786300550394
+"Data Science, Machine Learning, CI/CD, C++, Java","C++, Microservices, CI/CD",0.3998300374348056
+"PostgreSQL, MongoDB, SQL, Big Data","C++, Machine Learning, Flask, React",0.35961627187574263
+"Java, C++, Kubernetes","Spark, Node.js, Deep Learning",0.1193631201984279
+"TensorFlow, Data Engineering, Azure, Flask","Big Data, Kubernetes, Docker, Data Engineering",0.519864498517306
+"Python, Data Science, Node.js","React, TensorFlow, Data Engineering, Keras, Java",0.529706629323498
+"Microservices, Docker, NoSQL","TensorFlow, Data Science, Keras, Java, Azure",0.3791893688445569
+"Node.js, Spark, C++, Keras","Keras, Flask, Node.js, Azure, TensorFlow, C++",0.08032950876946346
+"REST APIs, API Development, TensorFlow, Cloud Computing","TensorFlow, Flask, Cloud Computing, Java, Microservices",0.17092818358161999
+"Deep Learning, PostgreSQL, Azure, Spark","Big Data, GraphQL, API Development",0.05067094785196924
+"Data Engineering, Docker, Django","Azure, MongoDB, Spark, Node.js",0.07012365524024769
+"NoSQL, CI/CD, Keras","Hadoop, Machine Learning, CI/CD, GraphQL, Cloud Computing, Keras",0.3808282067210724
+"SQL, PostgreSQL, Deep Learning, Data Engineering, GraphQL","Kubernetes, Big Data, Spark, C++, Flask",0.3406440042914139
+"Spark, GraphQL, Docker, Cloud Computing","GraphQL, Hadoop, REST APIs, Python, Kubernetes, Spark",0.10129185533669116
+"PostgreSQL, Microservices, Keras, AWS, Kubernetes","Kubernetes, MongoDB, PostgreSQL, Hadoop, Java, Django",0.35116011365675576
+"C++, CI/CD, Docker, Big Data, API Development, GraphQL","React, PostgreSQL, AWS, Kubernetes",0.3508892276653971
+"Keras, SQL, CI/CD","Spark, Data Engineering, CI/CD",0.14125650366554213
+"Deep Learning, Kubernetes, NoSQL, Machine Learning","Data Engineering, Cloud Computing, PostgreSQL, SQL",0.46111496401132224
+"Cloud Computing, NoSQL, CI/CD","TensorFlow, Java, Kubernetes, Hadoop, API Development, NoSQL",0.42108972009271384
+"Keras, Python, SQL, Deep Learning","Node.js, Docker, Hadoop, Spark",0.24069227806454974
+"SQL, Data Science, Django, NoSQL, REST APIs","TensorFlow, REST APIs, PostgreSQL, Machine Learning",0.23114483436871947
+"API Development, GraphQL, Node.js, Hadoop","PostgreSQL, CI/CD, API Development, REST APIs, Node.js",0.16189321176942745
+"GraphQL, PostgreSQL, Python, Data Science, Java","Java, Keras, CI/CD, Spark, Django",0.38188633990564835
+"Django, Java, Microservices, Kubernetes","API Development, Azure, MongoDB",0.47160345477272864
+"Node.js, NoSQL, Spark, Microservices","GraphQL, Deep Learning, Kubernetes",0.21131713223035692
+"AWS, React, CI/CD, Data Engineering","Node.js, Big Data, Deep Learning, Cloud Computing, Spark",0.23114158739908958
+"Docker, SQL, Python","Data Science, GraphQL, Spark, AWS, Keras, Docker",0.3604986874497761
+"Microservices, NoSQL, SQL, TensorFlow, Django, Data Engineering","MongoDB, Spark, PostgreSQL, Node.js",0.5203878466991387
+"MongoDB, Deep Learning, TensorFlow, Azure, Cloud Computing","Node.js, MongoDB, Microservices",0.3700930702916032
+"CI/CD, Hadoop, Docker, MongoDB, Data Science, TensorFlow","Flask, REST APIs, Data Science, Deep Learning",0.5003491574325986
+"Azure, TensorFlow, MongoDB","C++, Deep Learning, Kubernetes, SQL, Data Science, GraphQL",0.47992217783866165
+"Docker, Data Science, AWS, Cloud Computing, SQL","Big Data, Docker, Python",0.340491838496728
+"GraphQL, Flask, Kubernetes, C++, SQL","Docker, Keras, Node.js, React, Django, Flask",0.12067112759252077
+"Microservices, Java, Hadoop, Docker","C++, Keras, Hadoop",0.44100156018283765
+"Docker, Spark, TensorFlow, CI/CD","Deep Learning, Data Science, Java, Big Data, Keras",0.400709763898714
+"PostgreSQL, Flask, C++, Azure, MongoDB","Keras, Kubernetes, Data Engineering, Python, Data Science, Flask",0.1407544698461751
+"Azure, C++, AWS, MongoDB, Java","Data Engineering, Spark, MongoDB, Hadoop",0.24090083210345303
+"Microservices, Flask, Big Data","React, Keras, Flask, Cloud Computing",0.5110083718834617
+"SQL, Django, C++","SQL, Hadoop, API Development, Deep Learning, MongoDB",0.5110160889580837
+"Java, Flask, API Development, Keras, NoSQL, TensorFlow","Data Engineering, Data Science, GraphQL, Flask, REST APIs",0.5213131098052372
+"GraphQL, React, Node.js, Python","Spark, GraphQL, Data Engineering, Python",0.1720201775287613
+"Spark, Kubernetes, Python","Python, Docker, GraphQL, CI/CD",0.09223592445462175
+"AWS, Hadoop, Microservices, API Development, CI/CD, NoSQL","Spark, Hadoop, Django, Flask, SQL, Docker",0.12229254004987258
+"Django, Microservices, Data Science, Keras","Data Science, GraphQL, Deep Learning, Keras, MongoDB, Django",0.4533553129351776
+"Kubernetes, Machine Learning, Spark, C++, Microservices, Django","MongoDB, REST APIs, Flask, GraphQL, PostgreSQL",0.13283397778830222
+"REST APIs, TensorFlow, React, NoSQL, GraphQL, SQL","Spark, AWS, Docker, Flask, Data Engineering, Hadoop",0.15257593471523073
+"Docker, Kubernetes, MongoDB, Keras","MongoDB, Kubernetes, React, Docker, Cloud Computing",0.3536598692150021
+"GraphQL, SQL, REST APIs, Keras","Docker, REST APIs, Python",0.11387866154155996
+"Python, React, GraphQL, Big Data","MongoDB, AWS, SQL, Deep Learning, REST APIs, Java",0.11353076871596324
+"PostgreSQL, Kubernetes, Data Science","Keras, AWS, PostgreSQL, Machine Learning, Flask",0.21364531028643474
+"PostgreSQL, Flask, SQL, Cloud Computing","Big Data, C++, Azure, Kubernetes, Machine Learning, Data Engineering",0.12339668151384389
+"PostgreSQL, Data Science, REST APIs, AWS, Deep Learning","Data Engineering, Microservices, Flask, Python, Machine Learning",0.13360714970725754
+"Azure, Data Engineering, CI/CD, PostgreSQL, C++, React","Machine Learning, MongoDB, Data Science, Microservices",0.5136201806369095
+"Spark, REST APIs, Django, React, API Development, Deep Learning","MongoDB, Node.js, Hadoop, Big Data, Flask",0.11315658335341006
+"SQL, Django, Docker, Microservices","Azure, PostgreSQL, API Development, Hadoop, Spark, Cloud Computing",0.5026516038320111
+"Spark, TensorFlow, Kubernetes","Node.js, REST APIs, Cloud Computing",0.34232013618628326
+"Azure, Flask, AWS, Deep Learning, API Development","MongoDB, Data Engineering, CI/CD, Docker",0.4019041830253844
+"GraphQL, MongoDB, AWS, TensorFlow, Python","Java, C++, SQL, Machine Learning, MongoDB, Kubernetes",0.2421596887042169
+"Hadoop, Azure, Data Engineering, Big Data","Docker, React, Node.js, MongoDB",0.18174158872727875
+"Cloud Computing, Keras, Big Data, Flask","Keras, TensorFlow, AWS, Cloud Computing, Docker",0.5320018736009744
+"NoSQL, Cloud Computing, Python","Python, Kubernetes, PostgreSQL, Deep Learning, Hadoop, Docker",0.23202757229137683
+"Hadoop, C++, GraphQL, Deep Learning","API Development, Data Science, MongoDB",0.47184734876024004
+"Machine Learning, Hadoop, PostgreSQL, TensorFlow, Kubernetes, Big Data","AWS, Machine Learning, GraphQL, Docker, Big Data",0.20256823433179408
+"Kubernetes, Node.js, Big Data, REST APIs","React, Docker, SQL, CI/CD, NoSQL",0.17245491750875064
+"Azure, MongoDB, Data Engineering, Django","Data Engineering, Spark, Docker",0.052605375792515396
+"Deep Learning, MongoDB, CI/CD, PostgreSQL, Kubernetes","SQL, Big Data, Hadoop, Data Science",0.4224057140701008
+"Spark, Flask, CI/CD","Machine Learning, Kubernetes, Microservices",0.44215673350380735
+"Data Science, CI/CD, Keras, Data Engineering, Docker","Django, Java, CI/CD, GraphQL",0.4622675764381088
+"Flask, API Development, REST APIs, Data Engineering","Data Science, Spark, Python, Machine Learning, Big Data, Keras",0.10227374204960049
+"Java, API Development, Deep Learning, Django, NoSQL, Big Data","AWS, Azure, Python, Data Engineering, API Development, Deep Learning",0.17309758686930443
+"MongoDB, Hadoop, CI/CD, Cloud Computing, SQL, REST APIs","React, Keras, Cloud Computing",0.46336998948355923
+"Node.js, Kubernetes, AWS, Data Engineering, Cloud Computing","SQL, Node.js, Docker, Kubernetes, C++, Microservices",0.34404486071063195
+"Node.js, API Development, GraphQL, NoSQL, Cloud Computing","React, MongoDB, Azure, Cloud Computing",0.22443426773499636
+"Microservices, MongoDB, TensorFlow","MongoDB, React, Data Engineering, SQL, REST APIs, Cloud Computing",0.3443509347301259
+"C++, Docker, NoSQL","Microservices, TensorFlow, API Development",0.34402119748174737
+"Python, Azure, CI/CD, Data Engineering, SQL, GraphQL","API Development, Java, Microservices, GraphQL, REST APIs",0.08418931109348929
+"TensorFlow, Cloud Computing, Django, CI/CD","Machine Learning, MongoDB, GraphQL, Cloud Computing",0.5343168945996928
+"Cloud Computing, Machine Learning, PostgreSQL, REST APIs, Kubernetes","PostgreSQL, Flask, Python, Node.js, NoSQL, Kubernetes",0.24478576044731765
+"PostgreSQL, SQL, AWS, C++","Spark, API Development, Azure, Java",0.36456710828311606
+"Java, SQL, Azure","Docker, Java, Microservices, NoSQL, Cloud Computing, Python",0.1546934113718118
+"Keras, API Development, Machine Learning","Flask, React, Machine Learning, SQL, Hadoop",0.5147378177965465
+"Deep Learning, CI/CD, Machine Learning","PostgreSQL, Flask, Java, Data Engineering",0.054453700614795486
+"Big Data, Kubernetes, PostgreSQL, Microservices","Spark, GraphQL, Docker",0.43430788601771697
+"Big Data, Java, TensorFlow, Cloud Computing, Flask","Spark, Hadoop, Flask, API Development, Java",0.35479794635884954
+"Data Science, Flask, Machine Learning, TensorFlow, React","Big Data, REST APIs, Data Engineering, Python",0.47469917027942926
+"Cloud Computing, Kubernetes, PostgreSQL","Spark, Python, REST APIs, Java, Azure, CI/CD",0.34428232811401016
+"Cloud Computing, Deep Learning, Hadoop, MongoDB, Node.js","SQL, Cloud Computing, AWS, Big Data, Django",0.40433170290020126
+"NoSQL, Microservices, REST APIs, Hadoop, C++","TensorFlow, Node.js, Flask",0.2339992308863016
+"AWS, Big Data, Cloud Computing, MongoDB","SQL, Keras, Docker, Data Engineering, Spark, C++",0.15365488257786625
+"Node.js, Java, MongoDB, SQL","REST APIs, React, API Development",0.11340761640823238
+"React, Spark, Big Data","Data Engineering, Azure, Hadoop",0.20339053451339198
+"Hadoop, Data Science, Azure, Cloud Computing, Node.js","CI/CD, C++, SQL, PostgreSQL, AWS",0.39305551426321095
+"Azure, API Development, Django, Node.js","Big Data, Spark, Microservices",0.22277340278859564
+"Java, Data Science, NoSQL","CI/CD, C++, GraphQL, SQL",0.0526815496668846
+"Java, Python, PostgreSQL, SQL, CI/CD, Data Engineering","Data Engineering, Kubernetes, Microservices, Java",0.2432347880971108
+"Data Science, PostgreSQL, Cloud Computing, GraphQL, Python","Azure, PostgreSQL, Keras",0.19355869622920516
+"React, Microservices, MongoDB","API Development, Docker, TensorFlow, NoSQL, Kubernetes",0.12322479736557371
+"Azure, Data Engineering, Django, MongoDB, Keras","React, Flask, TensorFlow, SQL, PostgreSQL",0.37297122964623103
+"Big Data, Azure, Flask","Machine Learning, Docker, Flask, GraphQL, React, Hadoop",0.44306147070248136
+"Flask, Django, API Development, PostgreSQL","API Development, AWS, Docker, Python",0.4731601261820938
+"CI/CD, Data Science, Deep Learning, Data Engineering","Cloud Computing, Keras, API Development",0.09298439958858751
+"C++, MongoDB, SQL, Kubernetes","PostgreSQL, TensorFlow, Flask, AWS, Node.js, SQL",0.48315075818962566
+"Flask, Java, API Development","GraphQL, Microservices, Big Data, CI/CD",0.06298304051744238
+"C++, Java, CI/CD","C++, PostgreSQL, Java, TensorFlow",0.16361285067232972
+"AWS, Data Science, Kubernetes, Docker, Java, Django","Microservices, Java, GraphQL, Django, Docker, MongoDB",0.4844445894513666
+"Spark, CI/CD, Node.js, Data Engineering","Microservices, GraphQL, Kubernetes, Azure, TensorFlow, Django",0.09380161794166869
+"Data Engineering, Django, Python","React, Deep Learning, Kubernetes, API Development, CI/CD",0.4333017499153711
+"Python, SQL, Data Science","GraphQL, Docker, C++",0.4130487878520026
+"AWS, Hadoop, Microservices","CI/CD, Machine Learning, Node.js, SQL",0.5326217575413599
+"MongoDB, Keras, GraphQL, Hadoop, REST APIs, NoSQL","PostgreSQL, Microservices, GraphQL, Hadoop, NoSQL",0.16360544275663735
+"Data Engineering, GraphQL, Data Science, Azure, C++, AWS","Hadoop, Kubernetes, Python, NoSQL, GraphQL, Keras",0.1236576795974729
+"Cloud Computing, NoSQL, Keras","Machine Learning, Hadoop, Keras",0.4939400572660934
+"MongoDB, GraphQL, Java, TensorFlow","CI/CD, MongoDB, Azure, Microservices, GraphQL",0.14445595123969993
+"Spark, Python, C++, PostgreSQL","CI/CD, Flask, Spark",0.51462937265814
+"REST APIs, NoSQL, Flask, CI/CD, SQL","Big Data, MongoDB, Django, Python",0.4945348548735134
+"Data Science, NoSQL, Spark","Kubernetes, CI/CD, Python, Flask, Docker, React",0.5040518151779356
+"Node.js, REST APIs, Deep Learning","Data Science, React, GraphQL",0.5038392632389993
+"Java, Spark, PostgreSQL","React, Python, Spark, Azure, C++",0.14398034987352046
+"Node.js, Microservices, Big Data, Machine Learning, Django, PostgreSQL","Node.js, Python, Flask, NoSQL, Azure",0.524135772945985
+"REST APIs, Data Engineering, Data Science, Machine Learning, GraphQL, Deep Learning","PostgreSQL, Django, Java, Keras",0.38384722577563335
+"NoSQL, SQL, Kubernetes, React","Data Engineering, Microservices, Spark, Node.js, Cloud Computing",0.3535786633948962
+"Python, Spark, Data Engineering, Hadoop","Big Data, NoSQL, Keras, Flask, Deep Learning, Microservices",0.05335308346868717
+"Deep Learning, Big Data, Data Engineering, REST APIs, Hadoop, Node.js","Cloud Computing, Data Science, Node.js, AWS, PostgreSQL",0.12371628946551147
+"Hadoop, SQL, Spark, Node.js, Django, Cloud Computing","Microservices, React, API Development",0.5334845292313695
+"Node.js, Data Science, Cloud Computing, Deep Learning, Flask","Azure, Django, NoSQL, TensorFlow, Flask, REST APIs",0.4737665915252612
+"Flask, SQL, Azure, Data Science, AWS, Node.js","MongoDB, TensorFlow, CI/CD, React, SQL",0.42386321321464443
+"React, Keras, Machine Learning, C++, SQL, AWS","Deep Learning, Java, Docker, PostgreSQL, SQL, Data Engineering",0.49440867771927266
+"Python, SQL, Keras, Spark, Big Data","Python, Data Engineering, Data Science, API Development, NoSQL, GraphQL",0.4949340241829094
+"PostgreSQL, Python, API Development, React, Docker, Keras","Data Science, Microservices, Azure, Python, Flask",0.5249843239527228
+"Microservices, Kubernetes, Java","Data Science, PostgreSQL, Microservices, Java, Hadoop",0.2155114766355451
+"AWS, Kubernetes, C++","Machine Learning, Cloud Computing, CI/CD, SQL",0.5152537782609082
+"Hadoop, PostgreSQL, Azure, API Development","Big Data, Data Engineering, PostgreSQL, GraphQL, C++, MongoDB",0.39522490249884845
+"React, REST APIs, PostgreSQL, Kubernetes, Machine Learning","Spark, Flask, NoSQL, Big Data, TensorFlow",0.4349683572670649
+"Python, Cloud Computing, NoSQL","Big Data, Docker, NoSQL, Data Science",0.20517277132522174
+"Flask, Data Engineering, GraphQL, NoSQL","CI/CD, React, Spark, Flask",0.09495082694931822
+"Data Science, Deep Learning, CI/CD","Node.js, Hadoop, TensorFlow, Flask, React",0.514544088759153
+"Django, Node.js, SQL","React, SQL, AWS, TensorFlow, Data Science, Machine Learning",0.4244430483566568
+"PostgreSQL, C++, Hadoop","Django, Keras, Azure",0.5141268539285051
+"Cloud Computing, Java, TensorFlow, Keras, C++, PostgreSQL","MongoDB, Node.js, REST APIs, C++",0.1442385085595637
+"Node.js, Spark, Docker, Deep Learning, PostgreSQL","Hadoop, C++, Big Data, Azure",0.38394492075494413
+"Big Data, Deep Learning, Java","Keras, Java, Azure, MongoDB, Microservices",0.11397382524060223
+"Spark, CI/CD, React, Machine Learning, Hadoop, C++","SQL, Node.js, PostgreSQL",0.49381166851455005
+"Kubernetes, Data Engineering, REST APIs, GraphQL, Microservices, Java","SQL, Keras, Deep Learning, C++, Spark",0.22360291596623583
+"Hadoop, AWS, Docker, Node.js, Python","Docker, SQL, Hadoop",0.43421975599599627
+"Big Data, PostgreSQL, C++, Azure","Azure, Kubernetes, Hadoop, Docker, Flask, C++",0.4345882452115879
+"AWS, Deep Learning, Flask","Hadoop, Keras, MongoDB, PostgreSQL, Java, Node.js",0.12405129167870535
+"Cloud Computing, React, Python, API Development","Java, Hadoop, CI/CD, Deep Learning, Python, TensorFlow",0.07409386171727175
+"API Development, Docker, Spark, AWS, Java","Django, GraphQL, C++, API Development, AWS, Spark",0.3849186210309645
+"Big Data, Python, Azure","Keras, Docker, SQL",0.49470803724625295
+"SQL, GraphQL, Machine Learning, MongoDB, AWS","Django, Machine Learning, MongoDB, Spark, PostgreSQL, Keras",0.13517464547627858
+"Flask, Cloud Computing, Data Science","REST APIs, AWS, SQL, Azure, Big Data",0.1552480245335643
+"Microservices, REST APIs, Keras","API Development, Azure, Node.js, GraphQL",0.20504409363231305
+"TensorFlow, Cloud Computing, Node.js","Keras, Big Data, C++, Flask",0.35488077379138594
+"Big Data, API Development, Data Engineering, Azure, MongoDB, SQL","Keras, Docker, MongoDB, Data Engineering, C++",0.22528449417032875
+"Django, TensorFlow, AWS, Cloud Computing, GraphQL, Data Engineering","TensorFlow, Flask, Data Science, Big Data, Cloud Computing, Java",0.4561444239648127
+"Kubernetes, PostgreSQL, AWS, REST APIs, Spark, MongoDB","C++, Node.js, React, NoSQL, TensorFlow, Java",0.0557657855885611
+"Java, TensorFlow, Data Science, NoSQL","React, Hadoop, GraphQL, Django, Big Data",0.44570539528731745
+"API Development, Python, Azure, Node.js, CI/CD, Microservices","NoSQL, Docker, Django",0.3955060781875279
+"SQL, Django, Data Engineering","MongoDB, API Development, TensorFlow, PostgreSQL",0.12520235072115318
+"Cloud Computing, Deep Learning, GraphQL, Python, TensorFlow","Flask, API Development, TensorFlow",0.4453795262602256
+"Docker, Node.js, Big Data, API Development, Machine Learning","TensorFlow, Spark, Django, AWS, Keras, Node.js",0.5152786372517896
+"NoSQL, Hadoop, PostgreSQL, Docker, Django","CI/CD, Python, React, SQL, Cloud Computing, AWS",0.1249978616109024
+"Microservices, Kubernetes, Cloud Computing, CI/CD","Cloud Computing, Data Science, GraphQL, TensorFlow",0.14505224269664782
+"TensorFlow, PostgreSQL, Microservices, Data Science, Machine Learning, Hadoop","Django, API Development, CI/CD, Node.js, Keras, React",0.5144957036761154
+"Kubernetes, PostgreSQL, Machine Learning","Azure, Data Science, API Development, PostgreSQL, Node.js, Machine Learning",0.17491490172914886
+"PostgreSQL, SQL, Machine Learning, Deep Learning, Data Science","AWS, PostgreSQL, Python",0.1351066251796282
+"Data Science, Machine Learning, Data Engineering, Microservices, Azure, Java","SQL, Flask, TensorFlow, Docker, Data Engineering, Python",0.23524558641425264
+"Data Science, REST APIs, TensorFlow","AWS, Kubernetes, Docker",0.45506991960849186

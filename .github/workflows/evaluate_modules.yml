@@ -27,6 +27,8 @@ jobs:
       run: echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> $GITHUB_ENV
 
     - name: Run Evaluation Script
+      env:
+        TOKENIZERS_PARALLELISM: "false"
       run: |
         PYTHONPATH=. python benchmarks/evaluate_modules.py
 

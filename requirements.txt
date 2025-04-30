@@ -11,3 +11,7 @@ scikit-learn
 pandas
 numpy
 regex
+tqdm
+ruff
+bandit
+pylint

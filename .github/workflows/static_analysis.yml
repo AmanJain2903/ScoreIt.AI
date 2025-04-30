@@ -1,0 +1,35 @@
+name: Static Analysis
+
+on:
+  push:
+    branches: [ main, feature/**, bugfix/**, release/** ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pylint bandit
+
+      - name: Run Bandit (fail on issues)
+        run: |
+          bandit -r src -ll -ii -q
+
+      - name: Run Pylint (fail if score < 9.0)
+        run: |
+          pylint src/ --rcfile=.pylintrc > pylint_report.txt || true
+          PYLINT_SCORE=$(grep "Your code has been rated at" pylint_report.txt | awk '{print $7}' | cut -d'/' -f1)
+          echo "Pylint Score: $PYLINT_SCORE"
+          awk -v score="$PYLINT_SCORE" 'BEGIN {exit !(score >= 9.0)}'

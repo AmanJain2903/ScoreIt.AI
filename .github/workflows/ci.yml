@@ -2,7 +2,7 @@ name: Python Tests and Coverage (Unit + Integration)
 
 on:
   push:
-    branches: [ main, feature/**, bugfix/** ]
+    branches: [ main, feature/**, bugfix/**, release/** ]
   pull_request:
     branches: [ main ]
 

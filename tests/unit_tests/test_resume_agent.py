@@ -1,7 +1,6 @@
 import pytest
 from unittest.mock import patch, MagicMock
 from src.resume_extractor_agent.resume_agent import ResumeAgent
-from src.resume_extractor_agent import config
 
 pytestmark = pytest.mark.unit
 

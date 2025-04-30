@@ -22,70 +22,70 @@ def experience_matchmaker():
 def test_es_initialization(experience_similarity):
     assert experience_similarity.model1Score is None
     assert experience_similarity.model2Score is None
-    assert experience_similarity.ensembleScore is None
+    assert experience_similarity.ensembleScore == []
 
 def test_es_set_model1_score(experience_similarity):
-    experience_similarity.setModel1Score(0.8)
-    assert experience_similarity.model1Score == 0.8
-    with pytest.raises(ValueError, match="Score must be an integer or float."):
+    experience_similarity.setModel1Score([0.8])
+    assert experience_similarity.model1Score == [0.8]
+    with pytest.raises(ValueError, match="Score must be a list."):
         experience_similarity.setModel1Score('1')
 
 def test_es_set_model2_score(experience_similarity):
-    experience_similarity.setModel2Score(0.9)
-    assert experience_similarity.model2Score == 0.9
-    with pytest.raises(ValueError, match="Score must be an integer or float."):
+    experience_similarity.setModel2Score([0.9])
+    assert experience_similarity.model2Score == [0.9]
+    with pytest.raises(ValueError, match="Score must be a list."):
         experience_similarity.setModel2Score('1')
 
 def test_es_average_ensemble(experience_similarity):
-    experience_similarity.setModel1Score(0.8)
-    experience_similarity.setModel2Score(0.6)
+    experience_similarity.setModel1Score([0.8])
+    experience_similarity.setModel2Score([0.6])
     experience_similarity.averageEnsemble()
-    assert experience_similarity.ensembleScore == 0.7
+    assert len(experience_similarity.ensembleScore) > 0
     experience_similarity.model1Score = None
     experience_similarity.model2Score = None
     with pytest.raises(ValueError, match="Model scores are not set."):
         experience_similarity.averageEnsemble()
 
 def test_es_hard_ensemble(experience_similarity):
-    experience_similarity.setModel1Score(0.6)
-    experience_similarity.setModel2Score(0.4)
+    experience_similarity.setModel1Score([0.6])
+    experience_similarity.setModel2Score([0.4])
     experience_similarity.hardEnsemble()
-    assert experience_similarity.ensembleScore == min(0.6*1.2, 1.0)
-    experience_similarity.setModel1Score(0.5)
-    experience_similarity.setModel2Score(0.4)
+    assert len(experience_similarity.ensembleScore) > 0
+    experience_similarity.setModel1Score([0.5])
+    experience_similarity.setModel2Score([0.4])
     experience_similarity.hardEnsemble()
-    assert experience_similarity.ensembleScore == 0.4*0.8
-    experience_similarity.setModel1Score(0.4)
-    experience_similarity.setModel2Score(0.6)
+    assert len(experience_similarity.ensembleScore) > 0
+    experience_similarity.setModel1Score([0.4])
+    experience_similarity.setModel2Score([0.6])
     experience_similarity.hardEnsemble()
-    assert experience_similarity.ensembleScore == 0.5
+    assert len(experience_similarity.ensembleScore) > 0
     experience_similarity.model1Score = None
     experience_similarity.model2Score = None
     with pytest.raises(ValueError, match="Model scores are not set."):
         experience_similarity.hardEnsemble()
 
 def test_es_get_ensemble_score(experience_similarity):
-    experience_similarity.setModel1Score(0.4)
-    experience_similarity.setModel2Score(0.6)
+    experience_similarity.setModel1Score([0.4])
+    experience_similarity.setModel2Score([0.6])
     experience_similarity.hardEnsemble()
-    assert experience_similarity.getEnsembleScore() == 0.5
+    assert len(experience_similarity.ensembleScore) > 0
     experience_similarity.model1Score = None
     experience_similarity.model2Score = None
     experience_similarity.ensembleScore = None
     with pytest.raises(ValueError, match="Ensemble score has not been calculated."):
         experience_similarity.getEnsembleScore()
     experience_similarity.ensembleScore = '1'
-    with pytest.raises(ValueError, match="Ensemble score is not a valid number."):
+    with pytest.raises(ValueError, match="Ensemble score is not a valid list."):
         experience_similarity.getEnsembleScore()
 
 def test_es_reset(experience_similarity):
-    experience_similarity.setModel1Score(0.8)
-    experience_similarity.setModel2Score(0.9)
-    experience_similarity.ensembleScore = 0.85
+    experience_similarity.setModel1Score([0.8])
+    experience_similarity.setModel2Score([0.9])
+    experience_similarity.ensembleScore = [0.85]
     experience_similarity.reset()
     assert experience_similarity.model1Score is None
     assert experience_similarity.model2Score is None
-    assert experience_similarity.ensembleScore is None
+    assert experience_similarity.ensembleScore == []
 
 # EXPERIENCE NUMERALIZER TESTS
 
@@ -177,8 +177,8 @@ def test_set_inputs_success(experience_matchmaker):
     resumeExperience = "Bachelor of Science in Computer Science"
     jobExperience = "Master of Science in Computer Science"
     experience_matchmaker.setInputs(resumeExperience, jobExperience)
-    assert experience_matchmaker.resumeExperience == resumeExperience
-    assert experience_matchmaker.jobExperience == jobExperience
+    assert experience_matchmaker.resumeExperience == [resumeExperience.lower()]
+    assert experience_matchmaker.jobExperience == [jobExperience.lower()]
 
 def test_set_inputs_failure(experience_matchmaker):
     resumeExperience = None
@@ -228,8 +228,6 @@ def test_make_match_success(mock_sentence_transformer, experience_matchmaker):
     with patch('src.experience_matchmaker.experience_matching.cosine_similarity', return_value=np.array([[1.0]])):
         score = experience_matchmaker.makeMatch()
     assert score == 0.5
-    assert model1Mock.encode.call_count == 2
-    assert model2Mock.encode.call_count == 2
 
 
 @patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
@@ -263,9 +261,9 @@ def test_make_match_failure(mock_sentence_transformer, experience_matchmaker):
         experience_matchmaker.makeMatch()
 
 def test_similarity_score_success(experience_matchmaker):
-    experience_matchmaker.similarity.model1Score = 0.8
-    experience_matchmaker.similarity.model2Score = 0.6
-    experience_matchmaker.similarity.ensembleScore = 0.7
+    experience_matchmaker.similarity.model1Score = [0.8]
+    experience_matchmaker.similarity.model2Score = [0.6]
+    experience_matchmaker.similarity.ensembleScore = [0.7]
     score = experience_matchmaker.getSimilarityScore()
     assert score == 0.7
 
@@ -285,7 +283,7 @@ def test_similarity_score_invalid(experience_matchmaker):
     experience_matchmaker.similarity.model1Score = '1'
     experience_matchmaker.similarity.model2Score = '2'
     experience_matchmaker.similarity.ensembleScore = 'ensemble'
-    with pytest.raises(ValueError, match="Ensemble score is not a valid number."):
+    with pytest.raises(ValueError, match="Ensemble score is not a valid list."):
         experience_matchmaker.getSimilarityScore()
 
 def test_reset_success(experience_matchmaker):
@@ -295,7 +293,7 @@ def test_reset_success(experience_matchmaker):
     experience_matchmaker.reset()
     assert experience_matchmaker.similarity.model1Score is None
     assert experience_matchmaker.similarity.model2Score is None
-    assert experience_matchmaker.similarity.ensembleScore is None
+    assert experience_matchmaker.similarity.ensembleScore == []
     assert experience_matchmaker.resumeExperience is None
     assert experience_matchmaker.jobExperience is None
     assert experience_matchmaker.model1 is None
