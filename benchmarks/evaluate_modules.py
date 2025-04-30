@@ -202,9 +202,9 @@ class ExtractorAgents:
     
 if __name__ == "__main__":
 
-    # matchmakers = Matchmakers()
-    # matchmakers.runBenchmarks()
-    # matchmakers.saveResults()
+    matchmakers = Matchmakers()
+    matchmakers.runBenchmarks()
+    matchmakers.saveResults()
 
     extractor_agents = ExtractorAgents()
     extractor_agents.runBenchmarks()

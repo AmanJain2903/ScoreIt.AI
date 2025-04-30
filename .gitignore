@@ -11,4 +11,4 @@ htmlcov/
 __pycache__/
 *.py[cod]
 .coverage*
-rough.ipynb
+.ruff_cache
