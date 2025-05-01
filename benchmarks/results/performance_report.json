@@ -1,0 +1,249 @@
+[
+  {
+    "timestamp": "2025-05-01T14:53:39.441266",
+    "inference_time": 35.688,
+    "cpu_percent": 10.25,
+    "peak_memory": 332.42,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.9299183189868927,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.11728492565453053,
+      "SOFT_SKILL": 0.5899394154548645,
+      "TOOL": 0.7840857759118081,
+      "CERTIFICATION": 0.7519927059610684,
+      "DESIGNATION": 0.8306793197989464
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:54:09.502794",
+    "inference_time": 29.971,
+    "cpu_percent": 8.75,
+    "peak_memory": 101.75,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.7,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.4145754030905664,
+      "SOFT_SKILL": 0.6938228607177734,
+      "TOOL": 0.7994260210543871,
+      "CERTIFICATION": 0.904188851515452,
+      "DESIGNATION": 0.0
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:54:38.245451",
+    "inference_time": 28.644,
+    "cpu_percent": 11.7,
+    "peak_memory": 5.16,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.9999999701976776,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.5545290596783161,
+      "SOFT_SKILL": 0.6938228607177734,
+      "TOOL": 0.11084602406869332,
+      "CERTIFICATION": 0.5993037298321724,
+      "DESIGNATION": 0.5872058212757111
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:55:07.259520",
+    "inference_time": 28.922,
+    "cpu_percent": 9.5,
+    "peak_memory": -207.38,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.8692322969436646,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.4121671272441745,
+      "SOFT_SKILL": 0.20879819244146347,
+      "TOOL": 0.1102405703626573,
+      "CERTIFICATION": 0.4933006013433139,
+      "DESIGNATION": 0.0
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:55:40.357706",
+    "inference_time": 32.979,
+    "cpu_percent": 15.35,
+    "peak_memory": 70.52,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.8692322969436646,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.5702756121754646,
+      "SOFT_SKILL": 0.41047803591936827,
+      "TOOL": 0.18240166045725345,
+      "CERTIFICATION": 1.0,
+      "DESIGNATION": 0.5385056155423323
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:56:07.134404",
+    "inference_time": 26.666,
+    "cpu_percent": 15.05,
+    "peak_memory": 39.91,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.9999999701976776,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.6340373558923602,
+      "SOFT_SKILL": 0.5757052935659885,
+      "TOOL": 0.5634002523496747,
+      "CERTIFICATION": 0.8091438923031091,
+      "DESIGNATION": 0.8882429103056589
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:56:35.026947",
+    "inference_time": 27.79,
+    "cpu_percent": 15.0,
+    "peak_memory": 20.44,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.7,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.5998611294198781,
+      "SOFT_SKILL": 0.4345178088406101,
+      "TOOL": 1.0,
+      "CERTIFICATION": 1.0,
+      "DESIGNATION": 0.8180207312107086
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:57:24.068665",
+    "inference_time": 48.921,
+    "cpu_percent": 16.6,
+    "peak_memory": -0.31,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.7,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.5515125594101846,
+      "SOFT_SKILL": 0.7716985022028288,
+      "TOOL": 0.7940829066094011,
+      "CERTIFICATION": 0.8638747036457062,
+      "DESIGNATION": 0.5593955516815186
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:58:13.595798",
+    "inference_time": 49.41,
+    "cpu_percent": 25.6,
+    "peak_memory": -86.78,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.8692322969436646,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.30382835934869945,
+      "SOFT_SKILL": 0.42156700848136097,
+      "TOOL": 0.8026134267449379,
+      "CERTIFICATION": 0.812987606599927,
+      "DESIGNATION": 0.5539199590682984
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:58:42.166144",
+    "inference_time": 28.445,
+    "cpu_percent": 30.8,
+    "peak_memory": 42.64,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.7827954828739165,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.10201669794817765,
+      "SOFT_SKILL": 1.0,
+      "TOOL": 0.5633160878904164,
+      "CERTIFICATION": 1.0,
+      "DESIGNATION": 0.6339693129062652
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:59:08.369111",
+    "inference_time": 26.086,
+    "cpu_percent": 27.7,
+    "peak_memory": 26.22,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.7,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.5689149685204029,
+      "SOFT_SKILL": 0.8039997120698293,
+      "TOOL": 0.19542985521256923,
+      "CERTIFICATION": 1.0,
+      "DESIGNATION": 0.8882429103056589
+    }
+  },
+  {
+    "timestamp": "2025-05-01T14:59:45.248570",
+    "inference_time": 36.771,
+    "cpu_percent": 25.45,
+    "peak_memory": 28.45,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.9999999701976776,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.6853818912059069,
+      "SOFT_SKILL": 0.7523050457239151,
+      "TOOL": 1.0,
+      "CERTIFICATION": 0.8259718347340822,
+      "DESIGNATION": 0.719450032711029
+    }
+  },
+  {
+    "timestamp": "2025-05-01T15:00:44.843587",
+    "inference_time": 59.478,
+    "cpu_percent": 23.2,
+    "peak_memory": 8.55,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    },
+    "match_report": {
+      "EDUCATION": 0.9999999701976776,
+      "EXPERIENCE": 1.0,
+      "TECHNICAL_SKILL": 0.4353122686346372,
+      "SOFT_SKILL": 0.9263167679309845,
+      "TOOL": 0.7268019614120323,
+      "CERTIFICATION": 0.6072561152279377,
+      "DESIGNATION": 0.6596497917547822
+    }
+  }
+]

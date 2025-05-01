@@ -42,7 +42,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.2.0 - End-to-End Matchmaker Engine (Under Development)
+## 🔢 V0.2.0 - End-to-End Matchmaker Engine (In pre-release 🟡)
 **Goal:**
 - Implement Complete Matchmaking Engine - Resume & Job Description.
 - Combine multiple matching outputs into an aggregated Match Scores.
@@ -58,7 +58,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Final Matchmaker Engine ✅
 
 **Benchmarks:**
-- Performance Metrics For End-to-End Matchmaker Engine (CPU Usage, Inference Time, etc) ❌
+- Performance Metrics For End-to-End Matchmaker Engine (CPU Usage, Inference Time, etc) ✅
 
 **Milestone:**
 > Backend can now compute Resume-JD match percentages with smart field-specific logics from v0.1.0.
@@ -148,7 +148,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 | Version |   Progress    | Deadline |
 |:---|:---|:---|
 | V0.1.0 | ✅ Released       | May 1st 2025  |
-| V0.2.0 | ❌ Pending        | May 2nd 2025  |
+| V0.2.0 | 🟡 In Pre-Release | May 2nd 2025  |
 | V0.3.0 | ❌ Pending        | May 4th 2025  |
 | V0.4.0 | ❌ Pending        | May 8th 2025  |
 | V0.5.0 | ❌ Pending        | May 15th 2025 |

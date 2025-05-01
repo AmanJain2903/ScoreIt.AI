@@ -153,7 +153,6 @@ class MatchingEngine:
         if not self.resumeText:
             raise ValueError("Inputs not set. Please set resume and job description text before getting JSON.")
         self.resume_agent.setUserPrompt(self.resumeText)
-        self.resume_agent.getClient()
         self.resume_json = self.resume_agent.getJsonOutput()
         self.resume_agent.deleteAgent()
     
@@ -161,7 +160,6 @@ class MatchingEngine:
         if not self.resumeText:
             raise ValueError("Inputs not set. Please set resume and job description text before getting JSON.")
         self.jd_agent.setUserPrompt(self.jdText)
-        self.jd_agent.getClient()
         self.jd_json = self.jd_agent.getJsonOutput()
         self.jd_agent.deleteAgent()
             
@@ -170,6 +168,8 @@ class MatchingEngine:
             raise ValueError("Inputs not set. Please set resume and job description text before getting match.")
         
         if not self.resume_json or not self.jd_json:
+            self.resume_agent.getClient()
+            self.jd_agent.getClient()
             thread1 = threading.Thread(target=self.getResumeJson)
             thread2 = threading.Thread(target=self.getJDJson)
             thread1.start()

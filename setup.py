@@ -30,7 +30,8 @@ setup(
         'ruff',
         'bandit',
         'pylint',
-        'pytest-xdist'
+        'pytest-xdist',
+        'psutil'
     ]
 )
 
