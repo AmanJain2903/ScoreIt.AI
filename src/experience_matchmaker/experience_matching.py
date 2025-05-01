@@ -204,13 +204,13 @@ class ExperienceMatching:
                     resumeExperience = resumeExperience.strip()
                     resumeNumeral = self.resumeNumeralizer.extractYears(resumeExperience)
                     if resumeNumeral and jobNumeral:
-                        factor = resumeNumeral / jobNumeral
+                        self.factor = resumeNumeral / jobNumeral
                     if not jobExperience or not resumeExperience:
                         continue
                     resumeEmbeddings1 = self.model1.encode([resumeExperience])
                     resumeEmbeddings2 = self.model2.encode([resumeExperience])
-                    similarity1 = min(1.0, max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0) * factor)
-                    similarity2 = min(1.0, max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0) * factor)
+                    similarity1 = min(1.0, max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0) * self.factor)
+                    similarity2 = min(1.0, max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0) * self.factor)
                     if similarity1>maxModel1Score:
                         maxModel1Score = similarity1
                         maxModel2Score = similarity2
