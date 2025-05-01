@@ -1,0 +1,39 @@
+name: Performance Benchmarks 
+
+on:
+  workflow_dispatch:  # Manual trigger only (no auto-run)
+
+jobs:
+  run-benchmarks:
+    name: Check Performance
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .
+        pip install -r requirements.txt
+
+    - name: Set environment variables
+      run: echo "OPENROUTER_API_KEY=${{ secrets.OPENROUTER_API_KEY }}" >> $GITHUB_ENV
+
+    - name: Run Benchmark Script
+      env:
+        TOKENIZERS_PARALLELISM: "false"
+      run: |
+        PYTHONPATH=. python benchmarks/check_performance.py
+
+    - name: Upload Performance Metrics JSON
+      uses: actions/upload-artifact@v4
+      with:
+        name: Performance-Metrics
+        path: benchmarks/results/performance_report.json
