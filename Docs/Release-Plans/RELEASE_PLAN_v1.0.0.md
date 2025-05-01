@@ -42,7 +42,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.2.0 - End-to-End Matchmaker Engine (In pre-release 🟡)
+## 🔢 V0.2.0 - End-to-End Matchmaker Engine (Released ✅)
 **Goal:**
 - Implement Complete Matchmaking Engine - Resume & Job Description.
 - Combine multiple matching outputs into an aggregated Match Scores.
@@ -65,15 +65,15 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.3.0 - Addition of OCR and Web Scraping Modules
+## 🔢 V0.3.0 - Addition of OCR and Web Scraping Modules (Under Development)
 **Goal:**
 - Handle scanned resume PDFs and online JD pages automatically.
 
 **Key Modules:**
-- OCR Engine for Resume PDF Parsing
-- Web Scraper for extracting Job Descriptions from URLs
-- Integration of OCR/Scraper pipelines into existing flow
-- Expanded Test Coverage for scraping scenarios
+- OCR Engine for Resume PDF Parsing ❌
+- Web Scraper for extracting Job Descriptions from URLs ❌
+- Integration of OCR/Scraper pipelines into existing flow ❌
+- Expanded Test Coverage for scraping scenarios ❌
 
 **Milestone:**
 > Backend can now parse both traditional text inputs and raw files/web URLs intelligently.
@@ -148,7 +148,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 | Version |   Progress    | Deadline |
 |:---|:---|:---|
 | V0.1.0 | ✅ Released       | May 1st 2025  |
-| V0.2.0 | 🟡 In Pre-Release | May 2nd 2025  |
+| V0.2.0 | ✅ Released       | May 2nd 2025  |
 | V0.3.0 | ❌ Pending        | May 4th 2025  |
 | V0.4.0 | ❌ Pending        | May 8th 2025  |
 | V0.5.0 | ❌ Pending        | May 15th 2025 |
