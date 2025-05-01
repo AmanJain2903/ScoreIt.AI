@@ -55,10 +55,10 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Tools Matchmaker (Built in v0.1.0) ✅
 - Certification Matchmaker (Built in v0.1.0) ✅
 - Designation Matchmaker (Built in v0.1.0) ✅
-- Final Matchmaker Engine (To be implemented) ❌
+- Final Matchmaker Engine ✅
 
 **Benchmarks:**
-- Performance Metrics For End-to-End Matchmaker Engine (CPU Usage, Inference Time, etc)
+- Performance Metrics For End-to-End Matchmaker Engine (CPU Usage, Inference Time, etc) ❌
 
 **Milestone:**
 > Backend can now compute Resume-JD match percentages with smart field-specific logics from v0.1.0.

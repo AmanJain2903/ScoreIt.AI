@@ -24,7 +24,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Use LLMs to extract important fields like Technical Skills, Education, Experience, Certifications, and more.
 - Store resumes, JDs, and match results in a MongoDB database.
 - Build a ReactJS frontend for users to upload resumes/JDs and view match scores in real-time.
-- In the future: OCR resume PDFs, scrape job listings from URLs, build smart matching algorithms, and expose all services via Flask APIs.
+- In the future: OCR resume PDFs, scrape job listings from URLs, and expose all services via Flask APIs.
 
 ---
 
@@ -101,6 +101,22 @@ ScoreIt.AI is an AI-powered system designed to:
   - Penalizes mismatches caused by **domain gaps** or **seniority differences** (e.g., Intern ↔ Architect).
   - Final designation match score = **average of best semantic matches**, adjusted by smart boosting and penalization rules.
 
+**10. End-to-End Matchmaker Engine**  
+- Central orchestrator (`MatchingEngine`) that automates the complete pipeline from raw text inputs to structured match score outputs.  
+  - Accepts unstructured **resume** and **job description** text as inputs.  
+  - Internally invokes `ResumeExtractorAgent` and `JDExtractorAgent` to extract structured entities (e.g., skills, education, tools, etc.).  
+  - Executes each entity matcher module (`SkillMatcher`, `EducationMatcher`, etc.) to compute semantic similarity scores.  
+  - Runs extraction and matching in **parallel threads** to reduce overall latency (avg ~27 seconds).  
+  - Produces a structured output dictionary like:  
+    ```json
+    {
+      "TECHNICAL_SKILL": 0.87,
+      "EXPERIENCE": 0.72,
+      ...
+    }
+    ```  
+  - Fully modular – new entity matchers can be plugged in with minimal changes.
+
 ---
 
 ## Modular Clean Architecture**  
@@ -143,7 +159,7 @@ ScoreIt.AI is an AI-powered system designed to:
 **4. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
-- Current total code coverage: **96%** ✅
+- Current total code coverage: **97%** ✅
 
 **5. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
@@ -198,6 +214,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 - New functionalities are always developed inside feature branches: `feature/<feature-name>`.
 - Bugfixes are handled via `bugfix/<bug-description>` branches.
+- Releases are handled via `release/<version>` branches.
 - No direct commits are made to `main`.
 - Pull Requests (PRs) are created from feature/bugfix branches to `main`.
 - GitHub Actions automatically runs Unit and Integration tests on PRs.
@@ -213,7 +230,6 @@ ScoreIt.AI is an AI-powered system designed to:
 |:---|:---|
 | **OCR Pipeline** | Extract structured text from resume PDFs using OCR and Deep Learning models. |
 | **Web Scraping Pipeline** | Scrape job descriptions automatically from public job portals. |
-| **Matchmaking Models** | Build ML models to intelligently compute resume-JD matching scores. |
 | **Flask APIs** | Serve all functionalities through secured REST APIs for frontend/backend consumption. |
 | **MongoDB Database Integration** | Store resumes, JDs, parsed structures, and matching results. |
 | **ReactJS Frontend** | Build a responsive frontend where users can upload resumes, view matches, and recommendations. |
@@ -222,8 +238,8 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
-- **In Progress:** OCR Extraction, Web Scraping, Matchmaking Models, Flask APIs, MongoDB Integration, Frontend Development.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **In Progress:** OCR Extraction, Web Scraping, Flask APIs, MongoDB Integration, Frontend Development.
 
 ---
 
@@ -242,6 +258,16 @@ ScoreIt.AI is an AI-powered system designed to:
   `PYTHONPATH=. pytest -m integration`
 - Run both Unit and Integration Tests ➔  
   `PYTHONPATH=. pytest --cov=src --cov-report=term-missing tests/`
+
+## To run pytests in parallel
+- All tests + Coverage ➔  
+  `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest -n auto --cov=src --cov-report=html:code_coverage/coverage_report tests/`
+- Only Unit Tests ➔  
+  `PYTHONPATH=. pytest -n auto -m unit`
+- Only Integration Tests ➔  
+  `PYTHONPATH=. pytest -n auto -m integration`
+- Run both Unit and Integration Tests ➔  
+  `PYTHONPATH=. pytest -n auto --cov=src --cov-report=term-missing tests/`
 
 ## To view Coverage Report
 - Open `code_coverage/coverage_report/index.html` after running tests.

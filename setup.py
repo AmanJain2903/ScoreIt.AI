@@ -29,7 +29,8 @@ setup(
         'tqdm',
         'ruff',
         'bandit',
-        'pylint'
+        'pylint',
+        'pytest-xdist'
     ]
 )
 
