@@ -70,10 +70,12 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Handle scanned resume PDFs and online JD pages automatically.
 
 **Key Modules:**
-- OCR Engine for Resume PDF Parsing ❌
+- OCR Engine for Resume PDF Parsing ✅
 - Web Scraper for extracting Job Descriptions from URLs ❌
-- Integration of OCR/Scraper pipelines into existing flow ❌
-- Expanded Test Coverage for scraping scenarios ❌
+- Expanded Test Coverage for scraping scenarios (🟡 Done for Resume OCR)
+
+**Benchmarks:**
+- Performance Metrics For Resume OCR Module (CPU Usage, Inference Time, etc) ✅
 
 **Milestone:**
 > Backend can now parse both traditional text inputs and raw files/web URLs intelligently.
@@ -85,13 +87,13 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Create a full REST API service exposing backend functionalities.
 
 **Key APIs:**
-- POST /parse_resume
-- POST /parse_jd
-- POST /extract_resume
-- POST /extract_jd
-- POST /make_match
-- Authentication APIs (Login, Signup)
-- Profile CRUD APIs
+- POST /parse_resume ❌
+- POST /parse_jd ❌
+- POST /extract_resume ❌
+- POST /extract_jd ❌
+- POST /make_match ❌
+- Authentication APIs (Login, Signup) ❌
+- Profile CRUD APIs (Create, Read, Update, Delete) ❌
 
 **Milestone:**
 > Frontend and external apps can now interact with ScoreIt.AI via well-defined REST APIs.
@@ -103,11 +105,11 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Introduce database persistence.
 
 **Key Modules:**
-- MongoDB Atlas/Cluster setup
-- User Authentication Storage (login/signup data)
-- User Profile Storage (resume, name, email, etc.)
-- History Storage (previous matches, interactions)
-- Extracted Resume & JD Storage
+- MongoDB Atlas/Cluster setup ❌
+- User Authentication Storage (login/signup data) ❌
+- User Profile Storage (resume, name, email, etc.) ❌
+- History Storage (previous matches, interactions) ❌
+- Extracted Resume & JD Storage ❌
 
 **Milestone:**
 > User data, parsed resumes, parsed JDs, match results, and AI suggestions are now permanently stored securely.
@@ -119,12 +121,12 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Deliver a full-stack functioning ScoreIt.AI product.
 
 **Key Frontend Pages:**
-- Login/Signup
-- Create Profile Page
-- Resume Upload Page
-- JD Upload Page
-- Match Score Results View
-- Settings and History Panels
+- Login/Signup ❌
+- Create Profile Page ❌
+- Resume Upload Page ❌
+- JD Upload Page ❌
+- Match Score Results View ❌
+- Settings and History Panels ❌
 
 **Tech Stack:**
 - ReactJS (Frontend)
@@ -157,8 +159,8 @@ Each version milestone focuses on building a critical subsystem required for a f
 | Test |   Progress    | Deadline |
 |:---|:---|:---|
 | Selenium    | ❌ Pending | June 2nd 2025  |
-| Performance | ❌ Pending | June 3nd 2025  |
-| Evaluation  | ❌ Pending | June 3rd 2025  |
+| Performance | 🟡 Running | June 3nd 2025  |
+| Evaluation  | 🟡 Running | June 3rd 2025  |
 
 ---
 

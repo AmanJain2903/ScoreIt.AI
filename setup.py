@@ -31,7 +31,10 @@ setup(
         'bandit',
         'pylint',
         'pytest-xdist',
-        'psutil'
+        'psutil',
+        'pytesseract',
+        'pdf2image',
+        'pillow'
     ]
 )
 

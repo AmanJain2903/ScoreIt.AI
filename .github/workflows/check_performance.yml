@@ -32,8 +32,15 @@ jobs:
       run: |
         PYTHONPATH=. python benchmarks/check_performance.py
 
-    - name: Upload Performance Metrics JSON
+    - name: Upload Matchmaker Performance Metrics JSON
       uses: actions/upload-artifact@v4
       with:
-        name: Performance-Metrics
-        path: benchmarks/results/performance_report.json
+        name: Matchmaker-Performance-Metrics
+        path: benchmarks/results/matchmaker_performance.json
+    
+    - name: Upload Resume OCR Performance Metrics JSON
+      uses: actions/upload-artifact@v4
+      with:
+        name: Resume-OCR-Performance-Metrics
+        path: benchmarks/results/resume_ocr_performance.json
+
