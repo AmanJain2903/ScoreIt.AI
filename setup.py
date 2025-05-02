@@ -34,7 +34,11 @@ setup(
         'psutil',
         'pytesseract',
         'pdf2image',
-        'pillow'
+        'pillow',
+        'requests',
+        'beautifulsoup4',
+        'trafilatura',
+        'selenium'
     ]
 )
 

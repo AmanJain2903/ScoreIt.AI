@@ -1,6 +1,7 @@
 import pytest
 from src.matchmaker_engine.matching_engine import MatchingEngine
 from src.resume_ocr.resume_ocr import ResumeOCR
+from src.jd_scraper.jd_scraper import JobDescriptionScraper
 import os
 import pandas as pd
 import numpy as np
@@ -78,6 +79,30 @@ def test_end_to_end_matchmaker_pdf_bytes(matchmaker_engine):
     descriptionDataset = pd.read_csv(descriptionDatasetPath)
     randomIndex = np.random.randint(0, len(descriptionDataset))
     jd = descriptionDataset['Description'].iloc[randomIndex]
+    matchmaker_engine.setInputs(resume, jd)
+    report = matchmaker_engine.getMatch()
+    assert isinstance(report, dict)
+    expected_keys = [
+    "TECHNICAL_SKILL",
+    "TOOL", 
+    "EDUCATION",
+    "EXPERIENCE",
+    "DESIGNATION",
+    "SOFT_SKILL",
+    "CERTIFICATION"
+    ]
+    for key in expected_keys:
+        assert key in report
+        assert isinstance(report[key], float)
+
+def test_end_to_end_matchmaker_with_jd_link(matchmaker_engine):
+    resumeDataset = pd.read_csv(resumeDatasetPath)
+    randomIndex = np.random.randint(0, len(resumeDataset))
+    resume = resumeDataset['Resume'].iloc[randomIndex]
+    jdLink = "https://www.linkedin.com/jobs/view/4197961513"
+    jdScraper = JobDescriptionScraper()
+    jdScraper.setInputs(jdLink)
+    jd = jdScraper.extractJobDescription()
     matchmaker_engine.setInputs(resume, jd)
     report = matchmaker_engine.getMatch()
     assert isinstance(report, dict)
