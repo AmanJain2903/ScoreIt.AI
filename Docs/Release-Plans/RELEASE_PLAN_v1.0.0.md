@@ -65,7 +65,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.3.0 - Addition of OCR and Web Scraping Modules (🟡 In pre-release)
+## 🔢 V0.3.0 - Addition of OCR and Web Scraping Modules (Released ✅)
 **Goal:**
 - Handle scanned resume PDFs and online JD pages automatically.
 
@@ -151,7 +151,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 |:---|:---|:---|
 | V0.1.0 | ✅ Released       | May 1st 2025  |
 | V0.2.0 | ✅ Released       | May 2nd 2025  |
-| V0.3.0 | 🟡 Pre-Release    | May 4th 2025  |
+| V0.3.0 | ✅ Released       | May 4th 2025  |
 | V0.4.0 | ❌ Pending        | May 8th 2025  |
 | V0.5.0 | ❌ Pending        | May 15th 2025 |
 | V1.0.0 | ❌ Pending        | June 1st 2025 |
