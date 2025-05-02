@@ -117,6 +117,24 @@ ScoreIt.AI is an AI-powered system designed to:
     ```  
   - Fully modular – new entity matchers can be plugged in with minimal changes.
 
+**11. Resume OCR Engine**
+- A modular and extensible OCR component for converting resume PDF files into clean, structured text for downstream NER and matching pipelines.
+  - Core class: `ResumeOCR`
+  - Converts scanned or text-based resumes (PDF format) into raw string text.
+  - Supports input as:
+    - `pdfBytes` – raw bytes (ideal for API/file uploads)
+    - `pdfPath` – local path to PDF
+  - Internally uses:
+    - `pdf2image` – to convert PDF pages to images
+    - `pytesseract` – to extract text from each image using OCR
+⚙️ Features
+  - ✅ Accepts either PDF **file path** or **bytes**
+  - ✅ Compatible with both scanned resumes and digital PDFs
+  - ✅ Auto-merges multi-page content into a single string
+  - ✅ Stateless, clean, and reusable instance interface
+  - ✅ Graceful error handling for unsupported/malformed inputs
+  - ✅ Designed for easy upgrade to layout-aware OCR (e.g., LayoutLM)
+
 ---
 
 ## Modular Clean Architecture**  
@@ -153,8 +171,8 @@ ScoreIt.AI is an AI-powered system designed to:
 - Verify correctness of structured outputs without real OpenRouter API dependency (mocked clients).
 
 **3. Performance Tests**  
-- Measure evaluation metrics like prediction accuracy for each of the matchmaker modules.
-- Measure performance metrics like CPU usage, inference time, loading time for end-to-end matchmaker engine.
+- Measure evaluation metrics like prediction accuracy for each of the entity matchmaker modules.
+- Measure performance metrics like CPU usage, inference time, loading time for end-to-end matchmaker engine and resume OCR module.
 
 **4. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
@@ -173,9 +191,10 @@ ScoreIt.AI is an AI-powered system designed to:
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
 **7. Test Achievements**
-- 260 test cases written covering Unit + Integration tests combined.
-- Every new module (Resume Agent, JD Agent, Education Matching, Experience Matching) fully tested.
+- 270+ test cases written covering Unit + Integration tests combined.
+- Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
+- Relevent modules ran through performance testing.
 
 ---
 
@@ -228,7 +247,6 @@ ScoreIt.AI is an AI-powered system designed to:
 
 | Feature | Description |
 |:---|:---|
-| **OCR Pipeline** | Extract structured text from resume PDFs using OCR and Deep Learning models. |
 | **Web Scraping Pipeline** | Scrape job descriptions automatically from public job portals. |
 | **Flask APIs** | Serve all functionalities through secured REST APIs for frontend/backend consumption. |
 | **MongoDB Database Integration** | Store resumes, JDs, parsed structures, and matching results. |
@@ -238,8 +256,8 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
-- **In Progress:** OCR Extraction, Web Scraping, Flask APIs, MongoDB Integration, Frontend Development.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **In Progress:** Web Scraping, Flask APIs, MongoDB Integration, Frontend Development.
 
 ---
 

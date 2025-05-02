@@ -17,3 +17,6 @@ bandit
 pylint
 pytest-xdist
 psutil
+pytesseract
+pdf2image
+pillow
