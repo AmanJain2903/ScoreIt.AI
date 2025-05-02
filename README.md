@@ -135,6 +135,27 @@ ScoreIt.AI is an AI-powered system designed to:
   - ✅ Graceful error handling for unsupported/malformed inputs
   - ✅ Designed for easy upgrade to layout-aware OCR (e.g., LayoutLM)
 
+**12. Job Description Web Scraper**
+- A robust and browser-automated web scraping module to extract clean, readable job descriptions from dynamic job listing URLs.
+  - **Core class**: `JobDescriptionScraper`
+  - Accepts job URLs from major platforms (e.g., LinkedIn, Adobe Careers, Indeed)
+  - Combines multiple tools:
+    - `Selenium` – loads JavaScript-heavy job pages in a headless Chrome browser
+    - `trafilatura` – extracts the main readable content from rendered HTML
+    - `BeautifulSoup` – optionally available for custom parsing
+
+  - Includes post-processing to remove noise like:
+    - Accessibility blurbs
+    - Legal disclosures
+    - Sidebars (e.g., “People also viewed”, “Similar jobs”)
+⚙️ Features
+  - ✅ Supports dynamic JS-rendered pages
+  - ✅ Extracts **only** the job description section
+  - ✅ Handles broken links and network errors gracefully
+  - ✅ Keyword-based post-cleaning of boilerplate text
+  - ✅ Easily extendable to domain-specific container scraping
+  - ✅ Fully tested with mocked browser drivers and exception handling
+
 ---
 
 ## Modular Clean Architecture**  
@@ -191,7 +212,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
 **7. Test Achievements**
-- 270+ test cases written covering Unit + Integration tests combined.
+- 286 test cases written covering Unit + Integration tests combined.
 - Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
 - Relevent modules ran through performance testing.
@@ -247,7 +268,6 @@ ScoreIt.AI is an AI-powered system designed to:
 
 | Feature | Description |
 |:---|:---|
-| **Web Scraping Pipeline** | Scrape job descriptions automatically from public job portals. |
 | **Flask APIs** | Serve all functionalities through secured REST APIs for frontend/backend consumption. |
 | **MongoDB Database Integration** | Store resumes, JDs, parsed structures, and matching results. |
 | **ReactJS Frontend** | Build a responsive frontend where users can upload resumes, view matches, and recommendations. |
@@ -256,8 +276,8 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
-- **In Progress:** Web Scraping, Flask APIs, MongoDB Integration, Frontend Development.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **In Progress:** Flask APIs, MongoDB Integration, Frontend Development.
 
 ---
 
