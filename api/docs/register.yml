@@ -1,0 +1,29 @@
+summary: Register a new user
+description: Accepts email and password, hashes password, and stores user in temporary store.
+consumes:
+  - application/json
+parameters:
+  - in: body
+    name: user
+    required: true
+    schema:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+        name:
+          type: string
+responses:
+  201:
+    description: User registered successfully
+  400:
+    description: Email and password are required
+  409:
+    description: Email already registered
+  553:
+    description: Invalid email format

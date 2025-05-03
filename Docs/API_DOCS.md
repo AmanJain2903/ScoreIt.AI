@@ -87,3 +87,36 @@ Uploads resume and job description JSONs and converts it to match report JSON.
   "match_report": "{'TECHNICAL_SKILL' : 0.85, .. }"
 }
 ```
+
+---
+
+### 6. `/register` – Registers New User in System
+Accepts Email, Username & Password to register the user. 
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+  - `password`: password
+  - `name`: name
+- **Output:**
+```json
+{
+  "message": "Message Content" 
+}
+```
+
+---
+
+### 7. `/login` – Validate User on Email & Password
+Accepts Email & Password to validate a user in the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+  - `password`: password
+- **Output:**
+```json
+{
+  "token": "JWT Token Object" 
+}
+```

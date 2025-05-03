@@ -1,0 +1,38 @@
+post:
+  summary: User Login
+  description: Authenticates a user and returns a JWT token.
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - password
+        properties:
+          email:
+            type: string
+            example: user@example.com
+          password:
+            type: string
+            example: mySecret123
+  responses:
+    200:
+      description: Login successful
+      schema:
+        type: object
+        properties:
+          token:
+            type: string
+            example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+    400:
+      description: Missing email or password
+    401:
+      description: Invalid credentials
+    404:
+      description: User not found

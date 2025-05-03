@@ -28,7 +28,6 @@
              | - POST /extract_jd                          |
              | - POST /make_match                          |
              | - Authentication APIs (Login/Signup)        |
-             | - Profile APIs (CRUD)                       |
              +---------------------------------------------+
              /              |        |        |              \
             /               |        |        |               \

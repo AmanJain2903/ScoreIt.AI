@@ -26,3 +26,5 @@ trafilatura
 selenium
 Flask
 flasgger
+bcrypt
+PyJWT
