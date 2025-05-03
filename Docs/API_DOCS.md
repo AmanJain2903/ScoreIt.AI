@@ -120,3 +120,19 @@ Accepts Email & Password to validate a user in the system.
   "token": "JWT Token Object" 
 }
 ```
+
+---
+
+### 8. `/delete` – Delete User from System
+Accepts Email & Password to delete a user from the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+  - `password`: password
+- **Output:**
+```json
+{
+  "message": "User deleted successfully" 
+}
+```
