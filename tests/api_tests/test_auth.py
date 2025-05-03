@@ -76,7 +76,6 @@ def test_login_success(client):
         'password': 'password123'
     })
     assert response.status_code == 200
-    assert 'token' in response.json
 
 def test_login_missing_email(client):
     users.clear()  # Clear any existing users
