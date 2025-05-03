@@ -38,7 +38,9 @@ setup(
         'requests',
         'beautifulsoup4',
         'trafilatura',
-        'selenium'
+        'selenium',
+        'Flask',
+        'flasgger'
     ]
 )
 

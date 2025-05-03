@@ -24,3 +24,5 @@ requests
 beautifulsoup4
 trafilatura
 selenium
+Flask
+flasgger
