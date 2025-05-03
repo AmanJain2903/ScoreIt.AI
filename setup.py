@@ -40,7 +40,9 @@ setup(
         'trafilatura',
         'selenium',
         'Flask',
-        'flasgger'
+        'flasgger',
+        'bcrypt',
+        'PyJWT'
     ]
 )
 

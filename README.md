@@ -13,7 +13,7 @@
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Building the core backend modules that extract, structure, and intelligently match resume and job description data, while ensuring top-notch security, professional testing, and scalable architecture.
+> **Current Focus:** Deploying the functional modules as REST APIs using Flask and integrating MongoDB for persistent storage.
 
 ---
 
@@ -24,7 +24,6 @@ ScoreIt.AI is an AI-powered system designed to:
 - Use LLMs to extract important fields like Technical Skills, Education, Experience, Certifications, and more.
 - Store resumes, JDs, and match results in a MongoDB database.
 - Build a ReactJS frontend for users to upload resumes/JDs and view match scores in real-time.
-- In the future: OCR resume PDFs, scrape job listings from URLs, and expose all services via Flask APIs.
 
 ---
 
@@ -169,6 +168,9 @@ ScoreIt.AI is an AI-powered system designed to:
   - extract_resume/ ✅
   - extract_jd/ ✅
   - make_match/ ✅
+  - auth_endpoints ✅
+    - register/ ✅
+    - login/ ✅
 
 ---
 
@@ -286,7 +288,6 @@ ScoreIt.AI is an AI-powered system designed to:
 
 | Feature | Description |
 |:---|:---|
-| **Flask APIs** | Serve all functionalities through secured REST APIs for frontend/backend consumption. |
 | **MongoDB Database Integration** | Store resumes, JDs, parsed structures, and matching results. |
 | **ReactJS Frontend** | Build a responsive frontend where users can upload resumes, view matches, and recommendations. |
 
@@ -294,8 +295,8 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
-- **In Progress:** Flask APIs, MongoDB Integration, Frontend Development.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **In Progress:** MongoDB Integration, Frontend Development.
 
 ---
 

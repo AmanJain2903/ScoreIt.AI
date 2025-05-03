@@ -82,7 +82,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.4.0 - Flask API Layer (🟡 Under Development)
+## 🔢 V0.4.0 - Flask API Layer (🟡 In Pre Release)
 **Goal:**
 - Create a full REST API service exposing backend functionalities.
 
@@ -92,11 +92,13 @@ Each version milestone focuses on building a critical subsystem required for a f
 - POST /extract_resume ✅
 - POST /extract_jd ✅
 - POST /make_match ✅
-- Authentication APIs (Login, Signup) ❌
-- Profile CRUD APIs (Create, Read, Update, Delete) ❌
+- Authentication APIs ✅
+        - POST /register ✅
+        - POST /login ✅
+- Profile CRUD APIs (Create, Read, Update, Delete) (🟡 FEATURE ON HOLD)
 
 **Benchmarks:**
-- API tests using Swagger and automated pytests. 🟡
+- API tests using Swagger and automated pytests. ✅
 
 **Milestone:**
 > Frontend and external apps can now interact with ScoreIt.AI via well-defined REST APIs.
@@ -155,7 +157,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 | V0.1.0 | ✅ Released          | May 1st 2025  |
 | V0.2.0 | ✅ Released          | May 2nd 2025  |
 | V0.3.0 | ✅ Released          | May 4th 2025  |
-| V0.4.0 | 🟡 Under Development | May 8th 2025  |
+| V0.4.0 | 🟡 In Pre-Release    | May 8th 2025  |
 | V0.5.0 | ❌ Pending           | May 15th 2025 |
 | V1.0.0 | ❌ Pending           | June 1st 2025 |
 
