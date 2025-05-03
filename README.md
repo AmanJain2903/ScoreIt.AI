@@ -40,6 +40,12 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ---
 
+## 📜 API Docs
+
+👉 [View API Docs](./Docs/API_DOCS.md)
+
+---
+
 ## ✅ Completed Modules
 
 **1. Resume Extraction Agent**  
@@ -156,6 +162,14 @@ ScoreIt.AI is an AI-powered system designed to:
   - ✅ Easily extendable to domain-specific container scraping
   - ✅ Fully tested with mocked browser drivers and exception handling
 
+**13. REST APIs using FLASK**  
+- The following API endpoints are offered by ScoreIt.AI.
+  - parse_resume/ ✅
+  - parse_jd/ ✅
+  - extract_resume/ ✅
+  - extract_jd/ ✅
+  - make_match/ ✅
+
 ---
 
 ## Modular Clean Architecture**  
@@ -191,28 +205,32 @@ ScoreIt.AI is an AI-powered system designed to:
 - Simulate real-world workflows: raw input ➔ agent extraction ➔ JSON parsing.
 - Verify correctness of structured outputs without real OpenRouter API dependency (mocked clients).
 
-**3. Performance Tests**  
+**3. API Tests**  
+- Simulate real-world API calls: parse/, extract/, match/, etc.
+- Verify correctness of API outputs.
+
+**4. Performance Tests**  
 - Measure evaluation metrics like prediction accuracy for each of the entity matchmaker modules.
 - Measure performance metrics like CPU usage, inference time, loading time for end-to-end matchmaker engine and resume OCR module.
 
-**4. Coverage Enforcement**  
+**5. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
 - Current total code coverage: **97%** ✅
 
-**5. Test Driven Development (TDD)**  
+**6. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
 - All modules were written with their tests designed first to validate specifications.
 
-**6. Code Quality & Static Analysis**  
+**7. Code Quality & Static Analysis**  
 - `pylint` is used to ensure code style, design consistency, and complexity control.  
   - CI fails if the overall score is below **9.0/10**.  
 - `bandit` is used for static security analysis of Python code.  
   - CI fails if any **high** or **medium** severity vulnerabilities are detected.  
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
-**7. Test Achievements**
-- 286 test cases written covering Unit + Integration tests combined.
+**8. Test Achievements**
+- 300+ test cases written covering Unit + Integration + API tests combined.
 - Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
 - Relevent modules ran through performance testing.
@@ -225,12 +243,12 @@ ScoreIt.AI is an AI-powered system designed to:
 - Every push to `main` and pull requests targeting `main` automatically trigger:
   - Fresh environment creation.
   - Dependency installations.
-  - Unit and integration test execution with live coverage tracking.
+  - Unit, integration & API test execution with live coverage tracking.
   - Static analysis with Bandit and Pylint
 
 **2. Coverage Upload**  
 - Test coverage uploaded automatically to Codecov.
-- Separate flags used for Unit and Integration Tests (`unit`, `integration`).
+- Separate flags used for Unit, Integration & API Tests (`unit`, `integration`, `api`).
 
 **3. Artifact Management**  
 - HTML coverage reports uploaded after each build for manual inspection if needed.
@@ -289,23 +307,18 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## To run pytests
 - All tests + Coverage ➔  
-  `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest --cov=src --cov-report=html:code_coverage/coverage_report tests/`
+  `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest --cov=src --cov=api --cov-report=html:code_coverage/coverage_report tests/`
 - Only Unit Tests ➔  
   `PYTHONPATH=. pytest -m unit`
 - Only Integration Tests ➔  
   `PYTHONPATH=. pytest -m integration`
-- Run both Unit and Integration Tests ➔  
-  `PYTHONPATH=. pytest --cov=src --cov-report=term-missing tests/`
+- Only API Tests ➔ 
+  `PYTHONPATH=. pytest -m api`
+- Run all Tests ➔  
+  `PYTHONPATH=. pytest --cov=src --cov=api --cov-report=term-missing tests/`
 
 ## To run pytests in parallel
-- All tests + Coverage ➔  
-  `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest -n auto --cov=src --cov-report=html:code_coverage/coverage_report tests/`
-- Only Unit Tests ➔  
-  `PYTHONPATH=. pytest -n auto -m unit`
-- Only Integration Tests ➔  
-  `PYTHONPATH=. pytest -n auto -m integration`
-- Run both Unit and Integration Tests ➔  
-  `PYTHONPATH=. pytest -n auto --cov=src --cov-report=term-missing tests/`
+- Add `-n auto` flag
 
 ## To view Coverage Report
 - Open `code_coverage/coverage_report/index.html` after running tests.

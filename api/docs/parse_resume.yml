@@ -1,0 +1,19 @@
+summary: Parse Resume PDF to Text
+consumes:
+  - multipart/form-data
+parameters:
+  - name: resume_file
+    in: formData
+    type: file
+    required: true
+    description: PDF resume file uploaded by the user.
+responses:
+  200:
+    description: Resume text extracted from PDF
+    examples:
+      application/json:
+        resume_text: "Experienced ML engineer with skills in Python and AWS."
+  400:
+    description: Invalid input or missing file
+  500:
+    description: Internal error while processing the file

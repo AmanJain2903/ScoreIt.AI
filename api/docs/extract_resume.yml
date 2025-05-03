@@ -1,0 +1,19 @@
+summary: Extract Resume Entities from Resume Text
+consumes:
+  - multipart/form-data
+parameters:
+  - name: resume_text
+    in: formData
+    type: string
+    required: true
+    description: Resume text extracted from the PDF file / uploaded by the user.
+responses:
+  200:
+    description: Resume Entities extracted from the resume text
+    examples:
+      application/json:
+        resume_entities: "{'TECHNICAL_SKILL' : 'Python, AWS', .. }"
+  400:
+    description: Invalid input or missing text
+  500:
+    description: Internal error while processing the text

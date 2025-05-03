@@ -1,0 +1,33 @@
+summary: Generate a match JSON from Resume and Job Description JSONs
+consumes:
+  - application/json
+parameters:
+  - in: body
+    name: body
+    required: true
+    schema:
+      type: object
+      properties:
+        resume_json:
+          type: object
+          description: Resume entity dictionary
+        jd_json:
+          type: object
+          description: Job description entity dictionar
+responses:
+  200:
+    description: Match Report JSON
+    examples:
+      application/json:
+        match_report : {
+          "TECHNICAL_SKILL" : 0.85,
+          "EXPERIENCE" : 0.75,
+          "EDUCATION" : 0.90,
+          "CERTIFICATION" : 0.80,
+          "SOFT_SKILL" : 0.60,
+          ...
+        }
+  400:
+    description: Invalid input or missing input
+  500:
+    description: Internal error while processing the input

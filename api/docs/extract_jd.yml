@@ -1,0 +1,19 @@
+summary: Extract Job Description Entities from the text
+consumes:
+  - multipart/form-data
+parameters:
+  - name: jd_text
+    in: formData
+    type: string
+    required: true
+    description: Job Description text extracted from the link / uploaded by the user.
+responses:
+  200:
+    description: Job Description Entities extracted from the resume text
+    examples:
+      application/json:
+        jd_entities: "{'TECHNICAL_SKILL' : 'Python, AWS', .. }"
+  400:
+    description: Invalid input or missing text
+  500:
+    description: Internal error while processing the text

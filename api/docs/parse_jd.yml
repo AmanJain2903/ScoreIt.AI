@@ -1,0 +1,19 @@
+summary: Parse Job Description Link to Text
+consumes:
+  - multipart/form-data
+parameters:
+  - name: jd_link
+    in: formData
+    type: string
+    required: true
+    description: Job Description Link uploaded by the user.
+responses:
+  200:
+    description: Job Description text extracted from the link
+    examples:
+      application/json:
+        jd_text: "We are looking for a skilled software engineer with experience in Python and AWS."
+  400:
+    description: Invalid input or missing link
+  500:
+    description: Internal error while processing the link
