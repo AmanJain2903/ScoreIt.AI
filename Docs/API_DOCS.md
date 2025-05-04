@@ -163,7 +163,7 @@ Accepts Match Report and adds it to history database.
 ### 10. `/history/get_all` – Gets User's Match History
 Accepts user email and retrieves user's match history.
 
-- **Method:** `GET`
+- **Method:** `POST`
 - **Input:** `application/json`
   - `email`: 
 

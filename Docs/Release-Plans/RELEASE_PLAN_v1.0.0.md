@@ -106,7 +106,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.5.0 - MongoDB Integration (🟡 In Pre-Release)
+## 🔢 V0.5.0 - MongoDB Integration (Released ✅)
 **Goal:**
 - Introduce database persistence.
 
@@ -116,12 +116,12 @@ Each version milestone focuses on building a critical subsystem required for a f
 - History Storage (previous matches, interactions, extractions) ✅
     - Add APIs for
         - POST /history/add ✅
-        - GET /history/get_all ✅
+        - POST /history/get_all ✅
         - DELETE /history/delete_one ✅
         - DELETE /history/delete_all ✅
 
 **Benchmarks:**
-- API tests using Swagger and automated pytests again with updated functions and APIs. 🟡
+- API tests using Swagger and automated pytests again with updated functions and APIs. ✅
 
 **Milestone:**
 > User data, parsed resumes, parsed JDs, match results are now permanently stored securely in MongoDB databse.
@@ -165,7 +165,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 | V0.2.0 | ✅ Released          | May 2nd 2025  |
 | V0.3.0 | ✅ Released          | May 4th 2025  |
 | V0.4.0 | ✅ Released          | May 8th 2025  |
-| V0.5.0 | 🟡 In Pre-Release    | May 15th 2025 |
+| V0.5.0 | ✅ Released          | May 15th 2025 |
 | V1.0.0 | ❌ Pending           | June 1st 2025 |
 
 | Test |   Progress    | Deadline |
