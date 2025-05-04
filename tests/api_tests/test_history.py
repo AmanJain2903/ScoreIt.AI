@@ -62,6 +62,23 @@ def test_add_history_invalid_data_types(client):
     assert response.status_code == 400
     assert response.json['error'] == "Invalid data types"
 
+def test_add_history_internal_server_error(client, monkeypatch):
+    def mock_save_history(*args, **kwargs):
+        raise Exception("Database error")
+
+    monkeypatch.setattr('api.routes_history.history_dao.save_history', mock_save_history)
+
+    response = client.post('/history/add', json={
+        "email": "xyz@example.com",
+        "resume_text": "Sample resume text",
+        "resume_json": {"key": "value"},
+        "jd_text": "Sample job description text",
+        "jd_json": {"key": "value"},
+        "match_report": {"key": "value"}
+    })
+    assert response.status_code == 500
+    assert response.json['error'] == "Failed to save history"
+
 def test_get_all_history_success(client):
     response = client.post('/history/add', json={
         "email": "xyz@example.com",
@@ -74,7 +91,7 @@ def test_get_all_history_success(client):
     assert response.status_code == 200
     assert response.json['message'] == "History added successfully"
 
-    response = client.get('/history/get_all', json={
+    response = client.post('/history/get_all', json={
         "email": "xyz@example.com"
     })
     assert response.status_code == 200
@@ -87,23 +104,40 @@ def test_get_all_history_success(client):
     assert response.status_code == 200
 
 def test_get_all_history_missing_fields(client):
-    response = client.get('/history/get_all', json={})
+    response = client.post('/history/get_all', json={})
     assert response.status_code == 400
     assert response.json['error'] == "Missing required fields"
 
 def test_get_all_history_invalid_email(client):
-    response = client.get('/history/get_all', json={
+    response = client.post('/history/get_all', json={
         "email": "xyzexamplecom"
     })
     assert response.status_code == 400
     assert response.json['error'] == "Invalid email format"
 
 def test_get_all_history_no_history_found(client):
-    response = client.get('/history/get_all', json={
+    response = client.post('/history/get_all', json={
         "email": "xyz@example.com"
     })
     assert response.status_code == 404
     assert response.json['message'] == "No history found"
+
+def test_get_all_history_internal_server_error(client, monkeypatch):
+    def mock_get_history(*args, **kwargs):
+        raise Exception("Database error")
+
+    monkeypatch.setattr('api.routes_history.history_dao.get_history', mock_get_history)
+
+    response = client.post('/history/get_all', json={
+        "email": "xyz@example.com",
+        "resume_text": "Sample resume text",
+        "resume_json": {"key": "value"},
+        "jd_text": "Sample job description text",
+        "jd_json": {"key": "value"},
+        "match_report": {"key": "value"}
+    })
+    assert response.status_code == 500
+    assert response.json['error'] == "Failed to retrieve history"
 
 def test_delete_one_history_success(client):
     response = client.post('/history/add', json={
@@ -148,6 +182,19 @@ def test_delete_one_history_no_match_found(client):
     assert response.status_code == 404
     assert response.json['error'] == "No match report found with the given ID"
 
+def test_delete_one_history_internal_server_error(client, monkeypatch):
+    def mock_delete_match_by_id(*args, **kwargs):
+        raise Exception("Database error")
+
+    monkeypatch.setattr('api.routes_history.history_dao.delete_match_by_id', mock_delete_match_by_id)
+
+    response = client.delete('/history/delete_one', json={
+        "email": "xyz@example.com",
+        "match_id": "1234567890abcdef12345678"
+    })
+    assert response.status_code == 500
+    assert response.json['error'] == "Failed to delete match report"
+
 def test_delete_all_history_success(client):
     response = client.post('/history/add', json={
         "email": "xyz@example.com",
@@ -183,5 +230,17 @@ def test_delete_all_history_invalid_email(client):
     })
     assert response.status_code == 400
     assert response.json['error'] == "Invalid email format"
+
+def test_delete_all_history_internal_server_error(client, monkeypatch):
+    def mock_delete_all_history(*args, **kwargs):
+        raise Exception("Database error")
+
+    monkeypatch.setattr('api.routes_history.history_dao.clear_history', mock_delete_all_history)
+
+    response = client.delete('/history/delete_all', json={
+        "email": "xyz@example.com"
+    })
+    assert response.status_code == 500
+    assert response.json['error'] == "Failed to delete history records"
 
 

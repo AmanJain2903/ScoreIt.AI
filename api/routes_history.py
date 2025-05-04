@@ -39,7 +39,7 @@ def add_history():
     except Exception:
         return jsonify({"error": "Failed to save history"}), 500
     
-@history_bp.route("/history/get_all", methods=["GET"])
+@history_bp.route("/history/get_all", methods=["POST"])
 @swag_from("docs/history_get_all.yml")
 def get_all_history():
     data = request.get_json()
