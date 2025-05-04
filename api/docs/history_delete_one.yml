@@ -1,0 +1,60 @@
+post:
+  tags:
+    - History
+  summary: Delete a specific match report by ID
+  description: Deletes a single match report from the user's match history using email and match ID.
+  operationId: deleteOneMatchHistory
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Email and Match ID for deletion
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - match_id
+        properties:
+          email:
+            type: string
+            example: user@example.com
+          match_id:
+            type: string
+            example: 6634b75c6f0c9d43d38f19a4
+  responses:
+    200:
+      description: Match report deleted successfully
+      schema:
+        type: object
+        properties:
+          message:
+            type: string
+            example: Match report deleted successfully
+    400:
+      description: Missing or invalid input
+      schema:
+        type: object
+        properties:
+          error:
+            type: string
+            example: Missing required fields
+    404:
+      description: Match report not found
+      schema:
+        type: object
+        properties:
+          error:
+            type: string
+            example: No match report found with the given ID
+    500:
+      description: Internal server error
+      schema:
+        type: object
+        properties:
+          error:
+            type: string
+            example: Failed to delete match report

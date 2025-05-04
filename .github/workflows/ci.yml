@@ -24,6 +24,8 @@ jobs:
         echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
         echo "SENDER_EMAIL=${{ secrets.SENDER_EMAIL }}" >> $GITHUB_ENV
         echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> $GITHUB_ENV
+        echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> $GITHUB_ENV
+        echo "MONGO_DB_NAME=${{ secrets.MONGO_DB_NAME }}" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: |
@@ -35,7 +37,7 @@ jobs:
 
     - name: Run Unit Tests Only
       run: |
-        COVERAGE_FILE=.coverage.unit PYTHONPATH=. pytest -n auto --cov=src --cov-report=term-missing --cov-report=html -m "unit" tests/
+        COVERAGE_FILE=.coverage.unit PYTHONPATH=. pytest -n auto --cov=src --cov=api --cov=db --cov-report=term-missing --cov-report=html -m "unit" tests/
     
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
@@ -71,6 +73,8 @@ jobs:
         echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
         echo "SENDER_EMAIL=${{ secrets.SENDER_EMAIL }}" >> $GITHUB_ENV
         echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> $GITHUB_ENV
+        echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> $GITHUB_ENV
+        echo "MONGO_DB_NAME=${{ secrets.MONGO_DB_NAME }}" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: |
@@ -82,7 +86,7 @@ jobs:
 
     - name: Run Integration Tests
       run: |
-        COVERAGE_FILE=.coverage.integration PYTHONPATH=. pytest -n auto --cov=src --cov-report=term-missing --cov-report=html -m "integration" tests/
+        COVERAGE_FILE=.coverage.integration PYTHONPATH=. pytest -n auto --cov=src --cov=api --cov=db --cov-report=term-missing --cov-report=html -m "integration" tests/
 
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v4
@@ -118,6 +122,8 @@ jobs:
         echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
         echo "SENDER_EMAIL=${{ secrets.SENDER_EMAIL }}" >> $GITHUB_ENV
         echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> $GITHUB_ENV
+        echo "MONGO_URI=${{ secrets.MONGO_URI }}" >> $GITHUB_ENV
+        echo "MONGO_DB_NAME=${{ secrets.MONGO_DB_NAME }}" >> $GITHUB_ENV
 
     - name: Install dependencies
       run: |
@@ -129,7 +135,7 @@ jobs:
 
     - name: Run API Tests
       run: |
-        COVERAGE_FILE=.coverage.api PYTHONPATH=. pytest -n auto --cov=src --cov=api --cov-report=term-missing --cov-report=html -m "api" tests/ 
+        COVERAGE_FILE=.coverage.api PYTHONPATH=. pytest -n auto --cov=src --cov=api --cov=db --cov-report=term-missing --cov-report=html -m "api" tests/ 
 
     - name: Upload Coverage Report
       uses: actions/upload-artifact@v4

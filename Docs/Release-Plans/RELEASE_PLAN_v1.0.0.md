@@ -106,19 +106,25 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V0.5.0 - MongoDB Integration
+## 🔢 V0.5.0 - MongoDB Integration (🟡 In Pre-Release)
 **Goal:**
 - Introduce database persistence.
 
 **Key Modules:**
-- MongoDB Atlas/Cluster setup ❌
-- User Authentication Storage (login/signup data) ❌
-- User Profile Storage (resume, name, email, etc.) ❌
-- History Storage (previous matches, interactions) ❌
-- Extracted Resume & JD Storage ❌
+- MongoDB Atlas/Cluster setup ✅
+- User Authentication Storage (login/signup data) ✅
+- History Storage (previous matches, interactions, extractions) ✅
+    - Add APIs for
+        - POST /history/add ✅
+        - GET /history/get_all ✅
+        - DELETE /history/delete_one ✅
+        - DELETE /history/delete_all ✅
+
+**Benchmarks:**
+- API tests using Swagger and automated pytests again with updated functions and APIs. 🟡
 
 **Milestone:**
-> User data, parsed resumes, parsed JDs, match results, and AI suggestions are now permanently stored securely.
+> User data, parsed resumes, parsed JDs, match results are now permanently stored securely in MongoDB databse.
 
 ---
 
@@ -159,7 +165,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 | V0.2.0 | ✅ Released          | May 2nd 2025  |
 | V0.3.0 | ✅ Released          | May 4th 2025  |
 | V0.4.0 | ✅ Released          | May 8th 2025  |
-| V0.5.0 | ❌ Pending           | May 15th 2025 |
+| V0.5.0 | 🟡 In Pre-Release    | May 15th 2025 |
 | V1.0.0 | ❌ Pending           | June 1st 2025 |
 
 | Test |   Progress    | Deadline |

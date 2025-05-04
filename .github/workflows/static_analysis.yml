@@ -23,11 +23,11 @@ jobs:
 
       - name: Run Bandit (fail on issues)
         run: |
-          bandit -r src -ll -ii -q
+          bandit -r src api db -ll -ii -q
 
       - name: Run Pylint (fail if score < 9.0)
         run: |
-          pylint src/ --rcfile=.pylintrc > pylint_report.txt || true
+          pylint src/ api/ db/ --rcfile=.pylintrc > pylint_report.txt || true
           PYLINT_SCORE=$(grep "Your code has been rated at" pylint_report.txt | awk '{print $7}' | cut -d'/' -f1)
           echo "Pylint Score: $PYLINT_SCORE"
           awk -v score="$PYLINT_SCORE" 'BEGIN {exit !(score >= 9.0)}'

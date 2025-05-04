@@ -1,7 +1,6 @@
 import io
 import pytest
 from api.app import create_app
-from api.routes_auth import users
 
 pytestmark = pytest.mark.api
 
@@ -12,7 +11,6 @@ def client():
     return app.test_client()
 
 def test_register_success(client):
-    users.clear()  # Clear any existing users
     response = client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -20,27 +18,42 @@ def test_register_success(client):
     })
     assert response.status_code == 201
     assert response.json == {'message': 'User registered successfully'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_register_missing_email(client):
-    users.clear()  # Clear any existing users
     response = client.post('/register', json={
         'password': 'password123',
         'name': 'Lorem Ipsum'
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and password are required'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 404
+    assert response.json == {'error': 'User not found'}
 
 def test_register_missing_password(client):
-    users.clear()  # Clear any existing users
     response = client.post('/register', json={
         'email': 'xyz@example.com',
         'name': 'Lorem Ipsum'
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and password are required'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 404
+    assert response.json == {'error': 'User not found'}
 
 def test_register_invalid_email(client):
-    users.clear()  # Clear any existing users
     response = client.post('/register', json={
         'email': 'invalid-email',
         'password': 'password123',
@@ -48,9 +61,14 @@ def test_register_invalid_email(client):
     })
     assert response.status_code == 553
     assert response.json == {'error': 'Invalid email format'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 404
+    assert response.json == {'error': 'User not found'}
 
 def test_register_email_already_registered(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -63,9 +81,14 @@ def test_register_email_already_registered(client):
     })
     assert response.status_code == 409
     assert response.json == {'error': 'Email already registered'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_login_success(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -77,9 +100,14 @@ def test_login_success(client):
     })
     assert response.status_code == 200
     assert 'token' in response.json
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_login_missing_email(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -90,9 +118,14 @@ def test_login_missing_email(client):
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and password are required'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_login_missing_password(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -103,9 +136,14 @@ def test_login_missing_password(client):
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and password are required'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_login_user_not_found(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -117,9 +155,14 @@ def test_login_user_not_found(client):
     })
     assert response.status_code == 404
     assert response.json == {'error': 'User not found'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_login_invalid_credentials(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -131,9 +174,14 @@ def test_login_invalid_credentials(client):
     })
     assert response.status_code == 401
     assert response.json == {'error': 'Invalid credentials'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_delete_success(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -147,7 +195,6 @@ def test_delete_success(client):
     assert response.json == {'message': 'User deleted successfully'}
 
 def test_delete_missing_email(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -158,9 +205,14 @@ def test_delete_missing_email(client):
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and password are required'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_delete_missing_password(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -171,9 +223,14 @@ def test_delete_missing_password(client):
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and password are required'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_delete_user_not_found(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -185,9 +242,14 @@ def test_delete_user_not_found(client):
     })
     assert response.status_code == 404
     assert response.json == {'error': 'User not found'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}
 
 def test_delete_invalid_credentials(client):
-    users.clear()  # Clear any existing users
     client.post('/register', json={
         'email': 'xyz@example.com',
         'password': 'password123',
@@ -199,3 +261,9 @@ def test_delete_invalid_credentials(client):
     })
     assert response.status_code == 401
     assert response.json == {'error': 'Invalid credentials'}
+    response = client.post('/delete', json={
+        'email': 'xyz@example.com',
+        'password': 'password123'
+    })  # Clean up after test
+    assert response.status_code == 200
+    assert response.json == {'message': 'User deleted successfully'}

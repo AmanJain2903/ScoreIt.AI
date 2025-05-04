@@ -13,7 +13,7 @@
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Deploying the functional modules as REST APIs using Flask and integrating MongoDB for persistent storage.
+> **Current Focus:** Frontend Development of ScoreIt.AI
 
 ---
 
@@ -172,6 +172,18 @@ ScoreIt.AI is an AI-powered system designed to:
     - register/ ✅
     - login/ ✅
     - delete/ ✅
+  - history ✅
+    - add/ ✅
+    - get_all/ ✅
+    - delete_one/ ✅
+    - delete_all/ ✅
+
+**14. Integrated MongoDB Atlas Database**  
+- The API endpoints were conneted to MongoDB Atlas for ScoreIt.AI.
+  - users_collection
+    - User's information
+  - history_collection
+    - User's history
 
 ---
 
@@ -233,7 +245,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
 **8. Test Achievements**
-- 318 test cases written covering Unit + Integration + API tests combined.
+- 330+ test cases written covering Unit + Integration + API tests combined.
 - Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
 - Relevent modules ran through performance testing.
@@ -289,15 +301,14 @@ ScoreIt.AI is an AI-powered system designed to:
 
 | Feature | Description |
 |:---|:---|
-| **MongoDB Database Integration** | Store resumes, JDs, parsed structures, and matching results. |
 | **ReactJS Frontend** | Build a responsive frontend where users can upload resumes, view matches, and recommendations. |
 
 ---
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
-- **In Progress:** MongoDB Integration, Frontend Development.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
+- **In Progress:** Frontend Development.
 
 ---
 
@@ -309,7 +320,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## To run pytests
 - All tests + Coverage ➔  
-  `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest --cov=src --cov=api --cov-report=html:code_coverage/coverage_report tests/`
+  `PYTHONPATH=. COVERAGE_FILE=code_coverage/.coverage pytest --cov=src --cov=api --cov=db --cov-report=html:code_coverage/coverage_report tests/`
 - Only Unit Tests ➔  
   `PYTHONPATH=. pytest -m unit`
 - Only Integration Tests ➔  
@@ -317,7 +328,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Only API Tests ➔ 
   `PYTHONPATH=. pytest -m api`
 - Run all Tests ➔  
-  `PYTHONPATH=. pytest --cov=src --cov=api --cov-report=term-missing tests/`
+  `PYTHONPATH=. pytest --cov=src --cov=api --cov=db --cov-report=term-missing tests/`
 
 ## To run pytests in parallel
 - Add `-n auto` flag

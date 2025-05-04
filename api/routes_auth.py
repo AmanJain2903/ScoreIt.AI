@@ -5,15 +5,14 @@ import os
 import regex as re
 import jwt
 import datetime
+from db.user_dao import UserDAO
 from dotenv import load_dotenv
 load_dotenv()
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 auth_bp = Blueprint("auth", __name__)
-
-# Temporary user store (replace with Mongo later)
-users = {}
+user_dao = UserDAO()
 
 def is_valid_email(email):
     return re.match(r"[^@]+@[^@]+\.[^@]+", email)
@@ -32,17 +31,10 @@ def register():
     if not is_valid_email(email):
         return jsonify({"error": "Invalid email format"}), 553
 
-    if email in users:
+    if user_dao.get_user_by_email(email):
         return jsonify({"error": "Email already registered"}), 409
 
-    hashed_pw = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-
-    users[email] = {
-        "name": name,
-        "email": email,
-        "password": hashed_pw,
-        "verified": False
-    }
+    user_dao.create_user(name, email, password)
 
     return jsonify({"message": "User registered successfully"}), 201
 
@@ -56,11 +48,11 @@ def login():
     if not email or not password:
         return jsonify({"error": "Email and password are required"}), 400
 
-    user = users.get(email)
+    user = user_dao.get_user_by_email(email)
     if not user:
         return jsonify({"error": "User not found"}), 404
 
-    if not bcrypt.checkpw(password.encode('utf-8'), user["password"]):
+    if not user_dao.verify_password(email, password):
         return jsonify({"error": "Invalid credentials"}), 401
 
     # ✅ Generate JWT token
@@ -82,12 +74,12 @@ def delete():
     if not email or not password:
         return jsonify({"error": "Email and password are required"}), 400
 
-    user = users.get(email)
+    user = user_dao.get_user_by_email(email)
     if not user:
         return jsonify({"error": "User not found"}), 404
 
-    if not bcrypt.checkpw(password.encode('utf-8'), user["password"]):
+    if not user_dao.verify_password(email, password):
         return jsonify({"error": "Invalid credentials"}), 401
 
-    del users[email]
+    user_dao.delete_user(email)
     return jsonify({"message": "User deleted successfully"}), 200

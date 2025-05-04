@@ -1,0 +1,52 @@
+summary: Delete All Match History Records
+description: Deletes all match history records for a given user email from the database.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - email
+      properties:
+        email:
+          type: string
+          description: User's registered email
+          example: user@example.com
+responses:
+  200:
+    description: Successfully deleted history records
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: Deleted 3 history records successfully
+  404:
+    description: No history records found to delete
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: No history records found to delete
+  400:
+    description: Invalid or missing input
+    schema:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Missing required fields
+  500:
+    description: Server error while deleting history
+    schema:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Failed to delete history records
