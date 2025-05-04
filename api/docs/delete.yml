@@ -1,0 +1,32 @@
+post:
+  summary: User Delete
+  description: Delete a user account
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - password
+        properties:
+          email:
+            type: string
+            example: user@example.com
+          password:
+            type: string
+            example: mySecret123
+  responses:
+    200:
+      description: User deleted successfully
+    400:
+      description: Missing email or password
+    401:
+      description: Invalid credentials
+    404:
+      description: User not found

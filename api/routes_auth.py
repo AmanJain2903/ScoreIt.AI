@@ -71,3 +71,23 @@ def login():
     token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
     return jsonify({"token": token}), 200
+
+@auth_bp.route("/delete", methods=["POST"])
+@swag_from("docs/delete.yml")
+def delete():
+    data = request.get_json()
+    email = data.get("email")
+    password = data.get("password")
+
+    if not email or not password:
+        return jsonify({"error": "Email and password are required"}), 400
+
+    user = users.get(email)
+    if not user:
+        return jsonify({"error": "User not found"}), 404
+
+    if not bcrypt.checkpw(password.encode('utf-8'), user["password"]):
+        return jsonify({"error": "Invalid credentials"}), 401
+
+    del users[email]
+    return jsonify({"message": "User deleted successfully"}), 200
