@@ -136,3 +136,75 @@ Accepts Email & Password to delete a user from the system.
   "message": "User deleted successfully" 
 }
 ```
+
+---
+
+### 9. `/history/add` – Add a Match Report to History
+Accepts Match Report and adds it to history database.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: 
+  - `resume_text`: 
+  - `resume_json`:
+  - `jd_text`:
+  - `jd_json`:
+  - `match_report`:
+
+- **Output:**
+```json
+{
+  "message": "History added successfully" 
+}
+```
+
+---
+
+### 10. `/history/get_all` – Gets User's Match History
+Accepts user email and retrieves user's match history.
+
+- **Method:** `GET`
+- **Input:** `application/json`
+  - `email`: 
+
+- **Output:**
+```json
+{
+  "history": "history" 
+}
+```
+
+---
+
+### 11. `/history/delete_one` – Delete One Match From User's History
+Accepts user email and match ID, and deleted that match from user's history.
+
+- **Method:** `DELETE`
+- **Input:** `application/json`
+  - `email`: 
+  - `match_id`:
+
+- **Output:**
+```json
+{
+  "message": "Match report deleted successfully" 
+}
+```
+
+---
+
+### 12. `/history/delete_all` – Delete All Matches From User's History
+Accepts user email and delete all match records for that user.
+
+- **Method:** `DELETE`
+- **Input:** `application/json`
+  - `email`: 
+
+- **Output:**
+```json
+{
+  "message": "Deleted {3} history records successfully" 
+}
+```
+
+

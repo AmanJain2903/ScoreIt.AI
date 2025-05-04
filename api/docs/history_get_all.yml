@@ -1,0 +1,47 @@
+summary: Get All Match History for a User
+description: Retrieve all match history entries for a given user by email.
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - in: body
+    name: email_request
+    required: true
+    schema:
+      type: object
+      required:
+        - email
+      properties:
+        email:
+          type: string
+          example: user@example.com
+responses:
+  200:
+    description: List of match history entries
+    schema:
+      type: object
+      properties:
+        history:
+          type: array
+          items:
+            type: object
+            properties:
+              history_id:
+                type: string
+              resume_text:
+                type: string
+              resume_json:
+                type: object
+              jd_text:
+                type: string
+              jd_json:
+                type: object
+              match_report:
+                type: object
+  400:
+    description: Invalid input or missing email
+  404:
+    description: No history found
+  500:
+    description: Failed to retrieve history

@@ -43,7 +43,8 @@ setup(
     "Flask==3.1.0",
     "flasgger==0.9.7.1",
     "bcrypt==4.3.0",
-    "PyJWT==2.10.1"
+    "PyJWT==2.10.1",
+    "pymongo==4.12.1",
 ]
 )
 
