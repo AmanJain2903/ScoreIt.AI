@@ -128,21 +128,29 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V1.0.0 - First Working ReactJS Frontend Launch
+## 🔢 V1.0.0 - First Working ReactJS Frontend Launch (🟡 Under Development)
 **Goal:**
 - Deliver a full-stack functioning ScoreIt.AI product.
 
-**Key Frontend Pages:**
-- Login/Signup ❌
-- Create Profile Page ❌
-- Resume Upload Page ❌
-- JD Upload Page ❌
-- Match Score Results View ❌
-- Settings and History Panels ❌
+**Workflow:**
+- User Workflow Design ✅
+- UI Design ✅
+- UI Skeleton Build ✅
+- UI Styling ❌
+
+**Frontend Pages:**
+- Login/Register ✅
+- Dashboard/Home ✅
+- Resume/JD Upload ✅
+- Match Results ✅
+- History ✅
+- Navigation Bar ✅
+- Side Bar ✅
+- Footer ✅
 
 **Tech Stack:**
 - ReactJS (Frontend)
-- TailwindCSS (Styling)
+- VanillaCSS/TailwindCSS (Styling)
 - Flask (APIs)
 - MongoDB (Database)
 
@@ -166,7 +174,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 | V0.3.0 | ✅ Released          | May 4th 2025  |
 | V0.4.0 | ✅ Released          | May 8th 2025  |
 | V0.5.0 | ✅ Released          | May 15th 2025 |
-| V1.0.0 | ❌ Pending           | June 1st 2025 |
+| V1.0.0 | 🟡 Under Development | June 1st 2025 |
 
 | Test |   Progress    | Deadline |
 |:---|:---|:---|

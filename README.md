@@ -184,6 +184,9 @@ ScoreIt.AI is an AI-powered system designed to:
     - User's information
   - history_collection
     - User's history
+  
+**15. UI Skeleton Build**  
+- The skeleton build for the UI is built using ReactJS.
 
 ---
 
@@ -231,7 +234,7 @@ ScoreIt.AI is an AI-powered system designed to:
 **5. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
-- Current total code coverage: **97%** ✅
+- Current total code coverage: **98%** ✅
 
 **6. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
@@ -297,7 +300,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ---
 
-## 🚧 Future Work (Coming Soon)
+## 🚧 Current Work (Coming Soon)
 
 | Feature | Description |
 |:---|:---|
@@ -307,8 +310,8 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline.
-- **In Progress:** Frontend Development.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS.
+- **In Progress:** Frontend Styling.
 
 ---
 
@@ -339,5 +342,13 @@ ScoreIt.AI is an AI-powered system designed to:
 ## To run Static Analysis
 - `bandit -r src/`
 - `pylint src/`
+
+## To create React App
+- `npx create-react-app <frontend>`
+- `npm install axios`
+- `npm install react-router-dom`
+
+## To run development environment
+- `npm start`
 
 ---

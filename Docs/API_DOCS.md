@@ -3,12 +3,12 @@
 ScoreIt.AI exposes modular REST APIs for parsing, extracting, and matching resumes and job descriptions.
 
 🧭 **Swagger UI:**  
-After running the backend, open [http://127.0.0.1:5000/apidocs/#/](http://127.0.0.1:5000/apidocs/#/) in your browser to interactively test all APIs.
+After running the backend, open [http://127.0.0.1:5001/apidocs/#/](http://127.0.0.1:5001/apidocs/#/) in your browser to interactively test all APIs.
 
 ---
 
 ### 📍 Base URL
-[http://127.0.0.1:5000](http://127.0.0.1:5000)
+[http://127.0.0.1:5001](http://127.0.0.1:5001)
 
 ---
 

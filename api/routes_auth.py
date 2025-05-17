@@ -61,8 +61,9 @@ def login():
         "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=2)
     }
     token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
+    name = user.get("name", "")
 
-    return jsonify({"token": token}), 200
+    return jsonify({"token": token, "name" : name, "email" : email}), 200
 
 @auth_bp.route("/delete", methods=["POST"])
 @swag_from("docs/delete.yml")

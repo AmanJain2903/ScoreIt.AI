@@ -41,6 +41,7 @@ setup(
     "trafilatura==2.0.0",
     "selenium==4.32.0",
     "Flask==3.1.0",
+    "flask-cors==5.0.1",
     "flasgger==0.9.7.1",
     "bcrypt==4.3.0",
     "PyJWT==2.10.1",

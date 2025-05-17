@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from flasgger import Swagger
 from api.routes_resume_parser import resume_parser_bp
 from api.routes_jd_parser import jd_parser_bp
@@ -10,6 +11,7 @@ from api.routes_history import history_bp
 
 def create_app():
     app = Flask(__name__)
+    CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
     Swagger(app)
 
     app.register_blueprint(resume_parser_bp, url_prefix="/")

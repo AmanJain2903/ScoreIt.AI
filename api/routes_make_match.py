@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify
 from flasgger.utils import swag_from
 import os
 from src.matchmaker_engine.matching_engine import MatchingEngine
+import json
 
 make_match_bp = Blueprint("make_match", __name__)
 
@@ -12,7 +13,11 @@ def make_match():
     resumeJSON = data.get("resume_json")
     jdJSON = data.get("jd_json")
     if not resumeJSON or not jdJSON or not isinstance(resumeJSON, dict) or not isinstance(jdJSON, dict):
-        return jsonify({"error": "Invalid input or missing input"}), 400
+        try:
+            resumeJSON = json.loads(resumeJSON)
+            jdJSON = json.loads(jdJSON)
+        except Exception:
+            return jsonify({"error": "Invalid input or missing input"}), 400
     try:
         matchMaker = MatchingEngine()
         matchMaker.resumeText = matchMaker.jdText = "Set to None"
