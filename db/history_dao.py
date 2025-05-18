@@ -20,7 +20,10 @@ class HistoryDAO:
         return str(result.inserted_id)
 
     def get_history(self, user_email: str):
-        records = list(self.collection.find({"user_email": user_email}, {"_id": 0}))
+        records = list(self.collection.find({"user_email": user_email}))
+        for record in records:
+            if '_id' in record:
+                record['_id'] = str(record['_id'])
         return records
     
     def delete_match_by_id(self, user_email, match_id):
