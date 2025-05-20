@@ -128,7 +128,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-## 🔢 V1.0.0 - First Working ReactJS Frontend Launch (🟡 Under Development)
+## 🔢 V1.0.0 - First Working ReactJS Frontend Launch (Released ✅)
 **Goal:**
 - Deliver a full-stack functioning ScoreIt.AI product.
 
@@ -147,10 +147,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Navigation Bar ✅
 - Side Bar ✅
 - Footer ✅
-
-**Additional Enhancements**
-- Fine-Tune Models ❌
-- Imrpove Model Performance ❌
+- Profile Page (🟡 FEATURE ON HOLD)
 
 **Tech Stack:**
 - ReactJS (Frontend)
@@ -173,12 +170,12 @@ Each version milestone focuses on building a critical subsystem required for a f
 # 📅 Current Status
 | Version |   Progress    | Deadline |
 |:---|:---|:---|
-| V0.1.0 | ✅ Released          | May 1st 2025  |
-| V0.2.0 | ✅ Released          | May 2nd 2025  |
-| V0.3.0 | ✅ Released          | May 4th 2025  |
-| V0.4.0 | ✅ Released          | May 8th 2025  |
-| V0.5.0 | ✅ Released          | May 15th 2025 |
-| V1.0.0 | 🟡 Under Development | June 1st 2025 |
+| V0.1.0 | ✅ Released    | May 1st 2025  |
+| V0.2.0 | ✅ Released    | May 2nd 2025  |
+| V0.3.0 | ✅ Released    | May 4th 2025  |
+| V0.4.0 | ✅ Released    | May 8th 2025  |
+| V0.5.0 | ✅ Released    | May 15th 2025 |
+| V1.0.0 | ✅ Released    | June 1st 2025 |
 
 | Test |   Progress    | Deadline |
 |:---|:---|:---|
@@ -188,5 +185,5 @@ Each version milestone focuses on building a critical subsystem required for a f
 
 ---
 
-# 📈 Stay tuned for the official first version release! 🚀
+# 📈  The official first version is released! 🚀
 

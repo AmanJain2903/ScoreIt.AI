@@ -13,7 +13,7 @@
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Frontend Development of ScoreIt.AI
+> **Current Focus:** Minor fixes, enhancements and patch releases.
 
 ---
 
@@ -185,8 +185,11 @@ ScoreIt.AI is an AI-powered system designed to:
   - history_collection
     - User's history
   
-**15. UI Skeleton Build**  
+**15. ReactJS Frontend**  
 - The skeleton build for the UI is built using ReactJS.
+- Vanilla CSS used to stylize the UI.
+- Responsive UI to support varying screen sizes.
+- Dark/Light mode toggle functionality.
 
 ---
 
@@ -248,7 +251,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
 **8. Test Achievements**
-- 330+ test cases written covering Unit + Integration + API tests combined.
+- 338 test cases written covering Unit + Integration + API tests combined.
 - Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
 - Relevent modules ran through performance testing.
@@ -291,6 +294,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - New functionalities are always developed inside feature branches: `feature/<feature-name>`.
 - Bugfixes are handled via `bugfix/<bug-description>` branches.
 - Releases are handled via `release/<version>` branches.
+- Patches are handled via `patch/<version>` branches.
 - No direct commits are made to `main`.
 - Pull Requests (PRs) are created from feature/bugfix branches to `main`.
 - GitHub Actions automatically runs Unit and Integration tests on PRs.
@@ -300,18 +304,18 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ---
 
-## 🚧 Current Work (Coming Soon)
+## 🚧 Current Work
 
 | Feature | Description |
 |:---|:---|
-| **ReactJS Frontend** | Build a responsive frontend where users can upload resumes, view matches, and recommendations. |
+| **Patch Updates** | Fix minor bugs and enhance the overall performance of the software |
 
 ---
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS.
-- **In Progress:** Frontend Styling.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS, Stylized UI using Vanilla CSS.
+- **In Progress:** Bug Fixes & Patch Updates.
 
 ---
 
