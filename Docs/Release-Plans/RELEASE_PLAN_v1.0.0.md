@@ -136,7 +136,7 @@ Each version milestone focuses on building a critical subsystem required for a f
 - User Workflow Design ✅
 - UI Design ✅
 - UI Skeleton Build ✅
-- UI Styling ❌
+- UI Styling ✅
 
 **Frontend Pages:**
 - Login/Register ✅
@@ -147,6 +147,10 @@ Each version milestone focuses on building a critical subsystem required for a f
 - Navigation Bar ✅
 - Side Bar ✅
 - Footer ✅
+
+**Additional Enhancements**
+- Fine-Tune Models ❌
+- Imrpove Model Performance ❌
 
 **Tech Stack:**
 - ReactJS (Frontend)
