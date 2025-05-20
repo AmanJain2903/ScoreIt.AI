@@ -14,6 +14,10 @@ def create_app():
     CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
     Swagger(app)
 
+    @app.route("/")
+    def home():
+        return "✅ ScoreIt.AI backend is running!"
+
     app.register_blueprint(resume_parser_bp, url_prefix="/")
     app.register_blueprint(jd_parser_bp, url_prefix="/")
     app.register_blueprint(resume_extractor_bp, url_prefix="/")
