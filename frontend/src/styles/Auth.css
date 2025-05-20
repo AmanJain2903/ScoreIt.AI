@@ -1,13 +1,14 @@
 .auth-container {
   display: flex;
   min-height: 100vh;
+  min-width: 100vw;
   background-color: #f5f5f5;
 }
 
 .auth-sidebar {
-  width: 40%;
+  width: 40vw;
   background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
-  padding: 2rem;
+  padding: 3vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,61 +17,26 @@
 
 .logo-container {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4vh;
 }
 
 .logo {
-  width: min(500px, 40vw);
+  width: 40vw;
   height: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3vh;
   transition: width 0.3s ease;
-}
-
-@media (max-width: 1200px) {
-  .logo {
-    width: min(400px, 45vw);
-  }
-}
-
-@media (max-width: 768px) {
-  .auth-container {
-    flex-direction: column;
-  }
-
-  .auth-sidebar,
-  .auth-form-container {
-    width: 100%;
-  }
-
-  .auth-sidebar {
-    padding: 1rem;
-  }
-
-  .auth-form-container {
-    padding: 2rem;
-  }
-
-  .logo {
-    width: min(300px, 50vw);
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: min(250px, 60vw);
-  }
 }
 
 .switch-auth-mode {
   background: transparent;
   border: 2px solid white;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 1.5vh 3vw;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 2vw;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-bottom: 2rem;
+  margin-bottom: 4vh;
 }
 
 .switch-auth-mode:hover {
@@ -78,8 +44,8 @@
 }
 
 .auth-form-container {
-  width: 60%;
-  padding: 4rem;
+  width: 60vw;
+  padding: 8vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,39 +53,44 @@
 }
 
 .auth-form-container h2 {
-  font-size: 2rem;
+  font-size: 3vw;
   color: #1f2937;
-  margin-bottom: 2rem;
+  margin-bottom: 4vh;
   text-align: center;
   width: 100%;
+  margin-left: 4vw;
 }
 
 .auth-form {
-  max-width: 400px;
-  width: 100%;
+  min-width: 20vw;
+  max-width: 60vw;
+  min-height: 20vh;
+  max-height: 60vh;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3vh;
   width: 100%;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1vh;
   color: #4b5563;
+  font-size: 1vw;
   font-weight: 500;
 }
 
 .form-group input {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 1.5vh 2vw;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1vw;
   transition: border-color 0.3s ease;
 }
 
@@ -131,13 +102,14 @@
 
 .error-message, .success-message {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1vh;
   text-align: center;
-  padding: 0.75rem;
+  padding: 1vh;
   border-radius: 6px;
   align-items: center;
   justify-content: center;
-  margin-left: 30px;
+  margin-left: 4vw;
+  font-size: 1vw;
 }
 
 .error-message {
@@ -153,17 +125,16 @@
 
 .submit-button {
   width: 100%;
-  padding: 0.75rem;
+  padding: 1.5vh;
   background: #6366f1;
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 0.5rem;
-  margin-left: 30px;
+  margin-top: 1vh;
+  margin-left: 4vw;
 }
 
 .submit-button:hover {
@@ -179,4 +150,34 @@
     opacity: 1;
     transform: translateY(0);
   }
-} 
+}
+
+/* .dark-mode .auth-container, .dark-mode .auth-sidebar, .dark-mode .auth-form-container {
+  background: #18181b !important;
+  color: #f3f4f6 !important;
+}
+.dark-mode .auth-form {
+  background: #23272f !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #27272a !important;
+}
+.dark-mode .form-group label {
+  color: #fbbf24 !important;
+}
+.dark-mode .auth-form input {
+  background: #23272f !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #27272a !important;
+}
+.dark-mode .auth-form input:focus {
+  border-color: #fbbf24 !important;
+  box-shadow: 0 0 0 2px rgba(251,191,36,0.2) !important;
+}
+.dark-mode .submit-button {
+  background: #fbbf24 !important;
+  color: #18181b !important;
+}
+.dark-mode .submit-button:hover {
+  background: #fde68a !important;
+  color: #18181b !important;
+} */ 

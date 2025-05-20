@@ -1,9 +1,11 @@
 .past-matches-section {
-  width: 80vw;
+  width: 100%;
   height: auto;
   margin: 2rem auto;
-  padding: 1rem 0rem 2rem 1rem;
+  padding: 2vh 0 3vh 0;
   background: #f5f5f5;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-header {
@@ -11,25 +13,24 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10vh;
-  margin-left: 4vw;
 }
 
 .section-header h2 {
   color: var(--text-primary);
-  font-size: 1.8rem;
+  font-size: 2vw;
   font-weight: 600;
 }
 
 .clear-history-button {
-  padding: 0.5rem 1rem;
+  padding: 1vh 1vw;
   background-color: #EF4444;
   color: white;
   border: none;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 1.1vw;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  margin-right: 1vw;
+  margin-right: -3vw;
 }
 
 .clear-history-button:hover {
@@ -39,18 +40,19 @@
 .matches-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-left: 3vw;
-  margin-right: 1vw;
+  gap: 4vw;
+  width: 100%;
+  justify-content: center;
 }
 
 .match-card {
   background: #fafafa;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 3vh;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border: 1px solid #e5e7eb;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
 }
 
 .match-card:hover {
@@ -62,25 +64,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .score-radar {
-  width: 80%;
-  margin: 0 auto 1.5rem auto;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media (max-width: 900px) {
-  .matches-grid {
-    grid-template-columns: 1fr;
-  }
-  .score-radar {
-    max-width: 300px;
-    height: 300px;
-  }
+.score-radar canvas {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 1 / 1;
+  display: block;
 }
 
 /* Modal Overlay and Popup Styles */
@@ -103,17 +102,16 @@
   color: #18181b;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-  max-width: 900px;
-  width: 95vw;
-  max-height: 90vh;
+  width: 60vw;
+  height: 85vh;
   overflow-y: auto;
-  padding: 2rem 2.5rem 2rem 2.5rem;
+  padding: 3vh 4vw 3vh 4vw;
   position: relative;
   animation: popIn 0.2s;
   border: 1px solid #e5e7eb;
   display: flex;
   flex-direction: column;
-  margin-left: 300px;
+  margin-left: 22vw;
 }
 
 @keyframes fadeIn {
@@ -129,22 +127,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
-  gap: 1rem;
+  margin-bottom: 2vh;
+  gap: 2vw;
 }
 .modal-date {
   color: #6b7280;
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 .modal-close, .modal-delete {
   background: none;
   border: none;
   color: #6b7280;
-  font-size: 1.3rem;
+  font-size: 1.5vw;
   cursor: pointer;
-  margin-left: 0.5rem;
   border-radius: 4px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5vh 0.5vw;
   transition: background 0.2s, color 0.2s;
 }
 .modal-close:hover {
@@ -157,13 +154,13 @@
 }
 
 .modal-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2vh;
 }
 
 .modal-top-section {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 2.2rem;
+  gap: 2.5vw;
+  margin-bottom: 3vh;
 }
 
 .modal-resume, .modal-jd {
@@ -174,8 +171,8 @@
 }
 
 .modal-resume h3, .modal-jd h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  margin-bottom: 1vh;
+  font-size: 1.2vw;
   color: #374151;
 }
 
@@ -183,10 +180,10 @@
   background: #f9fafb;
   color: #374151;
   border-radius: 8px;
-  padding: 1rem;
-  font-size: 0.95rem;
+  padding: 2vw;
+  font-size: 1vw;
   line-height: 1.5;
-  max-height: 180px;
+  max-height: 20vh;
   overflow-y: auto;
   box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
@@ -194,28 +191,29 @@
 .detailed-scores {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin-top: 0.5rem;
-  margin-left: 50px;
+  gap: 2vh;
+  margin-top: 1vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 .score-item {
   display: grid;
   grid-template-columns: 160px 1fr 60px;
   align-items: center;
-  gap: 1rem;
+  gap: 2vh;
 }
 
 .score-label {
   display: block;
   color: #374151;
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 600;
   margin-bottom: 0;
 }
 
 .score-bar-container {
-  height: 12px;
+  height: 1.2vh;
   background: #e5e7eb;
   border-radius: 6px;
   overflow: hidden;
@@ -228,54 +226,86 @@
 }
 
 .score-value {
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 600;
   color: #18181b;
   text-align: right;
-}
-
-@media (max-width: 900px) {
-  .past-match-modal {
-    max-width: 99vw;
-    padding: 1rem 0.5rem;
-  }
-  .modal-top-section {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .past-match-modal {
-    padding: 1rem 0.5rem;
-    max-width: 98vw;
-  }
 }
 
 .modal-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 3vh;
 }
 
 .modal-delete {
   background: #ef4444;
   color: #fff;
   border: none;
-  font-size: 1rem;
+  font-size: 1.1vw;
   font-weight: 600;
-  padding: 0.7rem 2.2rem;
+  padding: 1.5vh 3vw;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: background 0.2s, color 0.2s;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1vw;
 }
 
 .modal-delete:hover {
   background: #b91c1c;
   color: #fff;
+}
+
+.dark-mode .past-matches-section, .dark-mode .match-card {
+  background: #23272f;
+  color: #f3f4f6;
+  border-color: #27272a;
+}
+.dark-mode .section-header h2 {
+  color: #fbbf24;
+}
+.dark-mode .clear-history-button {
+  background: #b91c1c;
+  color: #fff;
+}
+.dark-mode .clear-history-button:hover {
+  background: #ef4444;
+}
+.dark-mode .score-radar {
+  background: #18181b;
+}
+.dark-mode .past-match-modal {
+  background: #23272f;
+  color: #f3f4f6;
+  border-color: #27272a;
+}
+.dark-mode .modal-header, .dark-mode .modal-section, .dark-mode .modal-top-section {
+  color: #f3f4f6;
+}
+.dark-mode .text-content {
+  background: #18181b;
+  color: #f3f4f6;
+}
+.dark-mode .score-bar-container {
+  background: #e5e7eb !important;
+}
+/* .dark-mode .score-bar {
+  background: #fbbf24 !important;
+} */
+.dark-mode .modal-delete {
+  background: #b91c1c;
+  color: #fff;
+}
+.dark-mode .modal-delete:hover {
+  background: #ef4444;
+}
+.dark-mode .score-label, .dark-mode .score-value {
+  color: #ffffff !important;
+}
+.dark-mode .modal-resume h3, .dark-mode .modal-jd h3 {
+  color: #ffffff;
 }

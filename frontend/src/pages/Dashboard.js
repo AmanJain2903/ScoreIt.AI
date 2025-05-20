@@ -38,6 +38,7 @@ const Dashboard = () => {
   const [hasPastMatches, setHasPastMatches] = useState(null); // null = unknown, true/false = known
   const historyBtnRef = useRef(null);
   const [popupPos, setPopupPos] = useState({ top: 100, left: 100 });
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
 
   useEffect(() => {
     const userName = localStorage.getItem('name');
@@ -50,6 +51,15 @@ const Dashboard = () => {
     }, 500);
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+    localStorage.setItem('darkMode', darkMode);
+  }, [darkMode]);
 
   const handleLogout = () => {
     localStorage.removeItem('token');
@@ -342,6 +352,8 @@ const Dashboard = () => {
     setHasPastMatches(count > 0);
   };
 
+  const handleToggleDarkMode = () => setDarkMode(dm => !dm);
+
   if (isLoading) {
     return (
       <div className="dashboard-loading">
@@ -377,71 +389,89 @@ const Dashboard = () => {
           <div className="welcome-message">
             Welcome to ScoreIt.AI, <span className="user-name">{userName}</span> !
           </div>
-          <div className="profile-section">
-            <button className="profile-button" onClick={toggleProfileDropdown}>
-              <span className="profile-icon">👤</span>
-              <span className="profile-text">Profile</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <button
+              className="dark-mode-toggle"
+              onClick={handleToggleDarkMode}
+              title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+              style={{
+                background: 'none',
+                border: 'none',
+                fontSize: '1.6rem',
+                cursor: 'pointer',
+                color: darkMode ? '#fbbf24' : '#374151',
+                marginRight: '0.5rem',
+                transition: 'color 0.2s'
+              }}
+            >
+              {darkMode ? '🌙' : '☀️'}
             </button>
-            {showProfileDropdown && (
-              <div className="profile-dropdown">
-                <div style={{ position: 'relative' }}>
+            <div className="profile-section">
+              <button className="profile-button" onClick={toggleProfileDropdown}>
+                <span className="profile-icon">👤</span>
+                <span className="profile-text">Profile</span>
+              </button>
+              {showProfileDropdown && (
+                <div className="profile-dropdown">
+                  <div style={{ position: 'relative' }}>
+                    <button
+                      className="dropdown-item"
+                      onMouseEnter={() => setShowProfileTooltip(true)}
+                      onMouseLeave={() => setShowProfileTooltip(false)}
+                      onFocus={() => setShowProfileTooltip(true)}
+                      onBlur={() => setShowProfileTooltip(false)}
+                    >
+                      <span className="dropdown-icon">👤</span>
+                      My Profile
+                    </button>
+                    {showProfileTooltip && (
+                      <div style={{
+                        position: 'absolute',
+                        right: '100%',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        background: '#18181b',
+                        color: '#fff',
+                        padding: '0.5rem 1rem',
+                        borderRadius: 8,
+                        whiteSpace: 'nowrap',
+                        fontSize: '0.95rem',
+                        marginRight: '0.5rem',
+                        zIndex: 2002,
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.12)'
+                      }}>
+                        Feature under development
+                      </div>
+                    )}
+                  </div>
                   <button
-                    className="dropdown-item"
-                    onMouseEnter={() => setShowProfileTooltip(true)}
-                    onMouseLeave={() => setShowProfileTooltip(false)}
-                    onFocus={() => setShowProfileTooltip(true)}
-                    onBlur={() => setShowProfileTooltip(false)}
-                  >
-                    <span className="dropdown-icon">👤</span>
-                    My Profile
-                  </button>
-                  {showProfileTooltip && (
-                    <div style={{
-                      position: 'absolute',
-                      right: '100%',
-                      top: '50%',
-                      transform: 'translateY(-50%)',
-                      background: '#18181b',
-                      color: '#fff',
-                      padding: '0.5rem 1rem',
-                      borderRadius: 8,
-                      whiteSpace: 'nowrap',
-                      fontSize: '0.95rem',
-                      marginRight: '0.5rem',
-                      zIndex: 2002,
-                      boxShadow: '0 2px 8px rgba(0,0,0,0.12)'
-                    }}>
-                      Feature under development
-                    </div>
-                  )}
-                </div>
-                <button
-                  className="dropdown-item settings-parent"
-                  onMouseEnter={() => setShowDeleteAccount(true)}
-                  onMouseLeave={() => setShowDeleteAccount(false)}
-                  onFocus={() => setShowDeleteAccount(true)}
-                  onBlur={() => setShowDeleteAccount(false)}
-                >
-                  <span className="dropdown-icon">⚙️</span>
-                  Settings
-                </button>
-                {showDeleteAccount && (
-                  <button
-                    className="dropdown-item delete-account-btn"
-                    onClick={handleDeleteAccountClick}
+                    className="dropdown-item settings-parent"
                     onMouseEnter={() => setShowDeleteAccount(true)}
                     onMouseLeave={() => setShowDeleteAccount(false)}
+                    onFocus={() => setShowDeleteAccount(true)}
+                    onBlur={() => setShowDeleteAccount(false)}
                   >
-                    Delete Account?
+                    <span className="dropdown-icon">⚙️</span>
+                    Settings
                   </button>
-                )}
-                <div className="dropdown-divider"></div>
-                <button className="dropdown-item" onClick={handleLogout}>
-                  <span className="dropdown-icon">🚪</span>
-                  Logout
-                </button>
-              </div>
-            )}
+                  {showDeleteAccount && (
+                    <button
+                      className="dropdown-item delete-account-btn"
+                      onClick={handleDeleteAccountClick}
+                      onMouseEnter={() => setShowDeleteAccount(true)}
+                      onMouseLeave={() => setShowDeleteAccount(false)}
+                    >
+                      Delete Account?
+                    </button>
+                  )}
+                  <div className="dropdown-divider"></div>
+                  <button className="dropdown-item" onClick={handleLogout}>
+                    <span className="dropdown-icon">🚪</span>
+                    Logout
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </nav>
 
@@ -558,7 +588,7 @@ const Dashboard = () => {
       {/* Delete Account Modal */}
       {showDeleteModal && (
         <div className="modal-overlay" style={{zIndex: 3000}}>
-          <div className="modal-content" style={{maxWidth: 400, margin: 'auto', padding: '2rem', textAlign: 'center'}}>
+          <div className="modal-content" style={{margin: 'auto', padding: '2rem', textAlign: 'center', width: '30vw', marginLeft: '44vw', alignItems: 'center', justifyContent: 'center', alignSelf: 'center'}}>
             <h2>Delete Account</h2>
             <p style={{marginBottom: '1rem'}}>This will permanently delete your account and all match history. This action cannot be undone.</p>
             <input

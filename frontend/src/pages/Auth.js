@@ -58,6 +58,7 @@ const Auth = () => {
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('name', response.data.name);
             localStorage.setItem('email', response.data.email);
+            localStorage.setItem('darkMode', 'false');
           }
           // Clear form data after successful login
           setFormData({
