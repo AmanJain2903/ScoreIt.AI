@@ -361,7 +361,10 @@ ScoreIt.AI is an AI-powered system designed to:
 - `npm install axios`
 - `npm install react-router-dom`
 
-## To run development environment
+## To run frontend development environment
 - `npm start`
+
+## To start backend development environment locally
+- `python run_local.py`
 
 ---

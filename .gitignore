@@ -12,3 +12,4 @@ __pycache__/
 *.py[cod]
 .coverage*
 .ruff_cache
+run_local.py
