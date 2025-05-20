@@ -2,7 +2,7 @@ name: Python Tests and Coverage (Unit + Integration + API)
 
 on:
   pull_request:
-    branches: [ main, dev ]
+    branches: [ main, staging ]
 
 jobs:
   unit-tests:
