@@ -13,7 +13,7 @@
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Minor fixes, enhancements and patch releases.
+> **Current Focus:** Deployment.
 
 ---
 
@@ -285,19 +285,27 @@ ScoreIt.AI is an AI-powered system designed to:
 **6. Installable Clean Packaging**  
 - Project designed with a `setup.py` so it can be installed easily via `pip install .`.
 
+**7. Continous Deployment**  
+- Frontend deployed using vercel.
+- Backend Deployed using Render.
+- Both are auto deployed with each commit in the main branch.
+- Both have preview with dev branch.
+
 ---
 
 ## 🛠️ Development Workflow
 
 **Feature Branches and Bugfix Branches**
 
-- New functionalities are always developed inside feature branches: `feature/<feature-name>`.
-- Bugfixes are handled via `bugfix/<bug-description>` branches.
-- Releases are handled via `release/<version>` branches.
-- Patches are handled via `patch/<version>` branches.
-- No direct commits are made to `main`.
-- Pull Requests (PRs) are created from feature/bugfix branches to `main`.
-- GitHub Actions automatically runs Unit and Integration tests on PRs.
+- `main` for production
+- `dev` for staging 
+- New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to dev.
+- Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to dev.
+- Releases are handled via `release/<version>` branches which are merged to dev.
+- Patches are handled via `patch/<version>` branches which are merged to dev.
+- No direct commits are made to `main` or `dev`.
+- Pull Requests (PRs) are created from `dev` branche to `main`.
+- GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `dev`.
 - Merges allowed only after all tests pass successfully.
 
 ✅ This workflow ensures isolated, clean, and traceable development!
@@ -308,6 +316,7 @@ ScoreIt.AI is an AI-powered system designed to:
 
 | Feature | Description |
 |:---|:---|
+| **Deployment**    | Deploy the software using Vercel & Render |
 | **Patch Updates** | Fix minor bugs and enhance the overall performance of the software |
 
 ---
@@ -315,7 +324,7 @@ ScoreIt.AI is an AI-powered system designed to:
 ## 📢 Note:
 
 - **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS, Stylized UI using Vanilla CSS.
-- **In Progress:** Bug Fixes & Patch Updates.
+- **In Progress:** Deployment.
 
 ---
 

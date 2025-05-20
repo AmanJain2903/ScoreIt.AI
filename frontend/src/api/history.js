@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5001/history'; // Flask backend port
+const BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5001/history'; // Flask backend port
 
 
 export const addHistory = async (email, resume_text, resume_json, jd_text, jd_json, match_report) => {

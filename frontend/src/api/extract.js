@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5001'; // Flask backend port
+const BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5001'; // Flask backend port
 
 export const extractJD = async (formData) => {
     return axios.post(`${BASE_URL}/extract_jd`, formData, {
