@@ -9,58 +9,41 @@
              |                Frontend (ReactJS)           |
              |---------------------------------------------|
              | - Login/Signup Page                         |
-             | - Create Profile Page                       |
              | - Upload Resume & JD Pages                  |
              | - Match Results Panel                       |
-             | - AI Suggestions Panel                      |
              | - Settings + History Pages                  |
              +---------------------------------------------+
                                    |
                                    |
                               [HTTP REST]
                                    |
-             +---------------------------------------------+      
-             |                  Flask APIs                 |
-             |---------------------------------------------|
-             | - POST /parse_resume                        |
-             | - POST /parse_jd                            |
-             | - POST /extract_resume                      |
-             | - POST /extract_jd                          |
-             | - POST /make_match                          |
-             | - Authentication APIs (Login/Signup)        |
-             +---------------------------------------------+
-             /              |        |        |              \
-            /               |        |        |               \
-           /                |        |        |                \
-          /                 |        |        |                 \
-+-----------+  +--------------+      |       +--------------+  +----------------+
-| Extractor |  | Matchmaker   |      |       | Scrapers     |  | AI Suggestion  |
-| Agents    |  | Engines      |      |       | Modules      |  | Engine         |
-|-----------|  |------------- |      |       |------------- |  |----------------|
-| - Resume  |  | - Education  |      |       | - OCR Resume |  | - LLM-based    |
-| - JD      |  | - Experience |      |       | - Web Scraper|  |   Improvement  |
-|           |  | - Tech Skills|      |       |              |  |   Suggestions  |
-|           |  | - Soft Skills|      |       |              |  |                |
-|           |  | - Tools      |      |       |              |  |                |
-|           |  | - Certs      |      |       |              |  |                |
-|           |  | - Designation|      |       |              |  |                |
-+-----------+  +--------------+      |       +--------------+  +----------------+
-                                     |
-                                     |
-                              [MongoDB Database]
-                                     |
-                                     |
-                      +-------------------------------+
-                      |            MongoDB            |
-                      |-------------------------------|
-                      | - User Authentication Data    |
-                      | - User Profile Data           |
-                      | - Uploaded Resumes & JDs      |
-                      | - Extracted Resume Entities   |
-                      | - Extracted JD Entities       |
-                      | - Matching Results History    |
-                      | - AI Suggestions History      |
-                      +-------------------------------+
+             +---------------------------------------------+       +-------------------------------+
+             |                  Flask APIs                 |       |            MongoDB            |
+             |---------------------------------------------|       |-------------------------------|
+             | - POST /parse_resume                        |       | - User Authentication Data    |
+             | - POST /parse_jd                            |       | - User Profile Data           |
+             | - POST /extract_resume                      |-------| - Uploaded Resumes & JDs      |
+             | - POST /extract_jd                          |       | - Extracted Resume Entities   |
+             | - POST /make_match                          |       | - Extracted JD Entities       |
+             | - Authentication APIs                       |       | - Matching Results History    |
+             | - History APIs                              |       +-------------------------------+
+             +---------------------------------------------+       
+             |                     |                       |              
+             |                     |                       |               
+             |                     |                       |                
+             |                     |                       |                 
+       +-----------+        +--------------+        +--------------+  
+       | Extractor |        | Matchmaker   |        | Scrapers     |  
+       | Agents    |        | Engines      |        | Modules      |  
+       |-----------|        |------------- |        |------------- |  
+       | - Resume  |        | - Education  |        | - OCR Resume |  
+       | - JD      |        | - Experience |        | - Web Scraper|  
+       |           |        | - Tech Skills|        |              |  
+       |           |        | - Soft Skills|        |              |  
+       |           |        | - Tools      |        |              |  
+       |           |        | - Certs      |        |              |  
+       |           |        | - Designation|        |              |  
+       +-----------+        +--------------+        +--------------+  
 ```
 
 ---
