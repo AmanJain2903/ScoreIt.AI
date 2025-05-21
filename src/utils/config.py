@@ -7,7 +7,7 @@ class Config:
     def __init__(self):
         try:
             # Correctly load config.yml from the installed package
-            configPath = importlib.resources.files('utils').joinpath('config.yml')
+            configPath = importlib.resources.files('src.utils').joinpath('config.yml')
             with configPath.open('r') as file:
                 config = yaml.safe_load(file)
         except Exception as e:

@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from src.certification_matchmaker.certification_matching import CertificationMatching
 from src.certification_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration

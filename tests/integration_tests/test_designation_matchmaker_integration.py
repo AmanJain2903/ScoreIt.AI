@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from src.designation_matchmaker.designation_matching import DesignationMatching
 from src.designation_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration

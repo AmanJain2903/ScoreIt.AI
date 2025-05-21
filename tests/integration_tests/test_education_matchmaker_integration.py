@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from src.education_matchmaker.education_matching import EducationMatching
 from src.education_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration

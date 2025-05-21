@@ -7,6 +7,7 @@ from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
 import os
 import pandas as pd
 import numpy as np
+from src.utils import model_load
 from dotenv import load_dotenv
 load_dotenv()
 

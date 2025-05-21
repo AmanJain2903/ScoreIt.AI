@@ -11,6 +11,12 @@ setup(
         "src.jd_extractor_agent": ["config.yml", "data/*.txt"], 
         "src.resume_extractor_agent": ["config.yml", "data/*.txt"],
         "src.education_matching": ["config.yml"],
+        "src.experience_matching": ["config.yml"],
+        "src.skill_matching": ["config.yml"],
+        "src.tools_matching": ["config.yml"],
+        "src.certification_matching": ["config.yml"],
+        "src.designation_matching": ["config.yml"],
+        "src.utils": ["config.yml"],
     },
     install_requires=[
     "dotenv==0.9.9",

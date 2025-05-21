@@ -1,6 +1,7 @@
 import io
 import pytest
 from api.app import create_app
+from src.utils import model_load
 
 pytestmark = pytest.mark.api
 

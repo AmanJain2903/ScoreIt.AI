@@ -3,6 +3,7 @@ import pandas as pd
 from src.skill_matchmaker.technical_skill_matching import TechnicalSkillMatching
 from src.skill_matchmaker.soft_skill_matching import SoftSkillMatching
 from src.skill_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration

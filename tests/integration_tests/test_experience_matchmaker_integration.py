@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from src.experience_matchmaker.experience_matching import ExperienceMatching
 from src.experience_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration
