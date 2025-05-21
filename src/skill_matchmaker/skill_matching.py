@@ -6,7 +6,7 @@ import numpy as np
 from src.skill_matchmaker import config
 from src.utils import security
 from sklearn.metrics.pairwise import cosine_similarity
-from utils.model_load import model1, model2
+from src.utils.model_load import model1, model2
 
 config = config.Config()
 
