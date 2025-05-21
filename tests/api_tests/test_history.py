@@ -119,7 +119,7 @@ def test_get_all_history_no_history_found(client):
     response = client.post('/history/get_all', json={
         "email": "xyz@example.com"
     })
-    assert response.status_code == 404
+    assert response.status_code == 200
     assert response.json['message'] == "No history found"
 
 def test_get_all_history_internal_server_error(client, monkeypatch):

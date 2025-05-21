@@ -51,7 +51,7 @@ def get_all_history():
     try:
         history = history_dao.get_history(email)
         if not history:
-            return jsonify({"message": "No history found"}), 404
+            return jsonify({"message": "No history found"}), 200
         return jsonify({"history": history}), 200
     except Exception:
         return jsonify({"error": "Failed to retrieve history"}), 500

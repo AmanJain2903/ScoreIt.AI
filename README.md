@@ -131,7 +131,7 @@ ScoreIt.AI is an AI-powered system designed to:
     - `pdfPath` – local path to PDF
   - Internally uses:
     - `pdf2image` – to convert PDF pages to images
-    - `easyocr` – to extract text from each image using OCR
+    - `pymupdf` – to extract text from pdf using OCR
 ⚙️ Features
   - ✅ Accepts either PDF **file path** or **bytes**
   - ✅ Compatible with both scanned resumes and digital PDFs

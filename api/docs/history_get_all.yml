@@ -41,7 +41,7 @@ responses:
                 type: object
   400:
     description: Invalid input or missing email
-  404:
+  200:
     description: No history found
   500:
     description: Failed to retrieve history

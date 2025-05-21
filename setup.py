@@ -33,7 +33,7 @@ setup(
     "bandit==1.8.3",
     "pylint==3.3.6",
     "psutil==7.0.0",
-    "easyocr==1.7.2",
+    "pymupdf==1.25.5",
     "pdf2image==1.17.0",
     "pillow==11.2.1",
     "requests==2.32.3",
