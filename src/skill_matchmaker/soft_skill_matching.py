@@ -31,10 +31,8 @@ config = config.Config()
 
 
 class SoftSkillMatching(SkillMatching):
-    def __init__(self, modelName1=None, modelName2=None, maxInputLength=None):
+    def __init__(self, maxInputLength=None):
         super().__init__(
-            modelName1=config.SOFT_MODEL_NAME_1 if modelName1 is None else modelName1,
-            modelName2=config.SOFT_MODEL_NAME_2 if modelName2 is None else modelName2,
             maxInputLength=config.SOFT_MAX_INPUT_LENGTH if maxInputLength is None else maxInputLength,
         )
 

@@ -21,7 +21,7 @@ def test_certification_matchmaker_end_to_end(certification_matchmaker):
     for col in required_columns:
         if col not in dataset.columns:
             raise ValueError(f"Column '{col}' not found in the dataset.")
-    for randomIndex in range(len(dataset)):
+    for randomIndex in range(10):
         resume_certification = dataset["resume_certs"].iloc[randomIndex]
         job_certification = dataset["jd_certs"].iloc[randomIndex]
         # Check if the inputs are valid

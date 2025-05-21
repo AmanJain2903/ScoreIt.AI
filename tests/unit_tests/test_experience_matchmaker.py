@@ -17,7 +17,7 @@ def experience_numerilzer():
 
 @pytest.fixture
 def experience_matchmaker():
-    return ExperienceMatching(modelName1='Model1', modelName2='Model2')
+    return ExperienceMatching()
 
 def test_es_initialization(experience_similarity):
     assert experience_similarity.model1Score is None
@@ -141,37 +141,12 @@ def test_en_reset(experience_numerilzer):
 # EXPERIENCE MATCHING TESTS
 
 def test_initialization(experience_matchmaker):
-    assert experience_matchmaker.modelName1 == 'Model1'
-    assert experience_matchmaker.modelName2 == 'Model2'
-    assert experience_matchmaker.model1 is None
-    assert experience_matchmaker.model2 is None
+    assert experience_matchmaker.model1 is not None
+    assert experience_matchmaker.model2 is not None
     assert experience_matchmaker.resumeExperience is None
     assert experience_matchmaker.jobExperience is None
     assert experience_matchmaker.similarity is not None
     assert isinstance(experience_matchmaker.similarity, ExperienceSimilarity)
-
-@patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
-def test_load_models_success(mock_sentence_transformer, experience_matchmaker):
-    mockModel1 = MagicMock()
-    mockModel2 = MagicMock()
-    mock_sentence_transformer.side_effect = [mockModel1, mockModel2]
-    experience_matchmaker.loadModels()
-    assert experience_matchmaker.model1 is not None
-    assert experience_matchmaker.model2 is not None
-    assert experience_matchmaker.model1 == mockModel1
-    assert experience_matchmaker.model2 == mockModel2
-
-def test_load_models_no_names(experience_matchmaker):
-    experience_matchmaker.modelName1 = None
-    experience_matchmaker.modelName2 = None
-    with pytest.raises(ValueError, match="Model names cannot be empty."):
-        experience_matchmaker.loadModels()
-
-@patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
-def test_load_models_failure(mock_sentence_transformer, experience_matchmaker):
-    mock_sentence_transformer.side_effect = Exception("Model loading failed")
-    with pytest.raises(RuntimeError, match="Failed to load models 'Model1' and 'Model2': Model loading failed"):
-        experience_matchmaker.loadModels()
 
 def test_set_inputs_success(experience_matchmaker):
     resumeExperience = "Bachelor of Science in Computer Science"
@@ -212,11 +187,9 @@ def test_set_inputs_invalid(experience_matchmaker):
     with pytest.raises(ValueError, match="Job Experience must be a string."):
         experience_matchmaker.setInputs(resumeExperience, jobExperience)
 
-@patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
-def test_make_match_success(mock_sentence_transformer, experience_matchmaker):
+def test_make_match_success(experience_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     experience_matchmaker.model1 = model1Mock
     experience_matchmaker.model2 = model2Mock
     experience_matchmaker.resumeExperience = "Bachelor of Science in Computer Science"
@@ -230,30 +203,27 @@ def test_make_match_success(mock_sentence_transformer, experience_matchmaker):
     assert score == 0.5
 
 
-@patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
-def test_make_match_no_models(mock_sentence_transformer, experience_matchmaker):
+def test_make_match_no_models(experience_matchmaker):
     experience_matchmaker.model1 = None
     experience_matchmaker.model2 = None
     experience_matchmaker.modelName1 = None
     experience_matchmaker.modelName2 = None
-    with pytest.raises(RuntimeError, match="Failed to load models: Model names cannot be empty."):
+    with pytest.raises(RuntimeError, match="Failed to load models"):
         experience_matchmaker.makeMatch()
 
-@patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
-def test_make_match_no_model_names(mock_sentence_transformer, experience_matchmaker):
+def test_make_match_no_model_names(experience_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     experience_matchmaker.model1 = model1Mock
     experience_matchmaker.model2 = model2Mock
     with pytest.raises(ValueError, match="Inputs are not set"):
         experience_matchmaker.makeMatch()
 
-@patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
-def test_make_match_failure(mock_sentence_transformer, experience_matchmaker):
+def test_make_match_failure(experience_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
+    experience_matchmaker.model1 = model1Mock
+    experience_matchmaker.model2 = model2Mock
     experience_matchmaker.resumeExperience = "Bachelor of Science in Computer Science"
     experience_matchmaker.jobExperience = "Master of Science in Computer Science"
     model1Mock.encode.side_effect = Exception("Encoding failed")
@@ -267,11 +237,9 @@ def test_similarity_score_success(experience_matchmaker):
     score = experience_matchmaker.getSimilarityScore()
     assert score == 0.7
 
-@patch('src.experience_matchmaker.experience_matching.SentenceTransformer')
-def test_similarity_score_no_ensemble(mock_sentence_transformer, experience_matchmaker):
+def test_similarity_score_no_ensemble(experience_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     experience_matchmaker.model1 = model1Mock
     experience_matchmaker.model2 = model2Mock
     experience_matchmaker.similarity.ensembleScore = None
@@ -296,7 +264,3 @@ def test_reset_success(experience_matchmaker):
     assert experience_matchmaker.similarity.ensembleScore == []
     assert experience_matchmaker.resumeExperience is None
     assert experience_matchmaker.jobExperience is None
-    assert experience_matchmaker.model1 is None
-    assert experience_matchmaker.model2 is None
-    assert experience_matchmaker.modelName1 == 'Model1'
-    assert experience_matchmaker.modelName2 == 'Model2'

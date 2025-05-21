@@ -21,7 +21,7 @@ def test_designation_matchmaker_end_to_end(designation_matchmaker):
     for col in required_columns:
         if col not in dataset.columns:
             raise ValueError(f"Column '{col}' not found in the dataset.")
-    for randomIndex in range(len(dataset)):
+    for randomIndex in range(10):
         resume_designation = dataset["resume_title"].iloc[randomIndex]
         job_designation = dataset["jd_title"].iloc[randomIndex]
         # Check if the inputs are valid

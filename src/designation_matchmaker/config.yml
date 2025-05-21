@@ -1,3 +1,1 @@
-MODEL_NAME_1 : 'all-mpnet-base-v2'
-MODEL_NAME_2 :  'paraphrase-MiniLM-L3-v2'
 MAX_INPUT_LENGTH : 1000

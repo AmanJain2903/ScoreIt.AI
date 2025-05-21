@@ -2,9 +2,32 @@ import pytest
 from src.matchmaker_engine.matching_engine import MatchingEngine
 from src.resume_ocr.resume_ocr import ResumeOCR
 from src.jd_scraper.jd_scraper import JobDescriptionScraper
+from src.resume_extractor_agent.resume_agent import ResumeAgent
+from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
 import os
 import pandas as pd
 import numpy as np
+from dotenv import load_dotenv
+load_dotenv()
+
+API_NAME = "OPENROUTER_API_KEY"
+MODEL_NAME = "deepseek/deepseek-chat-v3-0324:free"
+
+RAgent = ResumeAgent(
+    apiKey=os.getenv(API_NAME),
+    modelName=MODEL_NAME,
+    systemPrompt=None, # Default system prompt will be used
+    useDefaultModelIfNone=True,
+    useDefaultSystemPromptIfNone=True
+)
+
+JDAgent = JobDescriptionAgent(
+    apiKey=os.getenv(API_NAME),
+    modelName=MODEL_NAME,
+    systemPrompt=None, # Default system prompt will be used
+    useDefaultModelIfNone=True,
+    useDefaultSystemPromptIfNone=True
+)
 
 pytestmark = pytest.mark.integration
 
@@ -23,8 +46,12 @@ def test_end_to_end_matchmaker_text(matchmaker_engine):
     randomIndex = np.random.randint(0, len(descriptionDataset))
     resume = resumeDataset['Resume'].iloc[randomIndex]
     jd = descriptionDataset['Description'].iloc[randomIndex]
-
-    matchmaker_engine.setInputs(resume, jd)
+    RAgent.setUserPrompt(resume)
+    resumeJson = RAgent.getJsonOutput()
+    JDAgent.setUserPrompt(jd)
+    jdJson = JDAgent.getJsonOutput()
+    matchmaker_engine.resumeJson = resumeJson
+    matchmaker_engine.jdJson = jdJson
     report = matchmaker_engine.getMatch()
 
     assert isinstance(report, dict)
@@ -51,7 +78,12 @@ def test_end_to_end_matchmaker_pdf_path(matchmaker_engine):
     descriptionDataset = pd.read_csv(descriptionDatasetPath)
     randomIndex = np.random.randint(0, len(descriptionDataset))
     jd = descriptionDataset['Description'].iloc[randomIndex]
-    matchmaker_engine.setInputs(resume, jd)
+    RAgent.setUserPrompt(resume)
+    resumeJson = RAgent.getJsonOutput()
+    JDAgent.setUserPrompt(jd)
+    jdJson = JDAgent.getJsonOutput()
+    matchmaker_engine.resumeJson = resumeJson
+    matchmaker_engine.jdJson = jdJson
     report = matchmaker_engine.getMatch()
     assert isinstance(report, dict)
     expected_keys = [
@@ -79,7 +111,12 @@ def test_end_to_end_matchmaker_pdf_bytes(matchmaker_engine):
     descriptionDataset = pd.read_csv(descriptionDatasetPath)
     randomIndex = np.random.randint(0, len(descriptionDataset))
     jd = descriptionDataset['Description'].iloc[randomIndex]
-    matchmaker_engine.setInputs(resume, jd)
+    RAgent.setUserPrompt(resume)
+    resumeJson = RAgent.getJsonOutput()
+    JDAgent.setUserPrompt(jd)
+    jdJson = JDAgent.getJsonOutput()
+    matchmaker_engine.resumeJson = resumeJson
+    matchmaker_engine.jdJson = jdJson
     report = matchmaker_engine.getMatch()
     assert isinstance(report, dict)
     expected_keys = [
@@ -103,7 +140,12 @@ def test_end_to_end_matchmaker_with_jd_link(matchmaker_engine):
     jdScraper = JobDescriptionScraper()
     jdScraper.setInputs(jdLink)
     jd = jdScraper.extractJobDescription()
-    matchmaker_engine.setInputs(resume, jd)
+    RAgent.setUserPrompt(resume)
+    resumeJson = RAgent.getJsonOutput()
+    JDAgent.setUserPrompt(jd)
+    jdJson = JDAgent.getJsonOutput()
+    matchmaker_engine.resumeJson = resumeJson
+    matchmaker_engine.jdJson = jdJson
     report = matchmaker_engine.getMatch()
     assert isinstance(report, dict)
     expected_keys = [

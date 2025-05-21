@@ -5,9 +5,8 @@ import gc
 import numpy as np
 from src.skill_matchmaker import config
 from src.utils import security
-from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-from src.utils.model_load import model1, model2
+from utils.model_load import model1, model2
 
 config = config.Config()
 
@@ -61,24 +60,13 @@ class SkillSimilarity:
         self.ensembleScore = []
 
 class SkillMatching:
-    def __init__(self, modelName1=None, modelName2=None, maxInputLength=None):
-        self.modelName1 = modelName1
-        self.modelName2 = modelName2
+    def __init__(self, maxInputLength=None):
         self.maxInputLength = maxInputLength
-        self.model1 = None
-        self.model2 = None
+        self.model1 = model1
+        self.model2 = model2
         self.resumeSkill = None
         self.jobSkill = None
         self.similarity = SkillSimilarity()
-    
-    def loadModels(self):
-        if not self.modelName1 or not self.modelName2:
-            raise ValueError("Model names cannot be empty.")
-        try:
-            self.model1 = model1
-            self.model2 = model2
-        except Exception as e:
-            raise RuntimeError(f"Failed to load models '{self.modelName1}' and '{self.modelName2}': {e}")
     
     def setInputs(self, resumeSkill, jobSkill):
         if not resumeSkill or not jobSkill:
@@ -92,10 +80,7 @@ class SkillMatching:
     
     def makeMatch(self):
         if not self.model1 or not self.model2:
-            try:
-                self.loadModels()
-            except Exception as e:
-                raise RuntimeError(f"Failed to load models: {e}")
+            raise RuntimeError(f"Failed to load models")
         if not self.resumeSkill or not self.jobSkill:
             raise ValueError("Inputs are not set")
         
@@ -103,6 +88,14 @@ class SkillMatching:
             model1Scores = []
             model2Scores = []
             matchedSkills = {}
+            ResumeEmbeddings1 = []
+            ResumeEmbeddings2 = []
+            for resumeSkill in self.resumeSkill:
+                resumeSkill = resumeSkill.strip()
+                resumeEmbeddings1 = self.model1.encode([resumeSkill])
+                resumeEmbeddings2 = self.model2.encode([resumeSkill])
+                ResumeEmbeddings1.append(resumeEmbeddings1)
+                ResumeEmbeddings2.append(resumeEmbeddings2)
             for jobSkill in self.jobSkill:
                 maxModel1Score = 0
                 maxModel2Score = 1
@@ -110,14 +103,14 @@ class SkillMatching:
                 jobEmbeddings1 = self.model1.encode([jobSkill])
                 jobEmbeddings2 = self.model2.encode([jobSkill])
                 currBest = None
-                for resumeSkill in self.resumeSkill:
+                for i, resumeSkill in enumerate(self.resumeSkill):
                     if resumeSkill in matchedSkills:
                         continue
                     resumeSkill = resumeSkill.strip()
                     if not jobSkill or not resumeSkill:
                         continue
-                    resumeEmbeddings1 = self.model1.encode([resumeSkill])
-                    resumeEmbeddings2 = self.model2.encode([resumeSkill])
+                    resumeEmbeddings1 = ResumeEmbeddings1[i]
+                    resumeEmbeddings2 = ResumeEmbeddings2[i]
                     similarity1 = max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0)
                     similarity2 = max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0)
                     if similarity1>maxModel1Score:
@@ -156,12 +149,6 @@ class SkillMatching:
     def reset(self):
         """Reset the similarity scores and models."""
         self.similarity.reset()
-        if self.model1:
-            del self.model1
-            self.model1 = None
-        if self.model2:
-            del self.model2
-            self.model2 = None
         gc.collect()
         self.resumeSkill = None
         self.jobSkill = None

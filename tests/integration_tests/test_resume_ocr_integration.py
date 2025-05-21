@@ -1,7 +1,6 @@
 import pytest
 from src.resume_ocr.resume_ocr import ResumeOCR
 import os
-import pandas as pd
 import numpy as np
 
 pytestmark = pytest.mark.integration
@@ -10,27 +9,29 @@ dataPath = 'data/pdf_resumes'
 
 @pytest.fixture
 def resume_ocr():
-    ocr = ResumeOCR()
-    return ocr
+    return ResumeOCR()
+
+def get_random_pdf_path():
+    pdfFilePaths = [f for f in os.listdir(dataPath) if f.endswith(".pdf")]
+    assert len(pdfFilePaths) > 0, "No PDF files found in data/pdf_resumes"
+    randomIndex = np.random.randint(0, len(pdfFilePaths))
+    return os.path.join(dataPath, pdfFilePaths[randomIndex])
 
 def test_end_to_end_resume_ocr_path(resume_ocr):
-    pdfFilePaths = os.listdir(dataPath)
-    randomIndex = np.random.randint(0, len(pdfFilePaths))
-    randomFilePath = os.path.join(dataPath, pdfFilePaths[randomIndex])
-    resume_ocr.setInputs(pdfPath=randomFilePath)
+    pdfPath = get_random_pdf_path()
+    resume_ocr.setInputs(pdfPath=pdfPath)
     extractedText = resume_ocr.extractText()
-    assert isinstance(extractedText, str)
-    assert len(extractedText) > 0
-    resume_ocr.resetOCR()
+
+    assert isinstance(extractedText, str), "Extracted text should be a string"
+    assert len(extractedText.strip()) > 0, f"Empty text extracted from {pdfPath}"
 
 def test_end_to_end_resume_ocr_bytes(resume_ocr):
-    pdfFilePaths = os.listdir(dataPath)
-    randomIndex = np.random.randint(0, len(pdfFilePaths))
-    randomFilePath = os.path.join(dataPath, pdfFilePaths[randomIndex])
-    with open(randomFilePath, "rb") as f:
+    pdfPath = get_random_pdf_path()
+    with open(pdfPath, "rb") as f:
         pdfBytes = f.read()
+
     resume_ocr.setInputs(pdfBytes=pdfBytes)
     extractedText = resume_ocr.extractText()
-    assert isinstance(extractedText, str)
-    assert len(extractedText) > 0
-    resume_ocr.resetOCR()
+
+    assert isinstance(extractedText, str), "Extracted text should be a string"
+    assert len(extractedText.strip()) > 0, f"Empty text extracted from bytes of {pdfPath}"
