@@ -89,6 +89,6 @@ def delete_all_history():
         if deleted_count > 0:
             return jsonify({"message": f"Deleted {deleted_count} history records successfully"}), 200
         else:
-            return jsonify({"message": "No history records found to delete"}), 404
+            return jsonify({"message": "No history records found to delete"}), 200
     except Exception:
         return jsonify({"error": "Failed to delete history records"}), 500

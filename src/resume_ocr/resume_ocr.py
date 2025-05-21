@@ -15,15 +15,17 @@
 # print(ocr.extractText())
 # ocr.resetOCR()
 
-import pytesseract
+import easyocr
 from PIL import Image
 from pdf2image import convert_from_bytes, convert_from_path
+import numpy as np
 
 class ResumeOCR:
     def __init__(self):
         self.pdfPath = None
         self.pdfBytes = None
         self.resumeText = ""
+        self.reader = easyocr.Reader(['en'])
     
     def setInputs(self, pdfPath=None, pdfBytes=None):
         if pdfPath is None and pdfBytes is None:
@@ -49,8 +51,9 @@ class ResumeOCR:
         else:
             images = convert_from_bytes(self.pdfBytes)
         for image in images:
-            text = pytesseract.image_to_string(image)
-            self.resumeText += text
+            imagesNP = np.array(image)
+            result = self.reader.readtext(imagesNP, detail=0, paragraph=True)
+            self.resumeText += "\n".join(result) + "\n"
         return self.resumeText
 
     def resetOCR(self):

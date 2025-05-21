@@ -21,7 +21,7 @@ def make_match():
             return jsonify({"error": "Invalid input or missing input"}), 400
     try:
         matchMaker = MatchingEngine()
-        matchMaker.resumeText = matchMaker.jdText = "Set to None"
+        matchMaker.resumeText = matchMaker.jdText = None
         matchMaker.resume_json = resumeJSON
         matchMaker.jd_json = jdJSON
         matchReport = matchMaker.getMatch()

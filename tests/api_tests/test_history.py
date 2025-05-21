@@ -216,7 +216,7 @@ def test_delete_all_history_no_history_found(client):
     response = client.delete('/history/delete_all', json={
         "email": "xyz@example.com"
     })
-    assert response.status_code == 404
+    assert response.status_code == 200
     assert response.json['message'] == "No history records found to delete"
 
 def test_delete_all_history_missing_fields(client):
