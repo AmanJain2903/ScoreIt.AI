@@ -13,7 +13,7 @@
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Deployment.
+> **Current Focus:** Minor Releases & Patch Updates.
 
 ---
 
@@ -107,11 +107,10 @@ ScoreIt.AI is an AI-powered system designed to:
   - Final designation match score = **average of best semantic matches**, adjusted by smart boosting and penalization rules.
 
 **10. End-to-End Matchmaker Engine**  
-- Central orchestrator (`MatchingEngine`) that automates the complete pipeline from raw text inputs to structured match score outputs.  
-  - Accepts unstructured **resume** and **job description** text as inputs.  
-  - Internally invokes `ResumeExtractorAgent` and `JDExtractorAgent` to extract structured entities (e.g., skills, education, tools, etc.).  
+- Central orchestrator (`MatchingEngine`) that automates the complete pipeline from structured inputs to structured match score outputs.  
+  - Accepts structured **resume** and **job description** text as inputs.  
   - Executes each entity matcher module (`SkillMatcher`, `EducationMatcher`, etc.) to compute semantic similarity scores.  
-  - Runs extraction and matching in **parallel threads** to reduce overall latency (avg ~27 seconds).  
+  - Runs extraction and matching in **parallel threads** to reduce overall latency (avg ~2 seconds on Macbook Pro M3 Pro).  
   - Produces a structured output dictionary like:  
     ```json
     {
@@ -289,7 +288,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Frontend deployed using vercel.
 - Backend Deployed using Render.
 - Both are auto deployed with each commit in the main branch.
-- Both have preview with dev branch.
+- Both have preview with staging branch.
 
 ---
 
@@ -298,14 +297,14 @@ ScoreIt.AI is an AI-powered system designed to:
 **Feature Branches and Bugfix Branches**
 
 - `main` for production
-- `dev` for staging 
-- New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to dev.
-- Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to dev.
-- Releases are handled via `release/<version>` branches which are merged to dev.
-- Patches are handled via `patch/<version>` branches which are merged to dev.
-- No direct commits are made to `main` or `dev`.
-- Pull Requests (PRs) are created from `dev` branche to `main`.
-- GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `dev`.
+- `staging` for staging 
+- New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to staging.
+- Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to staging.
+- Releases are handled via `release/<version>` branches which are merged to staging.
+- Patches are handled via `patch/<version>` branches which are merged to staging.
+- No direct commits are made to `main` or `staging`.
+- Pull Requests (PRs) are created from `staging` branch to `main`.
+- GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `staging`.
 - Merges allowed only after all tests pass successfully.
 
 ✅ This workflow ensures isolated, clean, and traceable development!
@@ -316,15 +315,14 @@ ScoreIt.AI is an AI-powered system designed to:
 
 | Feature | Description |
 |:---|:---|
-| **Deployment**    | Deploy the software using Vercel & Render |
 | **Patch Updates** | Fix minor bugs and enhance the overall performance of the software |
 
 ---
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS, Stylized UI using Vanilla CSS.
-- **In Progress:** Deployment.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS, Stylized UI using Vanilla CSS, Deployed the Software using Vercel & Render with CD pipeline.
+- **In Progress:** Minor Releases & Patch Updates.
 
 ---
 

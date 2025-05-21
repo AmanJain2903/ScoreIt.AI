@@ -1,8 +1,8 @@
 # model_store.py
 from sentence_transformers import SentenceTransformer
-from utils.config import Config
+from src.utils import config 
 
-config = Config()
+config = config.Config()
 
 print("⏳ Preloading SentenceTransformer models...")
 
