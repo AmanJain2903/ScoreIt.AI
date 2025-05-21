@@ -7,6 +7,7 @@ from src.skill_matchmaker import config
 from src.utils import security
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+from src.utils.model_load import model1, model2
 
 config = config.Config()
 
@@ -74,8 +75,8 @@ class SkillMatching:
         if not self.modelName1 or not self.modelName2:
             raise ValueError("Model names cannot be empty.")
         try:
-            self.model1 = SentenceTransformer(self.modelName1)
-            self.model2 = SentenceTransformer(self.modelName2)
+            self.model1 = model1
+            self.model2 = model2
         except Exception as e:
             raise RuntimeError(f"Failed to load models '{self.modelName1}' and '{self.modelName2}': {e}")
     
