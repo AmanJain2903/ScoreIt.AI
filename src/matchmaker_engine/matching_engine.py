@@ -98,6 +98,7 @@ from src.designation_matchmaker.designation_matching import DesignationMatching
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.utils.model_load import model1, model2
+import time
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
@@ -147,12 +148,17 @@ class MatchingEngine:
     def getMatch(self):
         if not self.resume_json or not self.jd_json:
             return self.matchReport
+        
+        total_start = time.time()
 
-        with ThreadPoolExecutor(max_workers=2) as executor:
+        with ThreadPoolExecutor(max_workers=8) as executor:
             futures = [executor.submit(self._run_matcher, entity) for entity in self.matchReport]
             for future in as_completed(futures):
                 entity, score = future.result()
                 self.matchReport[entity] = score
+
+        total_end = time.time()
+        print(f"🚀 Total matching completed in {total_end - total_start:.2f}s")
 
         return self.matchReport
     
