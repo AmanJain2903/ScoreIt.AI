@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
 from flasgger.utils import swag_from
 from src.resume_ocr.resume_ocr import ResumeOCR
+import traceback
 
 resume_parser_bp = Blueprint("resume_parser", __name__)
 
@@ -18,6 +19,7 @@ def parse_resume():
         resume_ocr.resetOCR()
         return jsonify({'resume_text' : text}), 200
     except Exception:
+        traceback.print_exc()
         return jsonify({"error": "Internal error while processing the file"}), 500
     
     
