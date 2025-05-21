@@ -98,7 +98,7 @@ from src.designation_matchmaker.designation_matching import DesignationMatching
 from dotenv import load_dotenv
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from utils.model_load import model1, model2
+from src.utils.model_load import model1, model2
 
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
