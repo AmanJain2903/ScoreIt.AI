@@ -26,7 +26,7 @@ responses:
         message:
           type: string
           example: Deleted 3 history records successfully
-  404:
+  200:
     description: No history records found to delete
     schema:
       type: object

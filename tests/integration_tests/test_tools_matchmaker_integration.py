@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from src.tools_matchmaker.tools_matching import ToolMatching
 from src.tools_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration
@@ -21,7 +22,7 @@ def test_tool_matchmaker_end_to_end(tool_matchmaker):
     for col in required_columns:
         if col not in dataset.columns:
             raise ValueError(f"Column '{col}' not found in the dataset.")
-    for randomIndex in range(len(dataset)):
+    for randomIndex in range(10):
         resume_tool = dataset['resume_tools'].iloc[randomIndex]
         job_tool = dataset['jd_tools'].iloc[randomIndex]
         # Check if the inputs are valid

@@ -1,5 +1,7 @@
 # ScoreIt.AI 🚀
 
+[![Vercel - Production](https://img.shields.io/badge/Vercel-Production-brightgreen?logo=vercel&logoColor=white)](https://score-it-ai.vercel.app/auth)
+
 [![GitHub Release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI)](https://github.com/AmanJain2903/ScoreIt.AI/releases)
 
 [![Build Status](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml/badge.svg)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml)
@@ -13,7 +15,7 @@
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Minor fixes, enhancements and patch releases.
+> **Current Focus:** Minor Releases & Patch Updates.
 
 ---
 
@@ -107,11 +109,10 @@ ScoreIt.AI is an AI-powered system designed to:
   - Final designation match score = **average of best semantic matches**, adjusted by smart boosting and penalization rules.
 
 **10. End-to-End Matchmaker Engine**  
-- Central orchestrator (`MatchingEngine`) that automates the complete pipeline from raw text inputs to structured match score outputs.  
-  - Accepts unstructured **resume** and **job description** text as inputs.  
-  - Internally invokes `ResumeExtractorAgent` and `JDExtractorAgent` to extract structured entities (e.g., skills, education, tools, etc.).  
+- Central orchestrator (`MatchingEngine`) that automates the complete pipeline from structured inputs to structured match score outputs.  
+  - Accepts structured **resume** and **job description** text as inputs.  
   - Executes each entity matcher module (`SkillMatcher`, `EducationMatcher`, etc.) to compute semantic similarity scores.  
-  - Runs extraction and matching in **parallel threads** to reduce overall latency (avg ~27 seconds).  
+  - Runs extraction and matching in **parallel threads** to reduce overall latency (avg ~2 seconds on Macbook Pro M3 Pro).  
   - Produces a structured output dictionary like:  
     ```json
     {
@@ -131,7 +132,7 @@ ScoreIt.AI is an AI-powered system designed to:
     - `pdfPath` – local path to PDF
   - Internally uses:
     - `pdf2image` – to convert PDF pages to images
-    - `pytesseract` – to extract text from each image using OCR
+    - `pymupdf` – to extract text from pdf using OCR
 ⚙️ Features
   - ✅ Accepts either PDF **file path** or **bytes**
   - ✅ Compatible with both scanned resumes and digital PDFs
@@ -251,7 +252,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
 **8. Test Achievements**
-- 338 test cases written covering Unit + Integration + API tests combined.
+- 300+ test cases written covering Unit + Integration + API tests combined.
 - Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
 - Relevent modules ran through performance testing.
@@ -285,19 +286,27 @@ ScoreIt.AI is an AI-powered system designed to:
 **6. Installable Clean Packaging**  
 - Project designed with a `setup.py` so it can be installed easily via `pip install .`.
 
+**7. Continous Deployment**  
+- Frontend deployed using vercel.
+- Backend Deployed using Render.
+- Both are auto deployed with each commit in the main branch.
+- Both have preview with staging branch.
+
 ---
 
 ## 🛠️ Development Workflow
 
 **Feature Branches and Bugfix Branches**
 
-- New functionalities are always developed inside feature branches: `feature/<feature-name>`.
-- Bugfixes are handled via `bugfix/<bug-description>` branches.
-- Releases are handled via `release/<version>` branches.
-- Patches are handled via `patch/<version>` branches.
-- No direct commits are made to `main`.
-- Pull Requests (PRs) are created from feature/bugfix branches to `main`.
-- GitHub Actions automatically runs Unit and Integration tests on PRs.
+- `main` for production
+- `staging` for staging 
+- New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to staging.
+- Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to staging.
+- Releases are handled via `release/<version>` branches which are merged to staging.
+- Patches are handled via `patch/<version>` branches which are merged to staging.
+- No direct commits are made to `main` or `staging`.
+- Pull Requests (PRs) are created from `staging` branch to `main`.
+- GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `staging`.
 - Merges allowed only after all tests pass successfully.
 
 ✅ This workflow ensures isolated, clean, and traceable development!
@@ -314,8 +323,8 @@ ScoreIt.AI is an AI-powered system designed to:
 
 ## 📢 Note:
 
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS, Stylized UI using Vanilla CSS.
-- **In Progress:** Bug Fixes & Patch Updates.
+- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS, Stylized UI using Vanilla CSS, Deployed the Software using Vercel & Render with CD pipeline.
+- **In Progress:** Minor Releases & Patch Updates.
 
 ---
 
@@ -352,7 +361,10 @@ ScoreIt.AI is an AI-powered system designed to:
 - `npm install axios`
 - `npm install react-router-dom`
 
-## To run development environment
+## To run frontend development environment
 - `npm start`
+
+## To start backend development environment locally
+- `python run_local.py`
 
 ---

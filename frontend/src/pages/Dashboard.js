@@ -188,30 +188,48 @@ const Dashboard = () => {
       const resumeFormData = new FormData();
       resumeFormData.append('resume_text', finalResumeText);
       
-      const resumeExtractResponse = await extractResume(resumeFormData);
-      if (!resumeExtractResponse.data || !resumeExtractResponse.data.resume_entites) {
-        alert('Failed to extract resume entities: ' + (resumeExtractResponse.data?.error || 'Unknown error'));
+      let resumeExtractResponse;
+      try {
+        resumeExtractResponse = await extractResume(resumeFormData);
+        if (!resumeExtractResponse.data || !resumeExtractResponse.data.resume_entites) {
+          // First attempt failed, try once more
+          resumeExtractResponse = await extractResume(resumeFormData);
+          if (!resumeExtractResponse.data || !resumeExtractResponse.data.resume_entites) {
+            throw new Error('Failed to extract resume entities');
+          }
+        }
+        finalResumeJSON = resumeExtractResponse.data.resume_entites;
+        setResumeJSON(finalResumeJSON);
+      } catch (error) {
+        alert('Failed to extract resume entities: ' + (error.message || 'Unknown error'));
         setIsProcessing(false);
         setLoadingMessage('');
         return;
       }
-      finalResumeJSON = resumeExtractResponse.data.resume_entites;
-      setResumeJSON(finalResumeJSON);
 
       // Extract JSON from job description text
       setLoadingMessage('Extracting Job Description Entities...');
       const jdFormData = new FormData();
       jdFormData.append('jd_text', finalJobDescription);
       
-      const jdExtractResponse = await extractJD(jdFormData);
-      if (!jdExtractResponse.data || !jdExtractResponse.data.jd_entites) {
-        alert('Failed to extract job description entities: ' + (jdExtractResponse.data?.error || 'Unknown error'));
+      let jdExtractResponse;
+      try {
+        jdExtractResponse = await extractJD(jdFormData);
+        if (!jdExtractResponse.data || !jdExtractResponse.data.jd_entites) {
+          // First attempt failed, try once more
+          jdExtractResponse = await extractJD(jdFormData);
+          if (!jdExtractResponse.data || !jdExtractResponse.data.jd_entites) {
+            throw new Error('Failed to extract job description entities');
+          }
+        }
+        finalJobJSON = jdExtractResponse.data.jd_entites;
+        setJobJSON(finalJobJSON);
+      } catch (error) {
+        alert('Failed to extract job description entities: ' + (error.message || 'Unknown error'));
         setIsProcessing(false);
         setLoadingMessage('');
         return;
       }
-      finalJobJSON = jdExtractResponse.data.jd_entites;
-      setJobJSON(finalJobJSON);
 
       // Make the match using the extracted JSONs
       setLoadingMessage('Analyzing Match...');

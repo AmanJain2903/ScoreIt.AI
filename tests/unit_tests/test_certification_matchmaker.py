@@ -7,7 +7,7 @@ pytestmark = pytest.mark.unit
 
 @pytest.fixture
 def certification_matchmaker():
-    return CertificationMatching(modelName1='Model1', modelName2='Model2', maxInputLength=10000)
+    return CertificationMatching(maxInputLength=10000)
 
 @pytest.fixture
 def certification_similarity():
@@ -92,38 +92,13 @@ def test_ts_reset(certification_similarity):
     assert isinstance(certification_similarity.ensembleScore, list)
 
 def test_initialization(certification_matchmaker):
-    assert certification_matchmaker.modelName1 == 'Model1'
-    assert certification_matchmaker.modelName2 == 'Model2'
     assert certification_matchmaker.maxInputLength == 10000
-    assert certification_matchmaker.model1 is None
-    assert certification_matchmaker.model2 is None
+    assert certification_matchmaker.model1 is not None
+    assert certification_matchmaker.model2 is not None
     assert certification_matchmaker.resumeCertification is None
     assert certification_matchmaker.jobCertification is None
     assert certification_matchmaker.similarity is not None
     assert isinstance(certification_matchmaker.similarity, CertificationSimilarity)
-
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_load_models_success(mock_sentence_transformer, certification_matchmaker):
-    mockModel1 = MagicMock()
-    mockModel2 = MagicMock()
-    mock_sentence_transformer.side_effect = [mockModel1, mockModel2]
-    certification_matchmaker.loadModels()
-    assert certification_matchmaker.model1 is not None
-    assert certification_matchmaker.model2 is not None
-    assert certification_matchmaker.model1 == mockModel1
-    assert certification_matchmaker.model2 == mockModel2
-
-def test_load_models_no_names(certification_matchmaker):
-    certification_matchmaker.modelName1 = None
-    certification_matchmaker.modelName2 = None
-    with pytest.raises(ValueError, match="Model names cannot be empty."):
-        certification_matchmaker.loadModels()
-
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_load_models_failure(mock_sentence_transformer, certification_matchmaker):
-    mock_sentence_transformer.side_effect = Exception("Model loading failed")
-    with pytest.raises(RuntimeError, match="Failed to load models 'Model1' and 'Model2': Model loading failed"):
-        certification_matchmaker.loadModels()
 
 def test_set_inputs_success(certification_matchmaker):
     resumeCertification = "AWS Certified Solutions Architect, Google Professional Data Engineer, Certified Kubernetes Administrator"
@@ -166,11 +141,9 @@ def test_set_inputs_invalid(certification_matchmaker):
     with pytest.raises(ValueError, match="Job certification must be a string."):
         certification_matchmaker.setInputs(resumeCertification, jobCertification)
 
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_make_match_success(mock_sentence_transformer, certification_matchmaker):
+def test_make_match_success(certification_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     certification_matchmaker.model1 = model1Mock
     certification_matchmaker.model2 = model2Mock
     certification_matchmaker.resumeCertification = ["AWS Certified Solutions Architect",
@@ -186,30 +159,25 @@ def test_make_match_success(mock_sentence_transformer, certification_matchmaker)
     assert score == 1.0
 
 
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_make_match_no_models(mock_sentence_transformer, certification_matchmaker):
+def test_make_match_no_models(certification_matchmaker):
     certification_matchmaker.model1 = None
     certification_matchmaker.model2 = None
-    certification_matchmaker.modelName1 = None
-    certification_matchmaker.modelName2 = None
-    with pytest.raises(RuntimeError, match="Failed to load models: Model names cannot be empty."):
+    with pytest.raises(RuntimeError, match="Failed to load models"):
         certification_matchmaker.makeMatch()
 
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_make_match_no_model_names(mock_sentence_transformer, certification_matchmaker):
+def test_make_match_no_model_names(certification_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     certification_matchmaker.model1 = model1Mock
     certification_matchmaker.model2 = model2Mock
     with pytest.raises(ValueError, match="Inputs are not set"):
         certification_matchmaker.makeMatch()
 
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_make_match_failure(mock_sentence_transformer, certification_matchmaker):
+def test_make_match_failure(certification_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
+    certification_matchmaker.model1 = model1Mock
+    certification_matchmaker.model2 = model2Mock
     certification_matchmaker.resumeCertification = "AWS Certified Solutions Architect, Google Professional Data Engineer, Certified Kubernetes Administrator"
     certification_matchmaker.jobCertification = "AWS Solutions Architect Associate, GCP Professional Data Engineer, Kubernetes Certificationn"
     model1Mock.encode.side_effect = Exception("Encoding failed")
@@ -223,11 +191,9 @@ def test_similarity_score_success(certification_matchmaker):
     score = certification_matchmaker.getSimilarityScore()
     assert score == 0.75
 
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_similarity_score_no_ensemble(mock_sentence_transformer, certification_matchmaker):
+def test_similarity_score_no_ensemble(certification_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     certification_matchmaker.model1 = model1Mock
     certification_matchmaker.model2 = model2Mock
     certification_matchmaker.similarity.model1Score = []
@@ -244,11 +210,9 @@ def test_similarity_score_invalid(certification_matchmaker):
     with pytest.raises(ValueError, match="Ensemble score is not a valid list."):
         certification_matchmaker.getSimilarityScore()
 
-@patch('src.certification_matchmaker.certification_matching.SentenceTransformer')
-def test_similarity_score_empty_list(mock_sentence_transformer, certification_matchmaker):
+def test_similarity_score_empty_list(certification_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     certification_matchmaker.model1 = model1Mock
     certification_matchmaker.model2 = model2Mock
     certification_matchmaker.similarity.model1Score = []
@@ -272,7 +236,3 @@ def test_reset_success(certification_matchmaker):
     assert isinstance(certification_matchmaker.similarity.ensembleScore, list)
     assert certification_matchmaker.resumeCertification is None
     assert certification_matchmaker.jobCertification is None
-    assert certification_matchmaker.model1 is None
-    assert certification_matchmaker.model2 is None
-    assert certification_matchmaker.modelName1 == 'Model1'
-    assert certification_matchmaker.modelName2 == 'Model2'

@@ -11,6 +11,12 @@ setup(
         "src.jd_extractor_agent": ["config.yml", "data/*.txt"], 
         "src.resume_extractor_agent": ["config.yml", "data/*.txt"],
         "src.education_matching": ["config.yml"],
+        "src.experience_matching": ["config.yml"],
+        "src.skill_matching": ["config.yml"],
+        "src.tools_matching": ["config.yml"],
+        "src.certification_matching": ["config.yml"],
+        "src.designation_matching": ["config.yml"],
+        "src.utils": ["config.yml"],
     },
     install_requires=[
     "dotenv==0.9.9",
@@ -33,7 +39,7 @@ setup(
     "bandit==1.8.3",
     "pylint==3.3.6",
     "psutil==7.0.0",
-    "pytesseract==0.3.13",
+    "pymupdf==1.25.5",
     "pdf2image==1.17.0",
     "pillow==11.2.1",
     "requests==2.32.3",
@@ -46,6 +52,7 @@ setup(
     "bcrypt==4.3.0",
     "PyJWT==2.10.1",
     "pymongo==4.12.1",
+    "torch==2.7.0",
 ]
 )
 

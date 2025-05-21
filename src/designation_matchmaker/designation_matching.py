@@ -25,9 +25,8 @@ import gc
 import numpy as np
 from src.designation_matchmaker import config
 from src.utils import security
-from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-
+from src.utils.model_load import model1, model2
 config = config.Config()
 
 class DesignationSimilarity:
@@ -80,28 +79,13 @@ class DesignationSimilarity:
         self.ensembleScore = []
 
 class DesignationMatching:
-    def __init__(self, modelName1=None, modelName2=None, maxInputLength=None):
-        if modelName1 is None:
-            modelName1 = config.MODEL_NAME_1
-        if modelName2 is None:
-            modelName2 = config.MODEL_NAME_2
-        self.modelName1 = modelName1
-        self.modelName2 = modelName2
+    def __init__(self, maxInputLength=None):
         self.maxInputLength = maxInputLength
-        self.model1 = None
-        self.model2 = None
+        self.model1 = model1
+        self.model2 = model2
         self.resumeDesignation = None
         self.jobDesignation = None
         self.similarity = DesignationSimilarity()
-    
-    def loadModels(self):
-        if not self.modelName1 or not self.modelName2:
-            raise ValueError("Model names cannot be empty.")
-        try:
-            self.model1 = SentenceTransformer(self.modelName1)
-            self.model2 = SentenceTransformer(self.modelName2)
-        except Exception as e:
-            raise RuntimeError(f"Failed to load models '{self.modelName1}' and '{self.modelName2}': {e}")
     
     def setInputs(self, resumeDesignation, jobDesignation):
         if not resumeDesignation or not jobDesignation:
@@ -115,10 +99,7 @@ class DesignationMatching:
     
     def makeMatch(self):
         if not self.model1 or not self.model2:
-            try:
-                self.loadModels()
-            except Exception as e:
-                raise RuntimeError(f"Failed to load models: {e}")
+            raise RuntimeError(f"Failed to load models")
         if not self.resumeDesignation or not self.jobDesignation:
             raise ValueError("Inputs are not set")
         
@@ -126,6 +107,14 @@ class DesignationMatching:
             model1Scores = []
             model2Scores = []
             matchedDesignations = {}
+            ResumeEmbeddings1 = []
+            ResumeEmbeddings2 = []
+            for resumeDesignation in self.resumeDesignation:
+                resumeDesignation = resumeDesignation.strip()
+                resumeEmbeddings1 = self.model1.encode([resumeDesignation])
+                resumeEmbeddings2 = self.model2.encode([resumeDesignation])
+                ResumeEmbeddings1.append(resumeEmbeddings1)
+                ResumeEmbeddings2.append(resumeEmbeddings2)
             for jobDesignation in self.jobDesignation:
                 maxModel1Score = 0
                 maxModel2Score = 1
@@ -133,14 +122,14 @@ class DesignationMatching:
                 jobEmbeddings1 = self.model1.encode([jobDesignation])
                 jobEmbeddings2 = self.model2.encode([jobDesignation])
                 currBest = None
-                for resumeDesignation in self.resumeDesignation:
+                for i, resumeDesignation in enumerate(self.resumeDesignation):
                     if resumeDesignation in matchedDesignations:
                         continue
                     resumeDesignation = resumeDesignation.strip()
                     if not jobDesignation or not resumeDesignation:
                         continue
-                    resumeEmbeddings1 = self.model1.encode([resumeDesignation])
-                    resumeEmbeddings2 = self.model2.encode([resumeDesignation])
+                    resumeEmbeddings1 = ResumeEmbeddings1[i]
+                    resumeEmbeddings2 = ResumeEmbeddings2[i]
                     similarity1 = max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0)
                     similarity2 = max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0)
                     if similarity1>maxModel1Score:
@@ -179,12 +168,6 @@ class DesignationMatching:
     def reset(self):
         """Reset the similarity scores and models."""
         self.similarity.reset()
-        if self.model1:
-            del self.model1
-            self.model1 = None
-        if self.model2:
-            del self.model2
-            self.model2 = None
         gc.collect()
         self.resumeDesignation = None
         self.jobDesignation = None

@@ -27,8 +27,8 @@ import gc
 import numpy as np
 from src.tools_matchmaker import config
 from src.utils import security
-from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+from src.utils.model_load import model1, model2
 
 config = config.Config()
 
@@ -82,28 +82,13 @@ class ToolSimilarity:
         self.ensembleScore = []
 
 class ToolMatching:
-    def __init__(self, modelName1=None, modelName2=None, maxInputLength=None):
-        if modelName1 is None:
-            modelName1 = config.MODEL_NAME_1
-        if modelName2 is None:
-            modelName2 = config.MODEL_NAME_2
-        self.modelName1 = modelName1
-        self.modelName2 = modelName2
+    def __init__(self, maxInputLength=None):
         self.maxInputLength = maxInputLength
-        self.model1 = None
-        self.model2 = None
+        self.model1 = model1
+        self.model2 = model2
         self.resumeTool = None
         self.jobTool = None
         self.similarity = ToolSimilarity()
-    
-    def loadModels(self):
-        if not self.modelName1 or not self.modelName2:
-            raise ValueError("Model names cannot be empty.")
-        try:
-            self.model1 = SentenceTransformer(self.modelName1)
-            self.model2 = SentenceTransformer(self.modelName2)
-        except Exception as e:
-            raise RuntimeError(f"Failed to load models '{self.modelName1}' and '{self.modelName2}': {e}")
     
     def setInputs(self, resumeTool, jobTool):
         if not resumeTool or not jobTool:
@@ -117,10 +102,7 @@ class ToolMatching:
     
     def makeMatch(self):
         if not self.model1 or not self.model2:
-            try:
-                self.loadModels()
-            except Exception as e:
-                raise RuntimeError(f"Failed to load models: {e}")
+            raise RuntimeError(f"Failed to load models")
         if not self.resumeTool or not self.jobTool:
             raise ValueError("Inputs are not set")
         
@@ -128,21 +110,29 @@ class ToolMatching:
             model1Scores = []
             model2Scores = []
             matchedTools = {}
+            ResumeEmbeddings1 = []
+            ResumeEmbeddings2 = []
+            for resumeTool in self.resumeTool:
+                resumeTool = resumeTool.strip()
+                resumeEmbeddings1 = self.model1.encode([resumeTool])
+                resumeEmbeddings2 = self.model2.encode([resumeTool])
+                ResumeEmbeddings1.append(resumeEmbeddings1)
+                ResumeEmbeddings2.append(resumeEmbeddings2)
             for jobTool in self.jobTool:
                 maxModel1Score = 0
                 maxModel2Score = 1
                 jobTool = jobTool.strip()
                 jobEmbeddings1 = self.model1.encode([jobTool])
-                jobEmbeddings2 = self.model2.encode([jobTool])
+                jobEmbeddings2 = self.model2.encode([jobTool])  
                 currBest = None
-                for resumeTool in self.resumeTool:
+                for i, resumeTool in enumerate(self.resumeTool):
                     if resumeTool in matchedTools:
                         continue
                     resumeTool = resumeTool.strip()
                     if not jobTool or not resumeTool:
                         continue
-                    resumeEmbeddings1 = self.model1.encode([resumeTool])
-                    resumeEmbeddings2 = self.model2.encode([resumeTool])
+                    resumeEmbeddings1 = ResumeEmbeddings1[i]
+                    resumeEmbeddings2 = ResumeEmbeddings2[i]
                     similarity1 = max(float(cosine_similarity(jobEmbeddings1, resumeEmbeddings1)[0][0]), 0)
                     similarity2 = max(float(cosine_similarity(jobEmbeddings2, resumeEmbeddings2)[0][0]), 0)
                     if similarity1>maxModel1Score:
@@ -181,12 +171,6 @@ class ToolMatching:
     def reset(self):
         """Reset the similarity scores and models."""
         self.similarity.reset()
-        if self.model1:
-            del self.model1
-            self.model1 = None
-        if self.model2:
-            del self.model2
-            self.model2 = None
         gc.collect()
         self.resumeTool = None
         self.jobTool = None

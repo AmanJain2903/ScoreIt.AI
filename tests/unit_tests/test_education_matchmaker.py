@@ -7,7 +7,7 @@ pytestmark = pytest.mark.unit
 
 @pytest.fixture
 def education_matchmaker():
-    return EducationMatching(modelName1='Model1', modelName2='Model2')
+    return EducationMatching()
 
 @pytest.fixture
 def education_similarity():
@@ -82,37 +82,13 @@ def test_es_reset(education_similarity):
     assert education_similarity.ensembleScore == []
 
 def test_initialization(education_matchmaker):
-    assert education_matchmaker.modelName1 == 'Model1'
-    assert education_matchmaker.modelName2 == 'Model2'
-    assert education_matchmaker.model1 is None
-    assert education_matchmaker.model2 is None
+    assert education_matchmaker.model1 is not None
+    assert education_matchmaker.model2 is not None
     assert education_matchmaker.resumeEducation is None
     assert education_matchmaker.jobEducation is None
     assert education_matchmaker.similarity is not None
     assert isinstance(education_matchmaker.similarity, EducationSimilarity)
 
-@patch('src.education_matchmaker.education_matching.SentenceTransformer')
-def test_load_models_success(mock_sentence_transformer, education_matchmaker):
-    mockModel1 = MagicMock()
-    mockModel2 = MagicMock()
-    mock_sentence_transformer.side_effect = [mockModel1, mockModel2]
-    education_matchmaker.loadModels()
-    assert education_matchmaker.model1 is not None
-    assert education_matchmaker.model2 is not None
-    assert education_matchmaker.model1 == mockModel1
-    assert education_matchmaker.model2 == mockModel2
-
-def test_load_models_no_names(education_matchmaker):
-    education_matchmaker.modelName1 = None
-    education_matchmaker.modelName2 = None
-    with pytest.raises(ValueError, match="Model names cannot be empty."):
-        education_matchmaker.loadModels()
-
-@patch('src.education_matchmaker.education_matching.SentenceTransformer')
-def test_load_models_failure(mock_sentence_transformer, education_matchmaker):
-    mock_sentence_transformer.side_effect = Exception("Model loading failed")
-    with pytest.raises(RuntimeError, match="Failed to load models 'Model1' and 'Model2': Model loading failed"):
-        education_matchmaker.loadModels()
 
 def test_set_inputs_success(education_matchmaker):
     resumeEducation = "Bachelor of Science in Computer Science"
@@ -153,11 +129,9 @@ def test_set_inputs_invalid(education_matchmaker):
     with pytest.raises(ValueError, match="Job education must be a string."):
         education_matchmaker.setInputs(resumeEducation, jobEducation)
 
-@patch('src.education_matchmaker.education_matching.SentenceTransformer')
-def test_make_match_success(mock_sentence_transformer, education_matchmaker):
+def test_make_match_success(education_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     education_matchmaker.model1 = model1Mock
     education_matchmaker.model2 = model2Mock
     education_matchmaker.resumeEducation = "Bachelor of Science in Computer Science"
@@ -169,30 +143,25 @@ def test_make_match_success(mock_sentence_transformer, education_matchmaker):
     assert score == 0.7
 
 
-@patch('src.education_matchmaker.education_matching.SentenceTransformer')
-def test_make_match_no_models(mock_sentence_transformer, education_matchmaker):
+def test_make_match_no_models(education_matchmaker):
     education_matchmaker.model1 = None
     education_matchmaker.model2 = None
-    education_matchmaker.modelName1 = None
-    education_matchmaker.modelName2 = None
-    with pytest.raises(RuntimeError, match="Failed to load models: Model names cannot be empty."):
+    with pytest.raises(RuntimeError, match="Failed to load models"):
         education_matchmaker.makeMatch()
 
-@patch('src.education_matchmaker.education_matching.SentenceTransformer')
-def test_make_match_no_model_names(mock_sentence_transformer, education_matchmaker):
+def test_make_match_no_model_names(education_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     education_matchmaker.model1 = model1Mock
     education_matchmaker.model2 = model2Mock
     with pytest.raises(ValueError, match="Inputs are not set"):
         education_matchmaker.makeMatch()
 
-@patch('src.education_matchmaker.education_matching.SentenceTransformer')
-def test_make_match_failure(mock_sentence_transformer, education_matchmaker):
+def test_make_match_failure(education_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
+    education_matchmaker.model1 = model1Mock
+    education_matchmaker.model2 = model2Mock
     education_matchmaker.resumeEducation = "Bachelor of Science in Computer Science"
     education_matchmaker.jobEducation = "Master of Science in Computer Science"
     model1Mock.encode.side_effect = Exception("Encoding failed")
@@ -206,11 +175,9 @@ def test_similarity_score_success(education_matchmaker):
     score = education_matchmaker.getSimilarityScore()
     assert score == 0.7
 
-@patch('src.education_matchmaker.education_matching.SentenceTransformer')
-def test_similarity_score_no_ensemble(mock_sentence_transformer, education_matchmaker):
+def test_similarity_score_no_ensemble(education_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     education_matchmaker.model1 = model1Mock
     education_matchmaker.model2 = model2Mock
     education_matchmaker.similarity.ensembleScore = None
@@ -235,7 +202,3 @@ def test_reset_success(education_matchmaker):
     assert education_matchmaker.similarity.ensembleScore == []
     assert education_matchmaker.resumeEducation is None
     assert education_matchmaker.jobEducation is None
-    assert education_matchmaker.model1 is None
-    assert education_matchmaker.model2 is None
-    assert education_matchmaker.modelName1 == 'Model1'
-    assert education_matchmaker.modelName2 == 'Model2'

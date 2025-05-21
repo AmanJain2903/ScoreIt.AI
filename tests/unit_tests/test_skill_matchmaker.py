@@ -7,7 +7,7 @@ pytestmark = pytest.mark.unit
 
 @pytest.fixture
 def skill_matchmaker():
-    return SkillMatching(modelName1='Model1', modelName2='Model2', maxInputLength=10000)
+    return SkillMatching(maxInputLength=10000)
 
 @pytest.fixture
 def skill_similarity():
@@ -92,38 +92,13 @@ def test_ss_reset(skill_similarity):
     assert isinstance(skill_similarity.ensembleScore, list)
 
 def test_initialization(skill_matchmaker):
-    assert skill_matchmaker.modelName1 == 'Model1'
-    assert skill_matchmaker.modelName2 == 'Model2'
     assert skill_matchmaker.maxInputLength == 10000
-    assert skill_matchmaker.model1 is None
-    assert skill_matchmaker.model2 is None
+    assert skill_matchmaker.model1 is not None
+    assert skill_matchmaker.model2 is not None
     assert skill_matchmaker.resumeSkill is None
     assert skill_matchmaker.jobSkill is None
     assert skill_matchmaker.similarity is not None
     assert isinstance(skill_matchmaker.similarity, SkillSimilarity)
-
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_load_models_success(mock_sentence_transformer, skill_matchmaker):
-    mockModel1 = MagicMock()
-    mockModel2 = MagicMock()
-    mock_sentence_transformer.side_effect = [mockModel1, mockModel2]
-    skill_matchmaker.loadModels()
-    assert skill_matchmaker.model1 is not None
-    assert skill_matchmaker.model2 is not None
-    assert skill_matchmaker.model1 == mockModel1
-    assert skill_matchmaker.model2 == mockModel2
-
-def test_load_models_no_names(skill_matchmaker):
-    skill_matchmaker.modelName1 = None
-    skill_matchmaker.modelName2 = None
-    with pytest.raises(ValueError, match="Model names cannot be empty."):
-        skill_matchmaker.loadModels()
-
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_load_models_failure(mock_sentence_transformer, skill_matchmaker):
-    mock_sentence_transformer.side_effect = Exception("Model loading failed")
-    with pytest.raises(RuntimeError, match="Failed to load models 'Model1' and 'Model2': Model loading failed"):
-        skill_matchmaker.loadModels()
 
 def test_set_inputs_success(skill_matchmaker):
     resumeSkill = "Python, Java"
@@ -166,11 +141,9 @@ def test_set_inputs_invalid(skill_matchmaker):
     with pytest.raises(ValueError, match="Job skill must be a string."):
         skill_matchmaker.setInputs(resumeSkill, jobSkill)
 
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_make_match_success(mock_sentence_transformer, skill_matchmaker):
+def test_make_match_success(skill_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     skill_matchmaker.model1 = model1Mock
     skill_matchmaker.model2 = model2Mock
     skill_matchmaker.resumeSkill = ['python', 'java']
@@ -182,30 +155,27 @@ def test_make_match_success(mock_sentence_transformer, skill_matchmaker):
     assert score == 1.0
 
 
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_make_match_no_models(mock_sentence_transformer, skill_matchmaker):
+def test_make_match_no_models(skill_matchmaker):
     skill_matchmaker.model1 = None
     skill_matchmaker.model2 = None
     skill_matchmaker.modelName1 = None
     skill_matchmaker.modelName2 = None
-    with pytest.raises(RuntimeError, match="Failed to load models: Model names cannot be empty."):
+    with pytest.raises(RuntimeError, match="Failed to load models"):
         skill_matchmaker.makeMatch()
 
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_make_match_no_model_names(mock_sentence_transformer, skill_matchmaker):
+def test_make_match_no_model_names(skill_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     skill_matchmaker.model1 = model1Mock
     skill_matchmaker.model2 = model2Mock
     with pytest.raises(ValueError, match="Inputs are not set"):
         skill_matchmaker.makeMatch()
 
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_make_match_failure(mock_sentence_transformer, skill_matchmaker):
+def test_make_match_failure(skill_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
+    skill_matchmaker.model1 = model1Mock
+    skill_matchmaker.model2 = model2Mock
     skill_matchmaker.resumeSkill = "Python, Java"
     skill_matchmaker.jobSkill = "Python, Machine Learning, Data Science"
     model1Mock.encode.side_effect = Exception("Encoding failed")
@@ -219,11 +189,9 @@ def test_similarity_score_success(skill_matchmaker):
     score = skill_matchmaker.getSimilarityScore()
     assert score == 0.75
 
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_similarity_score_no_ensemble(mock_sentence_transformer, skill_matchmaker):
+def test_similarity_score_no_ensemble(skill_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     skill_matchmaker.model1 = model1Mock
     skill_matchmaker.model2 = model2Mock
     skill_matchmaker.similarity.model1Score = []
@@ -240,11 +208,9 @@ def test_similarity_score_invalid(skill_matchmaker):
     with pytest.raises(ValueError, match="Ensemble score is not a valid list."):
         skill_matchmaker.getSimilarityScore()
 
-@patch('src.skill_matchmaker.skill_matching.SentenceTransformer')
-def test_similarity_score_empty_list(mock_sentence_transformer, skill_matchmaker):
+def test_similarity_score_empty_list(skill_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     skill_matchmaker.model1 = model1Mock
     skill_matchmaker.model2 = model2Mock
     skill_matchmaker.similarity.model1Score = []
@@ -268,7 +234,3 @@ def test_reset_success(skill_matchmaker):
     assert isinstance(skill_matchmaker.similarity.ensembleScore, list)
     assert skill_matchmaker.resumeSkill is None
     assert skill_matchmaker.jobSkill is None
-    assert skill_matchmaker.model1 is None
-    assert skill_matchmaker.model2 is None
-    assert skill_matchmaker.modelName1 == 'Model1'
-    assert skill_matchmaker.modelName2 == 'Model2'

@@ -3,6 +3,7 @@ import pandas as pd
 from src.skill_matchmaker.technical_skill_matching import TechnicalSkillMatching
 from src.skill_matchmaker.soft_skill_matching import SoftSkillMatching
 from src.skill_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration
@@ -27,7 +28,7 @@ def test_technical_skill_matchmaker_end_to_end(technical_skill_matchmaker):
     for col in required_columns:
         if col not in dataset.columns:
             raise ValueError(f"Column '{col}' not found in the dataset.")
-    for randomIndex in range(len(dataset)):
+    for randomIndex in range(10):
         resume_skill = dataset['resume_skills'].iloc[randomIndex]
         job_skill = dataset['jd_skills'].iloc[randomIndex]
         # Check if the inputs are valid

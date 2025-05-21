@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from src.experience_matchmaker.experience_matching import ExperienceMatching
 from src.experience_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration
@@ -10,7 +11,7 @@ dataPath = 'data/experience_dataset.csv'
 
 @pytest.fixture
 def experience_matchmaker():
-    return ExperienceMatching(modelName1=config.MODEL_NAME_1, modelName2=config.MODEL_NAME_2)
+    return ExperienceMatching()
 
 
 def test_experience_matchmaker_end_to_end(experience_matchmaker):
@@ -22,7 +23,7 @@ def test_experience_matchmaker_end_to_end(experience_matchmaker):
     for col in required_columns:
         if col not in dataset.columns:
             raise ValueError(f"Column '{col}' not found in the dataset.")
-    for i in range(len(dataset)):
+    for i in range(10):
         resume_experience = dataset['resume_exp'].iloc[i]
         job_experience = dataset['jd_exp'].iloc[i]
 

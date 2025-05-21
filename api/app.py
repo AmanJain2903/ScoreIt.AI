@@ -11,8 +11,12 @@ from api.routes_history import history_bp
 
 def create_app():
     app = Flask(__name__)
-    CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+    CORS(app)
     Swagger(app)
+
+    @app.route("/")
+    def home():
+        return "✅ ScoreIt.AI backend is running!"
 
     app.register_blueprint(resume_parser_bp, url_prefix="/")
     app.register_blueprint(jd_parser_bp, url_prefix="/")

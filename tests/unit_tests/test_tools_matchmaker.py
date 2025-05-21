@@ -7,7 +7,7 @@ pytestmark = pytest.mark.unit
 
 @pytest.fixture
 def tools_matchmaker():
-    return ToolMatching(modelName1='Model1', modelName2='Model2', maxInputLength=10000)
+    return ToolMatching(maxInputLength=10000)
 
 @pytest.fixture
 def tools_similarity():
@@ -92,38 +92,13 @@ def test_ts_reset(tools_similarity):
     assert isinstance(tools_similarity.ensembleScore, list)
 
 def test_initialization(tools_matchmaker):
-    assert tools_matchmaker.modelName1 == 'Model1'
-    assert tools_matchmaker.modelName2 == 'Model2'
     assert tools_matchmaker.maxInputLength == 10000
-    assert tools_matchmaker.model1 is None
-    assert tools_matchmaker.model2 is None
+    assert tools_matchmaker.model1 is not None
+    assert tools_matchmaker.model2 is not None
     assert tools_matchmaker.resumeTool is None
     assert tools_matchmaker.jobTool is None
     assert tools_matchmaker.similarity is not None
     assert isinstance(tools_matchmaker.similarity, ToolSimilarity)
-
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_load_models_success(mock_sentence_transformer, tools_matchmaker):
-    mockModel1 = MagicMock()
-    mockModel2 = MagicMock()
-    mock_sentence_transformer.side_effect = [mockModel1, mockModel2]
-    tools_matchmaker.loadModels()
-    assert tools_matchmaker.model1 is not None
-    assert tools_matchmaker.model2 is not None
-    assert tools_matchmaker.model1 == mockModel1
-    assert tools_matchmaker.model2 == mockModel2
-
-def test_load_models_no_names(tools_matchmaker):
-    tools_matchmaker.modelName1 = None
-    tools_matchmaker.modelName2 = None
-    with pytest.raises(ValueError, match="Model names cannot be empty."):
-        tools_matchmaker.loadModels()
-
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_load_models_failure(mock_sentence_transformer, tools_matchmaker):
-    mock_sentence_transformer.side_effect = Exception("Model loading failed")
-    with pytest.raises(RuntimeError, match="Failed to load models 'Model1' and 'Model2': Model loading failed"):
-        tools_matchmaker.loadModels()
 
 def test_set_inputs_success(tools_matchmaker):
     resumeTool = "Docker, Kubernetes, Git, Jenkins, VS Code, Postman, Jira, MongoDB"
@@ -166,11 +141,9 @@ def test_set_inputs_invalid(tools_matchmaker):
     with pytest.raises(ValueError, match="Job tools must be a string."):
         tools_matchmaker.setInputs(resumeTool, jobTool)
 
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_make_match_success(mock_sentence_transformer, tools_matchmaker):
+def test_make_match_success(tools_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     tools_matchmaker.model1 = model1Mock
     tools_matchmaker.model2 = model2Mock
     tools_matchmaker.resumeTool = ['Docker', 'Kubernetes', 'Git', 'Jenkins', 'VS Code', 'Postman', 'Jira', 'MongoDB']
@@ -182,30 +155,25 @@ def test_make_match_success(mock_sentence_transformer, tools_matchmaker):
     assert score == 1.0
 
 
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_make_match_no_models(mock_sentence_transformer, tools_matchmaker):
+def test_make_match_no_models(tools_matchmaker):
     tools_matchmaker.model1 = None
     tools_matchmaker.model2 = None
-    tools_matchmaker.modelName1 = None
-    tools_matchmaker.modelName2 = None
-    with pytest.raises(RuntimeError, match="Failed to load models: Model names cannot be empty."):
+    with pytest.raises(RuntimeError, match="Failed to load models"):
         tools_matchmaker.makeMatch()
 
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_make_match_no_model_names(mock_sentence_transformer, tools_matchmaker):
+def test_make_match_no_model_names(tools_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     tools_matchmaker.model1 = model1Mock
     tools_matchmaker.model2 = model2Mock
     with pytest.raises(ValueError, match="Inputs are not set"):
         tools_matchmaker.makeMatch()
 
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_make_match_failure(mock_sentence_transformer, tools_matchmaker):
+def test_make_match_failure(tools_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
+    tools_matchmaker.model1 = model1Mock
+    tools_matchmaker.model2 = model2Mock
     tools_matchmaker.resumeTool = "Docker, Kubernetes, Git, Jenkins, VS Code, Postman, Jira, MongoDB"
     tools_matchmaker.jobTool = "Docker, GitHub, Jenkins, Azure DevOps, Jira, MySQL, Postman"
     model1Mock.encode.side_effect = Exception("Encoding failed")
@@ -219,11 +187,9 @@ def test_similarity_score_success(tools_matchmaker):
     score = tools_matchmaker.getSimilarityScore()
     assert score == 0.75
 
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_similarity_score_no_ensemble(mock_sentence_transformer, tools_matchmaker):
+def test_similarity_score_no_ensemble(tools_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     tools_matchmaker.model1 = model1Mock
     tools_matchmaker.model2 = model2Mock
     tools_matchmaker.similarity.model1Score = []
@@ -240,11 +206,9 @@ def test_similarity_score_invalid(tools_matchmaker):
     with pytest.raises(ValueError, match="Ensemble score is not a valid list."):
         tools_matchmaker.getSimilarityScore()
 
-@patch('src.tools_matchmaker.tools_matching.SentenceTransformer')
-def test_similarity_score_empty_list(mock_sentence_transformer, tools_matchmaker):
+def test_similarity_score_empty_list(tools_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     tools_matchmaker.model1 = model1Mock
     tools_matchmaker.model2 = model2Mock
     tools_matchmaker.similarity.model1Score = []
@@ -268,7 +232,3 @@ def test_reset_success(tools_matchmaker):
     assert isinstance(tools_matchmaker.similarity.ensembleScore, list)
     assert tools_matchmaker.resumeTool is None
     assert tools_matchmaker.jobTool is None
-    assert tools_matchmaker.model1 is None
-    assert tools_matchmaker.model2 is None
-    assert tools_matchmaker.modelName1 == 'Model1'
-    assert tools_matchmaker.modelName2 == 'Model2'

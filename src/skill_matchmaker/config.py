@@ -17,9 +17,5 @@ class Config:
             raise RuntimeError(f"Failed to load config.yml: {e}")
 
         # Set class attributes from config keys
-        self.TECHNICAL_MODEL_NAME_1 = config.get("TECHNICAL_MODEL_NAME_1")
-        self.TECHNICAL_MODEL_NAME_2 = config.get("TECHNICAL_MODEL_NAME_2")
         self.TECHNICAL_MAX_INPUT_LENGTH = config.get("TECHNICAL_MAX_INPUT_LENGTH")
-        self.SOFT_MODEL_NAME_1 = config.get("SOFT_MODEL_NAME_1")
-        self.SOFT_MODEL_NAME_2 = config.get("SOFT_MODEL_NAME_2")
         self.SOFT_MAX_INPUT_LENGTH = config.get("SOFT_MAX_INPUT_LENGTH")

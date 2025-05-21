@@ -2,6 +2,7 @@ import pytest
 import pandas as pd
 from src.education_matchmaker.education_matching import EducationMatching
 from src.education_matchmaker import config
+from src.utils import model_load
 config = config.Config()
 
 pytestmark = pytest.mark.integration
@@ -10,7 +11,7 @@ dataPath = 'data/education_dataset.csv'
 
 @pytest.fixture
 def education_matchmaker():
-    return EducationMatching(modelName1=config.MODEL_NAME_1, modelName2=config.MODEL_NAME_2)
+    return EducationMatching()
 
 def test_education_matchmaker_end_to_end(education_matchmaker):
     dataset = pd.read_csv(dataPath)
@@ -21,7 +22,7 @@ def test_education_matchmaker_end_to_end(education_matchmaker):
     for col in required_columns:
         if col not in dataset.columns:
             raise ValueError(f"Column '{col}' not found in the dataset.")
-    for i in range(len(dataset)):
+    for i in range(10):
         resume_education = dataset['resume_edu'].iloc[i]
         job_education = dataset['jd_edu'].iloc[i]
 

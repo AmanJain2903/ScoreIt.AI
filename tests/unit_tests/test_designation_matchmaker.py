@@ -7,7 +7,7 @@ pytestmark = pytest.mark.unit
 
 @pytest.fixture
 def designation_matchmaker():
-    return DesignationMatching(modelName1='Model1', modelName2='Model2', maxInputLength=10000)
+    return DesignationMatching(maxInputLength=10000)
 
 @pytest.fixture
 def designation_similarity():
@@ -92,38 +92,13 @@ def test_ts_reset(designation_similarity):
     assert isinstance(designation_similarity.ensembleScore, list)
 
 def test_initialization(designation_matchmaker):
-    assert designation_matchmaker.modelName1 == 'Model1'
-    assert designation_matchmaker.modelName2 == 'Model2'
     assert designation_matchmaker.maxInputLength == 10000
-    assert designation_matchmaker.model1 is None
-    assert designation_matchmaker.model2 is None
+    assert designation_matchmaker.model1 is not None
+    assert designation_matchmaker.model2 is not None
     assert designation_matchmaker.resumeDesignation is None
     assert designation_matchmaker.jobDesignation is None
     assert designation_matchmaker.similarity is not None
     assert isinstance(designation_matchmaker.similarity, DesignationSimilarity)
-
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_load_models_success(mock_sentence_transformer, designation_matchmaker):
-    mockModel1 = MagicMock()
-    mockModel2 = MagicMock()
-    mock_sentence_transformer.side_effect = [mockModel1, mockModel2]
-    designation_matchmaker.loadModels()
-    assert designation_matchmaker.model1 is not None
-    assert designation_matchmaker.model2 is not None
-    assert designation_matchmaker.model1 == mockModel1
-    assert designation_matchmaker.model2 == mockModel2
-
-def test_load_models_no_names(designation_matchmaker):
-    designation_matchmaker.modelName1 = None
-    designation_matchmaker.modelName2 = None
-    with pytest.raises(ValueError, match="Model names cannot be empty."):
-        designation_matchmaker.loadModels()
-
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_load_models_failure(mock_sentence_transformer, designation_matchmaker):
-    mock_sentence_transformer.side_effect = Exception("Model loading failed")
-    with pytest.raises(RuntimeError, match="Failed to load models 'Model1' and 'Model2': Model loading failed"):
-        designation_matchmaker.loadModels()
 
 def test_set_inputs_success(designation_matchmaker):
     resumeDesignation = "Software Engineer, Backend Developer, Full Stack Developer"
@@ -166,11 +141,9 @@ def test_set_inputs_invalid(designation_matchmaker):
     with pytest.raises(ValueError, match="Job designation must be a string."):
         designation_matchmaker.setInputs(resumeDesignation, jobDesignation)
 
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_make_match_success(mock_sentence_transformer, designation_matchmaker):
+def test_make_match_success(designation_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     designation_matchmaker.model1 = model1Mock
     designation_matchmaker.model2 = model2Mock
     designation_matchmaker.resumeDesignation = ["Senior Software Engineer", "Full Stack Engineer", "Backend Developer"]
@@ -182,30 +155,25 @@ def test_make_match_success(mock_sentence_transformer, designation_matchmaker):
     assert score == 1.0
 
 
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_make_match_no_models(mock_sentence_transformer, designation_matchmaker):
+def test_make_match_no_models(designation_matchmaker):
     designation_matchmaker.model1 = None
     designation_matchmaker.model2 = None
-    designation_matchmaker.modelName1 = None
-    designation_matchmaker.modelName2 = None
-    with pytest.raises(RuntimeError, match="Failed to load models: Model names cannot be empty."):
+    with pytest.raises(RuntimeError, match="Failed to load models"):
         designation_matchmaker.makeMatch()
 
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_make_match_no_model_names(mock_sentence_transformer, designation_matchmaker):
+def test_make_match_no_model_names(designation_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     designation_matchmaker.model1 = model1Mock
     designation_matchmaker.model2 = model2Mock
     with pytest.raises(ValueError, match="Inputs are not set"):
         designation_matchmaker.makeMatch()
 
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_make_match_failure(mock_sentence_transformer, designation_matchmaker):
+def test_make_match_failure(designation_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
+    designation_matchmaker.model1 = model1Mock
+    designation_matchmaker.model2 = model2Mock
     designation_matchmaker.resumeDesignation = "Software Engineer, Backend Developer, Full Stack Developer"
     designation_matchmaker.jobDesignation = "Senior Software Engineer, Full Stack Engineer, Backend Developer"
     model1Mock.encode.side_effect = Exception("Encoding failed")
@@ -219,11 +187,9 @@ def test_similarity_score_success(designation_matchmaker):
     score = designation_matchmaker.getSimilarityScore()
     assert score == 0.75
 
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_similarity_score_no_ensemble(mock_sentence_transformer, designation_matchmaker):
+def test_similarity_score_no_ensemble(designation_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     designation_matchmaker.model1 = model1Mock
     designation_matchmaker.model2 = model2Mock
     designation_matchmaker.similarity.model1Score = []
@@ -240,11 +206,9 @@ def test_similarity_score_invalid(designation_matchmaker):
     with pytest.raises(ValueError, match="Ensemble score is not a valid list."):
         designation_matchmaker.getSimilarityScore()
 
-@patch('src.designation_matchmaker.designation_matching.SentenceTransformer')
-def test_similarity_score_empty_list(mock_sentence_transformer, designation_matchmaker):
+def test_similarity_score_empty_list(designation_matchmaker):
     model1Mock = MagicMock()
     model2Mock = MagicMock()
-    mock_sentence_transformer.side_effect = [model1Mock, model2Mock]
     designation_matchmaker.model1 = model1Mock
     designation_matchmaker.model2 = model2Mock
     designation_matchmaker.similarity.model1Score = []
@@ -268,7 +232,3 @@ def test_reset_success(designation_matchmaker):
     assert isinstance(designation_matchmaker.similarity.ensembleScore, list)
     assert designation_matchmaker.resumeDesignation is None
     assert designation_matchmaker.jobDesignation is None
-    assert designation_matchmaker.model1 is None
-    assert designation_matchmaker.model2 is None
-    assert designation_matchmaker.modelName1 == 'Model1'
-    assert designation_matchmaker.modelName2 == 'Model2'

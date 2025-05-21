@@ -95,11 +95,10 @@ from src.skill_matchmaker.soft_skill_matching import SoftSkillMatching
 from src.tools_matchmaker.tools_matching import ToolMatching
 from src.certification_matchmaker.certification_matching import CertificationMatching
 from src.designation_matchmaker.designation_matching import DesignationMatching
-from src.resume_extractor_agent.resume_agent import ResumeAgent
-from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
 from dotenv import load_dotenv
-import threading
-
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from src.utils.model_load import model1, model2
+import time
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
@@ -112,22 +111,6 @@ class MatchingEngine:
         self.tool_matcher = ToolMatching()
         self.certification_matcher = CertificationMatching()
         self.designation_matcher = DesignationMatching()
-        self.resume_agent = ResumeAgent(
-            apiKey=os.getenv("OPENROUTER_API_KEY"),
-            modelName=None,
-            systemPrompt=None,
-            useDefaultModelIfNone=True,
-            useDefaultSystemPromptIfNone=True
-        )
-        self.jd_agent = JobDescriptionAgent(
-            apiKey=os.getenv("OPENROUTER_API_KEY"),
-            modelName=None,
-            systemPrompt=None,
-            useDefaultModelIfNone=True,
-            useDefaultSystemPromptIfNone=True
-        )
-        self.resumeText = None
-        self.jdText = None
         self.resume_json = None
         self.jd_json = None
         self.matchReport = {
@@ -139,102 +122,47 @@ class MatchingEngine:
             "CERTIFICATION": 0.0,
             "DESIGNATION": 0.0
         }
-
-    def setInputs(self, resumeText, jdText):
-        if not resumeText or not jdText:
-            raise ValueError("Resume text and Job Description text cannot be empty.")
-        if not isinstance(resumeText, str) or not isinstance(jdText, str):
-            raise TypeError("Resume text and Job Description text must be strings.")
-
-        self.resumeText = resumeText
-        self.jdText = jdText
+        self.matcher_map = {
+            "EDUCATION": EducationMatching(),
+            "EXPERIENCE": ExperienceMatching(),
+            "TECHNICAL_SKILL": TechnicalSkillMatching(),
+            "SOFT_SKILL": SoftSkillMatching(),
+            "TOOL": ToolMatching(),
+            "CERTIFICATION": CertificationMatching(),
+            "DESIGNATION": DesignationMatching()
+        }
     
-    def getResumeJson(self):
-        if not self.resumeText:
-            raise ValueError("Inputs not set. Please set resume and job description text before getting JSON.")
-        self.resume_agent.setUserPrompt(self.resumeText)
-        self.resume_json = self.resume_agent.getJsonOutput()
-        self.resume_agent.deleteAgent()
-    
-    def getJDJson(self):
-        if not self.resumeText:
-            raise ValueError("Inputs not set. Please set resume and job description text before getting JSON.")
-        self.jd_agent.setUserPrompt(self.jdText)
-        self.jd_json = self.jd_agent.getJsonOutput()
-        self.jd_agent.deleteAgent()
-            
+    def _run_matcher(self, entity):
+        try:
+            resume_data = self.resume_json.get(entity, [])
+            jd_data = self.jd_json.get(entity, [])
+            if not resume_data or not jd_data:
+                return (entity, 0.0)
+            matcher = self.matcher_map[entity]
+            matcher.setInputs(resume_data, jd_data)
+            score = matcher.makeMatch()
+            return (entity, score)
+        except Exception as e:
+            return (entity, 0.0)
+
     def getMatch(self):
-        if not self.resumeText or not self.jdText:
-            raise ValueError("Inputs not set. Please set resume and job description text before getting match.")
-        
         if not self.resume_json or not self.jd_json:
-            self.resume_agent.getClient()
-            self.jd_agent.getClient()
-            thread1 = threading.Thread(target=self.getResumeJson)
-            thread2 = threading.Thread(target=self.getJDJson)
-            thread1.start()
-            thread2.start()
-            thread1.join()
-            thread2.join()
+            return self.matchReport
         
-        for entity in self.matchReport.keys():
-            if entity == "EDUCATION":
-                if not self.resume_json['EDUCATION'] or not self.jd_json['EDUCATION']:
-                    continue 
-                self.education_matcher.setInputs(
-                    self.resume_json['EDUCATION'],
-                    self.jd_json['EDUCATION']
-                )
-                self.matchReport[entity] = self.education_matcher.makeMatch()
-            elif entity == "EXPERIENCE":   
-                if not self.resume_json['EXPERIENCE'] or not self.jd_json['EXPERIENCE']:
-                    continue 
-                self.experience_matcher.setInputs(
-                    self.resume_json['EXPERIENCE'],
-                    self.jd_json['EXPERIENCE']
-                )
-                self.matchReport[entity] = self.experience_matcher.makeMatch()
-            elif entity == "TECHNICAL_SKILL":
-                if not self.resume_json['TECHNICAL_SKILL'] or not self.jd_json['TECHNICAL_SKILL']:
-                    continue 
-                self.technical_skill_matcher.setInputs(
-                    self.resume_json['TECHNICAL_SKILL'],
-                    self.jd_json['TECHNICAL_SKILL']
-                )
-                self.matchReport[entity] = self.technical_skill_matcher.makeMatch()
-            elif entity == "SOFT_SKILL":
-                if not self.resume_json['SOFT_SKILL'] or not self.jd_json['SOFT_SKILL']:
-                    continue 
-                self.soft_skill_matcher.setInputs(
-                    self.resume_json['SOFT_SKILL'],
-                    self.jd_json['SOFT_SKILL']
-                )
-                self.matchReport[entity] = self.soft_skill_matcher.makeMatch()
-            elif entity == "TOOL":
-                if not self.resume_json['TOOL'] or not self.jd_json['TOOL']:
-                    continue 
-                self.tool_matcher.setInputs(
-                    self.resume_json['TOOL'],
-                    self.jd_json['TOOL']
-                )
-                self.matchReport[entity] = self.tool_matcher.makeMatch()
-            elif entity == "CERTIFICATION":
-                if not self.resume_json['CERTIFICATION'] or not self.jd_json['CERTIFICATION']:
-                    continue 
-                self.certification_matcher.setInputs(
-                    self.resume_json['CERTIFICATION'],
-                    self.jd_json['CERTIFICATION']
-                )
-                self.matchReport[entity] = self.certification_matcher.makeMatch()
-            elif entity == "DESIGNATION":
-                if not self.resume_json['DESIGNATION'] or not self.jd_json['DESIGNATION']:
-                    continue 
-                self.designation_matcher.setInputs(
-                    self.resume_json['DESIGNATION'],
-                    self.jd_json['DESIGNATION']
-                )
-                self.matchReport[entity] = self.designation_matcher.makeMatch()
+        total_start = time.time()
+
+        with ThreadPoolExecutor(max_workers=8) as executor:
+            futures = [executor.submit(self._run_matcher, entity) for entity in self.matchReport]
+            for future in as_completed(futures):
+                entity, score = future.result()
+                self.matchReport[entity] = score
+
+        total_end = time.time()
+        print(f"🚀 Total matching completed in {total_end - total_start:.2f}s")
+
         return self.matchReport
+    
+
 
 
 

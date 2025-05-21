@@ -121,13 +121,13 @@ class ResumeAgent:
             raise ValueError("Client not initialized.")
         try:
             completion = self.client.chat.completions.create(
-                model=self.modelName,
-                messages=[
-                    {"role": "system", "content": self.systemPrompt},
-                    {"role": "user", "content": self.userPrompt}
-                ],
-                response_format={'type': 'json_object', 'format': 'json'},
-            )
+                    model=self.modelName,
+                    messages=[
+                        {"role": "system", "content": self.systemPrompt},
+                        {"role": "user", "content": self.userPrompt}
+                    ],
+                    response_format="{'type': 'json_object', 'format': 'json'}",
+                    )
         except Exception as e:
             raise ValueError(f"Failed to get response: {e}")
         self.deleteClient()

@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from flasgger.utils import swag_from
 from urllib.parse import urlparse
 from src.jd_scraper.jd_scraper import JobDescriptionScraper
-
+import gc
 jd_parser_bp = Blueprint("jd_parser", __name__)
 
 def is_valid_url(url):
@@ -11,6 +11,11 @@ def is_valid_url(url):
         return all([result.scheme, result.netloc])
     except:
         return False
+    finally:
+        del url
+        del result
+        gc.collect()
+    
 
 @jd_parser_bp.route("/parse_jd", methods=["POST"])
 @swag_from("docs/parse_jd.yml")
@@ -25,6 +30,10 @@ def parse_jd():
         return jsonify({'jd_text':data}), 200
     except Exception:
         return jsonify({"error": "Internal error while processing the link"}), 500
+    finally:
+        if link: del link
+        if scraper: del scraper
+        gc.collect()
 
     
     

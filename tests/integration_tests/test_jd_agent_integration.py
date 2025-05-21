@@ -15,7 +15,9 @@ def jd_agent():
     return JobDescriptionAgent(
         apiKey=api_key,
         modelName=None,
-        systemPrompt=None
+        systemPrompt=None,
+        useDefaultModelIfNone=True,
+        useDefaultSystemPromptIfNone=True,
     )
 
 def test_jd_agent_end_to_end(jd_agent):

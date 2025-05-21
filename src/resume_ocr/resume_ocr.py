@@ -15,9 +15,7 @@
 # print(ocr.extractText())
 # ocr.resetOCR()
 
-import pytesseract
-from PIL import Image
-from pdf2image import convert_from_bytes, convert_from_path
+import fitz
 
 class ResumeOCR:
     def __init__(self):
@@ -44,13 +42,17 @@ class ResumeOCR:
             return self.resumeText
         if not self.pdfPath and not self.pdfBytes:
             raise ValueError("pdfPath or pdfBytes must be set before extracting text.")
+        text = ""
         if self.pdfPath:
-            images = convert_from_path(self.pdfPath)
+            with fitz.open(self.pdfPath) as doc:
+                for page in doc:
+                    text += page.get_text()
         else:
-            images = convert_from_bytes(self.pdfBytes)
-        for image in images:
-            text = pytesseract.image_to_string(image)
-            self.resumeText += text
+            with fitz.open(stream=self.pdfBytes, filetype="pdf") as doc:
+                for page in doc:
+                    text += page.get_text()
+        
+        self.resumeText = text
         return self.resumeText
 
     def resetOCR(self):
