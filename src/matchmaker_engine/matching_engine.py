@@ -179,6 +179,7 @@ class MatchingEngine:
         
         for entity in self.matchReport.keys():
             if entity == "EDUCATION":
+                print("Matching Education")
                 if not self.resume_json['EDUCATION'] or not self.jd_json['EDUCATION']:
                     continue 
                 self.education_matcher.setInputs(
@@ -187,6 +188,7 @@ class MatchingEngine:
                 )
                 self.matchReport[entity] = self.education_matcher.makeMatch()
             elif entity == "EXPERIENCE":   
+                print("Matching Experience")
                 if not self.resume_json['EXPERIENCE'] or not self.jd_json['EXPERIENCE']:
                     continue 
                 self.experience_matcher.setInputs(
@@ -195,6 +197,7 @@ class MatchingEngine:
                 )
                 self.matchReport[entity] = self.experience_matcher.makeMatch()
             elif entity == "TECHNICAL_SKILL":
+                print("Matching Technical Skill")
                 if not self.resume_json['TECHNICAL_SKILL'] or not self.jd_json['TECHNICAL_SKILL']:
                     continue 
                 self.technical_skill_matcher.setInputs(
@@ -203,6 +206,7 @@ class MatchingEngine:
                 )
                 self.matchReport[entity] = self.technical_skill_matcher.makeMatch()
             elif entity == "SOFT_SKILL":
+                print("Matching Soft Skill")
                 if not self.resume_json['SOFT_SKILL'] or not self.jd_json['SOFT_SKILL']:
                     continue 
                 self.soft_skill_matcher.setInputs(
@@ -211,6 +215,7 @@ class MatchingEngine:
                 )
                 self.matchReport[entity] = self.soft_skill_matcher.makeMatch()
             elif entity == "TOOL":
+                print("Matching Tool")
                 if not self.resume_json['TOOL'] or not self.jd_json['TOOL']:
                     continue 
                 self.tool_matcher.setInputs(
@@ -219,6 +224,7 @@ class MatchingEngine:
                 )
                 self.matchReport[entity] = self.tool_matcher.makeMatch()
             elif entity == "CERTIFICATION":
+                print("Matching Certification")
                 if not self.resume_json['CERTIFICATION'] or not self.jd_json['CERTIFICATION']:
                     continue 
                 self.certification_matcher.setInputs(
@@ -227,6 +233,7 @@ class MatchingEngine:
                 )
                 self.matchReport[entity] = self.certification_matcher.makeMatch()
             elif entity == "DESIGNATION":
+                print("Matching Designation")
                 if not self.resume_json['DESIGNATION'] or not self.jd_json['DESIGNATION']:
                     continue 
                 self.designation_matcher.setInputs(
