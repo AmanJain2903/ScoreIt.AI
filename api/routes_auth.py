@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify
 from flasgger.utils import swag_from
-import bcrypt
 import os
 import regex as re
 import jwt
@@ -8,6 +7,7 @@ import datetime
 from db.user_dao import UserDAO
 from dotenv import load_dotenv
 load_dotenv()
+import gc
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
@@ -36,6 +36,12 @@ def register():
 
     user_dao.create_user(name, email, password)
 
+    if data: del data 
+    if email: del email
+    if password: del password
+    if name: del name
+    gc.collect()
+
     return jsonify({"message": "User registered successfully"}), 201
 
 @auth_bp.route("/login", methods=["POST"])
@@ -63,6 +69,10 @@ def login():
     token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
     name = user.get("name", "")
 
+    if data: del data 
+    if password: del password
+    gc.collect()
+
     return jsonify({"token": token, "name" : name, "email" : email}), 200
 
 @auth_bp.route("/delete", methods=["POST"])
@@ -83,4 +93,11 @@ def delete():
         return jsonify({"error": "Invalid credentials"}), 401
 
     user_dao.delete_user(email)
+
+    if data: del data 
+    if email: del email
+    if password: del password
+    if user: del user
+    gc.collect()
+
     return jsonify({"message": "User deleted successfully"}), 200

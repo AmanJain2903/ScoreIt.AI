@@ -96,11 +96,8 @@ from src.tools_matchmaker.tools_matching import ToolMatching
 from src.certification_matchmaker.certification_matching import CertificationMatching
 from src.designation_matchmaker.designation_matching import DesignationMatching
 from dotenv import load_dotenv
-import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.utils.model_load import model1, model2
-import torch
-import gc
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
@@ -136,29 +133,20 @@ class MatchingEngine:
     
     def _run_matcher(self, entity):
         try:
-            print(f"⚙️  Starting {entity} matching...")
-            start = time.time()
             resume_data = self.resume_json.get(entity, [])
             jd_data = self.jd_json.get(entity, [])
             if not resume_data or not jd_data:
-                end = time.time()
-                print(f"✅ {entity} matched in {end - start:.2f}s")
                 return (entity, 0.0)
             matcher = self.matcher_map[entity]
             matcher.setInputs(resume_data, jd_data)
             score = matcher.makeMatch()
-            end = time.time()
-            print(f"✅ {entity} matched in {end - start:.2f}s")
             return (entity, score)
         except Exception as e:
-            print(f"❌ Error in {entity} matcher: {e}")
             return (entity, 0.0)
 
     def getMatch(self):
         if not self.resume_json or not self.jd_json:
             return self.matchReport
-
-        total_start = time.time()
 
         with ThreadPoolExecutor(max_workers=2) as executor:
             futures = [executor.submit(self._run_matcher, entity) for entity in self.matchReport]
@@ -166,11 +154,6 @@ class MatchingEngine:
                 entity, score = future.result()
                 self.matchReport[entity] = score
 
-        total_end = time.time()
-
-        print(f"🚀 Total matching completed in {total_end - total_start:.2f}s")
-        torch.cuda.empty_cache()
-        gc.collect()
         return self.matchReport
     
 

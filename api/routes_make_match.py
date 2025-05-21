@@ -1,9 +1,8 @@
 from flask import Blueprint, request, jsonify
 from flasgger.utils import swag_from
-import os
 from src.matchmaker_engine.matching_engine import MatchingEngine
 import json
-import traceback
+import gc
 
 make_match_bp = Blueprint("make_match", __name__)
 
@@ -26,8 +25,13 @@ def make_match():
         matchReport = matchMaker.getMatch()
         return jsonify({'match_report': matchReport}), 200
     except Exception:
-        traceback.print_exc()
         return jsonify({"error": "Internal error while processing the input"}), 500
+    finally:
+        if data: del data
+        if resumeJSON: del resumeJSON
+        if jdJSON: del jdJSON
+        if matchMaker: del matchMaker
+        gc.collect()
 
     
     

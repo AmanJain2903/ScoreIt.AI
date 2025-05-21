@@ -15,7 +15,9 @@ def resume_agent():
     return ResumeAgent(
         apiKey=api_key,
         modelName=None,
-        systemPrompt=None
+        systemPrompt=None,
+        useDefaultModelIfNone=True,
+        useDefaultSystemPromptIfNone=True,
     )
 
 def test_resume_agent_end_to_end(resume_agent):

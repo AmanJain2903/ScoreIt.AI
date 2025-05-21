@@ -1,13 +1,11 @@
 from flask import Blueprint, request, jsonify
 from flasgger.utils import swag_from
-import bcrypt
 import os
 import regex as re
-import jwt
-import datetime
 from db.history_dao import HistoryDAO
 from dotenv import load_dotenv
 load_dotenv()
+import gc
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
@@ -38,7 +36,16 @@ def add_history():
         return jsonify({"message": "History added successfully", "history_id": history_id}), 200
     except Exception:
         return jsonify({"error": "Failed to save history"}), 500
-    
+    finally:
+        if data: del data
+        if email: del email
+        if resume_text: del resume_text
+        if resume_json: del resume_json
+        if jd_text: del jd_text
+        if jd_json: del jd_json
+        if match_report: del match_report
+        gc.collect()
+
 @history_bp.route("/history/get_all", methods=["POST"])
 @swag_from("docs/history_get_all.yml")
 def get_all_history():
@@ -55,6 +62,10 @@ def get_all_history():
         return jsonify({"history": history}), 200
     except Exception:
         return jsonify({"error": "Failed to retrieve history"}), 500
+    finally:
+        if data: del data
+        if email: del email
+        gc.collect()
 
 @history_bp.route("/history/delete_one", methods=["DELETE"])
 @swag_from("docs/history_delete_one.yml")
@@ -74,6 +85,11 @@ def delete_one_history():
             return jsonify({"error": "No match report found with the given ID"}), 404
     except Exception:
         return jsonify({"error": "Failed to delete match report"}), 500
+    finally:
+        if data: del data
+        if email: del email
+        if match_id: del match_id
+        gc.collect()
 
 @history_bp.route("/history/delete_all", methods=["DELETE"])
 @swag_from("docs/history_delete_all.yml")
@@ -92,3 +108,7 @@ def delete_all_history():
             return jsonify({"message": "No history records found to delete"}), 200
     except Exception:
         return jsonify({"error": "Failed to delete history records"}), 500
+    finally:
+        if data: del data
+        if email: del email
+        gc.collect()

@@ -17,3 +17,4 @@ export const extractJD = async (formData) => {
       },
     });
   };
+

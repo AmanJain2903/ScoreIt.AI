@@ -105,8 +105,6 @@ const PastMatches = forwardRef((props, ref) => {
 
   const getMatchDateValue = (match) => {
     // Debug log
-    // eslint-disable-next-line no-console
-    console.log('match.timestamp:', match.timestamp);
     if (match.timestamp) {
       // If it's a string or number, return directly
       if (typeof match.timestamp === 'string' || typeof match.timestamp === 'number') {

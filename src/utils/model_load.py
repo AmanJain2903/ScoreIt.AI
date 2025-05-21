@@ -1,6 +1,6 @@
 # model_store.py
 from sentence_transformers import SentenceTransformer
-from src.utils import config 
+from src.utils import config
 
 config = config.Config()
 
