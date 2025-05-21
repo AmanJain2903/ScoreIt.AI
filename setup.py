@@ -52,6 +52,7 @@ setup(
     "bcrypt==4.3.0",
     "PyJWT==2.10.1",
     "pymongo==4.12.1",
+    "torch==2.7.0",
 ]
 )
 

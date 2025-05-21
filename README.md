@@ -1,5 +1,7 @@
 # ScoreIt.AI 🚀
 
+[![Vercel - Production](https://img.shields.io/badge/Vercel-Production-brightgreen?logo=vercel&logoColor=white)](https://score-it-ai.vercel.app/auth)
+
 [![GitHub Release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI)](https://github.com/AmanJain2903/ScoreIt.AI/releases)
 
 [![Build Status](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml/badge.svg)](https://github.com/AmanJain2903/ScoreIt.AI/actions/workflows/ci.yml)

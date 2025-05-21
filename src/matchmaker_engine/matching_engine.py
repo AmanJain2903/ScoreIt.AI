@@ -99,7 +99,8 @@ from dotenv import load_dotenv
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.utils.model_load import model1, model2
-
+import torch
+import gc
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
@@ -159,7 +160,7 @@ class MatchingEngine:
 
         total_start = time.time()
 
-        with ThreadPoolExecutor(max_workers=8) as executor:
+        with ThreadPoolExecutor(max_workers=2) as executor:
             futures = [executor.submit(self._run_matcher, entity) for entity in self.matchReport]
             for future in as_completed(futures):
                 entity, score = future.result()
@@ -168,6 +169,8 @@ class MatchingEngine:
         total_end = time.time()
 
         print(f"🚀 Total matching completed in {total_end - total_start:.2f}s")
+        torch.cuda.empty_cache()
+        gc.collect()
         return self.matchReport
     
 
