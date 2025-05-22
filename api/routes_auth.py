@@ -35,7 +35,6 @@ def register():
         return jsonify({"error": "Email already registered"}), 409
 
     user_dao.create_user(name, email, password)
-
     try:
         del data
         del email
