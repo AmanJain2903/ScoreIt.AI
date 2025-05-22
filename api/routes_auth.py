@@ -94,10 +94,13 @@ def delete():
 
     user_dao.delete_user(email)
 
-    if data: del data 
-    if email: del email
-    if password: del password
-    if user: del user
+    try:
+        if data: del data 
+        if email: del email
+        if password: del password
+        if user: del user
+    except Exception:
+        pass
     gc.collect()
 
     return jsonify({"message": "User deleted successfully"}), 200

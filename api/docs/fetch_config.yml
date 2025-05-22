@@ -1,0 +1,11 @@
+summary: Get LLM Model Config
+description: Get the LLM model config
+produces:
+  - application/json
+responses:
+  200:
+    description: Model Config
+    schema:
+      type: object
+        
+

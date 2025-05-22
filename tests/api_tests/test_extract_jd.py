@@ -12,7 +12,8 @@ def client():
 
 def test_extract_jd_valid(client):
     data = {
-        "jd_text": "We are looking for a software engineer with experience in Python and Flask."
+        "jd_text": "We are looking for a software engineer with experience in Python and Flask.",
+        "model_id": 1
     }
     response = client.post("/extract_jd", data=data)
     assert response.status_code == 200
@@ -21,7 +22,8 @@ def test_extract_jd_valid(client):
 
 def test_extract_jd_missing_text(client):
     data = {
-        "jd_text": None
+        "jd_text": None,
+        "model_id": 1
     }
     response = client.post("/extract_jd", data=data)
     assert response.status_code == 400
@@ -34,7 +36,7 @@ def test_extract_jd_internal_error(client, monkeypatch):
     monkeypatch.setattr('src.jd_extractor_agent.jd_agent.JobDescriptionAgent.getJsonOutput', mock_get_json_output)
     
     jd_text = "We are looking for a software engineer with experience in Python and Flask."
-    response = client.post('/extract_jd', data={'jd_text': jd_text})
+    response = client.post('/extract_jd', data={'jd_text': jd_text, 'model_id': 1})
     assert response.status_code == 500
     assert response.json['error'] == "Internal error while processing the text"
 

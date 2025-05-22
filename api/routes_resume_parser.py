@@ -28,9 +28,12 @@ def parse_resume():
     except Exception:
         return jsonify({"error": "Internal error while processing the file"}), 500
     finally:
-        if file: del file
-        if pdfBytes: del pdfBytes
-        if resume_ocr: del resume_ocr
+        try:
+            if file: del file
+            if pdfBytes: del pdfBytes
+            if resume_ocr: del resume_ocr
+        except Exception:
+            pass
         gc.collect()
     
         

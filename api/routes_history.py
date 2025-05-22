@@ -109,6 +109,9 @@ def delete_all_history():
     except Exception:
         return jsonify({"error": "Failed to delete history records"}), 500
     finally:
-        if data: del data
-        if email: del email
+        try:
+            if data: del data
+            if email: del email
+        except Exception:
+            pass
         gc.collect()

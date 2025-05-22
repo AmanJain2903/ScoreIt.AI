@@ -1,0 +1,10 @@
+MODEL_NAMES:
+  1:
+    MODEL_NAME: deepseek/deepseek-chat-v3-0324:free
+    MODEL_TYPE: free
+    NAME: DeepSeek v3
+
+  2:
+    MODEL_NAME: deepseek/deepseek-chat-v3-0324
+    MODEL_TYPE: paid
+    NAME: DeepSeek v3

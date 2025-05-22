@@ -51,3 +51,5 @@ Output Format:
   "PAY": "$120k–150k",
   "CERTIFICATION": "AWS Certified Solutions Architect"
 }
+
+Output only JSON style result as shown in the example above. Do not return anything else. If you are unsure about the input or what to do, just return the JSON with all values as empty strings "".
