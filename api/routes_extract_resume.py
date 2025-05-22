@@ -39,6 +39,7 @@ def extract_resume():
             if resumeAgent: del resumeAgent
             if start: del start
             if end: del end
+            if output: del output
         except Exception:
             pass
         gc.collect()

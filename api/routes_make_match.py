@@ -32,6 +32,7 @@ def make_match():
             if resumeJSON: del resumeJSON
             if jdJSON: del jdJSON
             if matchMaker: del matchMaker
+            if matchReport: del matchReport
         except Exception:
             pass
         gc.collect()

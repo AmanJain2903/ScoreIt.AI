@@ -145,6 +145,7 @@ class JobDescriptionAgent:
             raise ValueError("No content in response.")
         
         self.response = completion.choices[0].message.content
+        print(self.response)
         self.jsonOutput = self.parseRespone()
 
     def getJsonOutput(self):

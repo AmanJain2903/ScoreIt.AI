@@ -32,6 +32,7 @@ def parse_resume():
             if file: del file
             if pdfBytes: del pdfBytes
             if resume_ocr: del resume_ocr
+            if text: del text
         except Exception:
             pass
         gc.collect()

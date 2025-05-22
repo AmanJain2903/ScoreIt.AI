@@ -12,8 +12,11 @@ def is_valid_url(url):
     except:
         return False
     finally:
-        del url
-        del result
+        try:
+            if url: del url
+            if result: del result
+        except Exception:
+            pass
         gc.collect()
     
 
