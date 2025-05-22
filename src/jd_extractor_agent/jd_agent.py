@@ -23,13 +23,15 @@ from openai import OpenAI
 from src.utils import security
 from src.jd_extractor_agent import config
 import importlib.resources
+from src.utils import llm_config_loader
 # Load configuration
 config = config.Config()
+llm_config = llm_config_loader.Config()
     
 class JobDescriptionAgent:
-    def __init__(self, apiKey, modelName, systemPrompt, useDefaultModelIfNone=True, useDefaultSystemPromptIfNone=True):
+    def __init__(self, apiKey, modelName, systemPrompt, useDefaultModelIfNone=True, useDefaultSystemPromptIfNone=True, modelID=1):
         if useDefaultModelIfNone and modelName is None:
-            modelName = config.MODEL_NAME
+            modelName = llm_config.MODEL_NAMES[modelID]["MODEL_NAME"]
         if useDefaultSystemPromptIfNone and systemPrompt is None:
             systemPromptPath = config.DEFAULT_SYSTEM_PROMPT_PATH
             try:
@@ -126,8 +128,7 @@ class JobDescriptionAgent:
                     messages=[
                         {"role": "system", "content": self.systemPrompt},
                         {"role": "user", "content": self.userPrompt}
-                    ],
-                    response_format="{'type': 'json_object', 'format': 'json'}",
+                    ]
                     )
         except Exception as e:
             raise ValueError(f"Failed to get response: {e}")
@@ -144,6 +145,7 @@ class JobDescriptionAgent:
             raise ValueError("No content in response.")
         
         self.response = completion.choices[0].message.content
+        print(self.response)
         self.jsonOutput = self.parseRespone()
 
     def getJsonOutput(self):

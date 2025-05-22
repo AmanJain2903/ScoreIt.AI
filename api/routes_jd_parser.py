@@ -12,8 +12,11 @@ def is_valid_url(url):
     except:
         return False
     finally:
-        del url
-        del result
+        try:
+            if url: del url
+            if result: del result
+        except Exception:
+            pass
         gc.collect()
     
 
@@ -31,8 +34,11 @@ def parse_jd():
     except Exception:
         return jsonify({"error": "Internal error while processing the link"}), 500
     finally:
-        if link: del link
-        if scraper: del scraper
+        try:
+            if link: del link
+            if scraper: del scraper
+        except Exception:
+            pass
         gc.collect()
 
     

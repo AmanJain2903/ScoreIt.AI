@@ -63,8 +63,11 @@ def get_all_history():
     except Exception:
         return jsonify({"error": "Failed to retrieve history"}), 500
     finally:
-        if data: del data
-        if email: del email
+        try:
+            if data: del data
+            if email: del email
+        except Exception:
+            pass
         gc.collect()
 
 @history_bp.route("/history/delete_one", methods=["DELETE"])
@@ -86,9 +89,13 @@ def delete_one_history():
     except Exception:
         return jsonify({"error": "Failed to delete match report"}), 500
     finally:
-        if data: del data
-        if email: del email
-        if match_id: del match_id
+        try:
+            if data: del data
+            if email: del email
+            if match_id: del match_id
+            if deleted: del deleted
+        except Exception:
+            pass
         gc.collect()
 
 @history_bp.route("/history/delete_all", methods=["DELETE"])
@@ -109,6 +116,10 @@ def delete_all_history():
     except Exception:
         return jsonify({"error": "Failed to delete history records"}), 500
     finally:
-        if data: del data
-        if email: del email
+        try:
+            del data
+            del email
+            del deleted_count
+        except Exception:
+            pass
         gc.collect()

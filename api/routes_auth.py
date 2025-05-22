@@ -35,11 +35,13 @@ def register():
         return jsonify({"error": "Email already registered"}), 409
 
     user_dao.create_user(name, email, password)
-
-    if data: del data 
-    if email: del email
-    if password: del password
-    if name: del name
+    try:
+        del data
+        del email
+        del password
+        del name
+    except Exception:
+        pass
     gc.collect()
 
     return jsonify({"message": "User registered successfully"}), 201
@@ -69,8 +71,11 @@ def login():
     token = jwt.encode(payload, SECRET_KEY, algorithm="HS256")
     name = user.get("name", "")
 
-    if data: del data 
-    if password: del password
+    try:
+        del data
+        del password
+    except Exception:
+        pass
     gc.collect()
 
     return jsonify({"token": token, "name" : name, "email" : email}), 200
@@ -94,10 +99,13 @@ def delete():
 
     user_dao.delete_user(email)
 
-    if data: del data 
-    if email: del email
-    if password: del password
-    if user: del user
+    try:
+        del data
+        del email
+        del password
+        del user
+    except Exception:
+        pass
     gc.collect()
 
     return jsonify({"message": "User deleted successfully"}), 200

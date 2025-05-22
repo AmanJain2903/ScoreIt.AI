@@ -13,6 +13,7 @@ def extract_resume():
     start = time.time()
     print(f"⚙️  Starting resume extraction...")
     text = request.form.get("resume_text")
+    modelID = int(request.form.get("model_id"))
     if not text:
         return jsonify({"error": "Invalid input or missing text"}), 400
     try:
@@ -21,7 +22,8 @@ def extract_resume():
             modelName=None,
             systemPrompt=None,
             useDefaultModelIfNone=True,
-            useDefaultSystemPromptIfNone=True
+            useDefaultSystemPromptIfNone=True,
+            modelID=modelID
         )
         resumeAgent.setUserPrompt(text)
         output = resumeAgent.getJsonOutput()
@@ -32,10 +34,14 @@ def extract_resume():
     finally:
         end = time.time()
         print(f"✅ Resume extraction completed in {end - start:.2f}s")
-        if text: del text
-        if resumeAgent: del resumeAgent
-        if start: del start
-        if end: del end
+        try:
+            if text: del text
+            if resumeAgent: del resumeAgent
+            if start: del start
+            if end: del end
+            if output: del output
+        except Exception:
+            pass
         gc.collect()
 
 

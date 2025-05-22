@@ -3,6 +3,9 @@ from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
 import os
 import pandas as pd
 import numpy as np
+from dotenv import load_dotenv
+
+load_dotenv()
 
 pytestmark = pytest.mark.integration
 
@@ -22,17 +25,7 @@ def jd_agent():
 
 def test_jd_agent_end_to_end(jd_agent):
     dataset = pd.read_csv(dataPath)
-    randomIndex = np.random.randint(0, len(dataset))
-    description = dataset['Description'].iloc[randomIndex]
-    
-    while pd.isna(description) or len(description) < 0 or not isinstance(description, str):
-        randomIndex = np.random.randint(0, len(dataset))
-        description = dataset['Description'].iloc[randomIndex]
 
-    jd_agent.setUserPrompt(description)
-    output = jd_agent.getJsonOutput()
-
-    assert isinstance(output, dict)
     expected_keys = [
     "TECHNICAL_SKILL",
     "COMPANY_NAME",
@@ -46,9 +39,15 @@ def test_jd_agent_end_to_end(jd_agent):
     "PAY",
     "CERTIFICATION"
     ]
-    for key in expected_keys:
-        assert key in output
-        assert isinstance(output[key], str)
+    for randomIndex in range(20):
+        description = dataset['Description'].iloc[randomIndex]
+        jd_agent.setUserPrompt(description)
+        output = jd_agent.getJsonOutput()
+
+        assert isinstance(output, dict)
+        for key in expected_keys:
+            assert key in output
+            assert isinstance(output[key], str)
     
     # Strict check for the output
     # assert output["TECHNICAL_SKILL"] == "Python, TensorFlow, cloud computing"

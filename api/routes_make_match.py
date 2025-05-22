@@ -27,10 +27,14 @@ def make_match():
     except Exception:
         return jsonify({"error": "Internal error while processing the input"}), 500
     finally:
-        if data: del data
-        if resumeJSON: del resumeJSON
-        if jdJSON: del jdJSON
-        if matchMaker: del matchMaker
+        try:
+            if data: del data
+            if resumeJSON: del resumeJSON
+            if jdJSON: del jdJSON
+            if matchMaker: del matchMaker
+            if matchReport: del matchReport
+        except Exception:
+            pass
         gc.collect()
 
     

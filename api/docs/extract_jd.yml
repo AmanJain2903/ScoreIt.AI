@@ -7,6 +7,12 @@ parameters:
     type: string
     required: true
     description: Job Description text extracted from the link / uploaded by the user.
+  - name: model_id
+    in: formData
+    type: integer
+    required: true
+    description: Model ID to use for extraction
+    default: 1
 responses:
   200:
     description: Job Description Entities extracted from the resume text

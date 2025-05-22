@@ -2,7 +2,9 @@ import pytest
 from src.resume_extractor_agent.resume_agent import ResumeAgent
 import os
 import pandas as pd
-import numpy as np
+from dotenv import load_dotenv
+
+load_dotenv()
 
 pytestmark = pytest.mark.integration
 
@@ -22,17 +24,7 @@ def resume_agent():
 
 def test_resume_agent_end_to_end(resume_agent):
     dataset = pd.read_csv(dataPath)
-    randomIndex = np.random.randint(0, len(dataset))
-    resume = dataset['Resume'].iloc[randomIndex]
-    
-    while pd.isna(resume) or len(resume) < 0 or not isinstance(resume, str):
-        randomIndex = np.random.randint(0, len(dataset))
-        resume = dataset['Resume'].iloc[randomIndex]
 
-    resume_agent.setUserPrompt(resume)
-    output = resume_agent.getJsonOutput()
-
-    assert isinstance(output, dict)
     expected_keys = [
     "TECHNICAL_SKILL",
     "COMPANY_NAME",
@@ -46,9 +38,17 @@ def test_resume_agent_end_to_end(resume_agent):
     "PAY",
     "CERTIFICATION"
     ]
-    for key in expected_keys:
-        assert key in output
-        assert isinstance(output[key], str)
+    
+    
+    for randomIndex in range(20):
+        resume = dataset['Resume'].iloc[randomIndex]
+        resume_agent.setUserPrompt(resume)
+        output = resume_agent.getJsonOutput()
+
+        assert isinstance(output, dict)
+        for key in expected_keys:
+            assert key in output
+            assert isinstance(output[key], str)
     
     # Strict check for the output
     # assert output["TECHNICAL_SKILL"] == "Python, AWS, Machine Learning"

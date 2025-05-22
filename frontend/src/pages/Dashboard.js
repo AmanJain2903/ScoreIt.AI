@@ -7,6 +7,7 @@ import { addHistory, deleteAll } from '../api/history';
 import { deleteUser } from '../api/auth';
 import ScoreReport from '../components/ScoreReport';
 import PastMatches from '../components/PastMatches';
+import { fetchConfig } from '../api/fetch_config';
 import '../styles/Dashboard.css';
 
 const Dashboard = () => {
@@ -39,6 +40,9 @@ const Dashboard = () => {
   const historyBtnRef = useRef(null);
   const [popupPos, setPopupPos] = useState({ top: 100, left: 100 });
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+  const [models, setModels] = useState({});
+  const [selectedModel, setSelectedModel] = useState('1'); // Default to first model
+  const [showModelDropdown, setShowModelDropdown] = useState(false);
 
   useEffect(() => {
     const userName = localStorage.getItem('name');
@@ -60,6 +64,22 @@ const Dashboard = () => {
     }
     localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
+
+  useEffect(() => {
+    const loadModels = async () => {
+      try {
+        const response = await fetchConfig();
+        if (response.data) {
+          setModels(response.data);
+          // Set default model ID
+          localStorage.setItem('modelID', '1');
+        }
+      } catch (error) {
+        console.error('Error loading models:', error);
+      }
+    };
+    loadModels();
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem('token');
@@ -187,7 +207,7 @@ const Dashboard = () => {
       setLoadingMessage('Extracting Resume Entities...');
       const resumeFormData = new FormData();
       resumeFormData.append('resume_text', finalResumeText);
-      
+      resumeFormData.append('model_id', selectedModel);
       let resumeExtractResponse;
       try {
         resumeExtractResponse = await extractResume(resumeFormData);
@@ -211,6 +231,7 @@ const Dashboard = () => {
       setLoadingMessage('Extracting Job Description Entities...');
       const jdFormData = new FormData();
       jdFormData.append('jd_text', finalJobDescription);
+      jdFormData.append('model_id', selectedModel);
       
       let jdExtractResponse;
       try {
@@ -371,6 +392,12 @@ const Dashboard = () => {
   };
 
   const handleToggleDarkMode = () => setDarkMode(dm => !dm);
+
+  const handleModelSelect = (modelId) => {
+    setSelectedModel(modelId);
+    localStorage.setItem('modelID', modelId);
+    setShowModelDropdown(false);
+  };
 
   if (isLoading) {
     return (
@@ -563,6 +590,38 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Model Selector */}
+          <div className="model-selector-container">
+            <div className="model-selector" onClick={() => setShowModelDropdown(!showModelDropdown)}>
+              <span>
+                {models[selectedModel] ? (
+                  <>
+                    {models[selectedModel].NAME}
+                    {models[selectedModel].MODEL_TYPE === 'paid' && <span className="model-paid"> $</span>}
+                  </>
+                ) : (
+                  'Choose Model'
+                )}
+              </span>
+              <span className="model-selector-arrow">▼</span>
+            </div>
+            {showModelDropdown && (
+              <div className="model-dropdown">
+                {Object.entries(models).map(([id, model]) => (
+                  <div
+                    key={id}
+                    className="model-option"
+                    onClick={() => handleModelSelect(id)}
+                  >
+                    <span className="model-check">{selectedModel === id ? '✓' : ''}</span>
+                    <span className="model-name">{model.NAME}</span>
+                    {model.MODEL_TYPE === 'paid' && <span className="model-paid">$</span>}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Make Match Button */}
