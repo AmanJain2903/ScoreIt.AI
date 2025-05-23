@@ -7,6 +7,10 @@ pytestmark = pytest.mark.unit
 def secure_key_manager():
     return security.SecureKeyManager()
 
+@pytest.fixture 
+def model_load():
+    return model_load.load_models()
+
 def test_initialization(secure_key_manager):
     assert secure_key_manager._key is not None
     assert secure_key_manager._cipher is not None
@@ -37,5 +41,11 @@ def test_sanitize_input():
         security.sanitizeInput(b"123456", 5)
     with pytest.raises(ValueError, match="Input must be a string or bytes."):
         security.sanitizeInput(123, 100)
+
+def test_model_load():
+    model_load.load_models()
+    assert model_load.model1 is not None
+    assert model_load.model2 is not None
+
 
 
