@@ -34,6 +34,7 @@ jobs:
         pip install -r requirements.txt
         sudo apt-get update
         sudo apt-get install -y poppler-utils tesseract-ocr
+        python src/utils/model_load.py
 
     - name: Run Unit Tests Only
       run: |
@@ -83,6 +84,7 @@ jobs:
         pip install -r requirements.txt
         sudo apt-get update
         sudo apt-get install -y poppler-utils tesseract-ocr
+        python src/utils/model_load.py
 
     - name: Run Integration Tests
       run: |
@@ -132,6 +134,7 @@ jobs:
         pip install -r requirements.txt
         sudo apt-get update
         sudo apt-get install -y poppler-utils tesseract-ocr
+        python src/utils/model_load.py
 
     - name: Run API Tests
       run: |

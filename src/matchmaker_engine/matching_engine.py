@@ -164,12 +164,6 @@ class MatchingEngine:
         total_end = time.time()
         print(f"🚀 Total matching completed in {total_end - total_start:.2f}s")
 
-        try:
-            torch.cuda.empty_cache()
-            del executor
-        except:
-            pass
-
         return self.matchReport
 
     
