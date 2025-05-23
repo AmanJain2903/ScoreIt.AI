@@ -24,6 +24,7 @@ def download_from_huggingface(repo_id, filename, destination=None):
     """
 
     file_path = hf_hub_download(repo_id=repo_id, filename=filename)
+    os.makedirs(os.path.dirname(destination), exist_ok=True)
 
     if destination:
         import shutil
