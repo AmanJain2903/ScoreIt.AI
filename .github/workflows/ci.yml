@@ -56,7 +56,7 @@ jobs:
     name: Run Integration Tests
     runs-on: ubuntu-latest
 
-    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main'
+    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main' || github.event.pull_request.base.ref == 'staging'
 
     steps:
     - name: Checkout repository
@@ -105,7 +105,7 @@ jobs:
     name: Run API Tests
     runs-on: ubuntu-latest
 
-    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main'
+    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main' || github.event.pull_request.base.ref == 'staging'
 
     steps:
     - name: Checkout repository
