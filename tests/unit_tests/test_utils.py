@@ -1,5 +1,6 @@
 import pytest
 from src.utils import security
+from src.utils import model_load
 
 pytestmark = pytest.mark.unit
 
@@ -9,7 +10,7 @@ def secure_key_manager():
 
 @pytest.fixture 
 def model_load():
-    return model_load.load_models()
+    return model_load.model1, model_load.model2
 
 def test_initialization(secure_key_manager):
     assert secure_key_manager._key is not None
@@ -43,9 +44,9 @@ def test_sanitize_input():
         security.sanitizeInput(123, 100)
 
 def test_model_load():
-    model_load.load_models()
-    assert model_load.model1 is not None
-    assert model_load.model2 is not None
+    model1, model2 = model_load()
+    assert model1 is not None
+    assert model2 is not None
 
 
 
