@@ -2,7 +2,11 @@
   display: flex;
   min-height: 100vh;
   min-width: 100vw;
+  width: 100%;
+  height: 100%;
   background-color: #f5f5f5;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .auth-sidebar {
@@ -37,6 +41,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .switch-auth-mode:hover {
@@ -180,4 +190,233 @@
 .dark-mode .submit-button:hover {
   background: #fde68a !important;
   color: #18181b !important;
-} */ 
+} */
+
+/* Add these media queries at the end of the file */
+
+/* Large screens (laptops/desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .auth-container {
+    width: 400px;
+  }
+  .auth-form {
+    padding: 2rem;
+  }
+  .auth-input {
+    font-size: 1rem;
+  }
+  .auth-button {
+    font-size: 1rem;
+  }
+}
+
+/* Medium screens (tablets, 768px to 1199px) */
+@media screen and (max-width: 1199px) {
+  .auth-container {
+    width: 350px;
+  }
+  .auth-form {
+    padding: 1.5rem;
+  }
+}
+
+/* Small screens (mobile landscape, 576px to 767px) */
+@media screen and (max-width: 767px) {
+  .auth-container {
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .auth-sidebar {
+    width: 100%;
+    padding: 2vh;
+    min-height: 20%;
+    max-height: 40%;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    width: 60vw;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .switch-auth-mode {
+    font-size: 1rem;
+    padding: 1vh 4vw;
+    margin-bottom: 2vh;
+    width: auto;
+    min-width: 200px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10vh;
+  }
+
+  .auth-form-container {
+    width: 100%;
+    padding: 4vh 2vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .auth-form-container h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 2vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth-form {
+    width: 90%;
+    max-width: 400px;
+    min-width: auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 2vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .form-group input {
+    font-size: 1rem;
+    padding: 1vh 2vw;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .error-message, .success-message {
+    font-size: 0.9rem;
+    margin-left: 0;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    margin-left: 0;
+    padding: 1.2vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .auth-container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .auth-sidebar {
+    min-height: 25vh;
+    padding: 1.5vh;
+  }
+
+  .logo {
+    width: 80vw;
+    max-width: 250px;
+  }
+
+  .auth-form-container {
+    padding: 3vh 1vh;
+  }
+
+  .auth-form-container h2 {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+
+  .auth-form {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5vh;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+    padding: 0.8vh 1.5vw;
+  }
+
+  .error-message, .success-message {
+    font-size: 0.85rem;
+    width: 95%;
+    padding: 0.8vh;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 1vh;
+  }
+
+  .switch-auth-mode {
+    font-size: 0.9rem;
+    padding: 0.8vh 3vw;
+    min-width: 180px;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode .auth-container {
+  background: #18181b;
+}
+
+.dark-mode .auth-form-container {
+  background: #23272f;
+}
+
+.dark-mode .auth-form-container h2 {
+  color: #f3f4f6;
+}
+
+.dark-mode .form-group label {
+  color: #f3f4f6;
+}
+
+.dark-mode .form-group input {
+  background: #18181b;
+  color: #f3f4f6;
+  border-color: #27272a;
+}
+
+.dark-mode .form-group input:focus {
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+}
+
+.dark-mode .submit-button {
+  background: #fbbf24;
+  color: #18181b;
+}
+
+.dark-mode .submit-button:hover {
+  background: #fde68a;
+}
+
+.dark-mode .error-message {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+
+.dark-mode .success-message {
+  background-color: #065f46;
+  color: #d1fae5;
+} 

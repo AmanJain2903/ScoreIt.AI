@@ -61,11 +61,11 @@ class ExperienceSimilarity:
     def hardEnsemble(self):
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
-        for i in range(len(self.model1Score)):
-            if self.model1Score[i] < 0.5:
-                self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
-            if self.model2Score[i] < 0.5:
-                self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
+        # for i in range(len(self.model1Score)):
+        #     if self.model1Score[i] < 0.5:
+        #         self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
+        #     if self.model2Score[i] < 0.5:
+        #         self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
         self.averageEnsemble()
     
     def getEnsembleScore(self):
@@ -149,12 +149,12 @@ class ExperienceMatching:
         self.jobExperience = None
         self.similarity = ExperienceSimilarity()
         self.resumeNumeralizer = ExperienceNumeralizer(mode="sum")
-        self.jobNumeralizer = ExperienceNumeralizer(mode="avg")
+        self.jobNumeralizer = ExperienceNumeralizer(mode="sum")
         self.factor = 1
 
     
     def setInputs(self, resumeExperience, jobExperience):
-        if not resumeExperience or not jobExperience:
+        if resumeExperience is None or jobExperience is None:
             raise ValueError("Resume Experience and job Experience cannot be empty.")
         if not isinstance(resumeExperience, str):
             raise ValueError("Resume Experience must be a string.")
@@ -170,6 +170,13 @@ class ExperienceMatching:
             raise ValueError("Inputs are not set")
         
         try:
+            if not any(experience.strip() for experience in self.jobExperience):
+                if not any(experience.strip() for experience in self.resumeExperience):
+                    return np.random.uniform(0.7, 0.8)
+                else:
+                    return np.random.uniform(0.8, 1.0)
+            if not any(experience.strip() for experience in self.resumeExperience):
+                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedExperiences = {}
@@ -222,7 +229,7 @@ class ExperienceMatching:
         scores = self.similarity.getEnsembleScore()
         if not scores:
             return 0.0
-        return min(1.0,max(scores))
+        return min(1.0, np.mean(scores))
     
     def getSimilarityScore(self):
         if self.similarity.ensembleScore is None:

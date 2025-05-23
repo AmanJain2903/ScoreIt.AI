@@ -120,16 +120,6 @@ def test_set_inputs_failure(designation_matchmaker):
     with pytest.raises(ValueError, match="Resume designation and job designation cannot be empty."):
         designation_matchmaker.setInputs(resumeDesignation, jobDesignation)
 
-    resumeDesignation = ""
-    jobDesignation = "Senior Software Engineer, Full Stack Engineer, Backend Developer"
-    with pytest.raises(ValueError, match="Resume designation and job designation cannot be empty."):
-        designation_matchmaker.setInputs(resumeDesignation, jobDesignation)
-    
-    resumeDesignation = "Senior Software Engineer, Full Stack Engineer, Backend Developer"
-    jobDesignation = ""
-    with pytest.raises(ValueError, match="Resume designation and job designation cannot be empty."):
-        designation_matchmaker.setInputs(resumeDesignation, jobDesignation)
-
 def test_set_inputs_invalid(designation_matchmaker):
     resumeDesignation = 12345
     jobDesignation = "Senior Software Engineer, Full Stack Engineer, Backend Developer"

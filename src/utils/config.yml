@@ -1,2 +1,2 @@
-MODEL_NAME_1 : 'all-mpnet-base-v2'
-MODEL_NAME_2 :  'paraphrase-MiniLM-L3-v2'
+MODEL_NAME_1 : 'sentence-transformers/all-mpnet-base-v2'
+MODEL_NAME_2 :  'sentence-transformers/paraphrase-MiniLM-L3-v2'

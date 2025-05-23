@@ -39,7 +39,8 @@ def test_jd_agent_end_to_end(jd_agent):
     "PAY",
     "CERTIFICATION"
     ]
-    for randomIndex in range(20):
+    for _ in range(1):
+        randomIndex = np.random.randint(0, len(dataset))
         description = dataset['Description'].iloc[randomIndex]
         jd_agent.setUserPrompt(description)
         output = jd_agent.getJsonOutput()

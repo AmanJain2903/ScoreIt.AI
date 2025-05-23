@@ -302,8 +302,9 @@ ScoreIt.AI is an AI-powered system designed to:
 - `staging` for staging 
 - New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to staging.
 - Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to staging.
-- Releases are handled via `release/<version>` branches which are merged to staging.
-- Patches are handled via `patch/<version>` branches which are merged to staging.
+- Major Releases are handled via `release/<version>` branches which are merged to staging.
+- Minor Releases are handled via `minor/<version>` branches which are merged to staging.
+- Patches Updates are handled via `patch/<version>` branches which are merged to staging.
 - No direct commits are made to `main` or `staging`.
 - Pull Requests (PRs) are created from `staging` branch to `main`.
 - GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `staging`.
