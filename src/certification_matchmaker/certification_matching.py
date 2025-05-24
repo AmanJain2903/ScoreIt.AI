@@ -58,11 +58,11 @@ class CertificationSimilarity:
     def hardEnsemble(self):
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
-        for i in range(len(self.model1Score)):
-            if self.model1Score[i] < 0.5:
-                self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
-            if self.model2Score[i] < 0.5:
-                self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
+        # for i in range(len(self.model1Score)):
+        #     if self.model1Score[i] < 0.5:
+        #         self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
+        #     if self.model2Score[i] < 0.5:
+        #         self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
         self.averageEnsemble()
     
     def getEnsembleScore(self):
@@ -91,7 +91,7 @@ class CertificationMatching:
         self.similarity = CertificationSimilarity()
     
     def setInputs(self, resumeCertification, jobCertification):
-        if not resumeCertification or not jobCertification:
+        if resumeCertification is None or jobCertification is None:
             raise ValueError("Resume certification and job certification cannot be empty.")
         if not isinstance(resumeCertification,str):
             raise ValueError("Resume certification must be a string.")
@@ -107,6 +107,13 @@ class CertificationMatching:
             raise ValueError("Inputs are not set")
         
         try:
+            if not any(cert.strip() for cert in self.jobCertification):
+                if not any(cert.strip() for cert in self.resumeCertification):
+                    return np.random.uniform(0.7, 0.8)
+                else:
+                    return np.random.uniform(0.8, 1.0)
+            if not any(cert.strip() for cert in self.resumeCertification):
+                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedCertifications = {}

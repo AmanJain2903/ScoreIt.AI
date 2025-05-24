@@ -52,14 +52,14 @@ def test_initialization_success(matching_engine):
 
 def test_getMatch_success(matching_engine):
     matching_engine.resume_json = {
-        "EDUCATION": ["BSc CS"], "EXPERIENCE": ["3 yrs"], "TECHNICAL_SKILL": ["Python"],
-        "SOFT_SKILL": ["Leadership"], "TOOL": ["Git"], "CERTIFICATION": ["AWS"],
-        "DESIGNATION": ["Engineer"]
+        "EDUCATION": "BSc CS", "EXPERIENCE": "3 yrs", "TECHNICAL_SKILL": "Python",
+        "SOFT_SKILL": "Leadership", "TOOL": "Git", "CERTIFICATION": "AWS",
+        "DESIGNATION": "Engineer"
     }
     matching_engine.jd_json = {
-        "EDUCATION": ["BSc CS"], "EXPERIENCE": ["2 yrs"], "TECHNICAL_SKILL": ["Python"],
-        "SOFT_SKILL": ["Leadership"], "TOOL": ["Git"], "CERTIFICATION": ["AWS"],
-        "DESIGNATION": ["Engineer"]
+        "EDUCATION": "BSc CS", "EXPERIENCE": "2 yrs", "TECHNICAL_SKILL": "Python",
+        "SOFT_SKILL": "Leadership", "TOOL": "Git", "CERTIFICATION": "AWS",
+        "DESIGNATION": "Engineer"
     }
 
     result = matching_engine.getMatch()

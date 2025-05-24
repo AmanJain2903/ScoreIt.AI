@@ -120,16 +120,6 @@ def test_set_inputs_failure(certification_matchmaker):
     with pytest.raises(ValueError, match="Resume certification and job certification cannot be empty."):
         certification_matchmaker.setInputs(resumeCertification, jobCertification)
 
-    resumeCertification = ""
-    jobCertification = "AWS Certified Solutions Architect, Google Professional Data Engineer, Certified Kubernetes Administrator"
-    with pytest.raises(ValueError, match="Resume certification and job certification cannot be empty."):
-        certification_matchmaker.setInputs(resumeCertification, jobCertification)
-    
-    resumeCertification = "AWS Certified Solutions Architect, Google Professional Data Engineer, Certified Kubernetes Administrator"
-    jobCertification = ""
-    with pytest.raises(ValueError, match="Resume certification and job certification cannot be empty."):
-        certification_matchmaker.setInputs(resumeCertification, jobCertification)
-
 def test_set_inputs_invalid(certification_matchmaker):
     resumeCertification = 12345
     jobCertification = "AWS Certified Solutions Architect, Google Professional Data Engineer, Certified Kubernetes Administrator"
