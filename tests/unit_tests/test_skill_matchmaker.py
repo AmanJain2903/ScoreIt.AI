@@ -120,16 +120,6 @@ def test_set_inputs_failure(skill_matchmaker):
     with pytest.raises(ValueError, match="Resume skill and job skill cannot be empty."):
         skill_matchmaker.setInputs(resumeSkill, jobSkill)
 
-    resumeSkill = ""
-    jobSkill = "Python, Machine Learning, Data Science"
-    with pytest.raises(ValueError, match="Resume skill and job skill cannot be empty."):
-        skill_matchmaker.setInputs(resumeSkill, jobSkill)
-    
-    resumeSkill = "Python, Machine Learning, Data Science"
-    jobSkill = ""
-    with pytest.raises(ValueError, match="Resume skill and job skill cannot be empty."):
-        skill_matchmaker.setInputs(resumeSkill, jobSkill)
-
 def test_set_inputs_invalid(skill_matchmaker):
     resumeSkill = 12345
     jobSkill = "Python, Machine Learning, Data Science"

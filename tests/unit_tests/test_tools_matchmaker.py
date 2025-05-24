@@ -120,16 +120,6 @@ def test_set_inputs_failure(tools_matchmaker):
     with pytest.raises(ValueError, match="Resume tools and job tools cannot be empty."):
         tools_matchmaker.setInputs(resumeTool, jobTool)
 
-    resumeTool = ""
-    jobTool = "Docker, GitHub, Jenkins, Azure DevOps, Jira, MySQL, Postman"
-    with pytest.raises(ValueError, match="Resume tools and job tools cannot be empty."):
-        tools_matchmaker.setInputs(resumeTool, jobTool)
-    
-    resumeTool = "Docker, GitHub, Jenkins, Azure DevOps, Jira, MySQL, Postman"
-    jobTool = ""
-    with pytest.raises(ValueError, match="Resume tools and job tools cannot be empty."):
-        tools_matchmaker.setInputs(resumeTool, jobTool)
-
 def test_set_inputs_invalid(tools_matchmaker):
     resumeTool = 12345
     jobTool = "Docker, GitHub, Jenkins, Azure DevOps, Jira, MySQL, Postman"

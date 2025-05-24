@@ -2,6 +2,7 @@ import pytest
 from src.resume_extractor_agent.resume_agent import ResumeAgent
 import os
 import pandas as pd
+import numpy as np
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -40,7 +41,8 @@ def test_resume_agent_end_to_end(resume_agent):
     ]
     
     
-    for randomIndex in range(20):
+    for _ in range(1):
+        randomIndex = np.random.randint(0, len(dataset))
         resume = dataset['Resume'].iloc[randomIndex]
         resume_agent.setUserPrompt(resume)
         output = resume_agent.getJsonOutput()

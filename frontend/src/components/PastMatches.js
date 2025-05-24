@@ -11,6 +11,7 @@ import {
   Legend
 } from 'chart.js';
 import '../styles/PastMatches.css';
+import ScoreRow from './ScoreRow';
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
@@ -40,6 +41,7 @@ const PastMatches = forwardRef((props, ref) => {
   const [matches, setMatches] = useState([]);
   const [expandedMatch, setExpandedMatch] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.matchMedia('(max-width: 480px)').matches);
 
   useEffect(() => {
     fetchMatches();
@@ -50,6 +52,14 @@ const PastMatches = forwardRef((props, ref) => {
       onCountChange(matches.length);
     }
   }, [matches, onCountChange]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.matchMedia('(max-width: 480px)').matches);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const fetchMatches = async () => {
     try {
@@ -161,7 +171,8 @@ const PastMatches = forwardRef((props, ref) => {
         grid: { color: 'var(--border-color)' },
         pointLabels: {
           color: 'var(--text-secondary)',
-          font: { size: 13 }
+          font: { size: 13 },
+          display: !isMobile
         },
         min: 0,
         max: 1,
@@ -221,29 +232,30 @@ const PastMatches = forwardRef((props, ref) => {
                     <div className="match-header">
                       <span className="match-date">{formatDate(getMatchDateValue(match))}</span>
                     </div>
-                    <div 
-                      className={`score-radar clickable`}
-                      onClick={() => setExpandedMatch(getMatchId(match))}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <Radar
-                        data={{
-                          labels,
-                          datasets: [
-                            {
-                              label: 'Match Scores',
-                              data,
-                              backgroundColor: color + '33', // semi-transparent fill
-                              borderColor: color,
-                              pointBackgroundColor: color,
-                              pointBorderColor: color,
-                              borderWidth: 2,
-                              fill: true
-                            }
-                          ]
-                        }}
-                        options={getRadarOptions(color)}
-                      />
+                    <div className="match-radar-container">
+                      <div 
+                        className="score-radar clickable"
+                        onClick={() => setExpandedMatch(getMatchId(match))}
+                      >
+                        <Radar
+                          data={{
+                            labels,
+                            datasets: [
+                              {
+                                label: 'Match Scores',
+                                data,
+                                backgroundColor: color + '33', // semi-transparent fill
+                                borderColor: color,
+                                pointBackgroundColor: color,
+                                pointBorderColor: color,
+                                borderWidth: 2,
+                                fill: true
+                              }
+                            ]
+                          }}
+                          options={getRadarOptions(color)}
+                        />
+                      </div>
                     </div>
                   </div>
                 );
@@ -270,20 +282,14 @@ const PastMatches = forwardRef((props, ref) => {
                   <div className="modal-section">
                     <h3>Detailed Scores</h3>
                     <div className="detailed-scores">
-                      {Object.entries(expandedMatchObj.match_report).map(([key, value]) => (
-                        <div key={key} className="score-item">
-                          <span className="score-label">{SCORE_LABELS[key] || key}</span>
-                          <div className="score-bar-container">
-                            <div 
-                              className="score-bar"
-                              style={{
-                                width: `${value * 100}%`,
-                                backgroundColor: getScoreColor(value)
-                              }}
-                            />
-                          </div>
-                          <span className="score-value">{(value * 100).toFixed(1)}%</span>
-                        </div>
+                      {SCORE_ORDER.map((key) => (
+                        <ScoreRow
+                          key={key}
+                          label={SCORE_LABELS[key] || key}
+                          value={`${((expandedMatchObj.match_report[key] ?? 0) * 100).toFixed(1)}%`}
+                          percentage={(expandedMatchObj.match_report[key] ?? 0) * 100}
+                          color={getScoreColor(expandedMatchObj.match_report[key] ?? 0)}
+                        />
                       ))}
                     </div>
                   </div>

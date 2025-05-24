@@ -53,6 +53,7 @@ setup(
     "PyJWT==2.10.1",
     "pymongo==4.12.1",
     "torch==2.7.0",
+    "huggingface-hub==0.30.2"
 ]
 )
 

@@ -1,0 +1,141 @@
+.score-row {
+  width: 100%;
+  margin: 0 0 clamp(1.1rem, 2vw, 1.7rem) 0;
+}
+
+.score-bar-container {
+  position: relative;
+  width: 100%;
+  height: clamp(1.5rem, 4vw, 2.5rem);
+  min-height: 0;
+  background: #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.score-bar {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.3s, background-color 0.3s;
+  background-color: var(--score-bar-color, #10b981);
+}
+
+.score-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 2;
+  padding: 0 clamp(0.5em, 2vw, 1em);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.score-label, .score-value {
+  color: #111;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 1.8vw, 1.4rem);
+  white-space: normal;
+  overflow: visible;
+  padding: 0 0.2em;
+}
+
+.score-label {
+  margin-right: 0.5em;
+  text-align: left;
+}
+
+.score-value {
+  margin-left: 0.5em;
+  text-align: right;
+}
+
+
+.dark-mode .score-bar-container {
+  background: #444466 !important;
+}
+
+.dark-mode .score-bar-container .score-label,
+.dark-mode .score-bar-container .score-value {
+  color: #111 !important;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 1800px) {
+  .score-row {
+    margin-bottom: clamp(1.5rem, 2vw, 2.5rem);
+  }
+  
+  .score-bar-container {
+    height: clamp(2rem, 4vw, 3rem);
+  }
+  
+  .score-label, .score-value {
+    font-size: clamp(1rem, 1.6vw, 1.6rem);
+    max-width: 42%;
+  }
+  
+  .score-text {
+    padding: 0 clamp(1em, 3vw, 2em);
+  }
+}
+
+@media (min-width: 1024px) {
+  .score-bar-container {
+    height: clamp(1.5rem, 3vw, 2.5rem);
+  }
+  
+  .score-row {
+    margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
+  }
+  
+  .score-label, .score-value {
+    font-size: clamp(0.9rem, 1.4vw, 1.4rem);
+    max-width: 42%;
+  }
+}
+
+@media (max-width: 768px) {
+  .score-row {
+    margin-bottom: clamp(0.7rem, 2vw, 1.2rem);
+  }
+  
+  .score-bar-container {
+    height: clamp(1.1rem, 5vw, 1.7rem);
+  }
+  
+  .score-label, .score-value {
+    font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+    max-width: 45%;
+  }
+  
+  .score-text {
+    padding: 0 0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .score-row {
+    margin-bottom: clamp(1.1rem, 4vw, 1.7rem);
+  }
+  
+  .score-bar-container {
+    height: clamp(1.3rem, 8vw, 2.2rem);
+  }
+  
+  .score-label, .score-value {
+    font-size: clamp(0.8rem, 3.5vw, 1rem);
+    max-width: 48%;
+  }
+  
+  .score-text {
+    padding: 0 0.2em;
+  }
+} 

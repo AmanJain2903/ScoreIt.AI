@@ -166,16 +166,6 @@ def test_set_inputs_failure(experience_matchmaker):
     with pytest.raises(ValueError, match="Resume Experience and job Experience cannot be empty."):
         experience_matchmaker.setInputs(resumeExperience, jobExperience)
 
-    resumeExperience = ""
-    jobExperience = "Master of Science in Computer Science"
-    with pytest.raises(ValueError, match="Resume Experience and job Experience cannot be empty."):
-        experience_matchmaker.setInputs(resumeExperience, jobExperience)
-    
-    resumeExperience = "Bachelor of Science in Computer Science"
-    jobExperience = ""
-    with pytest.raises(ValueError, match="Resume Experience and job Experience cannot be empty."):
-        experience_matchmaker.setInputs(resumeExperience, jobExperience)
-
 def test_set_inputs_invalid(experience_matchmaker):
     resumeExperience = 12345
     jobExperience = "Master of Science in Computer Science"

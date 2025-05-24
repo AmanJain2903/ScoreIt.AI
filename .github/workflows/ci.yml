@@ -34,6 +34,7 @@ jobs:
         pip install -r requirements.txt
         sudo apt-get update
         sudo apt-get install -y poppler-utils tesseract-ocr
+        PYTHONPATH=. python src/utils/model_load.py
 
     - name: Run Unit Tests Only
       run: |
@@ -56,7 +57,7 @@ jobs:
     name: Run Integration Tests
     runs-on: ubuntu-latest
 
-    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main'
+    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main' || github.event.pull_request.base.ref == 'staging'
 
     steps:
     - name: Checkout repository
@@ -83,6 +84,7 @@ jobs:
         pip install -r requirements.txt
         sudo apt-get update
         sudo apt-get install -y poppler-utils tesseract-ocr
+        PYTHONPATH=. python src/utils/model_load.py
 
     - name: Run Integration Tests
       run: |
@@ -105,7 +107,7 @@ jobs:
     name: Run API Tests
     runs-on: ubuntu-latest
 
-    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main'
+    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main' || github.event.pull_request.base.ref == 'staging'
 
     steps:
     - name: Checkout repository
@@ -132,6 +134,7 @@ jobs:
         pip install -r requirements.txt
         sudo apt-get update
         sudo apt-get install -y poppler-utils tesseract-ocr
+        PYTHONPATH=. python src/utils/model_load.py
 
     - name: Run API Tests
       run: |

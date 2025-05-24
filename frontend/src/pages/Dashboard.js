@@ -34,7 +34,6 @@ const Dashboard = () => {
   const [deleteError, setDeleteError] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [showDeleteAccount, setShowDeleteAccount] = useState(false);
-  const [showProfileTooltip, setShowProfileTooltip] = useState(false);
   const [showNoMatchesPopup, setShowNoMatchesPopup] = useState(false);
   const [hasPastMatches, setHasPastMatches] = useState(null); // null = unknown, true/false = known
   const historyBtnRef = useRef(null);
@@ -59,10 +58,10 @@ const Dashboard = () => {
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
     }
-    localStorage.setItem('darkMode', darkMode);
+    return () => {
+      document.body.classList.remove('dark-mode');
+    };
   }, [darkMode]);
 
   useEffect(() => {
@@ -439,15 +438,6 @@ const Dashboard = () => {
               className="dark-mode-toggle"
               onClick={handleToggleDarkMode}
               title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-              style={{
-                background: 'none',
-                border: 'none',
-                fontSize: '1.6rem',
-                cursor: 'pointer',
-                color: darkMode ? '#fbbf24' : '#374151',
-                marginRight: '0.5rem',
-                transition: 'color 0.2s'
-              }}
             >
               {darkMode ? '🌙' : '☀️'}
             </button>
@@ -458,37 +448,6 @@ const Dashboard = () => {
               </button>
               {showProfileDropdown && (
                 <div className="profile-dropdown">
-                  <div style={{ position: 'relative' }}>
-                    <button
-                      className="dropdown-item"
-                      onMouseEnter={() => setShowProfileTooltip(true)}
-                      onMouseLeave={() => setShowProfileTooltip(false)}
-                      onFocus={() => setShowProfileTooltip(true)}
-                      onBlur={() => setShowProfileTooltip(false)}
-                    >
-                      <span className="dropdown-icon">👤</span>
-                      My Profile
-                    </button>
-                    {showProfileTooltip && (
-                      <div style={{
-                        position: 'absolute',
-                        right: '100%',
-                        top: '50%',
-                        transform: 'translateY(-50%)',
-                        background: '#18181b',
-                        color: '#fff',
-                        padding: '0.5rem 1rem',
-                        borderRadius: 8,
-                        whiteSpace: 'nowrap',
-                        fontSize: '0.95rem',
-                        marginRight: '0.5rem',
-                        zIndex: 2002,
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.12)'
-                      }}>
-                        Feature under development
-                      </div>
-                    )}
-                  </div>
                   <button
                     className="dropdown-item settings-parent"
                     onMouseEnter={() => setShowDeleteAccount(true)}
@@ -525,12 +484,10 @@ const Dashboard = () => {
           <div className="input-sections">
             {/* Resume Section */}
             <div className="input-section resume-section">
-              <h2>
-                Resume
-                <button onClick={handleResumeReset} className="reset-button">
-                  Reset
-                </button>
-              </h2>
+              <div className="section-heading-flex">
+                <h2>Resume</h2>
+                <button onClick={handleResumeReset} className="reset-button">Reset</button>
+              </div>
               <div className="text-input-container">
                 <textarea
                   className="text-input"
@@ -562,12 +519,10 @@ const Dashboard = () => {
 
             {/* Job Description Section */}
             <div className="input-section job-section">
-              <h2>
-                Job Description
-                <button onClick={handleJobReset} className="reset-button">
-                  Reset
-                </button>
-              </h2>
+              <div className="section-heading-flex">
+                <h2>Job Description</h2>
+                <button onClick={handleJobReset} className="reset-button">Reset</button>
+              </div>
               <div className="text-input-container">
                 <textarea
                   className="text-input"
@@ -647,39 +602,47 @@ const Dashboard = () => {
           {/* Score Report Modal */}
           {showScoreReport && matchReport && (
             <ScoreReport 
-              matchReport={matchReport} 
+              isOpen={showScoreReport}
               onClose={handleCloseScoreReport}
-              matchTime={matchTime}
+              matchData={{
+                timestamp: Date.now(),
+                totalScore: 100,
+                battingScore: matchReport.EDUCATION * 100,
+                bowlingScore: matchReport.EXPERIENCE * 100,
+                fieldingScore: matchReport.TECHNICAL_SKILL * 100,
+                education: matchReport.EDUCATION * 100,
+                experience: matchReport.EXPERIENCE * 100,
+                technicalSkill: matchReport.TECHNICAL_SKILL * 100,
+                softSkill: matchReport.SOFT_SKILL * 100,
+                tool: matchReport.TOOL * 100,
+                certification: matchReport.CERTIFICATION * 100,
+                designation: matchReport.DESIGNATION * 100,
+                timeTaken: matchTime
+              }}
             />
           )}
 
           <PastMatches ref={pastMatchesRef} onCountChange={handlePastMatchesCount} />
-          <footer className="past-matches-footer">
-            <div className="footer-title">ScoreIt.AI v1.0.0</div>
-            <div className="footer-author">Developed by Aman Jain</div>
-            <div className="footer-email">amanjn2003@gmail.com</div>
-          </footer>
         </main>
       </div>
 
       {/* Delete Account Modal */}
       {showDeleteModal && (
-        <div className="modal-overlay" style={{zIndex: 3000}}>
-          <div className="modal-content" style={{margin: 'auto', padding: '2rem', textAlign: 'center', width: '30vw', marginLeft: '44vw', alignItems: 'center', justifyContent: 'center', alignSelf: 'center'}}>
+        <div className="modal-overlay">
+          <div className="dashboard-delete-modal">
             <h2>Delete Account</h2>
-            <p style={{marginBottom: '1rem'}}>This will permanently delete your account and all match history. This action cannot be undone.</p>
+            <p>This will permanently delete your account and all match history. This action cannot be undone.</p>
             <input
               type="password"
               placeholder="Enter your password to confirm"
               value={deletePassword}
               onChange={e => setDeletePassword(e.target.value)}
-              style={{width: '100%', padding: '0.75rem', borderRadius: 8, border: '1px solid #e5e7eb', marginBottom: '1rem'}}
               disabled={isDeleting}
             />
-            {deleteError && <div style={{color: '#ef4444', marginBottom: '1rem'}}>{deleteError}</div>}
-            <div style={{display: 'flex', justifyContent: 'center', gap: '1rem'}}>
-              <button onClick={handleDeleteModalClose} style={{padding: '0.7rem 2rem', borderRadius: 8, border: 'none', background: '#e5e7eb', color: '#374151', fontWeight: 600}} disabled={isDeleting}>Cancel</button>
-              <button onClick={handleConfirmDelete} style={{padding: '0.7rem 2rem', borderRadius: 8, border: 'none', background: '#ef4444', color: '#fff', fontWeight: 600}} disabled={isDeleting || !deletePassword}>{isDeleting ? 'Deleting...' : 'Delete'}</button>
+            {deleteError && <div className="delete-error">{deleteError}</div>}
+            <div className="delete-modal-actions">
+              <button onClick={handleDeleteModalClose} className="delete-cancel-btn" disabled={isDeleting}>Cancel</button>
+              <button onClick={handleConfirmDelete} className="delete-confirm-btn" disabled={isDeleting || !deletePassword}>{isDeleting ? 'Deleting...' : 'Delete'}</button>
             </div>
           </div>
         </div>
@@ -687,23 +650,10 @@ const Dashboard = () => {
 
       {showNoMatchesPopup && (
         <div
-          className={`no-matches-popup ${showNoMatchesPopup ? 'show' : ''}`}
+          className={`no-matches-popup-custom ${showNoMatchesPopup ? 'show' : ''}`}
           style={{
-            position: 'fixed',
             top: popupPos.top,
-            left: popupPos.left,
-            transform: 'translate(-50%, -100%)',
-            background: '#18181b',
-            color: '#fff',
-            padding: '1rem 2rem',
-            borderRadius: 10,
-            fontSize: '1.1rem',
-            zIndex: 4000,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
-            pointerEvents: 'auto',
-            cursor: 'pointer',
-            whiteSpace: 'nowrap',
-            transition: 'opacity 0.4s cubic-bezier(.4,2,.6,1), transform 0.4s cubic-bezier(.4,2,.6,1)'
+            left: popupPos.left
           }}
           onClick={() => setShowNoMatchesPopup(false)}
         >

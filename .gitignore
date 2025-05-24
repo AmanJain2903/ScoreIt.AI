@@ -13,3 +13,6 @@ __pycache__/
 .coverage*
 .ruff_cache
 run_local.py
+modeling/models/
+modeling/datasets/
+src/utils/models/

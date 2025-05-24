@@ -96,11 +96,17 @@ from src.tools_matchmaker.tools_matching import ToolMatching
 from src.certification_matchmaker.certification_matching import CertificationMatching
 from src.designation_matchmaker.designation_matching import DesignationMatching
 from dotenv import load_dotenv
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from src.utils.model_load import model1, model2
 import time
 load_dotenv()
+import torch
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import multiprocessing as mp
+import atexit
+import os
+import glob
 
 class MatchingEngine:
     def __init__(self):
@@ -136,8 +142,6 @@ class MatchingEngine:
         try:
             resume_data = self.resume_json.get(entity, [])
             jd_data = self.jd_json.get(entity, [])
-            if not resume_data or not jd_data:
-                return (entity, 0.0)
             matcher = self.matcher_map[entity]
             matcher.setInputs(resume_data, jd_data)
             score = matcher.makeMatch()
@@ -151,7 +155,7 @@ class MatchingEngine:
         
         total_start = time.time()
 
-        with ThreadPoolExecutor(max_workers=8) as executor:
+        with ThreadPoolExecutor(max_workers=len(self.matchReport)) as executor:
             futures = [executor.submit(self._run_matcher, entity) for entity in self.matchReport]
             for future in as_completed(futures):
                 entity, score = future.result()
@@ -161,6 +165,7 @@ class MatchingEngine:
         print(f"🚀 Total matching completed in {total_end - total_start:.2f}s")
 
         return self.matchReport
+
     
 
 

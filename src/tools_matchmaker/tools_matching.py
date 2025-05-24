@@ -58,11 +58,11 @@ class ToolSimilarity:
     def hardEnsemble(self):
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
-        for i in range(len(self.model1Score)):
-            if self.model1Score[i] < 0.5:
-                self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
-            if self.model2Score[i] < 0.5:
-                self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
+        # for i in range(len(self.model1Score)):
+        #     if self.model1Score[i] < 0.5:
+        #         self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
+        #     if self.model2Score[i] < 0.5:
+        #         self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
         self.averageEnsemble()
     
     def getEnsembleScore(self):
@@ -91,7 +91,7 @@ class ToolMatching:
         self.similarity = ToolSimilarity()
     
     def setInputs(self, resumeTool, jobTool):
-        if not resumeTool or not jobTool:
+        if resumeTool is None or jobTool is None:
             raise ValueError("Resume tools and job tools cannot be empty.")
         if not isinstance(resumeTool,str):
             raise ValueError("Resume tools must be a string.")
@@ -107,6 +107,13 @@ class ToolMatching:
             raise ValueError("Inputs are not set")
         
         try:
+            if not any(tool.strip() for tool in self.jobTool):
+                if not any(tool.strip() for tool in self.resumeTool):
+                    return np.random.uniform(0.7, 0.8)
+                else:
+                    return np.random.uniform(0.8, 1.0)
+            if not any(tool.strip() for tool in self.resumeTool):
+                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedTools = {}

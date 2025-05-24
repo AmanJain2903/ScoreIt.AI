@@ -29,6 +29,7 @@ from src.education_matchmaker import config
 from src.utils import security
 from sklearn.metrics.pairwise import cosine_similarity
 from src.utils.model_load import model1, model2
+import numpy as np
 
 config = config.Config()
 
@@ -58,14 +59,14 @@ class EducationSimilarity:
     def hardEnsemble(self):
         if self.model1Score is None or self.model2Score is None:
             raise ValueError("Model scores are not set.")
-        for i in range(len(self.model1Score)):
-            if self.model1Score[i] > self.model2Score[i] and self.model2Score[i] > 0.5:
-                self.model1Score[i] = min(1.0, self.model1Score[i] * 1.2)
-            elif self.model2Score[i] > self.model1Score[i] and self.model1Score[i] > 0.5:
-                self.model2Score[i] = min(1.0, self.model2Score[i] * 1.2)
-            else:
-                self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
-                self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
+        # for i in range(len(self.model1Score)):
+        #     if self.model1Score[i] > self.model2Score[i] and self.model2Score[i] > 0.5:
+        #         self.model1Score[i] = min(1.0, self.model1Score[i] * 1.2)
+        #     elif self.model2Score[i] > self.model1Score[i] and self.model1Score[i] > 0.5:
+        #         self.model2Score[i] = min(1.0, self.model2Score[i] * 1.2)
+        #     else:
+        #         self.model1Score[i] = min(1.0, self.model1Score[i] * 0.7)
+        #         self.model2Score[i] = min(1.0, self.model2Score[i] * 0.7)
         self.averageEnsemble()
     
     def getEnsembleScore(self):
@@ -93,7 +94,7 @@ class EducationMatching:
         self.similarity = EducationSimilarity()
     
     def setInputs(self, resumeEducation, jobEducation):
-        if not resumeEducation or not jobEducation:
+        if resumeEducation is None or jobEducation is None:
             raise ValueError("Resume education and job education cannot be empty.")
         if not isinstance(resumeEducation, str):
             raise ValueError("Resume education must be a string.")
@@ -109,6 +110,13 @@ class EducationMatching:
             raise ValueError("Inputs are not set")
         
         try:
+            if not any(education.strip() for education in self.jobEducation):
+                if not any(education.strip() for education in self.resumeEducation):
+                    return np.random.uniform(0.7, 0.8)
+                else:
+                    return np.random.uniform(0.8, 1.0)
+            if not any(education.strip() for education in self.resumeEducation):
+                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedEducations = {}

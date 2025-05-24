@@ -108,16 +108,6 @@ def test_set_inputs_failure(education_matchmaker):
     with pytest.raises(ValueError, match="Resume education and job education cannot be empty."):
         education_matchmaker.setInputs(resumeEducation, jobEducation)
 
-    resumeEducation = ""
-    jobEducation = "Master of Science in Computer Science"
-    with pytest.raises(ValueError, match="Resume education and job education cannot be empty."):
-        education_matchmaker.setInputs(resumeEducation, jobEducation)
-    
-    resumeEducation = "Bachelor of Science in Computer Science"
-    jobEducation = ""
-    with pytest.raises(ValueError, match="Resume education and job education cannot be empty."):
-        education_matchmaker.setInputs(resumeEducation, jobEducation)
-
 def test_set_inputs_invalid(education_matchmaker):
     resumeEducation = 12345
     jobEducation = "Master of Science in Computer Science"
@@ -140,7 +130,7 @@ def test_make_match_success(education_matchmaker):
     model2Mock.encode.return_value = [np.array([[0.4, 0.5, 0.6]]), np.array([[0.4, 0.5, 0.6]])]
     with patch('src.education_matchmaker.education_matching.cosine_similarity', return_value=np.array([[1.0]])):
         score = education_matchmaker.makeMatch()
-    assert score == 0.7
+    assert score == 1.0
 
 
 def test_make_match_no_models(education_matchmaker):
