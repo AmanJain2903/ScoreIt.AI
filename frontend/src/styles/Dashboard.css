@@ -1064,6 +1064,7 @@ body.dark-mode, .dark-mode .dashboard-container {
 .dark-mode .model-option:hover {
   background: #27272a;
   color: #fff;
+
 }
 
 .dark-mode .model-selector {
