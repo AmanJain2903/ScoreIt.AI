@@ -1,6 +1,6 @@
 # ScoreIt.AI 🚀
 
-[![Vercel - Production](https://img.shields.io/badge/Vercel-Production-brightgreen?logo=vercel&logoColor=white)](https://score-it-ai.vercel.app/auth)
+[![Production - Check it out here](https://img.shields.io/badge/Vercel-Production-brightgreen?logo=vercel&logoColor=white)](https://scoreit-ai.com)
 
 [![GitHub Release](https://img.shields.io/github/v/release/AmanJain2903/ScoreIt.AI)](https://github.com/AmanJain2903/ScoreIt.AI/releases)
 
@@ -15,7 +15,7 @@
 
 > A smart Resume and Job Description matching system powered by AI Agents, Deep Learning, and modern Full Stack Development.
 > 
-> **Current Focus:** Minor Releases & Patch Updates.
+> **Current Focus:** Minor Releases, Patch Updates & Maintenance.
 
 ---
 
@@ -25,7 +25,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Parse and structure unorganized resumes and job descriptions into machine-readable formats.
 - Use LLMs to extract important fields like Technical Skills, Education, Experience, Certifications, and more.
 - Store resumes, JDs, and match results in a MongoDB database.
-- Build a ReactJS frontend for users to upload resumes/JDs and view match scores in real-time.
+- Build a responsive ReactJS frontend for users to upload resumes/JDs and view match scores in real-time.
 
 ---
 
@@ -178,6 +178,7 @@ ScoreIt.AI is an AI-powered system designed to:
     - get_all/ ✅
     - delete_one/ ✅
     - delete_all/ ✅
+  - fetch_config/ ✅
 
 **14. Integrated MongoDB Atlas Database**  
 - The API endpoints were conneted to MongoDB Atlas for ScoreIt.AI.
@@ -192,11 +193,31 @@ ScoreIt.AI is an AI-powered system designed to:
 - Responsive UI to support varying screen sizes.
 - Dark/Light mode toggle functionality.
 
+**16. Deployment**
+- The frontend is deployed using Vercel.
+- The backend is deployed using Render.
+- Continous Deployment is used and software is auto deployed with pushes to main.
+- Public url : https://scoreit-ai.com
+
 ---
 
 ## Modular Clean Architecture**  
-- Each module is isolated inside `src/`, following **package-per-responsibility** architecture.
+- Each module is isolated inside, following **package-per-responsibility** architecture.
+- Core backend modules are inside `src/`.
+- APIs are isolated inside `api/`.
+- Databse DAO are written inside `db/`.
+- Frontend lies inside `frontend/`.
+- ML Model training happens inside `modeling/`.
+- Tests are written inside `tests/`.
+- Benchmarks are maintained inside `benchmarks/`.
 - Config management, secure utils, and common components well-separated.
+
+---
+
+## Large File Storage**  
+- Large files like ML Models are stored using Hugging Face Hub.
+- The files are downloaded from hub during each deploy into Render's runtime.
+- Files are downloaded once and cached to prevent delays.
 
 ---
 
@@ -238,7 +259,7 @@ ScoreIt.AI is an AI-powered system designed to:
 **5. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
-- Current total code coverage: **98%** ✅
+- Current total code coverage: **97%** ✅
 
 **6. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
@@ -262,7 +283,7 @@ ScoreIt.AI is an AI-powered system designed to:
 ## ⚙️ CI/CD Pipeline (GitHub Actions)
 
 **1. Automated Testing**  
-- Every push to `main` and pull requests targeting `main` automatically trigger:
+- Every pull requests targeting `main` or `staging` automatically trigger:
   - Fresh environment creation.
   - Dependency installations.
   - Unit, integration & API test execution with live coverage tracking.
@@ -276,12 +297,12 @@ ScoreIt.AI is an AI-powered system designed to:
 - HTML coverage reports uploaded after each build for manual inspection if needed.
 
 **4. Branch Protection**  
-- PR builds must pass all Unit and Integration tests before merge approval.
+- PR builds must pass all Unit, Integratio & API tests before merge approval.
 - Manual merging without tests passing is restricted via branch protection rules.
 
 **5. Secret Management**  
 - No `.env` or secrets stored inside repo.
-- OpenRouter API key injected safely during CI/CD via GitHub Actions secrets.
+- OpenRouter API key and other secrets injected safely during CI/CD via GitHub Actions secrets.
 
 **6. Installable Clean Packaging**  
 - Project designed with a `setup.py` so it can be installed easily via `pip install .`.
@@ -290,7 +311,17 @@ ScoreIt.AI is an AI-powered system designed to:
 - Frontend deployed using vercel.
 - Backend Deployed using Render.
 - Both are auto deployed with each commit in the main branch.
-- Both have preview with staging branch.
+- Both have preview deployment with the staging branch.
+
+---
+
+## ⚙️ GitHub Actions
+
+**1. Performance Benchmark**  
+- Have GitHub action for performance benchmarks. Ru & download software performance report with just one click.
+
+**2. Evaluation Benchmark**  
+- Have GitHub action for evaluation benchmarks. Ru & download software evaluation report with just one click.
 
 ---
 
@@ -300,15 +331,18 @@ ScoreIt.AI is an AI-powered system designed to:
 
 - `main` for production
 - `staging` for staging 
-- New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to staging.
-- Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to staging.
-- Major Releases are handled via `release/<version>` branches which are merged to staging.
-- Minor Releases are handled via `minor/<version>` branches which are merged to staging.
-- Patches Updates are handled via `patch/<version>` branches which are merged to staging.
+- Pre-Deployment (Development Phase)
+  - New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to main.
+  - Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to main.
+- Post-Deployment (Maintenance Phase)
+  - Major Releases are handled via `release/<version>` branches which are merged to staging.
+  - Minor Releases are handled via `minor/<version>` branches which are merged to staging.
+  - Patches Updates are handled via `patch/<version>` branches which are merged to staging.
 - No direct commits are made to `main` or `staging`.
 - Pull Requests (PRs) are created from `staging` branch to `main`.
 - GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `staging`.
 - Merges allowed only after all tests pass successfully.
+- Release Notes and Patch Notes maintaned for traceability.
 
 ✅ This workflow ensures isolated, clean, and traceable development!
 
@@ -318,14 +352,8 @@ ScoreIt.AI is an AI-powered system designed to:
 
 | Feature | Description |
 |:---|:---|
-| **Patch Updates** | Fix minor bugs and enhance the overall performance of the software |
+| **Maintanence** | Fix minor bugs and enhance the overall performance of the software continously |
 
----
-
-## 📢 Note:
-
-- **Completed:** Resume and JD Extraction Agents, Education Matching Module, Experience Matching Module, Technical Skill Matching Module, Soft Skill Matching Module, Tools Matching Module, Certification Matching Module, Designation Matching Module, End-to-End Matchmaker Engine, Resume OCR Module, Job Description Web Scraper Module, Flask REST APIs, MongoDB Integration, Secure API Management, Full Test Infrastructure, CI/CD Pipeline, UI Skeleton in ReactJS, Stylized UI using Vanilla CSS, Deployed the Software using Vercel & Render with CD pipeline.
-- **In Progress:** Minor Releases & Patch Updates.
 
 ---
 
@@ -357,12 +385,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - `bandit -r src/`
 - `pylint src/`
 
-## To create React App
-- `npx create-react-app <frontend>`
-- `npm install axios`
-- `npm install react-router-dom`
-
-## To run frontend development environment
+## To run frontend development environment localy
 - `npm start`
 
 ## To start backend development environment locally

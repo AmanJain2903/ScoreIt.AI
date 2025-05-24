@@ -107,13 +107,6 @@ class ToolMatching:
             raise ValueError("Inputs are not set")
         
         try:
-            if not any(tool.strip() for tool in self.jobTool):
-                if not any(tool.strip() for tool in self.resumeTool):
-                    return np.random.uniform(0.7, 0.8)
-                else:
-                    return np.random.uniform(0.8, 1.0)
-            if not any(tool.strip() for tool in self.resumeTool):
-                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedTools = {}

@@ -180,10 +180,10 @@ Each version milestone focuses on building a critical subsystem required for a f
 | Test |   Progress    | Deadline |
 |:---|:---|:---|
 | Selenium    | ❌ Pending | June 2nd 2025  |
-| Performance | 🟡 Running | June 3nd 2025  |
-| Evaluation  | 🟡 Running | June 3rd 2025  |
+| Performance | ✅ Running | June 3nd 2025  |
+| Evaluation  | ✅ Running | June 3rd 2025  |
 
 ---
 
-# 📈  The official first version is released! 🚀
+# 📈  The official first version is released! See Releases and Release Notes for further updates.🚀
 

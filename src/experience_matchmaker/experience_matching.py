@@ -104,7 +104,8 @@ class ExperienceNumeralizer:
                 low = float(match[0])
                 high = float(match[1])
                 avg = (low + high) / 2
-                self.years.append(avg)
+                if avg < 100:
+                    self.years.append(avg)
         
         matches_single = self.pattern_single.findall(text)
         for match in matches_single:
@@ -114,7 +115,8 @@ class ExperienceNumeralizer:
                 value = float(num_str)
                 if plus_sign:
                     value += 0.5  # "3+" becomes "3.5"
-                self.years.append(value)
+                if value < 100:
+                    self.years.append(value)
             except ValueError:
                 raise ValueError(f"Invalid number format: {num_str}")
         if not self.years:
@@ -168,15 +170,7 @@ class ExperienceMatching:
             raise RuntimeError(f"Failed to load models")
         if not self.resumeExperience or not self.jobExperience:
             raise ValueError("Inputs are not set")
-        
         try:
-            if not any(experience.strip() for experience in self.jobExperience):
-                if not any(experience.strip() for experience in self.resumeExperience):
-                    return np.random.uniform(0.7, 0.8)
-                else:
-                    return np.random.uniform(0.8, 1.0)
-            if not any(experience.strip() for experience in self.resumeExperience):
-                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedExperiences = {}

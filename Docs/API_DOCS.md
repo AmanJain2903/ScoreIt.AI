@@ -207,4 +207,21 @@ Accepts user email and delete all match records for that user.
 }
 ```
 
+---
+
+### 13. `/get_model_config` – Retrieves the Available Models to Display to the User
+
+- **Method:** `GET`
+
+- **Output:**
+```json
+{
+  modelID : {
+    "MODEL_NAME" : Model's Callable Name,
+    "MODEL_TYPE" : Free/Paid,
+    "NAME" : Model's Display Name
+  }
+}
+```
+
 
