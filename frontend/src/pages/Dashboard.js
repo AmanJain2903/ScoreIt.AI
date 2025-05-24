@@ -624,6 +624,7 @@ const Dashboard = () => {
           )}
 
           <PastMatches ref={pastMatchesRef} onCountChange={handlePastMatchesCount} />
+          <Footer />
         </main>
         <Footer />
       </div>
