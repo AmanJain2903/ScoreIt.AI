@@ -98,6 +98,7 @@ from src.designation_matchmaker.designation_matching import DesignationMatching
 from dotenv import load_dotenv
 from src.utils.model_load import model1, model2
 import time
+import numpy as np
 load_dotenv()
 import torch
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -137,14 +138,20 @@ class MatchingEngine:
             "CERTIFICATION": CertificationMatching(),
             "DESIGNATION": DesignationMatching()
         }
+        self.totalEntitiesWithScore = 0
+        self.totalScore = 0.0
     
     def _run_matcher(self, entity):
         try:
-            resume_data = self.resume_json.get(entity, [])
-            jd_data = self.jd_json.get(entity, [])
+            resume_data = self.resume_json.get(entity, "")
+            jd_data = self.jd_json.get(entity, "")
+            if not resume_data or not jd_data:
+                return (entity, 0.0)
             matcher = self.matcher_map[entity]
             matcher.setInputs(resume_data, jd_data)
             score = matcher.makeMatch()
+            self.totalEntitiesWithScore += 1
+            self.totalScore += score
             return (entity, score)
         except Exception as e:
             return (entity, 0.0)
@@ -163,6 +170,11 @@ class MatchingEngine:
 
         total_end = time.time()
         print(f"🚀 Total matching completed in {total_end - total_start:.2f}s")
+
+        avgScore = self.totalScore / self.totalEntitiesWithScore
+        for entity in self.matchReport:
+            if self.matchReport[entity] == 0.0:
+                self.matchReport[entity] = avgScore
 
         return self.matchReport
 

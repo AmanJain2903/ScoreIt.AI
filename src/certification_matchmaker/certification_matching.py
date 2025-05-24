@@ -107,13 +107,6 @@ class CertificationMatching:
             raise ValueError("Inputs are not set")
         
         try:
-            if not any(cert.strip() for cert in self.jobCertification):
-                if not any(cert.strip() for cert in self.resumeCertification):
-                    return np.random.uniform(0.7, 0.8)
-                else:
-                    return np.random.uniform(0.8, 1.0)
-            if not any(cert.strip() for cert in self.resumeCertification):
-                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedCertifications = {}

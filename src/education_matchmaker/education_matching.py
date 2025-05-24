@@ -110,13 +110,6 @@ class EducationMatching:
             raise ValueError("Inputs are not set")
         
         try:
-            if not any(education.strip() for education in self.jobEducation):
-                if not any(education.strip() for education in self.resumeEducation):
-                    return np.random.uniform(0.7, 0.8)
-                else:
-                    return np.random.uniform(0.8, 1.0)
-            if not any(education.strip() for education in self.resumeEducation):
-                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedEducations = {}
