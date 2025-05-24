@@ -104,13 +104,6 @@ class DesignationMatching:
             raise ValueError("Inputs are not set")
         
         try:
-            if not any(designation.strip() for designation in self.jobDesignation):
-                if not any(designation.strip() for designation in self.resumeDesignation):
-                    return np.random.uniform(0.7, 0.8)
-                else:
-                    return np.random.uniform(0.8, 1.0)
-            if not any(designation.strip() for designation in self.resumeDesignation):
-                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedDesignations = {}

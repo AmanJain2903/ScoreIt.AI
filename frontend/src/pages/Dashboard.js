@@ -9,6 +9,7 @@ import ScoreReport from '../components/ScoreReport';
 import PastMatches from '../components/PastMatches';
 import { fetchConfig } from '../api/fetch_config';
 import '../styles/Dashboard.css';
+import Footer from '../components/Footer';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -621,9 +622,9 @@ const Dashboard = () => {
               }}
             />
           )}
-
           <PastMatches ref={pastMatchesRef} onCountChange={handlePastMatchesCount} />
         </main>
+        <Footer />
       </div>
 
       {/* Delete Account Modal */}

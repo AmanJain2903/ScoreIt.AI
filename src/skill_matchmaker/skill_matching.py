@@ -85,13 +85,6 @@ class SkillMatching:
             raise ValueError("Inputs are not set")
         
         try:
-            if not any(skill.strip() for skill in self.jobSkill):
-                if not any(skill.strip() for skill in self.resumeSkill):
-                    return np.random.uniform(0.7, 0.8)
-                else:
-                    return np.random.uniform(0.8, 1.0)
-            if not any(skill.strip() for skill in self.resumeSkill):
-                return np.random.uniform(0.1, 0.3)
             model1Scores = []
             model2Scores = []
             matchedSkills = {}

@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   background-color: #f5f5f5;
   position: relative;
   overflow-x: hidden;
@@ -81,12 +82,13 @@
 .dashboard-main {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
-  min-height: 100vh;
   background: #f5f5f5;
   transition: margin-left 0.3s ease, width 0.3s ease;
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
+  padding-bottom: 0;
 }
 
 /* Media Queries for Layout */
@@ -264,11 +266,13 @@
 /* Dashboard Content */
 .dashboard-content {
   padding: clamp(2rem, 5vh, 5rem);
+  padding-bottom: 0;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
   align-items: center;
   gap: clamp(2rem, 4vh, 4rem);
   box-sizing: border-box;
