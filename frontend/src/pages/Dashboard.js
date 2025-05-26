@@ -44,7 +44,7 @@ const Dashboard = () => {
   const historyBtnRef = useRef(null);
   const [popupPos, setPopupPos] = useState({ top: 100, left: 100 });
   const [darkMode, setDarkMode] =  useState(localStorage.getItem('darkMode') === 'true' || sessionStorage.getItem('darkMode') === 'true');
-  const [isGoogleUser, setIsGoogleUser] = useState(localStorage.getItem('isGoogleUser') === 'true' || sessionStorage.getItem('isGoogleUser') === 'true');
+  const isGoogleUser = localStorage.getItem('isGoogleUser') === 'true' || sessionStorage.getItem('isGoogleUser') === 'true';
   const [models, setModels] = useState({});
   const [selectedModel, setSelectedModel] = useState('1'); // Default to first model
   const [showModelDropdown, setShowModelDropdown] = useState(false);
@@ -441,11 +441,33 @@ const Dashboard = () => {
   };
 
   const handleToggleDarkMode = async() => {
-    setDarkMode(dm => !dm);
+    const isLocal = localStorage.getItem('darkMode') !== null;
+    const isSession = sessionStorage.getItem('darkMode') !== null;
+    let currentMode;
+    if (isLocal){
+      currentMode = localStorage.getItem('darkMode')==='true';
+      localStorage.setItem('darkMode', (!currentMode).toString());
+      setDarkMode(localStorage.getItem('darkMode')==='true');
+    }
+    else if (isSession){
+      currentMode = sessionStorage.getItem('darkMode')==='true';
+      sessionStorage.setItem('darkMode', (!currentMode).toString());
+      setDarkMode(sessionStorage.getItem('darkMode')==='true');
+    }
+    else{
+      currentMode = true;
+      localStorage.setItem('darkMode', 'true');
+      sessionStorage.setItem('darkMode', 'true');
+      setDarkMode(localStorage.getItem('darkMode')==='true' || sessionStorage.getItem('darkMode')==='true');
+    }
     const email = localStorage.getItem('email') || sessionStorage.getItem('email');
     if (!email) throw new Error('No user email found');
-    await updateUser(email);
-  };
+    try{
+      await updateUser(email);
+    }
+    catch(err){
+    }
+  }
 
   const handleModelSelect = (modelId) => {
     setSelectedModel(modelId);
