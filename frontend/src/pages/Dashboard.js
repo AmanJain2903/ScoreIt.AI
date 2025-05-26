@@ -422,6 +422,11 @@ const Dashboard = () => {
       if (!email) throw new Error('No user email found');
       await deleteUser(email, deletePassword);
       await deleteAll(email);
+      try{
+        await deleteAllSessions(email);
+      }
+      catch(err){
+      }
       localStorage.clear();
       sessionStorage.clear();
       navigate('/auth');
