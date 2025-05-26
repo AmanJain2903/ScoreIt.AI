@@ -417,6 +417,3 @@ Marks the user as verified in the database when the verification link is accesse
     ```
     
 ---
-
-
-

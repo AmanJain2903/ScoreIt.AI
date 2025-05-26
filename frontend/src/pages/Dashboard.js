@@ -14,6 +14,7 @@ import { updateUser } from '../api/auth';
 import { useGoogleLogin } from '@react-oauth/google';
 import { deleteAllSessions, deleteSession , logoutAllSessions} from '../api/session';
 
+
 const Dashboard = () => {
   const navigate = useNavigate();
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);

@@ -190,7 +190,6 @@ ScoreIt.AI is an AI-powered system designed to:
     - check/ ✅
     - logout_all/ ✅
 
-
 **14. Integrated MongoDB Atlas Database**  
 - The API endpoints were conneted to MongoDB Atlas for ScoreIt.AI.
   - users_collection
