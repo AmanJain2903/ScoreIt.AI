@@ -56,7 +56,10 @@ setup(
     "pymongo==4.12.1",
     "mongomock==4.3.0",
     "torch==2.7.0",
-    "huggingface-hub==0.30.2"
+    "huggingface-hub==0.30.2",
+    "gunicorn==20.1.0",
+    "google-auth==2.40.2",
+    "google-auth-oauthlib==1.2.2"
 ]
 )
 
