@@ -347,10 +347,10 @@ ScoreIt.AI is an AI-powered system designed to:
 ## ⚙️ GitHub Actions
 
 **1. Performance Benchmark**  
-- Have GitHub action for performance benchmarks. Ru & download software performance report with just one click.
+- Have GitHub action for performance benchmarks. Run & download software performance report with just one click.
 
 **2. Evaluation Benchmark**  
-- Have GitHub action for evaluation benchmarks. Ru & download software evaluation report with just one click.
+- Have GitHub action for evaluation benchmarks. Run & download software evaluation report with just one click.
 
 ---
 
