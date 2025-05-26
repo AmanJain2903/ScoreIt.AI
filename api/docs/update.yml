@@ -1,0 +1,26 @@
+post:
+  summary: Updates User Persistent Data
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - dark_mode
+        properties:
+          email:
+            type: string
+            example: user@example.com
+  responses:
+    200:
+      description: User updated successfully
+    400:
+      description: Missing or invalid fields (e.g. email)
+    404:
+      description: User not found

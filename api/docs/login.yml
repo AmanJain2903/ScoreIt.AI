@@ -36,3 +36,7 @@ post:
       description: Invalid credentials
     404:
       description: User not found
+    409:
+      description: Login with Google instead
+    401:
+      description: Please verify your email to login

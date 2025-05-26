@@ -71,7 +71,17 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
+.nav-item:hover, .sidebar-logout:hover {
+  background: rgba(196, 93, 255, 0.201);
+}
+
 .nav-icon {
+  width: 1.3em;
+  height: 1.3em;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
   margin-right: clamp(0.5rem, 1vw, 1rem);
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   min-width: clamp(1.5rem, 2vw, 2.5rem);
@@ -1048,9 +1058,30 @@ body.dark-mode, .dark-mode .dashboard-container {
   }
 }
 
-.delete-account-btn:hover {
-  background: #ef4444;
-  color: #ffffff;
+.delete-account-btn, .logout-all-btn, .logout-btn {
+  background: transparent;
+  color: #ef4444;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.delete-account-btn:hover, .logout-all-btn:hover, .logout-btn:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.dark-mode .delete-account-btn, .dark-mode .logout-btn, .dark-mode .logout-all-btn {
+  background: transparent;
+  color: #ef4444;
+}
+.dark-mode .delete-account-btn:hover, .dark-mode .logout-btn:hover, .dark-mode .logout-all-btn:hover {
+  background: #e06c54;
+  color: #efefef;
 }
 
 .dark-mode .model-dropdown {
@@ -1387,4 +1418,17 @@ body.dark-mode, .dark-mode .dashboard-container {
     min-width: 50px;
     min-height: 1.7rem;
   }
-} 
+}
+
+.logout-all-btn {
+  background: transparent;
+  color: #ef4444;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}

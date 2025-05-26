@@ -1,0 +1,45 @@
+post:
+  summary: Google User Login
+  description: Authenticates a Google user and returns a JWT token.
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      description: Google access token
+      required: true
+      schema:
+        type: object
+        properties:
+          access_token:
+            type: string
+            example: ya29.a0AfH6SM...
+  responses:
+    200:
+      description: Login successful
+      schema:
+        type: object
+        properties:
+          token:
+            type: string
+            example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+          name:
+            type: string
+            example: John Doe
+          email:
+            type: string
+            example: john.doe@example.com
+          is_google_user:
+            type: boolean
+            example: true
+          dark_mode:
+            type: boolean
+            example: false
+    400:
+      description: Missing or invalid token / User already registered
+    401:
+      description: Invalid Google token
+    500:
+      description: Server error

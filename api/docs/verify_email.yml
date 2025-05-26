@@ -1,0 +1,31 @@
+get:
+  summary: Verify Email
+  description: Verifies a user's email address using a token received via email.
+  parameters:
+    - name: token
+      in: query
+      required: true
+      description: JWT token sent to user's email for verification
+      type: string
+  responses:
+    200:
+      description: Email verified successfully
+      content:
+        text/html:
+          schema:
+            type: string
+            example: "<h2>Your email has been successfully verified. You can now log in.</h2>"
+    400:
+      description: Invalid or expired token
+      content:
+        text/html:
+          schema:
+            type: string
+            example: "<h2>Verification link has expired.</h2>"
+    404:
+      description: User not found
+      content:
+        text/html:
+          schema:
+            type: string
+            example: "<h2>User not found.</h2>"

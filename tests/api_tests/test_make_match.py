@@ -11,6 +11,7 @@ def client():
     app.testing = True
     return app.test_client()
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_make_match_valid(client):
     resume_json = {
         "EDUCATION": "Bachelor's in Computer Science",

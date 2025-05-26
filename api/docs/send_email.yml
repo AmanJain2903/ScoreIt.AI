@@ -1,0 +1,34 @@
+post:
+  summary: Send Email Verification Link
+  description: Sends a verification email with a JWT token to the user's email address.
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+        properties:
+          email:
+            type: string
+            example: testuser@example.com
+  responses:
+    200:
+      description: Verification email sent
+      schema:
+        type: object
+        properties:
+          message:
+            type: string
+            example: Verification email sent
+    400:
+      description: Missing or invalid email
+    404:
+      description: User not found
+    500:
+      description: Error sending email

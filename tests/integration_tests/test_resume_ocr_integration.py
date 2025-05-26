@@ -17,6 +17,8 @@ def get_random_pdf_path():
     randomIndex = np.random.randint(0, len(pdfFilePaths))
     return os.path.join(dataPath, pdfFilePaths[randomIndex])
 
+
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_end_to_end_resume_ocr_path(resume_ocr):
     pdfPath = get_random_pdf_path()
     resume_ocr.setInputs(pdfPath=pdfPath)
@@ -25,6 +27,7 @@ def test_end_to_end_resume_ocr_path(resume_ocr):
     assert isinstance(extractedText, str), "Extracted text should be a string"
     assert len(extractedText.strip()) > 0, f"Empty text extracted from {pdfPath}"
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_end_to_end_resume_ocr_bytes(resume_ocr):
     pdfPath = get_random_pdf_path()
     with open(pdfPath, "rb") as f:

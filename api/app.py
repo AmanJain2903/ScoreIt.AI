@@ -9,6 +9,7 @@ from api.routes_make_match import make_match_bp
 from api.routes_auth import auth_bp
 from api.routes_history import history_bp
 from api.routes_fetch_config import config_bp
+from api.routes_sessions import sessions_bp
 
 def create_app():
     app = Flask(__name__)
@@ -27,5 +28,6 @@ def create_app():
     app.register_blueprint(auth_bp, url_prefix="/")
     app.register_blueprint(history_bp, url_prefix="/")
     app.register_blueprint(config_bp, url_prefix="/")
+    app.register_blueprint(sessions_bp, url_prefix="/")
 
     return app

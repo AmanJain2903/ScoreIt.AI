@@ -1,0 +1,36 @@
+post:
+  summary: Check if a session is active
+  description: Verifies whether the provided session token is active for the given user email.
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - token
+        properties:
+          email:
+            type: string
+            example: user@example.com
+          token:
+            type: string
+            example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+  responses:
+    200:
+      description: Session status returned
+      schema:
+        type: object
+        properties:
+          active:
+            type: boolean
+            example: true
+    400:
+      description: Email and token are required
+    500:
+      description: Internal server error

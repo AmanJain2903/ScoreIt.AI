@@ -1,0 +1,32 @@
+post:
+  summary: Delete a specific session for a user
+  description: Deletes a specific session token for the given user email.
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - token
+        properties:
+          email:
+            type: string
+            example: user@example.com
+          token:
+            type: string
+            example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+  responses:
+    200:
+      description: Session deleted successfully
+    400:
+      description: Email or token is missing
+    404:
+      description: Session not found
+    500:
+      description: Internal server error

@@ -29,6 +29,8 @@ setup(
     "pytest-mock==3.14.0",
     "pytest-cov==6.1.1",
     "pytest-xdist==3.6.1",
+    "pytest-rerunfailures==15.1",
+    "flaky==3.8.1",
     "sentence-transformers==4.1.0",
     "scikit-learn==1.6.1",
     "pandas==2.2.3",
@@ -52,6 +54,7 @@ setup(
     "bcrypt==4.3.0",
     "PyJWT==2.10.1",
     "pymongo==4.12.1",
+    "mongomock==4.3.0",
     "torch==2.7.0",
     "huggingface-hub==0.30.2"
 ]
