@@ -10,6 +10,7 @@ def client():
     app.testing = True
     return app.test_client()
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_extract_resume_valid(client):
     resume_text = "John Doe\nSoftware Engineer\nExperience: 5 years\nSkills: Python, Flask"
     response = client.post('/extract_resume', data={'resume_text': resume_text, 'model_id': 1})

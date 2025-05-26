@@ -12,3 +12,4 @@ db = client[DB_NAME]
 # Collections
 users_collection = db["users"]
 history_collection = db["match_history"]
+sessions_collection = db["sessions"]

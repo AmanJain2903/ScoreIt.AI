@@ -1,0 +1,30 @@
+post:
+  summary: Create a new user session
+  description: Stores a new session token associated with a user's email.
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - token
+        properties:
+          email:
+            type: string
+            example: user@example.com
+          token:
+            type: string
+            example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+  responses:
+    201:
+      description: Session created
+    400:
+      description: Email or token missing
+    500:
+      description: Internal server error

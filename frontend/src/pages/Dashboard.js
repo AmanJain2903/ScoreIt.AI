@@ -10,6 +10,10 @@ import PastMatches from '../components/PastMatches';
 import { fetchConfig } from '../api/fetch_config';
 import '../styles/Dashboard.css';
 import Footer from '../components/Footer';
+import { updateUser } from '../api/auth';
+import { useGoogleLogin } from '@react-oauth/google';
+import { deleteAllSessions, deleteSession , logoutAllSessions} from '../api/session';
+
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -39,13 +43,14 @@ const Dashboard = () => {
   const [hasPastMatches, setHasPastMatches] = useState(null); // null = unknown, true/false = known
   const historyBtnRef = useRef(null);
   const [popupPos, setPopupPos] = useState({ top: 100, left: 100 });
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+  const [darkMode, setDarkMode] =  useState(localStorage.getItem('darkMode') === 'true' || sessionStorage.getItem('darkMode') === 'true');
+  const [isGoogleUser, setIsGoogleUser] = useState(localStorage.getItem('isGoogleUser') === 'true' || sessionStorage.getItem('isGoogleUser') === 'true');
   const [models, setModels] = useState({});
   const [selectedModel, setSelectedModel] = useState('1'); // Default to first model
   const [showModelDropdown, setShowModelDropdown] = useState(false);
 
   useEffect(() => {
-    const userName = localStorage.getItem('name');
+    const userName = localStorage.getItem('name') || sessionStorage.getItem('name');
     if (userName) {
       setUserName(userName || 'User');
     }
@@ -60,7 +65,7 @@ const Dashboard = () => {
     if (darkMode) {
       document.body.classList.add('dark-mode');
     }
-    return () => {
+    else {
       document.body.classList.remove('dark-mode');
     };
   }, [darkMode]);
@@ -72,7 +77,7 @@ const Dashboard = () => {
         if (response.data) {
           setModels(response.data);
           // Set default model ID
-          localStorage.setItem('modelID', '1');
+          localStorage.setItem('modelID', '1') || sessionStorage.setItem('modelID', '1');
         }
       } catch (error) {
         console.error('Error loading models:', error);
@@ -81,10 +86,50 @@ const Dashboard = () => {
     loadModels();
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('name');
-    localStorage.removeItem('email');
+  const deleteGoogleUser = useGoogleLogin({
+    onSuccess: async (credentialResponse) => {
+      try {
+        const accessToken = credentialResponse.access_token;
+        const email = localStorage.getItem('email') || sessionStorage.getItem('email'); 
+  
+        if (!accessToken || !email) {
+          throw new Error('Missing access token or email');
+        }
+  
+        await deleteUser(email, accessToken);
+        await deleteAll(email);
+        try{
+          await deleteAllSessions(email);
+        }
+        catch(err){
+        }
+  
+        // Clear local storage
+        localStorage.clear();
+        sessionStorage.clear();
+        navigate('/auth');
+  
+      } catch (err) {
+        alert(err.message || 'Failed to delete user');
+      }
+    },
+    onError: () => {
+      alert('Google re-authentication failed. Cannot delete user.');
+    },
+    flow: 'implicit',
+    scope: 'email profile',
+  });
+
+  const handleLogout = async() => {
+    const email = localStorage.getItem('email') || sessionStorage.getItem('email');
+    const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+    try{
+      await deleteSession(email, token);
+    }
+    catch(err){
+    }
+    localStorage.clear();
+    sessionStorage.clear();
     navigate('/auth');
   };
 
@@ -303,7 +348,7 @@ const Dashboard = () => {
 
   const handleCloseScoreReport = async () => {
     try {
-      const userEmail = localStorage.getItem('email');
+      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
       if (!userEmail) {
         console.error('No user email found');
         return;
@@ -352,10 +397,15 @@ const Dashboard = () => {
     }
   };
 
-  const handleDeleteAccountClick = () => {
-    setShowDeleteModal(true);
-    setDeletePassword('');
-    setDeleteError('');
+  const handleDeleteAccountClick = async() => {
+    if (isGoogleUser) {
+      deleteGoogleUser();
+    }
+    else{
+      setShowDeleteModal(true);
+      setDeletePassword('');
+      setDeleteError('');
+    }
   };
 
   const handleDeleteModalClose = () => {
@@ -368,13 +418,12 @@ const Dashboard = () => {
     setIsDeleting(true);
     setDeleteError('');
     try {
-      const email = localStorage.getItem('email');
+      const email = localStorage.getItem('email') || sessionStorage.getItem('email');
       if (!email) throw new Error('No user email found');
       await deleteUser(email, deletePassword);
       await deleteAll(email);
-      localStorage.removeItem('token');
-      localStorage.removeItem('name');
-      localStorage.removeItem('email');
+      localStorage.clear();
+      sessionStorage.clear();
       navigate('/auth');
     } catch (err) {
       // Show error from API if available
@@ -391,12 +440,30 @@ const Dashboard = () => {
     setHasPastMatches(count > 0);
   };
 
-  const handleToggleDarkMode = () => setDarkMode(dm => !dm);
+  const handleToggleDarkMode = async() => {
+    setDarkMode(dm => !dm);
+    const email = localStorage.getItem('email') || sessionStorage.getItem('email');
+    if (!email) throw new Error('No user email found');
+    await updateUser(email);
+  };
 
   const handleModelSelect = (modelId) => {
     setSelectedModel(modelId);
-    localStorage.setItem('modelID', modelId);
+    localStorage.setItem('modelID', modelId) || sessionStorage.setItem('modelID', modelId);
     setShowModelDropdown(false);
+  };
+
+  const handleLogoutAllDevices = async() => {
+    const email = localStorage.getItem('email') || sessionStorage.getItem('email');
+    const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+    try{
+      await logoutAllSessions(email, token);
+    }
+    catch(err){
+    }
+    localStorage.clear();
+    sessionStorage.clear();
+    navigate('/auth');
   };
 
   if (isLoading) {
@@ -417,11 +484,11 @@ const Dashboard = () => {
         
         <div className="sidebar-buttons">
           <button ref={historyBtnRef} className="nav-item" onClick={handleScrollToHistory}>
-            <span className="nav-icon">📈</span>
+            <img src="/history.png" alt="History" className="nav-icon" style={{ width: '1.3em', height: '1.3em' }} />
             History
           </button>
           <button onClick={handleLogout} className="sidebar-logout">
-            <span className="nav-icon">🚪</span>
+            <img src="/logout.png" alt="Logout" className="nav-icon" style={{ width: '1.3em', height: '1.3em' }} />
             Logout
           </button>
         </div>
@@ -459,19 +526,31 @@ const Dashboard = () => {
                     <span className="dropdown-icon">⚙️</span>
                     Settings
                   </button>
-                  {showDeleteAccount && (
-                    <button
-                      className="dropdown-item delete-account-btn"
-                      onClick={handleDeleteAccountClick}
-                      onMouseEnter={() => setShowDeleteAccount(true)}
-                      onMouseLeave={() => setShowDeleteAccount(false)}
-                    >
-                      Delete Account?
-                    </button>
-                  )}
+                  {showDeleteAccount && 
+                  (
+                    <>
+                      <button
+                        className="dropdown-item logout-all-btn"
+                        onClick={handleLogoutAllDevices}
+                        onMouseEnter={() => setShowDeleteAccount(true)}
+                        onMouseLeave={() => setShowDeleteAccount(false)}
+                      >
+                        Log Out From All Devices?
+                      </button>
+                      <button
+                        className="dropdown-item delete-account-btn"
+                        onClick={handleDeleteAccountClick}
+                        onMouseEnter={() => setShowDeleteAccount(true)}
+                        onMouseLeave={() => setShowDeleteAccount(false)}
+                      >
+                        Delete Account?
+                      </button>
+                    </>
+                  )
+                  }
                   <div className="dropdown-divider"></div>
-                  <button className="dropdown-item" onClick={handleLogout}>
-                    <span className="dropdown-icon">🚪</span>
+                  <button className="dropdown-item logout-btn" onClick={handleLogout}>
+                    <img src="/logout.png" alt="Logout" className="dropdown-icon" style={{ width: '1.3em', height: '1.3em' }} />
                     Logout
                   </button>
                 </div>
