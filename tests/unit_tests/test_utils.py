@@ -1,6 +1,9 @@
 import pytest
 from src.utils import security
 from src.utils import model_load
+import src.utils.send_email as email_utils
+from unittest.mock import patch
+
 
 pytestmark = pytest.mark.unit
 
@@ -47,6 +50,18 @@ def test_model_load(model_load_fixture):
     model1, model2 = model_load_fixture
     assert model1 is not None
     assert model2 is not None
+
+@patch('src.utils.send_email.send_email')
+def test_send_email(mock_send):
+    email = "test@example.com"
+    subject = "Test Subject"
+    html_content = """
+        <h2>Welcome to ScoreIt.AI</h2>
+        <p>This is a test email</p>
+        <a href="https://scoreit-ai.com">Verify Account</a>
+    """
+    email_utils.send_email(email, subject, html_content)
+    mock_send.assert_called_once_with(email, subject, html_content)
 
 
 

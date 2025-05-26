@@ -117,7 +117,12 @@ Accepts Email & Password to validate a user in the system.
 - **Output:**
 ```json
 {
-  "token": "JWT Token Object" 
+  "token": "JWT Token Object",
+  "name" : "name",
+  "email" : "email",
+  "is_google_user" : False,
+  "dark_mode" : False/True
+
 }
 ```
 
@@ -223,5 +228,195 @@ Accepts user email and delete all match records for that user.
   }
 }
 ```
+
+---
+
+### 14. `/google` – Validate Google User
+Allows to validate a Google user in the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `token`: accessToken
+- **Output:**
+```json
+{
+  "token": "JWT Token Object",
+  "name" : "name",
+  "email" : "email",
+  "is_google_user" : True,
+  "dark_mode" : False/True
+}
+```
+
+---
+
+### 15. `/session/create` – Creates a User Session in Sessions Collection
+Allows to add a user session in the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+  - `token`: token
+- **Output:**
+```json
+{
+  "message": "Session Created"
+}
+```
+
+---
+
+### 16. `/session/delete` – Deletes a User Session from Sessions Collection
+Allows to delete a user session from the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+  - `token`: token
+- **Output:**
+```json
+{
+  "message": "Session Deleted"
+}
+```
+
+---
+
+### 17. `/session/delete_all` – Deletes User's all Sessions from Sessions Collection
+Allows to delete user's all sessions from the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+- **Output:**
+```json
+{
+  "message": "All sessions deleted"
+}
+```
+
+---
+
+### 18. `/session/check` – Checks if a User's Session is Active
+Allows to validate a user session in the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+  - `token`: token
+- **Output:**
+```json
+{
+  "active": True
+}
+```
+
+---
+
+### 19. `/session/logout_all` – Logs out user from all devices
+Allows to log out user from all devices from the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+  - `token`: token
+- **Output:**
+```json
+{
+  "active": "Logged out from all devices"
+}
+```
+
+---
+
+#20. `/update` – Updates a User's Profile 
+Allows to update a user's dark mode preference in the system.
+
+- **Method:** `POST`
+- **Input:** `application/json`
+  - `email`: email
+- **Output:**
+```json
+{
+  "message": "User updated successfully"
+}
+```
+
+---
+
+#21. `/send_email` – Sends Verification Email  
+Sends a verification email to the provided user email with a secure verification link.
+
+- **Method:** `POST`  
+- **Input:** `application/json`  
+  - `email`: string – User’s email address
+
+- **Success Response:**
+  - **Code:** 200 OK  
+  - **Content:**
+    ```json
+    {
+      "message": "Verification email sent"
+    }
+    ```
+
+- **Error Responses:**
+  - **Code:** 400 Bad Request  
+    **Content:**
+    ```json
+    { "error": "Email is required" }
+    ```
+
+  - **Code:** 404 Not Found  
+    **Content:**
+    ```json
+    { "error": "User not found" }
+    ```
+
+  - **Code:** 500 Internal Server Error  
+    **Content:**
+    ```json
+    { "error": "Failed to send email" }
+    ```
+
+---
+
+#22. `/verify_email` – Verifies User's Email  
+Marks the user as verified in the database when the verification link is accessed.
+
+- **Method:** `POST`  
+- **Input:** `application/json`  
+  - `email`: string – User’s email address
+
+- **Success Response:**
+  - **Code:** 200 OK  
+  - **Content:**
+    ```json
+    {
+      "message": "User verified successfully"
+    }
+    ```
+
+- **Error Responses:**
+  - **Code:** 400 Bad Request  
+    **Content:**
+    ```json
+    { "error": "Email is required" }
+    ```
+
+  - **Code:** 404 Not Found  
+    **Content:**
+    ```json
+    { "error": "User not found" }
+    ```
+
+  - **Code:** 500 Internal Server Error  
+    **Content:**
+    ```json
+    { "error": "Failed to verify user" }
+    ```
+    
+---
+
 
 

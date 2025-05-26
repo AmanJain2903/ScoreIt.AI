@@ -1,0 +1,34 @@
+post:
+  summary: Logout from all devices
+  description: Invalidates all active sessions for a user by deleting all their tokens.
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  parameters:
+    - in: body
+      name: body
+      required: true
+      schema:
+        type: object
+        required:
+          - email
+          - token
+        properties:
+          email:
+            type: string
+            example: user@example.com
+          token:
+            type: string
+            example: abc123
+  responses:
+    200:
+      description: Successfully logged out from all devices
+      schema:
+        type: object
+        properties:
+          message:
+            type: string
+            example: Logged out from all devices
+    400:
+      description: Missing email or token

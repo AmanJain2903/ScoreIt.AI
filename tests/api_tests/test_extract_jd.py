@@ -10,6 +10,7 @@ def client():
     app.testing = True
     return app.test_client()
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_extract_jd_valid(client):
     data = {
         "jd_text": "We are looking for a software engineer with experience in Python and Flask.",

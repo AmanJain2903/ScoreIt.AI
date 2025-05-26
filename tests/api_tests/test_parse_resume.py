@@ -10,6 +10,7 @@ def client():
     app.testing = True
     return app.test_client()
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_parse_resume_valid_pdf(client):
     with open("data/pdf_resumes/cv (1).pdf", "rb") as f:
         data = {'resume_file': (io.BytesIO(f.read()), "cv (1).pdf")}

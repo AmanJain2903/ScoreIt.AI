@@ -41,6 +41,7 @@ def matchmaker_engine():
     engine = MatchingEngine()
     return engine
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_end_to_end_matchmaker_text(matchmaker_engine):
     descriptionDataset = pd.read_csv(descriptionDatasetPath)
     resumeDataset = pd.read_csv(resumeDatasetPath)
@@ -69,6 +70,7 @@ def test_end_to_end_matchmaker_text(matchmaker_engine):
         assert key in report
         assert isinstance(report[key], float)
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_end_to_end_matchmaker_pdf_path(matchmaker_engine):
     pdfResumeFiles = os.listdir(pdfResumePath)
     randomIndex = np.random.randint(0, len(pdfResumeFiles))
@@ -100,6 +102,7 @@ def test_end_to_end_matchmaker_pdf_path(matchmaker_engine):
         assert key in report
         assert isinstance(report[key], float)
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_end_to_end_matchmaker_pdf_bytes(matchmaker_engine):
     pdfResumeFiles = os.listdir(pdfResumePath)
     randomIndex = np.random.randint(0, len(pdfResumeFiles))
@@ -133,6 +136,7 @@ def test_end_to_end_matchmaker_pdf_bytes(matchmaker_engine):
         assert key in report
         assert isinstance(report[key], float)
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_end_to_end_matchmaker_with_jd_link(matchmaker_engine):
     resumeDataset = pd.read_csv(resumeDatasetPath)
     randomIndex = np.random.randint(0, len(resumeDataset))

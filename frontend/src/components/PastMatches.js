@@ -63,7 +63,7 @@ const PastMatches = forwardRef((props, ref) => {
 
   const fetchMatches = async () => {
     try {
-      const userEmail = localStorage.getItem('email');
+      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
       if (!userEmail) return;
 
       const response = await getHistory(userEmail);
@@ -80,7 +80,7 @@ const PastMatches = forwardRef((props, ref) => {
   const handleDeleteMatch = async (match) => {
     try {
       console.log('Deleting match:', match);
-      const userEmail = localStorage.getItem('email');
+      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
       if (!userEmail) return;
 
       await deleteOne(userEmail, match);
@@ -95,7 +95,7 @@ const PastMatches = forwardRef((props, ref) => {
 
   const handleClearHistory = async () => {
     try {
-      const userEmail = localStorage.getItem('email');
+      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
       if (!userEmail) return;
 
       await deleteAll(userEmail);

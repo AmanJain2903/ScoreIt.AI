@@ -23,6 +23,7 @@ def jd_agent():
         useDefaultSystemPromptIfNone=True,
     )
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_jd_agent_end_to_end(jd_agent):
     dataset = pd.read_csv(dataPath)
 

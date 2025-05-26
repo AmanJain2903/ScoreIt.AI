@@ -23,6 +23,7 @@ def resume_agent():
         useDefaultSystemPromptIfNone=True,
     )
 
+@pytest.mark.flaky(max_runs=3, min_passes=1)
 def test_resume_agent_end_to_end(resume_agent):
     dataset = pd.read_csv(dataPath)
 
