@@ -250,7 +250,7 @@ const Auth = () => {
             {isLogin ? 'Login' : 'Register'}
           </button>
           <button onClick={() => googlelogin()} type="button" className="google-signin-button">
-            <img src="/GoogleLogo.png" alt="Google Logo" className="google-icon" />
+            <img src="/google.png" alt="Google Logo" className="google-icon" />
             Sign in with Google
           </button>
         </form>
