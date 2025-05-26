@@ -199,7 +199,7 @@ ScoreIt.AI is an AI-powered system designed to:
   - sessions_collection
     - User session's information
 - Seperate MongoDB Clusters used for keeping the production unpolluted.
-  - ScoreIt.AI-Dev for Development & Staging
+  - ScoreIt.AI-Dev for Development & Pre-Production
   - ScoreIt.AI for Production
   
 **15. ReactJS Frontend**  
@@ -312,7 +312,7 @@ ScoreIt.AI is an AI-powered system designed to:
 ## ⚙️ CI/CD Pipeline (GitHub Actions)
 
 **1. Automated Testing**  
-- Every pull requests targeting `main` or `staging` automatically trigger:
+- Every pull requests targeting `main` or `pre-production` automatically trigger:
   - Fresh environment creation.
   - Dependency installations.
   - Unit, integration & API test execution with live coverage tracking.
@@ -326,7 +326,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - HTML coverage reports uploaded after each build for manual inspection if needed.
 
 **4. Branch Protection**  
-- PR builds must pass all Unit, Integratio & API tests before merge approval.
+- PR builds must pass all Unit, Integration & API tests before merge approval.
 - Manual merging without tests passing is restricted via branch protection rules.
 
 **5. Secret Management**  
@@ -340,7 +340,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Frontend deployed using vercel.
 - Backend Deployed using Render.
 - Both are auto deployed with each commit in the main branch.
-- Both have preview deployment with the staging branch.
+- Both have preview deployment with the pre-production branch.
 
 ---
 
@@ -359,17 +359,17 @@ ScoreIt.AI is an AI-powered system designed to:
 **Feature Branches and Bugfix Branches**
 
 - `main` for production
-- `staging` for staging 
+- `pre-production` for staging 
 - Pre-Deployment (Development Phase)
-  - New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to main.
-  - Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to main.
+  - New functionalities are always developed inside feature branches: `feature/<feature-name>` which are merged to `main`.
+  - Bugfixes are handled via `bugfix/<bug-description>` branches which are merged to `main`.
 - Post-Deployment (Maintenance Phase)
-  - Major Releases are handled via `release/<version>` branches which are merged to staging.
-  - Minor Releases are handled via `minor/<version>` branches which are merged to staging.
-  - Patches Updates are handled via `patch/<version>` branches which are merged to staging.
-- No direct commits are made to `main` or `staging`.
-- Pull Requests (PRs) are created from `staging` branch to `main`.
-- GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `staging`.
+  - Major Releases are handled via `release/<version>` branches which are merged to `pre-production`.
+  - Minor Releases are handled via `minor/<version>` branches which are merged to `pre-production`.
+  - Patches Updates are handled via `patch/<version>` branches which are merged to `pre-production`.
+- No direct commits are made to `main` or `pre-production`.
+- Pull Requests (PRs) are created from `pre-production` branch to `main`.
+- GitHub Actions automatically runs Unit and Integration tests on PRs to `main` and `pre-production`.
 - Merges allowed only after all tests pass successfully.
 - Release Notes and Patch Notes maintaned for traceability.
 

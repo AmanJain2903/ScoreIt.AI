@@ -2,7 +2,7 @@ name: Continuous Deployment to Vercel
 
 on:
   push:
-    branches: [ main, staging ]
+    branches: [ main, pre-production ]
 
 jobs:
   cd:
@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy to Staging
-        if: github.ref == 'refs/heads/staging'
-        run: curl -X POST ${{ secrets.STAGING }}
+      - name: Deploy to Pre-Production
+        if: github.ref == 'refs/heads/pre-production'
+        run: curl -X POST ${{ secrets.PRE_PRODUCTION }}
 
       - name: Deploy to Production
         if: github.ref == 'refs/heads/main'
