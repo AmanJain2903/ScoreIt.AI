@@ -8,12 +8,11 @@ const ProtectedRoute = ({ children }) => {
 
   useEffect(() => {
     const verify = async () => {
-      const email = localStorage.getItem('email');
       const token = localStorage.getItem('token');
 
-      if (email && token) {
+      if (token) {
         try {
-          const response = await checkSession(email, token);
+          const response = await checkSession(token);
           setIsAuthenticated(response.data.active);
         } catch (error) {
           setIsAuthenticated(false);

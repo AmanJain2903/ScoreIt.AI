@@ -1,22 +1,13 @@
 summary: Delete All Match History Records
 description: Deletes all match history records for a given user email from the database.
-consumes:
-  - application/json
-produces:
-  - application/json
-parameters:
-  - name: body
-    in: body
-    required: true
-    schema:
-      type: object
-      required:
-        - email
-      properties:
-        email:
-          type: string
-          description: User's registered email
-          example: user@example.com
+security:
+  - bearerAuth: []
+components:
+securitySchemes:
+  bearerAuth:
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
 responses:
   200:
     description: Successfully deleted history records

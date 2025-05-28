@@ -1,4 +1,12 @@
 summary: Delete a specific match history entry by match_id
+security:
+  - bearerAuth: []
+components:
+securitySchemes:
+  bearerAuth:
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
 parameters:
   - in: body
     name: body
@@ -6,8 +14,6 @@ parameters:
     schema:
       type: object
       properties:
-        email:
-          type: string
         match_id:
           type: string
 responses:

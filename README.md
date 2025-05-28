@@ -188,7 +188,10 @@ ScoreIt.AI is an AI-powered system designed to:
     - delete/ ✅
     - delete_all/ ✅
     - check/ ✅
-    - logout_all/ ✅
+  - password ✅
+    - change_password/ ✅
+    - send_reset_email/ ✅
+    - reset_password/ ✅
 
 **14. Integrated MongoDB Atlas Database**  
 - The API endpoints were conneted to MongoDB Atlas for ScoreIt.AI.
@@ -209,13 +212,14 @@ ScoreIt.AI is an AI-powered system designed to:
 - Dark/Light mode toggle functionality.
 
 **16. Authentication**  
-- Implemented Google OAuth Authentication. ✅
-- Implemented Simple Email Registration with JWT Tokens. ✅
-- Added an Email Verification System for only Allowing Users with a Legitimate Email to Login. ✅
-- Implemented a Remember me Functionaility to keep Browser Sessions Persistent. ✅
-- Implemented Delete Account Functionility such that is Automatically Checks for User Type and acts Accordingly. ✅
-- Added a Sessions Collection to MongoDB and Implemented a Logout from all devices Functionality. ✅
-- Implemented a Forgot/Reset Password Functionality.
+- Implemented Google OAuth Authentication. 
+- Implemented Simple Email Registration with JWT Tokens. 
+- Added an Email Verification System for only Allowing Users with a Legitimate Email to Login. 
+- Implemented a Remember me Functionaility to keep Browser Sessions Persistent. 
+- Implemented Delete Account Functionility such that is Automatically Checks for User Type and acts Accordingly. 
+- Added a Sessions Collection to MongoDB and Implemented a Logout from all devices Functionality. 
+- Implemented a Forgot/Reset Password Functionality from Auth Page as well as User Dashboard.
+- All the APIs use JWT Tokens. Email or other Sensitive Information is never passed directly to any APIs. 
 
 **17. Deployment**
 - The frontend is deployed using Vercel.
@@ -288,7 +292,7 @@ ScoreIt.AI is an AI-powered system designed to:
 **5. Coverage Enforcement**  
 - Code coverage automatically calculated using Pytest + Coverage.
 - Detailed HTML and terminal reports generated after each test run.
-- Current total code coverage: **97%** ✅
+- Current total code coverage: **96%** ✅
 
 **6. Test Driven Development (TDD)**  
 - Testing-first approach adopted during module development.
@@ -302,7 +306,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
 **8. Test Achievements**
-- 330+ test cases written covering Unit + Integration + API tests combined.
+- 380+ test cases written covering Unit + Integration + API tests combined.
 - Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
 - Relevent modules ran through performance testing.
