@@ -1058,7 +1058,7 @@ body.dark-mode, .dark-mode .dashboard-container {
   }
 }
 
-.delete-account-btn, .logout-all-btn, .logout-btn {
+.delete-account-btn, .logout-all-btn, .logout-btn, .dropdown-item.change-password-btn {
   background: transparent;
   color: #ef4444;
   border: none;
@@ -1070,16 +1070,16 @@ body.dark-mode, .dark-mode .dashboard-container {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
-.delete-account-btn:hover, .logout-all-btn:hover, .logout-btn:hover {
+.delete-account-btn:hover, .logout-all-btn:hover, .logout-btn:hover , .dropdown-item.change-password-btn:hover{
   background: #fee2e2;
   color: #b91c1c;
 }
 
-.dark-mode .delete-account-btn, .dark-mode .logout-btn, .dark-mode .logout-all-btn {
+.dark-mode .delete-account-btn, .dark-mode .logout-btn, .dark-mode .logout-all-btn, .dark-mode .dropdown-item.change-password-btn {
   background: transparent;
   color: #ef4444;
 }
-.dark-mode .delete-account-btn:hover, .dark-mode .logout-btn:hover, .dark-mode .logout-all-btn:hover {
+.dark-mode .delete-account-btn:hover, .dark-mode .logout-btn:hover, .dark-mode .logout-all-btn:hover, .dark-mode .dropdown-item.change-password-btn:hover {
   background: #e06c54;
   color: #efefef;
 }
@@ -1198,6 +1198,13 @@ body.dark-mode, .dark-mode .dashboard-container {
 
 .dashboard-delete-modal .delete-error {
   color: #ef4444;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  text-align: center;
+  margin: 0;
+}
+
+.success-message-change-password {
+  color: #4ed126;
   font-size: clamp(0.85rem, 1vw, 1rem);
   text-align: center;
   margin: 0;
@@ -1431,4 +1438,32 @@ body.dark-mode, .dark-mode .dashboard-container {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item.change-password-btn {
+  background: transparent;
+  color: #ef4444;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item.change-password-btn:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.dark-mode .dropdown-item.change-password-btn {
+  background: transparent;
+  color: #ef4444;
+}
+
+.dark-mode .dropdown-item.change-password-btn:hover {
+  background: #e06c54;
+  color: #efefef;
 }

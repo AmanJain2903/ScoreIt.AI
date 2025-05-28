@@ -90,7 +90,7 @@ Uploads resume and job description JSONs and converts it to match report JSON.
 
 ---
 
-### 6. `/register` – Registers New User in System
+### 6. `auth/register` – Registers New User in System
 Accepts Email, Username & Password to register the user. 
 
 - **Method:** `POST`
@@ -107,7 +107,7 @@ Accepts Email, Username & Password to register the user.
 
 ---
 
-### 7. `/login` – Validate User on Email & Password
+### 7. `auth/login` – Validate User on Email & Password
 Accepts Email & Password to validate a user in the system.
 
 - **Method:** `POST`
@@ -128,12 +128,13 @@ Accepts Email & Password to validate a user in the system.
 
 ---
 
-### 8. `/delete` – Delete User from System
+### 8. `auth/delete` – Delete User from System
 Accepts Email & Password to delete a user from the system.
 
 - **Method:** `POST`
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Input:** `application/json`
-  - `email`: email
   - `password`: password
 - **Output:**
 ```json
@@ -148,8 +149,9 @@ Accepts Email & Password to delete a user from the system.
 Accepts Match Report and adds it to history database.
 
 - **Method:** `POST`
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Input:** `application/json`
-  - `email`: 
   - `resume_text`: 
   - `resume_json`:
   - `jd_text`:
@@ -168,10 +170,9 @@ Accepts Match Report and adds it to history database.
 ### 10. `/history/get_all` – Gets User's Match History
 Accepts user email and retrieves user's match history.
 
-- **Method:** `POST`
-- **Input:** `application/json`
-  - `email`: 
-
+- **Method:** `GET`
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Output:**
 ```json
 {
@@ -185,8 +186,9 @@ Accepts user email and retrieves user's match history.
 Accepts user email and match ID, and deleted that match from user's history.
 
 - **Method:** `DELETE`
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Input:** `application/json`
-  - `email`: 
   - `match_id`:
 
 - **Output:**
@@ -202,9 +204,8 @@ Accepts user email and match ID, and deleted that match from user's history.
 Accepts user email and delete all match records for that user.
 
 - **Method:** `DELETE`
-- **Input:** `application/json`
-  - `email`: 
-
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Output:**
 ```json
 {
@@ -231,7 +232,7 @@ Accepts user email and delete all match records for that user.
 
 ---
 
-### 14. `/google` – Validate Google User
+### 14. `auth/google` – Validate Google User
 Allows to validate a Google user in the system.
 
 - **Method:** `POST`
@@ -254,9 +255,8 @@ Allows to validate a Google user in the system.
 Allows to add a user session in the system.
 
 - **Method:** `POST`
-- **Input:** `application/json`
-  - `email`: email
-  - `token`: token
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Output:**
 ```json
 {
@@ -269,10 +269,9 @@ Allows to add a user session in the system.
 ### 16. `/session/delete` – Deletes a User Session from Sessions Collection
 Allows to delete a user session from the system.
 
-- **Method:** `POST`
-- **Input:** `application/json`
-  - `email`: email
-  - `token`: token
+- **Method:** `DELETE`
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Output:**
 ```json
 {
@@ -285,9 +284,9 @@ Allows to delete a user session from the system.
 ### 17. `/session/delete_all` – Deletes User's all Sessions from Sessions Collection
 Allows to delete user's all sessions from the system.
 
-- **Method:** `POST`
-- **Input:** `application/json`
-  - `email`: email
+- **Method:** `DELETE`
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Output:**
 ```json
 {
@@ -300,10 +299,9 @@ Allows to delete user's all sessions from the system.
 ### 18. `/session/check` – Checks if a User's Session is Active
 Allows to validate a user session in the system.
 
-- **Method:** `POST`
-- **Input:** `application/json`
-  - `email`: email
-  - `token`: token
+- **Method:** `GET`
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Output:**
 ```json
 {
@@ -313,28 +311,12 @@ Allows to validate a user session in the system.
 
 ---
 
-### 19. `/session/logout_all` – Logs out user from all devices
-Allows to log out user from all devices from the system.
-
-- **Method:** `POST`
-- **Input:** `application/json`
-  - `email`: email
-  - `token`: token
-- **Output:**
-```json
-{
-  "active": "Logged out from all devices"
-}
-```
-
----
-
-#20. `/update` – Updates a User's Profile 
+#19. `auth/update` – Updates a User's Profile 
 Allows to update a user's dark mode preference in the system.
 
 - **Method:** `POST`
-- **Input:** `application/json`
-  - `email`: email
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
 - **Output:**
 ```json
 {
@@ -344,7 +326,7 @@ Allows to update a user's dark mode preference in the system.
 
 ---
 
-#21. `/send_email` – Sends Verification Email  
+#20. `auth/send_email` – Sends Verification Email  
 Sends a verification email to the provided user email with a secure verification link.
 
 - **Method:** `POST`  
@@ -381,7 +363,7 @@ Sends a verification email to the provided user email with a secure verification
 
 ---
 
-#22. `/verify_email` – Verifies User's Email  
+#21. `auth/verify_email` – Verifies User's Email  
 Marks the user as verified in the database when the verification link is accessed.
 
 - **Method:** `POST`  
@@ -416,4 +398,157 @@ Marks the user as verified in the database when the verification link is accesse
     { "error": "Failed to verify user" }
     ```
     
+---
+
+## #22. `password/change_password` – Change User Password  
+Allows an authenticated user to update their password after verifying the old one.
+
+- **Method:** `POST`  
+- **Input:** `application/json`  
+  - `oldPassword`: string – The current password of the user  
+  - `newPassword`: string – The new password to be set  
+  - **Note:** Requires a valid JWT token in the `Authorization` header as: `Bearer <token>`
+
+- **Headers:**
+  - `Authorization`: Bearer token – JWT for the logged-in user
+
+- **Success Response:**
+  - **Code:** 200 OK  
+  - **Content:**
+    ```json
+    {
+      "message": "Password updated successfully."
+    }
+    ```
+
+- **Error Responses:**
+
+  - **Code:** 400 Bad Request  
+    **Content:**
+    ```json
+    { "error": "Old and new password are required." }
+    ```
+
+  - **Code:** 401 Unauthorized  
+    **Content:**  
+    ```json
+    { "error": "Authorization header missing or invalid" }
+    ```
+    or
+    ```json
+    { "error": "Token expired" }
+    ```
+    or
+    ```json
+    { "error": "Invalid token" }
+    ```
+    or
+    ```json
+    { "error": "Old password is incorrect." }
+    ```
+
+  - **Code:** 404 Not Found  
+    **Content:**
+    ```json
+    { "error": "User not found." }
+    ```
+
+---
+
+## #23. `password/send_reset_email` – Send Password Reset Link  
+Sends a password reset link to the user's email if the account exists.
+
+- **Method:** `POST`  
+- **URL:** `/password/send_reset_email`  
+- **Input:** `application/json`  
+  - `email`: string – The registered email address of the user  
+
+- **Success Response:**
+  - **Code:** `200 OK`  
+  - **Content:**
+    ```json
+    {
+      "message": "Reset password link sent"
+    }
+    ```
+
+- **Error Responses:**
+
+  - **Code:** `400 Bad Request`  
+    **Content:**
+    ```json
+    {
+      "error": "Email is required"
+    }
+    ```
+
+  - **Code:** `404 Not Found`  
+    **Content:**
+    ```json
+    {
+      "error": "User not found"
+    }
+    ```
+
+  - **Code:** `500 Internal Server Error`  
+    **Content:**
+    ```json
+    {
+      "error": "Failed to send email due to server error"
+    }
+    ```
+
+---
+
+## #24. `password/reset_password` – Reset User Password  
+Allows a user to reset their password using a token received via email.
+
+- **Method:** `POST`  
+- **Endpoint:** `/password/reset_password`  
+- **Content-Type:** `application/json`
+
+### Request Body
+```json
+{
+  "token": "JWT_RESET_TOKEN_HERE",
+  "newPassword": "newPassword123"
+}
+```
+
+- **Success Response:**
+  - **Code:** `200 OK`  
+  - **Content:**
+    ```json
+    {
+      "message": "Password has been reset successfully."
+    }
+    ```
+
+- **Error Responses:**
+
+  - **Code:** `400 Bad Request`  
+    **Content:**
+    ```json
+    {
+      "error": "Token and new password are required."
+    }
+    ```
+
+  - **Code:** `404 Not Found`  
+    **Content:**
+    ```json
+    {
+      "error": "User not found."
+    }
+    ```
+
+  - **Code:** `501 Unauthorized`  
+    **Content:**
+    ```json
+    {
+      "error": "Token expired or invalid."
+    }
+    ```
+
+
 ---

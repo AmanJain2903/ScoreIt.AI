@@ -1,21 +1,13 @@
 summary: Get All Match History for a User
 description: Retrieve all match history entries for a given user by email.
-consumes:
-  - application/json
-produces:
-  - application/json
-parameters:
-  - in: body
-    name: email_request
-    required: true
-    schema:
-      type: object
-      required:
-        - email
-      properties:
-        email:
-          type: string
-          example: user@example.com
+security:
+  - bearerAuth: []
+components:
+securitySchemes:
+  bearerAuth:
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
 responses:
   200:
     description: List of match history entries

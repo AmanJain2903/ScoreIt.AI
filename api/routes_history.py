@@ -6,6 +6,7 @@ from db.history_dao import HistoryDAO
 from dotenv import load_dotenv
 load_dotenv()
 import gc
+import jwt
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
@@ -18,8 +19,18 @@ def is_valid_email(email):
 @history_bp.route("/history/add", methods=["POST"])
 @swag_from("docs/history_add.yml")
 def add_history():
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
+
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
+
     data = request.get_json()
-    email = data.get("email")
     resume_text = data.get("resume_text")
     resume_json = data.get("resume_json")
     jd_text = data.get("jd_text")
@@ -46,11 +57,19 @@ def add_history():
         if match_report: del match_report
         gc.collect()
 
-@history_bp.route("/history/get_all", methods=["POST"])
+@history_bp.route("/history/get_all", methods=["GET"])
 @swag_from("docs/history_get_all.yml")
 def get_all_history():
-    data = request.get_json()
-    email = data.get("email")
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
+
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
     if not email:
         return jsonify({"error": "Missing required fields"}), 400
     if not is_valid_email(email):
@@ -64,8 +83,8 @@ def get_all_history():
         return jsonify({"error": "Failed to retrieve history"}), 500
     finally:
         try:
-            if data: del data
             if email: del email
+            if token: del token
         except Exception:
             pass
         gc.collect()
@@ -73,8 +92,17 @@ def get_all_history():
 @history_bp.route("/history/delete_one", methods=["DELETE"])
 @swag_from("docs/history_delete_one.yml")
 def delete_one_history():
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
+
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
     data = request.get_json()
-    email = data.get("email")
     match_id = data.get("match_id")
     if not email or not match_id:
         return jsonify({"error": "Missing required fields"}), 400
@@ -101,8 +129,16 @@ def delete_one_history():
 @history_bp.route("/history/delete_all", methods=["DELETE"])
 @swag_from("docs/history_delete_all.yml")
 def delete_all_history():
-    data = request.get_json()
-    email = data.get("email")
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
+
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
     if not email:
         return jsonify({"error": "Missing required fields"}), 400
     if not is_valid_email(email):
@@ -117,7 +153,7 @@ def delete_all_history():
         return jsonify({"error": "Failed to delete history records"}), 500
     finally:
         try:
-            del data
+            del token
             del email
             del deleted_count
         except Exception:
