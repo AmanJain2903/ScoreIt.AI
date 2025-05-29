@@ -10,10 +10,11 @@ import PastMatches from '../components/PastMatches';
 import { fetchConfig } from '../api/fetch_config';
 import '../styles/Dashboard.css';
 import Footer from '../components/Footer';
-import { updateUser } from '../api/auth';
 import { useGoogleLogin } from '@react-oauth/google';
 import { deleteAllSessions, deleteSession } from '../api/session';
 import { changePassword } from '../api/password';
+import { updateProfile, deleteProfile } from '../api/profile';
+import { Eye, EyeOff } from 'lucide-react';
 
 
 const Dashboard = () => {
@@ -42,10 +43,8 @@ const Dashboard = () => {
   const [hasPastMatches, setHasPastMatches] = useState(null); // null = unknown, true/false = known
   const historyBtnRef = useRef(null);
   const [popupPos, setPopupPos] = useState({ top: 100, left: 100 });
-  const [darkMode, setDarkMode] =  useState(localStorage.getItem('darkMode') === 'true' || sessionStorage.getItem('darkMode') === 'true');
   const isGoogleUser = localStorage.getItem('isGoogleUser') === 'true' || sessionStorage.getItem('isGoogleUser') === 'true';
   const [models, setModels] = useState({});
-  const [selectedModel, setSelectedModel] = useState('1'); // Default to first model
   const [showModelDropdown, setShowModelDropdown] = useState(false);
   const [showChangePasswordModal, setShowChangePasswordModal] = useState(false);
   const [oldPassword, setOldPassword] = useState('');
@@ -54,6 +53,14 @@ const Dashboard = () => {
   const [logoutAllDevices, setLogoutAllDevices] = useState(false);
   const [changePasswordError, setChangePasswordError] = useState('');
   const [changePasswordSuccessMessage, setChangePasswordSuccessMessage] = useState('');
+  const [darkMode, setDarkMode] =  useState(localStorage.getItem('darkMode') === 'true' || sessionStorage.getItem('darkMode') === 'true');
+  const [selectedModel, setSelectedModel] = useState(localStorage.getItem('modelPreference') || sessionStorage.getItem('modelPreference'));
+  const [showOldPassword, setShowOldPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [showDeletePassword, setShowDeletePassword] = useState(false);
+
+
 
   useEffect(() => {
     const userName = localStorage.getItem('name') || sessionStorage.getItem('name');
@@ -82,8 +89,6 @@ const Dashboard = () => {
         const response = await fetchConfig();
         if (response.data) {
           setModels(response.data);
-          // Set default model ID
-          localStorage.setItem('modelID', '1') || sessionStorage.setItem('modelID', '1');
         }
       } catch (error) {
         console.error('Error loading models:', error);
@@ -105,6 +110,7 @@ const Dashboard = () => {
         await deleteAll(token);
         try{
           await deleteAllSessions(token);
+          await deleteProfile(token);
         }
         catch(err){
         }
@@ -413,6 +419,7 @@ const Dashboard = () => {
       await deleteAll(token);
       try{
         await deleteAllSessions(token);
+        await deleteProfile(token);
       }
       catch(err){
       }
@@ -438,34 +445,44 @@ const Dashboard = () => {
     const isLocal = localStorage.getItem('darkMode') !== null;
     const isSession = sessionStorage.getItem('darkMode') !== null;
     let currentMode;
+    let newMode;
+    currentMode = localStorage.getItem('darkMode')==='true' || sessionStorage.getItem('darkMode')==='true';
+    newMode = (!currentMode).toString();
+
     if (isLocal){
-      currentMode = localStorage.getItem('darkMode')==='true';
-      localStorage.setItem('darkMode', (!currentMode).toString());
+      localStorage.setItem('darkMode', newMode);
       setDarkMode(localStorage.getItem('darkMode')==='true');
     }
     else if (isSession){
-      currentMode = sessionStorage.getItem('darkMode')==='true';
-      sessionStorage.setItem('darkMode', (!currentMode).toString());
+      sessionStorage.setItem('darkMode', newMode);
       setDarkMode(sessionStorage.getItem('darkMode')==='true');
-    }
-    else{
-      currentMode = true;
-      localStorage.setItem('darkMode', 'true');
-      sessionStorage.setItem('darkMode', 'true');
-      setDarkMode(localStorage.getItem('darkMode')==='true' || sessionStorage.getItem('darkMode')==='true');
     }
     try{
       const token = localStorage.getItem('token') || sessionStorage.getItem('token');
-      await updateUser(token);
+      await updateProfile(token, {dark_mode: newMode});
     }
     catch(err){
     }
   }
 
-  const handleModelSelect = (modelId) => {
-    setSelectedModel(modelId);
-    localStorage.setItem('modelID', modelId) || sessionStorage.setItem('modelID', modelId);
+  const handleModelSelect = async (modelPreference) => {
+    const isLocal = localStorage.getItem('modelPreference') !== null;
+    let token;
+    if (isLocal){
+      token = localStorage.getItem('token');
+      localStorage.setItem('modelPreference', modelPreference);
+    }
+    else{
+      token = sessionStorage.getItem('token');
+      sessionStorage.setItem('modelPreference', modelPreference);
+    }
+    setSelectedModel(modelPreference);
     setShowModelDropdown(false);
+    try{
+      await updateProfile(token, {model_preference: modelPreference});
+    }
+    catch(err){
+    }
   };
 
   const handleLogoutAllDevices = async() => {
@@ -715,7 +732,7 @@ const Dashboard = () => {
                     {models[selectedModel].MODEL_TYPE === 'paid' && <span className="model-paid"> $</span>}
                   </>
                 ) : (
-                  'Choose Model'
+                  models[selectedModel] ? models[selectedModel].NAME : 'Choose Model'
                 )}
               </span>
               <span className="model-selector-arrow">▼</span>
@@ -790,13 +807,26 @@ const Dashboard = () => {
           <div className="dashboard-delete-modal">
             <h2>Delete Account</h2>
             <p>This will permanently delete your account and all match history. This action cannot be undone.</p>
-            <input
-              type="password"
-              placeholder="Enter your password to confirm"
-              value={deletePassword}
-              onChange={e => setDeletePassword(e.target.value)}
-              disabled={isDeleting}
-            />
+            <div className="password-input-relative">
+              <input
+                type={showDeletePassword ? 'text' : 'password'}
+                placeholder="Enter your password to confirm"
+                value={deletePassword}
+                onChange={e => setDeletePassword(e.target.value)}
+                disabled={isDeleting}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowDeletePassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showDeletePassword ? 'Hide password' : 'Show password'}
+              >
+                {showDeletePassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
             {deleteError && <div className="delete-error">{deleteError}</div>}
             <div className="delete-modal-actions">
               <button onClick={handleDeleteModalClose} className="delete-cancel-btn" disabled={isDeleting}>Cancel</button>
@@ -825,24 +855,63 @@ const Dashboard = () => {
           <div className="dashboard-delete-modal">
             <h2>Change Password</h2>
             <p>This will change your account password permanently.</p>
-            <input
-              type="password"
-              placeholder="Old Password"
-              value={oldPassword}
-              onChange={e => setOldPassword(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="New Password"
-              value={newPassword}
-              onChange={e => setNewPassword(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="Confirm New Password"
-              value={confirmPassword}
-              onChange={e => setConfirmPassword(e.target.value)}
-            />
+            <div className="password-input-relative">
+              <input
+                type={showOldPassword ? 'text' : 'password'}
+                placeholder="Old Password"
+                value={oldPassword}
+                onChange={e => setOldPassword(e.target.value)}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowOldPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showOldPassword ? 'Hide password' : 'Show password'}
+              >
+                {showOldPassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
+            <div className="password-input-relative">
+              <input
+                type={showNewPassword ? 'text' : 'password'}
+                placeholder="New Password"
+                value={newPassword}
+                onChange={e => setNewPassword(e.target.value)}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowNewPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showNewPassword ? 'Hide password' : 'Show password'}
+              >
+                {showNewPassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
+            <div className="password-input-relative">
+              <input
+                type={showConfirmPassword ? 'text' : 'password'}
+                placeholder="Confirm New Password"
+                value={confirmPassword}
+                onChange={e => setConfirmPassword(e.target.value)}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowConfirmPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
+              >
+                {showConfirmPassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
             <label>
               <input
                 type="checkbox"

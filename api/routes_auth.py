@@ -65,7 +65,6 @@ def google_login():
             'name': user['name'],
             'email': user['email'],
             "is_google_user" : True, 
-            "dark_mode" : user.get("dark_mode")
         }), 200
 
     except ValueError as e:
@@ -146,7 +145,7 @@ def login():
         pass
     gc.collect()
 
-    return jsonify({"token": token, "name" : name, "email" : email, "is_google_user" : False, "dark_mode" : user.get("dark_mode")}), 200
+    return jsonify({"token": token, "name" : name, "email" : email, "is_google_user" : False}), 200
 
 @auth_bp.route("auth/delete", methods=["POST"])
 @swag_from("docs/delete.yml")
@@ -203,32 +202,6 @@ def delete():
     gc.collect()
 
     return jsonify({"message": "User deleted successfully"}), 200
-
-@auth_bp.route("auth/update", methods=["POST"])
-@swag_from("docs/update.yml")
-def update():
-    auth_header = request.headers.get('Authorization')
-    if not auth_header or not auth_header.startswith('Bearer '):
-        return jsonify({'error': 'Authorization header missing or invalid'}), 401
-
-    token = auth_header.split(' ')[1]
-    try:
-        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
-        email = decoded.get("email")
-        if not email:
-            return jsonify({'error': 'Token missing email'}), 401
-    except Exception:
-        return jsonify({'error': 'Invalid token'}), 401
-
-    user = user_dao.get_user_by_email(email)
-    if not user:
-        return jsonify({"error": "User not found"}), 404
-    
-    collection = user_dao.collection
-    
-    collection.update_one({"email": email}, {"$set": {"dark_mode": not user.get("dark_mode")}})
-
-    return jsonify({"message": "User updated successfully"}), 200
     
 @auth_bp.route("auth/send_email", methods=["POST"])
 @swag_from("docs/send_email.yml")

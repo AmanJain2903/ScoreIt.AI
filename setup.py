@@ -16,7 +16,7 @@ setup(
         "src.tools_matching": ["config.yml"],
         "src.certification_matching": ["config.yml"],
         "src.designation_matching": ["config.yml"],
-        "src.utils": ["config.yml"],
+        "src.utils": ["config.yml", "llm_model_config.yml"],
     },
     install_requires=[
     "dotenv==0.9.9",
@@ -47,7 +47,6 @@ setup(
     "requests==2.32.3",
     "beautifulsoup4==4.13.4",
     "trafilatura==2.0.0",
-    "selenium==4.32.0",
     "Flask==3.1.0",
     "flask-cors==5.0.1",
     "flasgger==0.9.7.1",
@@ -59,7 +58,7 @@ setup(
     "huggingface-hub==0.30.2",
     "gunicorn==20.1.0",
     "google-auth==2.40.2",
-    "google-auth-oauthlib==1.2.2"
+    "google-auth-oauthlib==1.2.2",
 ]
 )
 
