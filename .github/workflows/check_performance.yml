@@ -49,4 +49,10 @@ jobs:
       with:
         name: Matchmaker-Performance-Metrics
         path: benchmarks/results/matchmaker_performance.json
+    
+    - name: Upload Performance Report CSV
+      uses: actions/upload-artifact@v4
+      with:
+        name: Performance-Report
+        path: benchmarks/results/performance_report.csv
 

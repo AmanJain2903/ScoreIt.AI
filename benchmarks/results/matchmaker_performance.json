@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2025-05-29T14:22:27.618446",
+    "inference_time_sec": 0.001,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    }
+  },
+  {
+    "timestamp": "2025-05-29T14:22:27.887917",
+    "inference_time_sec": 0.001,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    }
+  },
+  {
+    "timestamp": "2025-05-29T14:22:28.154050",
+    "inference_time_sec": 0.001,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    }
+  },
+  {
+    "timestamp": "2025-05-29T14:22:28.420375",
+    "inference_time_sec": 0.0,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    }
+  },
+  {
+    "timestamp": "2025-05-29T14:22:28.683275",
+    "inference_time_sec": 0.001,
+    "gpu_usage": {
+      "gpu_memory_mb": null,
+      "gpu_util_percent": null
+    }
+  }
+]
