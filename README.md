@@ -191,7 +191,7 @@ ScoreIt.AI is an AI-powered system designed to:
     - change_password/ ✅
     - send_reset_email/ ✅
     - reset_password/ ✅
-  -profile ✅
+  - profile ✅
     - create/ ✅
     - read/ ✅
     - update/ ✅
