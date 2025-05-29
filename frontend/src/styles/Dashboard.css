@@ -904,20 +904,6 @@ body.dark-mode, .dark-mode .dashboard-container {
   font-size: clamp(0.875rem, 1.2vw, 1.2rem);
 }
 
-.model-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  min-width: 250px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  font-size: clamp(0.875rem, 1.2vw, 1.2rem);
-}
-
 .model-option {
   display: flex;
   align-items: center;
@@ -1058,7 +1044,7 @@ body.dark-mode, .dark-mode .dashboard-container {
   }
 }
 
-.delete-account-btn, .logout-all-btn, .logout-btn {
+.delete-account-btn, .logout-all-btn, .logout-btn, .dropdown-item.change-password-btn {
   background: transparent;
   color: #ef4444;
   border: none;
@@ -1070,16 +1056,16 @@ body.dark-mode, .dark-mode .dashboard-container {
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
-.delete-account-btn:hover, .logout-all-btn:hover, .logout-btn:hover {
+.delete-account-btn:hover, .logout-all-btn:hover, .logout-btn:hover , .dropdown-item.change-password-btn:hover{
   background: #fee2e2;
   color: #b91c1c;
 }
 
-.dark-mode .delete-account-btn, .dark-mode .logout-btn, .dark-mode .logout-all-btn {
+.dark-mode .delete-account-btn, .dark-mode .logout-btn, .dark-mode .logout-all-btn, .dark-mode .dropdown-item.change-password-btn {
   background: transparent;
   color: #ef4444;
 }
-.dark-mode .delete-account-btn:hover, .dark-mode .logout-btn:hover, .dark-mode .logout-all-btn:hover {
+.dark-mode .delete-account-btn:hover, .dark-mode .logout-btn:hover, .dark-mode .logout-all-btn:hover, .dark-mode .dropdown-item.change-password-btn:hover {
   background: #e06c54;
   color: #efefef;
 }
@@ -1198,6 +1184,13 @@ body.dark-mode, .dark-mode .dashboard-container {
 
 .dashboard-delete-modal .delete-error {
   color: #ef4444;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  text-align: center;
+  margin: 0;
+}
+
+.success-message-change-password {
+  color: #4ed126;
   font-size: clamp(0.85rem, 1vw, 1rem);
   text-align: center;
   margin: 0;
@@ -1431,4 +1424,141 @@ body.dark-mode, .dark-mode .dashboard-container {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item.change-password-btn {
+  background: transparent;
+  color: #ef4444;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: clamp(0.75rem, 1.5vh, 1.5rem) clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item.change-password-btn:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.dark-mode .dropdown-item.change-password-btn {
+  background: transparent;
+  color: #ef4444;
+}
+
+.dark-mode .dropdown-item.change-password-btn:hover {
+  background: #e06c54;
+  color: #efefef;
+}
+
+.model-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  min-width: 250px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-size: clamp(0.875rem, 1.2vw, 1.2rem);
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .model-selector {
+    min-width: 180px;
+    padding: clamp(0.5rem, 1vh, 1rem) clamp(0.75rem, 1.5vw, 1.5rem);
+  }
+  
+  .model-dropdown {
+    min-width: 220px;
+    max-height: 100px;
+  }
+  
+  .model-option {
+    padding: clamp(0.5rem, 1vh, 1rem) clamp(0.75rem, 1.5vw, 1.5rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .model-selector {
+    min-width: 160px;
+    padding: clamp(0.5rem, 1vh, 1rem) clamp(0.75rem, 1.5vw, 1.5rem);
+  }
+  
+  .model-dropdown {
+    min-width: 200px;
+    max-height: 80px;
+  }
+  
+  .model-option {
+    padding: clamp(0.5rem, 1vh, 1rem) clamp(0.75rem, 1.5vw, 1.5rem);
+  }
+}
+
+.password-input-relative {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-relative input[type="password"],
+.password-input-relative input[type="text"] {
+  width: 100%;
+  padding: clamp(0.5rem, 1vh, 1rem);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: clamp(0.85rem, 1vw, 1rem);
+  transition: all 0.3s ease;
+  background: #f9fafb;
+  box-sizing: border-box;
+}
+
+.dark-mode .password-input-relative input[type="password"],
+.dark-mode .password-input-relative input[type="text"] {
+  background: #18181b !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #444 !important;
+}
+
+.toggle-password-modal-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.75em;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 1.2em;
+  width: 1.2em;
+  z-index: 2;
+  transition: color 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+  .toggle-password-modal-icon {
+    right: 0.5em;
+    height: 1em;
+    width: 1em;
+  }
+  .password-input-relative input[type="password"],
+  .password-input-relative input[type="text"] {
+    padding-right: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .toggle-password-modal-icon {
+    right: 0.3em;
+    height: 0.9em;
+    width: 0.9em;
+  }
+  .password-input-relative input[type="password"],
+  .password-input-relative input[type="text"] {
+    padding-right: 1.5em;
+  }
 }

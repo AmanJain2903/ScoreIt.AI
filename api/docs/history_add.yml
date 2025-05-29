@@ -1,6 +1,14 @@
 post:
   summary: Add a new match history entry
   description: Saves a new match report with resume, JD, and match data to the user's history.
+  security:
+    - bearerAuth: []
+  components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   consumes:
     - application/json
   produces:
@@ -12,16 +20,12 @@ post:
       schema:
         type: object
         required:
-          - email
           - resume_text
           - resume_json
           - jd_text
           - jd_json
           - match_report
         properties:
-          email:
-            type: string
-            example: "user@example.com"
           resume_text:
             type: string
             example: "Experienced software engineer with expertise in Python..."

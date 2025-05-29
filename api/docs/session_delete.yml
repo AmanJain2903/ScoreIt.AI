@@ -1,26 +1,14 @@
-post:
+delete:
   summary: Delete a specific session for a user
   description: Deletes a specific session token for the given user email.
-  consumes:
-    - application/json
-  produces:
-    - application/json
-  parameters:
-    - in: body
-      name: body
-      required: true
-      schema:
-        type: object
-        required:
-          - email
-          - token
-        properties:
-          email:
-            type: string
-            example: user@example.com
-          token:
-            type: string
-            example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+  security:
+    - bearerAuth: []
+  components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   responses:
     200:
       description: Session deleted successfully

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { registerUser, loginUser, googleLogin, sendEmail } from '../api/auth';
 import { createSession } from '../api/session';
 import '../styles/Auth.css';
 import { useGoogleLogin } from '@react-oauth/google';
-
+import { createProfile, readProfile } from '../api/profile';
+import { Eye, EyeOff } from 'lucide-react';
 
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -16,9 +17,10 @@ const Auth = () => {
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
-  const googlelogin = useGoogleLogin({
+  const Googlelogin = useGoogleLogin({
     onSuccess: async (credentialResponse) => {
       try {
         setError('');
@@ -38,24 +40,32 @@ const Auth = () => {
         }
 
         setSuccessMessage('Login successful! Redirecting to dashboard...');
+        let fetchedProfile;
+        try{
+          fetchedProfile = await readProfile(data.token);
+        }
+        catch(err){
+          await createProfile(data.email);
+          fetchedProfile = await readProfile(data.token);
+        }
   
         if (rememberMe) {
           localStorage.setItem('token', data.token);
           localStorage.setItem('name', data.name);
-          localStorage.setItem('email', data.email);
           localStorage.setItem('isGoogleUser', data.is_google_user);
-          localStorage.setItem('darkMode', data.dark_mode);
-          await createSession(data.email, data.token);
+          localStorage.setItem('profileData', JSON.stringify(fetchedProfile.data));
+          localStorage.setItem('darkMode', fetchedProfile.data.dark_mode);
+          localStorage.setItem('modelPreference', fetchedProfile.data.model_preference);
+          await createSession(data.token);
         }
         else {
           sessionStorage.setItem('token', data.token);
           sessionStorage.setItem('name', data.name);
-          sessionStorage.setItem('email', data.email);
           sessionStorage.setItem('isGoogleUser', data.is_google_user);
-          sessionStorage.setItem('darkMode', data.dark_mode);
+          sessionStorage.setItem('profileData', JSON.stringify(fetchedProfile.data));
+          sessionStorage.setItem('darkMode', fetchedProfile.data.dark_mode);
+          sessionStorage.setItem('modelPreference', fetchedProfile.data.model_preference);
         }
-  
-        navigate('/dashboard');
       } catch (err) {
         setError(err.response?.data?.error || err.message || "Google login failed");
       }
@@ -110,25 +120,29 @@ const Auth = () => {
         console.log('Attempting login...');
         const response = await loginUser(formData.email, formData.password);
         console.log('Login response:', response);
-        
+        let fetchedProfile;
         if (response && response.data) {
+          fetchedProfile = await readProfile(response.data.token);
+          console.log('Login successful! Redirecting to dashboard...');
           setSuccessMessage('Login successful! Redirecting to dashboard...');
           // Store the token if it exists in the response
           if (response.data.token) {
             if (rememberMe) {
               localStorage.setItem('token', response.data.token);
               localStorage.setItem('name', response.data.name);
-              localStorage.setItem('email', response.data.email);
               localStorage.setItem('isGoogleUser', response.data.is_google_user);
-              localStorage.setItem('darkMode', response.data.dark_mode);
-              await createSession(response.data.email, response.data.token);
+              localStorage.setItem('profileData', JSON.stringify(fetchedProfile.data));
+              localStorage.setItem('darkMode', fetchedProfile.data.dark_mode);
+              localStorage.setItem('modelPreference', fetchedProfile.data.model_preference);
+              await createSession(response.data.token);
             }
             else {
               sessionStorage.setItem('token', response.data.token);
               sessionStorage.setItem('name', response.data.name);
-              sessionStorage.setItem('email', response.data.email);
               sessionStorage.setItem('isGoogleUser', response.data.is_google_user);
-              sessionStorage.setItem('darkMode', response.data.dark_mode);
+              sessionStorage.setItem('profileData', JSON.stringify(fetchedProfile.data));
+              sessionStorage.setItem('darkMode', fetchedProfile.data.dark_mode);
+              sessionStorage.setItem('modelPreference', fetchedProfile.data.model_preference)
             }
           }
           // Clear form data after successful login
@@ -144,6 +158,7 @@ const Auth = () => {
         console.log('Registration response:', response);
         
         if (response && response.data) {
+          await createProfile(formData.email);
           await sendEmail(formData.email);
           console.log('Registration successful, setting success message...');
           setSuccessMessage('Registration successful! Verify your email to login...');
@@ -208,9 +223,21 @@ const Auth = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password" style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}>
+              Password
+              <span
+                className="toggle-password-label-icon"
+                onClick={() => setShowPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+                style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center' }}
+              >
+                {showPassword ? <Eye size={18} color="#000000" /> : <EyeOff size={18} color="#A9A9A9" />}
+              </span>
+            </label>
             <input
-              type="password"
+              type={showPassword ? 'text' : 'password'}
               id="password"
               name="password"
               value={formData.password}
@@ -222,14 +249,21 @@ const Auth = () => {
 
           {isLogin && (
             <div className="remember-me-group">
-              <input
-                type="checkbox"
-                id="rememberMe"
-                checked={rememberMe}
-                onChange={e => setRememberMe(e.target.checked)}
-                className="remember-me-checkbox"
-              />
-              <label htmlFor="rememberMe" className="remember-me-label">Remember Me</label>
+              <div className="remember-me-left">
+                <input
+                  type="checkbox"
+                  id="remember-me"
+                  className="remember-me-checkbox"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                />
+                <label htmlFor="remember-me" className="remember-me-label">
+                  Remember Me
+                </label>
+              </div>
+              <div className="forgot-password-link">
+                <Link to="/forgot-password">Forgot Password?</Link>
+              </div>
             </div>
           )}
 
@@ -246,10 +280,14 @@ const Auth = () => {
             </button>
           )}
 
-          <button type="submit" className="submit-button">
+          <button type="submit" className="submit-button" disabled={
+                isLogin
+                  ? !formData.email || !formData.password
+                  : !formData.name || !formData.email || !formData.password
+              }>
             {isLogin ? 'Login' : 'Register'}
           </button>
-          <button onClick={() => googlelogin()} type="button" className="google-signin-button">
+          <button onClick={() => Googlelogin()} type="button" className="google-signin-button">
             <img src="/google.png" alt="Google Logo" className="google-icon" />
             Sign in with Google
           </button>

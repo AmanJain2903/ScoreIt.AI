@@ -17,9 +17,6 @@ class UserDAO:
             "verified": False,
             "is_google_user": is_google_user,
             "created_at": datetime.utcnow(),
-            "resume_text": None,
-            "resume_pdf_bytes": None,  # Can store base64 encoded string here later
-            "dark_mode": False
         }
         if is_google_user:
             user["verified"] = True

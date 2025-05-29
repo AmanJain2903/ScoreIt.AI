@@ -1,6 +1,14 @@
 post:
   summary: User Delete
   description: Delete a user account
+  security:
+    - bearerAuth: []
+  components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   consumes:
     - application/json
   produces:
@@ -12,12 +20,8 @@ post:
       schema:
         type: object
         required:
-          - email
           - password
         properties:
-          email:
-            type: string
-            example: user@example.com
           password:
             type: string
             example: mySecret123

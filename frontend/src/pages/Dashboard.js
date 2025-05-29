@@ -10,9 +10,11 @@ import PastMatches from '../components/PastMatches';
 import { fetchConfig } from '../api/fetch_config';
 import '../styles/Dashboard.css';
 import Footer from '../components/Footer';
-import { updateUser } from '../api/auth';
 import { useGoogleLogin } from '@react-oauth/google';
-import { deleteAllSessions, deleteSession , logoutAllSessions} from '../api/session';
+import { deleteAllSessions, deleteSession } from '../api/session';
+import { changePassword } from '../api/password';
+import { updateProfile, deleteProfile } from '../api/profile';
+import { Eye, EyeOff } from 'lucide-react';
 
 
 const Dashboard = () => {
@@ -24,8 +26,6 @@ const Dashboard = () => {
   const [jobDescription, setJobDescription] = useState('');
   const [resumeFile, setResumeFile] = useState(null);
   const [jobLink, setJobLink] = useState('');
-  const [resumeJSON, setResumeJSON] = useState(null);
-  const [jobJSON, setJobJSON] = useState(null);
   const [matchReport, setMatchReport] = useState(null);
   const [resumeMethod, setResumeMethod] = useState('none');
   const [jobMethod, setJobMethod] = useState('none');
@@ -43,11 +43,24 @@ const Dashboard = () => {
   const [hasPastMatches, setHasPastMatches] = useState(null); // null = unknown, true/false = known
   const historyBtnRef = useRef(null);
   const [popupPos, setPopupPos] = useState({ top: 100, left: 100 });
-  const [darkMode, setDarkMode] =  useState(localStorage.getItem('darkMode') === 'true' || sessionStorage.getItem('darkMode') === 'true');
   const isGoogleUser = localStorage.getItem('isGoogleUser') === 'true' || sessionStorage.getItem('isGoogleUser') === 'true';
   const [models, setModels] = useState({});
-  const [selectedModel, setSelectedModel] = useState('1'); // Default to first model
   const [showModelDropdown, setShowModelDropdown] = useState(false);
+  const [showChangePasswordModal, setShowChangePasswordModal] = useState(false);
+  const [oldPassword, setOldPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [logoutAllDevices, setLogoutAllDevices] = useState(false);
+  const [changePasswordError, setChangePasswordError] = useState('');
+  const [changePasswordSuccessMessage, setChangePasswordSuccessMessage] = useState('');
+  const [darkMode, setDarkMode] =  useState(localStorage.getItem('darkMode') === 'true' || sessionStorage.getItem('darkMode') === 'true');
+  const [selectedModel, setSelectedModel] = useState(localStorage.getItem('modelPreference') || sessionStorage.getItem('modelPreference'));
+  const [showOldPassword, setShowOldPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [showDeletePassword, setShowDeletePassword] = useState(false);
+
+
 
   useEffect(() => {
     const userName = localStorage.getItem('name') || sessionStorage.getItem('name');
@@ -76,8 +89,6 @@ const Dashboard = () => {
         const response = await fetchConfig();
         if (response.data) {
           setModels(response.data);
-          // Set default model ID
-          localStorage.setItem('modelID', '1') || sessionStorage.setItem('modelID', '1');
         }
       } catch (error) {
         console.error('Error loading models:', error);
@@ -90,16 +101,16 @@ const Dashboard = () => {
     onSuccess: async (credentialResponse) => {
       try {
         const accessToken = credentialResponse.access_token;
-        const email = localStorage.getItem('email') || sessionStorage.getItem('email'); 
   
-        if (!accessToken || !email) {
-          throw new Error('Missing access token or email');
+        if (!accessToken) {
+          throw new Error('Missing access token');
         }
-  
-        await deleteUser(email, accessToken);
-        await deleteAll(email);
+        const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+        await deleteUser(token, accessToken);
+        await deleteAll(token);
         try{
-          await deleteAllSessions(email);
+          await deleteAllSessions(token);
+          await deleteProfile(token);
         }
         catch(err){
         }
@@ -121,10 +132,9 @@ const Dashboard = () => {
   });
 
   const handleLogout = async() => {
-    const email = localStorage.getItem('email') || sessionStorage.getItem('email');
     const token = localStorage.getItem('token') || sessionStorage.getItem('token');
     try{
-      await deleteSession(email, token);
+      await deleteSession(token);
     }
     catch(err){
     }
@@ -264,7 +274,6 @@ const Dashboard = () => {
           }
         }
         finalResumeJSON = resumeExtractResponse.data.resume_entites;
-        setResumeJSON(finalResumeJSON);
       } catch (error) {
         alert('Failed to extract resume entities: ' + (error.message || 'Unknown error'));
         setIsProcessing(false);
@@ -289,7 +298,6 @@ const Dashboard = () => {
           }
         }
         finalJobJSON = jdExtractResponse.data.jd_entites;
-        setJobJSON(finalJobJSON);
       } catch (error) {
         alert('Failed to extract job description entities: ' + (error.message || 'Unknown error'));
         setIsProcessing(false);
@@ -315,7 +323,24 @@ const Dashboard = () => {
       // Store the match report and show the modal
       setMatchReport(matchResponse.data.match_report);
       setShowScoreReport(true);
-      
+      try{
+        const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+        await addHistory(
+        token,
+        finalResumeText,
+        finalResumeJSON,
+        finalJobDescription,
+        finalJobJSON,
+        matchResponse.data.match_report
+      );
+      // Refresh past matches
+      if (pastMatchesRef.current && pastMatchesRef.current.refresh) {
+        pastMatchesRef.current.refresh();
+      }
+      }
+      catch(err){
+        alert('Failed to add to history: ' + (err.response.data.error || err.response.data.message || err.message || 'Unknown error'));
+      }
     } catch (error) {
       console.error('Error in match process:', error);
       alert('Error processing match. Please try again.');
@@ -330,8 +355,6 @@ const Dashboard = () => {
     setJobDescription('');
     setResumeFile(null);
     setJobLink('');
-    setResumeJSON(null);
-    setJobJSON(null);
     setMatchReport(null);
     setMatchTime(null);
     setResumeMethod('none');
@@ -347,36 +370,8 @@ const Dashboard = () => {
   };
 
   const handleCloseScoreReport = async () => {
-    try {
-      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
-      if (!userEmail) {
-        console.error('No user email found');
-        return;
-      }
-
-      // Add to history
-      await addHistory(
-        userEmail,
-        resumeText,
-        resumeJSON,
-        jobDescription,
-        jobJSON,
-        matchReport
-      );
-
-      // Refresh past matches
-      if (pastMatchesRef.current && pastMatchesRef.current.refresh) {
-        pastMatchesRef.current.refresh();
-      }
-
-      // Close the modal and reset dashboard
-      setShowScoreReport(false);
-      resetDashboard();
-    } catch (error) {
-      console.error('Error adding to history:', error);
-      setShowScoreReport(false);
-      resetDashboard();
-    }
+    setShowScoreReport(false);
+    resetDashboard();
   };
 
   const handleScrollToHistory = () => {
@@ -412,16 +407,22 @@ const Dashboard = () => {
     setShowDeleteModal(false);
     setDeletePassword('');
     setDeleteError('');
+    setShowProfileDropdown(false);
   };
 
   const handleConfirmDelete = async () => {
     setIsDeleting(true);
     setDeleteError('');
     try {
-      const email = localStorage.getItem('email') || sessionStorage.getItem('email');
-      if (!email) throw new Error('No user email found');
-      await deleteUser(email, deletePassword);
-      await deleteAll(email);
+      const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+      await deleteUser(token, deletePassword);
+      await deleteAll(token);
+      try{
+        await deleteAllSessions(token);
+        await deleteProfile(token);
+      }
+      catch(err){
+      }
       localStorage.clear();
       sessionStorage.clear();
       navigate('/auth');
@@ -444,48 +445,110 @@ const Dashboard = () => {
     const isLocal = localStorage.getItem('darkMode') !== null;
     const isSession = sessionStorage.getItem('darkMode') !== null;
     let currentMode;
+    let newMode;
+    currentMode = localStorage.getItem('darkMode')==='true' || sessionStorage.getItem('darkMode')==='true';
+    newMode = (!currentMode).toString();
+
     if (isLocal){
-      currentMode = localStorage.getItem('darkMode')==='true';
-      localStorage.setItem('darkMode', (!currentMode).toString());
+      localStorage.setItem('darkMode', newMode);
       setDarkMode(localStorage.getItem('darkMode')==='true');
     }
     else if (isSession){
-      currentMode = sessionStorage.getItem('darkMode')==='true';
-      sessionStorage.setItem('darkMode', (!currentMode).toString());
+      sessionStorage.setItem('darkMode', newMode);
       setDarkMode(sessionStorage.getItem('darkMode')==='true');
     }
-    else{
-      currentMode = true;
-      localStorage.setItem('darkMode', 'true');
-      sessionStorage.setItem('darkMode', 'true');
-      setDarkMode(localStorage.getItem('darkMode')==='true' || sessionStorage.getItem('darkMode')==='true');
-    }
-    const email = localStorage.getItem('email') || sessionStorage.getItem('email');
-    if (!email) throw new Error('No user email found');
     try{
-      await updateUser(email);
+      const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+      await updateProfile(token, {dark_mode: newMode});
     }
     catch(err){
     }
   }
 
-  const handleModelSelect = (modelId) => {
-    setSelectedModel(modelId);
-    localStorage.setItem('modelID', modelId) || sessionStorage.setItem('modelID', modelId);
+  const handleModelSelect = async (modelPreference) => {
+    const isLocal = localStorage.getItem('modelPreference') !== null;
+    let token;
+    if (isLocal){
+      token = localStorage.getItem('token');
+      localStorage.setItem('modelPreference', modelPreference);
+    }
+    else{
+      token = sessionStorage.getItem('token');
+      sessionStorage.setItem('modelPreference', modelPreference);
+    }
+    setSelectedModel(modelPreference);
     setShowModelDropdown(false);
+    try{
+      await updateProfile(token, {model_preference: modelPreference});
+    }
+    catch(err){
+    }
   };
 
   const handleLogoutAllDevices = async() => {
-    const email = localStorage.getItem('email') || sessionStorage.getItem('email');
     const token = localStorage.getItem('token') || sessionStorage.getItem('token');
     try{
-      await logoutAllSessions(email, token);
+      await deleteAllSessions(token);
     }
     catch(err){
     }
     localStorage.clear();
     sessionStorage.clear();
     navigate('/auth');
+  };
+
+  const handleChangePasswordClick = () => {
+    setShowChangePasswordModal(true);
+    setOldPassword('');
+    setNewPassword('');
+    setConfirmPassword('');
+    setLogoutAllDevices(false);
+    setChangePasswordError('');
+    setChangePasswordSuccessMessage('');
+  };
+
+  const handleChangePasswordModalClose = () => {
+    setShowChangePasswordModal(false);
+    setOldPassword('');
+    setNewPassword('');
+    setConfirmPassword('');
+    setLogoutAllDevices(false);
+    setChangePasswordError('');
+    setChangePasswordSuccessMessage('');
+    setShowProfileDropdown(false);
+  };
+
+  const handleConfirmChangePassword = async () => {
+    if (newPassword !== confirmPassword) {
+      setChangePasswordError('New passwords do not match');
+      return;
+    }
+    try {
+      const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+      const response = await changePassword(token, oldPassword, newPassword);
+      if (response.status === 200) {
+        setChangePasswordError('');
+        setChangePasswordSuccessMessage(response.data.message || response.message || 'Password changed successfully!');
+        if (logoutAllDevices){
+          setTimeout(() => {
+          handleChangePasswordModalClose();
+        }, 2000);
+          setTimeout(() => {
+          handleLogoutAllDevices();
+        }, 2000);
+        }
+        else{
+          setTimeout(() => {
+          handleChangePasswordModalClose();
+        }, 2000);
+        }
+      } 
+      else {
+        setChangePasswordError(response.data.error || response.data.message || response.message || 'Failed to change password');
+      }
+    } catch (err) {
+      setChangePasswordError(err.response.data.error || err.response.data.message || err.message || 'Failed to change password');
+    }
   };
 
   if (isLoading) {
@@ -551,6 +614,16 @@ const Dashboard = () => {
                   {showDeleteAccount && 
                   (
                     <>
+                    {!isGoogleUser && (
+                        <button
+                          className="dropdown-item change-password-btn"
+                          onClick={handleChangePasswordClick}
+                          onMouseEnter={() => setShowDeleteAccount(true)}
+                          onMouseLeave={() => setShowDeleteAccount(false)}
+                        >
+                          Change Password?
+                        </button>
+                      )}
                       <button
                         className="dropdown-item logout-all-btn"
                         onClick={handleLogoutAllDevices}
@@ -659,7 +732,7 @@ const Dashboard = () => {
                     {models[selectedModel].MODEL_TYPE === 'paid' && <span className="model-paid"> $</span>}
                   </>
                 ) : (
-                  'Choose Model'
+                  models[selectedModel] ? models[selectedModel].NAME : 'Choose Model'
                 )}
               </span>
               <span className="model-selector-arrow">▼</span>
@@ -734,13 +807,26 @@ const Dashboard = () => {
           <div className="dashboard-delete-modal">
             <h2>Delete Account</h2>
             <p>This will permanently delete your account and all match history. This action cannot be undone.</p>
-            <input
-              type="password"
-              placeholder="Enter your password to confirm"
-              value={deletePassword}
-              onChange={e => setDeletePassword(e.target.value)}
-              disabled={isDeleting}
-            />
+            <div className="password-input-relative">
+              <input
+                type={showDeletePassword ? 'text' : 'password'}
+                placeholder="Enter your password to confirm"
+                value={deletePassword}
+                onChange={e => setDeletePassword(e.target.value)}
+                disabled={isDeleting}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowDeletePassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showDeletePassword ? 'Hide password' : 'Show password'}
+              >
+                {showDeletePassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
             {deleteError && <div className="delete-error">{deleteError}</div>}
             <div className="delete-modal-actions">
               <button onClick={handleDeleteModalClose} className="delete-cancel-btn" disabled={isDeleting}>Cancel</button>
@@ -760,6 +846,87 @@ const Dashboard = () => {
           onClick={() => setShowNoMatchesPopup(false)}
         >
           You have no past matches.
+        </div>
+      )}
+
+      {/* Change Password Modal */}
+      {showChangePasswordModal && (
+        <div className="modal-overlay">
+          <div className="dashboard-delete-modal">
+            <h2>Change Password</h2>
+            <p>This will change your account password permanently.</p>
+            <div className="password-input-relative">
+              <input
+                type={showOldPassword ? 'text' : 'password'}
+                placeholder="Old Password"
+                value={oldPassword}
+                onChange={e => setOldPassword(e.target.value)}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowOldPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showOldPassword ? 'Hide password' : 'Show password'}
+              >
+                {showOldPassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
+            <div className="password-input-relative">
+              <input
+                type={showNewPassword ? 'text' : 'password'}
+                placeholder="New Password"
+                value={newPassword}
+                onChange={e => setNewPassword(e.target.value)}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowNewPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showNewPassword ? 'Hide password' : 'Show password'}
+              >
+                {showNewPassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
+            <div className="password-input-relative">
+              <input
+                type={showConfirmPassword ? 'text' : 'password'}
+                placeholder="Confirm New Password"
+                value={confirmPassword}
+                onChange={e => setConfirmPassword(e.target.value)}
+              />
+              <span
+                className="toggle-password-modal-icon"
+                onClick={() => setShowConfirmPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
+              >
+                {showConfirmPassword
+                  ? <Eye size={18} color={darkMode ? '#fff' : '#222'} />
+                  : <EyeOff size={18} color={'#A9A9A9'} />}
+              </span>
+            </div>
+            <label>
+              <input
+                type="checkbox"
+                checked={logoutAllDevices}
+                onChange={e => setLogoutAllDevices(e.target.checked)}
+              />
+              Logout from all devices?
+            </label>
+            {changePasswordError && <div className="delete-error">{changePasswordError}</div>}
+            {changePasswordSuccessMessage && <div className="success-message-change-password">{changePasswordSuccessMessage}</div>}
+            <div className="delete-modal-actions">
+              <button onClick={handleChangePasswordModalClose} className="delete-cancel-btn">Cancel</button>
+              <button onClick={handleConfirmChangePassword} className="delete-confirm-btn">Change Password</button>
+            </div>
+          </div>
         </div>
       )}
     </div>

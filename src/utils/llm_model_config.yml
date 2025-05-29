@@ -8,3 +8,15 @@ MODEL_NAMES:
     MODEL_NAME: deepseek/deepseek-chat-v3-0324
     MODEL_TYPE: paid
     NAME: DeepSeek v3
+
+  3:
+    MODEL_NAME: mistralai/mistral-7b-instruct:free
+    MODEL_TYPE: free
+    NAME: Mistral 7B
+
+  4:
+    MODEL_NAME: mistralai/mistral-7b-instruct
+    MODEL_TYPE: paid
+    NAME: Mistral 7B
+
+

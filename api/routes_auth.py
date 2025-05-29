@@ -22,7 +22,7 @@ FRONTEND_URL = os.getenv("FRONTEND_URL")
 auth_bp = Blueprint("auth", __name__)
 user_dao = UserDAO()
 
-@auth_bp.route('/google', methods=['POST'])
+@auth_bp.route('auth/google', methods=['POST'])
 @swag_from("docs/google.yml")
 def google_login():
     try:
@@ -65,7 +65,6 @@ def google_login():
             'name': user['name'],
             'email': user['email'],
             "is_google_user" : True, 
-            "dark_mode" : user.get("dark_mode")
         }), 200
 
     except ValueError as e:
@@ -76,7 +75,7 @@ def google_login():
 def is_valid_email(email):
     return re.match(r"[^@]+@[^@]+\.[^@]+", email)
 
-@auth_bp.route("/register", methods=["POST"])
+@auth_bp.route("auth/register", methods=["POST"])
 @swag_from("docs/register.yml")
 def register():
     data = request.get_json()
@@ -108,7 +107,7 @@ def register():
 
     return jsonify({"message": "User registered successfully"}), 201
 
-@auth_bp.route("/login", methods=["POST"])
+@auth_bp.route("auth/login", methods=["POST"])
 @swag_from("docs/login.yml")
 def login():
     data = request.get_json()
@@ -146,17 +145,29 @@ def login():
         pass
     gc.collect()
 
-    return jsonify({"token": token, "name" : name, "email" : email, "is_google_user" : False, "dark_mode" : user.get("dark_mode")}), 200
+    return jsonify({"token": token, "name" : name, "email" : email, "is_google_user" : False}), 200
 
-@auth_bp.route("/delete", methods=["POST"])
+@auth_bp.route("auth/delete", methods=["POST"])
 @swag_from("docs/delete.yml")
 def delete():
-    data = request.get_json()
-    email = data.get("email")
-    password = data.get("password")
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
 
-    if not email or not password:
-        return jsonify({"error": "Email and password are required"}), 400
+    token = auth_header.split(' ')[1]
+
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+        if not email:
+            return jsonify({'error': 'Token missing email'}), 401
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
+    
+    data = request.get_json()
+    password = data.get("password")
+    if not password:
+        return jsonify({"error": "Password is required"}), 400
 
     user = user_dao.get_user_by_email(email)
     if not user:
@@ -170,7 +181,6 @@ def delete():
 
             # Extract info
             id_info = response.json()
-            email = id_info.get('email')
             
             if id_info.get("email") != email:
                 return jsonify({"error": "Invalid credentials"}), 401
@@ -192,26 +202,8 @@ def delete():
     gc.collect()
 
     return jsonify({"message": "User deleted successfully"}), 200
-
-@auth_bp.route("/update", methods=["POST"])
-@swag_from("docs/update.yml")
-def update():
-    data = request.get_json()
-    email = data.get("email")
-
-    if not email:
-        return jsonify({"error": "Email is required"}), 400
-    user = user_dao.get_user_by_email(email)
-    if not user:
-        return jsonify({"error": "User not found"}), 404
     
-    collection = user_dao.collection
-    
-    collection.update_one({"email": email}, {"$set": {"dark_mode": not user.get("dark_mode")}})
-
-    return jsonify({"message": "User updated successfully"}), 200
-    
-@auth_bp.route("/send_email", methods=["POST"])
+@auth_bp.route("auth/send_email", methods=["POST"])
 @swag_from("docs/send_email.yml")
 def send_verification_email():
     data = request.get_json()
@@ -248,7 +240,7 @@ def send_verification_email():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
-@auth_bp.route("/verify_email", methods=["GET"])
+@auth_bp.route("auth/verify_email", methods=["GET"])
 @swag_from("docs/verify_email.yml")
 def verify_email():
     token = request.args.get("token")

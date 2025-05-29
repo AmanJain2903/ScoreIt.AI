@@ -16,22 +16,34 @@ session_dao = SessionDAO()
 @sessions_bp.route("/session/create", methods=["POST"])
 @swag_from("docs/session_create.yml")
 def create_session():
-    data = request.get_json()
-    email = data.get("email")
-    token = data.get("token")
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
 
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
     if not email or not token:
         return jsonify({"error": "Email and token are required"}), 400
-
     session_dao.create_session(email, token)
     return jsonify({"message": "Session created"}), 201
 
-@sessions_bp.route("/session/delete", methods=["POST"])
+@sessions_bp.route("/session/delete", methods=["DELETE"])
 @swag_from("docs/session_delete.yml")
 def delete_session():
-    data = request.get_json()
-    email = data.get("email")
-    token = data.get("token")
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
+
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
 
     if not email or not token:
         return jsonify({"error": "Email and token are required"}), 400
@@ -39,25 +51,36 @@ def delete_session():
     session_dao.delete_session(email, token)
     return jsonify({"message": "Session deleted"}), 200
 
-@sessions_bp.route("/session/delete_all", methods=["POST"])
+@sessions_bp.route("/session/delete_all", methods=["DELETE"])
 @swag_from("docs/session_delete_all.yml")
 def delete_all_sessions():
-    data = request.get_json()
-    email = data.get("email")
-
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
     if not email:
         return jsonify({"error": "Email is required"}), 400
 
     session_dao.delete_all_sessions(email)
     return jsonify({"message": "All sessions deleted"}), 200
 
-@sessions_bp.route("/session/check", methods=["POST"])
+@sessions_bp.route("/session/check", methods=["GET"])
 @swag_from("docs/session_check.yml")
 def check_session():
-    data = request.get_json()
-    email = data.get("email")
-    token = data.get("token")
-
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return jsonify({'error': 'Authorization header missing or invalid'}), 401
+    token = auth_header.split(' ')[1]
+    try:
+        decoded = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
+        email = decoded.get("email")
+    except Exception:
+        return jsonify({'error': 'Invalid token'}), 401
     if not email or not token:
         return jsonify({"error": "Email and token are required"}), 400
 
@@ -76,17 +99,3 @@ def check_session():
         return jsonify({"active": False}), 200
     return jsonify({"active": True}), 200
 
-@sessions_bp.route("/session/logout_all", methods=["POST"])
-@swag_from("docs/session_logout_all.yml")
-def logout_all_devices():
-    data = request.get_json()
-    email = data.get("email")
-    token = data.get("token")
-
-    if not email or not token:
-        return jsonify({"error": "Email and token are required"}), 400
-
-    # Delete all sessions
-    session_dao.delete_all_sessions(email)
-
-    return jsonify({"message": "Logged out from all devices"}), 200

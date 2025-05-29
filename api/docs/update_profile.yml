@@ -1,0 +1,58 @@
+post:
+  tags:
+    - Profile
+  summary: Update user profile
+  description: Updates profile fields for the authenticated user.
+  security:
+    - bearerAuth: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - update_data
+          properties:
+            update_data:
+              type: object
+              example:
+                dark_mode: true
+                model_preference: 2
+  responses:
+    200:
+      description: Profile updated
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+    400:
+      description: Missing update data
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+    401:
+      description: Unauthorized or invalid token
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+    404:
+      description: Profile not found or unchanged
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string

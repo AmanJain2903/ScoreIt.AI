@@ -6,6 +6,7 @@ from unittest.mock import patch, MagicMock
 import jwt
 from datetime import datetime, timedelta
 import os
+from jwt.exceptions import InvalidTokenError
 
 pytestmark = pytest.mark.api
 SECRET_KEY = os.getenv("SECRET_KEY")
@@ -20,10 +21,16 @@ def clear_sessions():
     dao = SessionDAO()
     dao.collection.delete_many({})
 
+def generate_missing_email_token(email):
+    payload = {
+        "exp": datetime.utcnow() + timedelta(minutes=30)
+    }
+    return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
+
 @pytest.fixture
 def setup_verified_user():
     dao = UserDAO()
-    email = "verifytest@example.com"
+    email = "xyz@example.com"
     # Ensure user exists and is not verified
     try:
         dao.delete_user(email)
@@ -45,108 +52,198 @@ def generate_verification_token(email, expired=False):
     return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 
 def test_create_session_success(client):
-    response = client.post('/session/create', json={
-        'email': 'user@example.com',
-        'token': 'abc123'
+    token = generate_verification_token("xyz@example.com")
+    response = client.post('/session/create', headers={
+        'Authorization': f"Bearer {token}"
     })
     assert response.status_code == 201
     assert response.json == {'message': 'Session created'}
 
 def test_create_session_missing_fields(client):
-    response = client.post('/session/create', json={
-        'email': 'user@example.com'
+    token = generate_missing_email_token("xyz@example.com")
+    response = client.post('/session/create', headers={
+        'Authorization': f"Bearer {token}"
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and token are required'}
 
-def test_delete_session_success(client):
-    client.post('/session/create', json={
-        'email': 'user@example.com',
-        'token': 'abc123'
+def test_create_session_invalid_token(client):
+    response = client.post('/session/create', headers={
+        'Authorization': "Bearer fake"
     })
-    response = client.post('/session/delete', json={
-        'email': 'user@example.com',
-        'token': 'abc123'
+    assert response.status_code == 401
+    assert response.json == {'error': 'Invalid token'}
+
+def test_create_session_missing_token(client):
+    response = client.post('/session/create', headers={
+        'Authorization': "Fake"
+    })
+    assert response.status_code == 401
+    assert response.json == {'error': 'Authorization header missing or invalid'}
+
+def test_delete_session_success(client):
+    token = generate_verification_token("xyz@example.com")
+    client.post('/session/create', headers={
+        'Authorization': f"Bearer {token}"
+    })
+    response = client.delete('/session/delete', headers={
+        'Authorization': f"Bearer {token}"
     })
     assert response.status_code == 200
     assert response.json == {'message': 'Session deleted'}
 
 def test_delete_session_missing_fields(client):
-    response = client.post('/session/delete', json={
-        'token': 'abc123'
+    token = generate_missing_email_token("xyz@example.com")
+    response = client.delete('/session/delete', headers={
+        'Authorization': f"Bearer {token}"
     })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and token are required'}
 
+def test_delete_session_invalid_token(client):
+    response = client.delete('/session/delete', headers={
+        'Authorization': "Bearer fake"
+    })
+    assert response.status_code == 401
+    assert response.json == {'error': 'Invalid token'}
+
+def test_delete_session_missing_token(client):
+    response = client.delete('/session/delete', headers={
+        'Authorization': "Fake"
+    })
+    assert response.status_code == 401
+    assert response.json == {'error': 'Authorization header missing or invalid'}
+
 @patch('api.routes_sessions.jwt.decode')
 def test_check_session_active(mock_jwt_decode, client):
-    mock_jwt_decode.return_value = {'email': 'user@example.com'}
-    client.post('/session/create', json={'email': 'user@example.com', 'token': 'abc123'})
-    response = client.post('/session/check', json={
-        'email': 'user@example.com',
-        'token': 'abc123'
+    mock_jwt_decode.return_value = {'email': 'xyz@example.com'}
+    token = generate_verification_token("xyz@example.com")
+    client.post('/session/create', headers={
+        'Authorization': f"Bearer {token}"
+    })
+    response = client.get('/session/check', headers={
+        'Authorization': f"Bearer {token}"
     })
     assert response.status_code == 200
     assert response.json == {'active': True}
+    client.delete('/session/delete_all', headers={
+        'Authorization': f"Bearer {token}"
+    })
 
 def test_check_session_inactive(client):
-    response = client.post('/session/check', json={
-        'email': 'user@example.com',
-        'token': 'nonexistent'
+    token = generate_verification_token("xyz@example.com")  
+    response = client.get('/session/check', headers={
+        'Authorization': f"Bearer {token}"
     })
     assert response.status_code == 200
     assert response.json == {'active': False}
 
 def test_check_session_missing_fields(client):
-    response = client.post('/session/check', json={'email': 'user@example.com'})
+    token = generate_missing_email_token("xyz@example.com")
+    response = client.get('/session/check', headers={
+        'Authorization': f"Bearer {token}"
+    })
     assert response.status_code == 400
     assert response.json == {'error': 'Email and token are required'}
 
-def setup_user_and_session(client, setup_verified_user):
-    email = setup_verified_user
-    # Register user
-    token = generate_verification_token(email)
-    response = client.get(f"/verify_email?token={token}")
-    assert response.status_code == 200
-    assert b"successfully verified" in response.data
-    # Login user
-    login_resp = client.post("/login", json={"email": email, "password": "password123"})
-    token = login_resp.get_json()["token"]
-    # Create session
-    client.post("/session/create", json={"email": email, "token": token})
-    return email, "password123", token
+def test_check_session_invalid_token(client):
+    response = client.get('/session/check', headers={
+        'Authorization': "Bearer fake"
+    })
+    assert response.status_code == 401
+    assert response.json == {'error': 'Invalid token'}
 
-def cleanup_user(client, email, password):
-    client.post("/delete", json={"email": email, "password": password})
-
-def test_logout_all_sessions_success(client, setup_verified_user):
-    email, password, token = setup_user_and_session(client, setup_verified_user)
-    # Check session exists
-    assert client.post("/session/check", json={"email": email, "token": token}).get_json()["active"]
-    # Logout from all sessions
-    logout_resp = client.post("/session/logout_all", json={"email": email, "token": token})
-    assert logout_resp.status_code == 200
-    assert logout_resp.get_json() == {"message": "Logged out from all devices"}
-    # Check session is removed
-    assert client.post("/session/check", json={"email": email, "token": token}).get_json()["active"] is False
-    cleanup_user(client, email, password)
-
-def test_logout_all_sessions_missing_fields(client):
-    resp = client.post("/session/logout_all", json={"email": "someone@example.com"})
-    assert resp.status_code == 400
-    assert resp.get_json() == {"error": "Email and token are required"}
+def test_check_session_missing_token(client):
+    response = client.get('/session/check', headers={
+        'Authorization': "Fake"
+    })
+    assert response.status_code == 401
+    assert response.json == {'error': 'Authorization header missing or invalid'}
 
 def test_delete_all_sessions(client):
     # Create multiple sessions
-    client.post('/session/create', json={'email': 'user@example.com', 'token': 'abc123'})
-    client.post('/session/create', json={'email': 'user@example.com', 'token': 'xyz456'})
+    token = generate_verification_token("xyz@example.com")
+    client.post('/session/create', headers={
+        'Authorization': f"Bearer {token}"
+    })
+    token = generate_verification_token("xyz@example.com")
+    client.post('/session/create', headers={
+        'Authorization': f"Bearer {token}"
+    })
 
     # Delete all
-    response = client.post('/session/delete_all', json={'email': 'user@example.com'})
+    response = client.delete('/session/delete_all', headers={
+        'Authorization': f"Bearer {token}"
+    })
     assert response.status_code == 200
     assert response.json == {'message': 'All sessions deleted'}
 
 def test_delete_all_sessions_missing_email(client):
-    response = client.post('/session/delete_all', json={})
+    token = generate_missing_email_token("xyz@example.com")
+    response = client.delete('/session/delete_all', headers={
+        'Authorization': f"Bearer {token}"
+    })
     assert response.status_code == 400
     assert response.json == {'error': 'Email is required'}
+
+def test_delete_all_sessions_invalid_token(client):
+    response = client.delete('/session/delete_all', headers={
+        'Authorization': "Bearer fake"
+    })
+    assert response.status_code == 401
+    assert response.json == {'error': 'Invalid token'}
+
+def test_delete_all_sessions_missing_token(client):
+    response = client.delete('/session/delete_all', headers={
+        'Authorization': "Fake"
+    })
+    assert response.status_code == 401
+    assert response.json == {'error': 'Authorization header missing or invalid'}
+
+
+# NEW TESTS FOR BETTER COVERAGE
+
+@patch("api.routes_sessions.jwt.decode")
+def test_check_session_invalid_token_after_active(mock_decode, client):
+    email = "xyz@example.com"
+    token = jwt.encode({
+        "email": email,
+        "exp": datetime.utcnow() + timedelta(minutes=5)
+    }, SECRET_KEY, algorithm="HS256")
+
+    SessionDAO().create_session(email, token)
+
+    # First call succeeds, second raises signature error
+    mock_decode.side_effect = [ {"email": email}, InvalidTokenError("Invalid") ]
+
+    response = client.get('/session/check', headers={
+        'Authorization': f"Bearer {token}"
+    })
+
+    assert response.status_code == 200
+    assert response.json == {"active": False}
+
+    SessionDAO().delete_session(email, token)
+
+@patch("api.routes_sessions.jwt.decode")
+def test_check_session_unexpected_exception_after_active(mock_decode, client):
+    email = "xyz@example.com"
+    token = jwt.encode({
+        "email": email,
+        "exp": datetime.utcnow() + timedelta(minutes=5)
+    }, SECRET_KEY, algorithm="HS256")
+
+    SessionDAO().create_session(email, token)
+
+    # First decode works, second throws Exception
+    mock_decode.side_effect = [ {"email": email}, Exception("Unexpected crash") ]
+
+    response = client.get('/session/check', headers={
+        'Authorization': f"Bearer {token}"
+    })
+
+    assert response.status_code == 200
+    assert response.json == {"active": False}
+
+    SessionDAO().delete_session(email, token)
+

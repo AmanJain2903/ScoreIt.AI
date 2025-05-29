@@ -63,10 +63,8 @@ const PastMatches = forwardRef((props, ref) => {
 
   const fetchMatches = async () => {
     try {
-      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
-      if (!userEmail) return;
-
-      const response = await getHistory(userEmail);
+      const token = localStorage.getItem('token') || sessionStorage.getItem('token'); 
+      const response = await getHistory(token);
       if (response.data && response.data.history) {
         setMatches(response.data.history);
       }
@@ -80,10 +78,8 @@ const PastMatches = forwardRef((props, ref) => {
   const handleDeleteMatch = async (match) => {
     try {
       console.log('Deleting match:', match);
-      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
-      if (!userEmail) return;
-
-      await deleteOne(userEmail, match);
+      const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+      await deleteOne(token, match);
       setMatches(matches.filter(m => m._id !== match));
       if (expandedMatch === match) {
         setExpandedMatch(null);
@@ -95,10 +91,8 @@ const PastMatches = forwardRef((props, ref) => {
 
   const handleClearHistory = async () => {
     try {
-      const userEmail = localStorage.getItem('email') || sessionStorage.getItem('email');
-      if (!userEmail) return;
-
-      await deleteAll(userEmail);
+      const token = localStorage.getItem('token') || sessionStorage.getItem('token');
+      await deleteAll(token);
       setMatches([]);
       setExpandedMatch(null);
     } catch (error) {
