@@ -175,7 +175,6 @@ ScoreIt.AI is an AI-powered system designed to:
     - login/ ✅
     - google/ ✅
     - delete/ ✅
-    - update/ ✅
     - send_email/ ✅
     - verify_email/ ✅
   - history ✅
@@ -192,6 +191,11 @@ ScoreIt.AI is an AI-powered system designed to:
     - change_password/ ✅
     - send_reset_email/ ✅
     - reset_password/ ✅
+  -profile ✅
+    - create/ ✅
+    - read/ ✅
+    - update/ ✅
+    - delete/ ✅
 
 **14. Integrated MongoDB Atlas Database**  
 - The API endpoints were conneted to MongoDB Atlas for ScoreIt.AI.
@@ -306,7 +310,7 @@ ScoreIt.AI is an AI-powered system designed to:
 - Both checks are integrated into the CI pipeline and run on every push and pull request.
 
 **8. Test Achievements**
-- 380+ test cases written covering Unit + Integration + API tests combined.
+- 400 test cases written covering Unit + Integration + API tests combined.
 - Every new module fully tested before merging to baseline.
 - Extraction modules ran through benchmarks for accuracy.
 - Relevent modules ran through performance testing.

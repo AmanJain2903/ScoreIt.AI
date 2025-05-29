@@ -343,7 +343,6 @@ def test_google_login_new_user(mock_get, client):
     assert data["name"] == "Test User"
     assert data["is_google_user"] is True
     assert "token" in data
-    assert "dark_mode" in data
     # Clean up
     token = generate_verification_token('testuser@example.com')
     client.post('auth/delete', json={
@@ -372,7 +371,6 @@ def test_google_login_existing_google_user(mock_get, client):
     assert data["name"] == "Test User"
     assert data["is_google_user"] is True
     assert "token" in data
-    assert "dark_mode" in data
     # Clean up
     token = generate_verification_token('testuser@example.com')
     client.post('auth/delete', json={
@@ -441,56 +439,6 @@ def test_delete_google_user_success(mock_get, client):
     })
     assert delete_response.status_code == 200
     assert delete_response.json == {'message': 'User deleted successfully'}
-
-def test_update_success(client):
-    client.post('auth/register', json={
-        'email': 'xyz@example.com',
-        'password': 'password123',
-        'name': 'Lorem Ipsum'
-    })
-    token = generate_verification_token('xyz@example.com')
-    response = client.post('auth/update', headers={
-        'Authorization': f'Bearer {token}'
-    })
-    assert response.status_code == 200
-    assert response.json == {'message': 'User updated successfully'}
-    token = generate_verification_token('xyz@example.com')
-    response = client.post('auth/delete', json={
-        'password': 'password123'
-    }, headers={
-        'Authorization': f'Bearer {token}'
-    })  # Clean up after test
-    assert response.status_code == 200
-    assert response.json == {'message': 'User deleted successfully'}
-
-def test_update_user_not_found(client):
-    token = generate_verification_token('xyz@example.com')
-    response = client.post('auth/update', headers={
-        'Authorization': f'Bearer {token}'
-    })
-    assert response.status_code == 404
-    assert response.json == {'error': 'User not found'}
-
-def test_update_missing_email(client):
-    client.post('auth/register', json={
-        'email': 'xyz@example.com',
-        'password': 'password123',
-        'name': 'Lorem Ipsum'
-    })
-    token = generate_missing_email_token('xyz@example.com') 
-    response = client.post('auth/update', headers={
-        'Authorization': f'Bearer {token}'
-    })
-    assert response.status_code == 401
-    assert response.json == {'error': 'Token missing email'}
-    token = generate_verification_token('xyz@example.com')
-    response = client.post('auth/delete', json={
-        'password': 'password123'
-    }, headers={
-        'Authorization': f'Bearer {token}'
-    })  # Clean up after test
-    assert response.status_code == 200
-    assert response.json == {'message': 'User deleted successfully'}
 
 @patch("api.routes_auth.send_email")
 def test_send_verification_success(mock_send_email, client):
@@ -583,29 +531,6 @@ def test_delete_missing_token(client):
     assert response.status_code == 401
     assert response.json['error'] == "Authorization header missing or invalid"
 
-def test_update_invalid_token(client):
-    response = client.post('auth/update', headers={
-        'Authorization': "Bearer fake"
-    })
-    assert response.status_code == 401
-    assert response.json['error'] == "Invalid token"
-
-def test_update_missing_token(client):
-    response = client.post('auth/update', headers={
-        'Authorization': "Fake {123}"
-    })
-    assert response.status_code == 401
-    assert response.json['error'] == "Authorization header missing or invalid"
-
-def test_update_invalid_token(client):
-    response = client.post('auth/update', json={
-        'email': "xyz@example.com"
-    }, headers={
-        'Authorization': "Bearer fake"
-    })
-    assert response.status_code == 401
-    assert response.json['error'] == "Invalid token"
-
 # NEW TESTS FOR BETTER COVERAGE
 
 @patch("api.routes_auth.requests.get")
@@ -662,7 +587,6 @@ def test_login_google_registered_user(client):
         "password": "",  # No password for Google users
         "is_google_user": True,
         "verified": True,
-        "dark_mode": False
     })
 
     # Try logging in with password

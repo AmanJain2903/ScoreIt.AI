@@ -21,12 +21,6 @@ export const googleLogin = async (access_token) => {
   return axios.post(`${BASE_URL}/auth/google`, { access_token });
 };
 
-export const updateUser = async (token) => {
-  return axios.post(`${BASE_URL}/auth/update`, {}, {
-    headers: { Authorization: `Bearer ${token}` }
-  });
-};
-
 export const sendEmail = async (email) => {
   return axios.post(`${BASE_URL}/auth/send_email`, { email });
 };

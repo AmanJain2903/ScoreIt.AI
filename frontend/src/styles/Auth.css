@@ -574,3 +574,34 @@
   color: #ffffff;
   border: 1px solid #6366f1;
 }
+
+.toggle-password-label-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.4em;
+  cursor: pointer;
+  height: 1.2em;
+  width: 1.2em;
+  transition: color 0.2s;
+  vertical-align: middle;
+}
+.toggle-password-label-icon:active,
+.toggle-password-label-icon:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .toggle-password-label-icon {
+    height: 1em;
+    width: 1em;
+    margin-left: 0.3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .toggle-password-label-icon {
+    height: 0.9em;
+    width: 0.9em;
+    margin-left: 0.2em;
+  }
+}
+
