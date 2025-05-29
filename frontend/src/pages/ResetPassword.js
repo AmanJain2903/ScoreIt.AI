@@ -4,6 +4,7 @@ import '../styles/ResetPassword.css';
 import { jwtDecode } from 'jwt-decode';
 import { resetPassword } from '../api/password';
 import { deleteAllSessions } from '../api/session';
+import { Eye, EyeOff } from 'lucide-react';
 
 
 const ResetPassword = () => {
@@ -16,6 +17,8 @@ const ResetPassword = () => {
   const [success, setSuccess] = useState('Success Message');
   const [token, setToken] = useState('');
   const [email, setEmail] = useState('');
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   useEffect(() => {
     try{
@@ -106,9 +109,21 @@ const ResetPassword = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="newPassword">New Password</label>
+            <label htmlFor="newPassword" style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}>
+              New Password
+              <span
+                className="toggle-password-label-icon"
+                onClick={() => setShowNewPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showNewPassword ? 'Hide password' : 'Show password'}
+                style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center' }}
+              >
+                {showNewPassword ? <Eye size={18} color="#000000" /> : <EyeOff size={18} color="#A9A9A9" />}
+              </span>
+            </label>
             <input
-              type="password"
+              type={showNewPassword ? 'text' : 'password'}
               id="newPassword"
               value={newPassword}
               onChange={e => setNewPassword(e.target.value)}
@@ -117,9 +132,21 @@ const ResetPassword = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm New Password</label>
+            <label htmlFor="confirmPassword" style={{ display: 'flex', alignItems: 'center', gap: '0.5em' }}>
+              Confirm New Password
+              <span
+                className="toggle-password-label-icon"
+                onClick={() => setShowConfirmPassword((prev) => !prev)}
+                tabIndex={0}
+                role="button"
+                aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
+                style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center' }}
+              >
+                {showConfirmPassword ? <Eye size={18} color="#000000" /> : <EyeOff size={18} color="#A9A9A9" />}
+              </span>
+            </label>
             <input
-              type="password"
+              type={showConfirmPassword ? 'text' : 'password'}
               id="confirmPassword"
               value={confirmPassword}
               onChange={e => setConfirmPassword(e.target.value)}

@@ -31,16 +31,22 @@ jobs:
         TOKENIZERS_PARALLELISM: "false"
       run: |
         PYTHONPATH=. python benchmarks/check_performance.py
+    
+    - name: Upload Resume Extractor Performance Metrics JSON
+      uses: actions/upload-artifact@v4
+      with:
+        name: Resume-Extractor-Performance-Metrics
+        path: benchmarks/results/resume_extractor_performance.json
+
+    - name: Upload JD Extractor Performance Metrics JSON
+      uses: actions/upload-artifact@v4
+      with:
+        name: JD-Extractor-Performance-Metrics
+        path: benchmarks/results/jd_extractor_performance.json
 
     - name: Upload Matchmaker Performance Metrics JSON
       uses: actions/upload-artifact@v4
       with:
         name: Matchmaker-Performance-Metrics
         path: benchmarks/results/matchmaker_performance.json
-    
-    - name: Upload Resume OCR Performance Metrics JSON
-      uses: actions/upload-artifact@v4
-      with:
-        name: Resume-OCR-Performance-Metrics
-        path: benchmarks/results/resume_ocr_performance.json
 

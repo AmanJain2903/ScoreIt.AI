@@ -1,0 +1,38 @@
+post:
+  tags:
+    - Profile
+  summary: Create user profile
+  description: Creates a new user profile using email. Throws an error if profile already exists.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - email
+          properties:
+            email:
+              type: string
+              example: user@example.com
+  responses:
+    201:
+      description: Profile created successfully
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              id:
+                type: string
+    400:
+      description: Bad request or profile already exists
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string

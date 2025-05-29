@@ -1,9 +1,0 @@
-,MAE,MSE,R2,Accuracy,Support
-Education Matching,0.08,0.01,-0.88,65.6,500.0
-Experience Matching,0.07,0.01,-0.73,65.6,500.0
-Technical Skills Matching,0.15,0.03,-0.01,27.8,500.0
-Soft Skills Matching,0.14,0.02,-0.0,29.8,500.0
-Tools Matching,0.14,0.02,0.01,27.6,500.0
-Certification Matching,0.14,0.02,-0.02,28.2,500.0
-Designation Matching,0.14,0.02,-0.03,28.8,500.0
-Average,0.12,0.02,-0.24,39.06,500.0

@@ -311,22 +311,7 @@ Allows to validate a user session in the system.
 
 ---
 
-#19. `auth/update` – Updates a User's Profile 
-Allows to update a user's dark mode preference in the system.
-
-- **Method:** `POST`
-- **Headers:**
-  - `Authorization`: Bearer token – JWT for the logged-in user
-- **Output:**
-```json
-{
-  "message": "User updated successfully"
-}
-```
-
----
-
-#20. `auth/send_email` – Sends Verification Email  
+#19. `auth/send_email` – Sends Verification Email  
 Sends a verification email to the provided user email with a secure verification link.
 
 - **Method:** `POST`  
@@ -363,7 +348,7 @@ Sends a verification email to the provided user email with a secure verification
 
 ---
 
-#21. `auth/verify_email` – Verifies User's Email  
+#20. `auth/verify_email` – Verifies User's Email  
 Marks the user as verified in the database when the verification link is accessed.
 
 - **Method:** `POST`  
@@ -400,7 +385,7 @@ Marks the user as verified in the database when the verification link is accesse
     
 ---
 
-## #22. `password/change_password` – Change User Password  
+## #21. `password/change_password` – Change User Password  
 Allows an authenticated user to update their password after verifying the old one.
 
 - **Method:** `POST`  
@@ -455,7 +440,7 @@ Allows an authenticated user to update their password after verifying the old on
 
 ---
 
-## #23. `password/send_reset_email` – Send Password Reset Link  
+## #22. `password/send_reset_email` – Send Password Reset Link  
 Sends a password reset link to the user's email if the account exists.
 
 - **Method:** `POST`  
@@ -500,7 +485,7 @@ Sends a password reset link to the user's email if the account exists.
 
 ---
 
-## #24. `password/reset_password` – Reset User Password  
+## #23. `password/reset_password` – Reset User Password  
 Allows a user to reset their password using a token received via email.
 
 - **Method:** `POST`  
@@ -550,5 +535,89 @@ Allows a user to reset their password using a token received via email.
     }
     ```
 
+
+---
+
+## #24. `profile/create` – Create User Profile  
+Creates a user profile for a given email address.
+
+- **Method:** `POST`  
+- **Endpoint:** `/profile/create`  
+- **Content-Type:** `application/json`
+
+### Request Body
+```json
+{
+  "email": "user@example.com"
+}
+```
+
+---
+
+---
+
+## #25. `GET /profile/read` – Read User Profile  
+Returns the profile of the currently authenticated user.
+
+- **Method:** `GET`  
+- **Endpoint:** `/profile/read`  
+- **Headers:**
+  - `Authorization`: Bearer `<JWT_TOKEN>`
+
+### Success Response
+- **Code:** `200 OK`  
+```json
+{
+  "_id": "mongodb_object_id",
+  "email": "user@example.com",
+  "resume_text": null,
+  "resume_pdf_bytes": null,
+  "dark_mode": false,
+  "model_preference": 1
+}
+```
+
+---
+
+---
+
+## #26. `POST /profile/update` – Update User Profile  
+Allows an authenticated user to update fields in their profile.
+
+- **Method:** `POST`  
+- **Endpoint:** `/profile/update`  
+- **Content-Type:** `application/json`  
+- **Headers:**
+  - `Authorization`: Bearer `<JWT_TOKEN>`
+
+### Request Body
+```json
+{
+  "update_data": {
+    "dark_mode": true,
+    "model_preference": 2
+  }
+}
+```
+
+---
+
+---
+
+## #27. `POST /profile/delete` – Delete User Profile  
+Deletes the profile of the currently authenticated user.
+
+- **Method:** `DELETE`  
+- **Endpoint:** `/profile/delete`  
+- **Headers:**
+  - `Authorization`: Bearer `<JWT_TOKEN>`
+
+### Success Response
+- **Code:** `200 OK`  
+```json
+{
+  "message": "Profile deleted"
+}
+```
 
 ---
