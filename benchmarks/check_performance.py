@@ -12,7 +12,6 @@ from api.app import create_app
 
 app = create_app()
 client = app.test_client()
-
 load_dotenv()
 
 API_KEY = os.getenv("OPENROUTER_API_KEY")
@@ -124,6 +123,7 @@ class JDExtractorBenchmarkRunner:
             except:
                 time.sleep(1)
                 continue
+
         globalJdJsons.append(metrics["result"])
 
         report = {
