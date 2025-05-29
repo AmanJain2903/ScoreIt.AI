@@ -59,6 +59,8 @@ setup(
     "gunicorn==20.1.0",
     "google-auth==2.40.2",
     "google-auth-oauthlib==1.2.2",
+    "selenium==4.32.0",
+    "webdriver-manager==4.0.2"
 ]
 )
 
