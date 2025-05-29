@@ -16,11 +16,13 @@ from src.resume_extractor_agent.resume_agent import ResumeAgent
 from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
 from src.utils import security
 from dotenv import load_dotenv
+import time
+import threading
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 matchmakerFactor = 1 # 500 data points out of 500 total
-agentFactor = 0.2 # 100 data points out of 500 total
+agentFactor = 0.1 # 50 data points out of 500 total
 
 # Mapping module names to their classes
 matchmaker_configs = {
@@ -156,7 +158,13 @@ class ExtractorAgents:
                                         useDefaultSystemPromptIfNone=True)
                 inputText = dataset[datasetColumns[0]].iloc[i]
                 extractor.setUserPrompt(inputText)
-                output = extractor.getJsonOutput()
+                output = None
+                while output is None:
+                    try:
+                        output = extractor.getJsonOutput()
+                    except:
+                        time.sleep(1)
+                        continue
                 results[str(i)] = output
                 extractor.deleteAgent()
             scores = {}
@@ -203,11 +211,18 @@ class ExtractorAgents:
 if __name__ == "__main__":
 
     matchmakers = Matchmakers()
-    matchmakers.runBenchmarks()
-    matchmakers.saveResults()
-
     extractor_agents = ExtractorAgents()
-    extractor_agents.runBenchmarks()
+
+    thread1 = threading.Thread(target=matchmakers.runBenchmarks)
+    thread2 = threading.Thread(target=extractor_agents.runBenchmarks)
+
+    thread1.start()
+    thread2.start()
+
+    thread1.join()
+    thread2.join()
+
+    matchmakers.saveResults()
     extractor_agents.saveResults()
 
 
