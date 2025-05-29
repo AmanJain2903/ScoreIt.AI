@@ -1,39 +1,39 @@
 [
   {
-    "timestamp": "2025-05-29T12:25:58.069382",
-    "inference_time_sec": 6.265,
+    "timestamp": "2025-05-29T14:21:44.804094",
+    "inference_time_sec": 8.714,
     "gpu_usage": {
       "gpu_memory_mb": null,
       "gpu_util_percent": null
     }
   },
   {
-    "timestamp": "2025-05-29T12:26:07.173345",
-    "inference_time_sec": 8.821,
+    "timestamp": "2025-05-29T14:21:53.175217",
+    "inference_time_sec": 8.105,
     "gpu_usage": {
       "gpu_memory_mb": null,
       "gpu_util_percent": null
     }
   },
   {
-    "timestamp": "2025-05-29T12:26:14.048405",
-    "inference_time_sec": 6.588,
+    "timestamp": "2025-05-29T14:22:03.699249",
+    "inference_time_sec": 10.249,
     "gpu_usage": {
       "gpu_memory_mb": null,
       "gpu_util_percent": null
     }
   },
   {
-    "timestamp": "2025-05-29T12:26:28.031635",
-    "inference_time_sec": 13.623,
+    "timestamp": "2025-05-29T14:22:15.624014",
+    "inference_time_sec": 11.645,
     "gpu_usage": {
       "gpu_memory_mb": null,
       "gpu_util_percent": null
     }
   },
   {
-    "timestamp": "2025-05-29T12:26:36.688760",
-    "inference_time_sec": 8.374,
+    "timestamp": "2025-05-29T14:22:27.344103",
+    "inference_time_sec": 11.444,
     "gpu_usage": {
       "gpu_memory_mb": null,
       "gpu_util_percent": null
