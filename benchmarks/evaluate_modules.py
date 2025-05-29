@@ -16,6 +16,7 @@ from src.resume_extractor_agent.resume_agent import ResumeAgent
 from src.jd_extractor_agent.jd_agent import JobDescriptionAgent
 from src.utils import security
 from dotenv import load_dotenv
+import time
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
@@ -156,7 +157,13 @@ class ExtractorAgents:
                                         useDefaultSystemPromptIfNone=True)
                 inputText = dataset[datasetColumns[0]].iloc[i]
                 extractor.setUserPrompt(inputText)
-                output = extractor.getJsonOutput()
+                output = None
+                while output is None:
+                    try:
+                        output = extractor.getJsonOutput()
+                    except:
+                        time.sleep(1)
+                        continue
                 results[str(i)] = output
                 extractor.deleteAgent()
             scores = {}

@@ -64,7 +64,13 @@ class ResumeExtractorBenchmarkRunner:
         return {"gpu_memory_mb": None, "gpu_util_percent": None}
 
     def run(self):
-        metrics = measure_module_performance(self.resumeAgent.getResponse)
+        metrics = None
+        while metrics is None:
+            try:
+                metrics = measure_module_performance(self.resumeAgent.getResponse)
+            except:
+                time.sleep(1)
+                continue
         globalResumeJsons.append(metrics["result"])
 
         report = {
@@ -74,7 +80,6 @@ class ResumeExtractorBenchmarkRunner:
         }
 
         reportPath = "benchmarks/results/resume_extractor_performance.json"
-        os.makedirs(os.path.dirname(reportPath), exist_ok=True)
 
         if os.path.exists(reportPath):
             with open(reportPath, "r") as f:
@@ -124,7 +129,13 @@ class JDExtractorBenchmarkRunner:
         return {"gpu_memory_mb": None, "gpu_util_percent": None}
 
     def run(self):
-        metrics = measure_module_performance(self.jdAgent.getResponse)
+        metrics = None
+        while metrics is None:
+            try:
+                metrics = measure_module_performance(self.jdAgent.getResponse)
+            except:
+                time.sleep(1)
+                continue
         globalJdJsons.append(metrics["result"])
 
         report = {
@@ -134,7 +145,6 @@ class JDExtractorBenchmarkRunner:
         }
 
         reportPath = "benchmarks/results/jd_extractor_performance.json"
-        os.makedirs(os.path.dirname(reportPath), exist_ok=True)
 
         if os.path.exists(reportPath):
             with open(reportPath, "r") as f:
@@ -178,7 +188,13 @@ class MatchmakerBenchmarkRunner:
         return {"gpu_memory_mb": None, "gpu_util_percent": None}
 
     def run(self):
-        metrics = measure_module_performance(self.engine.getMatch)
+        metrics = None
+        while metrics is None:
+            try:
+                metrics = measure_module_performance(self.engine.getMatch)
+            except:
+                time.sleep(1)
+                continue
 
         report = {
             "timestamp": datetime.now().isoformat(),
@@ -187,7 +203,6 @@ class MatchmakerBenchmarkRunner:
         }
 
         reportPath = "benchmarks/results/matchmaker_performance.json"
-        os.makedirs(os.path.dirname(reportPath), exist_ok=True)
 
         if os.path.exists(reportPath):
             with open(reportPath, "r") as f:
